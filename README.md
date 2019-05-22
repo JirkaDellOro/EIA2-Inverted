@@ -1,7 +1,7 @@
 Willkommen zum invertierten Unterricht des Moduls
 # Entwicklung interaktiver Anwendungen II (EIA2)
 ## Rückblick
-Im Modul "Entwicklung interaktiver Anwendungen I" (EIA1) wurden sie an HTML und CSS heran geführt, um damit eine Grundlage für die weiteren Schritte zu schaffen. Denn als technische Plattform dienen Internetbrowser, die auf allen gängigen Geräten zur Verfügung stehen. 
+Im Modul "Entwicklung interaktiver Anwendungen I" (EIA1) wurden Sie zunächst an HTML und CSS heran geführt, um damit eine Grundlage für die weiteren Schritte zu schaffen. Denn als technische Plattform dienen in dieser Modulreihe Internetbrowser, da sie auf allen gängigen Geräten zur Verfügung stehen. 
 Darüber hinaus haben sie tiefergehende Kenntnisse im Umgang mit einer imperativen Programmiersprache erlangt und Aufgaben mit Hilfe einfacher, prozeduraler Algorithmen gelöst. Es wurde TypeScript verwendet, da - im Vergleich zu Javascript - einerseits die verwendeten Datenstrukturen sichtbar werden und andererseits automatische und umfassende Hilfestellung bei der Implementation gewährleistet wird. Auch erste Interaktionen konnten Sie mit Hilfe der Ereignissteuerung umsetzen. Durch die Manipulation des "Document Object Model" (DOM) konnten Sie die Reaktionen des Systems für Nutzer planvoll sichtbar machen. Hierzu hatten Sie ein gutes Verständnis der DOM-Klassenhierarchie und des Laufzeitverhaltens erlangt.
 ## Einblick
 Es ist erforderlich, dass sämtliche Inhalte des Moduls EIA1 verinnerlicht sind und angewendet werden können, insbesondere
