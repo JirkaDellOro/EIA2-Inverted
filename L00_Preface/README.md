@@ -7,8 +7,7 @@
 - Für Interaktion Algorithmen entwerfen und beschreiben.
 - sehr gute Kenntnisse in allen Bereichen der Produktion und Anwendung der zu konzipierenden Medienanwendung  
 
-**Der Idiot macht Simples kompliziert,  
-das Genie macht Kompliziertes simpel**
+:exclamation: **Der Idiot macht Simples kompliziert, das Genie macht Kompliziertes simpel** :exclamation: 
 ## Motivation
 [Crawford](../X01_Appendix/Crawford/Crawford.html)
 ## Verwendete Technik
