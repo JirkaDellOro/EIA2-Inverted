@@ -20,7 +20,6 @@ Some prefixes may be helpful for finding names for variables, use is encouraged
 |`i`|`iObject`|an index
 |`x`, `y`, `z`|`xPos`|a direction or dimension
 |`min`, `max`|`maxHeight`|boundaries  
-|---
 
 ## Use context and reduce redundancy
 For example, `state` may have different meaning depending on the context. `Machine.state` indicates something different than `Address.state`. However, it is redundant to write `Machine.stateTheMachineOperatesIn` or `Address.stateAsThePoliticalEntity`, since the context is provided already by the namespaces. Use this instead of implementing redundancies.
