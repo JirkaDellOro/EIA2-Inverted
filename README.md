@@ -52,7 +52,8 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
   - set dataTransfer-object on dragstart
   - event-information is saved and accessible on drop
   - allow drop on element, preventDefault on dragover
-  - get dataTransfer-object on drop and process  
+  - get dataTransfer-object on drop and process
+  
 ### L03_FormElements
 - Input Text, different types
 - Radiobutton, Checkbox
@@ -64,7 +65,8 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Change- & Input-Event
 - Attributes without value
   - multiple for select
-  - checked for checkbox  
+  - checked for checkbox
+  
 ### L04_CreateFormFromDataFile
 - Interfaces
 - Associative Array
@@ -74,13 +76,15 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
   - dynamic keys
 - JSON
 - Export
-- Iterate over elements  
+- Iterate over elements
+
 ### L05_SendFormData
 - GET/POST
 - QueryString
 - FormData-Object
 - Fetch (former XMLHttpRequest)
-- Promise  
+- Promise
+
 ### L06_RequestResponse
 - ServerSide
 - Node
@@ -98,7 +102,8 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
   - find parameters in browser analysis (if possible for GET)
   - show node URL scheme in documentation
 - CORS
-- localhost  
+- localhost
+
 ### L07_Database
 - NoSQL
 - MongoDB
@@ -112,7 +117,8 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Database on MongoDB Atlas (former mLab)
 - Database.ts - Module
 - Callbacks
-- Anonymous and nested functions  
+- Anonymous and nested functions
+
 ### L08_Canvas
 - HTMLCanvasElement
 - RenderingContext
@@ -122,7 +128,8 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Relative Positioning
 - Save/Restore
 - Shortcuts fillRect and strokeRect
-- Create functions for drawing repetitive images  
+- Create functions for drawing repetitive images
+
 ### L09_Classes
 - Refactor interfaces to classes
 - Class-Diagram
@@ -131,20 +138,23 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Constructor
 - Instance/Object
 - Garbage Collection
-- Animation  
+- Animation
+
 ### L10_Inheritance
 - Identify common properties and behaviours
 - Superclass, Subclass
 - Inheritance in Diagram
 - Polymorphism
 - Abstract classes & methods
-- Animate different objects with common base  
+- Animate different objects with common base
+
 ### L11_Advanced
 - Scopes and Visibility
   - public
   - protected
   - private
-- Static  
+- Static
+
 ### L12_Addition
 - Exceptions
 - Enums
