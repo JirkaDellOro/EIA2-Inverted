@@ -1,3 +1,5 @@
 theme: jekyll-theme-slate
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: [tables]
