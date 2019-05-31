@@ -14,7 +14,7 @@ Bad example from the DOM-API: `getElementById(...)` vs `getElementsByTagName(...
 ## Prefixes
 Some prefixes may be helpful for finding names for variables, use is encouraged  
 
-|Prefix|Example|Meaning Y
+|Prefix|Example|Meaning
 |-|-|-
 |`n`|`nObjects`|an amount
 |`i`|`iObject`|an index
