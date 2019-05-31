@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="55cm" height="38cm" viewBox="20 5 1091 749" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="210" y="300" width="260" height="240"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="210" y="300" width="260" height="240"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="281.35" cy="490.45" rx="61.35" ry="20.45"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="281.35" cy="490.45" rx="61.35" ry="20.45"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="281.35" y="494.35">
+        <tspan x="281.35" y="494.35">mitarbeiten</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="396.875" cy="420" rx="56.875" ry="20"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="396.875" cy="420" rx="56.875" ry="20"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="396.875" y="423.9">
+        <tspan x="396.875" y="423.9">aufpassen</tspan>
+      </text>
+    </g>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="210" y="537">
+      <tspan x="210" y="537"> Vorlesung</tspan>
+    </text>
+    <g>
+      <ellipse style="fill: #ffffff" cx="420.8" cy="340" rx="40.8" ry="20"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="420.8" cy="340" rx="40.8" ry="20"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="420.8" y="343.9">
+        <tspan x="420.8" y="343.9">lehren</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="268.6" cy="400" rx="48.6" ry="20"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="268.6" cy="400" rx="48.6" ry="20"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="268.6" y="403.9">
+        <tspan x="268.6" y="403.9">quizzen</tspan>
+      </text>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="530" y="300" width="260" height="240"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="530" y="300" width="260" height="240"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="699.75" cy="472" rx="69.75" ry="32"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="699.75" cy="472" rx="69.75" ry="32"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="699.75" y="467.9">
+        <tspan x="699.75" y="467.9">Aufgaben</tspan>
+        <tspan x="699.75" y="483.9">bearbeiten</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="650.05" cy="340" rx="40.05" ry="20"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="650.05" cy="340" rx="40.05" ry="20"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="650.05" y="343.9">
+        <tspan x="650.05" y="343.9">helfen</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="714.625" cy="381.542" rx="64.625" ry="21.5417"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="714.625" cy="381.542" rx="64.625" ry="21.5417"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="714.625" y="385.442">
+        <tspan x="714.625" y="385.442">kontrollieren</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="604.325" cy="420" rx="54.325" ry="20"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="604.325" cy="420" rx="54.325" ry="20"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="604.325" y="423.9">
+        <tspan x="604.325" y="423.9">bewerten</tspan>
+      </text>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect style="fill: #ffffff" x="850" y="300" width="260" height="240"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="850" y="300" width="260" height="240"/>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="973.55" cy="501.183" rx="63.55" ry="21.1833"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="973.55" cy="501.183" rx="63.55" ry="21.1833"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="973.55" y="505.083">
+        <tspan x="973.55" y="505.083">Hilfe suchen</tspan>
+      </text>
+    </g>
+    <g>
+      <ellipse style="fill: #ffffff" cx="1030.05" cy="340" rx="40.05" ry="20"/>
+      <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="1030.05" cy="340" rx="40.05" ry="20"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1030.05" y="343.9">
+        <tspan x="1030.05" y="343.9">helfen</tspan>
+      </text>
+    </g>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="530" y="537">
+    <tspan x="530" y="537"> Praktikum</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:end;font-family:sans-serif;font-style:normal;font-weight:normal" x="1110" y="537">
+    <tspan x="1110" y="537">Spiellabor </tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #ffffff" cx="620" cy="664" rx="6" ry="6"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="620" cy="664" rx="6" ry="6"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="596" y1="676" x2="644" y2="676"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="620" y1="670" x2="620" y2="700"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="620" y1="700" x2="596" y2="726"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="620" y1="700" x2="644" y2="726"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="620" y="749.9">
+      <tspan x="620" y="749.9">Teilnehmer</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="583.957" y1="676.185" x2="324.732" y2="504.91"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="437.092" y1="434.142" x2="583.684" y2="647.215"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="642.167" y1="645.521" x2="699.75" y2="504"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="656.296" y1="679.589" x2="935.01" y2="522.856"/>
+  <g>
+    <ellipse style="fill: #ffffff" cx="720" cy="164" rx="6" ry="6"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="720" cy="164" rx="6" ry="6"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="696" y1="176" x2="744" y2="176"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="720" y1="170" x2="720" y2="200"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="720" y1="200" x2="696" y2="226"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="720" y1="200" x2="744" y2="226"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="720" y="249.9">
+      <tspan x="720" y="249.9">Betreuer</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="540" cy="164" rx="6" ry="6"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="540" cy="164" rx="6" ry="6"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="516" y1="176" x2="564" y2="176"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="540" y1="170" x2="540" y2="200"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="540" y1="200" x2="516" y2="226"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="540" y1="200" x2="564" y2="226"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="540" y="249.9">
+      <tspan x="540" y="249.9">Prof</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="660" cy="24" rx="6" ry="6"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" cx="660" cy="24" rx="6" ry="6"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="636" y1="36" x2="684" y2="36"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="660" y1="30" x2="660" y2="60"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="660" y1="60" x2="636" y2="86"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="660" y1="60" x2="684" y2="86"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="660" y="109.9">
+      <tspan x="660" y="109.9">Praktikant</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="565" y1="254" x2="629.774" y2="319.497"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="692.77" y1="254.5" x2="660.228" y2="319.629"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="658.063" y1="114.5" x2="650.774" y2="319.629"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="660" y1="420" x2="660" y2="420"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="718.387" y1="254.471" x2="715.278" y2="359.503"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="540" y1="254" x2="596.394" y2="399.534"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="515" y1="254" x2="443.258" y2="319.497"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 635 60 C 360,60 278.691,199.509 385.893,399.509"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 620 60 C 345,60 150.431,179.536 257.631,379.536"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 565.468 183.021 C 685.468,103.021 1020,60 1030.05,320"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="292.278" y1="420.215" x2="583.689" y2="669"/>
+  <path style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" d="M 692.55 60 C 815.406,60 1127.68,79.5122 1037.73,319.512"/>
+  <text font-size="28.2222" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="20" y="40">
+    <tspan x="20" y="40">Anwendungsfalldiagramm</tspan>
+    <tspan x="20" y="75.2778">EIA2 - Kontakt</tspan>
+  </text>
+</svg>

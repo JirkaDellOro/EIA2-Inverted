@@ -7,6 +7,7 @@ Starten mit Quiz (so wie sonst), allerdings inklusive Internetrecherche
   - was ist Medienkonzeption?
   - was sind digitale Medien?
     - was bedeutet digital? Was Medien?
+    - was unterscheidet digitale Medien von klassischen/analogen?
   - was macht der Medienkonzepter?
   - was macht ein Konzepter? Siehe Wikipedia->Informationsarchitekt!
   - was ist die englische Bezeichnung? (nicht Conceptionist!)
@@ -18,7 +19,6 @@ Starten mit Quiz (so wie sonst), allerdings inklusive Internetrecherche
 	- technische Inhalte maßgeblich
   - was sind solche Inhalte für Medienkonzepter?
   - wie soll sich ein interaktives System verhalten? Es gehorcht Algorithmen.
-  - Medienkonzepter muss Algorithmen entwerfen und beschreiben.
 - was wollt ihr von uns?
   - was wollt ihr lernen?
   - was erscheint euch sinnvoll?
