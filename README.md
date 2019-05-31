@@ -14,17 +14,20 @@ Programmiersprachen: Anweisungen, Operatoren, Kontrollstrukturen, Funktionen
 - Generierung dynamischer Webseiten
 - DOM-Klassen- und Laufzeit-Hierarchie
 - Problemlösungsstrategie
-- Die Arbeit mit der Browserkonsole und Debugging im Browser  
+- Die Arbeit mit der Browserkonsole und Debugging im Browser
+
 ## Ausblick
 In EIA2 lernen Sie, auch komplizierte Aufgabenstellungen anzugehen, wobei die Konzeption im Vordergrund steht. Hierzu werden Sie Diagrammformen der "Unified Modelling Language" (UML) verwenden, um mit deren Hilfe Probleme zu durchdringen und Lösungen zu konzipieren. Ihre nachfolgenden Implementationen mit TypeScript stellen lediglich Nachweise der erfolgreichen Konzeption dar.  
-Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direkt an die DOM-Manipulationen von EIA1 anschließen. Danach werden zusätzlich die interaktiven Formularelemente des HTML-Standards eingesetzt und ausgewertet. Nutzer können damit Informationen an andere Rechner zur Auswertung oder Speicherung senden, daher beschäftigen Sie sich mit den entsprechenden Strukturen bezüglich Server und Datenbank. Danach befasst sich der Kurs mit dem objektorientierten Paradigma der Software-Entwicklung, das es zulässt, auch für sehr komplexe Aufgabenstellungen intuitiv zu konzipieren. Damit einher gehen erweiterte Anwendungen der UML-Diagramme und Implementationsdetails. Die grafische Darstellung erfolgt dann über das HTMLCanvasElement, was eine freie Gestaltung zulässt, und die Nutzer-Interaktionen können weit über die für Webseiten üblichen hinausgehen.  
+Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direkt an die DOM-Manipulationen von EIA1 anschließen. Danach werden zusätzlich die interaktiven Formularelemente des HTML-Standards eingesetzt und ausgewertet. Nutzer können damit Informationen an andere Rechner zur Auswertung oder Speicherung senden, daher beschäftigen Sie sich mit den entsprechenden Strukturen bezüglich Server und Datenbank. Danach befasst sich der Kurs mit dem objektorientierten Paradigma der Software-Entwicklung, das es zulässt, auch für sehr komplexe Aufgabenstellungen intuitiv zu konzipieren. Damit einher gehen erweiterte Anwendungen der UML-Diagramme und Implementationsdetails. Die grafische Darstellung erfolgt dann über das HTMLCanvasElement, was eine freie Gestaltung zulässt, und die Nutzer-Interaktionen können weit über die für Webseiten üblichen hinausgehen.
+
 ## Gliederung
 ### L00_Preface
 - Medienkonzeption bei DM
 - Aufbau der Veranstaltung
 - Verwendete Technik
 - Landscape
-- Coding Guidelines  
+- Coding Guidelines
+
 ### L01_Recap & Foundation
 - Code structures as activities
 - Activity- & Object-Nodes
@@ -35,7 +38,8 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Retrieving & Creating Elements
 - Designtime, Compiletime, Runtime
 - Tracetable
-- Debugger  
+- Debugger
+
 ### L02_Events
 - Event-Object, Listener, Handler
 - Implementation
