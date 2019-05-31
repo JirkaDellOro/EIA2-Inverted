@@ -1,7 +1,7 @@
-# Naming 2
+# Naming 3
 
 | Default aligned | Left aligned | Center aligned | Right aligned
-|-|:-|:-:|-:
+|-|-|-|-
 | First body part | Second cell | Third cell | fourth cell
 | Second line |foo | **strong** | baz
 | Third line |quux | baz | bar
@@ -27,7 +27,7 @@ Bad example from the DOM-API: `getElementById(...)` vs `getElementsByTagName(...
 ## Prefixes
 Some prefixes may be helpful for finding names for variables, use is encouraged  
 
-|Prefix|Example|Meaning|  
+Prefix|Example|Meaning
 ---|---|--- 
 `n`|`nObjects`|an amount
 `i`|`iObject`|an index
