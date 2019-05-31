@@ -21,14 +21,14 @@ In EIA2 lernen Sie, auch komplizierte Aufgabenstellungen anzugehen, wobei die Ko
 Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direkt an die DOM-Manipulationen von EIA1 anschließen. Danach werden zusätzlich die interaktiven Formularelemente des HTML-Standards eingesetzt und ausgewertet. Nutzer können damit Informationen an andere Rechner zur Auswertung oder Speicherung senden, daher beschäftigen Sie sich mit den entsprechenden Strukturen bezüglich Server und Datenbank. Danach befasst sich der Kurs mit dem objektorientierten Paradigma der Software-Entwicklung, das es zulässt, auch für sehr komplexe Aufgabenstellungen intuitiv zu konzipieren. Damit einher gehen erweiterte Anwendungen der UML-Diagramme und Implementationsdetails. Die grafische Darstellung erfolgt dann über das HTMLCanvasElement, was eine freie Gestaltung zulässt, und die Nutzer-Interaktionen können weit über die für Webseiten üblichen hinausgehen.
 
 ## Gliederung
-### L00_Preface
+### [L00_Preface](L00_Preface)
 - Medienkonzeption bei DM
 - Aufbau der Veranstaltung
 - Verwendete Technik
 - Landscape
 - Coding Guidelines
 
-### L01_Recap & Foundation
+### [L01_Recap&Foundation](L01_Recap&Foundation)
 - Code structures as activities
 - Activity- & Object-Nodes
 - Simple and Complex Datatypes
@@ -40,7 +40,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Tracetable
 - Debugger
 
-### L02_Events
+### [L02_Events](L02_Events)
 - Event-Object, Listener, Handler
 - Implementation
 - Propagation (Phases)
@@ -54,7 +54,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
   - allow drop on element, preventDefault on dragover
   - get dataTransfer-object on drop and process
   
-### L03_FormElements
+### [L03_FormElements](L03_FormElements)
 - Input Text, different types
 - Radiobutton, Checkbox
 - Slider, Stepper
@@ -67,7 +67,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
   - multiple for select
   - checked for checkbox
   
-### L04_CreateFormFromDataFile
+### [L04_CreateFormFromDataFile](L04_CreateFormFromDataFile)
 - Interfaces
 - Associative Array
   - homogenous
@@ -78,14 +78,14 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Export
 - Iterate over elements
 
-### L05_SendFormData
+### [L05_SendFormData](L05_SendFormData)
 - GET/POST
 - QueryString
 - FormData-Object
 - Fetch (former XMLHttpRequest)
 - Promise
 
-### L06_RequestResponse
+### [L06_RequestResponse](L06_RequestResponse)
 - ServerSide
 - Node
   - install @types/node with npm
@@ -104,7 +104,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - CORS
 - localhost
 
-### L07_Database
+### [L07_Database](L07_Database)
 - NoSQL
 - MongoDB
   - start mongod in terminal
@@ -119,7 +119,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Callbacks
 - Anonymous and nested functions
 
-### L08_Canvas
+### [L08_Canvas](L08_Canvas)
 - HTMLCanvasElement
 - RenderingContext
 - Immediate/Deferred Rendering
@@ -130,7 +130,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Shortcuts fillRect and strokeRect
 - Create functions for drawing repetitive images
 
-### L09_Classes
+### [L09_Classes](L09_Classes)
 - Refactor interfaces to classes
 - Class-Diagram
 - Property/Attribute
@@ -140,7 +140,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Garbage Collection
 - Animation
 
-### L10_Inheritance
+### [L10_Inheritance](L10_Inheritance)
 - Identify common properties and behaviours
 - Superclass, Subclass
 - Inheritance in Diagram
@@ -148,14 +148,14 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Abstract classes & methods
 - Animate different objects with common base
 
-### L11_Advanced
+### [L11_Advanced](L11_Advanced)
 - Scopes and Visibility
   - public
   - protected
   - private
 - Static
 
-### L12_Addition
+### [L12_Addition](L12_Addition)
 - Exceptions
 - Enums
 - Generics
