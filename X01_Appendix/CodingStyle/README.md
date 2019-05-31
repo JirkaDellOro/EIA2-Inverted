@@ -1,6 +1,5 @@
-# Namingx  
+# Naming 2
 
-|---
 | Default aligned | Left aligned | Center aligned | Right aligned
 |-|:-|:-:|-:
 | First body part | Second cell | Third cell | fourth cell
