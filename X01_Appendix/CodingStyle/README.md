@@ -12,7 +12,7 @@ The names of enumerations and their elements are written all uppercase, with und
 ## Avoid ambiguities
 Bad example from the DOM-API: `getElementById(...)` vs `getElementsByTagName(...)`. Only the little `s` in the middle indicates that one returns a collection, not a single element. Better: `getElementCollectionByTagName(...)`. However, in `getElements(...)`, the `s` is clearly visible, since it's the last letter.
 ## Prefixes
-Some prefixes may be helpful for finding names for variables, use is encouraged  
+Some prefixes may be helpful for finding names for variables, use is encouraged XXXXXXXXXXXXX  
 
 |Prefix|Example|Meaning|
 |---|---|---|
