@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Chris Crawford about interactive storytelling</title>
+		<script>
+			window.onload = init;
+			var t;
+			var cues = { 
+				"all":{"start":51*60+56, "end":54*60+20},
+				//*/
+				"precise":{"start":52*60+12, "end":52*60+38},
+				"artist":{"start":53*60+37, "end":53*60+55},
+				"expression":{"start":54*60+5, "end":54*60+20},
+				/*/
+				"precise":{"start":52*60+0, "end":52*60+38},
+				"artist":{"start":52*60+1, "end":53*60+55},
+				"expression":{"start":52*60+2, "end":54*60+20},
+				//*/
+			};
+			
+			function init() {
+				var cueDiv = document.getElementById("cue");	
+				for (var cue in cues) {
+					cueDiv.innerHTML += "<a href='#' onclick='playCue(" + '"' + cue + '"' + ",true)'>" + cue + "</a> ";
+				}
+				playCue("all", false);
+			}
+			function playCue(_cue, _play) {
+				var v = document.getElementById("video");
+				v.currentTime=cues[_cue].start;
+				_play ? v.play():v.pause();
+				//alert(t);
+				window.clearInterval(t);
+				t = window.setInterval(function() {
+					if (v.currentTime > cues[_cue].end) {
+						v.pause();
+						window.clearInterval(t);
+					}
+				}, 100);				
+			}
+		</script>
+		<style>
+			#cue {
+				text-align: center;
+			}
+			#video {
+				/*position:absolute;
+				left:320px;
+				*/
+				display:block;
+				margin:auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<video id="video" controls width="800px">
+			<source src="Crawford.webm"> </source>
+		</video>
+		<div id="cue">
+		</div>
+	</body>
+</html>
