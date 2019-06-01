@@ -1,9 +1,11 @@
 # L01 Recap & Foundation
-<img src="Material/steve-jobs-learn-to-program.jpg"></img>
+<img src="Material/steve-jobs-learn-to-program.jpg">  
+
 ## Einleitung
 In diesem Kapitel wiederholst und festigst Du einige Inhalte der Veranstaltung "Entwicklung interaktiver Anwendungen I". Ein tiefes Verständnis dieser und ein sicherer Umgang mit diesen ist Voraussetzung für die folgenden Kapitel.
 Außerdem wirst Du die Aktivitätsdiagramme der "Unified Modelling Language" (UML2.5) kennen lernen, mit deren Hilfe Du im weiteren Verlauf der Veranstaltung Algorithmen beschreiben und konzipieren wirst.
-Darüber hinaus lernst Du mit Verfolgungstabellen (Trace Tables) und dem browserinternen Debugger umzugehen, welche wichtige Werkzeuge für die Fehlersuche während der Implementation deiner konzipierten Anwendungen sind.
+Darüber hinaus lernst Du mit Verfolgungstabellen (Trace Tables) und dem browserinternen Debugger umzugehen, welche wichtige Werkzeuge für die Fehlersuche während der Implementation deiner konzipierten Anwendungen sind.  
+
 ## Rückblick
 Aus "Entwicklung interaktiver Anwendungen I" sind dir bekannt:
 - Grundlagen imperativer, prozeduraler Programmierung
