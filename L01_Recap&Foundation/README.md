@@ -38,7 +38,7 @@ schaut an der Stelle im Speicher, die mit `v` bezeichnet ist nach dem dort hinte
 Die mit `v` bezeichnete Speicherstelle kann also unterschiedliche Werte halten, ihr Wert ist variabel. Vereinfachend spricht man meist schlicht von der "Variablen `v`".  
 Damit das obige Programm laufen kann, muss also diese Variable überhaupt erst existieren.
 
-- [x] Übung: öffne einen Browsertab und darin die Konsole. Tippe die obige Programmzeile ein, Du solltest damit einen 'ReferenceError' provozieren können.  
+- [x] Öffne einen Browsertab und darin die Konsole. Tippe die obige Programmzeile ein, Du solltest damit einen 'ReferenceError' provozieren können.  
 
 Eine Variable wird mit Hilfe des Schlüsselworts `let` angelegt. Diesen Vorgang nennt man **Deklaration**.
 ```typescript
@@ -57,8 +57,8 @@ v = v + 1;
 console.log(v);
 ```  
 
-|Übung: Erstelle das Programm mit TypeScript und teste es im Browser.|xxx|
-|---|---|
+|Übung: Erstelle das Programm mit TypeScript und teste es im Browser.
+|-
 
 >**Achtung:** 
 > - Deklaration und Definition können in eine Zeile geschrieben werden.
