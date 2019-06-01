@@ -48,7 +48,7 @@ let v;
 
 NaN bedeutet "Not a Number", das Ergebnis ist also keine Zahl. Das liegt daran, das `v` zwar existiert, aber den Wert `undefined` hatte. Das Ergebnis von `undefined + 1` ist `NaN`.  
 Was bislang noch fehlt ist die **Definition** von `v` so dass diese Variable einen Wert besitzt. Das erreicht man einfach mit dem Zuweisungsoperator und einem literalen Wert.  
-<div>Übung: Tippe `v = 1` in die Browserkonsole und lasse dann die Programmzeile erneut ausführen. Was geschieht nun?<div>
+>>*Übung: Tippe `v = 1` in die Browserkonsole und lasse dann die Programmzeile erneut ausführen. Was geschieht nun?*  
 
 Das vollständige Programm inklusive einer Zeile für die Ausgabe in der Konsole sieht nun also folgendermaßen aus:
 ```typescript
@@ -58,7 +58,7 @@ console.log(v);
 ```  
 
 |Übung: Erstelle das Programm mit TypeScript und teste es im Browser.|
-|-
+|---|
 
 >>**Achtung:** 
 >> - Deklaration und Definition können in eine Zeile geschrieben werden.
