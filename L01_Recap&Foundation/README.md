@@ -29,7 +29,7 @@ Aus "Entwicklung interaktiver Anwendungen I" sind dir bekannt:
     - parseFloat(...)
     - ggf. weitere
 
-## Allgemeines
+## Einblick
 Ein Computer kann, sehr vereinfacht ausgedrückt, eigentlich nicht viel mehr, als Information aus einem Speicher auszulesen, sie mit einer anderen Information zu verknüpfen, beispielsweise mit Hilfe einer mathematischen Operation, und das Ergebnis wieder im Speicher abzulegen. Der Code
 ```typescript
 v = v + 1;
@@ -38,7 +38,7 @@ schaut an der Stelle im Speicher, die mit `v` bezeichnet ist nach dem dort hinte
 
 >**Achtung:** bei Verwendung des Zuweisungsoperators `=` wird zuerst der Ausdruck auf der rechten Seite ausgewertet und das Ergebnis der linken Seite zugewiesen.  
 
-### Variablen
+## Variablen
 Die mit `v` bezeichnete Speicherstelle kann also unterschiedliche Werte halten, ihr Wert ist variabel. Vereinfachend spricht man meist schlicht von der "Variablen `v`".  
 Damit das obige Programm laufen kann, muss also diese Variable überhaupt erst existieren.
 
@@ -69,4 +69,47 @@ console.log(v);
 > - Deklaration und Definition können in eine Zeile geschrieben werden.
 > - Neben `let` wird auch, und wurde vor allem früher, das Schlüsselwort `var` verwendet, dass aber eine etwas andere Wirkung hat. Wir verwenden konsequent `let`!  
 
-### Typen
+## Datentypen
+Die heute gebräuchlichen Computer speichern Informationen als lange Serien von Bits, kleinste Informationseinheiten, die nur zwei Zustände aufweisen können: an und aus. Damit werden aber ganz unterschiedliche Typen von Informationen kodiert: Zahlen, Texte, Bilder, Musik, Videos usw.  
+Damit der Rechner nun aber die Informationen korrekt verarbeiten kann, muss bekannt sein, welchen Typ eine Bitfolge darstellen soll.  
+
+- [x] Zeige mit dem Mauscursor auf `v` in dem zuvor eingegebenen Programm. Was erscheint im Tooltip?
+
+Typescript erkennt aus dem Zusammenhang, dass `v` vom Typ `number` sein soll. Diese Erkennung nennt man "inference".  
+
+- [x] Setze die `1` bei der ersten Definition von `v` in Anführungszeichen. Welcher Typ wird nun angezeigt? Was wird ausgegeben, wenn das Programm nun läuft?
+
+Typescript hat erkannt, dass `v` nun eine Zeichenkette darstellen soll, auch wenn nur ein Zeichen, die Ziffer 1, darin enthalten ist. Damit hat sich aber auch die Programmlogik geändert, denn der Additionsoperator `+` ist für Zeichenketten ganz anders definiert als für Zahlen.
+
+- [x] Definiere `v` mit dem Schlüsselwort `true`. Welcher Typ wird nun angezeigt? Was ist nun zusätzlich zu sehen? Und was geschieht, wenn Du das Programm laufen lässt? (sofern es überhaupt kompiliert wurde...prüfe  hierzu das entstandene js-File, es sollte identisch sein)
+
+>**Achtung:** Datentypen sind essentiell wichtig! Javascript geht allerdings sehr lax damit um und ändert, wenn man nicht sehr aufpasst, durchaus auch Datentypen während des Programmlaufs, weshalb hier viele Fehler passieren. TypeScript schafft Abhilfe...
+
+So angenehm es auch ist, dass TypeScript die Typen aus dem Kontext inferieren kann und in der Folge auf Typfehler aufmerksam macht, noch besser ist es, sich bereits bei der Konzeption Gedanken um die gewünschten Datentypen zu machen und diese festzulegen! 
+
+## Explizite Typisierung
+Daher ist in diesem Kurs die explizite Annotation der Typen vorgeschrieben. Das bedeutet, dass bei der Deklaration der geforderte Typ durch Doppelpunkt getrennt hinter den Variablenbezeichner geschrieben werden muss. Zunächst sind dabei von Bedeutung die primitiven Typen 
+- `number`,
+- `string` und 
+- `boolean`  
+
+-[x] Annotiere `v` in der Deklaration als `number`. Wie verändert sich nun die Anzeige des Codes?
+
+Eine andere Zuweisung als die eines Zahlenwertes ist nun gar nicht mehr erlaubt, Du wirst schon darauf hingewiesen, während Du das Programm noch schreibst. 
+
+- [x] Setze nun statt `true` wieder die Zahl `1` ein, aber verändere den Addenden in Zeile 2 zu einer Zeichenkette, so dass das Programm nun wie untenstehend aussieht.  
+
+```typescript
+let v: number = 1;
+v = v + "1";
+console.log(v);
+```
+`v` ist vom Typ `number` und es soll das Ergebnis der Addition einer Zeichenkette und einer Zahl (dem aktuellen Wert von `v`) zugewiesen werden.
+- [x] Warum funktioniert das nicht, und warum hat so etwas ähnliches vorhin funktioniert, als `v` mit `"1"` definiert wurde?
+
+
+
+
+
+
+
