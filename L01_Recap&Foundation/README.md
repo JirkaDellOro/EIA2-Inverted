@@ -108,7 +108,7 @@ console.log(v);
 - [x] Warum funktioniert das nicht, und warum hat so etwas ähnliches vorhin funktioniert, als `v` mit `"1"` definiert wurde?
 
 ## Fehlertypen
-Du hast nun schon ganz unterschiedliche Fehler kennen gelernt. Die korrekte Benennung dieser hilft dabei, dir helfen zu können. Ein wichtiges Unterscheidungskriterium ist dabei der Zeitpunkt, zu dem der Fehler erkannt wird.
+Du hast nun schon ganz unterschiedliche Fehler kennen gelernt. Die korrekte Benennung dieser hilft anderen dabei, dir zu helfen. Ein wichtiges Unterscheidungskriterium ist dabei der Zeitpunkt, zu dem der Fehler erkannt wird.
 ### Runtime Error
 Tritt zur Laufzeit auf. Das ist ein hässlicher Fehlertyp, da er unter Umständen lange Zeit unentdeckt bleibt oder nur unter bestimmten Bedingungen reproduzierbar ist. Laufzeitfehler werden in der Browserkonsole angezeigt und müssen unbedingt beachtet werden, auch wenn das Programm weiterlaufen sollte.
 ### Compiletime Error
@@ -118,11 +118,42 @@ Das sind Fehler, die bereits angezeigt werden während Du den Code schreibst und
 ### Logical Error
 Logikfehler sind nicht auf eine falsche Programmierung zurückzuführen, sondern auf schlechte Konzeption. Diese Fehler kann der Computer meistens gar nicht aufzeigen, da er nicht weiß, was Du eigentlich vorhattest. Solange das Programm ausführbar ist und keiner der anderen Fehlertypen auftritt, wird er es ausführen und davon ausgehen, dass er tut was Du dir vorgestellt hast. Hier hilft nur nachdenken, aber es gibt einige Hilfsmittel, die man dabei einsetzen kann!  
 
->**Hinweis:** TypeScript spielt gerade bei der Fehlervermeidung eine seiner großen Stärken aus, indem es viele Fehler zur Entwurfszeit anzeigt. JavaScript hat hier fast nichts zu bieten, die Fehler zeigen sich erst im Betrieb.
+>**Hinweis:** TypeScript spielt gerade bei der Fehlervermeidung eine seiner großen Stärken aus, indem es viele Fehler zur Entwicklungszeit anzeigt. JavaScript hat hier fast nichts zu bieten, die Fehler zeigen sich erst im Betrieb.
 
+## Trace Table
+Mit Hilfe einer Verfolgungstabelle kann man den Zustand eines Programms zu jeder Zeit während des Laufs ermitteln und festhalten. Solche Tabellen von Hand zu erstellen ist eine gute Übung um den Programmlauf zu verstehen. Daher exerzieren wir dies im folgenden Video gemeinsam durch.
 
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. groß die Tabelle, die gerade gezeichnet wird, 
+|2. klein das Programm
+|3. Jirkas sprechender Kopf
 
+- [x] Vervollständige die Tabelle bis zum Ende des Programmablaufs
+- [x] Implementiere das Programm und vergleiche die Ausgabe mit deiner Vorhersage.
 
+## Debugger
+Natürlich gibt es technische Hilfsmittel etwas ähnliches wie eine Verfolgungstabelle automatisch zu erzeugen. Hierzu verwendest Du den Debugger, also den "Entlauser".  
 
+>**FunFact:** Der Begriff "Bug" für einen Programmfehler wurde übrigens von der berühmten Computerpionierin Grace Hopper geprägt, die in den 1950 Jahren tatsächlich eine in einem Relais verstorbene Motte für eine Fehlfunktion ihres Großcomputers verantwortlich machen konnte.
 
+Mit dem Debugger kannst Du auf die Jagd nach Fehlern gehen. Da wir das Programm untersuchen, während es im Browser läuft, ist es sehr praktisch, dass der Browser einen solchen Debugger integriert hat. Unser kleines Programm weist derzeit keine Fehler auf, aber wir schauen trotzdem einmal, ob unsere Verfolgungstabelle mit den Ergebnissen des Debuggers übereinstimmt.
 
+|Hier erscheint jetzt ein Video|
+|-
+|1. Bildschirmfüllend das Browserfenster
+|2. klein Jirkas sprechender Kopf
+
+## Aktivitätsdiagramm
+Hier wird nun noch das Cows-Programm in ein Aktivitätsdiagramm überführt und dabei die wichtigsten Knoten und Kanten erklärt.  
+
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. groß das Diagramm, dass von Hand gezeichnet wird, 
+|2. klein das Programm
+|3. Jirkas sprechender Kopf
+
+## Aufgabe
+Verweis auf die Boxes-Aufgabe
