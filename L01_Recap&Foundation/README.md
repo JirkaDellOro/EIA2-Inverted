@@ -58,7 +58,7 @@ console.log(v);
 ```  
 
 |Übung: Erstelle das Programm mit TypeScript und teste es im Browser.|
-|-
+|---|
 
 >>**Achtung:** 
 >> - Deklaration und Definition können in eine Zeile geschrieben werden.
