@@ -155,7 +155,7 @@ Hier wird nun noch das Cows-Programm in ein Aktivitätsdiagramm überführt und 
 |2. klein das Programm
 |3. Jirkas sprechender Kopf
 
-## Aufgabe
+## Wochenaufgabe
 Verweis auf die Boxes-Aufgabe
 
 
