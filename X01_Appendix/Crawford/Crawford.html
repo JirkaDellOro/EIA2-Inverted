@@ -6,15 +6,15 @@
 			window.onload = init;
 			var t;
 			var cues = { 
-				"all":{"start":51*60+56, "end":54*60+20},
+				"all":{"start":0, "end":2*60+24},
 				//*/
-				"precise":{"start":52*60+12, "end":52*60+38},
-				"artist":{"start":53*60+37, "end":53*60+55},
-				"expression":{"start":54*60+5, "end":54*60+20},
+				"precise":{"start":0*60+16, "end":0*60+42},
+				"artist":{"start":1*60+41, "end":1*60+59},
+				"expression":{"start":2*60+9, "end":2*60+24},
 				/*/
-				"precise":{"start":52*60+0, "end":52*60+38},
-				"artist":{"start":52*60+1, "end":53*60+55},
-				"expression":{"start":52*60+2, "end":54*60+20},
+				"precise":{"start":1*60+0, "end":1*60+38},
+				"artist":{"start":1*60+1, "end":2*60+55},
+				"expression":{"start":1*60+2, "end":3*60+20},
 				//*/
 			};
 			
@@ -40,7 +40,7 @@
 			}
 		</script>
 		<style>
-			#cue {
+			body {
 				text-align: center;
 			}
 			#video {
@@ -54,8 +54,9 @@
 	</head>
 
 	<body>
+	<h2>Chris Crawford about interactive storytelling</h2>
 		<video id="video" controls width="800px">
-			<source src="Crawford.webm"> </source>
+			<source src="crawfordShort.webm"> </source>
 		</video>
 		<div id="cue">
 		</div>
