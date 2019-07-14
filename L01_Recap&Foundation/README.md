@@ -154,11 +154,11 @@ Hier wird nun noch das Cows-Programm in ein Aktivitätsdiagramm überführt und 
 |Hier erscheint jetzt ein Video|
 |-
 |Dreigeteilt 
-|1. groß das Diagramm, dass von Hand gezeichnet wird, 
+|1. groß das Diagramm, das von Hand gezeichnet wird, 
 |2. klein das Programm
-|3. Jirkas sprechender Kopf
+|3. klein Jirkas sprechender Kopf
 
-## Wochenaufgabe
+# Wochenaufgabe
 Verweis auf die Boxes-Aufgabe
 
 

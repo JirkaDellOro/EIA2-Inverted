@@ -34,7 +34,8 @@ In der Regel bezieht sich ein Ereignis auf ein bestimmtes Objekt. Zum Beispiel a
 - [x] Objekte welcher Klassen können also `target`s sein? 
 
 ### Type
-`type` ist eine simple Zeichenkette und gibt an, was für ein Ereignis beschrieben wird. Hier sind beispielsweise die Werte `click`, `load`, `change`, `dragstart` und viele weitere vordefiniert. Es ist aber auch möglich eigene, neue Ereignisse zu definieren.
+`type` ist eine simple Zeichenkette und gibt an, was für ein Ereignis beschrieben wird. Hier sind beispielsweise die Werte `click`, `load`, `change`, `dragstart` und viele weitere vordefiniert. Es ist aber auch möglich eigene, neue Ereignisse zu definieren.  
+- [x] Recherchiere. Finde heraus, welche Arten von Events der Browser zur Verfügung stellt!
 
 ## Event-Handler
 Handler sind Funktionen, die ein Ereignis auswerten. Der Umgang damit ist denkbar simpel.
@@ -96,11 +97,88 @@ Den kompletten Pfad, den das Event durch das DOM nimmt, kann man im Attribut `pa
 - [x] Untersuche die Seite [Phases](../X01_Appendix/Code/L02_Events/Phases) und lasse den Code laufen.
 - [x] Was geschieht bei Klick auf den Button, bei Klick rechts daneben und bei Klick darunter? Warum?
 
-## Konzeption und Implementation einer ereignisgesteuerten Anwendung
-Beispiel Erpresserbrief
-- Per Keyboard Buchstaben bestimmen
-- Per Mausklick auf das Ziel-Div entsprechenden Buchstaben an Position in neuem Span erscheinen lassen
-- Mausklick auf existierenden Span entfernt es wieder 
-Aufgabe zur Erweiterung:
-- Weiteres Div mit Buchstaben zum Anklicken als Auswahl.
-- Aktuell ausgewählter Buchstabe soll hervorgehoben erscheinen in dieser Auswahl
+# Konzeption und Implementation einer ereignisgesteuerten Anwendung
+<img src="Material/erpresserbrief.jpg" width="50%">
+<figcaption><small>Quelle: https://www.paketda.de/juniorpost/erpresserbrief-basteln.php</small></figcaption>
+
+Erpresserbriefe zu basteln ist mühsam. So ist es doch eine interessante Geschäftsidee, eine Web-App zu entwickeln, mit der Erpresser im Handumdrehen ihre Korrespondenz erledigen können. Wie geht man das an?
+
+## Anwendungsfalldiagramm (Use-Case-Diagram)
+Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Überblick über die Anforderungen an deine Anwendung. Das geht ganz schnell und hilft ungemein bei der Konzeption.  
+
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. groß das Diagramm, das von Hand gezeichnet wird, 
+|2. Jirkas sprechender Kopf
+|Inhalt: die Erstellung des Diagramms mit den Anwendungsfällen  
+> - Anwendung starten
+> - Buchstabe wählen
+> - Buchstabe positionieren
+> - Buchstabe löschen.
+
+## Skizze: User Interface 
+Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Das wird schon einiges über die erforderliche darunterliegende Struktur verraten. Die Skizze versiehst Du schon mit den HTML-Auszeichnungen und Eigenschaften, die dir dabei sinnvoll erscheinen. Unterscheide dabei zwischen statischen und dynamischen Elementen und Eigenschaften. Für die Dynamik trägst Du hier schon ein, an welchen Elementen Listener installiert werden soll und welche Ereignisse dabei mit welchen Aktivitäten verknüpft werden. Prüfe, ob alle Interaktionsmöglichkeiten zur Realisierung der Anwendungsfälle gegeben sind.
+
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. groß die Skizze, die von Hand gezeichnet wird, 
+|1. klein das Use-Case-Diagramm
+|2. klein Jirkas sprechender Kopf
+|Inhalt: 
+> - Überschrift (h1)
+> - Ein Feld mit Handlungsanweisung (p)
+> - ein Feld mit Rahmen für den Brief (div, click-event-listener zum Platzieren)
+> - mehrere Buchstaben mit Rahmen (span, click-event-listener zum Löschen)
+> - das umschließende document (document, keydown-listener zur Buchstabenauswahl)
+
+## Aktivitätsdiagramme
+Jetzt hast Du bereits aus der Sicht des Nutzers die wesentlichen Aktivitäten, die beteiligten Elemente und die auszuwerteten Ereignisse festgehalten. Nun wechselst Du auf die Sicht aus dem System heraus und legst fest, wie es arbeiten soll. Dazu nutzt Du jetzt Aktivitätsdiagramme. Ein Event bildet dabei jeweils als Signalempfang einen Startknoten für eine Aktivität.  
+Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm dir dann nacheinander die einzelnen Aktivitäten vor und verfeinere sie. Wiederhole diesen Prozess, bis Du zu den atomaren Aktionen gekommen bist die sich in Programmanweisungen umsetzen lassen. Am Anfang musst Du hierzu wahrscheinlich nach diesen Anweisungen noch etwas recherchieren.  
+
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. groß die Aktivitätsdiagramme, die von Hand gezeichnet werden, 
+|1. klein das Use-Case-Diagramm und die Skizze im Wechsel nach Bedarf
+|2. klein Jirkas sprechender Kopf
+|Inhalt: 
+> - die vier Signalempfange im Hauptprogramm bilden Startpunkte: 1. Load von Window, 2. Keydown auf Document, 3. Klick auf Brief, 4. Klick auf Buchstabe
+> - Beginn mit 4. Klick -> deleteLetter (kurze Recherche führt zu removeChild)
+> - Dann 3. Klick -> placeLetter, hierfür werden Position und der Buchstabe gebraucht
+>   - Zur Position die Angaben im MouseEvent untersuchen
+>   - der gewählte Buchstabe muss irgendwo gespeichert sein
+>   - am Buchstaben Listener für deleteLetter installieren
+> - Dann 2. Keydown -> chooseLetter (kurze Recherche führt zu key im KeyEvent)
+>   - gewählten Buchstaben in einer globalen Variable im Hauptprogramm speichern
+> - Dann 1. die Listener installieren am Document und dem Brief
+> - Schließlich das Hauptprogramm, hier lediglich die Variable `chosen` anlegen und den load-Listener installieren.
+
+## Implementation
+Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implementation der Anwendung berücksichtigt zu haben, kannst Du dich daran machen. 
+
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. groß das Programm, das gerade getippt wird
+|1. klein das Aktivitäts-Diagramm
+|2. klein Jirkas sprechender Kopf
+|Inhalt: 
+> - HTML-Datei ist bereits angelegt, die statischen Elemente vorhanden, ebenso die Einbindung des Stylesheets und des Skripts
+> - jetzt wieder in der Reihenfolge von 1 bis 4 werden die zuvor konzipierten Aktivitäten implementiert.
+
+## Testing
+Während der Implementation wird das Programm immer wieder getestet. Es ist wichtig möglichst so zu implementieren, dass nicht erst ein abschließender Test Fehler zu Tage fördert, sondern dass immer lauffähige Zwischenstände existieren, die entsprechend in das Code-Repository aufgenommen werden.
+
+## Iterative Arbeitsweise
+Bedenke, dass Du die Konzeption jederzeit verbessern kannst und solltest, wenn dir auffällt, dass etwas fehlt oder nicht funktioniert. Dasselbe gilt für alle vorangegangenen Schritte. So können Überlegungen beim Zeichnen der Skizze zurück auf das Use-Case-Diagramm reflektieren, oder Erkenntnisse bei der Implementation die Änderung der Skizze nach sich ziehen, was dann wiederum die Aktivitätsdiagramme beeinflusst. Es ist unwahrscheinlich, dass der erste konzeptionelle Ansatz sich unverändert durchführen lässt und zur perfekten Anwendung führt. 
+> **Achtung:** Was Du auf keinen Fall machen darfst, ist auf der letzten Stufe, der Implementation, gravierende Änderungen vorzunehmen, ohne zuvor die Konzeption neu aufbereitet zu haben. Diese vorgehensweise führt mit großer Sicherheit zum **Misserfolg!**
+
+## Übung
+Erweitere die Erpresserbrief-App so dass sie auch auf Smartphone anwendbar ist
+- In einem weiteren Bereich sollen alle zulässigen Buchstaben zur Auswahl bereit stehen, so dass man sie per Touch aktivieren kann
+- Der aktuell ausgewählte Buchstabe soll in dieser Auswahl hervorgehoben erscheinen, so dass der Nutzer weiß, was er gewählt hat, bevor er den Brief ändert
+- Hinweis: recherchiere nach dem Pointer-Event
+
+# Wochenaufgabe
