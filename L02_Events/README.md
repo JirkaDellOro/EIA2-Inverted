@@ -112,6 +112,7 @@ Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Über
 |1. groß das Diagramm, das von Hand gezeichnet wird, 
 |2. Jirkas sprechender Kopf
 |Inhalt: die Erstellung des Diagramms mit den Anwendungsfällen  
+
 > - Anwendung starten
 > - Buchstabe wählen
 > - Buchstabe positionieren
@@ -126,7 +127,8 @@ Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Da
 |1. groß die Skizze, die von Hand gezeichnet wird, 
 |1. klein das Use-Case-Diagramm
 |2. klein Jirkas sprechender Kopf
-|Inhalt: 
+|Inhalt:  
+
 > - Überschrift (h1)
 > - Ein Feld mit Handlungsanweisung (p)
 > - ein Feld mit Rahmen für den Brief (div, click-event-listener zum Platzieren)
@@ -141,9 +143,10 @@ Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm
 |-
 |Dreigeteilt 
 |1. groß die Aktivitätsdiagramme, die von Hand gezeichnet werden, 
-|1. klein das Use-Case-Diagramm und die Skizze im Wechsel nach Bedarf
-|2. klein Jirkas sprechender Kopf
-|Inhalt: 
+|2. klein das Use-Case-Diagramm und die Skizze im Wechsel nach Bedarf
+|3. klein Jirkas sprechender Kopf
+|Inhalt:  
+
 > - die vier Signalempfange im Hauptprogramm bilden Startpunkte: 1. Load von Window, 2. Keydown auf Document, 3. Klick auf Brief, 4. Klick auf Buchstabe
 > - Beginn mit 4. Klick -> deleteLetter (kurze Recherche führt zu removeChild)
 > - Dann 3. Klick -> placeLetter, hierfür werden Position und der Buchstabe gebraucht
@@ -164,7 +167,8 @@ Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implement
 |1. groß das Programm, das gerade getippt wird
 |1. klein das Aktivitäts-Diagramm
 |2. klein Jirkas sprechender Kopf
-|Inhalt: 
+|Inhalt:   
+
 > - HTML-Datei ist bereits angelegt, die statischen Elemente vorhanden, ebenso die Einbindung des Stylesheets und des Skripts
 > - jetzt wieder in der Reihenfolge von 1 bis 4 werden die zuvor konzipierten Aktivitäten implementiert.
 
