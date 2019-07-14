@@ -106,6 +106,10 @@ console.log(v);
 `v` ist vom Typ `number` und es soll das Ergebnis der Addition einer Zeichenkette und einer Zahl (dem aktuellen Wert von `v`) zugewiesen werden.
 - [x] Warum funktioniert das nicht, und warum hat so etwas ähnliches vorhin funktioniert, als `v` mit `"1"` definiert wurde?
 
+## Komplexe Datentypen
+...
+### Werte vs. Referenzen
+...
 ## Fehlertypen
 Du hast nun schon ganz unterschiedliche Fehler kennen gelernt. Die korrekte Benennung dieser hilft anderen dabei, dir zu helfen. Ein wichtiges Unterscheidungskriterium ist dabei der Zeitpunkt, zu dem der Fehler erkannt wird.
 ### Runtime Error
