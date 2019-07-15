@@ -125,8 +125,8 @@ Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Da
 |-
 |Dreigeteilt 
 |1. groß die Skizze, die von Hand gezeichnet wird, 
-|1. klein das Use-Case-Diagramm
-|2. klein Jirkas sprechender Kopf  
+|2. klein das Use-Case-Diagramm
+|3. klein Jirkas sprechender Kopf  
 
 > Inhalt:  
 > - Überschrift (h1)
@@ -165,21 +165,41 @@ Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implement
 |-
 |Dreigeteilt 
 |1. groß das Programm, das gerade getippt wird
-|1. klein das Aktivitäts-Diagramm
-|2. klein Jirkas sprechender Kopf  
+|2. klein das Aktivitäts-Diagramm
+|3. klein Jirkas sprechender Kopf  
 
 > Inhalt:
 > - HTML-Datei ist bereits angelegt, die statischen Elemente vorhanden, ebenso die Einbindung des Stylesheets und des Skripts
 > - jetzt wieder in der Reihenfolge von 1 bis 4 werden die zuvor konzipierten Aktivitäten implementiert.
 
 ## Testing
-Während der Implementation wird das Programm immer wieder getestet. Es ist wichtig möglichst so zu implementieren, dass nicht erst ein abschließender Test Fehler zu Tage fördert, sondern dass immer lauffähige Zwischenstände existieren, die entsprechend in das Code-Repository aufgenommen werden.
+Während der Implementation wird das Programm immer wieder getestet. Es ist wichtig möglichst so zu implementieren, dass nicht erst ein abschließender Test Fehler zu Tage fördert, sondern dass immer lauffähige Zwischenstände existieren, die entsprechend in das Code-Repository aufgenommen werden.  
+
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. das Blackmailer-Programm und offener Entwicklerbereich
+|2. klein Jirkas sprechender Kopf  
+
+> Inhalt:
+> - Breakpoints setzen um das Programm zu verfolgen
+> - Dabei fällt auf, dass nach deleteLetter noch placeLetter aufgerufen wird 
+> - Varianten der Lösung des Problems besprechen
+>   1. stopPropagation in deleteLetter
+>   2. Abfrage target==currentTarget in placeLetter
+>   3. gleich auf die Installation des Listeners an den Letters verzichten und stattdessen ein handleClickOnMail mit Fallunterscheidung bauen.
+> - weiteres mögliches Problem besprechen: Verschachtelung in Letters
+>   - Lösung: currentTarget löschen
 
 ## Iterative Arbeitsweise
 Bedenke, dass Du die Konzeption jederzeit verbessern kannst und solltest, wenn dir auffällt, dass etwas fehlt oder nicht funktioniert. Dasselbe gilt für alle vorangegangenen Schritte. So können Überlegungen beim Zeichnen der Skizze zurück auf das Use-Case-Diagramm reflektieren, oder Erkenntnisse bei der Implementation die Änderung der Skizze nach sich ziehen, was dann wiederum die Aktivitätsdiagramme beeinflusst. Es ist unwahrscheinlich, dass der erste konzeptionelle Ansatz sich unverändert durchführen lässt und zur perfekten Anwendung führt. 
 > **Achtung:** Was Du auf keinen Fall machen darfst, ist auf der letzten Stufe, der Implementation, gravierende Änderungen vorzunehmen, ohne zuvor die Konzeption neu aufbereitet zu haben. Diese vorgehensweise führt mit großer Sicherheit zum **Misserfolg!**
 
 ## Übung
+Löse zunächst das Problem mit dem erneuten Aufruf von placeLetter nach deleteLetter
+- experimentiere erst mit dem Lösungsoptionen 1 und 2. 
+- Plane dann Lösung 3 und implementiere sie.  
+
 Erweitere die Erpresserbrief-App so dass sie auch auf Smartphone anwendbar ist
 - In einem weiteren Bereich sollen alle zulässigen Buchstaben zur Auswahl bereit stehen, so dass man sie per Touch aktivieren kann
 - Der aktuell ausgewählte Buchstabe soll in dieser Auswahl hervorgehoben erscheinen, so dass der Nutzer weiß, was er gewählt hat, bevor er den Brief ändert
