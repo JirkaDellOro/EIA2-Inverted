@@ -16,12 +16,12 @@ var L03_FormElements;
         let target = _event.target;
         console.log();
         if (_event.type == "change")
-            console.warn("Change - " + target.name + " : " + target.value, _event);
+            console.warn("Change: " + target.name + " = " + target.value, _event);
         else
-            console.log("Input - " + target.name + " : " + target.value, _event);
+            console.log("Input: " + target.name + " = " + target.value, _event);
         // Handling checkbox
         if (target.type == "checkbox")
-            console.log("Changed " + target.name + " to " + target.checked);
+            console.log("Checked: " + target.name + " = " + target.checked);
         // Slider response
         if (target.name == "Slider") {
             let progress = document.getElementsByTagName("progress")[0];

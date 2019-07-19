@@ -34,18 +34,37 @@ Häufig soll der Nutzer auch zwischen verschiedenen Möglichkeiten auswählen, o
 ### Datalist
 Hiermit kann einem Textfeld eine Liste von vordefinierten Einträgen zugewiesen werden. Der Nutzer kann per Zeigerinteraktion einen solchen Eintrag auswählen oder durch Eintippen auf der Tastatur die Auswahl einschränken. Er kann aber immer noch auch Freitext eingeben und die Auswahl ignorieren. Die Kopplung von `input` und `datalist` geschieht durch die Attribute `list` und respektive `id`.  
 
-### Radiobuttons
+### Radiobutton
 Beispiel: <input type="radio" name="radio"><input type="radio" name="radio" checked><input type="radio" name="radio">  
 Dieser Typ ist speziell für Single-Choice-Auswahlen gemacht. Alle `input`-Elemente des Typs `radio`, welche den gleichen Wert im Attribut `name` tragen, werden als Gruppe behandelt. Nur ein Element der Gruppe kann markiert sein.  
 
-### Checkboxes
+### Checkbox
 Beispiel: <input type="checkbox"><input type="checkbox" checked><input type="checkbox" id="c3">  
-Mit `input`-Elementen des Typs `checkbox` werden dagegen klassischerweise Multiple-Choice-Auswahlen dargestellt. 
+Mit `input`-Elementen des Typs `checkbox` werden dagegen klassischerweise Multiple-Choice-Auswahlen dargestellt.  
 
-- Input Text, different types
-- Radiobutton, Checkbox
+> **Achtung:** Radiobuttons und Checkboxes beziehen sich in der Regel auf einen nebenstehenden Text. Für den Nutzer ist es sehr ärgerlich, wenn diese Beziehung nicht auch zur Unterstützung der Interaktion genutzt wird, er also nicht auf den Text klicken kann um zu interagieren. Dabei ist es äußerst einfach dies zu berücksichtigen, der Text muss lediglich von einem `label`-Tag umschlossen sein. Die Kopplung von `label`- und `input`-Element geschieht dann einfach mit Hilfe der Attribute `for` und `id`. Dies sollte **immer** implementiert werden!  
+
+### Select
+Beispiel: <select name="Select" id="select">
+<option value="option1">1.</option>
+<option value="option2" selected>2.</option>
+<option value="option2" selected>3.</option>
+</select>  
+
+Am mächtigsten ist das `select`-Element, auch 'Dropdown-Menü' oder 'ComboBox' genannt. Auf engem Raum kann eine vordefinierte Auswahl an Optionen als Single- oder auch Multiple-Choice Auswahl angeboten werden. Dabei können sogar noch Untergruppierungen vorgenommen werden.  
+
+## Übungen
+- [x] Aktiviere nun das zweite Fieldset, es trägt die id="fsSelection". Experimentiere im Browser mit den Selektions-Elementen.
+- [x] Beobachte in der Konsole genau die Zuordnung von Elementname und Wert. Was fällt dir auf? Wo kommen die Werte her? Vergleiche mit den Texteingaben.
+- [x] Aktiviere nun im Skript den Code zu "// Handling checkbox". Warum ist dieser Code hier, was ist dessen Sinn? Beobachte die Ausgabe in der Browserkonsole.
+- [x] Ergänze das `select`-Tag um das 'wertlose' Attribut `multiple`. Wähle nun im Browser dort bei gedrückter Ctrl- oder Shift-Taste mehrere Optionen. Beobachte erneut die Ausgabe und halte deine Beobachtung fest.
+
+## Weitere Elemente
+
+
+
+
 - Slider, Stepper
-- Select, Datalist
 - Output
 - Name 
 - Change- & Input-Event
