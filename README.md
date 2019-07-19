@@ -46,13 +46,6 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Propagation (Phases)
 - Targets
 - Pointer, Keyboard, Window
-- this-binding, Arrow-Function
-- Drag&Drop
-  - mark element as draggable
-  - set dataTransfer-object on dragstart
-  - event-information is saved and accessible on drop
-  - allow drop on element, preventDefault on dragover
-  - get dataTransfer-object on drop and process
   
 ### [L03_FormElements](L03_FormElements)
 - Input Text, different types
@@ -61,11 +54,13 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Select, Datalist
 - Output
 - Name 
-- Iteration on Elements
 - Change- & Input-Event
 - Attributes without value
   - multiple for select
   - checked for checkbox
+- Iteration on Elements
+- FormData-Object
+- Process values locally
   
 ### [L04_CreateFormFromDataFile](L04_CreateFormFromDataFile)
 - Interfaces
@@ -159,3 +154,10 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Exceptions
 - Enums
 - Generics
+- this-binding, Arrow-Function
+- Drag&Drop
+  - mark element as draggable
+  - set dataTransfer-object on dragstart
+  - event-information is saved and accessible on drop
+  - allow drop on element, preventDefault on dragover
+  - get dataTransfer-object on drop and process

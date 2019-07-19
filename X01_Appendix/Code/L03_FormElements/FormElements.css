@@ -1,0 +1,38 @@
+* {
+	display: block;
+}
+body {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%
+}
+input[type="radio"], input[type="checkbox"], label {
+	display: inline;
+}
+label::after {
+	content:"";
+	display: block;
+}
+head {
+	display: none;
+}
+input:invalid {
+	background: #F0C060;
+}
+input:valid {
+	background: white;
+}
+input:required {
+	background: #aaaaaa;
+}
+fieldset {
+	width: auto;
+}
+button, option {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+textarea {
+	width: 100%;
+}
