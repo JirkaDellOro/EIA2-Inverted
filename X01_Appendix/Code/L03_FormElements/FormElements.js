@@ -5,6 +5,7 @@ var L03_FormElements;
     function init(_event) {
         console.log("Init");
         let fieldsets = document.querySelectorAll("fieldset");
+        // Install listeners on fieldsets
         for (let i = 0; i < fieldsets.length; i++) {
             let fieldset = fieldsets[i];
             fieldset.addEventListener("change", handleChange);
@@ -19,8 +20,7 @@ var L03_FormElements;
         else
             console.log("Input - " + target.name + " : " + target.value, _event);
         // Handling checkbox
-        let currentTarget = _event.target;
-        if (currentTarget.id == "checkbox")
+        if (target.type == "checkbox")
             console.log("Changed " + target.name + " to " + target.checked);
         // Slider response
         if (target.name == "Slider") {
@@ -31,6 +31,11 @@ var L03_FormElements;
         if (target.name == "Stepper") {
             let meter = document.querySelector("meter");
             meter.value = parseFloat(target.value);
+        }
+        // Color response
+        if (target.name == "Color") {
+            let ouput = document.querySelector("output");
+            ouput.value = target.value;
         }
     }
 })(L03_FormElements || (L03_FormElements = {}));

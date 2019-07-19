@@ -5,6 +5,7 @@ namespace L03_FormElements {
         console.log("Init");
         let fieldsets: NodeListOf<HTMLFieldSetElement> = document.querySelectorAll("fieldset");
 
+        // Install listeners on fieldsets
         for (let i: number = 0; i < fieldsets.length; i++) {
             let fieldset: HTMLFieldSetElement = fieldsets[i];
             fieldset.addEventListener("change", handleChange);
@@ -21,8 +22,7 @@ namespace L03_FormElements {
             console.log("Input - " + target.name + " : " + target.value, _event);
 
         // Handling checkbox
-        let currentTarget: HTMLFieldSetElement = <HTMLFieldSetElement>_event.target;
-        if (currentTarget.id == "checkbox")
+        if (target.type == "checkbox")
             console.log("Changed " + target.name + " to " + target.checked);
 
         // Slider response
@@ -35,6 +35,12 @@ namespace L03_FormElements {
         if (target.name == "Stepper") {
             let meter: HTMLMeterElement = <HTMLMeterElement>document.querySelector("meter");
             meter.value = parseFloat(target.value);
+        }
+
+        // Color response
+        if (target.name == "Color") {
+            let ouput: HTMLOutputElement = <HTMLOutputElement>document.querySelector("output");
+            ouput.value = target.value;
         }
     }
 }
