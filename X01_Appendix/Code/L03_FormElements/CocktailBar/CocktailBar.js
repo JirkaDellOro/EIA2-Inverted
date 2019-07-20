@@ -8,18 +8,28 @@ var L03_CocktailBar;
         let slider = document.querySelector("input#amount");
         form.addEventListener("change", handleChange);
         slider.addEventListener("input", displayAmount);
+        displayOrder();
     }
     function handleChange(_event) {
         displayOrder();
     }
     function displayOrder() {
-        let inputs = document.querySelectorAll("input");
-        console.log(inputs);
+        // let inputs: NodeListOf<HTMLInputElement> = document.querySelectorAll("input");
+        // console.log(inputs);
+        let order = document.querySelector("div#order");
+        order.innerHTML = "";
         let formData = new FormData(document.querySelector("form"));
-        console.log(formData);
-        for (let whatever of formData)
-            console.log(whatever);
-        console.log(formData.get("Amount"));
+        console.group("Order");
+        for (let entry of formData) {
+            console.log(entry);
+            let element = document.getElementsByName(entry[0])[0];
+            displayOrderRow(order, entry[1].toString());
+            console.log(element);
+        }
+        console.groupEnd();
+    }
+    function displayOrderRow(_element, _item, _price) {
+        _element.innerHTML += _item + "<br>";
     }
     function displayAmount(_event) {
         let progress = document.querySelector("progress");

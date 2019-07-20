@@ -14,48 +14,50 @@
 		<p>Choose a drink and the extras. Select the size of your cocktail. Verify your order on the right.</p>
 	</header>
 
-	<form>
+	<form action="" method="get">
 		<div id="form">
 			<h2>Choose here</h2>
 			<fieldset>
 				<legend>Drink</legend>
 				<select name="Drink" id="">
 					<option value="Mojito">Mojito</option>
-					<option value="Caipirina">Caipirina</option>
+					<option value="Caipirinha">Caipirinha</option>
 					<option value="Bloody Mary">Bloody Mary</option>
 				</select>
 			</fieldset>
 			<fieldset>
 				<legend>Container</legend>
-				<input type="radio" name="Container" id="slimtall" value="slimtall" />
+				<input type="radio" name="Container" id="slimtall" value="Slim&Tall" checked/>
 				<label for="slimtall">Slim&Tall</label>
-				<input type="radio" name="Container" id="wideshort" value="wideshort" />
+				<input type="radio" name="Container" id="wideshort" value="Wide&Short" />
 				<label for="wideshort">Wide&Short</label>
-				<input type="radio" name="Container" id="stem" value="stem" />
+				<input type="radio" name="Container" id="stem" value="with Stem" />
 				<label for="stem">with Stem</label>
 			</fieldset>
 			<fieldset>
 				<legend>Extras</legend>
-				<input type="checkbox" name="Ice" id="ice">
+				<input type="checkbox" name="Extra" id="ice" value="Ice">
 				<label for="ice">Ice</label>
-				<input type="checkbox" name="Lemon" id="lemon">
+				<input type="checkbox" name="Extra" id="lemon" value="Lemon">
 				<label for="lemon">Lemon</label>
-				<input type="checkbox" name="Orange" id="orange">
+				<input type="checkbox" name="Extra" id="orange" value="Orange">
 				<label for="orange">Orange</label>
-				<input type="checkbox" name="Mint" id="mint">
+				<input type="checkbox" name="Extra" id="mint" value="Mint">
 				<label for="mint">Mint</label>
 			</fieldset>
 			<fieldset>
 				<legend>Amount</legend>
 				<span id="slider">
 					<span>
-						0.1 L <input type="range" name="Amount" id="amount" min="0.1" max="1.0" step="0.1" value="0.1">
+						0.1 L
+						<input type="range" name="Amount" id="amount" min="0.1" max="1.0" step="0.1" value="0.1">
 						1.0 L
 					</span>
 					<progress max="1.0" value="0.1" />
 				</span>
 			</fieldset>
 		</div>
+		<button type="submit">Submit</button>
 	</form>
 
 	<div>
@@ -64,6 +66,7 @@
 			...
 		</div>
 	</div>
+
 </body>
 
 </html>
