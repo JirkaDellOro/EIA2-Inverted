@@ -72,15 +72,18 @@ Es gibt zudem noch ein paar standardisierte Elemente, welche dem Nutzer Rückmel
 - [x] Aktiviere auch die letzten Codefragmente. Erkläre, wie die Ausgabeelemente angesteuert werden.
 
 # Konzeption und Implementation einer formulargesteuerten Anwendung
+<figure> 
+<figcaption align="right"><small>Bildquelle: <a href="https://www.parkhotel-waldeck.de/cocktailbar">https://www.parkhotel-waldeck.de/cocktailbar</a></small></figcaption>
 <img src="Material/Cocktail.jpg" width="20%" align="right">  
+</figure>
 
-Wie oft sitzt man nicht abends zuhause und wünscht sich einen richtig leckeren Cocktail. Aber die Zutaten fehlen, es ist zu aufwendig damit anzufangen und raus will man auch nicht mehr? Da drängt sich doch die nächste geniale Geschäftsidee auf: die **Online-Cocktailbar!**  
+Wie oft sitzt man nicht abends zuhause und wünscht sich einen richtig leckeren Cocktail. Aber die Zutaten fehlen, es ist zu aufwendig damit anzufangen und raus will man auch nicht mehr? Da drängt sich doch die nächste geniale Geschäftsidee auf:  
+die **Online-Cocktailbar!**  
 
-Kunden können hier mit Hilfe eines Webformulars spontan einen Cocktail bestellen, der Ihnen wenige Tage später per Post nach Hause geliefert wird.
-<figcaption><small>Bildquelle: <a href="https://www.parkhotel-waldeck.de/cocktailbar">https://www.parkhotel-waldeck.de/cocktailbar</a></small></figcaption>
+Kunden können hier mit Hilfe eines Webformulars spontan einen Cocktail bestellen, der Ihnen wenige Tage später per Post nach Hause geliefert wird. 
 
 ## Anwendungsfalldiagramm (Use-Case-Diagram)
-Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Überblick über die Anforderungen an deine Anwendung. Das geht ganz schnell und hilft ungemein bei der Konzeption.  
+Zeichne wieder ganz schnell ein kleines Anwendungsfalldiagramm. Versuche es selbst, bevor Du dir das Video anschaust.  
 
 |Hier erscheint jetzt ein Video|
 |-
@@ -90,12 +93,12 @@ Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Über
 
 >Inhalt: die Erstellung des Diagramms mit den Anwendungsfällen  
 > - Anwendung starten
-> - Buchstabe wählen
-> - Buchstabe positionieren
-> - Buchstabe löschen.
+> - Cocktail zusammenstellen
+>   - Folgefall: aktuellen Zustand anzeigen
+> - Bestellung prüfen
 
-## Skizze: User Interface 
-Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Das wird schon einiges über die erforderliche darunterliegende Struktur verraten. Die Skizze versiehst Du schon mit den HTML-Auszeichnungen und Eigenschaften, die dir dabei sinnvoll erscheinen. Unterscheide dabei zwischen statischen und dynamischen Elementen und Eigenschaften. Für die Dynamik trägst Du hier schon ein, an welchen Elementen Listener installiert werden soll und welche Ereignisse dabei mit welchen Aktivitäten verknüpft werden. Prüfe, ob alle Interaktionsmöglichkeiten zur Realisierung der Anwendungsfälle gegeben sind.
+## Skizze: User-Interface 
+Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und überlege, welche Tags, Attribute und Listener Du brauchst. Investiere ein wenig Zeit um selbst einen ersten Entwurf zu gestalten, bevor Du das Video anschaust.
 
 |Hier erscheint jetzt ein Video|
 |-
@@ -107,13 +110,14 @@ Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Da
 > Inhalt:  
 > - Überschrift (h1)
 > - Ein Feld mit Handlungsanweisung (p)
-> - ein Feld mit Rahmen für den Brief (div, click-event-listener zum Platzieren)
-> - mehrere Buchstaben mit Rahmen (span, click-event-listener zum Löschen)
-> - das umschließende document (document, keydown-listener zur Buchstabenauswahl)
+> - links ein Feld mit den Formularelementen
+    - erhält change-Listener
+>   - als kleines Gimmick ein Slider für die Füllmenge und einen gedrehten Progressbar zur Anzeige derselben.
+>      - erhält input-Listener
+> - rechts ein Feld mit der Zusammenfassung
 
 ## Aktivitätsdiagramme
-Jetzt hast Du bereits aus der Sicht des Nutzers die wesentlichen Aktivitäten, die beteiligten Elemente und die auszuwerteten Ereignisse festgehalten. Nun wechselst Du auf die Sicht aus dem System heraus und legst fest, wie es arbeiten soll. Dazu nutzt Du jetzt Aktivitätsdiagramme. Ein Event bildet dabei jeweils als Signalempfang einen Startknoten für eine Aktivität.  
-Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm dir dann nacheinander die einzelnen Aktivitäten vor und verfeinere sie. Wiederhole diesen Prozess, bis Du zu den atomaren Aktionen gekommen bist die sich in Programmanweisungen umsetzen lassen. Am Anfang musst Du hierzu wahrscheinlich nach diesen Anweisungen noch etwas recherchieren.  
+Nun ist schon grob konzipiert, was geschehen soll und wie sich das darstellt. Entwickle nun wieder ein Aktivitätsdiagramm mit dessen Hilfe Du festlegst, wie das Ganze funktioniert. Beginne wieder mit den Ereignissen und arbeite dich vom Groben ins Feine. Mach' dir am Anfang also noch nicht zu viele Gedanken über Details, sondern zerlege große Probleme in kleinere. Versuche es selbst, bevor Du das Video anschaust.
 
 |Hier erscheint jetzt ein Video|
 |-
@@ -123,19 +127,19 @@ Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm
 |3. klein Jirkas sprechender Kopf  
 
 > Inhalt:  
-> - die vier Signalempfange im Hauptprogramm bilden Startpunkte: 1. Load von Window, 2. Keydown auf Document, 3. Klick auf Brief, 4. Klick auf Buchstabe
-> - Beginn mit 4. Klick -> deleteLetter (kurze Recherche führt zu removeChild)
-> - Dann 3. Klick -> placeLetter, hierfür werden Position und der Buchstabe gebraucht
->   - Zur Position die Angaben im MouseEvent untersuchen
->   - der gewählte Buchstabe muss irgendwo gespeichert sein
->   - am Buchstaben Listener für deleteLetter installieren
-> - Dann 2. Keydown -> chooseLetter (kurze Recherche führt zu key im KeyEvent)
->   - gewählten Buchstaben in einer globalen Variable im Hauptprogramm speichern
-> - Dann 1. die Listener installieren am Document und dem Brief
-> - Schließlich das Hauptprogramm, hier lediglich die Variable `chosen` anlegen und den load-Listener installieren.
+> - die drei Signalempfange im Hauptprogramm bilden Startpunkte: 1. Load von Window, 2. Änderung im Formular, 3. Input am Slider
+> - Beginn handleLoad, hier werden lediglich die anderen Listener installiert.
+> - Dann 3. Input am Slider, wurde bereits in der Lektion genau so gemacht.
+> - Dann 2. Formularänderung
+>   - mögliche Strategien diskutieren
+>     1. Events auswerten und eine Datenstruktur parallel halten
+>     2. Bei jeder Änderung alte Bestellung verwerfen und komplett neu aus Formularzuständen aufbauen
+>   - Strategie 2 wird verfolgt: viel simpler, leicht erweiterbar, Performance irrelevant
+>   - Event ist dann irrelevant -> allgemeine Funktion displayOrder entwerfen, die von Eventhandler aufgerufen wird
+> - Schließlich das Hauptprogramm, hier wird lediglich der load-Listener installiert
 
 ## Implementation
-Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implementation der Anwendung berücksichtigt zu haben, kannst Du dich daran machen. 
+Versuche dich nun an der Implementation. Schaue dir das Video spätestens an, wenn Du dich an die Zusammenfassung der Bestellung machst. Hier gibt es noch einige Tipps.
 
 |Hier erscheint jetzt ein Video|
 |-
@@ -145,31 +149,24 @@ Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implement
 |3. klein Jirkas sprechender Kopf  
 
 > Inhalt:
-> - HTML-Datei ist bereits angelegt, die statischen Elemente vorhanden, ebenso die Einbindung des Stylesheets und des Skripts
-> - jetzt wieder in der Reihenfolge von 1 bis 4 werden die zuvor konzipierten Aktivitäten implementiert.
+> - handleLoad, handleChange und displayAmount sind trivial und werden recht schnell weggetippt.
+> - in displayOrder werden verschiedene Ansätze diskutiert
+>   1. Abfrage der Formularelemente unter Verwendung der bekannten Namen -> unflexibel
+>   2. alle input-Elemente ermitteln und verarbeiten. Ausgabe zeigt, dass die Information ungünstig ist
+>      - Radiobuttons sind nicht exklusiv
+>      - Checkboxen können nicht direkt ausgewertet werden
+>      - select-Element fehlt ganz
+> - Recherche erforderlich!
 
-## Testing
-Während der Implementation wird das Programm immer wieder getestet. Es ist wichtig möglichst so zu implementieren, dass nicht erst ein abschließender Test Fehler zu Tage fördert, sondern dass immer lauffähige Zwischenstände existieren, die entsprechend in das Code-Repository aufgenommen werden.  
-
+# FormData
+Javascript stellt einen einfache Mechanismus zur Verfügung um Formularelemente automatisch auszuwerten und auf die Ergebnisse zuzugreifen
+## Name-Attribut
+## for-of-loop
+## Implementation
 |Hier erscheint jetzt ein Video|
 |-
-|Zweigeteilt 
-|1. das Blackmailer-Programm und offener Entwicklerbereich
-|2. klein Jirkas sprechender Kopf  
+|Dreigeteilt 
+|1. groß das Programm, das gerade getippt wird
+|2. klein das Aktivitäts-Diagramm
+|3. klein Jirkas sprechender Kopf  
 
-> Inhalt:
-> - Breakpoints setzen um das Programm zu verfolgen
-> - Dabei fällt auf, dass nach deleteLetter noch placeLetter aufgerufen wird 
-> - Varianten der Lösung des Problems besprechen
->   1. stopPropagation in deleteLetter
->   2. Abfrage target==currentTarget in placeLetter
->   3. gleich auf die Installation des Listeners an den Letters verzichten und stattdessen ein handleClickOnMail mit Fallunterscheidung bauen.
-> - weiteres mögliches Problem besprechen: Verschachtelung in Letters
->   - Lösung: currentTarget löschen
-
-
-
-- Name 
-- Iteration on Elements
-- FormData-Object
-- Process values locally
