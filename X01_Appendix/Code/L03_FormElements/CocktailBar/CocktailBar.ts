@@ -1,46 +1,34 @@
 namespace L03_CocktailBar {
-    window.addEventListener("load", init);
+    window.addEventListener("load", handleLoad);
 
-    function init(_event: Event): void {
+    function handleLoad(_event: Event): void {
         console.log("Init");
-        let fieldsets: NodeListOf<HTMLFieldSetElement> = document.querySelectorAll("fieldset");
+        let form: HTMLDivElement = <HTMLDivElement>document.querySelector("div#form");
+        let slider: HTMLInputElement = <HTMLInputElement>document.querySelector("input#amount");
 
-        // Install listeners on fieldsets
-        for (let i: number = 0; i < fieldsets.length; i++) {
-            let fieldset: HTMLFieldSetElement = fieldsets[i];
-            fieldset.addEventListener("change", handleChange);
-            fieldset.addEventListener("input", handleChange);
-        }
+        form.addEventListener("change", handleChange);
+        slider.addEventListener("input", displayAmount);
     }
 
     function handleChange(_event: Event): void {
-        let target: HTMLInputElement = <HTMLInputElement>_event.target;
-        console.log();
-        if (_event.type == "change")
-            console.warn("Change: " + target.name + " = " + target.value, _event);
-        else
-            console.log("Input: " + target.name + " = " + target.value, _event);
+        displayOrder();
+    }
 
-        // Handling checkbox
-        if (target.type == "checkbox")
-            console.log("Checked: " + target.name + " = " + target.checked);
+    function displayOrder(): void {
+        let inputs: NodeListOf<HTMLInputElement> = document.querySelectorAll("input");
+        console.log(inputs);
 
-        // Slider response
-        // if (target.name == "Slider") {
-        //     let progress: HTMLProgressElement = <HTMLProgressElement>document.getElementsByTagName("progress")[0];
-        //     progress.value = parseFloat(target.value);
-        // }
+        let formData: FormData = new FormData(<HTMLFormElement>document.querySelector("form"));
+        console.log(formData);
+        for (let whatever of formData)
+            console.log(whatever);
 
-        // Meter response
-        // if (target.name == "Stepper") {
-        //     let meter: HTMLMeterElement = <HTMLMeterElement>document.querySelector("meter");
-        //     meter.value = parseFloat(target.value);
-        // }
+        console.log(formData.get("Amount"));
+    }
 
-        // Color response
-        // if (target.name == "Color") {
-        //     let ouput: HTMLOutputElement = <HTMLOutputElement>document.querySelector("output");
-        //     ouput.value = target.value;
-        // }
+    function displayAmount(_event: Event): void {
+        let progress: HTMLProgressElement = <HTMLProgressElement>document.querySelector("progress");
+        let amount: string = (<HTMLInputElement>_event.target).value;
+        progress.value = parseFloat(amount);
     }
 }
