@@ -23,20 +23,20 @@ var L03_FormElements;
         if (target.type == "checkbox")
             console.log("Checked: " + target.name + " = " + target.checked);
         // Slider response
-        if (target.name == "Slider") {
-            let progress = document.getElementsByTagName("progress")[0];
-            progress.value = parseFloat(target.value);
-        }
+        // if (target.name == "Slider") {
+        //     let progress: HTMLProgressElement = <HTMLProgressElement>document.getElementsByTagName("progress")[0];
+        //     progress.value = parseFloat(target.value);
+        // }
         // Meter response
-        if (target.name == "Stepper") {
-            let meter = document.querySelector("meter");
-            meter.value = parseFloat(target.value);
-        }
+        // if (target.name == "Stepper") {
+        //     let meter: HTMLMeterElement = <HTMLMeterElement>document.querySelector("meter");
+        //     meter.value = parseFloat(target.value);
+        // }
         // Color response
-        if (target.name == "Color") {
-            let ouput = document.querySelector("output");
-            ouput.value = target.value;
-        }
+        // if (target.name == "Color") {
+        //     let ouput: HTMLOutputElement = <HTMLOutputElement>document.querySelector("output");
+        //     ouput.value = target.value;
+        // }
     }
 })(L03_FormElements || (L03_FormElements = {}));
 //# sourceMappingURL=FormElements.js.map
