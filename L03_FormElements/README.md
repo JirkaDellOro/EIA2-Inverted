@@ -69,13 +69,12 @@ Es gibt noch einige Eingabeelemente, die sich gänzlich anders verhalten. Ihre g
 Es gibt zudem noch ein paar standardisierte Elemente, welche dem Nutzer Rückmeldung geben. Sie dienen also der Interaktion des Systems mit dem Nutzer.
 
 - [x] Aktiviere das letzte Fieldset, es hat die `id` "fsOutput". 
-- [x] Aktiviere auch die letzten Codefragmente. Erkläre, wie die Ausgabeelemente angesteuert werden.
+- [x] Aktiviere auch die letzten Codefragmente. Erkläre, wie die Ausgabeelemente angesteuert werden.  
 
-# Konzeption und Implementation einer formulargesteuerten Anwendung
-<figure> 
+# Konzeption und Implementation einer formulargesteuerten Anwendung  
+
 <figcaption align="right"><small>Bildquelle: <a href="https://www.parkhotel-waldeck.de/cocktailbar">https://www.parkhotel-waldeck.de/cocktailbar</a></small></figcaption>
-<img src="Material/Cocktail.jpg" width="20%" align="right">  
-</figure>
+<img src="Material/Cocktail.jpg" width="20%" align="right">
 
 Wie oft sitzt man nicht abends zuhause und wünscht sich einen richtig leckeren Cocktail. Aber die Zutaten fehlen, es ist zu aufwendig damit anzufangen und raus will man auch nicht mehr? Da drängt sich doch die nächste geniale Geschäftsidee auf:  
 die **Online-Cocktailbar!**  
@@ -95,7 +94,7 @@ Zeichne wieder ganz schnell ein kleines Anwendungsfalldiagramm. Versuche es selb
 > - Anwendung starten
 > - Cocktail zusammenstellen
 >   - Folgefall: aktuellen Zustand anzeigen
-> - Bestellung prüfen
+> - Bestellung prüfen  
 
 ## Skizze: User-Interface 
 Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und überlege, welche Tags, Attribute und Listener Du brauchst. Investiere ein wenig Zeit um selbst einen ersten Entwurf zu gestalten, bevor Du das Video anschaust.
