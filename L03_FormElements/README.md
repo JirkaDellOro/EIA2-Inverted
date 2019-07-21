@@ -158,9 +158,35 @@ Versuche dich nun an der Implementation. Schaue dir das Video spätestens an, we
 > - Recherche erforderlich!
 
 # FormData
-Javascript stellt einen einfache Mechanismus zur Verfügung um Formularelemente automatisch auszuwerten und auf die Ergebnisse zuzugreifen
-## Name-Attribut
-## for-of-loop
+Javascript stellt einen einfachen Mechanismus zur Verfügung um Formularelemente automatisch auszuwerten und auf die Ergebnisse zuzugreifen. Hierzu müssen die Formularelemente in der DOM-Laufzeithierarchie einem `form`-Element untergeordnet sein. Wird bei der Erzeugung eines Objekts des Typs `FormData` nun ein Verweis auf auf dieses `form`-Element übergeben, so werden die Werte der `name`- und `value`-Attribute als Schlüssel-Werte-Paare zur Verfügung gestellt.
+```typescript
+let formData: FormData = new FormData(document.forms[0]);
+```
+Das `document`-Objekt stellt bereits bequem eine Liste aller untergeordneten `form`-Elemente zur Verfügung. In obigem Beispiel wird also das erste Formular des Dokuments ausgewertet.
+
+## `name`-Attribut
+Bislang hatte das `name`-Attribut nur für die Gruppierung von Radiobuttons eine Rolle gespielt. Tatsächlich stellt es aber für die automatische Auswertung von Formularen das maßgebliche Zuordnungskriterium dar. 
+> **Achtung:** nicht das Attribut `id` ist für Formularelemente ausschlaggebend, sondern `name`  
+
+Zu beachten ist auch, dass das `name`-Attribut, anders als `id` nicht eindeutig sein muss. Bei der Auswertung kann derselbe Name also mehrfach als Schlüssel auftauchen und jeweils unterschiedliche Werte tragen.  
+
+## Auslesen
+### `get(...)`
+Bei eindeutigen und bekannten Namen lassen sich die Werte der `value`-Attribute mit Hilfe der Objektmethode `get(...)` wie bei einem assoziativen Array auslesen. Zum Beispiel so:
+```typescript
+console.log(formData.get("Drink"));
+```
+### `entries()`
+Da aber die Namen nicht zwingend eindeutig sind und sie auch nicht unbedingt im Code reproduziert werden sollen, ist es häufig sinnvoll, über alle Einträge im FormData-Objekt zu iterieren.
+Die Objektmethode `entries()` eines FormData-Objektes liefert alle gefundenen Schlüssel-Werte-Paare. Mit einer `for..of`-Schleife können diese bequem nacheinander behandelt werden:
+```typescript
+for (let entry of formData) {
+    console.log(entry);
+    console.log("name: " + entry[0]);
+    console.log("value: " + entry[1]);
+```
+Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0 ein String mit dem der Wert des `name`-Attributs des ursprünglichen Form-Elements, und an Stelle 1 den entsprechenden Wert des `value`-Attributs. Letzterer ist hier vom Typ `FormDataEntryValue`, eine etwas besondere Zeichenkette, und muss gegebenenfall konvertiert werden.  
+
 ## Implementation  
 
 |Hier erscheint jetzt ein Video|
@@ -171,4 +197,5 @@ Javascript stellt einen einfache Mechanismus zur Verfügung um Formularelemente 
 |3. klein Jirkas sprechender Kopf  
 
 > Inhalt:
+> - Das Formular mit `form`-Tag umschließen
 > - Finale Implementation von displayOrder mit FormData
