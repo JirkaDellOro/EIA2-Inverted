@@ -1,7 +1,9 @@
-import * as Http from "http";
-import * as Url from "url";
-var L07_ReceiveResponse;
-(function (L07_ReceiveResponse) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Http = require("http");
+const Url = require("url");
+var L06_ReceiveResponse;
+(function (L06_ReceiveResponse) {
     console.log("Starting server");
     let port = process.env.PORT;
     if (port == undefined)
@@ -17,12 +19,14 @@ var L07_ReceiveResponse;
         console.log("I hear voices!");
         _response.setHeader("content-type", "text/html; charset=utf-8");
         _response.setHeader("Access-Control-Allow-Origin", "*");
-        let url = Url.parse(_request.url, true);
-        for (let key in url.query)
-            _response.write(key + ":" + url.query[key] + "<br/>");
-        //        let jsonString: string = JSON.stringify(url.query);
-        //        _response.write(jsonString);
+        if (_request.url) {
+            let url = Url.parse(_request.url, true);
+            for (let key in url.query)
+                _response.write(key + ":" + url.query[key] + "[" + typeof (url.query[key]) + "]<br/>");
+            let jsonString = JSON.stringify(url.query);
+            _response.write(jsonString);
+        }
         _response.end();
     }
-})(L07_ReceiveResponse || (L07_ReceiveResponse = {}));
+})(L06_ReceiveResponse || (L06_ReceiveResponse = {}));
 //# sourceMappingURL=Server.js.map

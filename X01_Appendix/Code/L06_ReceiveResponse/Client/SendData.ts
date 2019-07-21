@@ -1,4 +1,4 @@
-namespace L07_ReceiveResponse {
+namespace L06_ReceiveResponse {
     window.addEventListener("load", init);
     let address: string = "http://localhost:8100";
     //let address: string = "https://eia2-nodetest.herokuapp.com";
@@ -9,7 +9,7 @@ namespace L07_ReceiveResponse {
     }
 
     function setupAsyncForm(): void {
-        let button: Element = document.querySelector("[type=button]");
+        let button: HTMLButtonElement = <HTMLButtonElement>document.querySelector("[type=button]");
         button.addEventListener("click", handleClickOnAsync);
     }
 
@@ -25,7 +25,7 @@ namespace L07_ReceiveResponse {
         xhr.send();
     }
 
-    function handleStateChange(_event: ProgressEvent): void {
+    function handleStateChange(_event: Event): void {
         let xhr: XMLHttpRequest = <XMLHttpRequest>_event.target;
         if (xhr.readyState == XMLHttpRequest.DONE) {
             console.log("ready: " + xhr.readyState, " | type: " + xhr.responseType, " | status:" + xhr.status, " | text:" + xhr.statusText);

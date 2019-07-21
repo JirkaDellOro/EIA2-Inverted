@@ -1,6 +1,6 @@
 "use strict";
-var L07_ReceiveResponse;
-(function (L07_ReceiveResponse) {
+var L06_ReceiveResponse;
+(function (L06_ReceiveResponse) {
     window.addEventListener("load", init);
     let address = "http://localhost:8100";
     //let address: string = "https://eia2-nodetest.herokuapp.com";
@@ -47,5 +47,5 @@ var L07_ReceiveResponse;
         sendRequestWithCustomData(style.backgroundColor);
     }
     /* */
-})(L07_ReceiveResponse || (L07_ReceiveResponse = {}));
+})(L06_ReceiveResponse || (L06_ReceiveResponse = {}));
 //# sourceMappingURL=SendData.js.map
