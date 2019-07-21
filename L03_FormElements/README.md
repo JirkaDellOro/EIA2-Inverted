@@ -212,4 +212,7 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
 >   - Total berechnen lassen
 > - Beispiele für unschöne Zahlendarstellug finden
 >   - toFixed einführen
-> - Am Ende Vergleich mit Konzept  
+> - Am Ende Vergleich mit Konzept   
+
+# Wochenaufgabe
+siehe Aufgaben-Wiki

@@ -123,7 +123,7 @@ Im obigen Beispiel wird sofort ein Fehler angezeigt, da die Werte auf Position 1
 ### Assoziatives Array
 Bei einem assoziativen Array werden die Elemente mit sogenannten Schlüsseln verknüpft. Ein solches assoziatives Array wird in der Regel mit Hilfe geschweifter Klammern erzeugt, wobei innerhalb der Klammern bereits Schlüssel-Werte-Paare angegeben werden können. Die Assoziation wird durch den Doppelpunkt `:` dargestellt.  
 
-- [x] Schreibe in die Konsole `let s = ["zahl": 7, "wahr": true, text: "Hallo"]`. Lasse dir `s` ausgeben und versuche mit der Klammersyntax `a["key"]` und der Punktsyntax `a.key` auf einzelne Elemente zuzugreifen, wobei Du `key` mit der Zeichenkette ersetzt, die den Schlüssel darstellt. Was geschieht, wenn Du hier einen unbekannten Schlüssel benutzt?
+- [x] Schreibe in die Konsole `let s = {"zahl": 7, "wahr": true, text: "Hallo"}`. Lasse dir `s` ausgeben und versuche mit der Klammersyntax `a["key"]` und der Punktsyntax `a.key` auf einzelne Elemente zuzugreifen, wobei Du `key` mit der Zeichenkette ersetzt, die den Schlüssel darstellt. Was geschieht, wenn Du hier einen unbekannten Schlüssel benutzt?
 - [x] Gib ein `s[4] = [101, 102]`. Was siehst Du nun, wenn Du dir das Array ausgeben lässt? Welche Bedeutung hat die Ziffer 4 jetzt und wie kommst Du gezielt an die Information, die damit assoziiert wurde?  
 
 Nicht nur die Datentypen sind heterogen, sondern auch die Schlüssel können beliebig gewählt werden. Das ermöglicht große Flexibilität, aber auch Fehler, die schwer zu finden sind. Um assoziative Arrays stringenter zu strukturieren, stellt TypeScript `interface`s zur Verfügung. Damit lassen sich Schlüssel vordefinieren und die Datentypen für Werte und Schlüssel einschränken.  
@@ -133,6 +133,7 @@ Im folgenden Beispiel sind die Schlüssel frei wählbar, sind aber auf den Typ `
 interface MapStringToBoolean {
     [key: string]: boolean;
 }
+let a: MapStringToBoolean = {"wert1": true, "wert2": false};
 ```  
 
 Im nächsten Beispiel sind die Schlüssel vordefiniert und die zugeordneten Werte müssen von bestimmten Typen sein.
@@ -142,11 +143,12 @@ interface VectorWithMeaning {
     y: number;
     meaning: string;
 }
+let vector: VectorWithMeaning = {x: 12.4, y: -7.2, meaning: "Ortsvektor"};
 ```  
 
 ### Objekt
 Ein Objekt ist ein assoziatives Array, dem Funktionen anhaften. Diese Funktionen können die Elemente des Arrays verändern, ohne dass ihnen Informationen zu dem Objekt mitgegeben werden müssen, denn sie sind ja ein Teil davon und haben Zugriff darauf. Um diese Funktionen von den üblichen zu unterscheiden werden sie Methoden genannt. Ein Objekt verfügt also über Methoden, mit der es sich, oder auch seine Umwelt, verändern kann. In den nächsten Lektionen wirst Du vordefinierte Objekte lediglich nutzen und erzeugen, später wirst Du lernen, wie Du ganz neue Objektstrukturen definieren kannst.
-> **FunFact:** Tatsächlich ist alles in Javascript im Kern vom Typ Objekt. Selbst die primitiven Datentypen gaukeln nur ihre Primitivität vor, wodurch sie sich einsetzen lassen wie in klassischen Programmiersprachen. 
+> **FunFact:** Tatsächlich ist alles in Javascript im Kern vom Typ Objekt. Selbst die primitiven Datentypen gaukeln nur ihre Primitivität vor, wodurch sie sich einsetzen lassen wie in 'klassischen' Programmiersprachen. 
 
 ### Werte vs. Referenzen
 Ein wichtiger Unterschied zwischen primitiven und komplexen Datentypen ist die Art und Weise, wie Variablen mit Ihnen verknüpft sind.  
@@ -208,7 +210,3 @@ Hier wird nun noch das Cows-Programm in ein Aktivitätsdiagramm überführt und 
 
 # Wochenaufgabe
 Verweis auf die Boxes-Aufgabe
-
-
-## (Videotest)
-[Video](Material/Hochsprung.webm)

@@ -206,3 +206,4 @@ Erweitere die Erpresserbrief-App so dass sie auch auf Smartphone anwendbar ist
 - Hinweis: recherchiere nach dem Pointer-Event
 
 # Wochenaufgabe
+siehe Aufgaben-Wiki
