@@ -16,20 +16,32 @@ var L03_CocktailBar;
     function displayOrder() {
         // let inputs: NodeListOf<HTMLInputElement> = document.querySelectorAll("input");
         // console.log(inputs);
+        let price = 0;
         let order = document.querySelector("div#order");
         order.innerHTML = "";
         let formData = new FormData(document.querySelector("form"));
         console.group("Order");
         for (let entry of formData) {
             console.log(entry);
-            let element = document.getElementsByName(entry[0])[0];
-            displayOrderRow(order, entry[1].toString());
-            console.log(element);
+            let selector = "[value='" + entry[1] + "']"; // "[name='" + entry[0] + "'][value='" + entry[1] + "']";
+            let item = document.querySelector(selector);
+            let itemPrice = Number(item.getAttribute("price"));
+            switch (entry[0]) {
+                case "Amount":
+                    break;
+                case "Drink":
+                    let amount = Number(formData.get("Amount"));
+                    itemPrice = amount * itemPrice;
+                    order.innerHTML += amount + " L " + item.value + ": €" + itemPrice + "<br>";
+                    break;
+                default:
+                    order.innerHTML += item.value + ": €" + itemPrice.toFixed(2) + "<br>";
+            }
+            console.log(item);
+            price += itemPrice;
         }
         console.groupEnd();
-    }
-    function displayOrderRow(_element, _item, _price) {
-        _element.innerHTML += _item + "<br>";
+        order.innerHTML += "<p><strong>Total: : €" + price.toFixed(2);
     }
     function displayAmount(_event) {
         let progress = document.querySelector("progress");

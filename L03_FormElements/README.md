@@ -198,4 +198,18 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
 
 > Inhalt:
 > - Das Formular mit `form`-Tag umschließen
-> - Finale Implementation von displayOrder mit FormData
+> - FormData-Objekt erzeugen in displayOrder
+> - Eintrag "Drink" untersuchen
+> - Über alle Einträge iterieren
+> - Infos in Konsole und in Bestellübersicht ausgeben
+> - Preise an FormularElemente hinzufügen: price-Attribut
+> - Elemente mit Hilfe von querySelector und dem value heraussuchen und price-Attribut auslesen
+> - Preis mit ausgeben lassen 
+> - Sonderfall "Drink", da Preis durch Berechnung mit Amount zustande kommt -> if einbauen
+> - Sonderfall "Amount", soll nicht als einzelner Posten auftauchen, sondern bei Drink dabei sein
+> - statt weiteres if: switch bauen
+> - Schließlich Ausgabe der Summe
+>   - Total berechnen lassen
+> - Beispiele für unschöne Zahlendarstellug finden
+>   - toFixed einführen
+> - Am Ende Vergleich mit Konzept  

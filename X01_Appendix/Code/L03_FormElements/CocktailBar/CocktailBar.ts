@@ -19,6 +19,7 @@ namespace L03_CocktailBar {
     function displayOrder(): void {
         // let inputs: NodeListOf<HTMLInputElement> = document.querySelectorAll("input");
         // console.log(inputs);
+        let price: number = 0;
         let order: HTMLDivElement = <HTMLDivElement>document.querySelector("div#order");
         order.innerHTML = "";
 
@@ -27,17 +28,28 @@ namespace L03_CocktailBar {
         console.group("Order");
         for (let entry of formData) {
             console.log(entry);
-            let element: HTMLInputElement = <HTMLInputElement>document.getElementsByName(entry[0])[0];
-
-            displayOrderRow(order, entry[1].toString());
-            console.log(element);
+            let selector: string = "[value='" + entry[1] + "']"; // "[name='" + entry[0] + "'][value='" + entry[1] + "']";
+            let item: HTMLInputElement = <HTMLInputElement>document.querySelector(selector);
+            let itemPrice: number = Number(item.getAttribute("price"));
+            switch (entry[0]) {
+                case "Amount":
+                    break;
+                case "Drink":
+                    let amount: number = Number(formData.get("Amount"));
+                    itemPrice = amount * itemPrice;
+                    order.innerHTML += amount + " L " + item.value + ": €" + itemPrice + "<br>";
+                    break;
+                default:
+                    order.innerHTML += item.value + ": €" + itemPrice.toFixed(2) + "<br>";
+            }
+            console.log(item);
+            price += itemPrice;
         }
         console.groupEnd();
+        
+        order.innerHTML += "<p><strong>Total: : €" + price.toFixed(2);
     }
 
-    function displayOrderRow(_element: HTMLElement, _item: string, _price?: number): void {
-        _element.innerHTML += _item + "<br>";
-    }
 
     function displayAmount(_event: Event): void {
         let progress: HTMLProgressElement = <HTMLProgressElement>document.querySelector("progress");
