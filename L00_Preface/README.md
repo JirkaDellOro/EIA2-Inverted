@@ -21,5 +21,8 @@
 [Use Case Diagram](../X01_Appendix/UML/UCD_EIA-Kontakt.svg)  
 [Activity Diagram - Woche](../X01_Appendix/UML/AD_EIA-Woche.svg)  
 [Activity Diagram - Konzeption](../X01_Appendix/UML/AD_EIA-Konzeption.svg)  
+## Vorbereitung
+Macht euch bei der Vorbereitung Notizen und formuliert Fragen für das Plenum. Notiert dabei möglichst genau die Situation, um die es geht und gegebenfalls was erforderlich ist, um sie zu reproduzieren.
+## Plenum
 ## Hilfreiches Werkzeug
 [Markdown Viewer](https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk)  

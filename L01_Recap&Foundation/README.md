@@ -41,7 +41,7 @@ schaut an der Stelle im Speicher, die mit `v` bezeichnet ist nach dem dort hinte
 Die mit `v` bezeichnete Speicherstelle kann also unterschiedliche Werte halten, ihr Wert ist variabel. Vereinfachend spricht man meist schlicht von der "Variablen `v`".  
 Damit das obige Programm laufen kann, muss also diese Variable überhaupt erst existieren.
 
-- [x] Öffne einen Browsertab und darin die Konsole. Tippe die obige Programmzeile ein, Du solltest damit einen 'ReferenceError' provozieren können.  
+- [x] Öffne einen Browsertab, bzw. eine beliebige Seite (z.B. hs-furtwangen.de), und darin die Konsole. Tippe die obige Programmzeile ein, Du solltest damit einen 'ReferenceError' provozieren können.  
 
 Eine Variable wird mit Hilfe des Schlüsselworts `let` angelegt. Diesen Vorgang nennt man **Deklaration**.
 ```typescript
@@ -107,9 +107,57 @@ console.log(v);
 - [x] Warum funktioniert das nicht, und warum hat so etwas ähnliches vorhin funktioniert, als `v` mit `"1"` definiert wurde?
 
 ## Komplexe Datentypen
-...
+Neben den einfachen Datentypen wie `number`, `boolean` und `string` gibt es noch komplexe Datentypen. Diese können mehrere Informationseinheiten einfachen oder wiederum komplexen Typs enthalten. Man kann dabei unterscheiden zwischen homogenen Datenstrukturen, bei denen die darin verwalteten Informationseinheiten alle vom gleichen Typ sind, und heterogenen, bei denen unterschiedliche Datentypen verwaltet werden. Eine weitere Unterscheidung wird getroffen aufgrund unterschiedlicher Art der Adressierung der Informationen. Diese kann über einen Index erfolgen, also eine Zahl, welche die Position der Information in einer Reihe angibt, oder einen Schlüssel, der mit der Information assoziiert ist und den Zugang darstellt. Meist ist dieser Schlüssel vom Typ `string`, es sind aber auch andere Typen möglich. Schließlich ist es noch möglich zwischen vordefinierten Schlüsseln und solchen, die zur Laufzeit des Programms erzeugt werden zu unterscheiden.
+### Array
+Ein Array ist eine Datenstruktur, in der die enthaltenen Informationen, dann Elemente genannt, mit Indizes adressiert werden. In Javascript sind Arrays grundsätzlich heterogen. Ein Array kann mit den Anweisungen `[ ]` oder `new Array()` erzeugt werden. In die Klammern kann bereits bei der Erzeugung eine Liste von Elementen, durch Komma getrennt, angegeben sein.  
+
+- [x] Schreibe in die Konsole `let a = [7, true, "Hallo"]`. Lasse dir `a` ausgeben und versuche mit der Syntax `a[index]` auf einzelne Elemente zuzugreifen, wobei Du `index` mit einer Zahl ersetzt. Was geschieht, wenn Du hier eine Zahl kleiner als 0 oder größer als 2 benutzt?
+- [x] Gib ein `a[4] = [101, 102]`. Was siehst Du nun, wenn Du dir das Array ausgeben lässt, was bei a[3] und a[4]?  
+
+Es lässt sich also alles Mögliche an beliebige Stellen in das Array 'reinwerfen', sogar andere Arrays. Mit TypeScript kann immerhin der Bereich der Typen der Elemente bis zur Homogenität eingeschränkt werden, wodurch eine wichtige Fehlerquelle reduziert wird. 
+```typescript
+let a: number[] = [7, true, "Hallo"];
+```
+Im obigen Beispiel wird sofort ein Fehler angezeigt, da die Werte auf Position 1 und 2 nicht vom Typ `number` sind.
+
+### Assoziatives Array
+Bei einem assoziativen Array werden die Elemente mit sogenannten Schlüsseln verknüpft. Ein solches assoziatives Array wird in der Regel mit Hilfe geschweifter Klammern erzeugt, wobei innerhalb der Klammern bereits Schlüssel-Werte-Paare angegeben werden können. Die Assoziation wird durch den Doppelpunkt `:` dargestellt.  
+
+- [x] Schreibe in die Konsole `let s = ["zahl": 7, "wahr": true, text: "Hallo"]`. Lasse dir `s` ausgeben und versuche mit der Klammersyntax `a["key"]` und der Punktsyntax `a.key` auf einzelne Elemente zuzugreifen, wobei Du `key` mit der Zeichenkette ersetzt, die den Schlüssel darstellt. Was geschieht, wenn Du hier einen unbekannten Schlüssel benutzt?
+- [x] Gib ein `s[4] = [101, 102]`. Was siehst Du nun, wenn Du dir das Array ausgeben lässt? Welche Bedeutung hat die Ziffer 4 jetzt und wie kommst Du gezielt an die Information, die damit assoziiert wurde?  
+
+Nicht nur die Datentypen sind heterogen, sondern auch die Schlüssel können beliebig gewählt werden. Das ermöglicht große Flexibilität, aber auch Fehler, die schwer zu finden sind. Um assoziative Arrays stringenter zu strukturieren, stellt TypeScript `interface`s zur Verfügung. Damit lassen sich Schlüssel vordefinieren und die Datentypen für Werte und Schlüssel einschränken.  
+
+Im folgenden Beispiel sind die Schlüssel frei wählbar, sind aber auf den Typ `string` beschränkt, und das Array ist auf Wahrheitswerte homogenisiert.
+```typescript
+interface MapStringToBoolean {
+    [key: string]: boolean;
+}
+```  
+
+Im nächsten Beispiel sind die Schlüssel vordefiniert und die zugeordneten Werte müssen von bestimmten Typen sein.
+```typescript
+interface VectorWithMeaning {
+    x: number;
+    y: number;
+    meaning: string;
+}
+```  
+
+### Objekt
+Ein Objekt ist ein assoziatives Array, dem Funktionen anhaften. Diese Funktionen können die Elemente des Arrays verändern, ohne dass ihnen Informationen zu dem Objekt mitgegeben werden müssen, denn sie sind ja ein Teil davon und haben Zugriff darauf. Um diese Funktionen von den üblichen zu unterscheiden werden sie Methoden genannt. Ein Objekt verfügt also über Methoden, mit der es sich, oder auch seine Umwelt, verändern kann. In den nächsten Lektionen wirst Du vordefinierte Objekte lediglich nutzen und erzeugen, später wirst Du lernen, wie Du ganz neue Objektstrukturen definieren kannst.
+> **FunFact:** Tatsächlich ist alles in Javascript im Kern vom Typ Objekt. Selbst die primitiven Datentypen gaukeln nur ihre Primitivität vor, wodurch sie sich einsetzen lassen wie in klassischen Programmiersprachen. 
+
 ### Werte vs. Referenzen
-...
+Ein wichtiger Unterschied zwischen primitiven und komplexen Datentypen ist die Art und Weise, wie Variablen mit Ihnen verknüpft sind.  
+
+- [x] Deklariere zwei Variablen primitiven Typs (z.B. `v1`und `v2`). Definiere die erste und weise dann der zweiten den Wert der ersten zu (`v2 = v1`). Verändere dann den Wert der ersten und lasse beide ausgeben. Was stellst Du fest?
+- [x] Deklariere nun zwei Variablen komplexen Typs. Definiere die erste mit mehreren Elementen und nutze dann den Zuweisungsoperator genau wie oben (`v2 = v1`). Verändere ein Element der ersten Variable. Lasse beide Variablen ausgeben. Was stellst Du hier fest?  
+
+Nicht zu beachten, dass komplexe Datentypen als Referenzen adressiert werden, mehrere Variablen also auf den gleichen Datenbestand verweisen können, ist wiederum eine häufige Fehlerquelle. 
+
+> - **Achtung:** Diese Referenzierung ist kein Problem, sondern eine wichtige Grundlage für die Anwendungsentwicklung.
+
 ## Fehlertypen
 Du hast nun schon ganz unterschiedliche Fehler kennen gelernt. Die korrekte Benennung dieser hilft anderen dabei, dir zu helfen. Ein wichtiges Unterscheidungskriterium ist dabei der Zeitpunkt, zu dem der Fehler erkannt wird.
 ### Runtime Error
