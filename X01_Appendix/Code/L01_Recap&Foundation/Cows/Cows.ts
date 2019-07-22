@@ -7,12 +7,12 @@ namespace Cows {
     }
     console.log(results);
 
-    function createCall(start: string, length: number): string {
-        for (let k: number = length; k > 0; k--) {
-            if (k == 1 || k == length / 2)
-                start += "h";
-            start += "u";
+    function createCall(_start: string, _length: number): string {
+        for (let k: number = _length; k > 0; k--) {
+            if (k == 1 || k == _length / 2)
+                _start += "h";
+            _start += "u";
         }
-        return start;
+        return _start;
     }
 }
