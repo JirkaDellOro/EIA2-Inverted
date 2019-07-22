@@ -8,13 +8,13 @@ var Cows;
         results.push(result);
     }
     console.log(results);
-    function createCall(start, length) {
-        for (let k = length; k > 0; k--) {
-            if (k == 1 || k == length / 2)
-                start += "h";
-            start += "u";
+    function createCall(_start, _length) {
+        for (let k = _length; k > 0; k--) {
+            if (k == 1 || k == _length / 2)
+                _start += "h";
+            _start += "u";
         }
-        return start;
+        return _start;
     }
 })(Cows || (Cows = {}));
 //# sourceMappingURL=Cows.js.map
