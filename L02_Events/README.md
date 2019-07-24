@@ -116,7 +116,9 @@ Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Über
 > - Anwendung starten
 > - Buchstabe wählen
 > - Buchstabe positionieren
-> - Buchstabe löschen.
+> - Buchstabe löschen.  
+
+[Scan](Material/BlackmailerCompanion_UseCaseDiagram.jpg) 
 
 ## Skizze: User Interface 
 Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Das wird schon einiges über die erforderliche darunterliegende Struktur verraten. Die Skizze versiehst Du schon mit den HTML-Auszeichnungen und Eigenschaften, die dir dabei sinnvoll erscheinen. Unterscheide dabei zwischen statischen und dynamischen Elementen und Eigenschaften. Für die Dynamik trägst Du hier schon ein, an welchen Elementen Listener installiert werden soll und welche Ereignisse dabei mit welchen Aktivitäten verknüpft werden. Prüfe, ob alle Interaktionsmöglichkeiten zur Realisierung der Anwendungsfälle gegeben sind.
@@ -133,7 +135,9 @@ Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Da
 > - Ein Feld mit Handlungsanweisung (p)
 > - ein Feld mit Rahmen für den Brief (div, click-event-listener zum Platzieren)
 > - mehrere Buchstaben mit Rahmen (span, click-event-listener zum Löschen)
-> - das umschließende document (document, keydown-listener zur Buchstabenauswahl)
+> - das umschließende document (document, keydown-listener zur Buchstabenauswahl)  
+
+[Scan](Material/BlackmailerCompanion_UI-Scribble.jpg) 
 
 ## Aktivitätsdiagramme
 Jetzt hast Du bereits aus der Sicht des Nutzers die wesentlichen Aktivitäten, die beteiligten Elemente und die auszuwerteten Ereignisse festgehalten. Nun wechselst Du auf die Sicht aus dem System heraus und legst fest, wie es arbeiten soll. Dazu nutzt Du jetzt Aktivitätsdiagramme. Ein Event bildet dabei jeweils als Signalempfang einen Startknoten für eine Aktivität.  
@@ -156,7 +160,9 @@ Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm
 > - Dann 2. Keydown -> chooseLetter (kurze Recherche führt zu key im KeyEvent)
 >   - gewählten Buchstaben in einer globalen Variable im Hauptprogramm speichern
 > - Dann 1. die Listener installieren am Document und dem Brief
-> - Schließlich das Hauptprogramm, hier lediglich die Variable `chosen` anlegen und den load-Listener installieren.
+> - Schließlich das Hauptprogramm, hier lediglich die Variable `chosen` anlegen und den load-Listener installieren.  
+
+[Scan](Material/BlackmailerCompanion_ActivityDiagram.jpg) 
 
 ## Implementation
 Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implementation der Anwendung berücksichtigt zu haben, kannst Du dich daran machen. 

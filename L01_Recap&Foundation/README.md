@@ -186,6 +186,8 @@ Mit Hilfe einer Verfolgungstabelle kann man den Zustand eines Programms zu jeder
 - [x] Vervollständige die Tabelle bis zum Ende des Programmablaufs
 - [x] Implementiere das Programm und vergleiche die Ausgabe mit deiner Vorhersage.
 
+[Scan](Material/Cows_TraceTable.jpg)  
+
 ## Debugger
 Natürlich gibt es technische Hilfsmittel etwas ähnliches wie eine Verfolgungstabelle automatisch zu erzeugen. Hierzu verwendest Du den Debugger, also den "Entlauser".  
 
@@ -206,7 +208,9 @@ Hier wird nun noch das Cows-Programm in ein Aktivitätsdiagramm überführt und 
 |Dreigeteilt 
 |1. groß das Diagramm, das von Hand gezeichnet wird, 
 |2. klein das Programm
-|3. klein Jirkas sprechender Kopf
+|3. klein Jirkas sprechender Kopf  
+
+[Scan](Material/Cows_ActivityDiagram.jpg) 
 
 # Wochenaufgabe
 Verweis auf die Boxes-Aufgabe
