@@ -62,7 +62,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - FormData-Object
 - Process values locally
   
-### [L04_CreateFormFromDataFile](L04_CreateFormFromDataFile)
+### [L04_DataStructures](L04_DataStructures)
 - Interfaces
 - Associative Array
   - homogenous
