@@ -15,7 +15,7 @@
 [Flow](../X01_Appendix/Landscape/NodeFlow.pdf)  
 [UML Aktivitätsdiagramme](../X01_Appendix/UML/ActivityDia2Code.pdf)  
 [UML Klassendiagramme](../X01_Appendix/UML/ClassDia2Code.pdf)  
-[DO-Hierarchy](../X01_Appendix/DO-Hierarchy/DO-Hierarchy.pdf)  
+[DO-Hierarchy](../X01_Appendix/DO-Hierarchy/DOM-Classhierachy.svg)
 [Coding Style](../X01_Appendix/CodingStyle)  
 ## Veranstaltungskonzept
 [Use Case Diagram](../X01_Appendix/UML/UCD_EIA-Kontakt.svg)  
