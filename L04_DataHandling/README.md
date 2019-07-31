@@ -1,7 +1,7 @@
 # L04_DataStructures
 <img src="Material/OrdnungChaos.jpg">  
 
-Albert Einstein war wohl unbestritten eines der größten Genies, welche die Menschheit je hervorgebracht. Es ist unwahrscheinlich jemanden zu beleidigen, wenn in dieser Lektion davon ausgegangen wird, das keine beteiligte Person einen ähnlichen Status genießt. Das gilt wohl für die meisten, die an der Konzeption interaktiver Anwendungen beteiligt und vielleicht mehr noch für die Nutzer der Anwendungen. Wer also nicht Einsteins Genie für sich in Anspruch nimmt, könnte von Ordnung doch profitieren.   
+Albert Einstein war wohl unbestritten eines der größten Genies, welche die Menschheit je hervorgebracht. Es ist unwahrscheinlich jemanden zu beleidigen, wenn in dieser Lektion davon ausgegangen wird, dass keine beteiligte Person einen ähnlichen Status genießt. Das gilt wohl für die meisten, die an der Konzeption interaktiver Anwendungen beteiligt und vielleicht mehr noch für die Nutzer der Anwendungen. Wer also nicht Einsteins Genie für sich in Anspruch nimmt, könnte von Ordnung doch profitieren.   
 
 ## Separation Of Concerns
 Ebenso unstrittig wie Einsteins Genialität ist das Prinzip der Trennung der Zuständigkeiten (SoC) in der Softwareentwicklung. Hierbei geht es darum, dass ein Teil der ganzen Software auch eine klare und von den anderen Teilen getrennte Zuständigkeit hat. Diese Zuständigkeit lässt sich mit einem knappen Satz beschreiben. Wenn in diesem Satz das Wort "und" vorkommt, ist möglicherweise etwas faul.  
