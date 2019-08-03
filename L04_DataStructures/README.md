@@ -82,12 +82,43 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 > - das Aktivitätsdiagramm überarbeiten
 >   - handleLoad um Aktivität "generateDynamicContent" mit Gabel erweitern in rot
 > - neues Aktivitätsdiagramm zu generateDynamicContent
->   - 
+>   - neues Blatt mit Überschrift Cocktailbar
+>   - Rückblick auf vorangegangenes Aktivitätsdiagram, generateDynamicContent übertragen
+>   - _data als Startknoten am Eingang
+>   - da Iteration über Daten erforderlich, Schleife von vorangegangenem Diagramm übertragen
+>       - nächste Kategorie holen, items referenzieren
+>       - da unterschiedliche Input-Elemente kreiert werden müssen, je nach Kategorie
+>         - Fallunterscheidung
+>         - Ergebnis soll eine Sammlung von Elementen sein, die an fieldset gehängt werden können
+>     - fieldset entsprechend der Kategorie suchen
+>     - Sammlung anhängen
+>     - Schleife beenden, wenn keine Kategorien mehr vorhanden sind
+> - als Beispiel die Erzeugung der Sammlung für MultipleSelection (Checkboxes) ausführen
+>   - Parameter ist eine Itemliste
+>   - Container-Div für Elemente erzeugen
+>   - über Liste iterieren
+>   - jeweils Input-Element erzeugen und mit den erforderlichen Attributen ausstatten
+>   - dabei fällt auf, dass die Kategorie als Attribut "name" einzusetzen ist
+>       - Kategorie als Parameter ergänzen
+>   - dann fällt auf, dass auch noch die Labels erzeugt werden müssen
+>   - am Ende Container zurückliefern
 
+> - [x] Konzipiere auch die beiden anderen Aktivitäten zur Erstellung der Interaktionsgruppen.  
 
+## Implementation
 
-> - [x] Überarbeite die Cocktailbar so, dass nicht in der HTML-Datei, im Skript und in der Datendatei alle Bezeichnungen für die Angebotskategorien auftauchen. Sie sollten nur in der Datendatei stecken.
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. groß das Programm, das gerade getippt wird
+|2. klein das Aktivitäts-Diagramm im Wechsel mit anderen
+|3. klein Jirkas sprechender Kopf  
 
+> Inhalt:
+> - runtertippen  
+
+> - [x] Überarbeite die Konzeption der Cocktailbar derart, dass nicht in der HTML-Datei, im Skript und in der Datendatei alle Bezeichnungen für die Angebotskategorien auftauchen. Sie sollten nur in der Datendatei stecken. Hier muss dann auch die Information über die gewünscht Form der Interaktion für die jeweilige Kategorie untergebracht sein.
+> - [x] Überarbeite und vervollständige die Implementierung entsprechend der verbesserten Konzeption 
 
 ## JSON
 Nur bedingt für diesen Zweck geeignet, ohne Editor. Aber grundsätzlich für viele Zwecke!
