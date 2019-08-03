@@ -4,7 +4,7 @@
 Albert Einstein war wohl unbestritten eines der größten Genies, welche die Menschheit je hervorgebracht. Es ist unwahrscheinlich jemanden zu beleidigen, wenn in dieser Lektion davon ausgegangen wird, dass keine beteiligte Person einen ähnlichen Status genießt. Das gilt wohl für die meisten, die an der Konzeption interaktiver Anwendungen beteiligt und vielleicht mehr noch für die Nutzer der Anwendungen. Wer also nicht Einsteins Genie für sich in Anspruch nimmt, könnte von Ordnung doch profitieren.   
 
 ## Separation Of Concerns
-Ebenso unstrittig wie Einsteins Genialität ist das Prinzip der Trennung der Zuständigkeiten (SoC) in der Softwareentwicklung. Hierbei geht es darum, dass ein Teil der ganzen Software auch eine klare und von den anderen Teilen getrennte Zuständigkeit hat. Diese Zuständigkeit lässt sich mit einem knappen Satz beschreiben. Wenn in diesem Satz das Wort "und" vorkommt, ist möglicherweise etwas faul.  
+Ebenso unstrittig wie Einsteins Genialität ist das Prinzip der Trennung der Zuständigkeiten (SoC) in der Softwareentwicklung. Hierbei geht es darum, dass jeder Teil der ganzen Software auch eine klare und von den anderen Teilen getrennte Zuständigkeit hat. Diese Zuständigkeit soll sich mit einem knappen Satz beschreiben lassen. Wenn in diesem Satz das Wort "und" vorkommt, ist möglicherweise etwas faul und dem Teil sind zu viele Zuständigkeiten übertragen.  
 Bei der Cocktailbar haben wir schon vieles richtig gemacht, insbesondere, wenn wir das Ganze aus einer sehr übergeordneten Perspektive und die für die Entwicklung von Web-Applikationen grundlegende Separation betrachten.  
 - [x] Arbeite diesen knappen [Artikel in SelfHTML.org](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Trennung_von_Inhalt,_Pr%C3%A4sentation_und_Verhalten) durch. Vergleiche mit deiner eigenen Arbeit und prüfe, ob Du alles berücksichtigt hast.  
 
@@ -16,7 +16,7 @@ Die Vereinigung von Struktur und Inhalt bei der Cocktailbar ist problematisch, d
 Das heißt, die bisherige Trennung der Zuständigkeiten muss um die Trennung des Inhaltes von Struktur, Verhalten und Gestaltung erweitert werden, sodass der Inhalt verändert werden kann, ohne Änderungen an den anderen Zuständigkeiten vornehmen zu müssen oder versehentlich zu vorzunehmen.  
 
 ## Erweiterung des Anwendungsfalldiagramms
-Zwei Dinge sind aus obigem zu folgern:
+Zwei Dinge sind aus Obigem zu folgern:
 - es gibt einen weiteren Akteur, den Barkeeper
 - ihm muss eine Möglichkeit zur Verfügung gestellt werden das Angebot anzupassen ohne in die eigentliche Applikation einzugreifen  
 
@@ -58,7 +58,11 @@ Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und l
 > - Ansatz für jedes Item zwei Variablen anzulegen, z.B. drink1: string = "Mojito" und drink1price: number = 3.50 ist sinnlos, da der Algorithmus dann alle deklarierten Variablen einzeln verwenden muss und bei Veränderungen nicht mehr funktioniert. Auch mit Schleifen nicht behandelbar.
 > - Tabellenform weist aber auch schon auf Arrays hin
 >   - simple oder assoziative?
-> - Simple würden den Job erledigen, sind aber unübersichtlich und weniger hilfreich. Unterschiedliche Datentypen? Mehrdimensional? Formatierung?
+> - Simple würden den Job erledigen, sind aber unübersichtlich und weniger hilfreich. Unterschiedliche Datentypen? Mehrdimensional? Oder viele einzelne, deren Indizes passen müssen?
+> - und in welchem Format sollen die Daten abgelegt sein. Ein Format schon wohlbekannt aus HTML -> XML
+>   - Beispiel mit XML kurz ausführen
+> - Alternative: JSON! So sehen wir Daten im Programmcode und in der Console
+>   - einfache Schlüssel-Werte-Paare, wobei die Werte beliebig komplex sein können
 > - Mit assioziativen lassen sich die Daten sehr gut strukturieren
 >   - Interface Item mit vordefinierten Schlüsseln name: string und price: number
 >   - Interface Data mit variablen Schlüsseln [category: string] und  Item[] als Wert
@@ -117,7 +121,7 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 > Inhalt:
 > - runtertippen  
 
-> - [x] Überarbeite die Konzeption der Cocktailbar derart, dass nicht in der HTML-Datei, im Skript und in der Datendatei alle Bezeichnungen für die Angebotskategorien auftauchen. Sie sollten nur in der Datendatei stecken. Hier muss dann auch die Information über die gewünscht Form der Interaktion für die jeweilige Kategorie untergebracht sein.
+> - [x] Überarbeite die Konzeption der Cocktailbar derart, dass nicht in der HTML-Datei, im Skript und in der Datendatei alle Bezeichnungen für die Angebotskategorien auftauchen. Sie sollten nur in der Datendatei stecken. Hier muss dann auch die Information über die gewünschte Form der Interaktion für die jeweilige Kategorie untergebracht sein.
 > - [x] Überarbeite und vervollständige die Implementierung entsprechend der verbesserten Konzeption 
 
 ## JSON
