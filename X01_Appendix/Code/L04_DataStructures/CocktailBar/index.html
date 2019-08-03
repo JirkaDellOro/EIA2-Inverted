@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>CocktailBar</title>
+	<link rel="stylesheet" href="CocktailBar.css" type="text/css" media="screen" />
+	<script src="CocktailBar.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Cocktail Bar</h1>
+		<p>Choose a drink and the extras. Select the size of your cocktail. Verify your order on the right.</p>
+	</header>
+
+	<form action="" method="get">
+		<div id="form">
+			<h2>Choose here</h2>
+			<fieldset>
+				<legend>Drink</legend>
+				<select name="Drink" id="">
+					<option value="Mojito" price="25">Mojito</option>
+					<option value="Caipirinha" price="30">Caipirinha</option>
+					<option value="Bloody Mary" price="21">Bloody Mary</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Container</legend>
+				<input type="radio" name="Container" id="slimtall" value="Slim&Tall" price="3.50" checked />
+				<label for="slimtall">Slim&Tall</label>
+				<input type="radio" name="Container" id="wideshort" value="Wide&Short" price="4.00" />
+				<label for="wideshort">Wide&Short</label>
+				<input type="radio" name="Container" id="stem" value="with Stem" price="4.20" />
+				<label for="stem">with Stem</label>
+			</fieldset>
+			<fieldset>
+				<legend>Extras</legend>
+				<input type="checkbox" name="Extra" id="ice" value="Ice" price="0.50">
+				<label for="ice">Ice</label>
+				<input type="checkbox" name="Extra" id="lemon" value="Lemon" price="0.20">
+				<label for="lemon">Lemon</label>
+				<input type="checkbox" name="Extra" id="orange" value="Orange" price="0.15">
+				<label for="orange">Orange</label>
+				<input type="checkbox" name="Extra" id="mint" value="Mint" price="0.30">
+				<label for="mint">Mint</label>
+			</fieldset>
+			<fieldset>
+				<legend>Amount</legend>
+				<span id="slider">
+					<span>
+						0.1 L
+						<input type="range" name="Amount" id="amount" min="0.1" max="1.0" step="0.1" value="0.1">
+						1.0 L
+					</span>
+					<progress max="1.0" value="0.1" />
+				</span>
+			</fieldset>
+		</div>
+	</form>
+
+	<div>
+		<h2>Your order</h2>
+		<div id="order">
+			...
+		</div>
+	</div>
+
+</body>
+
+</html>

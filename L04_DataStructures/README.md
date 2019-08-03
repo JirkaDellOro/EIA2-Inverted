@@ -52,7 +52,7 @@ Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und l
 
 > Inhalt: die Suche nach günstigen Datenstrukturen
 > - Untersuchen, aus welchen Informationen das Angebot des Barkeepers eigentlich besteht
->   - Feststellung: name und preis eines Artikels (Item)
+>   - Feststellung: Name und Preis eines Artikels (Item)
 >   - Feststellung: unterschiedliche Kategorien z.B. Drinks, Container, Extras etc. (Category)
 > Feststellung in Tabellenform darstellen
 > - Ansatz für jedes Item zwei Variablen anzulegen, z.B. drink1: string = "Mojito" und drink1price: number = 3.50 ist sinnlos, da der Algorithmus dann alle deklarierten Variablen einzeln verwenden muss und bei Veränderungen nicht mehr funktioniert. Auch mit Schleifen nicht behandelbar.
@@ -63,7 +63,31 @@ Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und l
 >   - Interface Item mit vordefinierten Schlüsseln name: string und price: number
 >   - Interface Data mit variablen Schlüsseln [category: string] und  Item[] als Wert
 > - Damit Daten anlegen.
->   - Eine Datei für die Interfaces, eine für die Daten selbst 
+>   - Eine Datei für die Interfaces, eine für die Daten selbst planen  
+
+## Generierung des Formulars
+Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und funktionieren soll ist auch bekannt und bereits getestet. Jetzt muss also noch ein Algorithmus entwickelt werden, welcher mit Hilfe der Daten das Formular generiert. Dazu muss zunächst entschieden werden, welche Teile des DOM automatisch beim Laden der Seite durch die Interpretation der HTML-Datei erzeugt werden sollen, und welche dann dynamisch durch das Skript dazu kommen. Theoretisch ist es natürlich möglich, komplett auf eine Beschreibung der Seitenstruktur in der HTML-Datei zu verzichten, lediglich einen Verweis auf das Skript zu implementieren und die DOM-Erzeugung komplett dem dadurch aufgerufenen Skript zu überlassen. Einerseits würde dies aber auch dem SoC-Prinzip zuwider laufen, weil unnötig viel Verantwortlichkeit auf das Skript übertragen wird, andererseits liegt bereits eine HTML-Datei vor, welche die Struktur beschreibt. Es erscheint also eher sinnvoll, lediglich die Beschreibungen der dynamischen Strukturen aus der bestehenden HTML-Datei zu entfernen und sie auf die statischen zu reduzieren. Das ist eine klassische Design-Entscheidung und wird für dieses Beispiel in obigem Sinne getroffen.  
+
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. groß verschiedene Diagramme, die überarbeitet bzw. neu erstellt werden
+|2. Jirkas sprechender Kopf  
+
+> Inhalt: die Änderungen und das Design für die dynamische Generierung
+> - die Skizze überarbeiten
+>   - die Inhalte der fieldsets streichen bis auf "Amount"
+>   - die Notizen zu den Elementen mit "dynamic" in rot versehen
+>   - die Notiz zu den fieldsets mit id= category, letzteres in rot versehen
+> - das Aktivitätsdiagramm überarbeiten
+>   - handleLoad um Aktivität "generateDynamicContent" mit Gabel erweitern in rot
+> - neues Aktivitätsdiagramm zu generateDynamicContent
+>   - 
+
+
+
+> - [x] Überarbeite die Cocktailbar so, dass nicht in der HTML-Datei, im Skript und in der Datendatei alle Bezeichnungen für die Angebotskategorien auftauchen. Sie sollten nur in der Datendatei stecken.
+
 
 ## JSON
 Nur bedingt für diesen Zweck geeignet, ohne Editor. Aber grundsätzlich für viele Zwecke!
