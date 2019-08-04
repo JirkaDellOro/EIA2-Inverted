@@ -5,7 +5,9 @@
 	<meta charset="utf-8" />
 	<title>CocktailBar</title>
 	<link rel="stylesheet" href="CocktailBar.css" type="text/css" media="screen" />
-	<script src="CocktailBar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="Data.js" type="text/javascript" charset="utf-8"></script>
+	<script src="Setup.js" type="text/javascript" charset="utf-8"></script>
+	<script src="Main.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
@@ -17,33 +19,14 @@
 	<form action="" method="get">
 		<div id="form">
 			<h2>Choose here</h2>
-			<fieldset>
+			<fieldset id="Drink">
 				<legend>Drink</legend>
-				<select name="Drink" id="">
-					<option value="Mojito" price="25">Mojito</option>
-					<option value="Caipirinha" price="30">Caipirinha</option>
-					<option value="Bloody Mary" price="21">Bloody Mary</option>
-				</select>
 			</fieldset>
-			<fieldset>
+			<fieldset id="Container">
 				<legend>Container</legend>
-				<input type="radio" name="Container" id="slimtall" value="Slim&Tall" price="3.50" checked />
-				<label for="slimtall">Slim&Tall</label>
-				<input type="radio" name="Container" id="wideshort" value="Wide&Short" price="4.00" />
-				<label for="wideshort">Wide&Short</label>
-				<input type="radio" name="Container" id="stem" value="with Stem" price="4.20" />
-				<label for="stem">with Stem</label>
 			</fieldset>
-			<fieldset>
+			<fieldset id="Extras">
 				<legend>Extras</legend>
-				<input type="checkbox" name="Extra" id="ice" value="Ice" price="0.50">
-				<label for="ice">Ice</label>
-				<input type="checkbox" name="Extra" id="lemon" value="Lemon" price="0.20">
-				<label for="lemon">Lemon</label>
-				<input type="checkbox" name="Extra" id="orange" value="Orange" price="0.15">
-				<label for="orange">Orange</label>
-				<input type="checkbox" name="Extra" id="mint" value="Mint" price="0.30">
-				<label for="mint">Mint</label>
 			</fieldset>
 			<fieldset>
 				<legend>Amount</legend>

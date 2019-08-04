@@ -109,7 +109,7 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 
 > - [x] Konzipiere auch die beiden anderen Aktivitäten zur Erstellung der Interaktionsgruppen.  
 
-## Implementation
+## Implementation I
 
 |Hier erscheint jetzt ein Video|
 |-
@@ -119,10 +119,86 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 |3. klein Jirkas sprechender Kopf  
 
 > Inhalt:
-> - runtertippen  
+> - Cocktailbar bereits kopiert, namespace angepasst auf L04
+> - Data.ts anlegen, namespace einrichten
+>   - da mehrere Files -> Cocktailbar.ts in Main.ts umbenennen
+>   - interfaces implementieren
+>   - data anlegen, Infos aus html-File kopieren
+> - html-File um die Info kürzen, nur fieldsets und legends stehen lassen
+>   - ids an fieldsets fügen
+> - Setup.ts anlegen, namespace einrichten
+>   - function generateDynamicContent und Parameter tippen
+>   - Data ist unbekannt
+>       - export erklären, interface Data exportieren
+>   - for..in Schleife anlegen, Item exportiere
+>   - switch anlegen, Emmet nutzen
+>       - im switch jeweils let group deklarieren mit unterschiedlichem Typ
+>       - und definieren durch Funktionsaufruf unbekannter Funktionen create...
+>   - zwei Probleme tauchen auf:
+>       - group nun mehrfach deklariert
+>           - Lösung: einmal vor der Schleife deklarieren als gemeinsamen Supertyp
+>       - Funktionen unbekannt -> eine als Dummy umsetzen mit result und return, ohne Funktion
+>       - die anderen als Kopien davon ableiten
+>   - fieldset mit querySelector("fieldset#" + category) definieren
+>    - Problem strict null check
+>    -  -> union type einsetzen
+>    - prüfen ob fieldset != null
+>   - analoges Problem ergibt sich mit group
+>       - mit null definieren zu Beginn
+> - generateDynamicContent muss nun noch aufgerufen werden
+>   - export
+>   - export data
 
-> - [x] Überarbeite die Konzeption der Cocktailbar derart, dass nicht in der HTML-Datei, im Skript und in der Datendatei alle Bezeichnungen für die Angebotskategorien auftauchen. Sie sollten nur in der Datendatei stecken. Hier muss dann auch die Information über die gewünschte Form der Interaktion für die jeweilige Kategorie untergebracht sein.
-> - [x] Überarbeite und vervollständige die Implementierung entsprechend der verbesserten Konzeption 
+## Testing
+
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. groß das Browserfenster im Wechsel mit VSCode
+|2. klein Jirkas sprechender Kopf  
+
+> Inhalt:
+> - Seite scheint zu laufen, es wurde ja keine spektakuläre Ausgabe erwartet. Aber ein wenig schon, vielleicht ein leeres Select-Element? 
+> - aber es gibt eine Fehlerausgabe in der Console
+> - und es werden keine Inhalte der fieldsets erzeugt!
+> - debugger in generateDynamicContent einsetzen
+>   - stoppt nicht
+> - manuell zu Browserdebugger sieht man...
+>   - data ist auch null, so wie die Funktion...
+>   - es gibt nur Main.ts und .js, die anderen tauchen nicht auf
+>   - Scripte wurden gar nicht verlinkt!!
+
+## Implementation II
+
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. groß das Programm, das gerade getippt wird
+|2. klein das Aktivitäts-Diagramm im Wechsel mit anderen
+|3. klein Jirkas sprechender Kopf  
+
+> Inhalt:
+> - die konzipierte Unterfunktion, createMulti wird implementiert
+> - for..of Schleife implementieren
+>   - checkbox kreieren
+>   - attribute definieren
+>   - price mit setAttribut und toString()
+>   - label kreieren, attribute definieren
+>       - for mit setAttribute? -> im Code htmlFor benutzen
+>   - checkbox und label an result hängen
+
+## Refactoring
+### Erfahrungen einfließen lassen
+> - [x] Reflektiere die Korrekturen, die sich bei der ersten Implementation ergeben haben, im Konzept. Konzipiere auch Fehlerhinweise, so dass der Barkeeper einen Tipp bekommt, wenn aufgrund einer Fehleingabe seinerseits etwas nicht funktioniert.
+
+### Vervollständigen
+> - [x] Überarbeite und vervollständige die Implementierung entsprechend der verbesserten Konzeption. Passe auch die zu verwendenden Elementtypen und ggf. das Stylesheet an.
+> - [x] Lagere die Interfaces in eine eigene Datei aus, so dass der Barkeeper nicht versehentlich daran manipuliert.  
+
+### Separation of Concerns
+Betrachtet man nun den Code in der HTML-Datei, dem Skript und der Datendatei fällt auf, dass die Kategorien des Angebots der Cocktailbar überall auftauchen und nicht nur für die Bezeichnung, sondern auch für die Steuerung des Programms verwendet werden. Das widerspricht dem SoC-Prinzip!
+> - [x] Überarbeite die Konzeption der Cocktailbar derart, dass nicht in der HTML-Datei, im Skript und in der Datendatei alle Bezeichnungen für die Angebotskategorien auftauchen. Sie sollten nur in der Datendatei stecken. Hier muss dann auch die Information über die gewünschte Form der Interaktion für die jeweilige Kategorie untergebracht sein. Hierzu wird es sinnvoll sein, eine eigene Datenstruktur für die Kategorien zu erschaffen, in denen mehr Information steckt.  
+
 
 ## JSON
 Nur bedingt für diesen Zweck geeignet, ohne Editor. Aber grundsätzlich für viele Zwecke!
