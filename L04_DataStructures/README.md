@@ -30,6 +30,8 @@ Zwei Dinge sind aus Obigem zu folgern:
 > - Angebot ändern
 > - Preise ändern
 
+[Use Case Diagram](Material\CocktailBar_UseCaseDiagram.jpg)  
+
 ## Algorithmen und Datenstrukturen
 Neben dem Prinzip des "Divide et Impere", ist es bei der Konzeption von Anwendungen grundsätzlich eine sehr gute Vorgehensweise zwischen den Algorithmen und den Datenstrukturen zu unterscheiden. In Kombination stellen beide zusammen die Anwendung dar. Bestimme und untersuche einerseits die zu verarbeitenden Information, und überlege, wie diese Information strukturiert werden sollte, um sie gut verarbeiten zu können. Daraus ergeben sich die Datenstrukturen. Überlege andererseits, wie diese Information verarbeitet werden soll, somit konzipierst Du die Algorithmen.  
 
@@ -69,6 +71,8 @@ Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und l
 > - Damit Daten anlegen.
 >   - Eine Datei für die Interfaces, eine für die Daten selbst planen  
 
+[Use Case Diagram](Material\CocktailBar_DataStructures.jpg)  
+
 ## Generierung des Formulars
 Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und funktionieren soll ist auch bekannt und bereits getestet. Jetzt muss also noch ein Algorithmus entwickelt werden, welcher mit Hilfe der Daten das Formular generiert. Dazu muss zunächst entschieden werden, welche Teile des DOM automatisch beim Laden der Seite durch die Interpretation der HTML-Datei erzeugt werden sollen, und welche dann dynamisch durch das Skript dazu kommen. Theoretisch ist es natürlich möglich, komplett auf eine Beschreibung der Seitenstruktur in der HTML-Datei zu verzichten, lediglich einen Verweis auf das Skript zu implementieren und die DOM-Erzeugung komplett dem dadurch aufgerufenen Skript zu überlassen. Einerseits würde dies aber auch dem SoC-Prinzip zuwider laufen, weil unnötig viel Verantwortlichkeit auf das Skript übertragen wird, andererseits liegt bereits eine HTML-Datei vor, welche die Struktur beschreibt. Es erscheint also eher sinnvoll, lediglich die Beschreibungen der dynamischen Strukturen aus der bestehenden HTML-Datei zu entfernen und sie auf die statischen zu reduzieren. Das ist eine klassische Design-Entscheidung und wird für dieses Beispiel in obigem Sinne getroffen.  
 
@@ -106,6 +110,10 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 >       - Kategorie als Parameter ergänzen
 >   - dann fällt auf, dass auch noch die Labels erzeugt werden müssen
 >   - am Ende Container zurückliefern
+
+[UI-Scribble](Material\CocktailBar_UI-Scribble.jpg)  
+[ActivityDiagram](Material\CocktailBar_ActivityDiagram.jpg)  
+[ActivityDiagram: generateContent](Material\CocktailBar_ActivityDiagram_generateContent.jpg)  
 
 > - [x] Konzipiere auch die beiden anderen Aktivitäten zur Erstellung der Interaktionsgruppen.  
 
