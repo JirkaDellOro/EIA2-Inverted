@@ -50,4 +50,4 @@ var L04_CocktailBar;
         progress.value = parseFloat(amount);
     }
 })(L04_CocktailBar || (L04_CocktailBar = {}));
-//# sourceMappingURL=Main.js.map
+//# sourceMappingURL=CocktailBar.js.map
