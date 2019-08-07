@@ -4,7 +4,7 @@ var L04_CocktailBar;
     window.addEventListener("load", handleLoad);
     function handleLoad(_event) {
         console.log("Init");
-        L04_CocktailBar.generateDynamicContent(L04_CocktailBar.data);
+        L04_CocktailBar.generateContent(L04_CocktailBar.data);
         let form = document.querySelector("div#form");
         let slider = document.querySelector("input#amount");
         form.addEventListener("change", handleChange);
@@ -21,9 +21,9 @@ var L04_CocktailBar;
         let order = document.querySelector("div#order");
         order.innerHTML = "";
         let formData = new FormData(document.querySelector("form"));
-        console.group("Order");
+        // console.group("Order");
         for (let entry of formData) {
-            console.log(entry);
+            // console.log(entry);
             let selector = "[value='" + entry[1] + "']"; // "[name='" + entry[0] + "'][value='" + entry[1] + "']";
             let item = document.querySelector(selector);
             let itemPrice = Number(item.getAttribute("price"));
@@ -38,10 +38,10 @@ var L04_CocktailBar;
                 default:
                     order.innerHTML += item.value + ": €" + itemPrice.toFixed(2) + "<br>";
             }
-            console.log(item);
+            // console.log(item);
             price += itemPrice;
         }
-        console.groupEnd();
+        // console.groupEnd();
         order.innerHTML += "<p><strong>Total: : €" + price.toFixed(2);
     }
     function displayAmount(_event) {

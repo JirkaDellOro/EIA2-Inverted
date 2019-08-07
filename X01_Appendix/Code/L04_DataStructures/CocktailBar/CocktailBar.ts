@@ -3,7 +3,8 @@ namespace L04_CocktailBar {
 
     function handleLoad(_event: Event): void {
         console.log("Init");
-        generateDynamicContent(data);
+
+        generateContent(data);
 
         let form: HTMLDivElement = <HTMLDivElement>document.querySelector("div#form");
         let slider: HTMLInputElement = <HTMLInputElement>document.querySelector("input#amount");
@@ -27,9 +28,9 @@ namespace L04_CocktailBar {
 
         let formData: FormData = new FormData(<HTMLFormElement>document.querySelector("form"));
 
-        console.group("Order");
+        // console.group("Order");
         for (let entry of formData) {
-            console.log(entry);
+            // console.log(entry);
             let selector: string = "[value='" + entry[1] + "']"; // "[name='" + entry[0] + "'][value='" + entry[1] + "']";
             let item: HTMLInputElement = <HTMLInputElement>document.querySelector(selector);
             let itemPrice: number = Number(item.getAttribute("price"));
@@ -44,10 +45,10 @@ namespace L04_CocktailBar {
                 default:
                     order.innerHTML += item.value + ": €" + itemPrice.toFixed(2) + "<br>";
             }
-            console.log(item);
+            // console.log(item);
             price += itemPrice;
         }
-        console.groupEnd();
+        // console.groupEnd();
         
         order.innerHTML += "<p><strong>Total: : €" + price.toFixed(2);
     }

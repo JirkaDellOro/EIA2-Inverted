@@ -1,4 +1,5 @@
 namespace L04_CocktailBar {
+
     export interface Item {
         name: string;
         price: number;
@@ -21,9 +22,10 @@ namespace L04_CocktailBar {
             { name: "Mint", price: 0.30 }
         ],
         Container: [
-            { name: "Slim&Tall", price: 3.50 },
-            { name: "Wide&Short", price: 4.00 },
-            { name: "with Stem", price: 4.20 }
+            { name: "Slim", price: 3.50 },
+            { name: "Wide", price: 4.00 },
+            { name: "Papercup", price: 0.50 },
+            { name: "Plasticbag", price: 0.05 }
         ]
     };
 }
