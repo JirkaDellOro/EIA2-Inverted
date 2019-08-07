@@ -73,11 +73,9 @@ Es gibt zudem noch ein paar standardisierte Elemente, welche dem Nutzer Rückmel
 
 # Konzeption und Implementation einer formulargesteuerten Anwendung  
 
-<figcaption align="right"><small>Bildquelle: <a href="https://www.parkhotel-waldeck.de/cocktailbar">https://www.parkhotel-waldeck.de/cocktailbar</a></small></figcaption>
-<img src="Material/Cocktail.jpg" width="20%" align="right">
+<img src="Material/CocktailBar.png"/>
 
-Wie oft sitzt man nicht abends zuhause und wünscht sich einen richtig leckeren Cocktail. Aber die Zutaten fehlen, es ist zu aufwendig damit anzufangen und raus will man auch nicht mehr? Da drängt sich doch die nächste geniale Geschäftsidee auf:  
-die **Online-Cocktailbar!**  
+Wie oft sitzt man nicht abends zuhause und wünscht sich einen richtig leckeren Cocktail. Aber die Zutaten fehlen, es ist zu aufwendig damit anzufangen und raus will man auch nicht mehr? Da drängt sich doch die nächste geniale Geschäftsidee auf: die **Online-Cocktailbar!**  
 
 Kunden können hier mit Hilfe eines Webformulars spontan einen Cocktail bestellen, der Ihnen wenige Tage später per Post nach Hause geliefert wird. 
 
