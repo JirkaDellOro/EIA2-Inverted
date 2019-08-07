@@ -14,12 +14,12 @@
 		<p>Choose a drink and the extras. Select the size of your cocktail. Verify your order on the right.</p>
 	</header>
 
-	<form action="" method="get">
+	<form>
 		<div id="form">
 			<h2>Choose here</h2>
 			<fieldset>
 				<legend>Drink</legend>
-				<select name="Drink" id="">
+				<select name="Drink" id="drink">
 					<option value="Mojito" price="25">Mojito</option>
 					<option value="Caipirinha" price="30">Caipirinha</option>
 					<option value="Bloody Mary" price="21">Bloody Mary</option>
@@ -27,12 +27,14 @@
 			</fieldset>
 			<fieldset>
 				<legend>Container</legend>
-				<input type="radio" name="Container" id="slimtall" value="Slim&Tall" price="3.50" checked />
-				<label for="slimtall">Slim&Tall</label>
-				<input type="radio" name="Container" id="wideshort" value="Wide&Short" price="4.00" />
-				<label for="wideshort">Wide&Short</label>
-				<input type="radio" name="Container" id="stem" value="with Stem" price="4.20" />
-				<label for="stem">with Stem</label>
+				<input type="radio" name="Container" id="slim" value="Slim" price="3.50" checked />
+				<label for="slim">Slim</label>
+				<input type="radio" name="Container" id="wide" value="Wide" price="4.00" />
+				<label for="wide">Wide</label>
+				<input type="radio" name="Container" id="paper" value="Papercup" price="0.20" />
+				<label for="paper">Papercup</label>
+				<input type="radio" name="Container" id="plastic" value="Plasticbag" price="0.05" />
+				<label for="plastic">Plasticbag</label>
 			</fieldset>
 			<fieldset>
 				<legend>Extras</legend>
@@ -58,7 +60,7 @@
 			</fieldset>
 		</div>
 	</form>
-
+	
 	<div>
 		<h2>Your order</h2>
 		<div id="order">

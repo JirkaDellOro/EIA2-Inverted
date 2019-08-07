@@ -118,7 +118,7 @@ Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Über
 > - Buchstabe positionieren
 > - Buchstabe löschen.  
 
-[Scan](Material/BlackmailerCompanion_UseCaseDiagram.jpg) 
+[Use Case Diagram](Material/BlackmailerCompanion_UseCaseDiagram.jpg) 
 
 ## Skizze: User Interface 
 Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Das wird schon einiges über die erforderliche darunterliegende Struktur verraten. Die Skizze versiehst Du schon mit den HTML-Auszeichnungen und Eigenschaften, die dir dabei sinnvoll erscheinen. Unterscheide dabei zwischen statischen und dynamischen Elementen und Eigenschaften. Für die Dynamik trägst Du hier schon ein, an welchen Elementen Listener installiert werden soll und welche Ereignisse dabei mit welchen Aktivitäten verknüpft werden. Prüfe, ob alle Interaktionsmöglichkeiten zur Realisierung der Anwendungsfälle gegeben sind.
@@ -137,7 +137,7 @@ Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Da
 > - mehrere Buchstaben mit Rahmen (span, click-event-listener zum Löschen)
 > - das umschließende document (document, keydown-listener zur Buchstabenauswahl)  
 
-[Scan](Material/BlackmailerCompanion_UI-Scribble.jpg) 
+[UI-Scribble](Material/BlackmailerCompanion_UI-Scribble.jpg) 
 
 ## Aktivitätsdiagramme
 Jetzt hast Du bereits aus der Sicht des Nutzers die wesentlichen Aktivitäten, die beteiligten Elemente und die auszuwerteten Ereignisse festgehalten. Nun wechselst Du auf die Sicht aus dem System heraus und legst fest, wie es arbeiten soll. Dazu nutzt Du jetzt Aktivitätsdiagramme. Ein Event bildet dabei jeweils als Signalempfang einen Startknoten für eine Aktivität.  
@@ -162,7 +162,7 @@ Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm
 > - Dann 1. die Listener installieren am Document und dem Brief
 > - Schließlich das Hauptprogramm, hier lediglich die Variable `chosen` anlegen und den load-Listener installieren.  
 
-[Scan](Material/BlackmailerCompanion_ActivityDiagram.jpg) 
+[Activity Diagram](Material/BlackmailerCompanion_ActivityDiagram.jpg) 
 
 ## Implementation
 Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implementation der Anwendung berücksichtigt zu haben, kannst Du dich daran machen. 
@@ -176,7 +176,9 @@ Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implement
 
 > Inhalt:
 > - HTML-Datei ist bereits angelegt, die statischen Elemente vorhanden, ebenso die Einbindung des Stylesheets und des Skripts
-> - jetzt wieder in der Reihenfolge von 1 bis 4 werden die zuvor konzipierten Aktivitäten implementiert.
+> - jetzt wieder in der Reihenfolge von 1 bis 4 werden die zuvor konzipierten Aktivitäten implementiert.  
+
+[Activity Diagram (fixed)](Material/BlackmailerCompanion_ActivityDiagram2.jpg) 
 
 ## Testing
 Während der Implementation wird das Programm immer wieder getestet. Es ist wichtig möglichst so zu implementieren, dass nicht erst ein abschließender Test Fehler zu Tage fördert, sondern dass immer lauffähige Zwischenstände existieren, die entsprechend in das Code-Repository aufgenommen werden.  
@@ -201,14 +203,13 @@ Während der Implementation wird das Programm immer wieder getestet. Es ist wich
 Bedenke, dass Du die Konzeption jederzeit verbessern kannst und solltest, wenn dir auffällt, dass etwas fehlt oder nicht funktioniert. Dasselbe gilt für alle vorangegangenen Schritte. So können Überlegungen beim Zeichnen der Skizze zurück auf das Use-Case-Diagramm reflektieren, oder Erkenntnisse bei der Implementation die Änderung der Skizze nach sich ziehen, was dann wiederum die Aktivitätsdiagramme beeinflusst. Es ist unwahrscheinlich, dass der erste konzeptionelle Ansatz sich unverändert durchführen lässt und zur perfekten Anwendung führt. 
 > **Achtung:** Was Du auf keinen Fall machen darfst, ist auf der letzten Stufe, der Implementation, gravierende Änderungen vorzunehmen, ohne zuvor die Konzeption neu aufbereitet zu haben. Diese vorgehensweise führt mit großer Sicherheit zum **Misserfolg!**
 
-## Übung
-Löse zunächst das Problem mit dem erneuten Aufruf von placeLetter nach deleteLetter
-- experimentiere erst mit dem Lösungsoptionen 1 und 2. 
-- Plane dann Lösung 3 und implementiere sie.  
-
-Erweitere die Erpresserbrief-App so dass sie auch auf Smartphone anwendbar ist
-- In einem weiteren Bereich sollen alle zulässigen Buchstaben zur Auswahl bereit stehen, so dass man sie per Touch aktivieren kann
-- Der aktuell ausgewählte Buchstabe soll in dieser Auswahl hervorgehoben erscheinen, so dass der Nutzer weiß, was er gewählt hat, bevor er den Brief ändert
+## Übungen
+- [x] Löse zunächst das Problem mit dem erneuten Aufruf von placeLetter nach deleteLetter
+  - experimentiere erst mit dem Lösungsoptionen 1 und 2. 
+  - Plane dann Lösung 3 und implementiere sie.  
+- [x] Erweitere die Erpresserbrief-App so dass sie auch auf Smartphone anwendbar ist
+  - In einem weiteren Bereich sollen alle zulässigen Buchstaben zur Auswahl bereit stehen, so dass man sie per Touch aktivieren kann
+  - Der aktuell ausgewählte Buchstabe soll in dieser Auswahl hervorgehoben erscheinen, so dass der Nutzer weiß, was er gewählt hat, bevor er den Brief ändert
 - Hinweis: recherchiere nach dem Pointer-Event
 
 # Wochenaufgabe

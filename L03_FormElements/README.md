@@ -96,6 +96,8 @@ Zeichne wieder ganz schnell ein kleines Anwendungsfalldiagramm. Versuche es selb
 >   - Folgefall: aktuellen Zustand anzeigen
 > - Bestellung prüfen  
 
+[Use Case Diagram](Material/CocktailBar_UseCaseDiagram.jpg)
+
 ## Skizze: User-Interface 
 Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und überlege, welche Tags, Attribute und Listener Du brauchst. Investiere ein wenig Zeit um selbst einen ersten Entwurf zu gestalten, bevor Du das Video anschaust.
 
@@ -114,6 +116,8 @@ Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und 
 >   - als kleines Gimmick ein Slider für die Füllmenge und einen gedrehten Progressbar zur Anzeige derselben.
 >      - erhält input-Listener
 > - rechts ein Feld mit der Zusammenfassung
+
+[UI-Scrible](Material/CocktailBar_UI-Scribble.jpg)
 
 ## Aktivitätsdiagramme
 Nun ist schon grob konzipiert, was geschehen soll und wie sich das darstellt. Entwickle nun wieder ein Aktivitätsdiagramm mit dessen Hilfe Du festlegst, wie das Ganze funktioniert. Beginne wieder mit den Ereignissen und arbeite dich vom Groben ins Feine. Mach' dir am Anfang also noch nicht zu viele Gedanken über Details, sondern zerlege große Probleme in kleinere. Versuche es selbst, bevor Du das Video anschaust.
@@ -137,7 +141,9 @@ Nun ist schon grob konzipiert, was geschehen soll und wie sich das darstellt. En
 >   - Event ist dann irrelevant -> allgemeine Funktion displayOrder entwerfen, die von Eventhandler aufgerufen wird
 > - Schließlich das Hauptprogramm, hier wird lediglich der load-Listener installiert
 
-## Implementation
+[Activity Diagram](Material/CocktailBar_ActivityDiagram.jpg)
+
+## Implementation I
 Versuche dich nun an der Implementation. Schaue dir das Video spätestens an, wenn Du dich an die Zusammenfassung der Bestellung machst. Hier gibt es noch einige Tipps.
 
 |Hier erscheint jetzt ein Video|
@@ -187,7 +193,7 @@ for (let entry of formData) {
 ```
 Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0 ein String mit dem der Wert des `name`-Attributs des ursprünglichen Form-Elements, und an Stelle 1 den entsprechenden Wert des `value`-Attributs. Letzterer ist hier vom Typ `FormDataEntryValue`, eine etwas besondere Zeichenkette, und muss gegebenenfall konvertiert werden.  
 
-## Implementation  
+## Implementation II
 
 |Hier erscheint jetzt ein Video|
 |-
@@ -210,9 +216,18 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
 > - statt weiteres if: switch bauen
 > - Schließlich Ausgabe der Summe
 >   - Total berechnen lassen
-> - Beispiele für unschöne Zahlendarstellug finden
+> - Beispiele für unschöne Zahlendarstellung finden
 >   - toFixed einführen
 > - Am Ende Vergleich mit Konzept   
+
+[UI-Scribble (fixed)](Material/CocktailBar_UI-Scribble2.jpg)
+
+- [x] Die Ausgabe der Bestellübersicht funktioniert noch nicht richtig. Finde den Fehler und korrigiere ihn.
+- [x] Implementiere die Sonderbehandlung der Drinks.
+- [x] Implementiere die Berechnung der Gesamtsumme
+- [x] Überprüfe die Konzeption und korrigiere gegebenfalls die Diagramme entsprechend der gemachten Erfahrungen.  
+
+Hinweis: Ungenauigkeiten bei der Berechnung von Fließkommazahlen können sehr schnell zu hässlichen Zahlendarstellungen führen. Der Typ `number` verfügt aber über mehrere Methoden zur Umwandlung in eine formatierte Zeichenkette. Recherchiere danach und nutze sie.
 
 # Wochenaufgabe
 siehe Aufgaben-Wiki
