@@ -1,0 +1,11 @@
+* {
+	display: block;
+}
+
+head {
+	display: none;
+}
+
+fieldset {
+	width: 300px;
+}

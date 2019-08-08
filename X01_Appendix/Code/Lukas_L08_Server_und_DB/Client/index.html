@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DatabaseClient</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="DBClient.css" type="text/css" media="screen"/>
+<script src="DBClient.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<fieldset id="input">
+		<legend> Type student data here </legend>
+		<input type="text" name="name" placeholder="name" id="name" />
+		<input type="text" name="firstname" placeholder="firstname" id="firstname" />
+		<input type="text" name="matrikel" placeholder="matrikel" id="matrikel" />
+		
+		<button type="button" id="insert">Insert to database</button>
+	</fieldset>
+	<fieldset id="output">
+		<legend> All student data </legend>
+		<button type="button" id="refresh">Refresh</button>
+		<textarea rows="20" cols="90"> </textarea>
+	</fieldset>
+</body>
+</html>
