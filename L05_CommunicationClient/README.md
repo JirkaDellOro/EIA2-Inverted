@@ -16,7 +16,8 @@ Anwendungsfalldiagramm mit verteiltem Client-Server-System, Request-Response und
 Kommunikation ist der Prozess des Austauschs oder der Übertragung von Information. Dabei werden zwei grundsätzliche Formen derselben unterschieden. 
 ### Synchron
 ![](Material/Synchron.svg)
-Synchron bedeutet "zeitlich gemeinsam". Bei der Kommunikation heißt das allerdings nicht gleichzeitig, sondern "aufeinander abgestimmt". Das bedeutet, dass die Kommunikationspartner aufeinander warten, bis der jeweils andere seine Information übertragen hat und dann ihrerseits mit einer Übertragung beginnen. Das bedeutet zwangsläufig, dass die beteiligten Systeme die Hälfte der zur Verfügung stehenden Zeit mit Warten verbringen. Im Diagram wird dies mit der kleinen Schleife angedeutet, die ein großes Problem darstellen kann. 
+Synchron bedeutet "zeitlich gemeinsam". Bei der Kommunikation heißt das allerdings nicht gleichzeitig, sondern "aufeinander abgestimmt". Das bedeutet, dass die Kommunikationspartner aufeinander warten, bis der jeweils andere seine Information übertragen hat und dann ihrerseits mit einer Übertragung beginnen. Das bedeutet zwangsläufig, dass die beteiligten Systeme die Hälfte der zur Verfügung stehenden Zeit mit Warten verbringen. Im Diagram wird dies mit der kleinen Schleife angedeutet, die ein großes Problem darstellen kann.  
+- [x] Sammle Beispiele für synchrone Kommunikation aus deinem eigenen Alltag. 
 
 ### Asynchron
 - Diagramm zur asynchronen Kommunikation
