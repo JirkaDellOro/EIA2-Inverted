@@ -28,7 +28,8 @@ So klein diese Schleife auch erscheint, sie kann ein großes Problem darstellen.
 ![](Material/Asynchron.svg)  
 Daher hat sich die asynchrone Kommunikation durchgesetzt. Die Kommunikationspartner setzen eine oder mehrere Anfragen ab, damit ist ihr Teil zunächst erledigt und sie können sich um andere Aufgaben kümmern. Irgendwann kommt ein Signal, dass eine Antwort auf eine der Anfragen vorliegt. Dieses dient als Startpunkt für einen neuen Prozess, bei dem zunächst die Antwort verarbeitet wird und gegebenenfalls weitere Anfragen verschickt werden.  
 
-- [x] Sammle Beispiele für asynchrone Kommunikation in deinem eigenen Alltag.  
+- [x] Sammle Beispiele für asynchrone Kommunikation in deinem eigenen Alltag.
+- [x] Was sind die besonderen Herausforderungen bei der asynchronen Kommunikation?
 
 Damit ist es Webseiten beispielsweise möglich, die Darstellung aufzubauen und Interaktion zur Verfügung zu stellen, während weitere Daten geladen werden. Oder während der Interaktion mit dem Nutzer Daten zu versenden.  
 
