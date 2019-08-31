@@ -92,7 +92,7 @@ Deswegen wurden 2017 auch die neuen Schlüsselworte `async` und `await` in Javas
     }
 ```
 Mit dem Schlüsselwort `async` wird eine Funktion als asynchron deklariert, das bedeutet, dass ihre Ausführung unterbrochen und zu einem späteren Zeitpunkt fortgesetzt werden kann. Genau dies bewirkt das Schlüsselwort `await`, welches daher nur innerhalb von asynchronen Funktionen Sinn ergibt. Sobald `fetch` gestartet wird, wird die Funktion `communicate` zunächst beendet und die Ausführung des Programms bei der nächsten Anweisung nach deren Aufruf fortgesetzt. Sobald aber `fetch` beendet wurde, wird die Funktion `communicate` bei der Anweisung nach dem fetch fortgesetzt. Das heißt also, dass das Hauptprogramm, sofern es noch nicht komplett abgelaufen ist, unterbrochen wird um die Ausgabe der Response in der Konsole zu bewerkstelligen. Danach ist `communicate` tatsächlich am Ende und das Hauptprogramm wird fortgesetzt. Es könnten aber in der Funktion noch weitere `await`s folgen, die wieder entsprechendes Verhalten bewirken. So bläht die weitere Verarbeitung der Response den Code nicht doch wieder durch Callbacks auf.  
-- [x] Kopiere obenstehenden asynchronen Code und bette ihn in ein neues Programm ein. Lass' vom Hauptprogramm aus die Funktion `communicate` mit den Parametern "https://jirkadelloro.github.io/EIA2-Inverted/L05_Client/Material/Test.txt"
+- [x] Kopiere obenstehenden asynchronen Code und bette ihn in ein neues Programm ein. Lass' vom Hauptprogramm aus die Funktion `communicate` mit den Parametern "https://jirkadelloro.github.io/EIA2-Inverted/L05_Client/Material/Test.txt" und {}. Letzterer ist ein leeres Objekt, verschicke zunächst nur eine Request ohne Nutzdaten.
 
 
 ## URL
