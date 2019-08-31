@@ -24,7 +24,7 @@ namespace L05_Client {
     async function communicateAwait(_url: RequestInfo, _data: RequestInit): Promise<void> {
         let response: Response = await fetch(_url, _data);
         console.log("Response", response);
-        let content: string = await response.text());
+        let content: string = await response.text();
         console.log("Content", content);
     }
     //#endregion
