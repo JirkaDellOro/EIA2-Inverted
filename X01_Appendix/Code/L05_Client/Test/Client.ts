@@ -8,12 +8,19 @@ namespace L05_Client {
     }
     function handleButtons(_event: MouseEvent): void {
         console.log("Start");
+        
+        // create query string
+        let formData: FormData = new FormData(document.forms[0]);
+        formData.append("Test", "Success");
+        let query: string = new URLSearchParams(<any>formData).toString();
+        console.log("Query", query);
+
         switch ((<HTMLElement>_event.target).textContent) {
             case "Promise":
-                communicatePromise(url, {});
+                communicatePromise(url + "?" + query);
                 break;
             case "Async/Await":
-                communicateAwait(url, {});
+                communicateAwait(url + "?" + query);
                 break;
         }
         console.log("End")
@@ -21,8 +28,8 @@ namespace L05_Client {
     //#endregion
 
     //#region Async/Await
-    async function communicateAwait(_url: RequestInfo, _data: RequestInit): Promise<void> {
-        let response: Response = await fetch(_url, _data);
+    async function communicateAwait(_url: RequestInfo): Promise<void> {
+        let response: Response = await fetch(_url);
         console.log("Response", response);
         let content: string = await response.text();
         console.log("Content", content);
@@ -30,11 +37,11 @@ namespace L05_Client {
     //#endregion
 
     //#region Promise
-    function communicatePromise(_url: RequestInfo, _data: RequestInit): void {
-        let promise: Promise<Response> = fetch(_url, _data);
+    function communicatePromise(_url: RequestInfo): void {
+        let promise: Promise<Response> = fetch(_url);
         promise.
             then(handleSuccess, handleFailure).
-            then(printContent,  null);
+            then(printContent, null);
     }
 
     function handleFailure(_response: Response): void {

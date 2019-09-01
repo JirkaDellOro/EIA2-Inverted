@@ -9,31 +9,36 @@ var L05_Client;
     }
     function handleButtons(_event) {
         console.log("Start");
+        // create query string
+        let formData = new FormData(document.forms[0]);
+        formData.append("Test", "Success");
+        let query = new URLSearchParams(formData).toString();
+        console.log("Query", query);
         switch (_event.target.textContent) {
             case "Promise":
-                communicatePromise(url, {});
+                communicatePromise(url + "?" + query);
                 break;
             case "Async/Await":
-                communicateAwait(url, {});
+                communicateAwait(url + "?" + query);
                 break;
         }
         console.log("End");
     }
     //#endregion
     //#region Async/Await
-    async function communicateAwait(_url, _data) {
-        let response = await fetch(_url, _data);
+    async function communicateAwait(_url) {
+        let response = await fetch(_url);
         console.log("Response", response);
         let content = await response.text();
         console.log("Content", content);
     }
     //#endregion
     //#region Promise
-    function communicatePromise(_url, _data) {
-        let promise = fetch(_url, _data);
+    function communicatePromise(_url) {
+        let promise = fetch(_url);
         promise.
             then(handleSuccess, handleFailure).
-            then(printContent);
+            then(printContent, null);
     }
     function handleFailure(_response) {
         console.log("Failure", _response);
