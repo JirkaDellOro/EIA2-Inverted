@@ -34,7 +34,7 @@ namespace L05_Client {
         let promise: Promise<Response> = fetch(_url, _data);
         promise.
             then(handleSuccess, handleFailure).
-            then(printContent);
+            then(printContent,  null);
     }
 
     function handleFailure(_response: Response): void {
