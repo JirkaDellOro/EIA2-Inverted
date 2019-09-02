@@ -8,19 +8,20 @@ namespace L05_Client {
     }
     function handleButtons(_event: MouseEvent): void {
         console.log("Start");
-        
+
         // create query string
         let formData: FormData = new FormData(document.forms[0]);
         formData.append("Test", "Success");
-        let query: string = new URLSearchParams(<any>formData).toString();
+        let query: URLSearchParams = new URLSearchParams(<any>formData);
         console.log("Query", query);
-
+        let urlAndQuery: string = url + "?" + query.toString();
+        
         switch ((<HTMLElement>_event.target).textContent) {
             case "Promise":
-                communicatePromise(url + "?" + query);
+                communicatePromise(urlAndQuery);
                 break;
             case "Async/Await":
-                communicateAwait(url + "?" + query);
+                communicateAwait(urlAndQuery);
                 break;
         }
         console.log("End")

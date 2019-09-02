@@ -115,7 +115,55 @@ Der zweite Teil des URL wird dann von dem erreichten Server beliebig interpretie
 Der Query-String stellt nun die eigentlichen Nutzdaten dar, die bei der synchronen Übertragung mit der Get-Methode des Formulars bereits automatisch aufbereitet und mitgeschickt wurden. Ein Application-Server, der bezüglich Funktionalität über die Möglichkeiten eines reinen Fileservers hinausgeht, kann diesen String interpretieren und mit den gewonnenen Daten Berechnungen anstellen oder weitere Prozesse steuern.
 
 ## Daten asynchron senden
+Um also Daten per Get mit Fetch zu senden, muss lediglich der URL um den Query-String erweitert werden. Wie dieser String zustande kommt ist irrelevant, hier kann man beliebig kreativ werden. Sofern die Daten aus einem Formular aber bereits vorliegen, ist es einfach möglich, ihn aus einem FormData-Objekt zu generieren. Hierbei hilt ein weiteres Standard-Javascript-Objekt: URLSearchParams
+```typescript
+let url: string = "https://whatever.server/path/file";
+let query: URLSearchParams = new URLSearchParams(<any>formData);
+url += url + "?" + query.toString();
+await fetch(url);
+```
+> Zur Zeit (2019) wird leider noch ein kleiner Hack verwendet, da TypeScript noch nicht ein Objekt vom Typ FormData als Parameter akzeptiert und daher mit `<any>` ausgetrickst werden muss.
+
+### Custom Data
+Ein Objekt vom Typ `URLSearchParams` lässt sich fast genauso verwenden wie eines vom Typ `FormData`. Insbesondere können an beide Objekte per `append` noch weitere Schlüssel-Werte-Paare angefügt werden. So ist es sehr leicht auch Informationen, die nicht aus einem Formular kommen, mit auf den Weg zu schicken.  
+
+> **Zusatzinfo**: `fetch` akzeptiert neben dem URL noch einen zweiten Parameter, ein `RequestInit`-Objekt. Damit lassen sich noch viele weitere zusätzliche Steuerinformationen für die Kommunikation angeben und auch sehr einfach die Post-Methode für die Datenübertragung verwenden. Auch kann dabei das FormData-Objekt direkt genutzt werden. 
+
+## Cocktailbar: Bestellung versenden
+
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. groß verschiedene Diagramme, die überarbeitet bzw. neu erstellt werden
+|2. Jirkas sprechender Kopf  
+
+> Inhalt: die zusätzlichen Planungen für den Datenversand
+> - die Skizze überarbeiten
+>   - ein Submit- und bei der Gelegenheit einen Reset-Button einbauen
+> - Aktivitätsdiagram ergänzen
+>   - dem Submit-Button einen Listener spendieren, ruft asynchrone sendOrder-Funktion auf.
+>   - sendOrder packt FormData in URLSearchParams, ruft mit await fetch auf. Was soll mit der Antwort geschehen?
+>     - da derzeit nur ein Fileserver zur Verfügung steht, gibt es noch keine sinnvolle Antwort. Aber es kann schon eine Nachricht kommen, dass die Bestellung erfolgreich versandt wurde. -> alert
 
 
-## Custom Data
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. groß das Programm, das gerade getippt wird
+|2. klein die Diagramme im Wechsel
+|3. klein Jirkas sprechender Kopf  
+
+> Inhalt:
+> - Cocktailbar bereits kopiert, namespace angepasst auf L05
+> - Buttons im HTML anlegen und die Nutzung der Standard-Formularfunktionen demonstrieren.
+>   - damit kann man schon viel machen, aber wir wollen einen asynchronen One-Pager
+> - Submit-Button suchen und Listener installieren.
+> - sendOrder implementieren
+> - User-Nachricht als alert
+
+
+
+Problembehandlung: Submitbutton hat Standardverhalten, das ggf. Probleme machen kann.
+
 ## JSON-Object
+- FileServer zum Testen: npx serve

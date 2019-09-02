@@ -12,14 +12,15 @@ var L05_Client;
         // create query string
         let formData = new FormData(document.forms[0]);
         formData.append("Test", "Success");
-        let query = new URLSearchParams(formData).toString();
+        let query = new URLSearchParams(formData);
         console.log("Query", query);
+        let urlAndQuery = url + "?" + query.toString();
         switch (_event.target.textContent) {
             case "Promise":
-                communicatePromise(url + "?" + query);
+                communicatePromise(urlAndQuery);
                 break;
             case "Async/Await":
-                communicateAwait(url + "?" + query);
+                communicateAwait(urlAndQuery);
                 break;
         }
         console.log("End");
