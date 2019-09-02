@@ -1,7 +1,8 @@
 namespace L05_Client {
     //#region Startup
     window.addEventListener("load", start);
-    let url: string = "https://jirkadelloro.github.io/EIA2-Inverted/L05_Client/Material/Test.txt";
+    // let url: string = "https://jirkadelloro.github.io/EIA2-Inverted/L05_Client/Material/Test.txt";
+    let url: string = "Test.txt";
 
     function start(_event: Event): void {
         document.querySelectorAll("fieldset")[1].addEventListener("click", handleButtons);
@@ -11,11 +12,11 @@ namespace L05_Client {
 
         // create query string
         let formData: FormData = new FormData(document.forms[0]);
-        formData.append("Test", "Success");
+        formData.append("Test", "Success"); 
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         console.log("Query", query);
         let urlAndQuery: string = url + "?" + query.toString();
-        
+
         switch ((<HTMLElement>_event.target).textContent) {
             case "Promise":
                 communicatePromise(urlAndQuery);

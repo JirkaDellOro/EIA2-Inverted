@@ -161,9 +161,22 @@ Ein Objekt vom Typ `URLSearchParams` lässt sich fast genauso verwenden wie eine
 > - sendOrder implementieren
 > - User-Nachricht als alert
 
+Problembehandlung: Submitbutton hat Standardverhalten, das ggf. Probleme machen kann. Wenn der Fall->
+- kurze Erklärung
+- Aufgabe: eine der Lösungen implementieren
+  - stopPropagation
+  - anderen Buttontype nutzen
 
+## Daten nachladen
+`fetch` und die Erkenntnisse aus diesem Kapitel können auch genutzt werden, um das Problem zu lösen, das im vorangegangenen Kapitel noch übrig blieb: die Daten zum Angebot des Barkeepers vollständig aus dem Programmcode herauszulösen. Ein Fileserver kann, so wie es zuvor mit der Datei Test.txt geschehen ist, den Inhalt einer Datei als Zeichenkette liefern, der Client kann diese Antwort weiterverarbeiten.  
+Im letzten Kapitel wurde die Variable `data` direkt im Code definiert, die Daten waren im Code literal gegeben. Dadurch war es leicht möglich, mit der Punkt-Syntax oder der Klammer-Syntax auf die Daten zuzugreifen und deren hierarchische Ordnung zu nutzen. Liegt nun die Information lediglich als Zeichenkette in der Response vor, ist es wünschenswert, diese ebenso in ein assoziatives Array umzuwandeln.
 
-Problembehandlung: Submitbutton hat Standardverhalten, das ggf. Probleme machen kann.
+### JSON-Objekt
+Hierfür stellt Javascript das JSON-Objekt zur Verfügung, mit dem die Erzeugung eines Objektes bzw. eines assoziativen Arrays aufgrund der in einer Zeichenkette enthaltenen Information leicht möglich ist. Ebenso kann damit die Repräsentation eines solchen Objektes als Zeichenkette erzeugt werden. Das JSON-Objekt stellt hierfür zwei Methoden zur Verfügung: `parse` und `stringify`.
 
-## JSON-Object
+Videos
+- Planung erweitern
+- Implementation
+
+## Lokaler Fileserver
 - FileServer zum Testen: npx serve

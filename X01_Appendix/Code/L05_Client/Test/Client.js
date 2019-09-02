@@ -3,7 +3,8 @@ var L05_Client;
 (function (L05_Client) {
     //#region Startup
     window.addEventListener("load", start);
-    let url = "https://jirkadelloro.github.io/EIA2-Inverted/L05_Client/Material/Test.txt";
+    // let url: string = "https://jirkadelloro.github.io/EIA2-Inverted/L05_Client/Material/Test.txt";
+    let url = "Test.txt";
     function start(_event) {
         document.querySelectorAll("fieldset")[1].addEventListener("click", handleButtons);
     }
