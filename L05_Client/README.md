@@ -166,9 +166,16 @@ Ein Objekt vom Typ `URLSearchParams` lässt sich fast genauso verwenden wie eine
 > - Get-Params in Network suchen und anzeigen!
 
 ## Lokaler Fileserver
-Beim Testen lokal tritt nun leider ein Fehler auf. Der URL wird als ungültig erkannt, da nicht das HyperText-Transfer-Protocol genutzt wird. Es greifen Sicherheitsmechanismen des Browsers, die verhindern, dass Skripte von Websiten auf die lokalen Speichermedien des Clientrechners zugreifen. Sie gehören zur Cross-Origin-Resource-Sharing-Policy (CORS) die regelt, welche Ressourcen von welcher Quelle auf welche Ressourcen von welcher anderen Quelle zugreifen dürfen. 
+Beim Testen auf der lokalen Maschine tritt nun ein Fehler auf. Der URL wird als ungültig erkannt, da nicht das HyperText-Transfer-Protocol genutzt wird. Es greifen Sicherheitsmechanismen des Browsers, die verhindern, dass Skripte von Websiten auf die lokalen Speichermedien des Clientrechners zugreifen. Sie gehören zur Cross-Origin-Resource-Sharing-Policy (CORS) die regelt, welche Ressourcen von welcher Quelle auf welche Ressourcen von welcher anderen Quelle zugreifen dürfen.  
+Sobald die Cocktailbar von Github-Pages aus aufgerufen wird, tritt das Problem nicht auf. Alle Resourcen befinden sich in derselben Domäne im Netz, wo mit dem http-Protocol gearbeitet wird, und der Zugriff mit `fetch` ist erlaubt.  
+Es wäre natürlich sehr lästig, während der Entwicklung für jeden Test zunächst das aktuelle Projekt auf einen entfernten Fileserver kopieren zu müssen. Stattdessen ist es einfach möglich, die lokale Entwicklungsmaschine zu einem Fileserver zu machen und das Projekt dann unter "Internetbedingungen" zu testen. Im folgenden Beispiel wird hierzu ein winziger Fileserver genutzt, der unter https://www.npmjs.com/package/serve zu finden ist.
 
-- FileServer zum Testen: npx serve  
+
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. groß der Screen mit VSCode und Browser. npx serve wird gestartet.
+|2. Jirkas sprechender Kopf  
 
 ## Standardverhalten des Submit-Buttons
 Der Submitbutton hat weiterhin das Standardverhalten den automatischen Datenversand auszulösen, was mit dem im Skript definierten Versand in Konflikt steht. So bewirkt er gegebenenfalls ein Neuladen der Seite, obwohl das Skript im Hintergrund arbeitet. Hierfür gibt es drei Lösungsansätze:
