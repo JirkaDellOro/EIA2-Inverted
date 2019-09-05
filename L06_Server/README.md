@@ -1,3 +1,59 @@
+# L06_Server
+<img src="Material/ServerName.jpg">
+<small>Quelle: <a href="https://xkcd.com/910/">https://xkcd.com/910/</a></small>  
+
+Ein reiner Fileserver wird natürlich den Ansprüchen nicht gerecht, welche die Cocktailbar an die Gegenseite der Kommunikation stellt. Die Bestellung kommt zwar an, aber die Serversoftware ist nicht darauf programmiert, damit etwas anzufangen. Was genau damit geschehen soll, wurde allerdings noch gar nicht definiert. Im vorangegangenen Kapitel wurde lediglich festgehalten, dass der Server die Bestellung entgegen nehmen soll.  
+
+![](../L05_Client/Material/draw.io/UseCase.svg)  
+
+In diesem Kapitel soll daher zunächst die Grundlage für die Weiterverarbeitung geschaffen werden. Der Server soll eine asynchrone Kommunikation mit dem Client führen, Daten von diesem entgegen nehmen und eine Antwort erzeugen können, die über das einfache Ausliefern von statischen Dateiinhalten hinausgeht. Kurzum: ein Applikation-Server wird erstellt.
+
+## Node.js
+Der Server wird voraussichtlich nicht in einem Browser laufen. Üblicherweise sind Server auf Maschinen installiert, die in einem Rechenzentrum in lebensfeindlicher Umgebung stehen und nicht mit der Interaktion mit Usern beschäftigt sind. Ein Browser, der doch vordringlich für die Mensch-Maschine-Kommunikation verantwortlich ist, wäre da nur hinderlich. Daher sind Server meist in niederen Sprachen wie C++, Java usw. programmiert und werden ggf. in ihrere Funktionalität mit Hilfe von Skriptsprachen wie Pearl, CGI oder PHP erweitert.  
+
+2009 kam der damals 28jährige Student Ryan Dahl auf die Idee, Googles V8-Javascript-Interpreter außerhalb des Browsers zu nutzen, um verschiedene Module zu erweitern und damit einen Server zu programmieren. Der Einsatz von Javascript war vor allem motiviert durch Unterstützung der Ereignissteuerung, womit Server nicht durch wartende Prozesse blockiert werden. Ryan schuf damit Node.js, eine Programmierumgebung, mit der es möglich ist, Javascript und damit auch kompiliertes TypeScript außerhalb von Browsern zu nutzen und damit Anwendungen zu entwickeln. VSCode selbst ist eine solche Anwendung!
+
+> **FunFact:** 2018 kündigte Ryan Dahl die Entwicklung von Deno an, womit er Node.js Konkurrenz macht. Unter anderem soll Deno direkt TypeScript-Programme interpretieren, ohne dass daraus zuvor Javascript-Dateien erzeugt werden müssen.
+
+Für dich ist der riesige Vorteil von Node.js, dass Du keine weitere Programmiersprache lernen musst, um einen Server zu entwickeln. Ebenso kannst Du damit Desktop-Programme für Windows, Mac oder Linux bauen (siehe VSCode). Mit TypeScript bist Du gut aufgestellt.
+
+Node.js ist ein Ope
+
+## Design
+- Einen Port auf dem System für Anfragen öffnen
+- Listener installieren, der auf eine Anfrage reagiert
+- Handlerfunktion, welche die Anfrage verarbeitet und eine Antwort formuliert
+
+Activity-Diagram!
+
+## Documentation
+
+
+## Implementation 1
+- bis Reaktion auf Request
+
+## handleRequest
+- Parameter erklären
+- Query verarbeiten
+- Antwort bauen
+- Header erklären
+
+## Implementation 2
+
+## Heroku
+
+## Client
+- Pfade anpassen
+
+
+
+
+
+
+
+
+
+
 Node.js sollte bereits installiert sein.
 
 `npm install @types/node` für die Node types, entweder im Projekt oder mit `-g`. 
