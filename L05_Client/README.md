@@ -1,4 +1,4 @@
-# L05_DataTransferClient
+# L05_Client
 <img src="Material/ZitsFaceToFace.jpg">  
 <small>Quelle: <a href="https://arnoldzwicky.org/category/these-modern-times/page/3/">https://arnoldzwicky.org/category/these-modern-times/page/3/</a></small>
 
@@ -140,9 +140,12 @@ Ein Objekt vom Typ `URLSearchParams` lässt sich fast genauso verwenden wie eine
 > Inhalt: die zusätzlichen Planungen für den Datenversand
 > - die Skizze überarbeiten
 >   - ein Submit- und bei der Gelegenheit einen Reset-Button einbauen
-> - Aktivitätsdiagram ergänzen
+> - Aktivitätsdiagram ergänzen auf zweitem Blatt!
 >   - dem Submit-Button einen Listener spendieren, ruft asynchrone sendOrder-Funktion auf.
->   - sendOrder packt FormData in URLSearchParams, ruft mit await fetch auf. Was soll mit der Antwort geschehen?
+>   - sendOrder packt FormData in URLSearchParams
+>   - ruft mit await fetch auf.
+>   - erster Endknoten. Nebenläufigkeit an dieser Stelle ansprechen!
+> - Was soll mit der Antwort geschehen?
 >     - da derzeit nur ein Fileserver zur Verfügung steht, gibt es noch keine sinnvolle Antwort. Aber es kann schon eine Nachricht kommen, dass die Bestellung erfolgreich versandt wurde. -> alert
 
 
@@ -154,29 +157,69 @@ Ein Objekt vom Typ `URLSearchParams` lässt sich fast genauso verwenden wie eine
 |3. klein Jirkas sprechender Kopf  
 
 > Inhalt:
-> - Cocktailbar bereits kopiert, namespace angepasst auf L05
+> - Cocktailbar bereits kopiert, namespace angepasst auf L05, groups sind spans und nicht mehr divs wegen style
 > - Buttons im HTML anlegen und die Nutzung der Standard-Formularfunktionen demonstrieren.
 >   - damit kann man schon viel machen, aber wir wollen einen asynchronen One-Pager
 > - Submit-Button suchen und Listener installieren.
 > - sendOrder implementieren
 > - User-Nachricht als alert
+> - Get-Params in Network suchen und anzeigen!
 
-Problembehandlung: Submitbutton hat Standardverhalten, das ggf. Probleme machen kann. Wenn der Fall->
-- kurze Erklärung
-- Aufgabe: eine der Lösungen implementieren
-  - stopPropagation
-  - anderen Buttontype nutzen
+## Lokaler Fileserver
+Beim Testen lokal tritt nun leider ein Fehler auf. Der URL wird als ungültig erkannt, da nicht das HyperText-Transfer-Protocol genutzt wird. Es greifen Sicherheitsmechanismen des Browsers, die verhindern, dass Skripte von Websiten auf die lokalen Speichermedien des Clientrechners zugreifen. Sie gehören zur Cross-Origin-Resource-Sharing-Policy (CORS) die regelt, welche Ressourcen von welcher Quelle auf welche Ressourcen von welcher anderen Quelle zugreifen dürfen. 
+
+- FileServer zum Testen: npx serve  
+
+## Standardverhalten des Submit-Buttons
+Der Submitbutton hat weiterhin das Standardverhalten den automatischen Datenversand auszulösen, was mit dem im Skript definierten Versand in Konflikt steht. So bewirkt er gegebenenfalls ein Neuladen der Seite, obwohl das Skript im Hintergrund arbeitet. Hierfür gibt es drei Lösungsansätze:
+  - im Skript mit `_event.preventDefault()` das Standardverhalten unterbinden
+  - als Typ des Buttons in der HTML-Datei `"button"` definieren
+  - den Button außerhalb des Formulars platzieren (was derzeit der Fall ist)
+- [x] Provoziere bewusst dieses Problem und experimentiere mit allen drei Lösungsoptionen.
 
 ## Daten nachladen
 `fetch` und die Erkenntnisse aus diesem Kapitel können auch genutzt werden, um das Problem zu lösen, das im vorangegangenen Kapitel noch übrig blieb: die Daten zum Angebot des Barkeepers vollständig aus dem Programmcode herauszulösen. Ein Fileserver kann, so wie es zuvor mit der Datei Test.txt geschehen ist, den Inhalt einer Datei als Zeichenkette liefern, der Client kann diese Antwort weiterverarbeiten.  
 Im letzten Kapitel wurde die Variable `data` direkt im Code definiert, die Daten waren im Code literal gegeben. Dadurch war es leicht möglich, mit der Punkt-Syntax oder der Klammer-Syntax auf die Daten zuzugreifen und deren hierarchische Ordnung zu nutzen. Liegt nun die Information lediglich als Zeichenkette in der Response vor, ist es wünschenswert, diese ebenso in ein assoziatives Array umzuwandeln.
 
 ### JSON-Objekt
-Hierfür stellt Javascript das JSON-Objekt zur Verfügung, mit dem die Erzeugung eines Objektes bzw. eines assoziativen Arrays aufgrund der in einer Zeichenkette enthaltenen Information leicht möglich ist. Ebenso kann damit die Repräsentation eines solchen Objektes als Zeichenkette erzeugt werden. Das JSON-Objekt stellt hierfür zwei Methoden zur Verfügung: `parse` und `stringify`.
+Hierfür stellt Javascript das JSON-Objekt zur Verfügung, mit dem die Erzeugung eines assoziativen Arrays auf Basis der in einer Zeichenkette enthaltenen Information leicht möglich ist. Ebenso kann damit umgekehrt die Repräsentation eines solchen Arrays in Form einer Zeichenkette erzeugt werden. Das JSON-Objekt stellt hierfür zwei Methoden zur Verfügung: `parse` und `stringify`.
 
-Videos
-- Planung erweitern
-- Implementation
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. groß verschiedene Diagramme, die überarbeitet bzw. neu erstellt werden
+|2. Jirkas sprechender Kopf  
 
-## Lokaler Fileserver
-- FileServer zum Testen: npx serve
+> Inhalt: die zusätzlichen Planungen für das Nachladen der Angebotsdaten
+> - die Skizze überarbeiten
+>   - bestehende handleLoad-Funktion muss am Anfang erweitert werden
+>   - Startknoten durch Konnektor (A) ersetzen
+>   - Aktivitätsnamen löschen und Notiz mit Verweis auf Client-Blatt anbringen
+> - Aktivitätsdiagram ergänzen auf Client-Blatt
+>   - dort handleLoad anlegen
+>   - offer-daten anfordern, Endknoten anbringen und auf wait reponse verweisen
+>   - analog mit text-Extraktion 
+>   - text nach JSON parsen
+> - auf Konnektor (A) verweisen
+
+
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. groß das Programm, das gerade getippt wird
+|2. klein die Diagramme im Wechsel
+|3. klein Jirkas sprechender Kopf  
+
+> Inhalt:  
+> - es sind lediglich die drei Zeilen Code zu implementieren:
+> ```typescript
+>        let response: Response = await fetch("Data.json");
+>        let offer: string = await response.text();
+>        let data = JSON.parse(offer); 
+> ```
+> - und handleLoad muss dafür asynchron deklariert werden
+> - liefert `Promise<void>`
+> - Allerdings sind die Daten auch aufzubereiten
+>   - Data.ts wird zu Data.json, .map und .js löschen
+>   - Datenstrukturen zu GenerateContent verschieben
+>   - in JSON ist alles String, daher Schlüssel per Replace mit Anführungszeichen versehen
