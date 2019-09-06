@@ -51,7 +51,7 @@ Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der e
 > - Timeout
 > - process
 
-
+- [x] Eine kleine Aufgabe mit einer Node-App lösen! Hierzu CLI-Parameter entgegen nehmen. Farben-Konverter? Bin-Dez-Hex? Eliza?
 
 ## Design
 - Einen Port auf dem System für Anfragen öffnen
@@ -59,9 +59,6 @@ Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der e
 - Handlerfunktion, welche die Anfrage verarbeitet und eine Antwort formuliert
 
 Activity-Diagram!
-
-## Documentation
-
 
 ## Implementation 1
 - bis Reaktion auf Request
@@ -75,6 +72,7 @@ Activity-Diagram!
 ## Implementation 2
 
 ## Heroku
+- PaaS
 
 ## Client
 - Pfade anpassen
