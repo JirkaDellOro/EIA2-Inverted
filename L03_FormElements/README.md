@@ -3,7 +3,7 @@
 
 Interaktion war von Anfang an ein Kernpunkt von HTML. Das World-Wide-Web basiert auf der Idee von wissenschaftlichen Dokumenten, die durch interaktive Verweise, den Links, miteinander verknüpft sind. Der Fokus wurde erst sehr viel später auf Katzenvideos gelegt.
 
-> Fun-Fact: Tim Berners Lee entwickelte Anfang der 1990er Jahre HTML, HTTP, URL, den ersten Webserver und den ersten Browser. Einen Eindruck davon, wie sich das damals anfühlte, erhält man hier auf interaktive Weise: [WWW](http://line-mode.cern.ch/www/hypertext/WWW/TheProject.html)  
+> Fun-Fact: Tim Berners Lee ([Github-Profil](https://github.com/timbl)) entwickelte Anfang der 1990er Jahre HTML, HTTP, URL, den ersten Webserver und den ersten Browser. Einen Eindruck davon, wie sich das damals anfühlte, erhält man hier auf interaktive Weise: [WWW](http://line-mode.cern.ch/www/hypertext/WWW/TheProject.html)  
 
 Sehr früh wurden aber auch schon HTML-Elemente unterschiedlichen Typs entwickelt, die es einem Nutzer ermöglichen, Informationen einzugeben. Damit werden auch heute noch Formulare gestaltet. Die Elemente reagieren automatisch auf die Interaktion des Nutzers und geben eine optische Rückmeldung, ohne dass eine weitergehende Programmierung erforderlich ist. Für die Grundfunktionalität genügt reines HTML.  
 In diesem Kapitel lernst Du die wichtigsten Elemente kennen, erfährst, wie Du sie nutzen kannst und welche Informationen sie liefern. Ähnliche Elemente findet man auch in anderen Entwicklungsumgebungen zur Gestaltung von User-Interfaces.  
