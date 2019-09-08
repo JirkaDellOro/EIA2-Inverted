@@ -15,7 +15,10 @@ Der Server wird voraussichtlich nicht in einem Browser laufen. Üblicherweise si
 
 > **FunFact:** 2018 kündigte Ryan Dahl die Entwicklung von Deno an, womit er Node.js Konkurrenz macht. Unter anderem soll Deno direkt TypeScript-Programme interpretieren, ohne dass daraus zuvor Javascript-Dateien erzeugt werden müssen. Hier ist Ryans [Github-Profil](https://github.com/ry)
 
-Für dich ist der riesige Vorteil von Node.js, dass Du keine weitere Programmiersprache lernen musst, um einen Server zu entwickeln. Ebenso kannst Du damit Desktop-Programme für Windows, Mac oder Linux bauen (siehe VSCode). Mit TypeScript und Node.js bist Du sehr gut aufgestellt.
+Für dich ist der riesige Vorteil von Node.js, dass Du keine weitere Programmiersprache lernen musst, um einen Server zu entwickeln. Ebenso kannst Du damit Desktop-Programme für Windows, Mac oder Linux bauen (siehe VSCode). Mit TypeScript und Node.js bist Du sehr gut aufgestellt.  
+
+- [x] Wie kannst Du ermitteln, welche Node-Version auf deinem Rechner installiert ist?
+- [x] Stelle sicher, dass Du eine aktuelle Version hast und führe gegebenenfalls ein Update durch.
 
 ## Entwickeln mit Node.js
 
@@ -54,14 +57,27 @@ Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der e
 - [x] Eine kleine Aufgabe mit einer Node-App lösen! Hierzu CLI-Parameter entgegen nehmen. Farben-Konverter? Bin-Dez-Hex? Eliza?
 
 ## Design
-- Einen Port auf dem System für Anfragen öffnen
-- Listener installieren, der auf eine Anfrage reagiert
-- Handlerfunktion, welche die Anfrage verarbeitet und eine Antwort formuliert
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. Diagrammerstellung auf Papier 
+|2. Jirkas sprechender Kopf  
 
-Activity-Diagram!
+>Inhalt: 
+> - Einen Port auf dem System für Anfragen öffnen
+> - Listener installieren, der auf eine Anfrage reagiert
+> - Handlerfunktion, welche die Anfrage verarbeitet und eine Antwort formuliert
 
 ## Implementation 1
-- bis Reaktion auf Request
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. groß das Programm, das gerade getippt wird
+|2. klein die Diagramme im Wechsel
+|3. klein Jirkas sprechender Kopf  
+
+> Inhalt:
+> - Implementation bis Reaktion auf Request
 
 ## handleRequest
 - Parameter erklären
