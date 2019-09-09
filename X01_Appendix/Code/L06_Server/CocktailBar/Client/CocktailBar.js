@@ -2,6 +2,8 @@
 var L06_CocktailBar;
 (function (L06_CocktailBar) {
     window.addEventListener("load", handleLoad);
+    // const url: string = "index.html";
+    const url = "localhost:8100";
     async function handleLoad(_event) {
         console.log("Init");
         let response = await fetch("Data.json");
@@ -12,7 +14,7 @@ var L06_CocktailBar;
         let slider = document.querySelector("input#amount");
         let submit = document.querySelector("button[type=button]");
         console.log(submit);
-        submit.addEventListener("click", sendOrder);
+        // submit.addEventListener("click", sendOrder);
         form.addEventListener("change", handleChange);
         slider.addEventListener("input", displayAmount);
         displayOrder();
@@ -22,7 +24,7 @@ var L06_CocktailBar;
         // _event.preventDefault();
         let formData = new FormData(document.querySelector("form"));
         let query = new URLSearchParams(formData);
-        await fetch("index.html?" + query.toString());
+        await fetch(url + "?" + query.toString());
         alert("Order sent!");
     }
     function handleChange(_event) {

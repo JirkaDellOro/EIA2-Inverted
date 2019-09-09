@@ -2,18 +2,15 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Http = require("http");
 const Url = require("url");
-// /<reference types="node"/>
-// const Http = require("http");
-// const Url = require("url");
-//@ts-ignore
+//@ts-ignore no-unused-variable
 var L06_CocktailBar;
 (function (L06_CocktailBar) {
-    console.log("Starting server");
-    L06_CocktailBar.port = process.env.PORT;
-    if (L06_CocktailBar.port == undefined)
-        L06_CocktailBar.port = 8100;
+    let port = process.env.PORT;
+    if (port == undefined)
+        port = 5001;
+    console.log("Starting server on port " + port);
     let server = Http.createServer();
-    server.listen(L06_CocktailBar.port);
+    server.listen(port);
     server.addListener("request", handleRequest);
     // server.addListener("listening", handleListen);
     // function handleListen(): void {

@@ -89,6 +89,11 @@ Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der e
 
 ## Heroku
 - PaaS
+- package.json
+  - eine Heroku-App ist zunächst ganz blank
+  - wir hatten Node installiert und dann mit Node das Programm gestartet
+  - package.json trägt diese Infos
+  - erstellen mit npm init
 
 ## Client
 - Pfade anpassen

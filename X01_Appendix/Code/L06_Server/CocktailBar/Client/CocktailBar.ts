@@ -1,5 +1,7 @@
 namespace L06_CocktailBar {
     window.addEventListener("load", handleLoad);
+    // const url: string = "index.html";
+    const url: string = "localhost:8100";
     
     async function handleLoad(_event: Event): Promise<void> {
         console.log("Init");
@@ -15,7 +17,7 @@ namespace L06_CocktailBar {
         let submit: HTMLButtonElement = <HTMLButtonElement>document.querySelector("button[type=button]");
         
         console.log(submit);
-        submit.addEventListener("click", sendOrder);
+        // submit.addEventListener("click", sendOrder);
         form.addEventListener("change", handleChange);
         slider.addEventListener("input", displayAmount);
 
@@ -27,7 +29,7 @@ namespace L06_CocktailBar {
         // _event.preventDefault();
         let formData: FormData = new FormData(<HTMLFormElement>document.querySelector("form"));
         let query: URLSearchParams = new URLSearchParams(<any>formData);
-        await fetch("index.html?" + query.toString());
+        await fetch(url + "?" + query.toString());
         alert("Order sent!");
     }
 

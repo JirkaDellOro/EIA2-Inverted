@@ -1,21 +1,17 @@
 import * as Http from "http";
 import * as Url from "url";
-// /<reference types="node"/>
 
-// const Http = require("http");
-// const Url = require("url");
-
-//@ts-ignore
+//@ts-ignore no-unused-variable
 namespace L06_CocktailBar {
-    console.log("Starting server");
-    export let port: number | string | undefined = process.env.PORT;
+    let port: number | string | undefined = process.env.PORT;
     if (port == undefined)
-        port = 8100;
-        
+        port = 5001;
+
+    console.log("Starting server on port " + port);
     let server: Http.Server = Http.createServer();
     server.listen(port);
     server.addListener("request", handleRequest);
-    
+
     // server.addListener("listening", handleListen);
     // function handleListen(): void {
     //     console.log("Listening");
