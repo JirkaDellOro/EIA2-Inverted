@@ -21,6 +21,11 @@ Für dich ist der riesige Vorteil von Node.js, dass Du keine weitere Programmier
 - [x] Stelle sicher, dass Du eine aktuelle Version hast und führe gegebenenfalls ein Update durch.
 
 ## Entwickeln mit Node.js
+### Types
+Damit TypeScript bei der Entwicklung einer Node.js-Applikation richtig helfen kann, muss es die neuen Datentypen kennen, die Node mitbringt. Diese installierst Du wieder einfach per npm auf deiner Entwicklungsmaschine:
+```
+npm install -g @types/node
+```
 
 ### Run
 Ein Skript mit Node laufen zu lassen ist denkbar einfach. Da auf deiner Maschine bereits Node installiert ist (sonst würden VSCode und der TypeScript-Compiler nicht funktionieren) musst Du lediglich in der Konsole
@@ -86,34 +91,50 @@ Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der e
 - Header erklären
 
 ## Implementation 2
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. groß das Programm, das gerade getippt wird
+|2. klein die Diagramme im Wechsel
+|3. klein Jirkas sprechender Kopf  
+
+> Inhalt:
+> - Parameter verarbeiten
+> - Probleme umschiffen, Header einbauen
+> - Verschiedene Ausgaben auf Konsole und in Antwort
+> - JSON erzeugen
 
 ## Heroku
 - PaaS
-- package.json
+- signup
+    - for free
+    - primary language: Node.js
+- rechts oben "New"
+    - "create new app"
+    - App name muss einzigartig sein und nur kleine Buchstaben nutzen
+    - Region Europe
+    - create app
+- dashboard
+    - nur zwei Views derzeit wichtig deploy und logs
+    - View logs rechts oben unter "More" in neuem Fenster öffnen
+    - die zwei Fenster nebeneinander setzen
+    - im Deploy-Fenster "Connect to Github" wählen um die untere Auswahl zu verändern
+      - dort erneut "Connect to Github" wählen
+      - im Popup mit Github verbinden
+      - Repository auswählen
+- Deploy
+    - Deploy Master Branch
+    - Ausgaben in beiden Fenstern beobachten
+    - Crash!
+
+## package.json
   - eine Heroku-App ist zunächst ganz blank
   - wir hatten Node installiert und dann mit Node das Programm gestartet
   - package.json trägt diese Infos
   - erstellen mit npm init
+  - Pfade auf das auszuführende Skript legen
+  - start in scripts nicht vergessen
 
 ## Client
+- port von process
 - Pfade anpassen
-
-
-
-
-
-
-
-
-
-
-Node.js sollte bereits installiert sein.
-
-`npm install @types/node` für die Node types, entweder im Projekt oder mit `-g`. 
-In diesem Zusammenhang kann man ggf auch eine .gitignore einsetzen, um die node_modules nicht mit zu pushen. Dafür muss man dann aber wahrscheinlich auch auf die package.json eingehen. 
-
-Heroku funktioniert wie bisher, man könnte sich aber auch überlegen die Studi-cloud zu verwenden (Anleitung dazu: https://studicloud.hs-furtwangen.de/). Studi-Cloud ist allerdings deutlich schwieriger in jeder Hinsicht: Keinerlei Automatisierung, kein Userinterface, keine einfache Umgangsform und dann auch noch Linux. Da müsste man dann ggf auch noch in Linux und Shell Commands einsteigen, was den Rahmen definitiv sprengen würde, für Interessierte Studis aber durchaus interessant sein kann (letztes Semester immerhin einer).
-
-Es kann sein dass `port == undefined` nicht funktioniert, ich glaube darum haben wir es letztes Semester mit `!port` gecheckt.
-
-PS: Ports nicht vergessen zu erklären

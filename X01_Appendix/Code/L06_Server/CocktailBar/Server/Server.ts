@@ -1,7 +1,8 @@
 import * as Http from "http";
 import * as Url from "url";
+// let Http: typeof import("http") = import("http").then;
 
-//@ts-ignore no-unused-variable
+// @ts-ignore no-unused-variable
 namespace L06_CocktailBar {
     let port: number | string | undefined = process.env.PORT;
     if (port == undefined)

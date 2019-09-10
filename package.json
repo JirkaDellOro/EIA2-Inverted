@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/JirkaDellOro/EIA2-Inverted/issues"
   },
-  "homepage": "https://github.com/JirkaDellOro/EIA2-Inverted#readme"
+  "homepage": "https://github.com/JirkaDellOro/EIA2-Inverted#readme",
+  "dependencies": {
+    "@types/mongodb": "^3.3.1",
+    "mongodb": "^3.3.2"
+  }
 }

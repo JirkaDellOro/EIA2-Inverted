@@ -1,4 +1,4 @@
-namespace L06_CocktailBar {
+namespace L07_CocktailBar {
     window.addEventListener("load", handleLoad);
     // const url: string = "index.html";
     const url: string = "localhost:8100";

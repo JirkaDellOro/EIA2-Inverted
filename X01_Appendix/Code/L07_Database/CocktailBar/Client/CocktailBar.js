@@ -1,6 +1,6 @@
 "use strict";
-var L06_CocktailBar;
-(function (L06_CocktailBar) {
+var L07_CocktailBar;
+(function (L07_CocktailBar) {
     window.addEventListener("load", handleLoad);
     // const url: string = "index.html";
     const url = "localhost:8100";
@@ -9,7 +9,7 @@ var L06_CocktailBar;
         let response = await fetch("Data.json");
         let offer = await response.text();
         let data = JSON.parse(offer);
-        L06_CocktailBar.generateContent(data);
+        L07_CocktailBar.generateContent(data);
         let form = document.querySelector("form");
         let slider = document.querySelector("input#amount");
         let submit = document.querySelector("button[type=button]");
@@ -66,5 +66,5 @@ var L06_CocktailBar;
         let amount = _event.target.value;
         progress.value = parseFloat(amount);
     }
-})(L06_CocktailBar || (L06_CocktailBar = {}));
+})(L07_CocktailBar || (L07_CocktailBar = {}));
 //# sourceMappingURL=CocktailBar.js.map

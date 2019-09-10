@@ -1,11 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+///<reference path="Database.ts"/>
 const Http = require("http");
 const Url = require("url");
+const Database = require("./Database");
+var database = Database.L07_CocktailBar;
 // let Http: typeof import("http") = import("http").then;
 // @ts-ignore no-unused-variable
-var L06_CocktailBar;
-(function (L06_CocktailBar) {
+var L07_CocktailBar;
+(function (L07_CocktailBar) {
     let port = process.env.PORT;
     if (port == undefined)
         port = 5001;
@@ -13,6 +16,8 @@ var L06_CocktailBar;
     let server = Http.createServer();
     server.listen(port);
     server.addListener("request", handleRequest);
+    // Database
+    database.insert({ "x": 10 });
     // server.addListener("listening", handleListen);
     // function handleListen(): void {
     //     console.log("Listening");
@@ -30,5 +35,5 @@ var L06_CocktailBar;
         }
         _response.end();
     }
-})(L06_CocktailBar || (L06_CocktailBar = {}));
+})(L07_CocktailBar || (L07_CocktailBar = {}));
 //# sourceMappingURL=Server.js.map

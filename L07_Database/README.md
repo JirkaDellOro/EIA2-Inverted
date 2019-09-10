@@ -1,13 +1,21 @@
 Bild Vorschlag: https://dilbert.com/strip/1995-11-17
 
 Mongo Installationsanleitung (Community Server): https://docs.mongodb.com/manual/installation/  
-Nicht "as a service" installieren, sonst startet sich der Kollege beim Computerstart immer selbst, das wollen wir ja nicht.
 
-Der MongoCompass ist eine grafische Oberfläche zur Visualisierung/Bearbeitung der Daten. Brauchen wir also auch nicht.
+https://docs.mongodb.com/manual/administration/install-community/
+
+Install MongoD as a Service deaktiveren!
+
+Nicht "as a service" installieren, sonst startet sich der Kollege beim Computerstart immer selbst, das wollen wir ja nicht. Der MongoCompass ist eine grafische Oberfläche zur Visualisierung/Bearbeitung der Daten. Brauchen wir also auch nicht.
 
 zum Ausführen einfach direkt in der Konsole `path/to/mongod.exe --dbpath <path/to/db/folder>` eingeben.
 
-`npm install @types/mongodb` sowie `mongodb`, auch hier wieder der Hinweis auf node_modules und package.json
+`npm install @types/mongodb` sowie `mongodb`, auch hier wieder der Hinweis auf node_modules und package.json.
+
+package.json erhält neue Einträge
+gitignore, je nachdem, wo node_modules installiert wurde
+
+
 
 Online: https://www.mongodb.com/
 - "try free"
