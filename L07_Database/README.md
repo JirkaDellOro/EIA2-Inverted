@@ -1,3 +1,5 @@
+# Database
+
 Bild Vorschlag: https://dilbert.com/strip/1995-11-17
 
 Mongo Installationsanleitung (Community Server): https://docs.mongodb.com/manual/installation/  
@@ -14,6 +16,25 @@ zum Ausführen einfach direkt in der Konsole `path/to/mongod.exe --dbpath <path/
 
 package.json erhält neue Einträge
 gitignore, je nachdem, wo node_modules installiert wurde
+
+# Alles zuerst üben, dann Video anschauen
+
+## MongoDB
+- Datenbank in cmd-Window starten
+## Mongo Shell
+- Shell in zweitem cmd-Window starten
+- connect zur Datenbank beobachten
+- zunächst einiges mit der Mongo-Shell spielen
+- bis klar ist, was die Datenbank macht und wie die Befehle lauten und arbeiten
+## Zugriff von Server aus planen
+## Zugriff implementiere
+## Server
+- Server in drittem cmd-Window starten
+- connect beobachten
+## Client
+- Pfade implementieren sofern erforderlich
+- Client in viertem Fenster (Browser) starten
+- Funktionen beobachten
 
 
 

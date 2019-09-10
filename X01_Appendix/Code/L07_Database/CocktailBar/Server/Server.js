@@ -1,27 +1,28 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-///<reference path="Database.ts"/>
 const Http = require("http");
 const Url = require("url");
-const Database = require("./Database");
-var database = Database.L07_CocktailBar;
-// let Http: typeof import("http") = import("http").then;
+const Mongo = require("mongodb");
 // @ts-ignore no-unused-variable
 var L07_CocktailBar;
 (function (L07_CocktailBar) {
-    let port = process.env.PORT;
-    if (port == undefined)
-        port = 5001;
-    console.log("Starting server on port " + port);
-    let server = Http.createServer();
-    server.listen(port);
-    server.addListener("request", handleRequest);
-    // Database
-    database.insert({ "x": 10 });
-    // server.addListener("listening", handleListen);
-    // function handleListen(): void {
-    //     console.log("Listening");
-    // }
+    let orders;
+    // running on heroku?
+    if (process.env.NODE_ENV == "production") {
+        // databaseURL = "mongodb+srv://username:password@hostname:port/database";
+        connectToDatabase("eia2", "mongodb+srv://testuser:testpassword@eia2-57vpd.mongodb.net/eia2");
+        startServer(process.env.PORT);
+    }
+    else {
+        connectToDatabase("Test", "mongodb://localhost:27017");
+        startServer(5001);
+    }
+    function startServer(_port) {
+        console.log("Starting server on port " + _port);
+        let server = Http.createServer();
+        server.listen(_port);
+        server.addListener("request", handleRequest);
+    }
     function handleRequest(_request, _response) {
         console.log("I hear voices!");
         _response.setHeader("content-type", "text/html; charset=utf-8");
@@ -34,6 +35,13 @@ var L07_CocktailBar;
             _response.write(jsonString);
         }
         _response.end();
+    }
+    async function connectToDatabase(_name, _url) {
+        console.log("Connecting to database", _name, _url);
+        let options = { useNewUrlParser: true, useUnifiedTopology: true };
+        let mongoClient = await Mongo.MongoClient.connect(_url, options);
+        orders = mongoClient.db(_name).collection("Orders");
+        console.log("Database", orders);
     }
 })(L07_CocktailBar || (L07_CocktailBar = {}));
 //# sourceMappingURL=Server.js.map

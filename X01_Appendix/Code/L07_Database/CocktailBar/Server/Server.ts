@@ -1,29 +1,27 @@
-///<reference path="Database.ts"/>
 import * as Http from "http";
 import * as Url from "url";
-import * as Database from "./Database";
-import database = Database.L07_CocktailBar;
-
-// let Http: typeof import("http") = import("http").then;
+import * as Mongo from "mongodb";
 
 // @ts-ignore no-unused-variable
 namespace L07_CocktailBar {
-    let port: number | string | undefined = process.env.PORT;
-    if (port == undefined)
-        port = 5001;
+    let orders: Mongo.Collection;
 
-    console.log("Starting server on port " + port);
-    let server: Http.Server = Http.createServer();
-    server.listen(port);
-    server.addListener("request", handleRequest);
+    // running on heroku?
+    if (process.env.NODE_ENV == "production") {
+        // databaseURL = "mongodb+srv://username:password@hostname:port/database";
+        connectToDatabase("eia2", "mongodb+srv://testuser:testpassword@eia2-57vpd.mongodb.net/eia2");
+        startServer(process.env.PORT);
+    } else {
+        connectToDatabase("Test", "mongodb://localhost:27017");
+        startServer(5001);
+    }
 
-    // Database
-    database.insert({ "x": 10 });
-
-    // server.addListener("listening", handleListen);
-    // function handleListen(): void {
-    //     console.log("Listening");
-    // }
+    function startServer(_port: number | string | undefined) {
+        console.log("Starting server on port " + _port);
+        let server: Http.Server = Http.createServer();
+        server.listen(_port);
+        server.addListener("request", handleRequest);
+    }
 
     function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {
         console.log("I hear voices!");
@@ -40,5 +38,13 @@ namespace L07_CocktailBar {
             _response.write(jsonString);
         }
         _response.end();
+    }
+
+    async function connectToDatabase(_name: string, _url: string): Promise<void> {
+        console.log("Connecting to database", _name, _url);
+        let options: Mongo.MongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true };
+        let mongoClient: Mongo.MongoClient = await Mongo.MongoClient.connect(_url, options);
+        orders = mongoClient.db(_name).collection("Orders");
+        console.log("Database", orders);
     }
 }

@@ -42,6 +42,7 @@ var L07_CocktailBar;
     function handleInsert(_e) {
         console.log("Database insertion returned -> " + _e);
     }
+    L07_CocktailBar.handleInsert = handleInsert;
     // try to fetch all documents from database, then activate callback
     function findAll(_callback) {
         // cursor points to the retreived set of documents in memory

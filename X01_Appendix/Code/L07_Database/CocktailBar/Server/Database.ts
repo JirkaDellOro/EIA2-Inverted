@@ -43,7 +43,7 @@ export namespace L07_CocktailBar {
     }
 
     // insertion-handler receives an error object as standard parameter
-    function handleInsert(_e: Mongo.MongoError): void {
+    export function handleInsert(_e: Mongo.MongoError): void {
         console.log("Database insertion returned -> " + _e);
     }
 
