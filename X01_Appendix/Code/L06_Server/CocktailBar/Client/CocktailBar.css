@@ -1,0 +1,29 @@
+body {
+	display: grid;
+	grid-template-columns: 70% auto;
+	grid-template-rows: auto auto
+}
+
+header {
+	grid-column: span 2;
+	text-align: center;
+}
+
+div {
+	border: thin solid black;
+	margin: 1em;
+}
+h2 {
+	text-align: center;
+}
+
+progress {
+	height:4em;
+	width: 4em;
+	transform: rotate(-90deg);
+}
+
+#slider {
+	display: grid;
+	grid-template-columns: auto auto;
+}

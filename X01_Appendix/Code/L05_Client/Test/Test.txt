@@ -1,0 +1,2 @@
+Klasse!
+Wenn dieser Text in der Konsole erscheint, hast Du es geschafft, asynchrone Kommunikation mit einem Server per Fetch zu implementieren!
