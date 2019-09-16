@@ -106,98 +106,30 @@ Erpresserbriefe zu basteln ist mühsam. So ist es doch eine interessante Geschä
 ## Anwendungsfalldiagramm (Use-Case-Diagram)
 Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Überblick über die Anforderungen an deine Anwendung. Das geht ganz schnell und hilft ungemein bei der Konzeption.  
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß das Diagramm, das von Hand gezeichnet wird, 
-|2. Jirkas sprechender Kopf  
-
->Inhalt: die Erstellung des Diagramms mit den Anwendungsfällen  
-> - Anwendung starten
-> - Buchstabe wählen
-> - Buchstabe positionieren
-> - Buchstabe löschen.  
-
-[Use Case Diagram](Material/BlackmailerCompanion_UseCaseDiagram.jpg) 
+<a href="https://drive.google.com/open?id=1jyeM5LjJAwSzkpno9DXU1jNs2sMPZMVo"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a><a href="Material/BlackmailerCompanion_UseCaseDiagram.jpg"><img src="Material/BlackmailerCompanion_UseCaseDiagram.jpg" width="25%"/></a>
 
 ## Skizze: User Interface 
 Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Das wird schon einiges über die erforderliche darunterliegende Struktur verraten. Die Skizze versiehst Du schon mit den HTML-Auszeichnungen und Eigenschaften, die dir dabei sinnvoll erscheinen. Unterscheide dabei zwischen statischen und dynamischen Elementen und Eigenschaften. Für die Dynamik trägst Du hier schon ein, an welchen Elementen Listener installiert werden soll und welche Ereignisse dabei mit welchen Aktivitäten verknüpft werden. Prüfe, ob alle Interaktionsmöglichkeiten zur Realisierung der Anwendungsfälle gegeben sind.
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß die Skizze, die von Hand gezeichnet wird, 
-|2. klein das Use-Case-Diagramm
-|3. klein Jirkas sprechender Kopf  
-
-> Inhalt:  
-> - Überschrift (h1)
-> - Ein Feld mit Handlungsanweisung (p)
-> - ein Feld mit Rahmen für den Brief (div, click-event-listener zum Platzieren)
-> - mehrere Buchstaben mit Rahmen (span, click-event-listener zum Löschen)
-> - das umschließende document (document, keydown-listener zur Buchstabenauswahl)  
-
-[UI-Scribble](Material/BlackmailerCompanion_UI-Scribble.jpg) 
+<a href="https://drive.google.com/open?id=11ynF215CLtS5cymBmpLOgtn0p6Ra4yrE"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/BlackmailerCompanion_UI-Scribble.jpg"><img src="Material/BlackmailerCompanion_UI-Scribble.jpg" width="25%"/></a>
 
 ## Aktivitätsdiagramme
 Jetzt hast Du bereits aus der Sicht des Nutzers die wesentlichen Aktivitäten, die beteiligten Elemente und die auszuwerteten Ereignisse festgehalten. Nun wechselst Du auf die Sicht aus dem System heraus und legst fest, wie es arbeiten soll. Dazu nutzt Du jetzt Aktivitätsdiagramme. Ein Event bildet dabei jeweils als Signalempfang einen Startknoten für eine Aktivität.  
 Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm dir dann nacheinander die einzelnen Aktivitäten vor und verfeinere sie. Wiederhole diesen Prozess, bis Du zu den atomaren Aktionen gekommen bist die sich in Programmanweisungen umsetzen lassen. Am Anfang musst Du hierzu wahrscheinlich nach diesen Anweisungen noch etwas recherchieren.  
-
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß die Aktivitätsdiagramme, die von Hand gezeichnet werden, 
-|2. klein das Use-Case-Diagramm und die Skizze im Wechsel nach Bedarf
-|3. klein Jirkas sprechender Kopf  
-
-> Inhalt:  
-> - die vier Signalempfange im Hauptprogramm bilden Startpunkte: 1. Load von Window, 2. Keydown auf Document, 3. Klick auf Brief, 4. Klick auf Buchstabe
-> - Beginn mit 4. Klick -> deleteLetter (kurze Recherche führt zu removeChild)
-> - Dann 3. Klick -> placeLetter, hierfür werden Position und der Buchstabe gebraucht
->   - Zur Position die Angaben im MouseEvent untersuchen
->   - der gewählte Buchstabe muss irgendwo gespeichert sein
->   - am Buchstaben Listener für deleteLetter installieren
-> - Dann 2. Keydown -> chooseLetter (kurze Recherche führt zu key im KeyEvent)
->   - gewählten Buchstaben in einer globalen Variable im Hauptprogramm speichern
-> - Dann 1. die Listener installieren am Document und dem Brief
-> - Schließlich das Hauptprogramm, hier lediglich die Variable `chosen` anlegen und den load-Listener installieren.  
-
-[Activity Diagram](Material/BlackmailerCompanion_ActivityDiagram.jpg) 
+<a href="https://drive.google.com/open?id=1H0FjFC-sdlkGis8UCu5FrpOz3Quzpkau"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/BlackmailerCompanion_ActivityDiagram.jpg"><img src="Material/BlackmailerCompanion_ActivityDiagram.jpg" width="25%"/></a>
 
 ## Implementation
-Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implementation der Anwendung berücksichtigt zu haben, kannst Du dich daran machen. 
+Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implementation der Anwendung berücksichtigt zu haben, kannst Du dich daran machen.  
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Programm, das gerade getippt wird
-|2. klein das Aktivitäts-Diagramm
-|3. klein Jirkas sprechender Kopf  
-
-> Inhalt:
-> - HTML-Datei ist bereits angelegt, die statischen Elemente vorhanden, ebenso die Einbindung des Stylesheets und des Skripts
-> - jetzt wieder in der Reihenfolge von 1 bis 4 werden die zuvor konzipierten Aktivitäten implementiert.  
-
-[Activity Diagram (fixed)](Material/BlackmailerCompanion_ActivityDiagram2.jpg) 
+<a href="https://drive.google.com/open?id=1blPpvyKuXGF_nZ83nXlGETNxc1fGfe7h"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/BlackmailerCompanion_ActivityDiagram2.jpg"><img src="Material/BlackmailerCompanion_ActivityDiagram2.jpg" width="25%"/></a>
 
 ## Testing
 Während der Implementation wird das Programm immer wieder getestet. Es ist wichtig möglichst so zu implementieren, dass nicht erst ein abschließender Test Fehler zu Tage fördert, sondern dass immer lauffähige Zwischenstände existieren, die entsprechend in das Code-Repository aufgenommen werden.  
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. das Blackmailer-Programm und offener Entwicklerbereich
-|2. klein Jirkas sprechender Kopf  
-
-> Inhalt:
-> - Breakpoints setzen um das Programm zu verfolgen
-> - Dabei fällt auf, dass nach deleteLetter noch placeLetter aufgerufen wird 
-> - Varianten der Lösung des Problems besprechen
->   1. stopPropagation in deleteLetter
->   2. Abfrage target==currentTarget in placeLetter
->   3. gleich auf die Installation des Listeners an den Letters verzichten und stattdessen ein handleClickOnMail mit Fallunterscheidung bauen.
-> - weiteres mögliches Problem besprechen: Verschachtelung in Letters
->   - Lösung: currentTarget löschen
+<a href="https://drive.google.com/open?id=12BXx3ZOPT1p6dlduSyVPM0_w4dGw6rCC"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 ## Iterative Arbeitsweise
 Bedenke, dass Du die Konzeption jederzeit verbessern kannst und solltest, wenn dir auffällt, dass etwas fehlt oder nicht funktioniert. Dasselbe gilt für alle vorangegangenen Schritte. So können Überlegungen beim Zeichnen der Skizze zurück auf das Use-Case-Diagramm reflektieren, oder Erkenntnisse bei der Implementation die Änderung der Skizze nach sich ziehen, was dann wiederum die Aktivitätsdiagramme beeinflusst. Es ist unwahrscheinlich, dass der erste konzeptionelle Ansatz sich unverändert durchführen lässt und zur perfekten Anwendung führt. 
