@@ -176,41 +176,24 @@ Logikfehler sind nicht auf eine falsche Programmierung zurückzuführen, sondern
 ## Trace Table
 Mit Hilfe einer Verfolgungstabelle kann man den Zustand eines Programms zu jeder Zeit während des Laufs ermitteln und festhalten. Solche Tabellen von Hand zu erstellen ist eine gute Übung um den Programmlauf zu verstehen. Daher exerzieren wir dies im folgenden Video gemeinsam durch. Den Code dazu findest Du hier: [Cows.ts](../X01_Appendix/Code/L01_Recap&Foundation/Cows/Cows.ts)
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß die Tabelle, die gerade gezeichnet wird, 
-|2. klein das Programm
-|3. Jirkas sprechender Kopf
-
-- [x] Vervollständige die Tabelle bis zum Ende des Programmablaufs
-- [x] Implementiere das Programm und vergleiche die Ausgabe mit deiner Vorhersage.
-
-[Scan](Material/Cows_TraceTable.jpg)  
+<a href="https://drive.google.com/open?id=1-GW9PZdZ4pd7CbX8h0l7hll8Qr1vw4XM"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/Cows_TraceTable.jpg"><img src="Material/Cows_TraceTable.jpg" width="25%"/></a>
 
 ## Debugger
 Natürlich gibt es technische Hilfsmittel etwas ähnliches wie eine Verfolgungstabelle automatisch zu erzeugen. Hierzu verwendest Du den Debugger, also den "Entlauser".  
 
 >**FunFact:** Der Begriff "Bug" für einen Programmfehler wurde übrigens von der berühmten Computerpionierin Grace Hopper geprägt, die in den 1950 Jahren tatsächlich eine in einem Relais verstorbene Motte für eine Fehlfunktion ihres Großcomputers verantwortlich machen konnte.
 
-Mit dem Debugger kannst Du auf die Jagd nach Fehlern gehen. Da wir das Programm untersuchen, während es im Browser läuft, ist es sehr praktisch, dass der Browser einen solchen Debugger integriert hat. Unser kleines Programm weist derzeit keine Fehler auf, aber wir schauen trotzdem einmal, ob unsere Verfolgungstabelle mit den Ergebnissen des Debuggers übereinstimmt.
+Mit dem Debugger kannst Du auf die Jagd nach Fehlern gehen. Da wir das Programm untersuchen, während es im Browser läuft, ist es sehr praktisch, dass der Browser einen solchen Debugger integriert hat. Unser kleines Programm weist derzeit keine Fehler auf, aber wir schauen trotzdem einmal, ob unsere Verfolgungstabelle mit den Ergebnissen des Debuggers übereinstimmt.  
 
-|Hier erscheint jetzt ein Video|
-|-
-|1. Bildschirmfüllend das Browserfenster
-|2. klein Jirkas sprechender Kopf
+<a href="https://drive.google.com/open?id=1Zzry7GffJniG9n0Ix23_lvHqx9FWe6cl"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 ## Aktivitätsdiagramm
 Hier wird nun noch das Cows-Programm in ein Aktivitätsdiagramm überführt und dabei die wichtigsten Knoten und Kanten erklärt.  
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Diagramm, das von Hand gezeichnet wird, 
-|2. klein das Programm
-|3. klein Jirkas sprechender Kopf  
 
-[Scan](Material/Cows_ActivityDiagram.jpg) 
+<a href="https://drive.google.com/open?id=1gyfh5r1X-f-fpgW3OGrEWQWA557-pPX_"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/Cows_ActivityDiagram.jpg"><img src="Material/Cows_ActivityDiagram.jpg" width="25%"/></a>
 
 # Wochenaufgabe
 Verweis auf die Boxes-Aufgabe

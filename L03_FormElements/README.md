@@ -82,64 +82,20 @@ Kunden können hier mit Hilfe eines Webformulars spontan einen Cocktail bestelle
 ## Anwendungsfalldiagramm (Use-Case-Diagram)
 Zeichne wieder ganz schnell ein kleines Anwendungsfalldiagramm. Versuche es selbst, bevor Du dir das Video anschaust.  
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß das Diagramm, das von Hand gezeichnet wird, 
-|2. Jirkas sprechender Kopf  
-
->Inhalt: die Erstellung des Diagramms mit den Anwendungsfällen  
-> - Anwendung starten
-> - Cocktail zusammenstellen
->   - Folgefall: aktuellen Zustand anzeigen
-> - Bestellung prüfen  
-
-[Use Case Diagram](Material/CocktailBar_UseCaseDiagram.jpg)
+<a href="https://drive.google.com/open?id=1xNGMhZT0_OQCGjvhwww7xqIkr2joEIl7"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/CocktailBar_UseCaseDiagram.jpg"><img src="Material/CocktailBar_UseCaseDiagram.jpg" width="25%"/></a>
 
 ## Skizze: User-Interface 
 Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und überlege, welche Tags, Attribute und Listener Du brauchst. Investiere ein wenig Zeit um selbst einen ersten Entwurf zu gestalten, bevor Du das Video anschaust.
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß die Skizze, die von Hand gezeichnet wird, 
-|2. klein das Use-Case-Diagramm
-|3. klein Jirkas sprechender Kopf  
-
-> Inhalt:  
-> - Überschrift (h1)
-> - Ein Feld mit Handlungsanweisung (p)
-> - links ein Feld mit den Formularelementen
-    - erhält change-Listener
->   - als kleines Gimmick ein Slider für die Füllmenge und einen gedrehten Progressbar zur Anzeige derselben.
->      - erhält input-Listener
-> - rechts ein Feld mit der Zusammenfassung
-
-[UI-Scrible](Material/CocktailBar_UI-Scribble.jpg)
+<a href="https://drive.google.com/open?id=17DIodcq0CdHrADe1oLe1yod6SUuUgW5x"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/CocktailBar_UI-Scribble.jpg"><img src="Material/CocktailBar_UI-Scribble.jpg" width="25%"/></a>
 
 ## Aktivitätsdiagramme
 Nun ist schon grob konzipiert, was geschehen soll und wie sich das darstellt. Entwickle nun wieder ein Aktivitätsdiagramm mit dessen Hilfe Du festlegst, wie das Ganze funktioniert. Beginne wieder mit den Ereignissen und arbeite dich vom Groben ins Feine. Mach' dir am Anfang also noch nicht zu viele Gedanken über Details, sondern zerlege große Probleme in kleinere. Versuche es selbst, bevor Du das Video anschaust.
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß die Aktivitätsdiagramme, die von Hand gezeichnet werden, 
-|2. klein das Use-Case-Diagramm und die Skizze im Wechsel nach Bedarf
-|3. klein Jirkas sprechender Kopf  
-
-> Inhalt:  
-> - die drei Signalempfange im Hauptprogramm bilden Startpunkte: 1. Load von Window, 2. Änderung im Formular, 3. Input am Slider
-> - Beginn handleLoad, hier werden lediglich die anderen Listener installiert.
-> - Dann 3. Input am Slider, wurde bereits in der Lektion genau so gemacht.
-> - Dann 2. Formularänderung
->   - mögliche Strategien diskutieren
->     1. Events auswerten und eine Datenstruktur parallel halten
->     2. Bei jeder Änderung alte Bestellung verwerfen und komplett neu aus Formularzuständen aufbauen
->   - Strategie 2 wird verfolgt: viel simpler, leicht erweiterbar, Performance irrelevant
->   - Event ist dann irrelevant -> allgemeine Funktion displayOrder entwerfen, die von Eventhandler aufgerufen wird
-> - Schließlich das Hauptprogramm, hier wird lediglich der load-Listener installiert
-
-[Activity Diagram](Material/CocktailBar_ActivityDiagram.jpg)
+<a href="https://drive.google.com/open?id=1vUR3kbYZvTonO9KCOLdbWtGcUKE-d4Bt"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/CocktailBar_ActivityDiagram.jpg"><img src="Material/CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
 
 ## Implementation I
 Versuche dich nun an der Implementation. Schaue dir das Video spätestens an, wenn Du dich an die Zusammenfassung der Bestellung machst. Hier gibt es noch einige Tipps.
