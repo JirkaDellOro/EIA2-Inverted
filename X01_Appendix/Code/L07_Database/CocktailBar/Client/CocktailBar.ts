@@ -1,14 +1,14 @@
 namespace L07_CocktailBar {
     window.addEventListener("load", handleLoad);
     // const url: string = "index.html";
-    const url: string = "localhost:8100";
+    const url: string = "http://localhost:5001";
     
     async function handleLoad(_event: Event): Promise<void> {
         console.log("Init");
         
         let response: Response = await fetch("Data.json");
         let offer: string = await response.text();
-        let data = JSON.parse(offer);
+        let data: Data = JSON.parse(offer);
         
         generateContent(data);
         
@@ -25,11 +25,12 @@ namespace L07_CocktailBar {
     }
 
     async function sendOrder(_event: MouseEvent): Promise<void> {
-        return; // for testing
+        // return; // for testing
         console.log("SendOrder");
         // _event.preventDefault();
         let formData: FormData = new FormData(<HTMLFormElement>document.querySelector("form"));
-        let query: URLSearchParams = new URLSearchParams(<any>formData);
+        //@ts-ignore
+        let query: URLSearchParams = new URLSearchParams(formData);
         await fetch(url + "?" + query.toString());
         alert("Order sent!");
     }

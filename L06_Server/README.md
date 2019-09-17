@@ -105,6 +105,7 @@ Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der e
 > - JSON erzeugen
 
 ## Heroku
+- In Landschaft verorten
 - PaaS
 - signup
     - for free

@@ -14,7 +14,7 @@ var L07_CocktailBar;
         startServer(process.env.PORT);
     }
     else {
-        connectToDatabase("Test", "mongodb://localhost:27017");
+        connectToDatabase("Cocktailbar", "mongodb://localhost:27017");
         startServer(5001);
     }
     function startServer(_port) {
@@ -23,16 +23,21 @@ var L07_CocktailBar;
         server.listen(_port);
         server.addListener("request", handleRequest);
     }
-    function handleRequest(_request, _response) {
+    async function handleRequest(_request, _response) {
         console.log("I hear voices!");
         _response.setHeader("content-type", "text/html; charset=utf-8");
         _response.setHeader("Access-Control-Allow-Origin", "*");
         if (_request.url) {
             let url = Url.parse(_request.url, true);
-            for (let key in url.query)
-                _response.write(key + ":" + url.query[key] + "[" + typeof (url.query[key]) + "]<br/>");
-            let jsonString = JSON.stringify(url.query);
-            _response.write(jsonString);
+            console.log("Query", url.query);
+            if (url.search) {
+                if (url.query["command"] == "retrieve") {
+                    let retrieved = await retrieveOrders();
+                    _response.write(JSON.stringify(retrieved));
+                }
+                else
+                    storeOrder(url.query);
+            }
         }
         _response.end();
     }
@@ -41,7 +46,17 @@ var L07_CocktailBar;
         let options = { useNewUrlParser: true, useUnifiedTopology: true };
         let mongoClient = await Mongo.MongoClient.connect(_url, options);
         orders = mongoClient.db(_name).collection("Orders");
-        console.log("Database", orders);
+        console.log("Connection", orders != undefined);
+    }
+    async function storeOrder(_doc) {
+        await orders.insertOne(_doc);
+        console.log("Store", _doc);
+    }
+    async function retrieveOrders() {
+        console.log("Retrieve");
+        var cursor = orders.find();
+        let result = await cursor.toArray();
+        return result;
     }
 })(L07_CocktailBar || (L07_CocktailBar = {}));
 //# sourceMappingURL=Server.js.map

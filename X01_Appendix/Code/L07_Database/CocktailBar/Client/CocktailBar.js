@@ -3,7 +3,7 @@ var L07_CocktailBar;
 (function (L07_CocktailBar) {
     window.addEventListener("load", handleLoad);
     // const url: string = "index.html";
-    const url = "localhost:8100";
+    const url = "http://localhost:5001";
     async function handleLoad(_event) {
         console.log("Init");
         let response = await fetch("Data.json");
@@ -20,10 +20,11 @@ var L07_CocktailBar;
         displayOrder();
     }
     async function sendOrder(_event) {
-        return; // for testing
+        // return; // for testing
         console.log("SendOrder");
         // _event.preventDefault();
         let formData = new FormData(document.querySelector("form"));
+        //@ts-ignore
         let query = new URLSearchParams(formData);
         await fetch(url + "?" + query.toString());
         alert("Order sent!");

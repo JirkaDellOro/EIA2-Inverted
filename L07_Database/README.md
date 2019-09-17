@@ -8,7 +8,7 @@ Es wäre möglich, dass der Server für jede Bestellung eine Datei anlegt und di
 
 ## Relationale Datenbanken
 Seit den 1970er Jahren dominieren relationale Datenbanken, bei denen die Daten in Tabellenstrukturen untergebracht werden und durch Querverweise ein Netz von Tabellen aufgespannt wird. Mit der Standard-Query-Language (SQL) wurde eine Abfragesprache entwickelt, mit der komplexe Anweisungen formuliert werden können, welche die Datenbanksoftware dann selbständig ausführt um Daten aus dem Bestand zu liefern oder zu manipulieren. Heute ist insbesondere die Open-Source-Datenbanksoftware MySQL sehr weit im Internet verbreitet.
-> **FunFact:** Dem Namen MySQL wird meist intuitiv die Bedeutung "MeinSQL" zugesprochen. Tatsächlich hat der (norwegische? liauische?) Entwickler Michael Widenius sein 1994 gestartetes Open-Source-Projekt aber nach seiner Tochter My benannt.
+> **FunFact:** Dem Namen MySQL wird meist intuitiv die Bedeutung "MeinSQL" zugesprochen. Tatsächlich hat der finnische Entwickler Michael Widenius sein 1994 gestartetes Open-Source-Projekt aber nach seiner Tochter My benannt.
 
 ## NoSQL-Datenbanken
 Mit dem durch das Internet stetig wachsenden Datenaufkommen wurde der Bedarf an Skalierungsmöglichkeiten immer größer. Die Leistung und Kapazität einer Datenbank sollte also während des Betriebs durch Einsatz von mehr Hardware einfach vergrößert werden können. Relationale Datenbanksysteme sind aber ursprünglich nicht dafür ausgelegt, die Daten zu verteilen. 
@@ -68,41 +68,85 @@ MongoDB-Instanz
 - Ein Dokument ist im Wesentlichen lediglich ein JSON-String
 
 ## Datenbankstruktur für die Cocktailbar
-Da jede Bestellung vom Server leicht in einen JSON-String umgewandelt wird, bietet es sich an, diese beispielsweise in einer Collection namens `orders` abzulegen. Das Angebot des Barkeepers sollte in einer Collection `offer` liegen. Dabei wäre es möglich, das komplette Angebot als ein einziges Dokument abzulegen, so wie es derzeit auch vorliegt. Allerdings wäre die Funktionalität einer Datenbank besser genutzt, wenn man das Angebot auf mehrere Dokumente aufteilt, welche man beispielsweise mit dem Schlüssel `type` voneinander unterscheidet. Die Dokumente sähen dann so aus:
+Da jede Bestellung vom Server leicht in einen JSON-String umgewandelt wird, bietet es sich an, diese beispielsweise in einer Collection namens `orders` abzulegen. Das Angebot des Barkeepers sollte in einer Collection `offer` liegen. Dabei wäre es möglich, das komplette Angebot als ein einziges Dokument abzulegen, so wie es derzeit auch vorliegt. Allerdings wäre die Funktionalität einer Datenbank besser genutzt, wenn man das Angebot auf mehrere Dokumente aufteilt. Diese könnten so aussehen:
 ```typescript
-{ "type": "Drink", "offer": [ { "name": "Mojito", "price": 25.00 }, {"name": "Caipirinha", "price": 30.00 }, ... ] }
-{ "type": "Extras", "offer": [ { "name": "Ice", "price": 0.50 }, { "name": "Lemon", "price": 0.20}, ... ]}
+{ Drink: [ { name: "Mojito", price: 25.00 }, { name: "Caipirinha", price: 30.00 }, ... ] }
+{ Extras: [ { name: "Ice", price: 0.50 }, { name: "Lemon", price: 0.20}, ... ]}
 ...
 ```
+Auch ist es möglich und vielleicht sinnvoll, eigene Collections für Drinks, Extras, Container etc. anzulegen und darin für jede Sorte ein eigenes Dokument.
+```typescript
+Collection Drink
+{ name: "Mojito", price: 25.00 }
+{ name: "Caipirinha", price: 30.00 }
+...
+Collection Extras
+{ name: "Ice", price: 0.50 }
+{ name: "Lemon", price: 0.20}
+...
+```
+Diese Collections könnte man auch in einer eigenen Datenbank für das Barkeeper-Angebot anlegen und damit man strenger von den Bestellungen trennen.  
+
+> **Achtung:** Wie also die Informationen in Datenbanken strukturiert sein sollen, ist eine Designentscheidung, die Du treffen musst!
 
 ## Installation
+Wie der Server kann auch die Datenbanksoftware als Service im Netz genutzt werden. Ebenso ist es aber sinnvoll, während der Entwicklung lokal testen zu können.
+- [x] Installiere MongoDB auf deiner Maschine. Besuche hierzu das [MongoDB Manual](https://docs.mongodb.com/manual/administration/install-community/) (MongoDB **nicht** als Service und auch **nicht** MongoCompass installieren)
+- [x] Finde den Ordner, in den Du MongoDB installiert hast. Darin solltest Du die ausführbaren Programme `mongod` und `mongo` sehen.
+- [x] Um eine Datenbank anzulegen, rufe die Datenbanksoftware `mongod` auf und gib als Parameter "--dbpath" den Pfad zu dem Ordner an, in dem Du die Datenbanken haben möchtest. Den Ordner musst zuvor kreiert haben.   
 
-Mongo Installationsanleitung (Community Server): https://docs.mongodb.com/manual/installation/  
+**Hinweis:** Nutze hier besser den Kommandozeileninterpreter (aka Terminal, Shell, Command, Konsole) deines Betriebssystems. So kannst Du besser mehrere Fenster kontrollieren als innerhalb von VSCode.
 
-https://docs.mongodb.com/manual/administration/install-community/
+Im unteren Beispiel wurde MongoDB in einem Ordner Test installiert, die Datenbanken sollen im Ordner Database angelegt werden. Die Konsole arbeitet gerade im Ordner Test:
+```plaintext
+Test
+├ MongoDB
+│ └ bin
+│   ├ mongod (ggf .exe)
+├   └ ...
+└ Database
+```
+Dann lautet der Aufruf
+```
+bin/mongod --dbpath ../Database
+``` 
 
-Install MongoD as a Service deaktiveren!
+Wenn alles funktioniert, gibt MongoDB einige Meldungen auf der Konsole aus und unter den letzten befinden sich "Listening on ..." und "waiting for connections on port ...". Das Programm läuft jetzt offensichtich als Server auf deinem Localhost und wartet am angegebenen Port auf Kommunikationspartner.
 
-Nicht "as a service" installieren, sonst startet sich der Kollege beim Computerstart immer selbst, das wollen wir ja nicht. Der MongoCompass ist eine grafische Oberfläche zur Visualisierung/Bearbeitung der Daten. Brauchen wir also auch nicht.
+- [x] Schaue nun den Inhalt des Datenbankordners an. MongoDB hat hier einige Informationen zur Verwaltung deiner Daten abgelegt.
 
-zum Ausführen einfach direkt in der Konsole `path/to/mongod.exe --dbpath <path/to/db/folder>` eingeben.
+## Mongo Shell
+Die eigentlichen Daten kann man so nicht einsehen, sie werden in einem effizienten Format gespeichert, das von Menschen nicht gut interpretiert werden kann. Um schnell und einfach von Hand die Datenbank einzusehen und zu manipulieren, bietet MongoDB einen eigenen Kommandozeileninterpreter an: die MongoShell. Dieser Client kann Javascript interpretieren, sich mit dem laufenden Datenbankserber verbinden, Anweisungen an diesen schicken und dessen Antworten ausgeben.  
+- [x] Öffne in einem zweiten Terminalfenster mit `mongo` die MongoShell. Beobachte im ersten Fenster, dass MongoDB einen Verbindungsversuch registriert und diesen akzeptiert.
+- [x] Gib `show dbs` in der Shell ein, es sollten dir Infos zu den drei internen Datenbanken angezeigt werden.
+- [x] Lege mit `use Test` eine neue Datenbank mit Namen "Test" an. Die Shell bestätigt "switched to db Test". Test ist nun für die folgenden Befehle die Datenbank, mit der gearbeitet wird.
+- [x] Gib `show collections` ein. Da noch keine Collections in Test angelegt sind, sollte nichts ausgegeben werden. Tatsächlich wird auch `show dbs` noch nicht die Datenbank Test ausgeben, da diese noch leer ist.
+- [x] Gib ein `doc = {name: ..., firstname: ..., registration: ...}` wobei Du `...` jeweils mit deinem Nachnamen, Vornamen und deiner Matrikelnummer ersetzt. Damit erzeugst Du eine Javascript-Variable namens `doc` und ein Objekt mit Informationen zu dir, auf welches die Variable verweist.
+- [x] Mit `db.Students.insert(doc)` fügst Du nun den mit `doc` referenzierten Datensatz in eine Collection namens "Students" in die aktuelle genutzte Datenbank, also in Test, ein.
+- [x] Lasse dir wieder den Überblick über die Datenbanken und über die Collections in der Datenbank Test ausgeben. Test und darin Students sollten nun angezeigt werden. 
+- [x] Den Inhalt der Collection lässt Du dir jetzt mit `db.Students.find()` anzeigen. Dein Datensatz sollte auftauchen, wobei dieser um einen Schlüssel "_id" mit einem zugehörigen Wert erweitert wurde. Jedes Dokument erhält nämlich automatisch eine eindeutige Identifikation. 
+- [x] Trage mit `insert` erneut die Information von `doc` ein und vergleiche, dass nun zwei identische Datensätze vorhanden sind, die sich nur aufgrund ihrer _id unterscheiden.
+- [x] Trage noch weitere Datensätze mit Informationen zu deinen Kommilitonen oder zu Fantasiestudis ein. Dabei sollte es Datensätze mit teilweise identischen Informationen geben, so wie man sie bei Geschwistern oder Studis mit gleichen Vornamen vorfindet. Du kannst dabei weiter die Variable `doc` verwenden und vor jedem Eintrag die Information darin verändern, oder auch Datensätze direkt als Parameter der `insert`-Anweisung angeben, also `db.Students.insert({...})`
+- [x] Suche nun mit `db.Students.find({key:value})` nach allen Datensätzen bei denen ein bestimmter Schlüssel `key` einen bestimmten Wert `value` hat.
 
+Nachdem Du diese Übungen erfolgreich abgeschlossen hast, kannst Du nicht nur mit der MongoShell umgehen, sondern hast auch schon die grundlegendsten Anweisungen gelernt, die genauso auch im Code Verwendung finden. Sehr viel weitergehend ist die [Dokumentation](https://docs.mongodb.com/manual/reference/method/).
+
+
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. Screencast der Terminals 
+|2. Jirkas sprechender Kopf  
+
+>Inhalt: die oben aufgeführte Übung wird durchgeführt zum Vergleich.
+
+## Aktivitätsdiagram
+Der Zugriff auf die Datenbank vom Server aus wird durchgeplant.
+
+## Zugriff implementieren
 `npm install @types/mongodb` sowie `mongodb`, auch hier wieder der Hinweis auf node_modules und package.json.
-
 package.json erhält neue Einträge
 gitignore, je nachdem, wo node_modules installiert wurde
-
-# Alles zuerst üben, dann Video anschauen
-
-## MongoDB
-- Datenbank in cmd-Window starten
-## Mongo Shell
-- Shell in zweitem cmd-Window starten
-- connect zur Datenbank beobachten
-- zunächst einiges mit der Mongo-Shell spielen
-- bis klar ist, was die Datenbank macht und wie die Befehle lauten und arbeiten
-## Zugriff von Server aus planen
-## Zugriff implementiere
 ## Server
 - Server in drittem cmd-Window starten
 - connect beobachten
@@ -111,8 +155,16 @@ gitignore, je nachdem, wo node_modules installiert wurde
 - Client in viertem Fenster (Browser) starten
 - Funktionen beobachten
 
+## Test
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. Screencast der Terminals 
+|2. Jirkas sprechender Kopf  
 
+>Inhalt: Mit vier Fenstern arbeiten, Server und Client dazu
 
+## Online Service
 Online: https://www.mongodb.com/
 - "try free"
 - wähle beliebigen Anbieter (AWS hat gratis Angebote in DE) sowie Cluster Name
