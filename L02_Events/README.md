@@ -133,7 +133,7 @@ Während der Implementation wird das Programm immer wieder getestet. Es ist wich
 
 ## Iterative Arbeitsweise
 Bedenke, dass Du die Konzeption jederzeit verbessern kannst und solltest, wenn dir auffällt, dass etwas fehlt oder nicht funktioniert. Dasselbe gilt für alle vorangegangenen Schritte. So können Überlegungen beim Zeichnen der Skizze zurück auf das Use-Case-Diagramm reflektieren, oder Erkenntnisse bei der Implementation die Änderung der Skizze nach sich ziehen, was dann wiederum die Aktivitätsdiagramme beeinflusst. Es ist unwahrscheinlich, dass der erste konzeptionelle Ansatz sich unverändert durchführen lässt und zur perfekten Anwendung führt. 
-> **Achtung:** Was Du auf keinen Fall machen darfst, ist auf der letzten Stufe, der Implementation, gravierende Änderungen vorzunehmen, ohne zuvor die Konzeption neu aufbereitet zu haben. Diese vorgehensweise führt mit großer Sicherheit zum **Misserfolg!**
+> **Achtung:** Was Du auf keinen Fall machen darfst, ist auf der letzten Stufe, der Implementation, gravierende Änderungen vorzunehmen, ohne zuvor die Konzeption neu aufbereitet zu haben. Diese Vorgehensweise führt mit großer Sicherheit zum **Misserfolg!**
 
 ## Übungen
 - [x] Löse zunächst das Problem mit dem erneuten Aufruf von placeLetter nach deleteLetter

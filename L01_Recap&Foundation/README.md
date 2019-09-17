@@ -123,7 +123,7 @@ Im obigen Beispiel wird sofort ein Fehler angezeigt, da die Werte auf Position 1
 ### Assoziatives Array
 Bei einem assoziativen Array werden die Elemente mit sogenannten Schlüsseln verknüpft. Ein solches assoziatives Array wird in der Regel mit Hilfe geschweifter Klammern erzeugt, wobei innerhalb der Klammern bereits Schlüssel-Werte-Paare angegeben werden können. Die Assoziation wird durch den Doppelpunkt `:` dargestellt.  
 
-- [x] Schreibe in die Konsole `let s = {"zahl": 7, "wahr": true, text: "Hallo"}`. Lasse dir `s` ausgeben und versuche mit der Klammersyntax `a["key"]` und der Punktsyntax `a.key` auf einzelne Elemente zuzugreifen, wobei Du `key` mit der Zeichenkette ersetzt, die den Schlüssel darstellt. Was geschieht, wenn Du hier einen unbekannten Schlüssel benutzt?
+- [x] Schreibe in die Konsole `let s = {"zahl": 7, "wahr": true, text: "Hallo"}`. Lasse dir `s` ausgeben und versuche mit der Klammersyntax `s["key"]` und der Punktsyntax `s.key` auf einzelne Elemente zuzugreifen, wobei Du `key` mit der Zeichenkette ersetzt, die den Schlüssel darstellt. Was geschieht, wenn Du hier einen unbekannten Schlüssel benutzt?
 - [x] Gib ein `s[4] = [101, 102]`. Was siehst Du nun, wenn Du dir das Array ausgeben lässt? Welche Bedeutung hat die Ziffer 4 jetzt und wie kommst Du gezielt an die Information, die damit assoziiert wurde?  
 
 Nicht nur die Datentypen sind heterogen, sondern auch die Schlüssel können beliebig gewählt werden. Das ermöglicht große Flexibilität, aber auch Fehler, die schwer zu finden sind. Um assoziative Arrays stringenter zu strukturieren, stellt TypeScript `interface`s zur Verfügung. Damit lassen sich Schlüssel vordefinieren und die Datentypen für Werte und Schlüssel einschränken.  
