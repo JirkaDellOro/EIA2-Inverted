@@ -41,5 +41,5 @@ Im Plenum werden Fragen beantwortet und Unklarheiten beseitigt. Dabei steht der 
 Jede Lektion schließt mit einer Aufgabe, an der im Rest der Woche die Inhalte geübt und verinnerlicht werden können. Im Praktikum solltest Du bereits mit der Lösung der Aufgabe fortgeschritten sein, um dort qualifizierte Fragen stellen zu können. **Achtung:** im Praktikum gelten die Regeln, dass nur die aktuelle Aufgabe bearbeitet wird und dass Fragen zum Code oder zur Programmierung nur beantowrtet werden, wenn ein sinnvolles Konzept vorliegt.
 ### Issues
 Der Dozent und die studentischen Hilfskräfte freuen sich auch außerhalb des Plenums und des Praktikums über qualifizierte Fragen zu den aktuellen Inhalten. Poste für jede Frage eine Issue hier: https://github.com/JirkaDellOro/EIA2-Inverted/issues. Wir versuchen so schnell wie möglich zu antworten. Auch Du bist herzlich eingelaen, dich an der Beantwortung zu beteiligen, auch wenn Du dir nicht ganz sicher bist. Auch eine falsche Antwort ist wertvoll, wenn sie korrigiert wird. **Achtung:** beim Posten gelten die Regeln, dass Du ein Issue posten solltest, wenn Du für ein Problem innerhalb von 10 Minuten noch keinen Lösungsansatz findest und dass Du deine Issues selbständig schließt, wenn das Problem gelöst ist.
-## Hilfreiches Werkzeug
-[Markdown Viewer](https://chrome.google.com/webstore/detail/markdown-viewer/ckkdlimhmcjmikdlpkmbgfkaikojcbjk)  
+## Wochenaufgabe
+https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L00_Preparation
