@@ -234,4 +234,20 @@ Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von 
 - [x] Ersetze nun im Servercode den URL zum Datenbankserver mit dem kopierten Connection-String. Du kannst ihn dir auch unter Clusters->Connect noch einmal anzeigen lassen.
 - [x] Starte deinen lokalen Server neu. Setze mit dem Client weitere Bestellungen ab und prüfe in Atlas ob die Bestellungen in der Online-Datenbank ankommen.
 
-## Abfrage
+## Ausbau
+- [x] Erweitere deinen Server derart, dass beim Start ein Argument entgegen genommen (z.B. eine der beiden Zeichenketten "local" und "remote") und anhand dessen entschieden wird, ob deine lokale oder die Online-Datenbank genutzt wird.
+- [x] Lasse nun Heroku deinen Server bauen. Passe dazu die Steuerdatei `package.json` so an, dass der Pfad zum neuen Server eingetragen ist und bei der Startanweisung das Argument mitgegeben wird z.B. 
+  ```typescript
+  "scripts": {
+    "start": "node PfadZumServer/Server.js remote"
+  },
+  ```
+- [x] Passe den Client so an, dass er mit dem Heroku-Server kommuniziert.
+- [x] Setze mit dem Client Bestellungen ab und prüfe 
+  - in der Client-Konsole
+  - im Heroku-Log
+  - in Atlas
+  dass und wie die Daten fließen.
+- [x] Plane eine Funktion retrieveOrders, welche mit `orders.find()` alle Bestellungen ausliest und ein Array von `Orders` zurückliefert. Nutze dazu die asynchrone Funktion `toArray()` des Cursor-Objektes.
+- [x] Plane eine Erweiterung der Funktion `handleRequest`, so dass retrieveOrders aufgerufen und das Ergebnis als Zeichenkette in die Serverantwort eingefügt wird, wenn der Server mit dem Query-String `command=retrieve` aufgerufen wird.
+- [x] Implementiere diese Erweiterungen und teste sie.

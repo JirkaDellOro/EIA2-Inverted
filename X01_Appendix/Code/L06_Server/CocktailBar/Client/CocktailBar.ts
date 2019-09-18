@@ -29,7 +29,8 @@ namespace L06_CocktailBar {
         console.log("SendOrder");
         // _event.preventDefault();
         let formData: FormData = new FormData(<HTMLFormElement>document.querySelector("form"));
-        let query: URLSearchParams = new URLSearchParams(<any>formData);
+        //@ts-ignore
+        let query: URLSearchParams = new URLSearchParams(formData);
         await fetch(url + "?" + query.toString());
         alert("Order sent!");
     }

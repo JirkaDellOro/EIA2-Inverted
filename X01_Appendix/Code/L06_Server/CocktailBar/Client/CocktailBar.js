@@ -24,6 +24,7 @@ var L06_CocktailBar;
         console.log("SendOrder");
         // _event.preventDefault();
         let formData = new FormData(document.querySelector("form"));
+        //@ts-ignore
         let query = new URLSearchParams(formData);
         await fetch(url + "?" + query.toString());
         alert("Order sent!");
