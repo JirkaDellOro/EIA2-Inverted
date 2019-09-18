@@ -8,17 +8,17 @@ Es wäre möglich, dass der Server für jede Bestellung eine Datei anlegt und di
 
 ## Relationale Datenbanken
 Seit den 1970er Jahren dominieren relationale Datenbanken, bei denen die Daten in Tabellenstrukturen untergebracht werden und durch Querverweise ein Netz von Tabellen aufgespannt wird. Mit der Standard-Query-Language (SQL) wurde eine Abfragesprache entwickelt, mit der komplexe Anweisungen formuliert werden können, welche die Datenbanksoftware dann selbständig ausführt um Daten aus dem Bestand zu liefern oder zu manipulieren. Heute ist insbesondere die Open-Source-Datenbanksoftware MySQL sehr weit im Internet verbreitet.
-> **FunFact:** Dem Namen MySQL wird meist intuitiv die Bedeutung "MeinSQL" zugesprochen. Tatsächlich hat der finnische Entwickler Michael Widenius sein 1994 gestartetes Open-Source-Projekt aber nach seiner Tochter My benannt.
+> **FunFact:** Dem Namen MySQL wird meist intuitiv die Bedeutung "MeinSQL" zugesprochen. Tatsächlich aber hat der finnische Entwickler Michael Widenius sein 1994 gestartetes Open-Source-Projekt nach seiner Tochter My benannt.
 
 ## NoSQL-Datenbanken
 Mit dem durch das Internet stetig wachsenden Datenaufkommen wurde der Bedarf an Skalierungsmöglichkeiten immer größer. Die Leistung und Kapazität einer Datenbank sollte also während des Betriebs durch Einsatz von mehr Hardware einfach vergrößert werden können. Relationale Datenbanksysteme sind aber ursprünglich nicht dafür ausgelegt, die Daten zu verteilen. 
-NoSQL bzw. dkumentenorientierte Datenbanken adressieren dieses Problem. Die zu verwaltenden Daten müssen dabei nicht in starr definierte Tabellenform gebracht werden, sondern jeder Datensatz kann als beliebig strukturiertes Dokument abgelegt werden.  
+NoSQL bzw. dokumentenorientierte Datenbanken adressieren dieses Problem. Die zu verwaltenden Daten müssen dabei nicht in starr definierte Tabellenform gebracht werden, sondern jeder Datensatz kann als beliebig strukturiertes Dokument abgelegt werden.  
 Das No in NoSQL bedeutet "Not only", es gibt also auch Systeme, die mit SQL arbeiten können. Dokumentenorientierte Datenbanken sind eine Variante der NoSQL-Datenbanken, es gibt noch andere.
 
 ## MongoDB
 2009 wurde mit MongoDB eine NoSQL-Datenbanksoftware veröffentlicht, die Javascript als interne Verkehrssprache nutzt. Abfragen und Aggregationsfunktionen können direkt als Javascript-Anweisungen formuliert werden, außerdem können ganze Anweisungsfolgen zum Datenbanksystem geschickt und dort ausgeführt werden.  
 
-> **FunFact:** Der Name MongoDB leitet sich von *humongous* ab, womit die grotesken Größe der Datenmengen gemeint ist, die mit dieser Software verwaltet werden können.
+> **FunFact:** Der Name MongoDB leitet sich von *humongous* ab, womit die groteske Größe der Datenmengen gemeint ist, die mit dieser Software verwaltet werden können.
 
 Für dich ist der riesige Vorteil der Nutzung dieser Datenbanksoftware, dass Du keine weitere Abfrage- oder Programmiersprache lernen musst. Die Anweisungen, die MongoDB für Node.js bereit stellt, sind auch in TypeScript definiert, so dass Du sie mit der gewohnten Unterstützung einsetzen kannst, genauso wie die modernen Konzept der ansynchronen Kommunikation mit dem Datenbanksystem wie `Promise` und `async/await`.  
 Wenn auch die aktuellen Installationen im Internet noch von JavaScript, PHP und MySQL dominiert sind, bist Du mit Node.js, TypeScript und MongoDB zudem sehr zukunftsträchtig aufgestellt, wie die Grafiken von Google-Trend nahelegen.
@@ -140,13 +140,42 @@ Nachdem Du diese Übungen erfolgreich abgeschlossen hast, kannst Du nicht nur mi
 
 >Inhalt: die oben aufgeführte Übung wird durchgeführt zum Vergleich.
 
+## MongoDB in Node
+Wenn der Kunde der Cocktailbar eine Bestellung aufgibt, soll der Server diese Bestellung an die Datenbanksoftware schicken, damit sie dort gespeichert wird. Was eben von Hand mit der MongoShell erledigt wurde, soll also das Node.js-Programm bewerkstelligen. Hierzu muss Node zunächst um die entsprechenden Module für die Arbeit mit MongoDB erweitert werden. Führe also die Kommandos `npm install @types/mongodb` sowie `npm install mongodb` auf der obersten Ebene deines EIA2-Projektes aus. 
+
+Die Datei `package.json` sollte nun neue Einträge unter `dependencies` aufweisen, welche auf die Module und Versionen von MongoDB verweisen. Damit weiß dann auch z.B. Heroku, mit welchen Modulen das Projekt arbeitet, ohne dass diese Module im Github-Repository mitgeliefert werden. Überprüfe zudem noch einmal die Datei `.gitignore` damit nicht versehentlich diese Module in deine Versionskontrolle geraten.
+
+Das Node-Modul `mongodb` stellt verschiedene Standardobjekte zur Verfügung, mit denen die Datenbankoperationen innerhalb der Node-Umgebung ausgeführt werden können. Wie zuvor die Module `http` und `url` wird auch `mongodb` importiert, in diesem Fall als `Mongo`
+```typescript
+import * as Mongo from "mongodb";
+```
+
+### MongoClient
+Stellt, wie zuvor die MongoShell, innerhalb der Node-Umgebung eine Verbindung mit dem Datenbanksystem her. Ein neues MongoClient-Objekt erwartet für seine Erzeugung als Parameter einen URL und gegebenenfalls noch Zusatzoptionen. Seine Methode `connect` liefert eine Promise, auf deren Erfüllung gewartet werden kann.
+```typescript
+let mongoClient: Mongo.MongoClient = new Mongo.MongoClient(_url, options);
+await mongoClient.connect();
+```
+
+### Collection
+Eine Variable von diesem Typ referenziert direkt eine Collection der Datenbank. Darauf können dann die aus der MongoShell bekannten Operationen ausgeführt werden. 
+```typescript
+let orders: Mongo.Collection = mongoClient.db("Cocktailbar").collection("Orders");
+orders.insert({...});
+```
+
 ## Aktivitätsdiagram
 Der Zugriff auf die Datenbank vom Server aus wird durchgeplant.
 
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. Aktivitätsdiagramm entsteht auf Papier 
+|2. Jirkas sprechender Kopf  
+
+>Inhalt: aus dem Aktivitätsdiagram von L06 wird das folgende abgeleitet
+
 ## Zugriff implementieren
-`npm install @types/mongodb` sowie `mongodb`, auch hier wieder der Hinweis auf node_modules und package.json.
-package.json erhält neue Einträge
-gitignore, je nachdem, wo node_modules installiert wurde
 ## Server
 - Server in drittem cmd-Window starten
 - connect beobachten

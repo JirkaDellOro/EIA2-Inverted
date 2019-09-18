@@ -16,7 +16,7 @@ namespace L07_CocktailBar {
         connectToDatabase("eia2", "mongodb+srv://testuser:testpassword@eia2-57vpd.mongodb.net/eia2");
         startServer(process.env.PORT);
     } else {
-        connectToDatabase("Cocktailbar", "mongodb://localh   ost:27017");
+        connectToDatabase("Cocktailbar", "mongodb://localhost:27017");
         startServer(5001);
     }
 
@@ -52,13 +52,14 @@ namespace L07_CocktailBar {
     async function connectToDatabase(_name: string, _url: string): Promise<void> {
         console.log("Connecting to database", _name, _url);
         let options: Mongo.MongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true };
-        let mongoClient: Mongo.MongoClient = await Mongo.MongoClient.connect(_url, options);
+        let mongoClient: Mongo.MongoClient = new Mongo.MongoClient(_url, options);
+        await mongoClient.connect();
         orders = mongoClient.db(_name).collection("Orders");
         console.log("Connection", orders != undefined);
     }
 
     async function storeOrder(_order: Order): Promise<void> {
-        await orders.insertOne(_order);
+        await orders.insert(_order);
         console.log("Store", _order);
     }
 

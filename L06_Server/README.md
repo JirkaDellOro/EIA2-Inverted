@@ -22,10 +22,11 @@ Für dich ist der riesige Vorteil von Node.js, dass Du keine weitere Programmier
 
 ## Entwickeln mit Node.js
 ### Types
-Damit TypeScript bei der Entwicklung einer Node.js-Applikation richtig helfen kann, muss es die neuen Datentypen kennen, die Node mitbringt. Diese installierst Du wieder einfach per npm auf deiner Entwicklungsmaschine:
+Damit TypeScript bei der Entwicklung einer Node.js-Applikation richtig helfen kann, muss es die neuen Datentypen kennen, die Node mitbringt. Diese installierst Du wieder einfach per npm auf deiner Entwicklungsmaschine, am besten auf der obersten Ebene deines EIA2-Projektes:
 ```
-npm install -g @types/node
+npm install @types/node
 ```
+Dabei entsteht ein Ordner `node_modules` und eine Datei `package.lock.json`. Letztere kannst Du in dein Repository übernehmen oder löschen. Im Ordner `node_modules` allerdings befinden sich die Definitionsdateien für TypeScript und später kommen noch weitere Module dazu, die richtig Platz brauchen. Daher solltest Du diese nicht auf dein Github-Repository pushen. Wähle stattdessen im SourceControl-View von VSCode für diesen Ordner die Option "Add File to .gitignore" (z.B. per Rechtsklick). Dann wird sich Git nicht mehr um diesen Ordner kümmern.
 
 ### Run
 Ein Skript mit Node laufen zu lassen ist denkbar einfach. Da auf deiner Maschine bereits Node installiert ist (sonst würden VSCode und der TypeScript-Compiler nicht funktionieren) musst Du lediglich in der Konsole
@@ -60,6 +61,10 @@ Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der e
 > - process
 
 - [x] Eine kleine Aufgabe mit einer Node-App lösen! Hierzu CLI-Parameter entgegen nehmen. Farben-Konverter? Bin-Dez-Hex? Eliza?
+
+## Erweiterungen
+http, url
+import erklären
 
 ## Design
 |Hier erscheint jetzt ein Video|

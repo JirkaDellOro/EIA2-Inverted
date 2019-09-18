@@ -1,6 +1,5 @@
 import * as Http from "http";
 import * as Url from "url";
-// let Http: typeof import("http") = import("http").then;
 
 // @ts-ignore no-unused-variable
 namespace L06_CocktailBar {
@@ -17,7 +16,7 @@ namespace L06_CocktailBar {
         console.log("I hear voices!");
 
         _response.setHeader("content-type", "text/html; charset=utf-8");
-        _response.setHeader("Access-Control-Allow-Origin", "*");
+        _response.setHeader("Access-Control-Allow-Onpm i @types/noderigin", "*");
 
         if (_request.url) {
             let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);

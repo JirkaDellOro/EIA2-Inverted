@@ -14,7 +14,7 @@ var L07_CocktailBar;
         startServer(process.env.PORT);
     }
     else {
-        connectToDatabase("Cocktailbar", "mongodb://localh   ost:27017");
+        connectToDatabase("Cocktailbar", "mongodb://localhost:27017");
         startServer(5001);
     }
     function startServer(_port) {

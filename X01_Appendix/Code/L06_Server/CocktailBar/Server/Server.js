@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Http = require("http");
 const Url = require("url");
-// let Http: typeof import("http") = import("http").then;
 // @ts-ignore no-unused-variable
 var L06_CocktailBar;
 (function (L06_CocktailBar) {
@@ -16,7 +15,7 @@ var L06_CocktailBar;
     function handleRequest(_request, _response) {
         console.log("I hear voices!");
         _response.setHeader("content-type", "text/html; charset=utf-8");
-        _response.setHeader("Access-Control-Allow-Origin", "*");
+        _response.setHeader("Access-Control-Allow-Onpm i @types/noderigin", "*");
         if (_request.url) {
             let url = Url.parse(_request.url, true);
             for (let key in url.query)
