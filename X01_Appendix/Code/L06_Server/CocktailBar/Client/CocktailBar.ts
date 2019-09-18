@@ -1,7 +1,7 @@
 namespace L06_CocktailBar {
     window.addEventListener("load", handleLoad);
     // const url: string = "index.html";
-    const url: string = "localhost:8100";
+    const url: string = "localhost:5001";
     
     async function handleLoad(_event: Event): Promise<void> {
         console.log("Init");

@@ -165,7 +165,7 @@ orders.insert({...});
 ```
 
 ## Aktivitätsdiagram
-Der Zugriff auf die Datenbank vom Server aus wird durchgeplant.
+Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server aufgrund der ankommenden Requests und die Formulierung der Antworten konzipiert werden.
 
 |Hier erscheint jetzt ein Video|
 |-
@@ -173,18 +173,33 @@ Der Zugriff auf die Datenbank vom Server aus wird durchgeplant.
 |1. Aktivitätsdiagramm entsteht auf Papier 
 |2. Jirkas sprechender Kopf  
 
->Inhalt: aus dem Aktivitätsdiagram von L06 wird das folgende abgeleitet
+> Inhalt: aus dem Aktivitätsdiagram von L06 wird das folgende abgeleitet
+> 1. Main umschreiben zu zwei Aufrufen: connectToDatabase und startServer
+> 1. startServer wie Main zuvor, mit port als Parameter
+> 1. connectToDatabase mit url als Parameter
+> 1. handleRequest neu erfassen als einen geraden Durchlauf ohne Verzweigung für retrieveOrders
+> 1. storeOrder zeichnen
 
-## Zugriff implementieren
-## Server
-- Server in drittem cmd-Window starten
-- connect beobachten
-## Client
-- Pfade implementieren sofern erforderlich
-- Client in viertem Fenster (Browser) starten
-- Funktionen beobachten
+## Implementation I
+
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. Aktivitätsdiagramm 
+|2. Jirkas sprechender Kopf 
+|3. groß VSCode mit entstehendem Code
+
+> Inhalt: Implementation der Bestellungsannahme
+> 1. startServer auslagern
+> 1. connectToDatabase
+> 1. storeOrder, hierzu interface Order einführen
+> 1. handleRequest umbauen, ggf. Vollzugsmeldung zurückschicken
 
 ## Test
+Starte den Server in einem dritten Konsolenfenster. MongoDB sollte den Verbindungsversuch erkennen und eine zweite Connection anzeigen.
+
+Starte den Client in einem kleinen neuen Browserfenster. Am besten ordnest Du die Fenster so an, so dass dein Bildschirm nun horizontal und vertikal halbiert erscheint. Setze mehrere unterschiedliche Bestellungen ab und beobachte die Ausgaben im Serverfenster. Frage mit der MongoShell die Collection "Orders" der Datenbank "Cocktail" ab um zu schauen, ob die Bestellungen eingetragen wurden.
+
 |Hier erscheint jetzt ein Video|
 |-
 |Zweigeteilt 
@@ -192,6 +207,8 @@ Der Zugriff auf die Datenbank vom Server aus wird durchgeplant.
 |2. Jirkas sprechender Kopf  
 
 >Inhalt: Mit vier Fenstern arbeiten, Server und Client dazu
+
+
 
 ## Online Service
 Online: https://www.mongodb.com/

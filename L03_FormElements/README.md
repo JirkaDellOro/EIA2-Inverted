@@ -100,22 +100,7 @@ Nun ist schon grob konzipiert, was geschehen soll und wie sich das darstellt. En
 ## Implementation I
 Versuche dich nun an der Implementation. Schaue dir das Video spätestens an, wenn Du dich an die Zusammenfassung der Bestellung machst. Hier gibt es noch einige Tipps.
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Programm, das gerade getippt wird
-|2. klein das Aktivitäts-Diagramm
-|3. klein Jirkas sprechender Kopf  
-
-> Inhalt:
-> - handleLoad, handleChange und displayAmount sind trivial und werden recht schnell weggetippt.
-> - in displayOrder werden verschiedene Ansätze diskutiert
->   1. Abfrage der Formularelemente unter Verwendung der bekannten Namen -> unflexibel
->   2. alle input-Elemente ermitteln und verarbeiten. Ausgabe zeigt, dass die Information ungünstig ist
->      - Radiobuttons sind nicht exklusiv
->      - Checkboxen können nicht direkt ausgewertet werden
->      - select-Element fehlt ganz
-> - Recherche erforderlich!
+<a href="https://drive.google.com/open?id=1Rx7Eejqa3ZDHj82PTx9jGyaRci1omvqp"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 # FormData
 Javascript stellt einen einfachen Mechanismus zur Verfügung um Formularelemente automatisch auszuwerten und auf die Ergebnisse zuzugreifen. Hierzu müssen die Formularelemente in der DOM-Laufzeithierarchie einem `form`-Element untergeordnet sein. Wird bei der Erzeugung eines Objekts des Typs `FormData` nun ein Verweis auf auf dieses `form`-Element übergeben, so werden die Werte der `name`- und `value`-Attribute als Schlüssel-Werte-Paare zur Verfügung gestellt.
@@ -149,32 +134,8 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
 
 ## Implementation II
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Programm, das gerade getippt wird
-|2. klein das Aktivitäts-Diagramm
-|3. klein Jirkas sprechender Kopf  
-
-> Inhalt:
-> - Das Formular mit `form`-Tag umschließen
-> - FormData-Objekt erzeugen in displayOrder
-> - Eintrag "Drink" untersuchen
-> - Über alle Einträge iterieren
-> - Infos in Konsole und in Bestellübersicht ausgeben
-> - Preise an FormularElemente hinzufügen: price-Attribut
-> - Elemente mit Hilfe von querySelector und dem value heraussuchen und price-Attribut auslesen
-> - Preis mit ausgeben lassen 
-> - Sonderfall "Drink", da Preis durch Berechnung mit Amount zustande kommt -> if einbauen
-> - Sonderfall "Amount", soll nicht als einzelner Posten auftauchen, sondern bei Drink dabei sein
-> - statt weiteres if: switch bauen
-> - Schließlich Ausgabe der Summe
->   - Total berechnen lassen
-> - Beispiele für unschöne Zahlendarstellung finden
->   - toFixed einführen
-> - Am Ende Vergleich mit Konzept   
-
-[UI-Scribble (fixed)](Material/CocktailBar_UI-Scribble2.jpg)
+<a href="https://drive.google.com/open?id=1oZik6RjB5uafqsZh7xqZpuKaJZ9CIPMN"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/CocktailBar_UI-Scribble2.jpg"><img src="Material/CocktailBar_UI-Scribble2.jpg" width="25%"/></a>
 
 - [x] Die Ausgabe der Bestellübersicht funktioniert noch nicht richtig. Finde den Fehler und korrigiere ihn.
 - [x] Implementiere die Sonderbehandlung der Drinks.

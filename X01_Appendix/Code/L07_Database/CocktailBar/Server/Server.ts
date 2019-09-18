@@ -10,13 +10,14 @@ namespace L07_CocktailBar {
 
     let orders: Mongo.Collection;
 
+    // TODO: maybe nicer to use argv for remote/local
     // running on heroku?
     if (process.env.NODE_ENV == "production") {
         // databaseURL = "mongodb+srv://username:password@hostname:port/database";
-        connectToDatabase("eia2", "mongodb+srv://testuser:testpassword@eia2-57vpd.mongodb.net/eia2");
+        connectToDatabase("mongodb+srv://testuser:testpassword@eia2-57vpd.mongodb.net/eia2");
         startServer(process.env.PORT);
     } else {
-        connectToDatabase("Cocktailbar", "mongodb://localhost:27017");
+        connectToDatabase("mongodb://localhost:27017");
         startServer(5001);
     }
 
@@ -49,12 +50,12 @@ namespace L07_CocktailBar {
         _response.end();
     }
 
-    async function connectToDatabase(_name: string, _url: string): Promise<void> {
-        console.log("Connecting to database", _name, _url);
+    async function connectToDatabase(_url: string): Promise<void> {
+        console.log("DatabaseServer", _url);
         let options: Mongo.MongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true };
         let mongoClient: Mongo.MongoClient = new Mongo.MongoClient(_url, options);
         await mongoClient.connect();
-        orders = mongoClient.db(_name).collection("Orders");
+        orders = mongoClient.db("Cocktailbar").collection("Orders");
         console.log("Connection", orders != undefined);
     }
 
