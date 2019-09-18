@@ -7,14 +7,16 @@ const Mongo = require("mongodb");
 var L07_CocktailBar;
 (function (L07_CocktailBar) {
     let orders;
+    // TODO: maybe nicer to use argv for remote/local
     // running on heroku?
     if (process.env.NODE_ENV == "production") {
         // databaseURL = "mongodb+srv://username:password@hostname:port/database";
-        connectToDatabase("eia2", "mongodb+srv://testuser:testpassword@eia2-57vpd.mongodb.net/eia2");
+        // "mongodb+srv://readwrite:<password>@jirkadelloro-obydb.mongodb.net/test?retryWrites=true&w=majority"
         startServer(process.env.PORT);
     }
     else {
-        connectToDatabase("Cocktailbar", "mongodb://localhost:27017");
+        connectToDatabase("mongodb+srv://readwrite:xuWg4gj65lJKZjz0@jirkadelloro-obydb.mongodb.net");
+        // connectToDatabase("mongodb://localhost:27017");
         startServer(5001);
     }
     function startServer(_port) {
@@ -41,15 +43,16 @@ var L07_CocktailBar;
         }
         _response.end();
     }
-    async function connectToDatabase(_name, _url) {
-        console.log("Connecting to database", _name, _url);
+    async function connectToDatabase(_url) {
+        console.log("DatabaseServer", _url);
         let options = { useNewUrlParser: true, useUnifiedTopology: true };
-        let mongoClient = await Mongo.MongoClient.connect(_url, options);
-        orders = mongoClient.db(_name).collection("Orders");
+        let mongoClient = new Mongo.MongoClient(_url, options);
+        await mongoClient.connect();
+        orders = mongoClient.db("Cocktailbar").collection("Orders");
         console.log("Connection", orders != undefined);
     }
     async function storeOrder(_order) {
-        await orders.insertOne(_order);
+        await orders.insert(_order);
         console.log("Store", _order);
     }
     async function retrieveOrders() {

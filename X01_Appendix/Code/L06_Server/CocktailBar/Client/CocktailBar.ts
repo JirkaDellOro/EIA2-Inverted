@@ -2,20 +2,20 @@ namespace L06_CocktailBar {
     window.addEventListener("load", handleLoad);
     // const url: string = "index.html";
     const url: string = "localhost:5001";
-    
+
     async function handleLoad(_event: Event): Promise<void> {
         console.log("Init");
-        
+
         let response: Response = await fetch("Data.json");
         let offer: string = await response.text();
-        let data = JSON.parse(offer);
-        
+        let data: Data = JSON.parse(offer);
+
         generateContent(data);
-        
+
         let form: HTMLFormElement = <HTMLFormElement>document.querySelector("form");
         let slider: HTMLInputElement = <HTMLInputElement>document.querySelector("input#amount");
         let submit: HTMLButtonElement = <HTMLButtonElement>document.querySelector("button[type=button]");
-        
+
         console.log(submit);
         submit.addEventListener("click", sendOrder);
         form.addEventListener("change", handleChange);
@@ -68,7 +68,7 @@ namespace L06_CocktailBar {
             price += itemPrice;
         }
         // console.groupEnd();
-        
+
         order.innerHTML += "<p><strong>Total: €" + price.toFixed(2);
     }
 

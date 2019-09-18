@@ -3,7 +3,7 @@ var L06_CocktailBar;
 (function (L06_CocktailBar) {
     window.addEventListener("load", handleLoad);
     // const url: string = "index.html";
-    const url = "localhost:8100";
+    const url = "localhost:5001";
     async function handleLoad(_event) {
         console.log("Init");
         let response = await fetch("Data.json");

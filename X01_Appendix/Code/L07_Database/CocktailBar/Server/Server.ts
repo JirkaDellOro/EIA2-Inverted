@@ -14,10 +14,11 @@ namespace L07_CocktailBar {
     // running on heroku?
     if (process.env.NODE_ENV == "production") {
         // databaseURL = "mongodb+srv://username:password@hostname:port/database";
-        connectToDatabase("mongodb+srv://testuser:testpassword@eia2-57vpd.mongodb.net/eia2");
+        // "mongodb+srv://readwrite:<password>@jirkadelloro-obydb.mongodb.net/test?retryWrites=true&w=majority"
         startServer(process.env.PORT);
     } else {
-        connectToDatabase("mongodb://localhost:27017");
+        connectToDatabase("mongodb+srv://readwrite:xuWg4gj65lJKZjz0@jirkadelloro-obydb.mongodb.net");
+        // connectToDatabase("mongodb://localhost:27017");
         startServer(5001);
     }
 

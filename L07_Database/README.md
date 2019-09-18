@@ -196,9 +196,10 @@ Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server a
 > 1. handleRequest umbauen, ggf. Vollzugsmeldung zurückschicken
 
 ## Test
-Starte den Server in einem dritten Konsolenfenster. MongoDB sollte den Verbindungsversuch erkennen und eine zweite Connection anzeigen.
-
-Starte den Client in einem kleinen neuen Browserfenster. Am besten ordnest Du die Fenster so an, so dass dein Bildschirm nun horizontal und vertikal halbiert erscheint. Setze mehrere unterschiedliche Bestellungen ab und beobachte die Ausgaben im Serverfenster. Frage mit der MongoShell die Collection "Orders" der Datenbank "Cocktail" ab um zu schauen, ob die Bestellungen eingetragen wurden.
+- [x] Starte den Server in einem dritten Konsolenfenster. MongoDB sollte den Verbindungsversuch erkennen und eine zweite Connection anzeigen.
+- [x] Starte den Client in einem kleinen neuen Browserfenster. Am besten ordnest Du die Fenster so an, so dass dein Bildschirm nun horizontal und vertikal halbiert erscheint. 
+- [x] Setze mit dem Client mehrere unterschiedliche Bestellungen ab und beobachte die Ausgaben im Serverfenster. 
+- [x] Frage mit der MongoShell die Collection "Orders" der Datenbank "Cocktail" ab um zu schauen, ob die Bestellungen eingetragen wurden.
 
 |Hier erscheint jetzt ein Video|
 |-
@@ -208,15 +209,29 @@ Starte den Client in einem kleinen neuen Browserfenster. Am besten ordnest Du di
 
 >Inhalt: Mit vier Fenstern arbeiten, Server und Client dazu
 
-
-
 ## Online Service
-Online: https://www.mongodb.com/
-- "try free"
-- wähle beliebigen Anbieter (AWS hat gratis Angebote in DE) sowie Cluster Name
-- dort dann über `Clusters > Collections` DBs und Collections anlegen (beim ersten Mal über "add my own Data", bei jedem weiteren Mal links unter "Create Database" bzw bei existierender DB bei dem Plus daneben für eine neue Collection)
-- User über `Database Access` anlegen
-- Zugriff auf DB über `Network Access > Add IP Address` erlauben. Um alles zu erlauben nutze `0.0.0.0/0`.
-- Den Link zur DB findet man unter `Clusters > Connect > [einer der drei Optionen, am besten DB-Compass]`, dieser sieht ungefähr so aus: `mongodb+srv://<user>:<password>@test-czq5m.mongodb.net/test`. Wenn man eine andere der drei Optionen als DB Compass nutzt, stehen in dem Link noch weitere Infos bzw ist es ein Shell Command.  
+Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von Außen sollte niemand Zugriff darauf haben. Die Bestellungen sollen aber in einer Datenbank gespeichert werden, die ständig erreichbar ist. MongoDB bietet mit Atlas ein eigenes Serviceangebot hierfür.
 
-wichtigste Änderungen: nicht mehr `mongodb` sondern `mongodb+srv` vorne. Hinten steht nicht mehr der DB name sondern der Cluster Name. Cluster über den DBs drüber
+- [x] Betrachte die EIA2-Landschaft. Die letzte Wolke wird jetzt in Angriff genommen.
+  - [x] Rufe https://www.mongodb.com/ auf
+  - [x] Klicke oben rechts auf "Try Free"
+  - [x] Melde dich mit Namen und Mailadresse an
+  - [x] Wähle "Create a cluster" unter Starter Clusters
+  - [x] Wähle AWS und einen Free Cluster in Europa
+  - [x] Wähle einen Clusternamen, vielleicht deinen eigenen oder "EIA2"?
+  - [x] Klicke auf "Create Cluster"
+
+- [x] Folge jetzt dem "Get Started"-Guide!
+  - [x] Erlaube deinem Testuser Read/Write-Zugriff
+  - [x] Erlaube in der Whitelist Zugriff von überall
+  - [x] Lege KEINE Beispieldaten an
+  - [x] Wähle "Connect Your Application" und kopiere den Connection-String, lege ihn zunächst als Kommentar in deinem Servercode ab.
+- [x] Wähle dann Collections->Add my own data
+  - [x] Lege eine Datenbank "Cocktailbar" und die Collection "Orders" an
+  - [x] Klicke auf "Insert Document" und füge in "Orders" ein Dokument ein
+  - [x] Experimentiere mit den Icons an dem Dokument
+
+- [x] Ersetze nun im Servercode den URL zum Datenbankserver mit dem kopierten Connection-String. Du kannst ihn dir auch unter Clusters->Connect noch einmal anzeigen lassen.
+- [x] Starte deinen lokalen Server neu. Setze mit dem Client weitere Bestellungen ab und prüfe in Atlas ob die Bestellungen in der Online-Datenbank ankommen.
+
+## Abfrage
