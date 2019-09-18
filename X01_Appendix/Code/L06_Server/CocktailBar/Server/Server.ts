@@ -13,11 +13,6 @@ namespace L06_CocktailBar {
     server.listen(port);
     server.addListener("request", handleRequest);
 
-    // server.addListener("listening", handleListen);
-    // function handleListen(): void {
-    //     console.log("Listening");
-    // }
-
     function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {
         console.log("I hear voices!");
 

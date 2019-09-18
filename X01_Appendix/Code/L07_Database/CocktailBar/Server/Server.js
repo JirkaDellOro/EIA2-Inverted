@@ -14,7 +14,7 @@ var L07_CocktailBar;
         startServer(process.env.PORT);
     }
     else {
-        connectToDatabase("Cocktailbar", "mongodb://localhost:27017");
+        connectToDatabase("Cocktailbar", "mongodb://localh   ost:27017");
         startServer(5001);
     }
     function startServer(_port) {
@@ -48,9 +48,9 @@ var L07_CocktailBar;
         orders = mongoClient.db(_name).collection("Orders");
         console.log("Connection", orders != undefined);
     }
-    async function storeOrder(_doc) {
-        await orders.insertOne(_doc);
-        console.log("Store", _doc);
+    async function storeOrder(_order) {
+        await orders.insertOne(_order);
+        console.log("Store", _order);
     }
     async function retrieveOrders() {
         console.log("Retrieve");

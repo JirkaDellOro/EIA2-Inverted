@@ -13,10 +13,6 @@ var L06_CocktailBar;
     let server = Http.createServer();
     server.listen(port);
     server.addListener("request", handleRequest);
-    // server.addListener("listening", handleListen);
-    // function handleListen(): void {
-    //     console.log("Listening");
-    // }
     function handleRequest(_request, _response) {
         console.log("I hear voices!");
         _response.setHeader("content-type", "text/html; charset=utf-8");

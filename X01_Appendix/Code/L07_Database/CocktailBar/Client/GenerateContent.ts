@@ -8,7 +8,7 @@ namespace L07_CocktailBar {
         [category: string]: Item[];
     }
 
-    export function generateContent(_data: Data) {
+    export function generateContent(_data: Data): void {
 
         for (let category in _data) {
             // console.log(category);

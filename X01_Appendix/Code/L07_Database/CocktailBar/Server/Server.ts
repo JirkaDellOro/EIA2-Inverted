@@ -4,6 +4,10 @@ import * as Mongo from "mongodb";
 
 // @ts-ignore no-unused-variable
 namespace L07_CocktailBar {
+    interface Order {
+        [type: string]: string | string[];
+    }
+
     let orders: Mongo.Collection;
 
     // running on heroku?
@@ -12,7 +16,7 @@ namespace L07_CocktailBar {
         connectToDatabase("eia2", "mongodb+srv://testuser:testpassword@eia2-57vpd.mongodb.net/eia2");
         startServer(process.env.PORT);
     } else {
-        connectToDatabase("Cocktailbar", "mongodb://localhost:27017");
+        connectToDatabase("Cocktailbar", "mongodb://localh   ost:27017");
         startServer(5001);
     }
 
@@ -53,15 +57,15 @@ namespace L07_CocktailBar {
         console.log("Connection", orders != undefined);
     }
 
-    async function storeOrder(_doc: Object): Promise<void> {
-        await orders.insertOne(_doc);
-        console.log("Store", _doc);
+    async function storeOrder(_order: Order): Promise<void> {
+        await orders.insertOne(_order);
+        console.log("Store", _order);
     }
 
     async function retrieveOrders(): Promise<Object> {
         console.log("Retrieve");
         var cursor: Mongo.Cursor = orders.find();
-        let result: Object[] = await cursor.toArray();
+        let result: Order[] = await cursor.toArray();
         return result;
     }
 }
