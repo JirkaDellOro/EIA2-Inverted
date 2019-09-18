@@ -73,14 +73,14 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Export
 - Iterate over elements
 
-### [L05_SendFormData](L05_SendFormData)
+### [L05_Client](L05_Client)
 - GET/POST
 - QueryString
 - FormData-Object
 - Fetch (former XMLHttpRequest)
 - Promise
 
-### [L06_RequestResponse](L06_RequestResponse)
+### [L06_Server](L06_Server)
 - ServerSide
 - Node
   - install @types/node with npm
