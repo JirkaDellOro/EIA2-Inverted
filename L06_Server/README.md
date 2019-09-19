@@ -111,7 +111,7 @@ Der Handler zum Request-Event erwartet zwei Parameter, den ersten vom Typ `Incom
 - Header: Information zur eigentlichen Nachricht
 - Body: die Nachricht selbst.
 
-Mit der Methode `write(...)` des ServerResponse-Objektes kannst Du ganz einfach Zeichenketten der Nachricht anfügen, mit `end()` wird die Antwort verschickt. Header-Informationen integrierst Du mit `setHeader(...)`. Eine simple Antwort kann man also derart zusammenbauen:
+Header-Informationen integrierst Du mit der Methode `setHeader(...)` des ServerResponse-Objektes, mit `write(...)` kannst Du ganz einfach Zeichenketten dem Nachrichten-Body anfügen und mit `end()` die Antwort verschicken lassen. Eine simple Antwort kann man also derart zusammenbauen:
 ```typescript
 function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {
     _response.setHeader("content-type", "text/html; charset=utf-8");
