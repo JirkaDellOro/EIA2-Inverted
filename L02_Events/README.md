@@ -145,4 +145,4 @@ Bedenke, dass Du die Konzeption jederzeit verbessern kannst und solltest, wenn d
 - Hinweis: recherchiere nach dem Pointer-Event
 
 # Wochenaufgabe
-siehe Aufgaben-Wiki
+https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L02_Memory

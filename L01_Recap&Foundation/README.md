@@ -196,4 +196,4 @@ Hier wird nun noch das Cows-Programm in ein Aktivitätsdiagramm überführt und 
 <a href="Material/Cows_ActivityDiagram.jpg"><img src="Material/Cows_ActivityDiagram.jpg" width="25%"/></a>
 
 # Wochenaufgabe
-Verweis auf die Boxes-Aufgabe
+https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L01_Boxes
