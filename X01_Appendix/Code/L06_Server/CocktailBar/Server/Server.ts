@@ -1,8 +1,7 @@
 import * as Http from "http";
 import * as Url from "url";
 
-// @ts-ignore no-unused-variable
-namespace L06_CocktailBar {
+export namespace L06_CocktailBar {
     let port: number | string | undefined = process.env.PORT;
     if (port == undefined)
         port = 5001;
@@ -16,7 +15,7 @@ namespace L06_CocktailBar {
         console.log("I hear voices!");
 
         _response.setHeader("content-type", "text/html; charset=utf-8");
-        _response.setHeader("Access-Control-Allow-Onpm i @types/noderigin", "*");
+        _response.setHeader("Access-Control-Allow-Origin", "*");
 
         if (_request.url) {
             let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);

@@ -8,6 +8,9 @@ Ein reiner Fileserver wird natürlich den Ansprüchen nicht gerecht, welche die 
 
 In diesem Kapitel soll daher zunächst die Grundlage für die Weiterverarbeitung geschaffen werden. Der Server soll eine asynchrone Kommunikation mit dem Client führen, Daten von diesem entgegen nehmen und eine Antwort erzeugen können, die über das einfache Ausliefern von statischen Dateiinhalten hinausgeht. Kurzum: ein Applikation-Server wird erstellt.
 
+![](../L06_Server/Material/ClientServer.svg)  
+Der Anwendungsfall kann in obenstehendem, domänenübergreifenden Aktivitätsdiagramm dargestellt werden. Jedes beteiligte System, gegebenenfalls auch der Nutzer, wird dabei in einem eigenen Bereich, einer sogenannten Swimlane, also Schwimmbahn, dargestellt.
+
 ## Node.js
 Der Server wird voraussichtlich nicht in einem Browser laufen. Üblicherweise sind Server auf Maschinen installiert, die in einem Rechenzentrum in lebensfeindlicher Umgebung stehen und nicht mit der Interaktion mit Usern beschäftigt sind. Ein Browser, der doch vordringlich für die Mensch-Maschine-Kommunikation verantwortlich ist, wäre da nur hinderlich. Daher sind Server meist in niederen Sprachen wie C++, Java usw. programmiert und werden ggf. in ihrere Funktionalität mit Hilfe von Skriptsprachen wie Pearl, CGI oder PHP erweitert.  
 
@@ -41,9 +44,8 @@ In VSCode kann das Skript, in welchem sich gerade der Cursor befindet, auch ganz
 Mit Tastendruck auf F5 alleine startest Du den Debugger mit der vollen Funktionalität und kannst nun wie mit dem Browserdebugger durch das laufende Programm navigieren, Breakpoints setzen und Variablen beobachten.
 
 ### API
-Node kommt mit einigen neuen Standardobjekten und Modulen, für EIA2 brauchst Du aber nur sehr wenige davon. Die Dokumentation findest Du um Netz auf https://nodejs.org/de/docs/.  
+Node kommt mit einigen neuen Standardobjekten und Modulen, für EIA2 brauchst Du aber nur sehr wenige davon. Die Dokumentation findest Du im Netz auf https://nodejs.org/de/docs/.  
 Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der ein Node-Programm gerade ausgeführt wird. 
-
 
 |Hier erscheint jetzt ein Video|
 |-
@@ -63,8 +65,18 @@ Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der e
 - [x] Eine kleine Aufgabe mit einer Node-App lösen! Hierzu CLI-Parameter entgegen nehmen. Farben-Konverter? Bin-Dez-Hex? Eliza?
 
 ## Erweiterungen
-http, url
-import erklären
+Zusätzlich zu den schon fest eingebauten Modulen, werden auch Standard-Erweiterungen mitgeliefert. Um einen Server zu bauen, brauchen wir dabei das Module `http`. Das Module `url` ist hilfreich um den query-String zu extrahieren und zu interpretieren. Beide Module können mit dem Schlüsselwort `import` geladen und einer Variablen zugewiesen werden, über welche in der Folge auf die Funktionen und Objekte der Module zugegriffen werden kann. Der Asterisk `*` gibt an, dass sämtliche Funktionalität importiert werden soll, hier könnte auch eine Auswahl getroffen werden.
+```typescript
+import * as Http from "http";
+import * as Url from "url";
+
+export namespace ... {
+    Http.createServer(...);
+}
+```
+**Achtung:** Wird `input` verwendet, geht TypeScript davon aus, dass ein eigenes, neues Modul erzeugt werden soll und fordert das Schlüsselwort `export` vor `namespace`, auch wenn es hier bedeutungslos ist.
+
+Auch die Standardmodule, die wahlweise importiert werden wie `http` und `url`, sind in der [Node-Dokumentation](https://nodejs.org/de/docs/) beschrieben.
 
 ## Design
 |Hier erscheint jetzt ein Video|
@@ -90,10 +102,25 @@ import erklären
 > - Implementation bis Reaktion auf Request
 
 ## handleRequest
-- Parameter erklären
-- Query verarbeiten
-- Antwort bauen
-- Header erklären
+Die Events, die in diesem System verwendet werden, sind keine DOM-Events, schließlich ist HTML nicht die Grundlage auf der Serverseite. Deswegen folgen sie auch nicht der Konvention, dass immer ein Event-Objekt an den Handler übergeben wird. 
+Der Handler zum Request-Event erwartet zwei Parameter, den ersten vom Typ `IncomingMessage` und den zweitem vom Typ `ServerResponse` aus dem `http`-Modul.  
+
+`IncomingMessage` liefert Informationen zur eingegangenen Request, zum Beispiel den URL als String. Um daraus bequem den Query-Teil zu extrahieren, bietet das `url`-Modul hilfreiche Methoden. `parse` interpretiert den URL und erzeugt daraus ein neues Objekt, dessen Eigenschaft `query` nun wieder ein assoziatives Array darstellt.
+
+`ServerResponse` ist ein Objekt, welches die Informationen für die Antwort sammelt. Dabei wird, wie bei Kommunikationsprotokollen üblich, diese Information in zwei grundlegende Kategorien aufgeteilt
+- Header: Information zur eigentlichen Nachricht
+- Body: die Nachricht selbst.
+
+Mit der Methode `write(...)` des ServerResponse-Objektes kannst Du ganz einfach Zeichenketten der Nachricht anfügen, mit `end()` wird die Antwort verschickt. Header-Informationen integrierst Du mit `setHeader(...)`. Eine simple Antwort kann man also derart zusammenbauen:
+```typescript
+function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {
+    _response.setHeader("content-type", "text/html; charset=utf-8");
+    _response.setHeader("Access-Control-Allow-Origin", "*");
+    _response.write("Was geht?");
+    _response.end();
+}
+```
+Im Beispiel verschickt der Server lediglich die Antwort mit dem Inhalt "Was geht?". Der Header gibt an, dass die Antwort ein mit utf-8 kodierter Text ist, also z.b. kein Bild, und dass sie von jedem geöffnet werden darf. Auch hier bedeutet der Asterisk wieder "alles".
 
 ## Implementation 2
 |Hier erscheint jetzt ein Video|

@@ -2,8 +2,7 @@ import * as Http from "http";
 import * as Url from "url";
 import * as Mongo from "mongodb";
 
-// @ts-ignore no-unused-variable
-namespace L07_CocktailBar {
+export namespace L07_CocktailBar {
     interface Order {
         [type: string]: string | string[];
     }

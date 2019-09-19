@@ -2,7 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Http = require("http");
 const Url = require("url");
-// @ts-ignore no-unused-variable
 var L06_CocktailBar;
 (function (L06_CocktailBar) {
     let port = process.env.PORT;
@@ -15,7 +14,7 @@ var L06_CocktailBar;
     function handleRequest(_request, _response) {
         console.log("I hear voices!");
         _response.setHeader("content-type", "text/html; charset=utf-8");
-        _response.setHeader("Access-Control-Allow-Onpm i @types/noderigin", "*");
+        _response.setHeader("Access-Control-Allow-Origin", "*");
         if (_request.url) {
             let url = Url.parse(_request.url, true);
             for (let key in url.query)
@@ -25,5 +24,5 @@ var L06_CocktailBar;
         }
         _response.end();
     }
-})(L06_CocktailBar || (L06_CocktailBar = {}));
+})(L06_CocktailBar = exports.L06_CocktailBar || (exports.L06_CocktailBar = {}));
 //# sourceMappingURL=Server.js.map

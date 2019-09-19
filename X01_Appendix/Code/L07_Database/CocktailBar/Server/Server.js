@@ -3,7 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const Http = require("http");
 const Url = require("url");
 const Mongo = require("mongodb");
-// @ts-ignore no-unused-variable
 var L07_CocktailBar;
 (function (L07_CocktailBar) {
     let orders;
@@ -61,5 +60,5 @@ var L07_CocktailBar;
         let result = await cursor.toArray();
         return result;
     }
-})(L07_CocktailBar || (L07_CocktailBar = {}));
+})(L07_CocktailBar = exports.L07_CocktailBar || (exports.L07_CocktailBar = {}));
 //# sourceMappingURL=Server.js.map
