@@ -137,30 +137,38 @@ Im Beispiel verschickt der Server lediglich die Antwort mit dem Inhalt "Was geht
 > - JSON erzeugen
 
 ## Heroku
-- In Landschaft verorten
-- PaaS
-- signup
-    - for free
-    - primary language: Node.js
-- rechts oben "New"
-    - "create new app"
-    - App name muss einzigartig sein und nur kleine Buchstaben nutzen
-    - Region Europe
-    - create app
-- dashboard
-    - nur zwei Views derzeit wichtig deploy und logs
-    - View logs rechts oben unter "More" in neuem Fenster öffnen
-    - die zwei Fenster nebeneinander setzen
-    - im Deploy-Fenster "Connect to Github" wählen um die untere Auswahl zu verändern
-      - dort erneut "Connect to Github" wählen
-      - im Popup mit Github verbinden
-      - Repository auswählen
-- Deploy
-    - Deploy Master Branch
-    - Ausgaben in beiden Fenstern beobachten
-    - Crash!
+Der Server auf dem Entwicklungsrechner funktioniert, nun gilt es, ihn in einem Rechenzentrum unterzubringen, damit der Cocktailbar-Client auch von anderen Rechnern aus damit kommunizieren kann. Eine Möglichkeit ist es, einen realen oder virtuellen Rechner anzumieten, ihn selbst zu konfigurieren und die erforderliche Software darauf zu installieren etc. Das erfordert einiges an Spezialwissen und teilweise obliegt auch die Wartung, Erweiterung und Aktualisierung in der Verantwortung des Mieters.
+Mittlerweile gibt es aber auch einen großen Markt für "Platform As A Service" (PaaS), bei dem sich der Nutzer nicht um die Infrastruktur kümmern muss, sondern diese einfach nutzen kann. Der Anbieter kümmert sich um deren Bereitstellung, Wartung, Skalierung und so weiter. Heroku ist eine solche PaaS, sie findet in diesem Modul Anwendung.  
+
+- [x] Schau' dir das [NewsWatch-Video](https://newswatchtv.com/2018/06/15/heroku-newswatch-review/) zu Heroku an.
+- [x] Versuche in der [EIA2-Landschaft](../X01_Appendix/Landscape/EIA2Landscape2019.svg) die Laufzeitumgebung für deinen Server auf deiner Entwicklungsmaschine und in der Cloud zu verorten.
+
+### Installation
+- [x] Öffne die Seite www.heroku.com
+- [x] Lege dir ein kostenloses Nutzerkonto an
+    - [x] Primary language: Node.js
+- [x] Klicke rechts oben auf "New" und dann auf "create new app"
+    - [x] Der Name deiner App muss einzigartig sein und darf nur kleine Buchstaben nutzen
+    - [x] Wähle Region Europe
+    - [x] Dann "create app"
+- [x] In deinem persönliches Dashboard (Steuerpult) interessiert zunächst nur die Seite"Deploy"
+  - [x] Um nun deinen Code auf Heroku zu laden, wähle dort "Connect to Github"
+  - [x] Klicke darunter erneut auf "Connect to Github"
+  - [x] Im Popup mit Github verbinden
+  - [x] Wähle dein Repository aus
+  - [x] ** ggf. muss in Github noch der Zugriff gewährt werden. @Praktikanten: bitte Vorgang beschreiben **
+
+Heroku sollte nun vorbereitet sein deinen Code von deinem Repository zu pullen und als Web-App laufen zu lassen. 
+
+### Deployment
+- [x] Klicke im Dashboard oben rechts auf "More" und öffne "View logs" in einem neuen Browserfenster.
+- [x] Ordne das Deploy- und das Logs-Browserfenster nebeneinander auf deinem Bildschirm an um die Ausgaben beobachten zu können.
+- [x] Klicke auf "Deploy Master Branch"
+  - [x] Beobachte die Ausgaben in beiden Fenstern beobachten
+  - [x] Wenn Du alles richtig gemacht hast, erhältst Du im Deploy-Fenster Fehlermeldungen und deine Web-App crasht!
 
 ## package.json
+Das Problem ist nämlich, dass Heroku keine Ahnung davon hat, was es eigentlich tun soll. Auf deiner Entwicklungsmaschine hattest Du von Hand die Kommandos gegeben. So wurde Node installiert, der Code kompiliert und der Server unter Node.js gestartet etc. 
   - eine Heroku-App ist zunächst ganz blank
   - wir hatten Node installiert und dann mit Node das Programm gestartet
   - package.json trägt diese Infos
