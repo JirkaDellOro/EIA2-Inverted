@@ -200,12 +200,15 @@ Das Problem ist nämlich, dass Heroku keine Ahnung davon hat, was es eigentlich 
 - [x] Starte wieder einen Build im Deploy-Fenster
 - [x] Beobachte die Logs in beiden Fenstern in beiden sollte die Zeile "Build succeeded" zwischen den anderen auftauchen.
 
-Dein Server wird auch gleich gestartet. Heroku gibt dir auch die Möglichkeit, die Antworten deines Server direkt im Browser anzeigen zu lassen.
+Dein Server wird auch gleich gestartet. Mit dem Browser kannst Du über den URL mit deiner Server-App kommunizieren und die Antworten auf der Seite sehen
 - [x] Klicke dazu auf "View" bzw. "Open app"
 - [x] Ein neuer Browsertab öffnet sich und zeigt dir die Serverantwort. Der URL ist die Adresse deiner App.
 - [x] Erweitere den URL um einen Search- bzw. Query-Teil und beobachte die Serverantworten.
 
 ## Client
 Jetzt musst Du lediglich noch die url-Variable in deiner Clientsoftware anpassen, damit diese sich mit dem Heroku-Server unterhält.
-- [x] Teste deinen Heroku-Server vom Client aus, sowohl 
+- [x] Teste deinen Heroku-Server vom Client aus, sowohl von deinem lokalen Fileserver aus, wie auch über Pages.
+- [x] Achte dabei auf das Log-Fenster von Heroku
+  - [x] Finde deine Bestell-Angaben im Log 
 
+- [x] Überlege: warum erscheinen die Bestellungen nicht auf der geöffneten Server-App-Seite? Was geschieht mit den Antworten des Servers, wenn der CocktailBar-Client die Requests verschickt?
