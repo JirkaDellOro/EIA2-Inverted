@@ -167,7 +167,7 @@ Heroku sollte nun vorbereitet sein deinen Code von deinem Repository zu pullen u
   - [x] Beobachte die Ausgaben in beiden Fenstern beobachten
   - [x] Wenn Du alles richtig gemacht hast, erhältst Du im Deploy-Fenster Fehlermeldungen und deine Web-App crasht!
 
-## package.json
+### package.json
 Das Problem ist nämlich, dass Heroku keine Ahnung davon hat, was es eigentlich tun soll. Auf deiner Entwicklungsmaschine hattest Du von Hand die Kommandos gegeben. So wurde Node installiert, der Code kompiliert und der Server unter Node.js gestartet etc. Um solches auf Heroku zu machen fehlt dir der direkte Zugang. Es ist aber auch nicht sinnvoll, denn schließlich soll deine Server-App auch automatisch starten, und nicht immer von deiner Präsenz abhängig sein. Das Build-Log gibt schon darüber Auskunft wie vorzugehen ist.
 ```plaintext
  !     The 'heroku/nodejs' buildpack is set on this application, but was
@@ -195,6 +195,17 @@ Das Problem ist nämlich, dass Heroku keine Ahnung davon hat, was es eigentlich 
 - [x] Wenn's klappt: Commit und Push!
 - [x] Wenn nicht: Issue posten...
 
+### Server-App starten
+- [x] Öffne wieder die beiden Heroku-Fenster
+- [x] Starte wieder einen Build im Deploy-Fenster
+- [x] Beobachte die Logs in beiden Fenstern in beiden sollte die Zeile "Build succeeded" zwischen den anderen auftauchen.
+
+Dein Server wird auch gleich gestartet. Heroku gibt dir auch die Möglichkeit, die Antworten deines Server direkt im Browser anzeigen zu lassen.
+- [x] Klicke dazu auf "View" bzw. "Open app"
+- [x] Ein neuer Browsertab öffnet sich und zeigt dir die Serverantwort. Der URL ist die Adresse deiner App.
+- [x] Erweitere den URL um einen Search- bzw. Query-Teil und beobachte die Serverantworten.
+
 ## Client
-- port von process
-- Pfade anpassen
+Jetzt musst Du lediglich noch die url-Variable in deiner Clientsoftware anpassen, damit diese sich mit dem Heroku-Server unterhält.
+- [x] Teste deinen Heroku-Server vom Client aus, sowohl 
+

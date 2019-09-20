@@ -3,7 +3,8 @@ var L06_CocktailBar;
 (function (L06_CocktailBar) {
     window.addEventListener("load", handleLoad);
     // const url: string = "index.html";
-    const url = "localhost:5001";
+    // const url: string = "localhost:5001";
+    const url = "https://eia2-inverted-dev.herokuapp.com";
     async function handleLoad(_event) {
         console.log("Init");
         let response = await fetch("Data.json");
@@ -12,7 +13,7 @@ var L06_CocktailBar;
         L06_CocktailBar.generateContent(data);
         let form = document.querySelector("form");
         let slider = document.querySelector("input#amount");
-        let submit = document.querySelector("button[type=button]");
+        let submit = document.querySelector("button[type=submit]");
         console.log(submit);
         submit.addEventListener("click", sendOrder);
         form.addEventListener("change", handleChange);
@@ -20,9 +21,9 @@ var L06_CocktailBar;
         displayOrder();
     }
     async function sendOrder(_event) {
-        return; // for testing
+        // return; // for testing
         console.log("SendOrder");
-        // _event.preventDefault();
+        _event.preventDefault();
         let formData = new FormData(document.querySelector("form"));
         //@ts-ignore
         let query = new URLSearchParams(formData);

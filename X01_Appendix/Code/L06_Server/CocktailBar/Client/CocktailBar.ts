@@ -1,7 +1,8 @@
 namespace L06_CocktailBar {
     window.addEventListener("load", handleLoad);
     // const url: string = "index.html";
-    const url: string = "localhost:5001";
+    // const url: string = "localhost:5001";
+    const url: string = "https://eia2-inverted-dev.herokuapp.com";
 
     async function handleLoad(_event: Event): Promise<void> {
         console.log("Init");
@@ -14,7 +15,7 @@ namespace L06_CocktailBar {
 
         let form: HTMLFormElement = <HTMLFormElement>document.querySelector("form");
         let slider: HTMLInputElement = <HTMLInputElement>document.querySelector("input#amount");
-        let submit: HTMLButtonElement = <HTMLButtonElement>document.querySelector("button[type=button]");
+        let submit: HTMLButtonElement = <HTMLButtonElement>document.querySelector("button[type=submit]");
 
         console.log(submit);
         submit.addEventListener("click", sendOrder);
@@ -25,9 +26,9 @@ namespace L06_CocktailBar {
     }
 
     async function sendOrder(_event: MouseEvent): Promise<void> {
-        return; // for testing
+        // return; // for testing
         console.log("SendOrder");
-        // _event.preventDefault();
+        _event.preventDefault();
         let formData: FormData = new FormData(<HTMLFormElement>document.querySelector("form"));
         //@ts-ignore
         let query: URLSearchParams = new URLSearchParams(formData);
