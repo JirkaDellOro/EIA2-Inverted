@@ -168,13 +168,32 @@ Heroku sollte nun vorbereitet sein deinen Code von deinem Repository zu pullen u
   - [x] Wenn Du alles richtig gemacht hast, erhältst Du im Deploy-Fenster Fehlermeldungen und deine Web-App crasht!
 
 ## package.json
-Das Problem ist nämlich, dass Heroku keine Ahnung davon hat, was es eigentlich tun soll. Auf deiner Entwicklungsmaschine hattest Du von Hand die Kommandos gegeben. So wurde Node installiert, der Code kompiliert und der Server unter Node.js gestartet etc. 
-  - eine Heroku-App ist zunächst ganz blank
-  - wir hatten Node installiert und dann mit Node das Programm gestartet
-  - package.json trägt diese Infos
-  - erstellen mit npm init
-  - Pfade auf das auszuführende Skript legen
-  - start in scripts nicht vergessen
+Das Problem ist nämlich, dass Heroku keine Ahnung davon hat, was es eigentlich tun soll. Auf deiner Entwicklungsmaschine hattest Du von Hand die Kommandos gegeben. So wurde Node installiert, der Code kompiliert und der Server unter Node.js gestartet etc. Um solches auf Heroku zu machen fehlt dir der direkte Zugang. Es ist aber auch nicht sinnvoll, denn schließlich soll deine Server-App auch automatisch starten, und nicht immer von deiner Präsenz abhängig sein. Das Build-Log gibt schon darüber Auskunft wie vorzugehen ist.
+```plaintext
+ !     The 'heroku/nodejs' buildpack is set on this application, but was
+ !     unable to detect a Node.js codebase.
+ !         
+ !     A Node.js app on Heroku requires a 'package.json' at the root of
+ !     the directory structure.
+ !     
+ !     If you are trying to deploy a Node.js application, ensure that this
+ !     file is present at the top level directory. This directory has the
+ !     following files:
+ ```
+ Wenn Du darunter deine Dateien und Ordner siehst, ist alles sehr gut. Du musst also nur eine json-Datei mit dem Namen package auf der obersten Ebene deiner Dateistruktur unterbringen, mit der Du Heroku die notwendigen Informationen mitgeben kannst. Zum Glück hilft dir Node bei der Erstellung dieser Datei.
+
+ - [x] Öffne eine Konsole auf der obersten Ebene deines Projektes
+ - [x] Gib `npm init` ein
+ - [x] Bei den meisten Einträgen kannst Du einfach die Vorschläge akzeptieren. Einen Namen, der wie der Name deiner Heroku-App nur aus Kleinbuchstaben bestehen darf, und deinen Namen als Autor solltest Du wenigstens eingeben.
+ - [x] Wenn Du damit durch bist, öffne die entstandene Datei `package.json`
+   - [x] ersetze darin den mit "test" bezeichneten Eintrag in "scripts" durch
+   ```
+   "node Relativer/Pfad/Zu/Datei.js"
+   ```
+   wobei Du den rechten Teil natürlich mit Sinnvollem ersetzt.
+- [x] Teste `package.json` indem Du nun in der Konsole `npm start` eingibst. Der NodePackageManager (npm) sucht jetzt selbst in der Datei nach dem Eintrag "start" unter "scripts" und führt aus was darin steht.
+- [x] Wenn's klappt: Commit und Push!
+- [x] Wenn nicht: Issue posten...
 
 ## Client
 - port von process
