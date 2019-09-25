@@ -1,5 +1,5 @@
 # L01 Recap & Foundation
-<img src="Material/steve-jobs-learn-to-program.jpg">  
+<img src="Material/steve-jobs-learn-to-program.jpg">
 <small>Quelle: <a href="https://www.challengecharterschool.net/wp-content/uploads/2017/07/Steve-Jobs.jpg">https://www.challengecharterschool.net/wp-content/uploads/2017/07/Steve-Jobs.jpg</a></small>
 
 ## Einleitung
