@@ -1,5 +1,6 @@
 # L04_DataStructures
-<img src="Material/OrdnungChaos.jpg">  
+<img src="Material/OrdnungChaos.jpg">
+<small>Quelle: <a href="https://gutezitate.com/zitate-bilder/zitat-ordnung-ist-etwas-fur-primitive-das-genie-beherrscht-das-chaos-albert-einstein-181618.jpg">https://gutezitate.com/zitate-bilder/zitat-ordnung-ist-etwas-fur-primitive-das-genie-beherrscht-das-chaos-albert-einstein-181618.jpg</a></small>
 
 Albert Einstein war wohl unbestritten eines der größten Genies, welche die Menschheit je hervorgebracht. Es ist unwahrscheinlich jemanden zu beleidigen, wenn in dieser Lektion davon ausgegangen wird, dass keine beteiligte Person einen ähnlichen Status genießt. Das gilt wohl für die meisten, die an der Konzeption interaktiver Anwendungen beteiligt und vielleicht mehr noch für die Nutzer der Anwendungen. Wer also nicht Einsteins Genie für sich in Anspruch nimmt, könnte von Ordnung doch profitieren.   
 
