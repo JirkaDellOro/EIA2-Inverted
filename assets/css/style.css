@@ -619,7 +619,8 @@ by Matt Graham
    margin: 0 4px;
    padding: 2px 6px;
    background: #ccc;
-   border-radius: 2px; }
+   border-radius: 2px;
+    }
  
  pre {
    padding: 8px 15px;
@@ -627,10 +628,12 @@ by Matt Graham
    border-radius: 3px;
    border: 1px solid #c7c7c7;
    overflow: auto;
-   overflow-y: hidden; }
+   overflow-y: hidden; 
+   line-height: 15px}
    pre code {
      margin: 0px;
-     padding: 0px; }
+     padding: 0px;
+     }
  
  table {
    width: 100%;
