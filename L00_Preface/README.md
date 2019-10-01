@@ -18,8 +18,8 @@
 [DO-Hierarchy](../X01_Appendix/DO-Hierarchy/DOM-Classhierachy.svg)  
 [Coding Style](../X01_Appendix/CodingStyle)  
 ## Veranstaltungskonzept
-[Use Case Diagram](../X01_Appendix/UML/UCD_EIA-Kontakt.svg)  
-[Activity Diagram - Woche](../X01_Appendix/UML/AD_EIA-Woche.svg)  
+[Use Case Diagram](../X01_Appendix/UML/UCD_EIA2-Contact.svg)  
+[Activity Diagram - Woche](../X01_Appendix/UML/AD_EIA2-Week.svg)  
 [Activity Diagram - Konzeption](../X01_Appendix/UML/AD_EIA-Konzeption.svg)  
 
 ### Sektionen
