@@ -1,11 +1,14 @@
-# Zuweisungsoperator
+# Operatoren
+Eine Liste der wichtigsten Operatoren in Javascript
+
+## Zuweisungsoperator
 
 <table>
 <tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
 <tr><td><code>=</code></td><td>Zuweisung</td><td><code>x = 7;</code></td><td>Der Variablen auf der linken Seite wird der Wert auf der rechten Seite zugewiesen</td></tr>  
 </table>
 
-# Arithmetische und kombinierte Operatoren  
+## Arithmetische Operatoren  
 
 <table>
 <tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
@@ -14,6 +17,12 @@
 <tr><td><code>*</code></td><td>Multiplikation</td><td><code>5 * x;</code></td><td>Liefert das Ergebnis der Multiplikation des linken und rechten Wertes ohne Speicherung.</td></tr>
 <tr><td><code>/</code></td><td>Division</td><td><code>x / 2;</code></td><td>Liefert das Ergebnis der Division des linken durch den rechten Wert ohne Speicherung.</td></tr>
 <tr><td><code>%</code></td><td>Modulo</td><td><code>x % 10;</code></td><td>Liefert den Rest der ganzzahligen Division des linken durch den rechten Wert ohne Speicherung.</td></tr>
+</table>  
+
+## Kombinierte Operatoren  
+
+<table>
+<tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
 <tr><td><code>+=</code></td><td>Additionszuweisung</td><td><code>x += 19;</code></td><td>Der Wert der Variablen wird um den rechtsstehenden Wert erhöht. Gleichbedeutend mit <code>x = x + 19;</code></td></tr>
 <tr><td><code>-=</code></td><td>Subtraktionszuweisung</td><td><code>x -= 3;</code></td><td>Der Wert der Variablen wird um den rechtsstehenden Wert vermindert. Gleichbedeutend mit <code>x = x - 3;</code></td></tr>
 <tr><td><code>*=</code></td><td>Multiplikationszuweisung</td><td><code>x *= 100;</code></td><td>Der Wert der Variablen wird um den rechtsstehenden Faktor erhöht. Gleichbedeutend mit <code>x = x *100;</code></td></tr>
@@ -22,7 +31,7 @@
 <tr><td><code>--</code></td><td>Dekrement</td><td><code>x--;</code></td><td>Der Wert der Variablen wird um 1 vermindert. Gleichbedeutend mit <code>x -= 1;</code></td></tr>
 </table>
 
-# Vergleichsoperatoren  
+## Vergleichsoperatoren  
 
 <table>
 <tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
@@ -35,7 +44,7 @@
 <tr><td><code><=</code></td><td>Kleinergleich</td><td><code>x <= 2.32</code></td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.</td></tr>
 </table>
 
-# Logische Operatoren  
+## Logische Operatoren  
 
 <table>
 <tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
@@ -43,3 +52,8 @@
 <tr><td><code>||</code></td><td>Oder</td><td><code>x<2 || x>9</code></td><td>Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.</td></tr>  
 <tr><td><code>!</code></td><td>Nicht</td><td><code>!(x > 10)</code></td><td>Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.</td></tr> 
 </table>
+
+## Bitweise Operatoren
+
+Damit werden direkt Bitmuster manipuliert. Siehe
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
