@@ -42,4 +42,4 @@ Jede Lektion schließt mit einer Aufgabe, an der im Rest der Woche die Inhalte g
 ### Issues
 Der Dozent und die studentischen Hilfskräfte freuen sich auch außerhalb des Plenums und des Praktikums über qualifizierte Fragen zu den aktuellen Inhalten. Poste für jede Frage eine Issue hier: https://github.com/JirkaDellOro/EIA2-Inverted/issues. Wir versuchen so schnell wie möglich zu antworten. Auch Du bist herzlich eingelaen, dich an der Beantwortung zu beteiligen, auch wenn Du dir nicht ganz sicher bist. Auch eine falsche Antwort ist wertvoll, wenn sie korrigiert wird. **Achtung:** beim Posten gelten die Regeln, dass Du ein Issue posten solltest, wenn Du für ein Problem innerhalb von 10 Minuten noch keinen Lösungsansatz findest und dass Du deine Issues selbständig schließt, wenn das Problem gelöst ist.
 ## Wochenaufgabe
-https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L00_Preparation
+[L00_Preparation](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L00_Preparation)
