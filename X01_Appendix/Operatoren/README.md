@@ -14,18 +14,19 @@ Zeichen|Name|Beispiel|Anmerkung
 ++|Inkrement|x++;|Der Wert der Variablen wird um 1 erhöht. Gleichbedeutend mit X += 1;
 --|Dekrement|x--;|Der Wert der Variablen wird um 1 vermindert. Gleichbedeutend mit X -= 1;
 
-# Vergleichsoperatoren
-Zeichen|Name|Beispiel|Anmerkung
--|-|-|-
-==|Gleichheit|x == "AB"|Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!
+# Vergleichsoperatoren  
+Zeichen|Name|Beispiel|Anmerkung  
+-|-|-|-  
+==|Gleichheit|x == "AB"|Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!  
 !=|Ungleichheit|x != "AB"|Liefert den Wert true, wenn die Werte auf der linken und rechten Seite unterschiedlich sind.
 >|Größer|x > 2.32|Liefert den Wert true, wenn der linke Wert größer als der rechte ist.
 <|Kleiner|x < 2.32|Liefert den Wert true, wenn der linke Wert kleiner als der rechte ist.
 >=|Größergleich|x >= 2.32|Liefert den Wert true, wenn der linke Wert größer als der rechte oder genau gleich ist.
-<=|Kleinergleich|x <= 2.32|Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.
-# Logische Operatoren
-Zeichen|Name|Beispiel|Anmerkung
--|-|-|-
+<=|Kleinergleich|x <= 2.32|Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.  
+
+# Logische Operatoren  
+Zeichen|Name|Beispiel|Anmerkung  
+-|-|-|-  
 &&|Und|x>2 && x<9|Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.
 \|\||Oder|x<2 \|\| x>9|Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.
 !|Nicht|!(x > 10)|Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.
