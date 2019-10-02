@@ -33,3 +33,11 @@ Zeichen<img width="100" height="1"/>|Name<img width="400" height="1"/>|Beispiel<
 <code>\|\|</code>|Oder|<code>x<2 \|\| x>9</code>|Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.  
 !|Nicht|!(x > 10)|Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.  
  
+# Logische Operatoren  
+<table>
+<tr><th>Zeichen</th><th>Name</th><th>Beispiel</th><th>Anmerkung</th></tr>  
+<tr><td>&&</td><td>Und</td><td>x>2 && x<9</td><td>Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.</td></tr>  
+<tr><td>||</td><td>Oder</td><td><code>x<2 || x>9</code></td><td>Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.</td></tr>  
+<tr><td>!</td><td>Nicht</td><td>!(x > 10)</td><td>Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.
+</table>
+ 
