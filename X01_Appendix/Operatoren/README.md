@@ -2,8 +2,7 @@
 
 <table>
 <tr align="left"><td width="100">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
-<tr><td>+</td><td>Addition</td><td>x + 5;</td><td>Liefert das Ergebnis der Addition des linken und rechten Wertes ohne Speicherung.</td></tr>  <tr align="left"><td width="100">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
-
+<tr><td>+</td><td>Addition</td><td>x + 5;</td><td>Liefert das Ergebnis der Addition des linken und rechten Wertes ohne Speicherung.</td></tr>  
 <tr><td>-</td><td>Subtraktion</td><td>17 - x;</td><td>Liefert das Ergebnis der Subtraktion des linken und rechten Wertes ohne Speicherung.</td></tr>
 <tr><td>*</td><td>Multiplikation</td><td>5 * x;</td><td>Liefert das Ergebnis der Multiplikation des linken und rechten Wertes ohne Speicherung.</td></tr>
 <tr><td>/</td><td>Division</td><td>x / 2;</td><td>Liefert das Ergebnis der Division des linken durch den rechten Wert ohne Speicherung.</td></tr>
