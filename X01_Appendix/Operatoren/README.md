@@ -30,6 +30,6 @@ Zeichen<img width="100" height="1"/>|Name<img width="400" height="1"/>|Beispiel<
 Zeichen<img width="100" height="1"/>|Name<img width="400" height="1"/>|Beispiel<img width="200" height="1"/>|Anmerkung<br><img height="1"/>  
 :-:|:-|:-|:-|  
 &&|Und|x>2 && x<9|Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.  
-\|\||Oder|x<2 \|\| x>9|Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.  
+<code>\|\|</code>|Oder|<code>x<2 \|\| x>9</code>|Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.  
 !|Nicht|!(x > 10)|Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.  
  
