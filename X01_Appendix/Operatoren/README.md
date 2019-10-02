@@ -1,43 +1,37 @@
 # Arithmetische und kombinierte Operatoren  
 
-Zeichen<img width="100" height="1"/>|Name<img width="400" height="1"/>|Beispiel<img width="200" height="1"/>|Anmerkung<br><img height="1"/>  
-:-:|:-|:-|:-|  
-+|Addition|x + 5;|Liefert das Ergebnis der Addition des linken und rechten Wertes ohne Speicherung.  
--|Subtraktion|17 - x;|Liefert das Ergebnis der Subtraktion des linken und rechten Wertes ohne Speicherung.  
-*|Multiplikation|5 * x;|Liefert das Ergebnis der Multiplikation des linken und rechten Wertes ohne Speicherung.  
-/|Division|x / 2;|Liefert das Ergebnis der Division des linken durch den rechten Wert ohne Speicherung.
-%|Modulo|x % 10;|Liefert den Rest der ganzzahligen Division des linken durch den rechten Wert ohne Speicherung.
-+=|Additionszuweisung|x += 19;|Der Wert der Variablen wird um den rechtsstehenden Wert erhöht. Gleichbedeutend mit x = x + 19;
--=|Subtraktionszuweisung|x -= 3;|Der Wert der Variablen wird um den rechtsstehenden Wert vermindert. Gleichbedeutend mit x = x - 3;
-*=|Multiplikationszuweisung|x *= 100;|Der Wert der Variablen wird um den rechtsstehenden Faktor erhöht. Gleichbedeutend mit x = x *100;
-/=|Divisionszuweisung|x /= 4;|Der Wert der Variablen wird um den rechtsstehenden  Divisor vermindert. Gleichbedeutend mit x = x / 4;
-++|Inkrement|x++;|Der Wert der Variablen wird um 1 erhöht. Gleichbedeutend mit x += 1;
---|Dekrement|x--;|Der Wert der Variablen wird um 1 vermindert. Gleichbedeutend mit x -= 1;
+<table>
+<tr align="left"><th width=100>Zeichen</th><th>Name</th><th width=300>Beispiel</th><th>Anmerkung</th></tr>  
+<tr><td>+</td><td>Addition</td><td>x + 5;</td><td>Liefert das Ergebnis der Addition des linken und rechten Wertes ohne Speicherung.</td></tr>  
+<tr><td>-</td><td>Subtraktion</td><td>17 - x;</td><td>Liefert das Ergebnis der Subtraktion des linken und rechten Wertes ohne Speicherung.</td></tr>
+<tr><td>*</td><td>Multiplikation</td><td>5 * x;</td><td>Liefert das Ergebnis der Multiplikation des linken und rechten Wertes ohne Speicherung.</td></tr>
+<tr><td>/</td><td>Division</td><td>x / 2;</td><td>Liefert das Ergebnis der Division des linken durch den rechten Wert ohne Speicherung.</td></tr>
+<tr><td>%</td><td>Modulo</td><td>x % 10;</td><td>Liefert den Rest der ganzzahligen Division des linken durch den rechten Wert ohne Speicherung.</td></tr>
+<tr><td>+=</td><td>Additionszuweisung</td><td>x += 19;</td><td>Der Wert der Variablen wird um den rechtsstehenden Wert erhöht. Gleichbedeutend mit x = x + 19;</td></tr>
+<tr><td>-=</td><td>Subtraktionszuweisung</td><td>x -= 3;</td><td>Der Wert der Variablen wird um den rechtsstehenden Wert vermindert. Gleichbedeutend mit x = x - 3;</td></tr>
+<tr><td>*=</td><td>Multiplikationszuweisung</td><td>x *= 100;</td><td>Der Wert der Variablen wird um den rechtsstehenden Faktor erhöht. Gleichbedeutend mit x = x *100;</td></tr>
+<tr><td>/=</td><td>Divisionszuweisung</td><td>x /= 4;</td><td>Der Wert der Variablen wird um den rechtsstehenden  Divisor vermindert. Gleichbedeutend mit x = x / 4;</td></tr>
+<tr><td>++</td><td>Inkrement</td><td>x++;</td><td>Der Wert der Variablen wird um 1 erhöht. Gleichbedeutend mit x += 1;</td></tr>
+<tr><td>--</td><td>Dekrement</td><td>x--;</td><td>Der Wert der Variablen wird um 1 vermindert. Gleichbedeutend mit x -= 1;</td></tr>
+</table>
 
 # Vergleichsoperatoren  
 
-Zeichen<img width="100" height="1"/>|Name<img width="400" height="1"/>|Beispiel<img width="200" height="1"/>|Anmerkung<br><img height="1"/>  
-:-:|:-|:-|:-|  
-==|Gleichheit|x == "AB"|Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!  
-!=|Ungleichheit|x != "AB"|Liefert den Wert true, wenn die Werte auf der linken und rechten Seite unterschiedlich sind.  
-\>|Größer|x > 2.32|Liefert den Wert true, wenn der linke Wert größer als der rechte ist.  
-\<|Kleiner|x < 2.32|Liefert den Wert true, wenn der linke Wert kleiner als der rechte ist.  
-\>=|Größergleich|x >= 2.32|Liefert den Wert true, wenn der linke Wert größer als der rechte oder genau gleich ist.  
-\<=|Kleinergleich|x <= 2.32|Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.  
-
-# Logische Operatoren  
-
-Zeichen<img width="100" height="1"/>|Name<img width="400" height="1"/>|Beispiel<img width="200" height="1"/>|Anmerkung<br><img height="1"/>  
-:-:|:-|:-|:-|  
-&&|Und|x>2 && x<9|Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.  
-<code>\|\|</code>|Oder|<code>x<2 \|\| x>9</code>|Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.  
-!|Nicht|!(x > 10)|Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.  
+<table>
+<tr align="left"><th width=100>Zeichen</th><th>Name</th><th width=300>Beispiel</th><th>Anmerkung</th></tr>  
+<tr><td>==</td><td>Gleichheit</td><td>x == "AB"</td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!  
+<tr><td>!=</td><td>Ungleichheit</td><td>x != "AB"</td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite unterschiedlich sind.  
+<tr><td>></td><td>Größer</td><td>x > 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte ist.  
+<tr><td><</td><td>Kleiner</td><td>x < 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte ist.  
+<tr><td>>=</td><td>Größergleich</td><td>x >= 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte oder genau gleich ist.  
+<tr><td><=</td><td>Kleinergleich</td><td>x <= 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.</td></tr>
+</table>  
  
 # Logische Operatoren  
 <table>
-<tr><th>Zeichen</th><th>Name</th><th>Beispiel</th><th>Anmerkung</th></tr>  
+<tr align="left"><th width=100>Zeichen</th><th>Name</th><th width=300>Beispiel</th><th>Anmerkung</th></tr>  
 <tr><td>&&</td><td>Und</td><td>x>2 && x<9</td><td>Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.</td></tr>  
-<tr><td>||</td><td>Oder</td><td><code>x<2 || x>9</code></td><td>Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.</td></tr>  
+<tr><td>||</td><td>Oder</td><td>x<2 || x>9</td><td>Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.</td></tr>  
 <tr><td>!</td><td>Nicht</td><td>!(x > 10)</td><td>Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.
 </table>
  
