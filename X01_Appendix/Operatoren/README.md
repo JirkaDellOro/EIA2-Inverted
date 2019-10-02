@@ -1,14 +1,14 @@
 # Zuweisungsoperator
 
 <table>
-<tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="100">Beispiel</td><td>Anmerkung</td></tr>  
+<tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
 <tr><td><code>=</code></td><td>Zuweisung</td><td><code>x = 7;</code></td><td>Der Variablen auf der linken Seite wird der Wert auf der rechten Seite zugewiesen</td></tr>  
 </table>
 
 # Arithmetische und kombinierte Operatoren  
 
 <table>
-<tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="100">Beispiel</td><td>Anmerkung</td></tr>  
+<tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
 <tr><td><code>+</code></td><td>Addition</td><td><code>x + 5;</code></td><td>Liefert das Ergebnis der Addition des linken und rechten Wertes ohne Speicherung.</td></tr>  
 <tr><td><code>-</code></td><td>Subtraktion</td><td><code>17 - x;</code></td><td>Liefert das Ergebnis der Subtraktion des linken und rechten Wertes ohne Speicherung.</td></tr>
 <tr><td><code>*</code></td><td>Multiplikation</td><td><code>5 * x;</code></td><td>Liefert das Ergebnis der Multiplikation des linken und rechten Wertes ohne Speicherung.</td></tr>
@@ -25,7 +25,7 @@
 # Vergleichsoperatoren  
 
 <table>
-<tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="100">Beispiel</td><td>Anmerkung</td></tr>  
+<tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
 <tr><td><code>==</code></td><td>Gleichheit</td><td><code>x == "AB"</code></td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!</td></tr>
 <tr><td><code>!=</code></td><td>Ungleichheit</td><td><code>x != "AB"</code></td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite unterschiedlich sind.</td></tr>
 <tr><td><code>></code></td><td>Größer</td><td><code>x > 2.32</code></td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte ist.</td></tr>
@@ -37,7 +37,7 @@
 # Logische Operatoren  
 
 <table>
-<tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="100">Beispiel</td><td>Anmerkung</td></tr>  
+<tr align="left"><td width="50">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
 <tr><td><code>&&</code></td><td>Und</td><td><code>x>2 && x<9</code></td><td>Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.</td></tr>  
 <tr><td><code>||</code></td><td>Oder</td><td><code>x<2 || x>9</code></td><td>Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.</td></tr>  
 <tr><td><code>!</code></td><td>Nicht</td><td><code>!(x > 10)</code></td><td>Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.</td></tr> 
