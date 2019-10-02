@@ -21,11 +21,11 @@
 <tr align="left"><td width="100">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
 <tr><td>==</td><td>Gleichheit</td><td>x == "AB"</td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!  
 <tr><td>!=</td><td>Ungleichheit</td><td>x != "AB"</td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite unterschiedlich sind.  
-<tr><td>></td><td>Größer</td><td>x > 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte ist.  
-<tr><td><</td><td>Kleiner</td><td>x < 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte ist.  
-<tr><td>>=</td><td>Größergleich</td><td>x >= 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte oder genau gleich ist.  
-<tr><td><=</td><td>Kleinergleich</td><td>x <= 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.</td></tr>
-</table>  
+<tr><td> > </td><td>Größer</td><td>x > 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte ist.  
+<tr><td> < </td><td>Kleiner</td><td>x < 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte ist.  
+<tr><td> >= </td><td>Größergleich</td><td>x >= 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte oder genau gleich ist.  
+<tr><td> <= </td><td>Kleinergleich</td><td>x <= 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.</td></tr>
+</table>
  
 # Logische Operatoren  
 
@@ -33,6 +33,5 @@
 <tr align="left"><td width="100">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
 <tr><td>&&</td><td>Und</td><td>x>2 && x<9</td><td>Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.</td></tr>  
 <tr><td>||</td><td>Oder</td><td>x<2 || x>9</td><td>Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.</td></tr>  
-<tr><td>!</td><td>Nicht</td><td>!(x > 10)</td><td>Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.
+<tr><td>!</td><td>Nicht</td><td>!(x > 10)</td><td>Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.</td></tr> 
 </table>
- 
