@@ -14,15 +14,6 @@
 <tr><td>++</td><td>Inkrement</td><td>x++;</td><td>Der Wert der Variablen wird um 1 erhöht. Gleichbedeutend mit x += 1;</td></tr>
 <tr><td>--</td><td>Dekrement</td><td>x--;</td><td>Der Wert der Variablen wird um 1 vermindert. Gleichbedeutend mit x -= 1;</td></tr>
 </table>
- 
-# Logische Operatoren  
-
-<table>
-<tr align="left"><td width="100">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
-<tr><td>&&</td><td>Und</td><td>x>2 && x<9</td><td>Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.</td></tr>  
-<tr><td>||</td><td>Oder</td><td>x<2 || x>9</td><td>Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.</td></tr>  
-<tr><td>!</td><td>Nicht</td><td>!(x > 10)</td><td>Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.</td></tr> 
-</table>
 
 # Vergleichsoperatoren  
 
@@ -34,4 +25,13 @@
 <tr><td> < </td><td>Kleiner</td><td>x < 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte ist.</td></tr>
 <tr><td> >= </td><td>Größergleich</td><td>x >= 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte oder genau gleich ist.</td></tr>
 <tr><td> <= </td><td>Kleinergleich</td><td>x <= 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.</td></tr>
+</table>
+
+# Logische Operatoren  
+
+<table>
+<tr align="left"><td width="100">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
+<tr><td>&&</td><td>Und</td><td>x>2 && x<9</td><td>Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.</td></tr>  
+<tr><td>||</td><td>Oder</td><td>x<2 || x>9</td><td>Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.</td></tr>  
+<tr><td>!</td><td>Nicht</td><td>!(x > 10)</td><td>Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.</td></tr> 
 </table>
