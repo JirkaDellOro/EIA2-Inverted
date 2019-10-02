@@ -28,10 +28,10 @@
 
 <table>
 <tr align="left"><td width="100">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
-<tr><td>==</td><td>Gleichheit</td><td>x == "AB"</td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!  
-<tr><td>!=</td><td>Ungleichheit</td><td>x != "AB"</td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite unterschiedlich sind.  
-<tr><td> > </td><td>Größer</td><td>x > 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte ist.  
-<tr><td> < </td><td>Kleiner</td><td>x < 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte ist.  
-<tr><td> >= </td><td>Größergleich</td><td>x >= 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte oder genau gleich ist.  
+<tr><td>==</td><td>Gleichheit</td><td>x == "AB"</td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!</td></tr>
+<tr><td>!=</td><td>Ungleichheit</td><td>x != "AB"</td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite unterschiedlich sind.</td></tr>
+<tr><td> > </td><td>Größer</td><td>x > 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte ist.</td></tr>
+<tr><td> < </td><td>Kleiner</td><td>x < 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte ist.</td></tr>
+<tr><td> >= </td><td>Größergleich</td><td>x >= 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte oder genau gleich ist.</td></tr>
 <tr><td> <= </td><td>Kleinergleich</td><td>x <= 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.</td></tr>
 </table>
