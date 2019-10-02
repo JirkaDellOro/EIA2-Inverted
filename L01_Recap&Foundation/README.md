@@ -178,7 +178,7 @@ Logikfehler sind nicht auf eine falsche Programmierung zurückzuführen, sondern
 ## Trace Table
 Mit Hilfe einer Verfolgungstabelle kann man den Zustand eines Programms zu jeder Zeit während des Laufs ermitteln und festhalten. Solche Tabellen von Hand zu erstellen ist eine gute Übung um den Programmlauf zu verstehen. Daher exerzieren wir dies im folgenden Video gemeinsam durch. Den Code dazu findest Du hier: [Cows.ts](../X01_Appendix/Code/L01_Recap&Foundation/Cows/Cows.ts)
 
-<a href="https://drive.google.com/open?id=1-GW9PZdZ4pd7CbX8h0l7hll8Qr1vw4XM"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1JE81x8mVgkwYIUXxTBNjw2ADoIMawNrJ"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/Cows_TraceTable.jpg"><img src="Material/Cows_TraceTable.jpg" width="25%"/></a>
 
 ## Debugger
@@ -188,14 +188,19 @@ Natürlich gibt es technische Hilfsmittel etwas ähnliches wie eine Verfolgungst
 
 Mit dem Debugger kannst Du auf die Jagd nach Fehlern gehen. Da wir das Programm untersuchen, während es im Browser läuft, ist es sehr praktisch, dass der Browser einen solchen Debugger integriert hat. Unser kleines Programm weist derzeit keine Fehler auf, aber wir schauen trotzdem einmal, ob unsere Verfolgungstabelle mit den Ergebnissen des Debuggers übereinstimmt.  
 
-<a href="https://drive.google.com/open?id=1Zzry7GffJniG9n0Ix23_lvHqx9FWe6cl"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1fTukUcbP5zpeiOwP8FCZ9GJy8cqeaehc"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 ## Aktivitätsdiagramm
 Hier wird nun noch das Cows-Programm in ein Aktivitätsdiagramm überführt und dabei die wichtigsten Knoten und Kanten erklärt.  
 
 
-<a href="https://drive.google.com/open?id=1gyfh5r1X-f-fpgW3OGrEWQWA557-pPX_"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1Qp6VxO4-Njn94XlBF27Cinq21FcBuvnI"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/Cows_ActivityDiagram.jpg"><img src="Material/Cows_ActivityDiagram.jpg" width="25%"/></a>
 
-# Wochenaufgabe
-https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L01_Boxes
+# Wochenaufgaben
+1. [L00_Preparation](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L00_Preparation)
+2. Registrierung eines neuen Steckbriefs auf der [Kursseite](https://webuser.hs-furtwangen.de/~del/EIA2) 
+3. Folgende Diagramme studieren und erklären
+    - [Week](../X01_Appendix/UML/AD_EIA2-Week.svg)
+    - [Design](../X01_Appendix/UML/AD_EIA-Konzeption.svg)
+4. [L01_Boxes](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L01_Boxes)
