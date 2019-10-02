@@ -1,8 +1,10 @@
 # Arithmetische und kombinierte Operatoren
-Zeichen|Name|Beispiel|Anmerkung
+
+Zeichen|Name|Beispiel|Anmerkung  
 -|-|-|-
 +|Addition|x + 5;|Liefert das Ergebnis der Addition des linken und rechten Wertes ohne Speicherung.  
--|Subtraktion|17 - x;|Liefert das Ergebnis der Subtraktion des linken und rechten Wertes ohne Speicherung.
+-|Subtraktion|17 - x;|Liefert das
+Ergebnis der Subtraktion des linken und rechten Wertes ohne Speicherung.
 *|Multiplikation|5 * x;|Liefert das Ergebnis der Multiplikation des linken und rechten Wertes ohne Speicherung.
 /|Division|x / 2;|Liefert das Ergebnis der Division des linken durch den rechten Wert ohne Speicherung.
 %|Modulo|x % 10;|Liefert den Rest der ganzzahligen Division des linken durch den rechten Wert ohne Speicherung.
