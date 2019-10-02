@@ -1,4 +1,4 @@
-# Arithmetische und kombinierte Operatoren
+# Arithmetische und kombinierte Operatoren  
 
 Zeichen|Name|Beispiel|Anmerkung  
 -|-|-|-  
