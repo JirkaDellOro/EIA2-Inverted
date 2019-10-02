@@ -26,9 +26,10 @@
 <tr><td><</td><td>Kleiner</td><td>x < 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte ist.  
 <tr><td>>=</td><td>Größergleich</td><td>x >= 2.32</td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte oder genau gleich ist.  
 <tr><td><=</td><td>Kleinergleich</td><td>x <= 2.32</td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.</td></tr>
-</table>   
+</table>  
  
 # Logische Operatoren  
+
 <table>
 <tr align="left"><td width="100">Zeichen</td><td width="200">Name</td><td width="150">Beispiel</td><td>Anmerkung</td></tr>  
 <tr><td>&&</td><td>Und</td><td>x>2 && x<9</td><td>Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.</td></tr>  
