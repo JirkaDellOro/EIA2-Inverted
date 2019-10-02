@@ -55,5 +55,4 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 
 ## Bitweise Operatoren
 
-Damit werden direkt Bitmuster manipuliert. Siehe
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators
+Damit werden direkt Bitmuster manipuliert. Siehe [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
