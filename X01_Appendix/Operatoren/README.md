@@ -15,6 +15,7 @@ Zeichen|Name|Beispiel|Anmerkung
 --|Dekrement|x--;|Der Wert der Variablen wird um 1 vermindert. Gleichbedeutend mit X -= 1;
 
 # Vergleichsoperatoren  
+
 Zeichen|Name|Beispiel|Anmerkung  
 -|-|-|-  
 ==|Gleichheit|x == "AB"|Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!  
@@ -25,6 +26,7 @@ Zeichen|Name|Beispiel|Anmerkung
 \<=|Kleinergleich|x <= 2.32|Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.  
 
 # Logische Operatoren  
+
 Zeichen|Name|Beispiel|Anmerkung  
 -|-|-|-  
 &&|Und|x>2 && x<9|Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.  
