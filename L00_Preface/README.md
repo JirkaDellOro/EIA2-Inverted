@@ -1,6 +1,6 @@
 # L00_Preface  
 
-## Medienkonzeption bei digitalen Medien
+## Medienkonzeption und Digitale Medien
 [Fragen](Material/Fragen.md)  
 
 ### Anforderungen an Medienkonzepter
@@ -11,7 +11,7 @@
 
 **Der Idiot macht Simples kompliziert, das Genie macht Kompliziertes simpel**
 
-## Motivation
+### Motivation
 [Crawford](../X01_Appendix/Crawford/Crawford.html)
 
 ## Wichtige Dokumente
