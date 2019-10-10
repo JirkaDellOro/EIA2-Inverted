@@ -71,9 +71,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Fetch & Promises
 - Async/Await
 - Uniform Resource Locator (URL)
-- Daten asynchron senden
 - Lokaler Fileserver
-- Daten nachladen
 - JSON-Objekt
 
 ### [L06_Server](L06_Server)
