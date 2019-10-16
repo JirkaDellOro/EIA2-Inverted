@@ -83,13 +83,13 @@ Kunden können hier mit Hilfe eines Webformulars spontan einen Cocktail bestelle
 ## Anwendungsfalldiagramm (Use-Case-Diagram)
 Zeichne wieder ganz schnell ein kleines Anwendungsfalldiagramm. Versuche es selbst, bevor Du dir das Video anschaust.  
 
-<a href="https://drive.google.com/open?id=1t2iUWzplu59hZSOdJFp1zqO-J4BGnbW_"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1BBYgdSiVQUjltYc_-rUXIKjq9GpI0hs6"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_UseCaseDiagram.jpg"><img src="Material/CocktailBar_UseCaseDiagram.jpg" width="25%"/></a>
 
 ## Skizze: User-Interface 
 Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und überlege, welche Tags, Attribute und Listener Du brauchst. Investiere ein wenig Zeit um selbst einen ersten Entwurf zu gestalten, bevor Du das Video anschaust.
 
-<a href="https://drive.google.com/open?id=1fJAz8eJpaynTWXboe_K6smtvH3Xfvilz"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1WLL2Qk9-yU_2RkH9eT-vAJgICpyFTmjr"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_UI-Scribble.jpg"><img src="Material/CocktailBar_UI-Scribble.jpg" width="25%"/></a>
 
 ## Aktivitätsdiagramme
@@ -101,7 +101,7 @@ Nun ist schon grob konzipiert, was geschehen soll und wie sich das darstellt. En
 ## Implementation I
 Versuche dich nun an der Implementation. Schaue dir das Video spätestens an, wenn Du dich an die Zusammenfassung der Bestellung machst. Hier gibt es noch einige Tipps.
 
-<a href="https://drive.google.com/open?id=1UmrVOWQI03lwzsJRdQ6Yxxv7vIX59kIU"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1AaSjskweSpOUPCCgvcMWzo5Ow1m-f8_B"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 # FormData
 Javascript stellt einen einfachen Mechanismus zur Verfügung um Formularelemente automatisch auszuwerten und auf die Ergebnisse zuzugreifen. Hierzu müssen die Formularelemente in der DOM-Laufzeithierarchie einem `form`-Element untergeordnet sein. Wird bei der Erzeugung eines Objekts des Typs `FormData` nun ein Verweis auf auf dieses `form`-Element übergeben, so werden die Werte der `name`- und `value`-Attribute als Schlüssel-Werte-Paare zur Verfügung gestellt.
@@ -136,7 +136,7 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
 
 ## Implementation II
 
-<a href="https://drive.google.com/open?id=1lrvVwMDFW4Ur22qxQj_kuUhBZXKCqDkJ"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1cCWnF7-dcGZY8s9kcetkEOBVjB4ISXtA"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_UI-Scribble2.jpg"><img src="Material/CocktailBar_UI-Scribble2.jpg" width="25%"/></a>
 
 - [x] Die Ausgabe der Bestellübersicht funktioniert noch nicht richtig. Finde den Fehler und korrigiere ihn.
