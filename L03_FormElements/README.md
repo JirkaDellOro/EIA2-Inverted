@@ -95,7 +95,7 @@ Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und 
 ## Aktivitätsdiagramme
 Nun ist schon grob konzipiert, was geschehen soll und wie sich das darstellt. Entwickle nun wieder ein Aktivitätsdiagramm mit dessen Hilfe Du festlegst, wie das Ganze funktioniert. Beginne wieder mit den Ereignissen und arbeite dich vom Groben ins Feine. Mach' dir am Anfang also noch nicht zu viele Gedanken über Details, sondern zerlege große Probleme in kleinere. Versuche es selbst, bevor Du das Video anschaust.
 
-<a href="https://drive.google.com/open?id=1jBIgu4ismL67rJfQAMBmtCBYIp3n14uC"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1AaSjskweSpOUPCCgvcMWzo5Ow1m-f8_B"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_ActivityDiagram.jpg"><img src="Material/CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
 
 ## Implementation I
