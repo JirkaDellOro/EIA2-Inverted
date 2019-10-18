@@ -149,6 +149,9 @@ Ein Objekt vom Typ `URLSearchParams` lässt sich fast genauso verwenden wie eine
 >     - da derzeit nur ein Fileserver zur Verfügung steht, gibt es noch keine sinnvolle Antwort. Aber es kann schon eine Nachricht kommen, dass die Bestellung erfolgreich versandt wurde. -> alert
 
 
+<a href="https://drive.google.com/open?id=198sTXYtPhoaA6gU61gE8wqhaQkGG9JIr"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/CocktailBar_UI-Scribble.jpg"><img src="Material/CocktailBar_UI-Scribble.jpg" width="25%"/></a>
+
 |Hier erscheint jetzt ein Video|
 |-
 |Dreigeteilt 
@@ -210,6 +213,11 @@ Hierfür stellt Javascript das JSON-Objekt zur Verfügung, mit dem die Erzeugung
 >   - analog mit text-Extraktion 
 >   - text nach JSON parsen
 > - auf Konnektor (A) verweisen
+
+<a href="https://drive.google.com/open?id=198sTXYtPhoaA6gU61gE8wqhaQkGG9JIr"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/CocktailBar_ActivityDiagram.jpg"><img src="Material/CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
+<a href="Material/CocktailBar_ActivityDiagram_Client.jpg"><img src="Material/CocktailBar_ActivityDiagram_Client.jpg" width="25%"/></a>
+
 
 
 |Hier erscheint jetzt ein Video|
