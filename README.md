@@ -22,63 +22,57 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 
 ## Gliederung
 ### [L00_Preface](L00_Preface)
-- Medienkonzeption bei DM
-- Aufbau der Veranstaltung
-- Verwendete Technik
-- Landscape
-- Coding Guidelines
+- Medienkonzeption und Digitale Medien
+- Wichtige Dokumente
+- Veranstaltungskonzept
 
 ### [L01_Recap&Foundation](L01_Recap&Foundation)
-- Code structures as activities
-- Activity- & Object-Nodes
-- Simple and Complex Datatypes
-- Javascript Standard-Objects
-- Javascript Global Functions
-- Document Object Model
-- Retrieving & Creating Elements
-- Designtime, Compiletime, Runtime
-- Tracetable
+- Einleitung
+- Rückblick
+- Einblick
+- Variablen
+- Datentypen
+- Explizite Typisierung
+- Komplexe Datentypen
+- Fehlertypen
+- Trace Table
 - Debugger
+- Aktivitätsdiagramm
 
 ### [L02_Events](L02_Events)
-- Event-Object, Listener, Handler
-- Implementation
-- Propagation (Phases)
-- Targets
-- Pointer, Keyboard, Window
+- Rückblick DOM
+- Ereignisse
+- Event-Handler
+- Event-Phasen
+- Anwendungsfalldiagramm (Use-Case-Diagram)
+- Skizze: User Interface 
+- Iterative Arbeitsweise
   
 ### [L03_FormElements](L03_FormElements)
-- Input Text, different types
-- Radiobutton, Checkbox
-- Slider, Stepper
-- Select, Datalist
-- Output
-- Name 
-- Change- & Input-Event
-- Attributes without value
-  - multiple for select
-  - checked for checkbox
-- Iteration on Elements
-- FormData-Object
-- Process values locally
+- Texteingabe
+- Selektionen
+- Ausgabeelemente
+- Konzeption und Implementation einer formulargesteuerten Anwendung  
+- FormData
   
 ### [L04_DataStructures](L04_DataStructures)
-- Interfaces
-- Associative Array
-  - homogenous
-  - heterogenous
-  - static keys
-  - dynamic keys
-- JSON
-- Export
-- Iterate over elements
+- Separation Of Concerns
+- Trennung von Struktur und Inhalt
+- Algorithmen und Datenstrukturen
+- Datenstruktur für die Cocktailbar
+- Generierung des Formulars
+- Refactoring
+- JSON (Javascript Object Notation)
 
 ### [L05_Client](L05_Client)
-- GET/POST
-- QueryString
-- FormData-Object
-- Fetch (former XMLHttpRequest)
-- Promise
+- Synchrone und asynchrone Kommunikation
+- Forms
+- XmlHttpRequest-Events
+- Fetch & Promises
+- Async/Await
+- Uniform Resource Locator (URL)
+- Lokaler Fileserver
+- JSON-Objekt
 
 ### [L06_Server](L06_Server)
 - ServerSide

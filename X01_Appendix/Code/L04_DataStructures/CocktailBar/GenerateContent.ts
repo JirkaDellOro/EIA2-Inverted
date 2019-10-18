@@ -1,6 +1,6 @@
 namespace L04_CocktailBar {
 
-    export function generateContent(_data: Data) {
+    export function generateContent(_data: Data): void {
 
         for (let category in _data) {
             // console.log(category);
@@ -53,5 +53,4 @@ namespace L04_CocktailBar {
         }
         return group;
     }
-
 }
