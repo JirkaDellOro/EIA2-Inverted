@@ -8,11 +8,10 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\X01_Appendix\\Code\\L06_Server\\NodeAPI\\Test.ts",
+            "program": "${workspaceFolder}\\X01_Appendix\\Code\\L06_Server\\CocktailBar\\Server\\Server.js",
             "outFiles": [
                 "${workspaceFolder}/**/*.js"
-            ],
-            "args": ["Hallo"]
+            ]
         }
     ]
 }
