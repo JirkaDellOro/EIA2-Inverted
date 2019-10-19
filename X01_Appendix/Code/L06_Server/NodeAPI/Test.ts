@@ -1,5 +1,5 @@
 namespace L06_NodeAPI {
-    let x: number = 0
+    let x: number = 0;
     console.log("Log", x);
     x++;
     console.warn("Warn", x);
