@@ -13,15 +13,17 @@ namespace L06_NodeAPI {
     console.log(process.argv);
     console.log("Hallo " + process.argv[2]);
 
-    // process.addListener("exit", handleExit);
+    process.addListener("exit", handleExit);
 
     setTimeout(handleTimeout, 2000);
 
-    function handleTimeout(_event: Event): void {
+    // timout handler expects no parameter
+    function handleTimeout(): void {
         console.log("Timeout");
     }
 
-    // function handleExit(_event: Event): void {
-    //     console.log("Tschüss!");
-    // }
+    // exit handler expects a number as parameter
+    function handleExit(_code: number): void {
+        console.log("Tschüss!");
+    }
 }

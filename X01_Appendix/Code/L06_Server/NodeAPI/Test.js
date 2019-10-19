@@ -11,13 +11,15 @@ var L06_NodeAPI;
     console.log(process.env.PORT);
     console.log(process.argv);
     console.log("Hallo " + process.argv[2]);
-    // process.addListener("exit", handleExit);
+    process.addListener("exit", handleExit);
     setTimeout(handleTimeout, 2000);
-    function handleTimeout(_event) {
+    // timout handler expects no parameter
+    function handleTimeout() {
         console.log("Timeout");
     }
-    // function handleExit(_event: Event): void {
-    //     console.log("Tschüss!");
-    // }
+    // exit handler expects a number as parameter
+    function handleExit(_code) {
+        console.log("Tschüss!");
+    }
 })(L06_NodeAPI || (L06_NodeAPI = {}));
 //# sourceMappingURL=Test.js.map
