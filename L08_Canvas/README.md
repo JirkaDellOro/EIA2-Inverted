@@ -26,13 +26,16 @@ crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height);
 - [x] Finde heraus, welche Bedeutung die Parameter der Methode `fillRect` haben. Experimentiere damit.
 
 ## Pfade
-`fillRect` und `clearRect` sind die einzigen Zeichenbefehle, die sofort ein sichtbares Ergebnis liefern. Komplexere Formen definierst Du zunächst mit Hilfe eines Pfad-Objektes und nutzt dann die Zeichenbefehle `stroke()` und `fill()`. Daraufhin erst werden die Pixel, die innerhalb oder am Rande des Pfades liegen nach der zuvor definierten Füll- oder Linienvorschrift mit Farbe versehen.
+`fillRect(...)`, `clearRect(...)` und `strokeRect(...)` sind die einzigen Zeichenbefehle, die sofort ein sichtbares Ergebnis liefern. Komplexere Formen definierst Du zunächst mit Hilfe eines Pfad-Objektes und nutzt dann die Zeichenbefehle `stroke()` und `fill()`. Daraufhin erst werden die Pixel, die innerhalb oder am Rande des Pfades liegen nach der zuvor definierten Füll- oder Linienvorschrift mit Farbe versehen.
 
 ```typescript
 crc2.beginPath();
 crc2.arc(100, 100, 20, 0, 1.5 * Math.PI);
 crc2.closePath();
+crc2.stroke();
 ```
+- [x] Erkunde, was `arc` bewerkstelligt und was die Parameter bedeuten.
+- [x] Finde heraus, wie Du die Linienfarbe ändern kannst.
 
 
 ## Maleralgorithmus
