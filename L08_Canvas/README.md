@@ -26,8 +26,9 @@ crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height);
 - [x] Finde heraus, welche Bedeutung die Parameter der Methode `fillRect` haben. Experimentiere damit.
 
 ## Pfade
-`fillRect(...)`, `clearRect(...)` und `strokeRect(...)` sind die einzigen Zeichenbefehle, die sofort ein sichtbares Ergebnis liefern. Komplexere Formen definierst Du zunächst mit Hilfe eines Pfad-Objektes und nutzt dann die Zeichenbefehle `stroke()` und `fill()`. Daraufhin erst werden die Pixel, die innerhalb oder am Rande des Pfades liegen nach der zuvor definierten Füll- oder Linienvorschrift mit Farbe versehen.
+`fillRect(...)`, `clearRect(...)` und `strokeRect(...)` sind die einzigen Zeichenbefehle, die sofort ein sichtbares Ergebnis liefern. Komplexere Formen definierst Du zunächst mit Hilfe eines Pfad-Objektes und nutzt dann die Zeichenbefehle `stroke()` und `fill()`. Daraufhin erst werden die Pixel, die innerhalb oder am Rande des Pfades liegen nach der zuvor definierten Füll- oder Linienvorschrift mit Farbe versehen.  
 
+### Arc
 ```typescript
 crc2.beginPath();
 crc2.arc(100, 100, 20, 0, 1.5 * Math.PI);
@@ -36,12 +37,33 @@ crc2.stroke();
 ```
 - [x] Erkunde, was `arc` bewerkstelligt und was die Parameter bedeuten.
 - [x] Finde heraus, wie Du die Linienfarbe ändern kannst.
+- [x] Was geschieht, wenn die Anweisung `closePath()` nicht ausgeführt wird. Warum?
 
+### Linienzüge
+Mit den Anweisungen `moveTo(...)` und `lineTo(...)` kannst Du einen Pfad um Linienzüge erweitern. Eine Linie wird dabei nur durch die Endposition definiert, die Startposition ist die Endposition der vorangegangenen Anweisung.
+- [x] Lasse ein Dreieck zeichnen.
 
-## Maleralgorithmus
+### Kurven
+Damit kannst Du beliebige eckige Formen darstellen. Wenn es geschmeidiger werden soll, nutzt Du quadratische oder Bezier-Kurven.
+- [x] Experimentiere mit [dieser Anwendung](../X01_Appendix/Canvas/Curves/start.html). Beachte, dass für quadratische Kurven außer dem vorangegangenen Endpunkt des aktuellen Pfades zwei weitere, für Bezierkurven drei weitere Punkte angegeben werden müssen.  
+
+### Text
+Alternativ zu einer Textüberlagerung durch ein weiteres HTML-Element, kann Text auch durch den RenderingContext auf den Canvas gebracht werden. Hierzu dienen die Methoden `fillText(...)` und `strokeText(...)` und weitere Methoden zur Steuerung der Textausgabe.
+
+### Weiteres
+Der CanvasRenderingContext bietet noch einige Zeichen- und Stilmittel mehr, studiere hierzu dieses [CheatSheet](../X01_Appendix/Canvas/HTML5_Canvas_Cheat_Sheet.pdf). Damit erhältst Du schnell einen Überblick und kannst die Syntax nachschlagen. Aber auch das ist nicht vollständig. Im Internet findest Du bei Bedarf noch zahlreiche weitere Quellen.
+
+### Pfadobjekte
+Bei Verwendung der Pfad-Methoden direkt auf dem RenderingContext, wird ein globales Pfadobjekt manipuliert. Mit `beginPath()` wird der darin enthaltene alte Pfad gelöscht und ein neuer angelegt.  
+Es ist aber auch möglich, mit `new Path2D()` individuelle Pfadobjekt zu erzeugen und die Pfadanweisungen darauf auszuführen. So kann der Pfad gespeichert und im Laufe des Programms wiederverwenden werden, ohne dass der Algorithmus zur Pfaderstellung wieder durchlaufen werden muss. Zum Zeichnen eines solchen Pfadobjektes wird es schließlich als Parameter der Zeichenmethode einfach mitgegeben.
+```typescript
+let path = new Path2D();
+path.arc(60, 60, 50, 0, 2 * Math.PI);
+crc2.stroke(path);
+```
+
 ## Immediate/Deferred Rendering
-## Drawing Commands
-## Relative Positioning
+## Maleralgorithmus
+## Relative Positioning/Transformation
 ## Save/Restore
-## Shortcuts fillRect and strokeRect
 ## Create functions for drawing repetitive images
