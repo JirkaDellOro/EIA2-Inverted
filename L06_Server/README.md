@@ -90,6 +90,9 @@ Auch die Standardmodule, die wahlweise importiert werden wie `http` und `url`, s
 > - Listener installieren, der auf eine Anfrage reagiert
 > - Handlerfunktion, welche die Anfrage verarbeitet und eine Antwort formuliert
 
+
+<a href="Material/CocktailBar_ActivityDiagram-Server.jpg"><img src="Material/CocktailBar_ActivityDiagram-Server.jpg" width="25%"/></a>
+
 ## Implementation 1
 |Hier erscheint jetzt ein Video|
 |-
