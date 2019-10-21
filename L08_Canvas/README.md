@@ -66,8 +66,23 @@ path.arc(60, 60, 50, 0, 2 * Math.PI);
 crc2.stroke(path);
 ```
 
-## Immediate/Deferred Rendering
-## Maleralgorithmus
-## Relative Positioning/Transformation
+## Rendering
+"Render" ist ein relativ unspezifisches Wort und bedeutet lediglich so viel wie "ausführen, machen, tun". Im Zusammenhang mit digitalen Medien ist meist die Erzeugung eines Bildes anhand gegebener Daten gemeint. Es gibt unterschiedliche Ansätze hierfür.  
+> **FunFact:** Render als Substantiv heißt auch "Putz". Die in der 3D-Grafik häufig genannte "Renderpipe" könnte man also falsch als "Putzpfeife" übersetzen.  
+
+### Retained Mode
+Es wird zunächst ein Modell der gesamten darzustellenden Szene erzeugt, was fortwährend manipuliert werden kann. Das Rendering-API kümmert sich dann darum, die Szene als Ganzes zu rendern. Ein dir wohlbekanntes Beispiel für ein solches Modell das DOM. Es wird automatisch gerendert und so die visuelle Darstellung erzeugt, die der Nutzer sieht.
+
+### Immediate Mode
+CanvasRenderingContext aber arbeitet im Immediate Mode. Es gibt keinerlei Verwaltung für darzustellende Bildteile. Wann, wo und wie jeder Pfad gerendert wird, obliegt vollständig dem Programm, welches den Context nutzt. Sobald ein Zeichenkommando abgearbeitet wird, verändern betroffene Pixel im Zielbild ihre Farbe.
+
+### Maleralgorithmus
+Das bedeutet, das nachfolgende Zeichenkommandos die Wirkung der vorangegangenen überschreiben können. Das Bild muss also "von hinten nach vorne" aufgebaut werden. Bildteile, die im Hintergrund liegen sollen, werden zuerst gezeichnet, danach die Bildteile im Vordergrund. Das ist der sogenannte Maleralgorithmus, denn ein Maler arbeitet am effizientesten ebenfalls so.  
+- [x] Schaue dir Malvideos im Internet an, vielleicht von oben dargestelltem Bob Ross. Beachte, in welcher Folge er die Bildbestandteile malt.
+
+## Transformation
+Sollen ähnliche Bildbestandteile, z.B. Bäume, Häuser, Schneeflocken etc., mehrfach in einem Bild auftauchen, ergibt sich das Problem, dass die Pfade, mit deren Hilfe diese Bestandteile gezeichnet werden, mit absoluten Koordinaten bezogen auf die Linke obere Ecke des Canvas konstruiert werden. Selbst wenn keine literalen Werte als Parameter übergeben sondern Variablen genutzt werden, so dass der Code zur Konstruktion wiederverwendet werden kann, muss der komplette Pfad erneut konstruiert werden, wenn der gleiche Bildbestandteil an einer anderen Stelle auftauchen soll. Hier schaffen Transformationen Abhilfe.  
+Anstatt die Koordinaten und Dimensionen neu anzugeben, kann mit Transformationen das Koordinatensystem verändert werden, auf das sich die Angaben beziehen. 
+
 ## Save/Restore
 ## Create functions for drawing repetitive images
