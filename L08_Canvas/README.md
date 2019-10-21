@@ -81,7 +81,13 @@ Das bedeutet, das nachfolgende Zeichenkommandos die Wirkung der vorangegangenen 
 - [x] Schaue dir Malvideos im Internet an, vielleicht von oben dargestelltem Bob Ross. Beachte, in welcher Folge er die Bildbestandteile malt.
 
 ## Koordinatensystem
-Das Standard-Koordinatensystem hat seinen Ursprung in der linken oberen Ecke des Canvas, positive Koordinatenwerte steigen horizontal nach rechts an, vertikal nach unten. Angaben sind direkt bezogen auf Pixel, wobei die Koordinate (0,0) den ersten sichtbaren Pixel ganz links oben referenziert.
+Das Standard-Koordinatensystem hat seinen Ursprung in der linken oberen Ecke des Canvas, positive Koordinatenwerte steigen horizontal nach rechts an, vertikal nach unten. Angaben sind direkt bezogen auf Pixel, wobei die Koordinate (0,0) den ersten sichtbaren Pixel ganz links oben referenziert, die Koordinate (canvas.width-1, canvas.height-1) den letzten sichtbaren Pixel rechts unten.  
+
+> **Achtung:** Wie immer bei den digitalen Medien beginnen wir die Zählung mit der 0, daher liegt bei einem Canvas mit der Größe 300x200 der Pixel mit der Koordinate (300, 200) nicht mehr im sichtbaren Bereich.  
+
+Als Koordinatenwerte sind nicht nur Ganzzahlen zulässig, sondern auch Fließkommazahlen. Man kann also Positionen zwischen den Pixeln eingeben. Je nach Einstellung des Canvas wird dann beim Rendern der nächste Pixel gefüllt, oder die Farbe halbtransparent auf die umgegebenden Pixel verteilt.  
+
+Eine schräg verlaufende Linie hält sich nicht an ein Raster,sondern verläuft immer durch solche Zwischenpositionen. Werden nur die dabei am stärksten berührten Pixel gezeichnet, entsteht ein Treppen-Effekt (Aliasing). Bei der Farbverteilung (Anti-Aliasing) wird dies kaschiert, es entstehen durch die Transparenzen aber neue Farben im Bild und die Linie wird unscharf gezeichnet.
 
 ## Transformation
 Sollen ähnliche Bildbestandteile, z.B. Bäume, Häuser, Schneeflocken etc., mehrfach in einem Bild auftauchen, ergibt sich ein Problem. Da die Pfade, mit deren Hilfe diese Bestandteile gezeichnet werden, mit absoluten Koordinaten bezogen auf das Standard-Koordinatensystem konstruiert werden, sind diese Informationen fest im Pfad definiert. Selbst wenn keine literalen Werte als Parameter übergeben sondern Variablen genutzt werden, so dass der Code zur Konstruktion wiederverwendet werden kann, muss der komplette Pfad erneut konstruiert werden, wenn der gleiche Bildbestandteil an einer anderen Stelle auftauchen soll.  
