@@ -75,38 +75,26 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - JSON-Objekt
 
 ### [L06_Server](L06_Server)
-- ServerSide
-- Node
-  - install @types/node with npm
-  - argv
-  - env
+- Node.js
+- Erweiterungen
+- HTTP-Modul
+- Request-Handling
+- URL-Modul
+- Response-Handling
 - Heroku
-  - start new app in Heroku
-  - connect to repository and branch
-  - deploy app and view log
-  - add and edit package.json
-  - call app via http -> server missing
-- Server- & URL-Class
-  - add http-Server and create response
-  - find parameters in browser analysis (if possible for GET)
-  - show node URL scheme in documentation
-- CORS
-- localhost
+- Clientanpassung
 
 ### [L07_Database](L07_Database)
-- NoSQL
+- Relationale Datenbanken
+- NoSQL-Datenbanken
 - MongoDB
-  - start mongod in terminal
-  - see port and other messages
-  - start shell in system console
-  - type some commands
-  - see response in terminal
-- Mongo in Node
-  -    install @types
-- Database on MongoDB Atlas (former mLab)
-- Database.ts - Module
-- Callbacks
-- Anonymous and nested functions
+- Allgemeine Datenbankstruktur
+- Datenbankstruktur für die Cocktailbar
+- Installation
+- Mongo Shell
+- MongoDB in Node
+- Online Service
+
 
 ### [L08_Canvas](L08_Canvas)
 - HTMLCanvasElement
