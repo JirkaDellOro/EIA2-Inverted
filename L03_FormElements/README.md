@@ -2,7 +2,7 @@
 <img src="Material/PassierscheinA38.png">
 <small>Quelle: <a href="https://mueli77.com/2016/12/11/asterix-review-special-45-12-pruefungen-fuer-asterix/">https://mueli77.com/2016/12/11/asterix-review-special-45-12-pruefungen-fuer-asterix/</a></small>
 
-Interaktion war von Anfang an ein Kernpunkt von HTML. Das World-Wide-Web basiert auf der Idee von wissenschaftlichen Dokumenten, die durch interaktive Verweise, den Links, miteinander verknüpft sind. Der Fokus wurde erst sehr viel später auf Katzenvideos gelegt.
+Interaktion war von Anfang an ein Kernpunkt von HTML. Das World-Wide-Web basiert auf der Idee, wissenschaftliche Dokumente durch interaktive Verweise, den Links, miteinander zu verknüpfen. Der Fokus wurde erst sehr viel später auf Katzenvideos gelegt.
 
 > Fun-Fact: Tim Berners Lee ([Github-Profil](https://github.com/timbl)) entwickelte Anfang der 1990er Jahre HTML, HTTP, URL, den ersten Webserver und den ersten Browser. Einen Eindruck davon, wie sich das damals anfühlte, erhält man hier auf interaktive Weise: [WWW](http://line-mode.cern.ch/www/hypertext/WWW/TheProject.html)  
 
@@ -13,7 +13,7 @@ In diesem Kapitel lernst Du die wichtigsten Elemente kennen, erfährst, wie Du s
 
 ## Texteingabe
 Die wichtigste Eingabemöglichkeit ist die von Text. Mit dem Keyboard-Event könnte man zwar beim Tippen jeden Buchstaben abfangen und damit eine Zeichenkette zusammen setzen, es geht aber sehr viel einfacher. Das generische `input`-Element bringt in seiner Urform als Textfeld schon diese Grundfunktionalität, kann aber noch viel mehr.  
-> Beispiel: <input type="text" placeholder="Gib hier etwas ein" required>
+> Beispiel: <input type="text" placeholder="Gib hier etwas ein" required/>
 ### Platzhalter
 Dem Attribut `placeholder` kann ein Wert zugewiesen werden, der dem Nutzer beispielsweise als Eingabeaufforderung dienen kann. Sobald der Nutzer die Eingabe beginnt, verschwindet der Platzhalter automatisch und wird wieder angezeigt, wenn das Feld gelert wird.
 ### Passworteingabe
