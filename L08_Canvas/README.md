@@ -12,7 +12,7 @@ Das `HTMLCanvasElement`stellt eine rechteckige Fläche auf einer Browserseite zu
 Die Befehle für diese Bildmanipulation stellt das `HTMLCanvasElement` aber nicht direkt zur Verfügung, sondern es bietet hierfür spezielle Programmierschnittstellen (Application Programming Interfaces, API) an, die in diesem Zusammenhang CanvasRenderingContext genannt werden. Sie können sehr umfangreich sein und es gibt sie sowohl für 2D- als auch für 3D-Grafikdarstellung z.B. mit WebGL. Mit dem folgenden Code wird ein solcher CanvasRenderingContext für die Bildmanipulation in zwei Dimensionen von einem im DOM vorhandenen Canvas angefordert und eine Referenz darauf gespeichert.  
 ```typescript
 let canvas: HTMLCanvasElement = document.querySelector("canvas");
-let crc2: CanvasRenderingContext = canvas.getContext("2D");
+let crc2: CanvasRenderingContext = canvas.getContext("2d");
 ```
 - [x] Erstelle eine HTML-Datei und lege dort mit `<canvas>` ein Canvas-Element an.
 - [x] Erstelle eine TypeScript-Programm, welches den RenderingContext des Canvas-Elementes anfordert und eine Referenz in einer Variable namens `crc2` speichert, wie oben angegeben.
@@ -61,7 +61,7 @@ Der CanvasRenderingContext bietet noch einige Zeichen- und Stilmittel mehr, stud
 Bei Verwendung der Pfad-Methoden direkt auf dem RenderingContext, wird ein globales Pfadobjekt manipuliert. Mit `beginPath()` wird der darin enthaltene alte Pfad gelöscht und ein neuer angelegt.  
 Es ist aber auch möglich, mit `new Path2D()` individuelle Pfadobjekt zu erzeugen und die Pfadanweisungen darauf auszuführen. So kann der Pfad gespeichert und im Laufe des Programms wiederverwenden werden, ohne dass der Algorithmus zur Pfaderstellung wieder durchlaufen werden muss. Zum Zeichnen eines solchen Pfadobjektes wird es schließlich als Parameter der Zeichenmethode einfach mitgegeben.
 ```typescript
-let path = new Path2D();
+let path: Path2D = new Path2D();
 path.arc(60, 60, 50, 0, 2 * Math.PI);
 crc2.stroke(path);
 ```
@@ -81,18 +81,32 @@ Das bedeutet, das nachfolgende Zeichenkommandos die Wirkung der vorangegangenen 
 - [x] Schaue dir Malvideos im Internet an, vielleicht von oben dargestelltem Bob Ross. Beachte, in welcher Folge er die Bildbestandteile malt.
 
 ## Koordinatensystem
-Das Standard-Koordinatensystem hat seinen Ursprung in der linken oberen Ecke des Canvas, positive Koordinatenwerte steigen horizontal nach rechts an, vertikal nach unten. Angaben sind direkt bezogen auf Pixel, wobei die Koordinate (0,0) den ersten sichtbaren Pixel ganz links oben referenziert, die Koordinate (canvas.width-1, canvas.height-1) den letzten sichtbaren Pixel rechts unten.  
+Das Standard-Koordinatensystem hat seinen Ursprung in der linken oberen Ecke des Canvas, positive Koordinatenwerte steigen horizontal nach rechts an, vertikal nach unten. Angaben sind direkt bezogen auf Pixel, wobei die Koordinate (0.5,0.5) den ersten sichtbaren Pixel ganz links oben referenziert, die Koordinate (canvas.width-0.5, canvas.height-0.5) den letzten sichtbaren Pixel rechts unten.  
 
 > **Achtung:** Wie immer bei den digitalen Medien beginnen wir die Zählung mit der 0, daher liegt bei einem Canvas mit der Größe 300x200 der Pixel mit der Koordinate (300, 200) nicht mehr im sichtbaren Bereich.  
 
-Als Koordinatenwerte sind nicht nur Ganzzahlen zulässig, sondern auch Fließkommazahlen. Man kann also Positionen zwischen den Pixeln eingeben. Je nach Einstellung des Canvas wird dann beim Rendern der nächste Pixel gefüllt, oder die Farbe halbtransparent auf die umgegebenden Pixel verteilt.  
+Als Koordinatenwerte sind nicht nur Ganzzahlen zulässig, sondern auch Fließkommazahlen. Je nach Einstellung des Canvas wird dann beim Rendern der nächste Pixel gefüllt, oder die Farbe halbtransparent auf die umgegebenden Pixel verteilt. Um einen Pixel tatsächlich genau mittig zu treffen, kann es erforderlich sein, Nachkommastellen zu nutzen. Der untenstehende Code erzeugt das nebenstehende Bild (stark vergrößert).  
 
-Eine schräg verlaufende Linie hält sich nicht an ein Raster,sondern verläuft immer durch solche Zwischenpositionen. Werden nur die dabei am stärksten berührten Pixel gezeichnet, entsteht ein Treppen-Effekt (Aliasing). Bei der Farbverteilung (Anti-Aliasing) wird dies kaschiert, es entstehen durch die Transparenzen aber neue Farben im Bild und die Linie wird unscharf gezeichnet.
+<img src="Material/Aliasing.png" style="float: right" >  
+
+```typescript
+crc2.beginPath();
+crc2.moveTo(2.1, 1);
+crc2.lineTo(2.1, 10);
+crc2.moveTo(4.5, 1);
+crc2.lineTo(4.5, 10);
+crc2.moveTo(7.5, 1);
+crc2.lineTo(10.5, 10);
+crc2.stroke();
+```
+
+Eine schräge Linie verläuft immer durch viele Zwischenpositionen. Würden nur die dabei am stärksten berührten Pixel gezeichnet, entsteht ein Treppen-Effekt (Aliasing). Bei der Farbverteilung (Anti-Aliasing) wird dies kaschiert, es entstehen durch die Transparenzen aber neue Farben im Bild und die Linie wird unscharf gezeichnet.
 
 ## Transformation
 Sollen ähnliche Bildbestandteile, z.B. Bäume, Häuser, Schneeflocken etc., mehrfach in einem Bild auftauchen, ergibt sich ein Problem. Da die Pfade, mit deren Hilfe diese Bestandteile gezeichnet werden, mit absoluten Koordinaten bezogen auf das Standard-Koordinatensystem konstruiert werden, sind diese Informationen fest im Pfad definiert. Selbst wenn keine literalen Werte als Parameter übergeben sondern Variablen genutzt werden, so dass der Code zur Konstruktion wiederverwendet werden kann, muss der komplette Pfad erneut konstruiert werden, wenn der gleiche Bildbestandteil an einer anderen Stelle auftauchen soll.  
 Hier schaffen Transformationen Abhilfe. Anstatt die Koordinaten und Dimensionen neu anzugeben, kann mit Transformationen das Koordinatensystem verändert werden, auf das sich die Angaben beziehen. 
 
+## Farbe
 
 ## Save/Restore
 ## Create functions for drawing repetitive images
