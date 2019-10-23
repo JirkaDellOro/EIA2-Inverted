@@ -45,7 +45,7 @@ Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und l
 Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und funktionieren soll ist auch bekannt und bereits getestet. Jetzt muss also noch ein Algorithmus entwickelt werden, welcher mit Hilfe der Daten das Formular generiert. Dazu muss zunächst entschieden werden, welche Teile des DOM automatisch beim Laden der Seite durch die Interpretation der HTML-Datei erzeugt werden sollen, und welche dann dynamisch durch das Skript dazu kommen. Theoretisch ist es natürlich möglich, komplett auf eine Beschreibung der Seitenstruktur in der HTML-Datei zu verzichten, lediglich einen Verweis auf das Skript zu implementieren und die DOM-Erzeugung komplett dem dadurch aufgerufenen Skript zu überlassen. Einerseits würde dies aber auch dem SoC-Prinzip zuwider laufen, weil unnötig viel Verantwortlichkeit auf das Skript übertragen wird, andererseits liegt bereits eine HTML-Datei vor, welche die Struktur beschreibt. Es erscheint also eher sinnvoll, lediglich die Beschreibungen der dynamischen Strukturen aus der bestehenden HTML-Datei zu entfernen und sie auf die statischen zu reduzieren. Das ist eine klassische Design-Entscheidung und wird für dieses Beispiel in obigem Sinne getroffen.  
 
 
-<a href="https://drive.google.com/open?id=1h-GfJRmPzu4d5ZrOthgWm_A9mKGvMPxE"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1NSTBUf7Aol96efeIWRSBTgVmBX1f9AXI"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material\CocktailBar_UI-Scribble.jpg"><img src="Material\CocktailBar_UI-Scribble.jpg" width="25%"/></a>
 <a href="Material\CocktailBar_ActivityDiagram.jpg"><img src="Material\CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
 <a href="Material\CocktailBar_ActivityDiagram_generateContent.jpg"><img src="Material\CocktailBar_ActivityDiagram_generateContent.jpg" width="25%"/></a>
@@ -54,10 +54,10 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 
 ## Implementation I
 
-<a href="https://drive.google.com/open?id=1Bfhykt6U-uQ9FbAAxQTHtXJEIczz4mVe"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1ra9kKZrvep96MO_qMaJsIQNC_stDc66N"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 ## Implementation II
-<a href="https://drive.google.com/open?id=1ZCLZkZvqxMunTfSgu-7lo-wxWqRUyTBn"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1HlfS8x76eer4N_xV6-4fYEpcR6R8P1YU"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 ## Refactoring
 ### Erfahrungen einfließen lassen
