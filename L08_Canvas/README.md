@@ -106,7 +106,42 @@ Eine schräge Linie verläuft immer durch viele Zwischenpositionen. Würden nur 
 Sollen ähnliche Bildbestandteile, z.B. Bäume, Häuser, Schneeflocken etc., mehrfach in einem Bild auftauchen, ergibt sich ein Problem. Da die Pfade, mit deren Hilfe diese Bestandteile gezeichnet werden, mit absoluten Koordinaten bezogen auf das Standard-Koordinatensystem konstruiert werden, sind diese Informationen fest im Pfad definiert. Selbst wenn keine literalen Werte als Parameter übergeben sondern Variablen genutzt werden, so dass der Code zur Konstruktion wiederverwendet werden kann, muss der komplette Pfad erneut konstruiert werden, wenn der gleiche Bildbestandteil an einer anderen Stelle auftauchen soll.  
 Hier schaffen Transformationen Abhilfe. Anstatt die Koordinaten und Dimensionen neu anzugeben, kann mit Transformationen das Koordinatensystem verändert werden, auf das sich die Angaben beziehen. 
 
-## Farbe
+[Verweis auf Transformator-App!]
+- [x] Experimentiere mit der Transformator-App. Erzeuge drei unterschiedliche und aktive Transformationen und beobachte die Auswirkungen.
+- [x] Vertausche sie durch Klick auf das Doppelpfeil-Symbol. Erkläre, warum das Haus des Nikolaus seine Position oder Erscheinung dabei ändert.
+
+## Stil
+### Farbe
+Der CanvasRenderingContext kann Farbangaben als Zeichenketten verarbeiten, wie sie ebenso in CSS3 verwendet werden. Hier hat man also die Auswahl der Farbkodierung und kann die heranziehen, die sich für die Aufgabe am besten eignet. Für eine Serie von Bildelementen, die mit gleicher Farbe aber unterschiedlicher Helligkeit dargestellt werden sollen, ist die Angabe im HSL-Format deutlich leichter zu bewerkstelligen als in den anderen Formaten. Folgende Zeichenketten produzieren alle das gleiche  <span style="background-color: salmon; width:130px; display:inline-block; text-align:center">Lachsrot</span>
+
+Format | Zeichenkette
+--- | --- 
+Hexadezimal | #FA8072
+RGB | RGB( 250, 128, 114 ) oder RGB( 98%, 50%, 45% )
+HSL | HSL( 6, 93%, 71% )
+Predefiniert | salmon
+
+RGB und HSL erlauben (dann auch als RGBA und HSLA bezeichnet) noch einen vierten Parameter, nämlich die Opazität (Alpha) die als Fließkommazahl zwischen 0 und 1 angegeben wird. Zudem ist auch die weniger präzise Angabe mit nur drei hexadezimalen Ziffern möglich.
+
+### Farbverlauf
+Zwei Arten von Farbverläufen (Gradients) sind möglich, der lineare und der radiale. Beim linearen werden zwei Punkte auf dem Canvas angegeben, die Farbe verläuft dann vom ersten zum zweiten. Der radiale Farbverlauf wird ebenso mit Hilfe von zwei Punkten aber auch zwei Radien definiert. Damit ergeben sich zwei Kreise zwischen deren Perimetern die Farbe verläuft.  
+Welche Farbwerte der Verlauf an welchen Stellen erreichen soll, wird mit Hilfe von Haltepunkten auf der Verlaufsstrecke angegeben. Die Lage der Haltepunkte wird dabei nur mit einem einzigen Wert relativ zur Gesamtstrecke bzw. -fläche des Verlaufs definiert. Dabei entspricht der Wert 0 der Position des Beginns und 1 der des Endes des Verlaufs. Der Haltepunkt mit dem kleinsten Wert bestimmt die Farbe bis zum Beginn und darüber hinaus, der mit dem größten die Farbe bis zum Ende und darüber hinaus. Dazwischen laufen die Farben ineinander.
+
+```typescript       
+let gradient: CanvasGradient = crc2.createLinearGradient(0, 0, 0, 100);
+
+gradient.addColorStop(0, "black");
+gradient.addColorStop(.5, "red");
+gradient.addColorStop(1, "gold");
+
+crc2.fillStyle = gradient;
+crc2.fillRect(0, 0, 200, 100);
+```
+- [x] Welches Bild liefert der oben angegebene Code?
+- [x] Füge weitere Haltepunkte ein um schärfere Kanten zwischen den Farben zu erhalten.
+
+### Pattern
+
 
 ## Save/Restore
 ## Create functions for drawing repetitive images

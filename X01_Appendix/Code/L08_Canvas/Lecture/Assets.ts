@@ -8,10 +8,13 @@ namespace L08_Canvas_Assets {
             return;
         crc2 = <CanvasRenderingContext2D>canvas.getContext("2d");
 
-        fillCanvas("#ff0000");
+        fillCanvas("#f00");
+        // fillCanvas("rgb( 98%, 50%, 45% )");
+        // fillCanvas("hwb(60, 50%, 80%)");
         drawArc();
         drawPath();
         drawLines();
+        drawGradient();
     }
 
     function fillCanvas(_color: string): void {
@@ -45,5 +48,16 @@ namespace L08_Canvas_Assets {
         crc2.moveTo(1, 14.5);
         crc2.lineTo(10, 14.5);
         crc2.stroke();
+    }
+
+    function drawGradient(): void {
+        let gradient: CanvasGradient = crc2.createLinearGradient(0, 0, 0, 100);
+
+        gradient.addColorStop(0, "black");
+        gradient.addColorStop(.5, "red");
+        gradient.addColorStop(1, "gold");
+
+        crc2.fillStyle = gradient;
+        crc2.fillRect(0, 0, 200, 100);
     }
 }
