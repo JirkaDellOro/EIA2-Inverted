@@ -110,6 +110,12 @@ Hier schaffen Transformationen Abhilfe. Anstatt die Koordinaten und Dimensionen 
 - [x] Experimentiere mit der Transformator-App. Erzeuge drei unterschiedliche und aktive Transformationen und beobachte die Auswirkungen.
 - [x] Vertausche sie durch Klick auf das Doppelpfeil-Symbol. Erkläre, warum das Haus des Nikolaus seine Position oder Erscheinung dabei ändert.
 
+Die Transformationen werden also nacheinander ausgeführt und jede weitere Transformation verändert das Ergebnis der vorangegangenen. Tatsächlich existiert nur eine Transformationsmatrix, welche die komplette Transformationskette darstellt. Jedesmal, wenn `translate(...)`, `rotate()` oder `scale()` aufgerufen wird, wird diese Matrix verändert. Bei der Erstellung oder beim Zeichnen eines Pfades wird die Gesamtmatrix mit einer einfachen Matrixmultiplikation auf die Koordinaten angewendet.  
+Das bedeutet, dass immer wiederkehrende Transformatsaufrufe in der Matrix kumulieren, was in der Regel nicht gewünscht ist. Für dieses Problem gibt es mehrere Lösungsansätze:
+- mit `resetTransform()` die Gesamtmatrix wieder auf den Urzustand bringen
+- mit `save()` den aktuellen Zustand der Gesamtmatrix speichern, und diesen Zustand später mit `restore()` wieder herstellen. Dabei kann auch mehrfach `save()` aufgerufen werden, die dabei gespeicherten Zustände werden per `restore()` in umgekehrter Reihenfolge wieder restauriert.
+- mit `getTransform()` den aktuellen Zustand der Gesamtmatrix speichern und einer Variable vom Typ `DOMMatrix`zuweisen. Mit `setTransform(...)` und der Variable als Parameter wird dieser Zustand wieder hergestellt  
+
 ## Stil
 ### Farbe
 Der CanvasRenderingContext kann Farbangaben als Zeichenketten verarbeiten, wie sie ebenso in CSS3 verwendet werden. Hier hat man also die Auswahl der Farbkodierung und kann die heranziehen, die sich für die Aufgabe am besten eignet. Für eine Serie von Bildelementen, die mit gleicher Farbe aber unterschiedlicher Helligkeit dargestellt werden sollen, ist die Angabe im HSL-Format deutlich leichter zu bewerkstelligen als in den anderen Formaten. Folgende Zeichenketten produzieren alle das gleiche  <span style="background-color: salmon; width:130px; display:inline-block; text-align:center">Lachsrot</span>
@@ -145,3 +151,41 @@ crc2.fillRect(0, 0, 200, 100);
 
 ## Save/Restore
 ## Create functions for drawing repetitive images
+
+
+## Scribble
+
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. Papier auf dem das Scribble entsteht 
+|2. Jirkas sprechender Kopf  
+
+>Inhalt: Scribble wird erstellt, dabei wird bereits auf grundlegende Ideen zur Darstellung eingegangen
+> - Farbverläufe
+> - dynamische Generierung der Wolken, Berge, Bäume
+> - Parameter für die dynamische Generierung
+> - Detail-Scribbles für dynamische Generierung
+
+
+## Aktivitätsdiagramm
+
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. Papier auf dem das Diagramm entsteht, im Wechsel mit dem Scribble 
+|2. Jirkas sprechender Kopf  
+
+>Inhalt: Diagram wird erstellt, Anfang bis handleLoad existiert bereits
+> - zunächst nur die groben Aktivitäten darstellen, die den Maleralgorithmus bereits sichtbar machen
+> - Überlegen, welche Aktivitäten detailliert werden sollen, und welche Parameter erforderlich sind
+> - Position ist fast immer dabei -> neuen Datentyp "Vector" planen -> Interface
+> - draw Sun zuerst ausführen -> trivial
+> - bereits auf save/restore hinweisen und durchführen
+> - drawCloud aus drawSun kopieren -> size als zweiter Parameter sinnvoll
+>   - hier zunächst save/restore vergessen!
+>   - Wolke verfliegt
+>   - heilen mit save/restore...
+>   - mit Partikelzahl, -größe, -farbe spielen
+> - drawMountain
+
