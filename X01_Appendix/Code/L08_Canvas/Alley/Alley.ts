@@ -16,14 +16,71 @@ namespace L08_Canvas_Alley {
 
         let horizon: number = crc2.canvas.height * golden;
         let posMountains: Vector = { x: 0, y: horizon };
+        let posStreet: Vector = { x: crc2.canvas.width / 2, y: horizon };
+        let posTreesStart: Vector = { x: crc2.canvas.width * 0.42, y: horizon };
+        let posTreesEnd: Vector = { x: 0, y: crc2.canvas.height };
 
         drawBackground();
         drawSun({ x: 100, y: 80 });
         drawCloud({ x: 560, y: 100 }, { x: 200, y: 40 });
         drawMountains(posMountains, 80, 200, "grey", "white");
         drawMountains(posMountains, 60, 170, "grey", "lightgrey");
-        // drawStreet(...):
-        // drawTrees(...);
+        drawStreet(posStreet);
+        drawTrees(8, posTreesStart, posTreesEnd, 0.1, 0.37, 1.4);
+    }
+
+    function drawTrees(_nTrees: number, _posStart: Vector, _posEnd: Vector, _minScale: number, _stepPos: number, _stepScale: number): void {
+        let transform: DOMMatrix = crc2.getTransform();
+        let step: Vector = {
+            x: (_posEnd.x - _posStart.x) * _stepPos,
+            y: (_posEnd.y - _posStart.y) * _stepPos
+        };
+
+        crc2.translate(_posStart.x, _posStart.y);
+        crc2.scale(_minScale, _minScale);
+
+        do {
+            drawTree();
+
+            crc2.translate(step.x, step.y);
+            crc2.scale(_stepScale, _stepScale);
+
+        } while (--_nTrees > 0);
+
+        crc2.setTransform(transform);
+    }
+
+    function drawTree(): void {
+        let nBranches: number = 50;
+        let maxRadius: number = 60;
+        let branch: Path2D = new Path2D();
+        branch.arc(0, 0, maxRadius, 0, 2 * Math.PI);
+
+        crc2.fillStyle = "brown";
+        crc2.fillRect(0, 0, 20, -200);
+
+        crc2.save();
+        crc2.translate(0, -120);
+
+        do {
+            let y: number = Math.random() * 350;
+            let size: number = 1 - y / 700;
+            let x: number = (Math.random() - 0.5) * 2 * maxRadius;
+
+            crc2.save();
+            crc2.translate(0, -y);
+            crc2.scale(size, size);
+            crc2.translate(x, 0);
+
+            let colorAngle: number = 120 - Math.random() * 60;
+            let color: string = "HSLA(" + colorAngle + ", 50%, 30%, 0.5)";
+
+            crc2.fillStyle = color;
+            crc2.fill(branch);
+
+            crc2.restore();
+        } while (--nBranches > 0);
+        crc2.restore();
     }
 
     function drawBackground(): void {
@@ -114,48 +171,21 @@ namespace L08_Canvas_Alley {
         crc2.restore();
     }
 
+    function drawStreet(_position: Vector): void {
+        let fragment: number = crc2.canvas.width / 8;
 
-    function fillCanvas(_color: string): void {
-        crc2.fillStyle = _color;
-        crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height);
-    }
-
-    function drawArc(): void {
         crc2.beginPath();
-        crc2.arc(100, 100, 20, 0, 1.5 * Math.PI);
+        crc2.moveTo(_position.x + fragment / 2, _position.y);
+        crc2.lineTo(crc2.canvas.width - fragment, crc2.canvas.height);
+        crc2.lineTo(0 + fragment, crc2.canvas.height);
+        crc2.lineTo(_position.x - fragment / 2, _position.y);
         crc2.closePath();
-        crc2.stroke();
-    }
 
-    function drawPath(): void {
-        let path: Path2D = new Path2D();
-        path.arc(60, 60, 50, 0, 2 * Math.PI);
-        crc2.stroke(path);
-    }
-
-    function drawLines(): void {
-        crc2.beginPath();
-        crc2.moveTo(2.1, 1);
-        crc2.lineTo(2.1, 10);
-        crc2.moveTo(4.5, 1);
-        crc2.lineTo(4.5, 10);
-        crc2.moveTo(7.5, 1);
-        crc2.lineTo(10.5, 10);
-        crc2.moveTo(1, 12);
-        crc2.lineTo(10, 12);
-        crc2.moveTo(1, 14.5);
-        crc2.lineTo(10, 14.5);
-        crc2.stroke();
-    }
-
-    function drawGradient(): void {
-        let gradient: CanvasGradient = crc2.createLinearGradient(0, 0, 0, 100);
-
-        gradient.addColorStop(0, "black");
-        gradient.addColorStop(.5, "red");
-        gradient.addColorStop(1, "gold");
+        let gradient: CanvasGradient = crc2.createLinearGradient(0, _position.y, 0, crc2.canvas.height);
+        gradient.addColorStop(0, "darkgrey");
+        gradient.addColorStop(0.6, "black ");
 
         crc2.fillStyle = gradient;
-        crc2.fillRect(0, 0, 200, 100);
+        crc2.fill();
     }
 }
