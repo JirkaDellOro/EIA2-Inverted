@@ -12,7 +12,7 @@ Das `HTMLCanvasElement`stellt eine rechteckige Fläche auf einer Browserseite zu
 Die Befehle für diese Bildmanipulation stellt das `HTMLCanvasElement` aber nicht direkt zur Verfügung, sondern es bietet hierfür spezielle Programmierschnittstellen (Application Programming Interfaces, API) an, die in diesem Zusammenhang CanvasRenderingContext genannt werden. Sie können sehr umfangreich sein und es gibt sie sowohl für 2D- als auch für 3D-Grafikdarstellung z.B. mit WebGL. Mit dem folgenden Code wird ein solcher CanvasRenderingContext für die Bildmanipulation in zwei Dimensionen von einem im DOM vorhandenen Canvas angefordert und eine Referenz darauf gespeichert.  
 ```typescript
 let canvas: HTMLCanvasElement = document.querySelector("canvas");
-let crc2: CanvasRenderingContext = canvas.getContext("2d");
+let crc2: CanvasRenderingContext2D = canvas.getContext("2d");
 ```
 - [x] Erstelle eine HTML-Datei und lege dort mit `<canvas>` ein Canvas-Element an.
 - [x] Erstelle eine TypeScript-Programm, welches den RenderingContext des Canvas-Elementes anfordert und eine Referenz in einer Variable namens `crc2` speichert, wie oben angegeben.
@@ -147,11 +147,38 @@ crc2.fillRect(0, 0, 200, 100);
 - [x] Füge weitere Haltepunkte ein um schärfere Kanten zwischen den Farben zu erhalten.
 
 ### Pattern
+Es ist auch möglich, Füllmuster einzusetzen. Dabei werden verschiedene Quellen für das Muster unterstützt wie Bitmaps, SVG-Bilder oder auch Grafiken, die auf einem Canvas erzeugt werden. Folgender Code liefert nebenstehendes Bild.
 
+<img src="Material/Pattern.png" style="float: right" >  
+
+```typescript
+let pattern: CanvasRenderingContext = document.createElement('canvas').getContext('2d');
+pattern.canvas.width = 40;
+pattern.canvas.height = 20;
+
+pattern.fillStyle = '#fec';
+pattern.fillRect(0, 0, pattern.canvas.width, pattern.canvas.height);
+pattern.moveTo(0, 10);
+pattern.lineTo(10, 10);
+pattern.lineTo(20, 0);
+pattern.lineTo(30, 0);
+pattern.lineTo(40, 10);
+pattern.lineTo(30, 20);
+pattern.lineTo(20, 20);
+pattern.lineTo(10, 10);
+pattern.stroke();
+
+crc2.fillStyle = crc2.createPattern(pattern.canvas, 'repeat');
+crc2.fillRect(0, 0, canvas.width, canvas.height);
+```
+
+## Linien
+Natürlich lässt sich auch die Gestaltung der Linien, die mit der Anweisung `stroke()` gezeichnet werden, detailliert kontrollieren. Linien können durchgehend oder unterschiedlich gestrichelt werden, Farben, Gradienten und auch Muster erhalten, sowie die Linienenden und die Ausführung von Knicken in den Linien spezifisch gestalten sein.
+
+- [x] Recherchiere im Internet nach den Möglichkeiten für die Liniengestaltung.
 
 ## Save/Restore
-## Create functions for drawing repetitive images
-
+Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transformationsmatrix zwischen, sondern auch die Stilangaben für die Füllungen und Linien und weitere Informationen, die insgesamt den Zustand (`state`) des RenderingContexts beschreiben. Somit ist es möglich, beispielsweise wieder zum vorangegangenen Stil zurück zu kehren, wenn zwischenzeitlich ein anderer benötigt wurde. `save()` speichert die Informationen auf einem Ablagestapel (stack), weitere Aufrufe von `save()` legen weitere solcher Informationen oben auf. Mit `restore()` wird der Stapel von oben nach unten Stück für Stück geleert und die Zustände des CanvasRenderingContexts in umgekehrter Reihenfolge der Speicherung wiederhergestellt.
 
 ## Scribble
 
@@ -188,4 +215,25 @@ crc2.fillRect(0, 0, 200, 100);
 >   - heilen mit save/restore...
 >   - mit Partikelzahl, -größe, -farbe spielen
 > - drawMountain
+>   - PostTest Schleife
+>   - auf Zufall eingehen
+>   - letzter Berg wird über den Canvas hinaus gezeichnet und ignoriert
 
+## Implementation
+Ggf. in mehrere aufteilen, erst Background, Sun, Cloud, dann Mountains als eigenes Video
+
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. Papier auf dem das Diagramm entsteht, im Wechsel mit dem Scribble 
+|2. Jirkas sprechender Kopf  
+|3. VSCode  
+
+
+## Nach vollständiger Implementation
+- [x] Isoliere die Funktionalität eine Zufallszahl zwischen einem minimalen und maximalen Wert zu liefern. Konzipiere sie als Aktivität und implementiere sie als Funktion, welche die beiden Grenzwerte entgegenen nimmt und eine entsprechende Zufallszahl zurück gibt. Ersetze die Stellen im Programm, an denen diese Funktion genutzt werden kann und sollte durch entsprechende Aufrufe derselben.
+- [x] Studiere das Aktivitätsprogramm zum Aufbau der Baumreihe und die Implementation. Hier findest Du vielleicht noch einige wertvolle Hinweise für deine weitere Arbeit.
+- [x] Experimentiere mit den Parametern der verschiedenen Funktionen und auch mit den hardkodierten Werten innerhalb dieser. Modifiziere so das Bild nach deinem ästhetischen Empfinden.
+- [x] Lasse die Funktion `drawTrees(...)` ein zweites Mal mit anderen Eingabewerten laufen, sodass eine weitere Baumreihe auf der anderen Seite der Straße gezeigt wird.
+
+- [x] Der CanvasRenderingContext bietet noch weitere Möglichkeiten wie z.B. Schatten. Verschaffe dir einen Überblick über diese.

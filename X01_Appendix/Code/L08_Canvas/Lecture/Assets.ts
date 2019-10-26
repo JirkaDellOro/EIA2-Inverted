@@ -15,6 +15,7 @@ namespace L08_Canvas_Assets {
         drawPath();
         drawLines();
         drawGradient();
+        drawPattern();
     }
 
     function fillCanvas(_color: string): void {
@@ -59,5 +60,27 @@ namespace L08_Canvas_Assets {
 
         crc2.fillStyle = gradient;
         crc2.fillRect(0, 0, 200, 100);
+    }
+
+    function drawPattern(): void {
+        let pattern: CanvasRenderingContext2D = <CanvasRenderingContext2D>document.createElement("canvas").getContext("2d");
+
+        pattern.canvas.width = 40;
+        pattern.canvas.height = 20;
+
+        pattern.fillStyle = "#fec";
+        pattern.fillRect(0, 0, pattern.canvas.width, pattern.canvas.height);
+        pattern.moveTo(0, 10);
+        pattern.lineTo(10, 10);
+        pattern.lineTo(20, 0);
+        pattern.lineTo(30, 0);
+        pattern.lineTo(40, 10);
+        pattern.lineTo(30, 20);
+        pattern.lineTo(20, 20);
+        pattern.lineTo(10, 10);
+        pattern.stroke();
+
+        crc2.fillStyle = <CanvasPattern>crc2.createPattern(pattern.canvas, "repeat");
+        crc2.fillRect(0, 0, 200, 150);
     }
 }
