@@ -180,6 +180,8 @@ Natürlich lässt sich auch die Gestaltung der Linien, die mit der Anweisung `st
 ## Save/Restore
 Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transformationsmatrix zwischen, sondern auch die Stilangaben für die Füllungen und Linien und weitere Informationen, die insgesamt den Zustand (`state`) des RenderingContexts beschreiben. Somit ist es möglich, beispielsweise wieder zum vorangegangenen Stil zurück zu kehren, wenn zwischenzeitlich ein anderer benötigt wurde. `save()` speichert die Informationen auf einem Ablagestapel (stack), weitere Aufrufe von `save()` legen weitere solcher Informationen oben auf. Mit `restore()` wird der Stapel von oben nach unten Stück für Stück geleert und die Zustände des CanvasRenderingContexts in umgekehrter Reihenfolge der Speicherung wiederhergestellt.
 
+# Generierung eines Landschaftsbildes
+
 ## Scribble
 
 |Hier erscheint jetzt ein Video|
@@ -219,21 +221,50 @@ Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transf
 >   - auf Zufall eingehen
 >   - letzter Berg wird über den Canvas hinaus gezeichnet und ignoriert
 
-## Implementation
-Ggf. in mehrere aufteilen, erst Background, Sun, Cloud, dann Mountains als eigenes Video
+## Implementation des Hintergrund
 
 |Hier erscheint jetzt ein Video|
 |-
 |Dreigeteilt 
-|1. Papier auf dem das Diagramm entsteht, im Wechsel mit dem Scribble 
+|1. Papier mit Diagram, im Wechsel mit dem Scribble 
 |2. Jirkas sprechender Kopf  
 |3. VSCode  
 
 
-## Nach vollständiger Implementation
+## Implementation der Wolke
+
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. Papier mit Diagramm, im Wechsel mit dem Scribble 
+|2. Jirkas sprechender Kopf  
+|3. VSCode  
+
+## Aktivitätsdiagramm zu den Bergen
+
+|Hier erscheint jetzt ein Video|
+|-
+|Zweigeteilt 
+|1. Papier auf dem das Diagramm entsteht, im Wechsel mit dem Scribble 
+|2. Jirkas sprechender Kopf  
+
+>Inhalt: Diagram wird erstellt
+
+## Implementation der Berge
+
+|Hier erscheint jetzt ein Video|
+|-
+|Dreigeteilt 
+|1. Papier mit Diagramm, im Wechsel mit dem Scribble 
+|2. Jirkas sprechender Kopf  
+|3. VSCode  
+
+
+## Übungen
 - [x] Isoliere die Funktionalität eine Zufallszahl zwischen einem minimalen und maximalen Wert zu liefern. Konzipiere sie als Aktivität und implementiere sie als Funktion, welche die beiden Grenzwerte entgegenen nimmt und eine entsprechende Zufallszahl zurück gibt. Ersetze die Stellen im Programm, an denen diese Funktion genutzt werden kann und sollte durch entsprechende Aufrufe derselben.
 - [x] Studiere das Aktivitätsprogramm zum Aufbau der Baumreihe und die Implementation. Hier findest Du vielleicht noch einige wertvolle Hinweise für deine weitere Arbeit.
+- [x] Studiere den Code der Allee und ergründe, warum noch weitere Variablen vor den Aufrufen der draw-Functionen dazu gekommen sind.
 - [x] Experimentiere mit den Parametern der verschiedenen Funktionen und auch mit den hardkodierten Werten innerhalb dieser. Modifiziere so das Bild nach deinem ästhetischen Empfinden.
-- [x] Lasse die Funktion `drawTrees(...)` ein zweites Mal mit anderen Eingabewerten laufen, sodass eine weitere Baumreihe auf der anderen Seite der Straße gezeigt wird.
+- [x] Lasse die Position der Straße am Horizont um einen zufälligen Betrag zwischen -200 und 200 Pixeln horizontal verschieben, so dass der Fluchtpunkt bei jedem Aufruf des Programms ein anderer ist. Warum werden die Baumreihen mitbewegt?
 
 - [x] Der CanvasRenderingContext bietet noch weitere Möglichkeiten wie z.B. Schatten. Verschaffe dir einen Überblick über diese.
