@@ -20,7 +20,7 @@ Beim objektorientierten Entwurf definierst Du nicht nur die Eigenschaften, sonde
 
 <img src="Material/draw.io/Vector_ClassDiagram.svg">
 
-Bislang hattest Du Interfaces nur als Randnotiz mit in die Aktivitätsdiagramme eingetragen. Nun lernst Du einen neuen Diagramtyp kennen: **das Klassendiagramm**. Hier wird dargestellt, wie die Klassen aufgebaut sind und miteinander in Beziehung stehen.  
+Bislang hattest Du Interfaces nur als Randnotiz mit in die Aktivitätsdiagramme eingetragen. Nun lernst Du einen neuen Diagrammtyp kennen: **das Klassendiagramm**. Hier wird dargestellt, wie die Klassen aufgebaut sind und miteinander in Beziehung stehen.  
 
 - [x] Wo hast Du so etwas bloß schon mehrmals gesehen?
 
