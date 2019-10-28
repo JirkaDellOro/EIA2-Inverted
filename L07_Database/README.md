@@ -180,6 +180,9 @@ Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server a
 > 1. handleRequest neu erfassen als einen geraden Durchlauf ohne Verzweigung für retrieveOrders
 > 1. storeOrder zeichnen
 
+
+<a href="Material\CocktailBar_ActivityDiagram-Server.jpg"><img src="Material\CocktailBar_ActivityDiagram-Server.jpg" width="25%"/></a>
+
 ## Implementation
 
 |Hier erscheint jetzt ein Video|

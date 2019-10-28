@@ -15,21 +15,30 @@ namespace L08_Canvas_Alley {
         crc2 = <CanvasRenderingContext2D>canvas.getContext("2d");
 
         let horizon: number = crc2.canvas.height * golden;
+        let streetWidthBack: number = 100;
+        let streetWidthFront: number = 600;
+        let treesOffsetBack: number = 15;
+        let treesOffsetFront: number = 100;
+
         let posMountains: Vector = { x: 0, y: horizon };
         let posStreet: Vector = { x: crc2.canvas.width / 2, y: horizon };
-        let posTreesStart: Vector = { x: crc2.canvas.width * 0.42, y: horizon };
-        let posTreesEnd: Vector = { x: 0, y: crc2.canvas.height };
+        let posTreesStart: Vector = { x: posStreet.x - streetWidthBack / 2 - treesOffsetBack, y: horizon };
+        let posTreesEnd: Vector = { x: crc2.canvas.width / 2 - streetWidthFront / 2 - treesOffsetFront, y: crc2.canvas.height };
 
         drawBackground();
-        drawSun({ x: 100, y: 80 });
-        drawCloud({ x: 560, y: 100 }, { x: 200, y: 40 });
-        drawMountains(posMountains, 80, 200, "grey", "white");
-        drawMountains(posMountains, 60, 170, "grey", "lightgrey");
-        drawStreet(posStreet);
+        drawSun({ x: 100, y: 75 });
+        drawCloud({ x: 500, y: 125 }, { x: 250, y: 75 });
+        drawStreet(posStreet, streetWidthBack, streetWidthFront);
+        drawMountains(posMountains, 75, 200, "grey", "white");
+        drawMountains(posMountains, 50, 150, "grey", "lightgrey");
+        drawTrees(8, posTreesStart, posTreesEnd, 0.1, 0.37, 1.4);
+        posTreesStart.x = posStreet.x + streetWidthBack / 2 + treesOffsetBack;
+        posTreesEnd.x = posTreesEnd.x + streetWidthFront + 2 * treesOffsetFront;
         drawTrees(8, posTreesStart, posTreesEnd, 0.1, 0.37, 1.4);
     }
 
     function drawTrees(_nTrees: number, _posStart: Vector, _posEnd: Vector, _minScale: number, _stepPos: number, _stepScale: number): void {
+        console.log("Trees", _posStart, _posEnd);
         let transform: DOMMatrix = crc2.getTransform();
         let step: Vector = {
             x: (_posEnd.x - _posStart.x) * _stepPos,
@@ -51,6 +60,7 @@ namespace L08_Canvas_Alley {
     }
 
     function drawTree(): void {
+        console.log("Tree");
         let nBranches: number = 50;
         let maxRadius: number = 60;
         let branch: Path2D = new Path2D();
@@ -84,8 +94,9 @@ namespace L08_Canvas_Alley {
     }
 
     function drawBackground(): void {
-        let gradient: CanvasGradient = crc2.createLinearGradient(0, 0, 0, crc2.canvas.height);
+        console.log("Background");
 
+        let gradient: CanvasGradient = crc2.createLinearGradient(0, 0, 0, crc2.canvas.height);
         gradient.addColorStop(0, "lightblue");
         gradient.addColorStop(golden, "white");
         gradient.addColorStop(1, "HSL(100, 80%, 30%)");
@@ -95,51 +106,70 @@ namespace L08_Canvas_Alley {
     }
 
     function drawSun(_position: Vector): void {
-        let r1: number = 40;
+        console.log("Sun", _position);
+
+        let r1: number = 30;
         let r2: number = 150;
-
         let gradient: CanvasGradient = crc2.createRadialGradient(0, 0, r1, 0, 0, r2);
-        gradient.addColorStop(0, "HSLA(60, 100%, 95%, 1");
-        gradient.addColorStop(1, "HSLA(60, 100%, 50%, 0");
 
-        let path: Path2D = new Path2D;
-        path.arc(0, 0, r2, 0, 2 * Math.PI);
+        gradient.addColorStop(0, "HSLA(60, 100%, 90%, 1)");
+        gradient.addColorStop(1, "HSLA(60, 100%, 50%, 0)");
+
+        crc2.save();
+        crc2.translate(_position.x, _position.y);
+        crc2.fillStyle = gradient;
+        crc2.arc(0, 0, r2, 0, 2 * Math.PI);
+        crc2.fill();
+        crc2.restore();
+    }
+
+
+    function drawCloud(_position: Vector, _size: Vector): void {
+        console.log("Cloud", _position, _size);
+
+        let nParticles: number = 20;
+        let radiusParticle: number = 50;
+        let particle: Path2D = new Path2D();
+        let gradient: CanvasGradient = crc2.createRadialGradient(0, 0, 0, 0, 0, radiusParticle);
+
+        particle.arc(0, 0, radiusParticle, 0, 2 * Math.PI);
+        gradient.addColorStop(0, "HSLA(0, 100%, 100%, 0.5)");
+        gradient.addColorStop(1, "HSLA(0, 100%, 100%, 0)");
 
         crc2.save();
         crc2.translate(_position.x, _position.y);
         crc2.fillStyle = gradient;
 
-        crc2.fill(path);
-
-        crc2.restore();
-    }
-
-    function drawCloud(_position: Vector, _size: Vector): void {
-        let nParticles: number = 20;
-        let radiusParticle: number = 50;
-        let particle: Path2D = new Path2D;
-        particle.arc(0, 0, radiusParticle, 0, 2 * Math.PI);
-        let gradient: CanvasGradient = crc2.createRadialGradient(0, 0, 0, 0, 0, radiusParticle);
-        gradient.addColorStop(0, "HSLA(0, 100%, 100%, 0.5");
-        gradient.addColorStop(1, "HSLA(0, 100%, 100%, 0");
-
-        crc2.save();
-        crc2.translate(_position.x, _position.y);
-
         for (let drawn: number = 0; drawn < nParticles; drawn++) {
-            let x: number = (Math.random() - 0.5) * _size.x;
-            let y: number = - Math.random() * _size.y;
-
             crc2.save();
+            let x: number = (Math.random() - 0.5) * _size.x;
+            let y: number = - (Math.random() * _size.y);
             crc2.translate(x, y);
-            crc2.fillStyle = gradient;
             crc2.fill(particle);
             crc2.restore();
         }
         crc2.restore();
     }
 
+    function drawStreet(_position: Vector, _widthBack: number, _widthFront: number): void {
+        console.log("Street", _position, _widthBack, _widthFront);
+        crc2.beginPath();
+        crc2.moveTo(_position.x + _widthBack / 2, _position.y);
+        crc2.lineTo(crc2.canvas.width / 2 + _widthFront / 2, crc2.canvas.height);
+        crc2.lineTo(crc2.canvas.width / 2 - _widthFront / 2, crc2.canvas.height);
+        crc2.lineTo(_position.x - _widthBack / 2, _position.y);
+        crc2.closePath();
+
+        let gradient: CanvasGradient = crc2.createLinearGradient(0, _position.y, 0, crc2.canvas.height);
+        gradient.addColorStop(0, "darkgrey");
+        gradient.addColorStop(0.6, "black ");
+
+        crc2.fillStyle = gradient;
+        crc2.fill();
+    }
+
     function drawMountains(_position: Vector, _min: number, _max: number, _colorLow: string, _colorHigh: string): void {
+        console.log("Mountains", _position, _min, _max);
         let stepMin: number = 50;
         let stepMax: number = 150;
         let x: number = 0;
@@ -169,23 +199,5 @@ namespace L08_Canvas_Alley {
         crc2.fill();
 
         crc2.restore();
-    }
-
-    function drawStreet(_position: Vector): void {
-        let fragment: number = crc2.canvas.width / 8;
-
-        crc2.beginPath();
-        crc2.moveTo(_position.x + fragment / 2, _position.y);
-        crc2.lineTo(crc2.canvas.width - fragment, crc2.canvas.height);
-        crc2.lineTo(0 + fragment, crc2.canvas.height);
-        crc2.lineTo(_position.x - fragment / 2, _position.y);
-        crc2.closePath();
-
-        let gradient: CanvasGradient = crc2.createLinearGradient(0, _position.y, 0, crc2.canvas.height);
-        gradient.addColorStop(0, "darkgrey");
-        gradient.addColorStop(0.6, "black ");
-
-        crc2.fillStyle = gradient;
-        crc2.fill();
     }
 }
