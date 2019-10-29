@@ -101,6 +101,7 @@ class Vector {
     }
 
     ...
+}
 ```
 Zur Instanzierung eines Vektors ist nun die Übergabe zweier Werte zwingend erforderlich. TypeScript wird einen Fehler melden, wenn Du versuchst einen Vektor wie zuvor nur mit `new Vector();` zu instanzieren. `new Vector(10, -3)` dagegen wird akzeptiert und der Vektor wird mit diesen Werten angelegt.
 
