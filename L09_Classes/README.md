@@ -77,19 +77,47 @@ Eine Klasse beschreibt die Struktur, die ein Objekt derselben aufweisen soll, un
 
 Ein Objekt einer Klasse kann zudem die in der Klasse definierten Methoden nutzen, ohne dass eine Referenz auf das Objekt der Methode als Parameter übergeben werden muss. Stattdessen wird das Objekt innerhalb der Methode automatisch mit dem reservierten Wort `this` referenziert. Der Aufruf der Methode erfolgt mit Hilfe der Punkt-Syntax `object.method(...)`. Da das Objekt eine Instanz einer bestimmten Klasse ist, wird damit die Methode eindeutig identifiziert, auch wenn andere Klassen über eine Methode gleichen Namens verfügen sollten.
 
+## Constructor
+Die Hausbau-Metapher führt dich gleich zu einem weiteren interessanten Aspekt. Der Architekt, also Du, macht zwar den Plan, gebaut wird ein Haus aber von einem Bauunternehmer. Im Englischen ist das der Constructor.  
 
-<hr>
+Auch bei der Instanzierung von Objekten kommt ein Constructor zum Einsatz, den Du im Deutschen wiederum Konstruktor nennen kannst. Er ist eine besondere Methode, die automatisch aufgerufen wird, wenn die Anweisung `new` ausgeführt wird und kümmert sich darum, dass das Objekt ordentlich gebaut wird. Ein Standardkonstruktor ist in Javascript immer dabei und tritt nicht in Erscheinung. Du kannst aber für jede Klasse einen eigenen Konstruktor definieren.   
 
-# Fünf Fragen beginnen
+Ein Konstruktor ist dann von Bedeutung, wenn weitere Informationen zum Bau des Objektes einfließen sollen oder währenddessen zwingend noch weitere Aktivitäten ausgeführt werden müssen. Bei einem Haus sollte der Constructor vielleicht wissen, welche Ziegel er nun tatsächlich auflegen soll, da diese Eigenschaft des Hauses variabel ist. Wird ein Hund konstruiert, soll vielleicht gleich die Gemeinde informiert werden, damit sie die Hundesteuer eintreiben kann.
+
+Bei der Vektorklasse erscheint es sinnvoll, bei der Konstruktion eines Vektors gleich die Komponenten mitzugeben, so dass die Eigenschaften x und y des Vektors sofort die gewünschten Werte erhalten.
+
+```typescript
+class Vector {
+    x: number;
+    y: number;
+
+    constructor(_x: number, _y: number) {
+        this.set(_x, _y);
+    }
+
+    set(_x: number, _y: number): void {
+        this.x = _x;
+        this.y = _y;
+    }
+
+    ...
+```
+Zur Instanzierung eines Vektors ist nun die Übergabe zweier Werte zwingend erforderlich. TypeScript wird einen Fehler melden, wenn Du versuchst einen Vektor wie zuvor nur mit `new Vector();` zu instanzieren. `new Vector(10, -3)` dagegen wird akzeptiert und der Vektor wird mit diesen Werten angelegt.
+
+> **Hinweis:** Die set-Methode ist übrigens die, welche Du weiter oben schon hättest implementieren sollen. Falls es nicht geklappt hat, kannst Du hier spicken...
+
+
+
+
+
+
+# Fünf Fragen 
 ## Frage 1: was hat es?
 ## Frage 2: was kann es?    
-
-Beispiel: Vector-Interface zu Vector-Klasse umbauen
-Bauplan-Metapher
-Architekt
-Constructor
-
 ## Frage 3: was weiß es?
 ## Frage 4: wer hält es?
 ## Frage 5: was ist es?
 
+# Zwei Direktiven
+## So schlau wie nötig
+## So dumm wie möglich
