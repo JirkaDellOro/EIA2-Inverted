@@ -123,8 +123,10 @@ Mit diesen Basisregeln des objekorientierte Entwurfs kann man sich schon daran m
 - [x] Falls dir Asteroids nicht bekannt ist, schau dir den entsprechenden Wikipedia-Artikel und dieses Youtube-Video an: https://www.youtube.com/watch?v=82mbTdpPM58  
 
 ## Anwendungsfalldiagramm
+- nur zeigen
 
 ## UI-Scribble
+- nur zeigen
 
 ## Klassendiagramm
 Beim objektorientierten Entwurf kommt ein weiterer Diagrammtyp hinzu, den Du vor den Aktivitätsdiagrammen nutzen musst. Dabei identifizierst Du zunächst die verschiedenen Objekttypen, die in deiner Anwendung eine Rolle spielen. Sofern es sich dabei um Objekte handelt, die eine sichtbare Repräsentation haben, kannst Du sie im UI-Scribble identifizieren.  
@@ -138,10 +140,34 @@ Für jeden Objekttyp stellst Du dir dann die folgenden Fragen, wobei "es" ein be
 1. wer hält es?
 1. was ist es?
 
-Die ersten beiden Fragen führen dich direkt zur Darstellung der einzelnen Klassen im Diagramm. 
+Die ersten beiden Fragen führen dich direkt zur Darstellung der einzelnen Klassen im Diagramm. Kümmern wir uns zunächst um die Asteroiden...
 
-Video: Definition der Asteroiden als Klassendiagramm
+**Video: Definition der Asteroiden als Klassendiagramm**
 
-# Zwei Direktiven
-## So schlau wie nötig
-## So dumm wie möglich
+## Aktivitätsdiagramm
+Jetzt kannst Du die einzelnen Methoden mit Hilfe von Aktivitätsdiagrammen konzipieren. 
+
+**Video: Definition der Methoden als Aktivitätsdiagramme**
+
+## Implementation
+
+**Video: Implementation der Klasse**
+
+## Hauptprogramm
+
+**Video: Aktivitätsdiagramm**
+- Array für die Asteroiden
+- Instanzierung
+- Animation erklären
+  - update
+  - Hintergrund löschen
+  - iterieren über Array
+  - move und draw
+
+**Video: Implementation**
+
+
+<hr>
+> Zwei Direktiven  
+> - So schlau wie nötig  
+> - So dumm wie möglich
