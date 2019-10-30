@@ -103,21 +103,44 @@ class Vector {
     ...
 }
 ```
-Zur Instanzierung eines Vektors ist nun die Übergabe zweier Werte zwingend erforderlich. TypeScript wird einen Fehler melden, wenn Du versuchst einen Vektor wie zuvor nur mit `new Vector();` zu instanzieren. `new Vector(10, -3)` dagegen wird akzeptiert und der Vektor wird mit diesen Werten angelegt.
+Der Konstruktor verlangt nur zur Instanzierung eines Vektors zwingend die Übergabe zweier Werte. TypeScript wird einen Fehler melden, wenn Du versuchst einen Vektor wie zuvor nur mit `new Vector();` zu instanzieren. `new Vector(10, -3)` dagegen wird akzeptiert und der Vektor wird mit den gegebenen Werten angelegt.
 
 > **Hinweis:** Die set-Methode ist übrigens die, welche Du weiter oben schon hättest implementieren sollen. Falls es nicht geklappt hat, kannst Du hier spicken...
 
+# Konventionen
+Im Umgang mit Klassen und Objekten solltest Du dich unbedingt an einige Konventionen halten:
 
+- Jede Klasse wird in einer eigenen Datei implementiert
+- Der Dateiname entspricht dem Namen der Klasse (z.B. `Vector` findet sich in Vector.ts)
+- Die Namen der Methoden wiederholen nicht den Klassennamen (`scale` statt `scaleVector`)
+- Der Klassenname beschreibt das Wesen genau einer Instanz der Klasse, nicht mehrerer (`Vector` statt `Vectors`)
 
+# Asteroids
+Mit diesen Basisregeln des objekorientierte Entwurfs kann man sich schon daran machen, eine komplexe interaktive Anwendung zu konzipieren und zu implementieren. Als Beispiel für diese und die folgenden Lektionen wird das Videospiel "Asteroids" (Atari 1979) in seiner ursprünglichen Arcade-Version herangezogen. 
 
+> **FunFact:** Asteroids ist einer der größten Erfolge in der Geschichte der Videogames und Ataris meistverkaufter Münzautomat. Es gab allerdings eine dominante Strategie, die es geübten Spielern erlaubte nach Einwurf nur einer Münze stundenlang zu spielen und dabei so viele Bonus-Schiffe anzuhäufen, dass der Automat, dann vom Spieler allein gelassen, noch lange Zeit brauchte um alle Schiffe zu zerstören...  
 
+- [x] Falls dir Asteroids nicht bekannt ist, schau dir den entsprechenden Wikipedia-Artikel und dieses Youtube-Video an: https://www.youtube.com/watch?v=82mbTdpPM58  
 
-# Fünf Fragen 
-## Frage 1: was hat es?
-## Frage 2: was kann es?    
-## Frage 3: was weiß es?
-## Frage 4: wer hält es?
-## Frage 5: was ist es?
+## Anwendungsfalldiagramm
+
+## UI-Scribble
+
+## Klassendiagramm
+Beim objektorientierten Entwurf kommt ein weiterer Diagrammtyp hinzu, den Du vor den Aktivitätsdiagrammen nutzen musst. Dabei identifizierst Du zunächst die verschiedenen Objekttypen, die in deiner Anwendung eine Rolle spielen. Sofern es sich dabei um Objekte handelt, die eine sichtbare Repräsentation haben, kannst Du sie im UI-Scribble identifizieren.  
+
+### Fünf Fragen 
+Für jeden Objekttyp stellst Du dir dann die folgenden Fragen, wobei "es" ein beispielhaftes Objekt des Typs meint.
+
+1. was hat es?
+1. was kann es?    
+1. was weiß es?
+1. wer hält es?
+1. was ist es?
+
+Die ersten beiden Fragen führen dich direkt zur Darstellung der einzelnen Klassen im Diagramm. 
+
+Video: Definition der Asteroiden als Klassendiagramm
 
 # Zwei Direktiven
 ## So schlau wie nötig
