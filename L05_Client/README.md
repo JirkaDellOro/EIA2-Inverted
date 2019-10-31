@@ -131,56 +131,23 @@ Ein Objekt vom Typ `URLSearchParams` lässt sich fast genauso verwenden wie eine
 
 ## Cocktailbar: Bestellung versenden
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß verschiedene Diagramme, die überarbeitet bzw. neu erstellt werden
-|2. Jirkas sprechender Kopf  
-
-> Inhalt: die zusätzlichen Planungen für den Datenversand
-> - die Skizze überarbeiten
->   - ein Submit- und bei der Gelegenheit einen Reset-Button einbauen
-> - Aktivitätsdiagram ergänzen auf zweitem Blatt!
->   - dem Submit-Button einen Listener spendieren, ruft asynchrone sendOrder-Funktion auf.
->   - sendOrder packt FormData in URLSearchParams
->   - ruft mit await fetch auf.
->   - erster Endknoten. Nebenläufigkeit an dieser Stelle ansprechen!
-> - Was soll mit der Antwort geschehen?
->     - da derzeit nur ein Fileserver zur Verfügung steht, gibt es noch keine sinnvolle Antwort. Aber es kann schon eine Nachricht kommen, dass die Bestellung erfolgreich versandt wurde. -> alert
-
-
-<a href="https://drive.google.com/open?id=198sTXYtPhoaA6gU61gE8wqhaQkGG9JIr"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1rZSjcfDJVTfWTzgucu4aTudXEnu91W7d"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_UI-Scribble.jpg"><img src="Material/CocktailBar_UI-Scribble.jpg" width="25%"/></a>
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Programm, das gerade getippt wird
-|2. klein die Diagramme im Wechsel
-|3. klein Jirkas sprechender Kopf  
+## Implementation I
 
-> Inhalt:
-> - Cocktailbar bereits kopiert, namespace angepasst auf L05, groups sind spans und nicht mehr divs wegen style
-> - Buttons im HTML anlegen und die Nutzung der Standard-Formularfunktionen demonstrieren.
->   - damit kann man schon viel machen, aber wir wollen einen asynchronen One-Pager
-> - Submit-Button suchen und Listener installieren.
-> - sendOrder implementieren
-> - User-Nachricht als alert
-> - Get-Params in Network suchen und anzeigen!
+<a href="https://drive.google.com/open?id=1Af3PeewETTQ90tKc0CJX0Io7A4LENa4-"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 - [x] Ergänze die Implementation so, dass beim Reset die Bestellübersicht gelöscht wird!
+
 
 ## Lokaler Fileserver
 Beim Testen auf der lokalen Maschine tritt nun ein Fehler auf. Der URL wird als ungültig erkannt, da nicht das HyperText-Transfer-Protocol genutzt wird. Es greifen Sicherheitsmechanismen des Browsers, die verhindern, dass Skripte von Websiten auf die lokalen Speichermedien des Clientrechners zugreifen. Sie gehören zur Cross-Origin-Resource-Sharing-Policy (CORS) die regelt, welche Ressourcen von welcher Quelle auf welche Ressourcen von welcher anderen Quelle zugreifen dürfen.  
 Sobald die Cocktailbar von Github-Pages aus aufgerufen wird, tritt das Problem nicht auf. Alle Resourcen befinden sich in derselben Domäne im Netz, wo mit dem http-Protocol gearbeitet wird, und der Zugriff mit `fetch` ist erlaubt.  
 Es wäre natürlich sehr lästig, während der Entwicklung für jeden Test zunächst das aktuelle Projekt auf einen entfernten Fileserver kopieren zu müssen. Stattdessen ist es einfach möglich, die lokale Entwicklungsmaschine zu einem Fileserver zu machen und das Projekt dann unter "Internetbedingungen" zu testen. Im folgenden Beispiel wird hierzu ein winziger Fileserver genutzt, der unter https://www.npmjs.com/package/serve zu finden ist.
 
+<a href="https://drive.google.com/open?id=1-pFM1PUBfzQBUwGBYry6ipuAdJJoa8qB"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß der Screen mit VSCode und Browser. npx serve wird gestartet.
-|2. Jirkas sprechender Kopf  
 
 ## Standardverhalten des Submit-Buttons
 Der Submitbutton hat weiterhin das Standardverhalten den automatischen Datenversand auszulösen, was mit dem im Skript definierten Versand in Konflikt steht. So bewirkt er gegebenenfalls ein Neuladen der Seite, obwohl das Skript im Hintergrund arbeitet. Hierfür gibt es drei Lösungsansätze:
@@ -196,47 +163,14 @@ Im letzten Kapitel wurde die Variable `data` direkt im Code definiert, die Daten
 ### JSON-Objekt
 Hierfür stellt Javascript das JSON-Objekt zur Verfügung, mit dem die Erzeugung eines assoziativen Arrays auf Basis der in einer Zeichenkette enthaltenen Information leicht möglich ist. Ebenso kann damit umgekehrt die Repräsentation eines solchen Arrays in Form einer Zeichenkette erzeugt werden. Das JSON-Objekt stellt hierfür zwei Methoden zur Verfügung: `parse` und `stringify`.
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß verschiedene Diagramme, die überarbeitet bzw. neu erstellt werden
-|2. Jirkas sprechender Kopf  
-
-> Inhalt: die zusätzlichen Planungen für das Nachladen der Angebotsdaten
-> - die Skizze überarbeiten
->   - bestehende handleLoad-Funktion muss am Anfang erweitert werden
->   - Startknoten durch Konnektor (A) ersetzen
->   - Aktivitätsnamen löschen und Notiz mit Verweis auf Client-Blatt anbringen
-> - Aktivitätsdiagram ergänzen auf Client-Blatt
->   - dort handleLoad anlegen
->   - offer-daten anfordern, Endknoten anbringen und auf wait reponse verweisen
->   - analog mit text-Extraktion 
->   - text nach JSON parsen
-> - auf Konnektor (A) verweisen
-
-<a href="https://drive.google.com/open?id=198sTXYtPhoaA6gU61gE8wqhaQkGG9JIr"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1V3cu5ofbmTFdNrZUWR7OaBJVumYI9FHU"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_ActivityDiagram.jpg"><img src="Material/CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_ActivityDiagram_Client.jpg"><img src="Material/CocktailBar_ActivityDiagram_Client.jpg" width="25%"/></a>
 
+> **Hinweis:** Im Video wird der Begriff "Marker" verwendet, die korrekte Bezeichnung laut UML-Standard ist "Konnektor"
 
+## Implementation II
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Programm, das gerade getippt wird
-|2. klein die Diagramme im Wechsel
-|3. klein Jirkas sprechender Kopf  
+<a href="https://drive.google.com/open?id=15zq9bGt-RJGbVsvcLPKUnzWJPzthgyn9"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
-> Inhalt:  
-> - es sind lediglich die drei Zeilen Code zu implementieren:
-> ```typescript
->        let response: Response = await fetch("Data.json");
->        let offer: string = await response.text();
->        let data = JSON.parse(offer); 
-> ```
-> - und handleLoad muss dafür asynchron deklariert werden
-> - liefert `Promise<void>`
-> - Allerdings sind die Daten auch aufzubereiten
->   - Data.ts wird zu Data.json, .map und .js löschen
->   - Datenstrukturen zu GenerateContent verschieben
->   - in JSON ist alles String, daher Schlüssel per Replace mit Anführungszeichen versehen
+> **Hinweis:** Es existiert bereits eine Fülle von kostenlosen JSON-Editoren, die man dem Barkeeper an die Hand geben könnte, um möglichst fehlerfrei das Angebot zu editieren.
