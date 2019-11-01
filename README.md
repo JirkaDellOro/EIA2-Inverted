@@ -97,24 +97,25 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 
 
 ### [L08_Canvas](L08_Canvas)
-- HTMLCanvasElement
-- RenderingContext
-- Immediate/Deferred Rendering
-- Path-Metaphor
-- Drawing Commands
-- Relative Positioning
+- CanvasRenderingContext
+- Pfade
+- Rendering
+- Koordinatensystem
+- Transformation
+- Stil
+- Linien
 - Save/Restore
-- Shortcuts fillRect and strokeRect
-- Create functions for drawing repetitive images
+
 
 ### [L09_Classes](L09_Classes)
-- Refactor interfaces to classes
-- Class-Diagram
-- Property/Attribute
-- Method
+- Objektorientierte Programmierung
+- Entwurf
+- Instanzierung
 - Constructor
-- Instance/Object
+- Konventionen
+- Klassendiagramm
 - Animation
+
 
 ### [L10_Inheritance](L10_Inheritance)
 - Identify common properties and behaviours
