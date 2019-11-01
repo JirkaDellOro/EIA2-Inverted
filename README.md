@@ -114,7 +114,6 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Method
 - Constructor
 - Instance/Object
-- Garbage Collection
 - Animation
 
 ### [L10_Inheritance](L10_Inheritance)
@@ -131,6 +130,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
   - protected
   - private
 - Static
+- Garbage Collection
 
 ### [L12_Addition](L12_Addition)
 - Exceptions

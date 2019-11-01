@@ -120,13 +120,16 @@ Mit diesen Basisregeln des objekorientierte Entwurfs kann man sich schon daran m
 
 > **FunFact:** Asteroids ist einer der größten Erfolge in der Geschichte der Videogames und Ataris meistverkaufter Münzautomat. Es gab allerdings eine dominante Strategie, die es geübten Spielern erlaubte nach Einwurf nur einer Münze stundenlang zu spielen und dabei so viele Bonus-Schiffe anzuhäufen, dass der Automat, dann vom Spieler allein gelassen, noch lange Zeit brauchte um alle Schiffe zu zerstören...  
 
-- [x] Falls dir Asteroids nicht bekannt ist, schau dir den entsprechenden Wikipedia-Artikel und dieses Youtube-Video an: https://www.youtube.com/watch?v=82mbTdpPM58  
+- [x] Falls dir Asteroids nicht bekannt ist, schau dir den entsprechenden Wikipedia-Artikel und dieses Youtube-Video an: https://www.youtube.com/watch?v=82mbTdpPM58  (ab 0:18)
 
 ## Anwendungsfalldiagramm
-- nur zeigen
+![Material/draw.io/Asteroids_UseCase.svg](Material/draw.io/Asteroids_UseCase.svg)
+
+- [x] Wenn dir das Anwendungsfalldiagramm nicht gleich einleuchtet, schau dir den Wikipedia-Artikel und das Video genau an und versuche, die einzelnen Anwendungsfälle dem Geschehen zuzuordnen.
+- [x] Beachte, dass im Diagramm viele Anwendungsfälle aufgeführt sind, die das System selbständig bewältigen muss. Was vom Player gesteuert ist, ist auch mit ihm verbunden.
 
 ## UI-Scribble
-- nur zeigen
+![Material/draw.io/Asteroids_Scribble.svg](Material/draw.io/Asteroids_Scribble.svg)
 
 ## Klassendiagramm
 Beim objektorientierten Entwurf kommt ein weiterer Diagrammtyp hinzu, den Du vor den Aktivitätsdiagrammen nutzen musst. Dabei identifizierst Du zunächst die verschiedenen Objekttypen, die in deiner Anwendung eine Rolle spielen. Sofern es sich dabei um Objekte handelt, die eine sichtbare Repräsentation haben, kannst Du sie im UI-Scribble identifizieren.  
