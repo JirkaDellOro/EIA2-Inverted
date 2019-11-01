@@ -160,6 +160,7 @@ Jetzt kannst Du die einzelnen Methoden mit Hilfe von Aktivitätsdiagrammen konzi
 
 **Video: Implementation der Klasse und Test mit einem Asteroiden**  
 - Zeigen was da ist: Vectorklasse, Pfade, HTML-Datei mit Links
+- Bei den Pfaden verweise auf die Suche nach Datenstrukturen in Cocktailbar und die verschachtelten Arrays. Video L04_V2 (6:30 - 8:45)
 - Auch die Asteroid-Klasse ist bereits angelegt entsprechend Klassendiagramm
 - Dann Aktivitätsdiagramm dazunehmen und die Methoden implementieren
 - Dann ein paar Asteroiden malen lassen
