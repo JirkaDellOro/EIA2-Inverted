@@ -133,7 +133,6 @@ Mit diesen Basisregeln des objekorientierte Entwurfs kann man sich schon daran m
 
 ## Klassendiagramm
 Beim objektorientierten Entwurf kommt ein weiterer Diagrammtyp hinzu, den Du vor den Aktivitätsdiagrammen nutzen musst. Dabei identifizierst Du zunächst die verschiedenen Objekttypen, die in deiner Anwendung eine Rolle spielen. Sofern es sich dabei um Objekte handelt, die eine sichtbare Repräsentation haben, kannst Du sie im UI-Scribble identifizieren.  
-
 ### Fünf Fragen 
 Für jeden Objekttyp stellst Du dir dann die folgenden Fragen, wobei "es" ein beispielhaftes Objekt des Typs meint.
 
@@ -147,14 +146,31 @@ Die ersten beiden Fragen führen dich direkt zur Darstellung der einzelnen Klass
 
 **Video: Definition der Asteroiden als Klassendiagramm**
 
+![Material/draw.io/Asteroids_ClassDiagram.svg](Material/draw.io/Asteroids_ClassDiagram.svg)
+
+
 ## Aktivitätsdiagramm
 Jetzt kannst Du die einzelnen Methoden mit Hilfe von Aktivitätsdiagrammen konzipieren. 
 
 **Video: Definition der Methoden als Aktivitätsdiagramme**
 
+![Material/draw.io/Asteroids_Activity.svg](Material/draw.io/Asteroids_Activity.svg)
+
 ## Implementation
 
-**Video: Implementation der Klasse**
+**Video: Implementation der Klasse und Test mit einem Asteroiden**  
+- Zeigen was da ist: Vectorklasse, Pfade, HTML-Datei mit Links
+- Auch die Asteroid-Klasse ist bereits angelegt entsprechend Klassendiagramm
+- Dann Aktivitätsdiagramm dazunehmen und die Methoden implementieren
+- Dann ein paar Asteroiden malen lassen
+- move ausprobieren mit Schleife... -> Problem
+- am Ende: wie kommt Bewegung in die Sache?
+
+## Animation
+- Zeitsignale! 
+- setTimeout
+- setIntervall
+- requestAnimationFrame
 
 ## Hauptprogramm
 

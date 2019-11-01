@@ -1,7 +1,7 @@
 "use strict";
 var L09_Asteroids;
 (function (L09_Asteroids) {
-    L09_Asteroids.shapes = [
+    L09_Asteroids.shapesAsteroids = [
         [
             [30, 1], [50, 15], [71, 1], [88, 31], [67, 40], [84, 63], [59, 93], [30, 79], [19, 87], [2, 63], [15, 43], [8, 20]
         ],
@@ -15,7 +15,32 @@ var L09_Asteroids;
             [37, 3], [70, 14], [62, 34], [83, 31], [78, 76], [55, 96], [20, 84], [7, 67], [5, 27], [20, 15], [39, 39]
         ]
     ];
-    L09_Asteroids.ufo = (function () {
+    function createPaths() {
+        L09_Asteroids.asteroidPaths = createAsteroidPaths(L09_Asteroids.shapesAsteroids);
+        L09_Asteroids.ufoPath = createUfoPath();
+    }
+    L09_Asteroids.createPaths = createPaths;
+    function createAsteroidPaths(_shapes) {
+        let paths = [];
+        for (let type of _shapes) {
+            let path = new Path2D();
+            let first = true;
+            // console.group(type);
+            for (let coordinates of type) {
+                // console.log(coordinates);
+                if (first)
+                    path.moveTo(coordinates[0], coordinates[1]);
+                else
+                    path.lineTo(coordinates[0], coordinates[1]);
+                first = false;
+            }
+            // console.groupEnd();
+            path.closePath();
+            paths.push(path);
+        }
+        return paths;
+    }
+    function createUfoPath() {
         let path = new Path2D();
         path.moveTo(20, 13);
         path.lineTo(27, 3);
@@ -32,6 +57,6 @@ var L09_Asteroids;
         path.lineTo(59, 25);
         path.closePath();
         return path;
-    })();
+    }
 })(L09_Asteroids || (L09_Asteroids = {}));
-//# sourceMappingURL=AsteroidShapes.js.map
+//# sourceMappingURL=Paths.js.map

@@ -1,8 +1,7 @@
 namespace L09_Asteroids {
     window.addEventListener("load", handleLoad);
 
-    let crc2: CanvasRenderingContext2D;
-    let asteroidPaths: Path2D[];
+    export let crc2: CanvasRenderingContext2D;
 
     function handleLoad(_event: Event): void {
         console.log("Asteroids starting");
@@ -10,34 +9,35 @@ namespace L09_Asteroids {
         if (!canvas)
             return;
         crc2 = <CanvasRenderingContext2D>canvas.getContext("2d");
-        asteroidPaths = createShapes(shapes);
-        console.log(asteroidPaths);
 
-        for (let path of asteroidPaths) {
-            crc2.stroke(path);
-            crc2.translate(100, 0);
-        }
-        crc2.stroke(ufo);
-    }
+        createPaths();
 
-    function createShapes(_shapes: number[][][]): Path2D[] {
-        let paths: Path2D[] = [];
-        for (let type of _shapes) {
-            let path: Path2D = new Path2D();
-            let first: boolean = true;
-            console.group(type);
-            for (let coordinates of type) {
-                console.log(coordinates);
-                if (first)
-                    path.moveTo(coordinates[0], coordinates[1]);
-                else
-                    path.lineTo(coordinates[0], coordinates[1]);
-                first = false;
-            }
-            console.groupEnd();
-            path.closePath();
-            paths.push(path);
+        let asteroid: Asteroid = new Asteroid(1);
+        asteroid.position.x = 100;
+        asteroid.position.y = 100;
+        asteroid.draw();
+        let asteroid1: Asteroid = new Asteroid(0.5);
+        asteroid1.position.x = 200;
+        asteroid1.position.y = 100;
+        asteroid1.draw();
+        let asteroid2: Asteroid = new Asteroid(0.25);
+        asteroid2.position.x = 300;
+        asteroid2.position.y = 100;
+
+        setInterval(update, 20);
+        function update(): void {
+            asteroid2.draw();
+            asteroid2.move(1);
         }
-        return paths;
+
+
+        // crc2.translate(0.5, 0.5);
+        // // crc2.scale(5, 1);
+        // for (let path of asteroidPaths) {
+        //     // crc2.lineWidth = 1/5;
+        //     crc2.stroke(path);
+        //     crc2.translate(100, 0);
+        // }
+        // crc2.stroke(ufoPath);
     }
 }

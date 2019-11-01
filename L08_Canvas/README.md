@@ -32,23 +32,33 @@ crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height);
 Wenn auch das entstehende Bild am Ende als Rastergrafik vorliegt, die Definition der Pfade erfolgt nach den Regeln der Vektorgrafik. Das bedeutet, dass Du nicht einzelne Pixel manipulierst, sondern mathematische Beschreibungen der zu zeichnenden Formen und ihrer Koordinaten formulierst. Die Rasterisierung übernimmt dann der RenderingContext wenn die Zeichenmethoden `stroke()` und `fill()` aufgerufen werden. Daraufhin erst werden die Pixel, die innerhalb oder am Rande des Pfades liegen nach der zuvor definierten Füll- oder Linienvorschrift mit Farbe versehen.  
 Es gibt allerdings auch Methoden zur direkten Manipulation von Pixeln, die in dieser Lektion aber keine Rolle spielen sollen.
 
-### Arc
+### Arc  
+
 ```typescript
 crc2.beginPath();
 crc2.arc(100, 100, 20, 0, 1.5 * Math.PI);
 crc2.closePath();
 crc2.stroke();
-```
+```  
+
 - [x] Erkunde, was `arc` bewerkstelligt und was die Parameter bedeuten.
 - [x] Finde heraus, wie Du die Linienfarbe ändern kannst.
 - [x] Was geschieht, wenn die Anweisung `closePath()` nicht ausgeführt wird. Warum?
 
+
+### Ellipse
+Lange Zeit war es erforderlich, Ellipsen als verzerrte Kreise darzustellen oder mit Kurven anzunähern. Mittlerweile gibt es aber auch eine `ellipse`-Anweisung.
+
+- [x] Finde heraus, wie die Ellipse funktioniert...
+
 ### Linienzüge
-Mit den Anweisungen `moveTo(...)` und `lineTo(...)` kannst Du einen Pfad um Linienzüge erweitern. Eine Linie wird dabei nur durch die Endposition definiert, die Startposition ist die Endposition der vorangegangenen Anweisung.
+Mit den Anweisungen `moveTo(...)` und `lineTo(...)` kannst Du einen Pfad um Linienzüge erweitern. Eine Linie wird dabei nur durch die Endposition definiert, die Startposition ist die Endposition der vorangegangenen Anweisung.  
+
 - [x] Lasse ein Dreieck zeichnen.
 
 ### Kurven
-Damit kannst Du beliebige eckige Formen darstellen. Wenn es geschmeidiger werden soll, nutzt Du quadratische oder Bezier-Kurven.
+Damit kannst Du beliebige eckige Formen darstellen. Wenn es geschmeidiger werden soll, nutzt Du quadratische oder Bezier-Kurven.  
+
 - [x] Experimentiere mit [dieser Anwendung](../X01_Appendix/Canvas/Curves/start.html). Beachte, dass für quadratische Kurven außer dem vorangegangenen Endpunkt des aktuellen Pfades zwei weitere, für Bezierkurven drei weitere Punkte angegeben werden müssen.  
 
 ### Text
@@ -59,7 +69,8 @@ Der CanvasRenderingContext bietet noch einige Zeichen- und Stilmittel mehr, stud
 
 ### Pfadobjekte
 Bei Verwendung der Pfad-Methoden direkt auf dem RenderingContext, wird ein globales Pfadobjekt manipuliert. Mit `beginPath()` wird der darin enthaltene alte Pfad gelöscht und ein neuer angelegt.  
-Es ist aber auch möglich, mit `new Path2D()` individuelle Pfadobjekt zu erzeugen und die Pfadanweisungen darauf auszuführen. So kann der Pfad gespeichert und im Laufe des Programms wiederverwenden werden, ohne dass der Algorithmus zur Pfaderstellung wieder durchlaufen werden muss. Zum Zeichnen eines solchen Pfadobjektes wird es schließlich als Parameter der Zeichenmethode einfach mitgegeben.
+Es ist aber auch möglich, mit `new Path2D()` individuelle Pfadobjekt zu erzeugen und die Pfadanweisungen darauf auszuführen. So kann der Pfad gespeichert und im Laufe des Programms wiederverwenden werden, ohne dass der Algorithmus zur Pfaderstellung wieder durchlaufen werden muss. Zum Zeichnen eines solchen Pfadobjektes wird es schließlich als Parameter der Zeichenmethode einfach mitgegeben.  
+
 ```typescript
 let path: Path2D = new Path2D();
 path.arc(60, 60, 50, 0, 2 * Math.PI);
@@ -67,7 +78,8 @@ crc2.stroke(path);
 ```
 
 ## Rendering
-"Render" ist ein relativ unspezifisches Wort und bedeutet lediglich so viel wie "ausführen, machen, tun". Im Zusammenhang mit digitalen Medien ist meist die Erzeugung eines Bildes anhand gegebener Daten gemeint. Es gibt unterschiedliche Ansätze hierfür.  
+"Render" ist ein relativ unspezifisches Wort und bedeutet lediglich so viel wie "ausführen, machen, tun". Im Zusammenhang mit digitalen Medien ist meist die Erzeugung eines Bildes anhand gegebener Daten gemeint. Es gibt unterschiedliche Ansätze hierfür.   
+
 > **FunFact:** Render als Substantiv heißt auch "Putz". Die in der 3D-Grafik häufig genannte "Renderpipe" könnte man also falsch als "Putzpfeife" übersetzen.  
 
 ### Retained Mode
