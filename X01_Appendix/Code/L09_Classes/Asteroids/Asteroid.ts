@@ -9,7 +9,11 @@ namespace L09_Asteroids {
             this.size = _size;
             this.position = new Vector(0, 0);
             this.type = Math.floor(Math.random() * 4);
-            this.velocity = new Vector(Math.random() * 10 - 5, Math.random() * 10 - 5);
+
+            // set velocity in pixel per second
+            this.velocity = new Vector(0, 0);
+            this.velocity.random(0.1, 0.5);
+            this.velocity.scale(crc2.canvas.width);
         }
 
         move(_timeslice: number): void {

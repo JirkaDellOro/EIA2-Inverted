@@ -123,13 +123,13 @@ Mit diesen Basisregeln des objekorientierte Entwurfs kann man sich schon daran m
 - [x] Falls dir Asteroids nicht bekannt ist, schau dir den entsprechenden Wikipedia-Artikel und dieses Youtube-Video an: https://www.youtube.com/watch?v=82mbTdpPM58  (ab 0:18)
 
 ## Anwendungsfalldiagramm
-![Material/draw.io/Asteroids_UseCase.svg](Material/draw.io/Asteroids_UseCase.svg)
+![](Material/draw.io/Asteroids_UseCaseDiagram.svg)
 
 - [x] Wenn dir das Anwendungsfalldiagramm nicht gleich einleuchtet, schau dir den Wikipedia-Artikel und das Video genau an und versuche, die einzelnen Anwendungsfälle dem Geschehen zuzuordnen.
 - [x] Beachte, dass im Diagramm viele Anwendungsfälle aufgeführt sind, die das System selbständig bewältigen muss. Was vom Player gesteuert ist, ist auch mit ihm verbunden.
 
 ## UI-Scribble
-![Material/draw.io/Asteroids_Scribble.svg](Material/draw.io/Asteroids_Scribble.svg)
+![](Material/draw.io/Asteroids_Scribble.svg)
 
 ## Klassendiagramm
 Beim objektorientierten Entwurf kommt ein weiterer Diagrammtyp hinzu, den Du vor den Aktivitätsdiagrammen nutzen musst. Dabei identifizierst Du zunächst die verschiedenen Objekttypen, die in deiner Anwendung eine Rolle spielen. Sofern es sich dabei um Objekte handelt, die eine sichtbare Repräsentation haben, kannst Du sie im UI-Scribble identifizieren.  
@@ -146,7 +146,7 @@ Die ersten beiden Fragen führen dich direkt zur Darstellung der einzelnen Klass
 
 **Video: Definition der Asteroiden als Klassendiagramm**
 
-![Material/draw.io/Asteroids_ClassDiagram.svg](Material/draw.io/Asteroids_ClassDiagram.svg)
+![](Material/draw.io/Asteroids_ClassDiagram.svg)
 
 
 ## Aktivitätsdiagramm
@@ -154,7 +154,7 @@ Jetzt kannst Du die einzelnen Methoden mit Hilfe von Aktivitätsdiagrammen konzi
 
 **Video: Definition der Methoden als Aktivitätsdiagramme**
 
-![Material/draw.io/Asteroids_Activity.svg](Material/draw.io/Asteroids_Activity.svg)
+![](Material/draw.io/Asteroids_ActivityDiagram-Asteroid.svg)
 
 ## Implementation
 
@@ -167,11 +167,22 @@ Jetzt kannst Du die einzelnen Methoden mit Hilfe von Aktivitätsdiagrammen konzi
 - move ausprobieren mit Schleife... -> Problem
 - am Ende: wie kommt Bewegung in die Sache?
 
-## Animation
-- Zeitsignale! 
-- setTimeout
-- setIntervall
-- requestAnimationFrame
+## Zeitsignale
+Die Animation mit Hilfe einer Schleife zu bewerkstelligen ist nicht einfach machbar, da der Browser dann nur mit der Schleife beschäftigt ist und keine Zeit mehr hat, das Bild anzuzeigen. Stattdessen soll er das Bild anzeigen und dann warten, bis einige Zeit vergangen ist um das nächste Bild zu zeichnen und anzuzeigen und so weiter.  
+Du weißt bereits, dass EventListeners erhalten und aktiv bleiben, auch wenn das Hauptprogramm bereits beendet ist. Das gilt auch für Zeitsignale! Im Aktivitätsdiagramm ist für diese ein eigenes Symbol als Startknoten definiert, das an eine Sanduhr erinnert. Damit kannst Du nun leicht einen "Herzschlag" für deine Anwendung definieren.  
+
+![](Material/Heartbeat.svg)
+
+In Javascript/TypeScript stehen dir folgende Optionen zur Realisierung solcher Zeitsignale zur Verfügung.  
+
+### window.setTimeout (handler, time)
+Die Anweisung bewirkt, dass die `handler`-Funktion nach Ablauf der mit `time` in Millisekunden angegebenen Zeit aufgerufen wird, gemessen ab dem Zeitpunkt des Anweisungsaufruf.
+
+### window.setInterval (handler, time, args...)
+Die Anweisung bewirkt, dass die `handler`-Funktion in dem mit `time` angegebenen zeitlichen Abstand periodisch aufgerufen wird. Weitere Parameter (`args...`) können der Funktion dabei übergeben werden.
+
+### window.requestAnimationFrame(handler)
+Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die grafische Aufbereitung sinnvoll erscheinendem Zeitintervall aufgerufen wird. Über dieses entscheidet der Browser, Chrome versucht eine Bildwiederholrate von 60 Bildern pro Sekunde zu erreichen (Frames per second, fps).
 
 ## Hauptprogramm
 
@@ -184,10 +195,13 @@ Jetzt kannst Du die einzelnen Methoden mit Hilfe von Aktivitätsdiagrammen konzi
   - iterieren über Array
   - move und draw
 
+> **Hinweis:** Nicht alles lässt sich von vorneherein festlegen, manches muss zunächst ausprobiert werden, um ein Gefühl dafür zu bekommen, wie ein gutes Nutzungserlebnis erreicht werden kann. In der Konzeption musst Du abschätzen, was entsprechende Tests erfordert und diese ermöglichen. Du musst zudem selbst Prototypen entwickeln können, um kleinere Sachen alleine zu implementieren und auszuprobieren ohne dafür einen Stab von Leuten zu beschäftigen!
+
 **Video: Implementation**
 
 
-<hr>
+<hr>  
+
 > Zwei Direktiven  
 > - So schlau wie nötig  
 > - So dumm wie möglich

@@ -25,9 +25,10 @@ namespace L09_Asteroids {
         asteroid2.position.y = 100;
 
         setInterval(update, 20);
+        
         function update(): void {
             asteroid2.draw();
-            asteroid2.move(1);
+            asteroid2.move(0.02);
         }
 
 

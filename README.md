@@ -114,7 +114,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Constructor
 - Konventionen
 - Klassendiagramm
-- Animation
+- Zeitsignale
 
 
 ### [L10_Inheritance](L10_Inheritance)

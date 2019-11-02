@@ -21,5 +21,13 @@ namespace L09_Asteroids {
             this.x += _addend.x;
             this.y += _addend.y;
         }
+
+        random(_minLength: number, _maxLength: number): void {
+            let length: number = _minLength + Math.random() * (_maxLength - _minLength);
+            let direction: number = Math.random() * 2 * Math.PI;
+
+            this.set(Math.cos(direction), Math.sin(direction));
+            this.scale(length);
+        }
     }
 }

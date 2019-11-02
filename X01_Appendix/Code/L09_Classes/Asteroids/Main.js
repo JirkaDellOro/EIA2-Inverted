@@ -23,7 +23,7 @@ var L09_Asteroids;
         setInterval(update, 20);
         function update() {
             asteroid2.draw();
-            asteroid2.move(1);
+            asteroid2.move(0.02);
         }
         // crc2.translate(0.5, 0.5);
         // // crc2.scale(5, 1);

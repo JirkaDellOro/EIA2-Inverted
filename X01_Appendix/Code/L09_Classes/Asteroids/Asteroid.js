@@ -6,7 +6,10 @@ var L09_Asteroids;
             this.size = _size;
             this.position = new L09_Asteroids.Vector(0, 0);
             this.type = Math.floor(Math.random() * 4);
-            this.velocity = new L09_Asteroids.Vector(Math.random() * 10 - 5, Math.random() * 10 - 5);
+            // set velocity in pixel per second
+            this.velocity = new L09_Asteroids.Vector(0, 0);
+            this.velocity.random(0.1, 0.5);
+            this.velocity.scale(L09_Asteroids.crc2.canvas.width);
         }
         move(_timeslice) {
             let offset = new L09_Asteroids.Vector(this.velocity.x, this.velocity.y);
