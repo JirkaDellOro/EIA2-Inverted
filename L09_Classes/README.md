@@ -175,8 +175,8 @@ Du weißt bereits, dass EventListeners erhalten und aktiv bleiben, auch wenn das
 
 In Javascript/TypeScript stehen dir folgende Optionen zur Realisierung solcher Zeitsignale zur Verfügung.  
 
-### window.setTimeout (handler, time)
-Die Anweisung bewirkt, dass die `handler`-Funktion nach Ablauf der mit `time` in Millisekunden angegebenen Zeit aufgerufen wird, gemessen ab dem Zeitpunkt des Anweisungsaufruf.
+### window.setTimeout (handler, time, args...)
+Die Anweisung bewirkt, dass die `handler`-Funktion nach Ablauf der mit `time` in Millisekunden angegebenen Zeit aufgerufen wird, gemessen ab dem Zeitpunkt des Anweisungsaufruf. Weitere Parameter (`args...`) können der Funktion dabei übergeben werden.
 
 ### window.setInterval (handler, time, args...)
 Die Anweisung bewirkt, dass die `handler`-Funktion in dem mit `time` angegebenen zeitlichen Abstand periodisch aufgerufen wird. Weitere Parameter (`args...`) können der Funktion dabei übergeben werden.
@@ -195,10 +195,21 @@ Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die 
   - iterieren über Array
   - move und draw
 
-> **Hinweis:** Nicht alles lässt sich von vorneherein festlegen, manches muss zunächst ausprobiert werden, um ein Gefühl dafür zu bekommen, wie ein gutes Nutzungserlebnis erreicht werden kann. In der Konzeption musst Du abschätzen, was entsprechende Tests erfordert und diese ermöglichen. Du musst zudem selbst Prototypen entwickeln können, um kleinere Sachen alleine zu implementieren und auszuprobieren ohne dafür einen Stab von Leuten zu beschäftigen!
+> **Hinweis:** Nicht alles lässt sich von vorneherein festlegen, manches musst Du ausprobieren, um ein Gefühl dafür zu bekommen, wie ein gutes Nutzungserlebnis erreicht werden kann. In der Konzeption musst Du abschätzen, welche Tests erforderlich sind und wie Du diese ermöglichst. Du musst zudem selbst Prototypen entwickeln können, um kleinere Sachen alleine zu implementieren und auszuprobieren ohne dafür einen Stab von Leuten zu beschäftigen!
 
 **Video: Implementation**
 
+- Hit-Detection
+  - wohin damit?
+  - im Hauptprogramm geht die schöne Kapselung der Details verloren
+    - in Asteroid-Klasse als isHit(...)
+- Break Asteroids
+  - zunächst in Hauptprogramm implementieren
+  - Bruchstücke starten in den Ecken
+  - Extra noch einmal die Position setzen ist doof
+    - als optionaler Parameter in Constructor 
+  - Asteroid könnte Bruchstücke liefern, weiß aber nichts von der Asteroidenliste um sie dort einzutragen und sich selbst zu löschen
+  - Break bleibt im Hauptprogramm
 
 <hr>  
 

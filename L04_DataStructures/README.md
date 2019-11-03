@@ -29,7 +29,7 @@ Neben dem Prinzip des "Divide et Impere", ist es bei der Konzeption von Anwendun
 
 <img src="Material/AdaLovelace.jpg" align="right"/>
 
-- **FunFact**: viele Quellen schreiben den ersten Algorithmus, der je für einen Computer konzipiert wurde, Lady Ada Lovelace (1815-1852) zu. Der zugehörige mechanische Computer, die "Analytical Engine", konnte zu dieser Zeit noch nicht funktionsfähig hergestellt werden. Adas Algorithmus aber funktionierte!  
+- **FunFact**: viele Quellen schreiben den ersten Algorithmus, der je für einen Computer konzipiert wurde, Lady Ada Lovelace (1815-1852) zu. Der zugehörige mechanische Computer, die "Analytical Engine", konnte zu dieser Zeit noch nicht funktionsfähig hergestellt werden. Adas Algorithmus aber funktionierte! Ihr zu Ehren wurde über ein Jahrhundert später eine populäre Programmiersprache "Ada" genannt.
 
 Die Konzeption der Algorithmen und Datenstrukturen stellt also die Grundlage für eine nachfolgende Programmierung dar. Ohne diese Grundlage die Programmierung zu beginnen ist eine erratische Vorgehensweise und führt bei komplexeren Anwendungen in der Regel zu erhöhtem Aufwand und minderwertigen Lösungen.  
 
@@ -79,3 +79,7 @@ JSON wird heute interessanterweise auch intensiv außerhalb der Javascript-Welt 
 <img src="Material/XMLvsJSON.png">  
 
 Weiterhin ist aber auch XML ein verbreiteter Standard und in manchen Anwendungen effizienter einzusetzen.
+
+
+# Wochenaufgabe
+[L04_CharacterEditor: Data](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L04_CharacterEditor:Data)
