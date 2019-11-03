@@ -45,14 +45,14 @@ Bei der Modellierung eines Systems solltes Du diese zwei Regeln beachten:
 
 Jeder Teil soll also nur das von seiner Umwelt und anderen Teilen wissen, was unbedingt erforderlich für die eigene Funktion ist!
 
-# UFOs
+# UFOs in Asteroids
 
 Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entwickelt.
 
 **Video: Erweiterung des Klassendiagramms**
 - weitere Objekttypen sind UFO, Schiff, Projektile, Laser und Trefferzone
 - UFO und Projektile sind den Asteroiden nicht unähnlich
-  - haben einige Gemeinsamkeiten aber anderes aussehen und andere Bewegungsmethode
+  - haben einige Gemeinsamkeiten aber anderes Aussehen und andere Bewegungsmethode
   - werden zuerst modelliert
 - Gemeinsamkeiten werden in Superklasse verlagert und von dort vererbt
   - Name? Body, Moveable, Thing
@@ -60,6 +60,13 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
 - Ufos haben anderes Bewegungsmuster und festgelegte Geschwindigkeit
 - Projektile haben gleiches Bewegungsmuster aber Lebensdauerbegrenzung und festgelegte Geschwindigkeit
 
+
+**Video: Implementation der Klassen und Tests**   
+- Asteroids und Moveable aufteilen
+- Testen
+- Projektilklasse implementieren und testen
+  - wie Lebensdauer implementieren?
+  - als Rückgabewert bei moveable...
 
 ## Polymorphie
 
