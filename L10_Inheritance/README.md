@@ -3,7 +3,7 @@
 <img src="Material/barabara-liskov.jpg" width="100" align="right"/>
 <img src="Material/jeannette-wing.jpg" width="100" align="left"/>
 
-1987 stellte Bararbara Liskov auf einer Konferenz ein Grundprinzip der objektorientierten Modellierung vor. Danach soll ein Objekt einer Klasse durch ein Objekt einer Sub-Klasse dieser Klasse ersetzt werden können, ohne dass das Programm, welches das Objekt verwendet, verändert werden muss. 1993 formalisierte Sie zusammen mit Jeannette Wong was heute als das **Liskov'sche Substitutionsprinzip** bekannt ist.
+1987 stellte Bararbara Liskov auf einer Konferenz ein Grundprinzip der objektorientierten Modellierung vor. Danach soll ein Objekt einer Klasse durch ein Objekt einer Sub-Klasse dieser Klasse ersetzt werden können, ohne dass das Programm, welches das Objekt verwendet, verändert werden muss. 1993 formalisierte sie zusammen mit Jeannette Wing was heute als das **Liskov'sche Substitutionsprinzip** bekannt ist.
 
 ## Generalisierung vs Spezialisierung
 Bezogen auf Hunde kann das Liskov'sche Substitutionsprinzip folgendermaßen beispielhaft dargestellt werden:  
@@ -26,5 +26,14 @@ Im Klassendiagramm verweisen Pfeile mit einer dreieckigen und leeren Spitze von 
 
 - [x] Studiere das Diagramm und mache dir die Beziehung zwischen Sub- und Superklasse klar.
 - [x] Beschreibe nur anhand des Diagramms die Eigenschaften und Fähigkeiten eines Zwergpudels.
-- [x] Sollten die Pudel eigene Subklassen bilden? Was wäre eine Alternative?
+- [x] Sollten die verschiedenen Pudel eigene Subklassen bilden? Was wäre eine Alternative?
+- [x] Wie hilft dir ein solches Diagramm und die Betrachtung von Generalisierung und Spezialisierung im Umgang mit Lebewesen? Beschreibe es an diesem Beispiel. 
 
+## Regeln für die Modellierung
+Ein Dompteur im Zirkus muss nicht nur die Eigenheiten jeder Hunderasse in seiner Truppe kennen, sondern sogar die jeder einzelnen Instanz. Dem Schalterbeamten "in Zollhafe von modernes Planet" genügte dagegen zu wissen, ob eine Lebensform ein Säuger ist, um das richtige Zimmer zuzuweisen ([siehe Ion Tichy, Folge 4, 4:23 - 5:33](https://www.youtube.com/watch?v=_DSCXsIR03Q))
+
+Bei der Modellierung eines Systems solltes Du diese zwei Regeln beachten:
+- jeder Teil soll nur so schlau wie nötig sein
+- jeder Teil soll so dumm wie möglich sein  
+
+Jeder Teil soll also nur das von seiner Umwelt und anderen Teilen wissen, was unbedingt erforderlich für die eigene Funktion ist!

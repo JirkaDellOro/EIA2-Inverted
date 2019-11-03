@@ -211,9 +211,3 @@ Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die 
     - als optionaler Parameter in Constructor 
   - Asteroid könnte Bruchstücke liefern, weiß aber nichts von der Asteroidenliste um sie dort einzutragen und sich selbst zu löschen
   - Break bleibt im Hauptprogramm
-
-<hr>  
-
-> Zwei Direktiven  
-> - So schlau wie nötig  
-> - So dumm wie möglich
