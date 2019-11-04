@@ -45,30 +45,45 @@ Bei der Modellierung eines Systems solltes Du diese zwei Regeln beachten:
 
 Jeder Teil soll also nur das von seiner Umwelt und anderen Teilen wissen, was unbedingt erforderlich für die eigene Funktion ist!
 
-# UFOs in Asteroids
+# Ufos in Asteroids
 
 Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entwickelt.
 
 **Video: Erweiterung des Klassendiagramms**
-- weitere Objekttypen sind UFO, Schiff, Projektile, Laser und Trefferzone
-- UFO und Projektile sind den Asteroiden nicht unähnlich
+- weitere Objekttypen sind Ufo, Schiff, Projektile, Laser und Trefferzone
+- Ufo und Projektile sind den Asteroiden nicht unähnlich
   - haben einige Gemeinsamkeiten aber anderes Aussehen und andere Bewegungsmethode
   - werden zuerst modelliert
 - Gemeinsamkeiten werden in Superklasse verlagert und von dort vererbt
   - Name? Body, Moveable, Thing
 - Asteroid wird als Spezialisierung definiert
 - Ufos haben anderes Bewegungsmuster und festgelegte Geschwindigkeit
-- Projektile haben gleiches Bewegungsmuster aber Lebensdauerbegrenzung und festgelegte Geschwindigkeit
+- Projektile haben gleiches Bewegungsmuster aber Reichweite und festgelegte Geschwindigkeit
+- Aktivitätsdiagramme für Moveable und Asteroids vorzeigen und erklären, nicht neu entwerfen
 
-
-**Video: Implementation der Klassen und Tests**   
+**Video: Implementation von Mutable, Refaktorierung von Asteroid und Tests**   
 - Asteroids und Moveable aufteilen
 - Testen
+- extends erklären!
+- super(...) erklären!
+
 - Projektilklasse implementieren und testen
-  - wie Lebensdauer implementieren?
-  - als Rückgabewert bei moveable...
+  - wie Reichweite implementieren?
+    - range in Projectile, wird dezimiert
+    - was passiert wenn 0 unterschritten wird?
+      - zunächst velocity auf (0,0)
+    - aber Projektile müssen gelöscht werden
+  - Zudem: derzeit nur eines, referenziert durch eine Variable
+    - es soll aber viele geben
+    - weitere Liste für Projektile?
+    - dann noch eine für Ufos?
+    - das ist doof, zumal das Hauptprogramm mit allen das gleiche macht....
+    
+> **`extends`** erweitert eine Superklasse um eine Subklasse!  
+> **`super(...)`** ruft den Constructor der Superklasse auf!
 
 ## Polymorphie
 
+- `super`
 
 > **Polymorphie** ist das vierte Prinzip der Objektorientierung!
