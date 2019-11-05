@@ -20,6 +20,7 @@ var L10_Asteroids;
             this.range -= _timeslice;
             if (this.range < 0) {
                 this.velocity = new L10_Asteroids.Vector(0, 0);
+                this.expendable = true;
             }
         }
     }

@@ -3,6 +3,7 @@ var L10_Asteroids;
 (function (L10_Asteroids) {
     class Moveable {
         constructor(_position) {
+            this.expendable = false;
             if (_position) // nach Einführung zweiter Paramter
                 this.position = new L10_Asteroids.Vector(_position.x, _position.y);
             else

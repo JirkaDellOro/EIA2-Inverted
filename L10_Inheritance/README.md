@@ -61,7 +61,7 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
 - Projektile haben gleiches Bewegungsmuster aber Reichweite und festgelegte Geschwindigkeit
 - Aktivitätsdiagramme für Moveable und Asteroids vorzeigen und erklären, nicht neu entwerfen
 
-**Video: Implementation von Mutable, Refaktorierung von Asteroid und Tests**   
+**Video: Implementation I von Moveable, Refaktorierung von Asteroid und Tests**   
 - Asteroids und Moveable aufteilen
 - Testen
 - extends erklären!
@@ -80,10 +80,67 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
     - das ist doof, zumal das Hauptprogramm mit allen das gleiche macht....
     
 > **`extends`** erweitert eine Superklasse um eine Subklasse!  
-> **`super(...)`** ruft den Constructor der Superklasse auf!
+> **`super(...)`** ruft aus der Subklasse den Constructor der Superklasse auf!  
+> **`super.methode(...)`** ruft aus der Subklasse die `methode` der Superklasse auf!
 
 ## Polymorphie
 
-- `super`
+Griechisch πολύς (polýs) = „viel“ und μορφή (morphé) = "Form, Gestalt". Hunde sind vielgestaltig, das wurde in diesen Lektionen bereits ausgiebig behandelt. Die einzelnen Hunderassen können aber nicht nur anders aussehen, sondern sich vielleicht auch unterschiedlich verhalten. Ein Jagdhund wird beim Anblick einer Herde Schafe vielleicht gerne hineinrennen und eines reißen, ein Hütehund eher um die Herde herumlaufen und sie beisammen halten. Für jemanden, der mit diesen Hunden spazierengeht, so wie die angeblich 200.000 professionellen Gassigeher in den USA, ist dabei vordringlich wichtig, genug Leinen und Halsbänder zu haben, um die Hunde bei sich halten zu können.
 
 > **Polymorphie** ist das vierte Prinzip der Objektorientierung!
+
+Im Asteroids-Programm sind derzeit zwei Klassen implementiert, die von Moveable erben, also zwei Subklassen der Superklasse Moveable. Anders ausgedrückt hat Moveable hat derzeit drei Gestalten: Moveable, Asteroid und Projectile. Sie unterscheiden sich in Aussehen und Verhalten
+
+| Klasse | Aussehen | Bewegung |
+|---|---|---|
+|Moveable|keines|Geradlinig mit Umlauf am Rand
+|Asteroid|Felsbrocken| wie Moveable
+|Projectile| kleiner Punkt| wie Moveable aber Reichweite begrenzt
+
+Damit sich die Instanzen der Klassen bewegen und darstellen können, ruft das Hauptprogramm deren `move`- und `draw`-Methoden auf. Dabei ist es dem Hauptprogramm aber völlig egal, ob es sich dabei um Asteroiden oder Projektile handelt, solange sie Moveables sind und somit diese Methoden entweder geerbt haben oder sie neu implementieren (überschreiben).
+
+Nach dem Liskov'schen Substitutionsprinzip muss Folgendes möglich sein, auch wenn Moveable vielgestaltig ist:
+
+```typescript
+let m: Moveable = new Moveable();
+let a: Moveable = new Asteroid(1);
+let p: Moveable = new Projectile(new Vector(0, 0), new Vector(0, 0));
+```
+
+Beachte, dass die Variablen m, a und p alle mit dem Typ Moveable deklariert wurden, sie aber unterschiedliche Objekt-Typen referenzieren.
+
+- [x] Implementiere diese drei Zeilen und lasse dir die Variablen in der Konsole ausgeben oder schaue sie dir im Debugger an.
+
+Wenn Vorangegangenes möglich ist, dann muss auch Folgendes möglich sein:
+
+```typescript
+let moveables: Moveable[] = [];
+moveables.push(new Asteroid(1));
+moveables.push(new Projectile(new Vector(0, 0), new Vector(0, 0)));
+```
+
+- [x] Überprüfe auch dies mit einer entsprechenden Implementation
+
+
+**Bild/Scan: Aktivitätsdiagramm des Hauptprogramms mit asteroid/asteroids ersetzt durch moveable/moveables**
+
+## Implementation II
+
+**Video: Implementation II (Nutzung der Polymorphie)**
+- asteroids -> moveables, Type Asteroid -> Moveable
+- asteroid to moveable in Loops
+- moveable instance of Asteroid in getAsteroidHit
+- einzelne projectile-Variable eliminieren
+  - stattdessen Projektile in moveables pushen
+  - Sonderbehandlung in Update eliminieren
+- geht alles recht schnell
+- aber Projektile bleiben auf Canvas kleben
+  - einfache, schnelle Lösung:
+    - moveables exportieren, Projektile finden und löschen sich selbst.
+  - damit aber werden die Projectile zu mächtig
+    - eleganter: als expendable markieren und Hauptprogramm löscht sie -> Verweis auf Garbage-Collector für später
+- expendable auch auf Asteroiden nach Break anwenden
+
+> **`a instanceof B`** prüft, ob das Objekt `a` eine Instanz der Klasse `B` ist.
+
+- [x] Implementiere die Ufos! Der Pfad wird bereits von der Funktion `createUfoPath()` erzeugt. 

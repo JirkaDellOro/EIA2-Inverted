@@ -23,6 +23,7 @@ namespace L10_Asteroids {
 
             if (this.range < 0) {
                 this.velocity = new Vector(0, 0);
+                this.expendable = true;
             }
         }
     }

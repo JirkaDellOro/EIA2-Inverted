@@ -2,6 +2,7 @@ namespace L10_Asteroids {
     export class Moveable {
         position: Vector;
         velocity: Vector;
+        expendable: boolean = false;
 
         constructor(_position?: Vector) { // zweiten Parameter erst später einführen
             if (_position) // nach Einführung zweiter Paramter

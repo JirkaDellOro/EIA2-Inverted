@@ -2,9 +2,8 @@ namespace L10_Asteroids {
     window.addEventListener("load", handleLoad);
 
     export let crc2: CanvasRenderingContext2D;
-    let asteroids: Asteroid[] = [];
+    export let moveables: Moveable[] = [];
     // let ship: Ship;
-    let projectile: Projectile;
 
     function handleLoad(_event: Event): void {
         console.log("Asteroids starting");
@@ -32,14 +31,15 @@ namespace L10_Asteroids {
         let origin: Vector = new Vector(_event.clientX - crc2.canvas.offsetLeft, _event.clientY - crc2.canvas.offsetTop);
         let velocity: Vector = new Vector(0, 0);
         velocity.random(100, 100);
-        projectile = new Projectile(origin, velocity);
+        let projectile: Projectile = new Projectile(origin, velocity);
+        moveables.push(projectile);
     }
 
     function createAsteroids(_nAsteroids: number): void {
         console.log("Create asteroids");
         for (let i: number = 0; i < _nAsteroids; i++) {
             let asteroid: Asteroid = new Asteroid(1.0);
-            asteroids.push(asteroid);
+            moveables.push(asteroid);
         }
     }
 
@@ -47,17 +47,24 @@ namespace L10_Asteroids {
         // console.log("Update");
         crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height);
 
-        for (let asteroid of asteroids) {
-            asteroid.move(1 / 50);
-            asteroid.draw();
+        for (let moveable of moveables) {
+            moveable.move(1 / 50);
+            moveable.draw();
         }
 
-        if (projectile) {
-            projectile.move(1 / 50);
-            projectile.draw();
-        }
         // ship.draw();
         // handleCollisions();
+
+        deleteExpendables();
+        console.log("Moveables: ", moveables.length);
+    }
+
+    function deleteExpendables(): void {
+        // step backwards for deletion
+        for (let i: number = moveables.length - 1; i >= 0; i--) {
+            if (moveables[i].expendable)
+                moveables.splice(i, 1);
+        }
     }
 
     function shootLaser(_event: MouseEvent): void {
@@ -74,9 +81,9 @@ namespace L10_Asteroids {
 
     function getAsteroidHit(_hotspot: Vector): Asteroid | null {
         console.log("Get asteroid hit");
-        for (let asteroid of asteroids) {
-            if (asteroid.isHit(_hotspot))
-                return asteroid;
+        for (let moveable of moveables) {
+            if (moveable instanceof Asteroid && moveable.isHit(_hotspot))
+                return moveable;
         }
         return null;
     }
@@ -86,10 +93,9 @@ namespace L10_Asteroids {
             for (let i: number = 0; i < 2; i++) {
                 let fragment: Asteroid = new Asteroid(_asteroid.size / 2, _asteroid.position);
                 fragment.velocity.add(_asteroid.velocity);
-                asteroids.push(fragment);
+                moveables.push(fragment);
             }
         }
-        let index: number = asteroids.indexOf(_asteroid);
-        asteroids.splice(index, 1);
+        _asteroid.expendable = true;
     }
 }
