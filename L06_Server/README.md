@@ -47,20 +47,7 @@ Mit Tastendruck auf F5 alleine startest Du den Debugger mit der vollen Funktiona
 Node kommt mit einigen neuen Standardobjekten und Modulen, für EIA2 brauchst Du aber nur sehr wenige davon. Die Dokumentation findest Du im Netz auf https://nodejs.org/de/docs/.  
 Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der ein Node-Programm gerade ausgeführt wird. 
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. VSCode 
-|2. Jirkas sprechender Kopf  
-
->Inhalt: eine erste Node-Anwendung  
-> - namespace (erst prüfen, wie es damit weiter geht)
-> - Variablen
-> - Starten (Commandline, Ctrl+F5, F5)
-> - Debuggen
-> - Events, Unterschiede zu bisher
-> - Timeout
-> - process
+<a href="https://drive.google.com/open?id=1pGtfVibovgrVIshJsfAPtufAEoOoa8eE"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 - [x] Eine kleine Aufgabe mit einer Node-App lösen! Hierzu CLI-Parameter entgegen nehmen. Farben-Konverter? Bin-Dez-Hex? Eliza?
 
@@ -79,32 +66,15 @@ export namespace ... {
 Auch die Standardmodule, die wahlweise importiert werden wie `http` und `url`, sind in der [Node-Dokumentation](https://nodejs.org/de/docs/) beschrieben.
 
 ## Design
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. Diagrammerstellung auf Papier 
-|2. Jirkas sprechender Kopf  
 
->Inhalt: 
-> - Einen Port auf dem System für Anfragen öffnen
-> - Listener installieren, der auf eine Anfrage reagiert
-> - Handlerfunktion, welche die Anfrage verarbeitet und eine Antwort formuliert
-
-
+<a href="https://drive.google.com/open?id=1-CqPdO8y8s6oQiZyyxi9g3-O4pN_0SvM"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_ActivityDiagram-Server.jpg"><img src="Material/CocktailBar_ActivityDiagram-Server.jpg" width="25%"/></a>
 
 ## Implementation 1
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Programm, das gerade getippt wird
-|2. klein die Diagramme im Wechsel
-|3. klein Jirkas sprechender Kopf  
 
-> Inhalt:
-> - Implementation bis Reaktion auf Request
+<a href="https://drive.google.com/open?id=1snBYJhM2mub1otI2oLXkLRCSBrFBetw5"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
-## handleRequest
+### handleRequest
 Die Events, die in diesem System verwendet werden, sind keine DOM-Events, schließlich ist HTML nicht die Grundlage auf der Serverseite. Deswegen folgen sie auch nicht der Konvention, dass immer ein Event-Objekt an den Handler übergeben wird. 
 Der Handler zum Request-Event erwartet zwei Parameter, den ersten vom Typ `IncomingMessage` und den zweitem vom Typ `ServerResponse` aus dem `http`-Modul.  
 
@@ -126,18 +96,13 @@ function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerRes
 Im Beispiel verschickt der Server lediglich die Antwort mit dem Inhalt "Was geht?". Der Header gibt an, dass die Antwort ein mit utf-8 kodierter Text ist, also z.b. kein Bild, und dass sie von jedem geöffnet werden darf. Auch hier bedeutet der Asterisk wieder "alles".
 
 ## Implementation 2
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Programm, das gerade getippt wird
-|2. klein die Diagramme im Wechsel
-|3. klein Jirkas sprechender Kopf  
 
-> Inhalt:
-> - Parameter verarbeiten
-> - Probleme umschiffen, Header einbauen
-> - Verschiedene Ausgaben auf Konsole und in Antwort
-> - JSON erzeugen
+<a href="https://drive.google.com/open?id=1qf37ncQGjFAUbSVYALNb0fToSsT4sjtv"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+
+### Client
+
+<a href="https://drive.google.com/open?id=1cxVS-y2g34Wmbi1D8c57_6fkZXl-NJMt"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+
 
 ## Heroku
 Der Server auf dem Entwicklungsrechner funktioniert, nun gilt es, ihn in einem Rechenzentrum unterzubringen, damit der Cocktailbar-Client auch von anderen Rechnern aus damit kommunizieren kann. Eine Möglichkeit ist es, einen realen oder virtuellen Rechner anzumieten, ihn selbst zu konfigurieren und die erforderliche Software darauf zu installieren etc. Das erfordert einiges an Spezialwissen und teilweise obliegt auch die Wartung, Erweiterung und Aktualisierung in der Verantwortung des Mieters.
