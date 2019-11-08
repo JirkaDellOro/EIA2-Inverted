@@ -4,7 +4,6 @@ namespace L10_AsteroidsInheritance {
 
         constructor(_position: Vector, _velocity: Vector) {
             super(_position);
-            this.position = new Vector(_position.x, _position.y);
             this.velocity = new Vector(_velocity.x, _velocity.y);
             this.range = 2;
         }

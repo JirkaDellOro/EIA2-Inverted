@@ -3,8 +3,11 @@ namespace L11_AsteroidsAdvanced {
         position: Vector;
         velocity: Vector;
         expendable: boolean = false;
+        hitRadius: number = 0;
 
-        constructor(_position?: Vector) { // zweiten Parameter erst später einführen
+        constructor(_hitRadius: number = 0, _position?: Vector) { // zweiten Parameter erst später einführen
+            this.hitRadius = _hitRadius;
+
             if (_position) // nach Einführung zweiter Paramter
                 this.position = new Vector(_position.x, _position.y);
             else
@@ -12,6 +15,20 @@ namespace L11_AsteroidsAdvanced {
 
             // set velocity in pixel per second
             this.velocity = new Vector(0, 0);
+
+        }
+
+        isHitBy(_partner: Moveable): boolean {
+            let difference: Vector = Vector.difference(this.position, _partner.position);
+            if (this.hitRadius + _partner.hitRadius < difference.length)
+                return false; // no collision
+
+            return true;
+        }
+
+        hit(): void {
+            console.log("Hit: ", this);
+            this.expendable = true;
         }
 
         move(_timeslice: number): void {
@@ -32,12 +49,5 @@ namespace L11_AsteroidsAdvanced {
         draw(): void {
             // defined in subclasses
         }
-
-        // erst später implementieren während der Arbeit im Hauptprogramm
-        // isHit(_test: Vector): boolean {
-        //     let radius: number = 50 * this.size;
-        //     let difference: Vector = new Vector(_test.x - this.position.x, _test.y - this.position.y);
-        //     return (Math.abs(difference.x) < radius && Math.abs(difference.y) < radius);
-        // }
     }
 }

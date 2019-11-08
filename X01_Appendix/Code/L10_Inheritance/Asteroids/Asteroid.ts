@@ -6,10 +6,6 @@ namespace L10_AsteroidsInheritance {
         constructor(_size: number, _position?: Vector) { 
             super(_position);
             this.size = _size;
-            if (_position) // nach Einführung zweiter Paramter
-                this.position = new Vector(_position.x, _position.y);
-            else
-                this.position = new Vector(0, 0); // nur mit dieser Zeile anfangen
             this.type = Math.floor(Math.random() * 4);
 
             this.velocity.random(0.1, 0.2);

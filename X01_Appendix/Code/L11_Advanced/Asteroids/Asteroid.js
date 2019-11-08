@@ -3,12 +3,8 @@ var L11_AsteroidsAdvanced;
 (function (L11_AsteroidsAdvanced) {
     class Asteroid extends L11_AsteroidsAdvanced.Moveable {
         constructor(_size, _position) {
-            super(_position);
+            super(50 * _size, _position);
             this.size = _size;
-            if (_position) // nach Einführung zweiter Paramter
-                this.position = new L11_AsteroidsAdvanced.Vector(_position.x, _position.y);
-            else
-                this.position = new L11_AsteroidsAdvanced.Vector(0, 0); // nur mit dieser Zeile anfangen
             this.type = Math.floor(Math.random() * 4);
             this.velocity.random(0.1, 0.2);
             this.velocity.scale(L11_AsteroidsAdvanced.crc2.canvas.width);
@@ -21,6 +17,12 @@ var L11_AsteroidsAdvanced;
             L11_AsteroidsAdvanced.crc2.lineWidth = 1 / this.size; // erst wenn gesehen wurde, dass die Linienstärke mit der Skalierung schwankt
             L11_AsteroidsAdvanced.crc2.stroke(L11_AsteroidsAdvanced.asteroidPaths[this.type]);
             L11_AsteroidsAdvanced.crc2.restore();
+        }
+        hit() {
+            // console.log("Shoot");
+            super.hit();
+            let event = new CustomEvent("asteroidHit", { detail: { asteroid: this } });
+            L11_AsteroidsAdvanced.crc2.canvas.dispatchEvent(event);
         }
         // erst später implementieren während der Arbeit im Hauptprogramm
         isHit(_test) {

@@ -5,7 +5,7 @@
 ## Generalisierung vs Spezialisierung
 <img src="Material/barabara-liskov.jpg" width="100" align="right"/>
 
-1987 stellte Bararbara Liskov auf einer Konferenz ein Grundprinzip der objektorientierten Modellierung vor. Danach soll ein Objekt einer Klasse durch ein Objekt einer Sub-Klasse dieser Klasse ersetzt werden können, ohne dass das Programm, welches das Objekt verwendet, verändert werden muss. 1993 formalisierte sie zusammen mit Jeannette Wing was heute als das **Liskov'sche Substitutionsprinzip** bekannt ist.
+1987 stellte Bararbara Liskov auf einer Konferenz einen Kerngedanken der objektorientierten Modellierung vor. Danach soll ein Objekt einer Klasse durch ein Objekt einer Sub-Klasse dieser Klasse ersetzt werden können, ohne dass das Programm, welches das Objekt verwendet, verändert werden muss. 1993 formalisierte sie zusammen mit Jeannette Wing was heute als das **Liskov'sche Substitutionsprinzip** bekannt ist.
 
 Bezogen auf Hunde kann das Liskov'sche Substitutionsprinzip folgendermaßen beispielhaft dargestellt werden:  
 Wenn Hunde grundsätzlich bellen können, dann können auch Subklassen von `Hund`, wie `Dogge`, `Chihuahua` und `Pudel` bellen. Wenn Du also an einem Haus klingelst, an dem ein Schild "Warnung vor dem Hund" steht, darfst Du davon ausgehen, dass ein Hund bellen wird. Es ist nicht erforderlich, dass auf dem Schild "Warnung vor dem Pudel" steht, auch wenn der Hund in dem Haus ein Pudel sein sollte.  
@@ -86,11 +86,11 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
 
 ## Polymorphie
 
-Griechisch πολύς (polýs) = „viel“ und μορφή (morphé) = "Form, Gestalt". Hunde sind vielgestaltig, das wurde in diesen Lektionen bereits ausgiebig behandelt. Die einzelnen Hunderassen können aber nicht nur anders aussehen, sondern sich vielleicht auch unterschiedlich verhalten. Ein Jagdhund wird beim Anblick einer Herde Schafe vielleicht gerne hineinrennen und eines reißen, ein Hütehund eher um die Herde herumlaufen und sie beisammen halten. Für jemanden, der mit diesen Hunden spazierengeht, so wie die angeblich 200.000 professionellen Gassigeher in den USA, ist dabei vordringlich wichtig, genug Leinen und Halsbänder zu haben, um die Hunde bei sich halten zu können.
+Griechisch πολύς (polýs) = „viel“ und μορφή (morphé) = "Form, Gestalt". Hunde sind vielgestaltig, das wurde in diesen Lektionen bereits ausgiebig behandelt. Die einzelnen Hunderassen können aber nicht nur anders aussehen, sondern sich vielleicht auch unterschiedlich verhalten. Ein Jagdhund wird beim Anblick einer Herde Schafe vielleicht gerne hineinrennen und eines reißen, ein Hütehund eher um die Herde herumlaufen und sie beisammen halten. Für jemanden, der mit diesen Hunden spazierengeht, so wie die angeblich 200.000 professionellen Gassigeher in den USA, ist dabei vordringlich wichtig, genug Leinen und Halsbänder zu haben, um die Hunde bei sich halten zu können. Die Rasse ist nicht erheblich.
 
 > **Polymorphie** ist das vierte Prinzip der Objektorientierung!
 
-Im Asteroids-Programm sind derzeit zwei Klassen implementiert, die von Moveable erben, also zwei Subklassen der Superklasse Moveable. Anders ausgedrückt hat Moveable hat derzeit drei Gestalten: Moveable, Asteroid und Projectile. Sie unterscheiden sich in Aussehen und Verhalten
+Im Asteroids-Programm sind derzeit zwei Klassen implementiert, die von Moveable erben, also zwei Subklassen der Superklasse Moveable. Anders ausgedrückt hat Moveable derzeit drei Gestalten: Moveable, Asteroid und Projectile. Sie unterscheiden sich in Aussehen und Verhalten
 
 | Klasse | Aussehen | Bewegung |
 |---|---|---|
@@ -98,7 +98,7 @@ Im Asteroids-Programm sind derzeit zwei Klassen implementiert, die von Moveable 
 |Asteroid|Felsbrocken| wie Moveable
 |Projectile| kleiner Punkt| wie Moveable aber Reichweite begrenzt
 
-Damit sich die Instanzen der Klassen bewegen und darstellen können, ruft das Hauptprogramm deren `move`- und `draw`-Methoden auf. Dabei ist es dem Hauptprogramm aber völlig egal, ob es sich dabei um Asteroiden oder Projektile handelt, solange sie Moveables sind und somit diese Methoden entweder geerbt haben oder sie neu implementieren (überschreiben).
+Damit sich die Instanzen der Klassen bewegen und darstellen können, ruft das Hauptprogramm deren `move`- und `draw`-Methoden auf. Dabei ist es dem Hauptprogramm aber völlig egal, ob es sich dabei um Asteroiden oder Projektile handelt, solange sie Moveables sind und somit diese Methoden entweder geerbt haben oder sie neu implementieren (überschreiben). Das Hauptprogramm kann mit allen Gassi gehen ...
 
 Nach dem Liskov'schen Substitutionsprinzip muss Folgendes möglich sein, auch wenn Moveable vielgestaltig ist:
 

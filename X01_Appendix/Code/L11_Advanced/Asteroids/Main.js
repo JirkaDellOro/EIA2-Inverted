@@ -17,18 +17,22 @@ var L11_AsteroidsAdvanced;
         createUfo();
         createUfo();
         createUfo();
+        createUfo();
         // canvas.addEventListener("mousedown", loadLaser);
         // canvas.addEventListener("mousedown", shootProjectile);
         canvas.addEventListener("mouseup", shootLaser);
         // canvas.addEventListener("keypress", handleKeypress);
         // canvas.addEventListener("mousemove", setHeading);
+        // Event-Names candidates for enum
         canvas.addEventListener("ufoShoots", ufoShoot);
+        canvas.addEventListener("asteroidHit", breakAsteroid);
         window.setInterval(update, 20);
     }
     function shootProjectile(_origin) {
         let velocity = new L11_AsteroidsAdvanced.Vector(0, 0);
         velocity.random(200, 200);
         let projectile = new L11_AsteroidsAdvanced.Projectile(_origin, velocity);
+        projectile.move(0.15);
         L11_AsteroidsAdvanced.moveables.push(projectile);
     }
     function ufoShoot(_event) {
@@ -55,9 +59,25 @@ var L11_AsteroidsAdvanced;
             moveable.draw();
         }
         // ship.draw();
-        // handleCollisions();
         deleteExpendables();
+        handleCollisions();
         console.log("Moveables: ", L11_AsteroidsAdvanced.moveables.length);
+    }
+    function handleCollisions() {
+        for (let i = 0; i < L11_AsteroidsAdvanced.moveables.length; i++) {
+            let moveable0 = L11_AsteroidsAdvanced.moveables[i];
+            for (let j = i + 1; j < L11_AsteroidsAdvanced.moveables.length; j++) {
+                let moveable1 = L11_AsteroidsAdvanced.moveables[j];
+                if (moveable0 instanceof L11_AsteroidsAdvanced.Asteroid && moveable1 instanceof L11_AsteroidsAdvanced.Asteroid)
+                    continue;
+                if (moveable0.expendable || moveable1.expendable)
+                    continue;
+                if (moveable0.isHitBy(moveable1)) {
+                    moveable0.hit();
+                    moveable1.hit();
+                }
+            }
+        }
     }
     function deleteExpendables() {
         // step backwards for deletion
@@ -68,30 +88,20 @@ var L11_AsteroidsAdvanced;
     }
     function shootLaser(_event) {
         console.log("Shoot laser");
-        let hotspot = new L11_AsteroidsAdvanced.Vector(_event.clientX - L11_AsteroidsAdvanced.crc2.canvas.offsetLeft, _event.clientY - L11_AsteroidsAdvanced.crc2.canvas.offsetTop);
-        let asteroidHit = getAsteroidHit(hotspot);
-        console.log("Asteroid hit: ", asteroidHit);
-        if (asteroidHit)
-            breakAsteroid(asteroidHit);
-        //     asteroidHit.velocity = new Vector(0, 0);
+        let position = new L11_AsteroidsAdvanced.Vector(_event.clientX - L11_AsteroidsAdvanced.crc2.canvas.offsetLeft, _event.clientY - L11_AsteroidsAdvanced.crc2.canvas.offsetTop);
+        let hotspot = new L11_AsteroidsAdvanced.Hotspot(position);
+        L11_AsteroidsAdvanced.moveables.push(hotspot);
     }
-    function getAsteroidHit(_hotspot) {
-        console.log("Get asteroid hit");
-        for (let moveable of L11_AsteroidsAdvanced.moveables) {
-            if (moveable instanceof L11_AsteroidsAdvanced.Asteroid && moveable.isHit(_hotspot))
-                return moveable;
-        }
-        return null;
-    }
-    function breakAsteroid(_asteroid) {
-        if (_asteroid.size > 0.3) {
+    function breakAsteroid(_event) {
+        let asteroid = _event.detail.asteroid;
+        if (asteroid.size > 0.3) {
             for (let i = 0; i < 2; i++) {
-                let fragment = new L11_AsteroidsAdvanced.Asteroid(_asteroid.size / 2, _asteroid.position);
-                fragment.velocity.add(_asteroid.velocity);
+                let fragment = new L11_AsteroidsAdvanced.Asteroid(asteroid.size / 2, asteroid.position);
+                fragment.velocity.add(asteroid.velocity);
                 L11_AsteroidsAdvanced.moveables.push(fragment);
             }
         }
-        _asteroid.expendable = true;
+        asteroid.expendable = true;
     }
 })(L11_AsteroidsAdvanced || (L11_AsteroidsAdvanced = {}));
 //# sourceMappingURL=Main.js.map

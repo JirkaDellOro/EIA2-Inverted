@@ -4,7 +4,6 @@ var L10_AsteroidsInheritance;
     class Projectile extends L10_AsteroidsInheritance.Moveable {
         constructor(_position, _velocity) {
             super(_position);
-            this.position = new L10_AsteroidsInheritance.Vector(_position.x, _position.y);
             this.velocity = new L10_AsteroidsInheritance.Vector(_velocity.x, _velocity.y);
             this.range = 2;
         }

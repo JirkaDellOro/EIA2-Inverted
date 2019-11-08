@@ -3,7 +3,7 @@ namespace L11_AsteroidsAdvanced {
         speed: number = 50;
 
         constructor() {
-            super();
+            super(25);
             this.position = new Vector(0, Math.random() * crc2.canvas.height);
 
             // let speed: number = 100; // zuerst hier implementieren, dann als Objekt-Attribut, schließlich als Klassenattribut

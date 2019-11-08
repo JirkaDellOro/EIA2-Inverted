@@ -5,6 +5,12 @@ var L11_AsteroidsAdvanced;
         constructor(_x, _y) {
             this.set(_x, _y);
         }
+        static difference(_vec0, _vec1) {
+            return new Vector(_vec0.x - _vec1.x, _vec0.y - _vec1.y);
+        }
+        get length() {
+            return Math.hypot(this.x, this.y);
+        }
         set(_x, _y) {
             this.x = _x;
             this.y = _y;

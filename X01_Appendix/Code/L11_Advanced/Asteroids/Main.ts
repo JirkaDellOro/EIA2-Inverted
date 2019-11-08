@@ -19,13 +19,17 @@ namespace L11_AsteroidsAdvanced {
         createUfo();
         createUfo();
         createUfo();
+        createUfo();
 
         // canvas.addEventListener("mousedown", loadLaser);
         // canvas.addEventListener("mousedown", shootProjectile);
         canvas.addEventListener("mouseup", shootLaser);
         // canvas.addEventListener("keypress", handleKeypress);
         // canvas.addEventListener("mousemove", setHeading);
+
+        // Event-Names candidates for enum
         canvas.addEventListener("ufoShoots", ufoShoot);
+        canvas.addEventListener("asteroidHit", breakAsteroid);
 
         window.setInterval(update, 20);
     }
@@ -34,6 +38,7 @@ namespace L11_AsteroidsAdvanced {
         let velocity: Vector = new Vector(0, 0);
         velocity.random(200, 200);
         let projectile: Projectile = new Projectile(_origin, velocity);
+        projectile.move(0.15);
         moveables.push(projectile);
     }
 
@@ -66,10 +71,29 @@ namespace L11_AsteroidsAdvanced {
         }
 
         // ship.draw();
-        // handleCollisions();
 
         deleteExpendables();
+
+        handleCollisions();
+
         console.log("Moveables: ", moveables.length);
+    }
+
+    function handleCollisions(): void {
+        for (let i: number = 0; i < moveables.length; i++) {
+            let moveable0: Moveable = moveables[i];
+            for (let j: number = i + 1; j < moveables.length; j++) {
+                let moveable1: Moveable = moveables[j];
+                if (moveable0 instanceof Asteroid && moveable1 instanceof Asteroid)
+                    continue;
+                if (moveable0.expendable || moveable1.expendable    )
+                    continue;
+                if (moveable0.isHitBy(moveable1)) {
+                    moveable0.hit();
+                    moveable1.hit();
+                }
+            }
+        }
     }
 
     function deleteExpendables(): void {
@@ -82,33 +106,20 @@ namespace L11_AsteroidsAdvanced {
 
     function shootLaser(_event: MouseEvent): void {
         console.log("Shoot laser");
-        let hotspot: Vector = new Vector(_event.clientX - crc2.canvas.offsetLeft, _event.clientY - crc2.canvas.offsetTop);
-        let asteroidHit: Asteroid | null = getAsteroidHit(hotspot);
-        console.log("Asteroid hit: ", asteroidHit);
-        if (asteroidHit)
-            breakAsteroid(asteroidHit);
-        //     asteroidHit.velocity = new Vector(0, 0);
-
-
+        let position: Vector = new Vector(_event.clientX - crc2.canvas.offsetLeft, _event.clientY - crc2.canvas.offsetTop);
+        let hotspot: Hotspot = new Hotspot(position);
+        moveables.push(hotspot);
     }
 
-    function getAsteroidHit(_hotspot: Vector): Asteroid | null {
-        console.log("Get asteroid hit");
-        for (let moveable of moveables) {
-            if (moveable instanceof Asteroid && moveable.isHit(_hotspot))
-                return moveable;
-        }
-        return null;
-    }
-
-    function breakAsteroid(_asteroid: Asteroid): void {
-        if (_asteroid.size > 0.3) {
+    function breakAsteroid(_event: Event): void {
+        let asteroid: Asteroid = (<CustomEvent>_event).detail.asteroid;
+        if (asteroid.size > 0.3) {
             for (let i: number = 0; i < 2; i++) {
-                let fragment: Asteroid = new Asteroid(_asteroid.size / 2, _asteroid.position);
-                fragment.velocity.add(_asteroid.velocity);
+                let fragment: Asteroid = new Asteroid(asteroid.size / 2, asteroid.position);
+                fragment.velocity.add(asteroid.velocity);
                 moveables.push(fragment);
             }
         }
-        _asteroid.expendable = true;
+        asteroid.expendable = true;
     }
 }

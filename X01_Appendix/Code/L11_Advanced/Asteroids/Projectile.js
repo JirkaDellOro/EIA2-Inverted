@@ -3,8 +3,7 @@ var L11_AsteroidsAdvanced;
 (function (L11_AsteroidsAdvanced) {
     class Projectile extends L11_AsteroidsAdvanced.Moveable {
         constructor(_position, _velocity) {
-            super(_position);
-            this.position = new L11_AsteroidsAdvanced.Vector(_position.x, _position.y);
+            super(4, _position);
             this.velocity = new L11_AsteroidsAdvanced.Vector(_velocity.x, _velocity.y);
             this.range = 2;
         }

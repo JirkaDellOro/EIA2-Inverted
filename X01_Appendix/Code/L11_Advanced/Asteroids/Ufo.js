@@ -3,7 +3,7 @@ var L11_AsteroidsAdvanced;
 (function (L11_AsteroidsAdvanced) {
     class Ufo extends L11_AsteroidsAdvanced.Moveable {
         constructor() {
-            super();
+            super(25);
             this.speed = 50;
             this.position = new L11_AsteroidsAdvanced.Vector(0, Math.random() * L11_AsteroidsAdvanced.crc2.canvas.height);
             // let speed: number = 100; // zuerst hier implementieren, dann als Objekt-Attribut, schließlich als Klassenattribut

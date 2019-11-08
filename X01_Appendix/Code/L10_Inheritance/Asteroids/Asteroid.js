@@ -5,10 +5,6 @@ var L10_AsteroidsInheritance;
         constructor(_size, _position) {
             super(_position);
             this.size = _size;
-            if (_position) // nach Einführung zweiter Paramter
-                this.position = new L10_AsteroidsInheritance.Vector(_position.x, _position.y);
-            else
-                this.position = new L10_AsteroidsInheritance.Vector(0, 0); // nur mit dieser Zeile anfangen
             this.type = Math.floor(Math.random() * 4);
             this.velocity.random(0.1, 0.2);
             this.velocity.scale(L10_AsteroidsInheritance.crc2.canvas.width);
