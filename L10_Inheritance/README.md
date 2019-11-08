@@ -1,11 +1,12 @@
 # L10_Inheritance
 
+![](Material/Evolution.jpg)
+
+## Generalisierung vs Spezialisierung
 <img src="Material/barabara-liskov.jpg" width="100" align="right"/>
-<img src="Material/jeannette-wing.jpg" width="100" align="left"/>
 
 1987 stellte Bararbara Liskov auf einer Konferenz ein Grundprinzip der objektorientierten Modellierung vor. Danach soll ein Objekt einer Klasse durch ein Objekt einer Sub-Klasse dieser Klasse ersetzt werden können, ohne dass das Programm, welches das Objekt verwendet, verändert werden muss. 1993 formalisierte sie zusammen mit Jeannette Wing was heute als das **Liskov'sche Substitutionsprinzip** bekannt ist.
 
-## Generalisierung vs Spezialisierung
 Bezogen auf Hunde kann das Liskov'sche Substitutionsprinzip folgendermaßen beispielhaft dargestellt werden:  
 Wenn Hunde grundsätzlich bellen können, dann können auch Subklassen von `Hund`, wie `Dogge`, `Chihuahua` und `Pudel` bellen. Wenn Du also an einem Haus klingelst, an dem ein Schild "Warnung vor dem Hund" steht, darfst Du davon ausgehen, dass ein Hund bellen wird. Es ist nicht erforderlich, dass auf dem Schild "Warnung vor dem Pudel" steht, auch wenn der Hund in dem Haus ein Pudel sein sollte.  
 
