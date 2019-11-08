@@ -143,4 +143,9 @@ moveables.push(new Projectile(new Vector(0, 0), new Vector(0, 0)));
 
 > **`a instanceof B`** prüft, ob das Objekt `a` eine Instanz der Klasse `B` ist.
 
-- [x] Implementiere die Ufos! Der Pfad wird bereits von der Funktion `createUfoPath()` erzeugt. 
+- [x] Implementiere die Ufos! Dabei musst Du unter anderem folgende Designentscheidung treffen:
+  - wer soll die Projektile erzeugen? Wird diese Aufgabe von den Ufos übernommen oder vom Hauptprogramm?
+    - wenn Ufo: wie kommen die Projektile in das Moveable-Array um verwaltet zu werden?
+    - wenn Hauptprogramm: wie erkennt das Hauptprogramm, dass das Ufo ein Projektil abfeuert? 
+
+Der Pfad wird bereits von der Funktion `createUfoPath()` erzeugt. 

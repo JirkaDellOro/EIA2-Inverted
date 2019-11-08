@@ -1,4 +1,4 @@
-namespace L10_AsteroidsInheritance {
+namespace L11_AsteroidsAdvanced {
     export class Asteroid extends Moveable {
         type: number;
         size: number;

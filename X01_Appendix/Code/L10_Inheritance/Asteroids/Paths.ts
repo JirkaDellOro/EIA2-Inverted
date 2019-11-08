@@ -1,4 +1,4 @@
-namespace L10_Asteroids {
+namespace L10_AsteroidsInheritance {
     export let asteroidPaths: Path2D[];
     export let ufoPath: Path2D;
 

@@ -1,6 +1,6 @@
 "use strict";
-var L10_AsteroidsInheritance;
-(function (L10_AsteroidsInheritance) {
+var L11_AsteroidsAdvanced;
+(function (L11_AsteroidsAdvanced) {
     class Vector {
         constructor(_x, _y) {
             this.set(_x, _y);
@@ -24,6 +24,6 @@ var L10_AsteroidsInheritance;
             this.scale(length);
         }
     }
-    L10_AsteroidsInheritance.Vector = Vector;
-})(L10_AsteroidsInheritance || (L10_AsteroidsInheritance = {}));
+    L11_AsteroidsAdvanced.Vector = Vector;
+})(L11_AsteroidsAdvanced || (L11_AsteroidsAdvanced = {}));
 //# sourceMappingURL=Vector.js.map
