@@ -14,20 +14,26 @@ var L11_AsteroidsAdvanced;
         L11_AsteroidsAdvanced.crc2.strokeStyle = "white";
         L11_AsteroidsAdvanced.createPaths();
         createAsteroids(5);
-        // createShip();
+        createUfo();
+        createUfo();
+        createUfo();
         // canvas.addEventListener("mousedown", loadLaser);
-        canvas.addEventListener("mousedown", shootProjectile);
+        // canvas.addEventListener("mousedown", shootProjectile);
         canvas.addEventListener("mouseup", shootLaser);
         // canvas.addEventListener("keypress", handleKeypress);
         // canvas.addEventListener("mousemove", setHeading);
+        canvas.addEventListener("ufoShoots", ufoShoot);
         window.setInterval(update, 20);
     }
-    function shootProjectile(_event) {
-        let origin = new L11_AsteroidsAdvanced.Vector(_event.clientX - L11_AsteroidsAdvanced.crc2.canvas.offsetLeft, _event.clientY - L11_AsteroidsAdvanced.crc2.canvas.offsetTop);
+    function shootProjectile(_origin) {
         let velocity = new L11_AsteroidsAdvanced.Vector(0, 0);
-        velocity.random(100, 100);
-        let projectile = new L11_AsteroidsAdvanced.Projectile(origin, velocity);
+        velocity.random(200, 200);
+        let projectile = new L11_AsteroidsAdvanced.Projectile(_origin, velocity);
         L11_AsteroidsAdvanced.moveables.push(projectile);
+    }
+    function ufoShoot(_event) {
+        let ufo = _event.detail.ufo;
+        shootProjectile(ufo.position);
     }
     function createAsteroids(_nAsteroids) {
         console.log("Create asteroids");
@@ -35,6 +41,11 @@ var L11_AsteroidsAdvanced;
             let asteroid = new L11_AsteroidsAdvanced.Asteroid(1.0);
             L11_AsteroidsAdvanced.moveables.push(asteroid);
         }
+    }
+    function createUfo() {
+        console.log("Create ufo");
+        let ufo = new L11_AsteroidsAdvanced.Ufo();
+        L11_AsteroidsAdvanced.moveables.push(ufo);
     }
     function update() {
         // console.log("Update");
