@@ -222,6 +222,10 @@ Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die 
   - Break bleibt im Hauptprogramm
 
 
-- [x] Das erste Problem tritt auf durch die Übergabe der Position an den optionalen Parameter _position im Constructor der Asteroid-Klasse. Da Vector ein komplexer Typ ist, halten die Variablen des Typs lediglich Referenzen auf Vektorobjekte. Durch die Zuweisung des Parameterinhaltes an das Objektattribut wurde also kein neues Vektorobjekt erzeugt, sondern die Referenz erneut genutzt. Deswegen haben die Bruchstücke die gleiche Position. Löse das Problem, in dem Du nicht die Referenz zuweist, sondern mit den Informationen des Parameters ein neues Positionsobjekt instanzierst und dieses zuweist.
+Ein Problem tritt auf bei der Übergabe der Position an den optionalen Parameter _position im Constructor der Asteroid-Klasse. Da Vector ein komplexer Typ ist, hält eine Variable dieses Typs lediglich eine Referenz auf ein Vektorobjekt. Durch die Zuweisung des Parameterinhaltes an das Objektattribut wurde also kein neues Vektorobjekt erzeugt, sondern nur die Referenz erneut genutzt. Die Bruchstücke referenzieren also das gleiche Vektorobjekt und haben daher die gleiche Position.
+
+- [x]  Löse das Problem, in dem Du nicht die Referenz zuweist, sondern mit den Informationen des Parameters ein neues Positionsobjekt instanzierst und dieses zuweist.
+- [x] Erweitere die Vektorklasse um eine Methode `copy()`, welche ein neues Vektorobjekt zurückliefert, das die gleichen Attributwerte hat wie der Vektor der sie ausführt.
+- [x] Nutze diese Methode um das obige Problem noch eleganter zu lösen.
 - [x] Skaliere die Linienstärke in der draw-Methode der Asteroid-Klasse entsprechend des size-Attributs umgekehrt proportional hoch.
 
