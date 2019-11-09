@@ -2,8 +2,8 @@ namespace L09_Asteroids {
     window.addEventListener("load", handleLoad);
 
     export let crc2: CanvasRenderingContext2D;
+
     let asteroids: Asteroid[] = [];
-    // let ship: Ship;
 
     function handleLoad(_event: Event): void {
         console.log("Asteroids starting");
@@ -15,6 +15,8 @@ namespace L09_Asteroids {
         crc2.strokeStyle = "white";
 
         createPaths();
+        console.log("Asteroids paths: ", asteroidPaths);
+
         createAsteroids(5);
         // createShip();
 
@@ -26,41 +28,16 @@ namespace L09_Asteroids {
         window.setInterval(update, 20);
     }
 
-    function createAsteroids(_nAsteroids: number): void {
-        console.log("Create asteroids");
-        for (let i: number = 0; i < _nAsteroids; i++) {
-            let asteroid: Asteroid = new Asteroid(1.0);
-            asteroids.push(asteroid);
-        }
-    }
-
-    function update(): void {
-        // console.log("Update");
-        crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height);
-
-        for (let asteroid of asteroids) {
-            asteroid.move(1 / 50);
-            asteroid.draw();
-        }
-
-        // ship.draw();
-        // handleCollisions();
-    }
-
     function shootLaser(_event: MouseEvent): void {
-        console.log("Shoot laser")
+        console.log("Shoot laser");
         let hotspot: Vector = new Vector(_event.clientX - crc2.canvas.offsetLeft, _event.clientY - crc2.canvas.offsetTop);
         let asteroidHit: Asteroid | null = getAsteroidHit(hotspot);
-        console.log("Asteroid hit: ", asteroidHit);
+        console.log(asteroidHit);
         if (asteroidHit)
             breakAsteroid(asteroidHit);
-        //     asteroidHit.velocity = new Vector(0, 0);
-
-
     }
 
     function getAsteroidHit(_hotspot: Vector): Asteroid | null {
-        console.log("Get asteroid hit");
         for (let asteroid of asteroids) {
             if (asteroid.isHit(_hotspot))
                 return asteroid;
@@ -78,5 +55,26 @@ namespace L09_Asteroids {
         }
         let index: number = asteroids.indexOf(_asteroid);
         asteroids.splice(index, 1);
+    }
+
+    function createAsteroids(_nAsteroids: number): void {
+        console.log("Create asteroids");
+        for (let i: number = 0; i < _nAsteroids; i++) {
+            let asteroid: Asteroid = new Asteroid(1.0);
+            asteroids.push(asteroid);
+        }
+    }
+
+    function update(): void {
+        console.log("Update");
+        crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height);
+
+        for (let asteroid of asteroids) {
+            asteroid.move(1 / 50);
+            asteroid.draw();
+        }
+
+        // ship.draw();
+        // handleCollisions();
     }
 }

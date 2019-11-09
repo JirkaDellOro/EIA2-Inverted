@@ -220,3 +220,8 @@ Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die 
     - als optionaler Parameter in Constructor 
   - Asteroid könnte Bruchstücke liefern, weiß aber nichts von der Asteroidenliste um sie dort einzutragen und sich selbst zu löschen
   - Break bleibt im Hauptprogramm
+
+
+- [x] Das erste Problem tritt auf durch die Übergabe der Position an den optionalen Parameter _position im Constructor der Asteroid-Klasse. Da Vector ein komplexer Typ ist, halten die Variablen des Typs lediglich Referenzen auf Vektorobjekte. Durch die Zuweisung des Parameterinhaltes an das Objektattribut wurde also kein neues Vektorobjekt erzeugt, sondern die Referenz erneut genutzt. Deswegen haben die Bruchstücke die gleiche Position. Löse das Problem, in dem Du nicht die Referenz zuweist, sondern mit den Informationen des Parameters ein neues Positionsobjekt instanzierst und dieses zuweist.
+- [x] Skaliere die Linienstärke in der draw-Methode der Asteroid-Klasse entsprechend des size-Attributs umgekehrt proportional hoch.
+
