@@ -154,17 +154,17 @@ Für jeden Objekttyp stellst Du dir dann die folgenden Fragen, wobei "es" ein be
 
 Die ersten beiden Fragen führen dich direkt zur Darstellung der einzelnen Klassen im Diagramm. Kümmern wir uns zunächst um die Asteroiden...
 
-**Video: Definition der Asteroiden als Klassendiagramm**
-
-![](Material/draw.io/Asteroids_ClassDiagram.svg)
-
+**Video: Definition der Asteroiden als Klassendiagramm**  
+<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/Asteroids_ClassDiagram.jpg"/><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
 
 ## Aktivitätsdiagramm
 Jetzt kannst Du die einzelnen Methoden mit Hilfe von Aktivitätsdiagrammen konzipieren. 
 
 **Video: Definition der Methoden als Aktivitätsdiagramme**
 
-![](Material/draw.io/Asteroids_ActivityDiagram-Asteroid.svg)
+<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"/><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
 
 ## Implementation
 
@@ -205,9 +205,15 @@ Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die 
   - iterieren über Array
   - move und draw
 
+
+<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/Asteroids_ActivityDiagram-Main.jpg"/><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
+
 > **Hinweis:** Nicht alles lässt sich von vorneherein festlegen, manches musst Du ausprobieren, um ein Gefühl dafür zu bekommen, wie ein gutes Nutzungserlebnis erreicht werden kann. In der Konzeption musst Du abschätzen, welche Tests erforderlich sind und wie Du diese ermöglichst. Du musst zudem selbst Prototypen entwickeln können, um kleinere Sachen alleine zu implementieren und auszuprobieren ohne dafür einen Stab von Leuten zu beschäftigen!
 
 **Video: Implementation**
+
+<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 - Hit-Detection
   - wohin damit?
@@ -220,3 +226,12 @@ Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die 
     - als optionaler Parameter in Constructor 
   - Asteroid könnte Bruchstücke liefern, weiß aber nichts von der Asteroidenliste um sie dort einzutragen und sich selbst zu löschen
   - Break bleibt im Hauptprogramm
+
+
+Ein Problem tritt auf bei der Übergabe der Position an den optionalen Parameter _position im Constructor der Asteroid-Klasse. Da Vector ein komplexer Typ ist, hält eine Variable dieses Typs lediglich eine Referenz auf ein Vektorobjekt. Durch die Zuweisung des Parameterinhaltes an das Objektattribut wurde also kein neues Vektorobjekt erzeugt, sondern nur die Referenz erneut genutzt. Die Bruchstücke referenzieren also das gleiche Vektorobjekt und haben daher die gleiche Position.
+
+- [x]  Löse das Problem, in dem Du nicht die Referenz zuweist, sondern mit den Informationen des Parameters ein neues Positionsobjekt instanzierst und dieses zuweist.
+- [x] Erweitere die Vektorklasse um eine Methode `copy()`, welche ein neues Vektorobjekt zurückliefert, das die gleichen Attributwerte hat wie der Vektor der sie ausführt.
+- [x] Nutze diese Methode um das obige Problem noch eleganter zu lösen.
+- [x] Skaliere die Linienstärke in der draw-Methode der Asteroid-Klasse entsprechend des size-Attributs umgekehrt proportional hoch.
+

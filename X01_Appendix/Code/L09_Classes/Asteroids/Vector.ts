@@ -16,7 +16,7 @@ namespace L09_Asteroids {
             this.x *= _factor;
             this.y *= _factor;
         }
-    
+
         add(_addend: Vector): void {
             this.x += _addend.x;
             this.y += _addend.y;
