@@ -16,7 +16,7 @@ namespace L10_AsteroidsInheritance {
             this.x *= _factor;
             this.y *= _factor;
         }
-    
+
         add(_addend: Vector): void {
             this.x += _addend.x;
             this.y += _addend.y;
@@ -28,6 +28,10 @@ namespace L10_AsteroidsInheritance {
 
             this.set(Math.cos(direction), Math.sin(direction));
             this.scale(length);
+        }
+
+        copy(): Vector {
+            return new Vector(this.x, this.y);
         }
     }
 }

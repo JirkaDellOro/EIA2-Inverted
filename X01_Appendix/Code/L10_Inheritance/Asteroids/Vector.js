@@ -23,6 +23,9 @@ var L10_AsteroidsInheritance;
             this.set(Math.cos(direction), Math.sin(direction));
             this.scale(length);
         }
+        copy() {
+            return new Vector(this.x, this.y);
+        }
     }
     L10_AsteroidsInheritance.Vector = Vector;
 })(L10_AsteroidsInheritance || (L10_AsteroidsInheritance = {}));

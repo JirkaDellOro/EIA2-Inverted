@@ -4,18 +4,20 @@ namespace L10_AsteroidsInheritance {
         velocity: Vector;
         expendable: boolean = false;
 
-        constructor(_position?: Vector) { // zweiten Parameter erst später einführen
-            if (_position) // nach Einführung zweiter Paramter
-                this.position = new Vector(_position.x, _position.y);
-            else
-                this.position = new Vector(0, 0); // nur mit dieser Zeile anfangen
+        constructor(_position?: Vector) {
+            // console.log("Moveable constructor");
 
-            // set velocity in pixel per second
+            if (_position)
+                this.position = _position.copy();
+            else
+                this.position = new Vector(0, 0);
+
             this.velocity = new Vector(0, 0);
         }
 
         move(_timeslice: number): void {
-            let offset: Vector = new Vector(this.velocity.x, this.velocity.y);
+            // console.log("Moveable move");
+            let offset: Vector = this.velocity.copy();
             offset.scale(_timeslice);
             this.position.add(offset);
 
@@ -30,14 +32,7 @@ namespace L10_AsteroidsInheritance {
         }
 
         draw(): void {
-            // defined in subclasses
+            // console.log("Moveable move");
         }
-
-        // erst später implementieren während der Arbeit im Hauptprogramm
-        // isHit(_test: Vector): boolean {
-        //     let radius: number = 50 * this.size;
-        //     let difference: Vector = new Vector(_test.x - this.position.x, _test.y - this.position.y);
-        //     return (Math.abs(difference.x) < radius && Math.abs(difference.y) < radius);
-        // }
     }
 }

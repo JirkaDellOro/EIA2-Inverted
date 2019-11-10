@@ -3,16 +3,17 @@ var L10_AsteroidsInheritance;
 (function (L10_AsteroidsInheritance) {
     class Moveable {
         constructor(_position) {
+            // console.log("Moveable constructor");
             this.expendable = false;
-            if (_position) // nach Einführung zweiter Paramter
-                this.position = new L10_AsteroidsInheritance.Vector(_position.x, _position.y);
+            if (_position)
+                this.position = _position.copy();
             else
-                this.position = new L10_AsteroidsInheritance.Vector(0, 0); // nur mit dieser Zeile anfangen
-            // set velocity in pixel per second
+                this.position = new L10_AsteroidsInheritance.Vector(0, 0);
             this.velocity = new L10_AsteroidsInheritance.Vector(0, 0);
         }
         move(_timeslice) {
-            let offset = new L10_AsteroidsInheritance.Vector(this.velocity.x, this.velocity.y);
+            // console.log("Moveable move");
+            let offset = this.velocity.copy();
             offset.scale(_timeslice);
             this.position.add(offset);
             if (this.position.x < 0)
@@ -25,7 +26,7 @@ var L10_AsteroidsInheritance;
                 this.position.y -= L10_AsteroidsInheritance.crc2.canvas.height;
         }
         draw() {
-            // defined in subclasses
+            // console.log("Moveable move");
         }
     }
     L10_AsteroidsInheritance.Moveable = Moveable;
