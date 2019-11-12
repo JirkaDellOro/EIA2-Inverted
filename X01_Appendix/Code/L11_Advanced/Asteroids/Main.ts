@@ -32,6 +32,8 @@ namespace L11_AsteroidsAdvanced {
         canvas.addEventListener("asteroidHit", breakAsteroid);
 
         window.setInterval(update, 20);
+
+        let m: Moveable = new Moveable();
     }
 
     function shootProjectile(_origin: Vector): void {

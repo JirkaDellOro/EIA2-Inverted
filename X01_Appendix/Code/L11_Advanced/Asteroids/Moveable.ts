@@ -1,5 +1,5 @@
 namespace L11_AsteroidsAdvanced {
-    export class Moveable {
+    export abstract class Moveable {
         position: Vector;
         velocity: Vector;
         expendable: boolean = false;
@@ -46,8 +46,6 @@ namespace L11_AsteroidsAdvanced {
                 this.position.y -= crc2.canvas.height;
         }
 
-        draw(): void {
-            // defined in subclasses
-        }
+        abstract draw(): void;
     }
 }
