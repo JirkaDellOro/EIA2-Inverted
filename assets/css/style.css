@@ -731,7 +731,18 @@ by Matt Graham
        background-color: #adcafc; }
    #banner .fork {
      position: fixed;
-     left: 50%;
+     left: 40%;
+     height: 1%;
+     margin-left: -325px;
+     padding: 10px 12px;
+     margin-top: 4px;
+     line-height: 14px;
+     font-size: 14px;
+     background-color: #aac1f8;
+     }
+      #banner .fork2 {
+     position: fixed;
+     left: 52%;
      height: 1%;
      margin-left: -325px;
      padding: 10px 12px;
