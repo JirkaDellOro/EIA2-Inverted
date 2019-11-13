@@ -1,4 +1,3 @@
-Starten mit Quiz (so wie sonst), allerdings inklusive Internetrecherche
 - wer seid ihr?
   - zu viele für Namen, aber als Gruppe?
   - Namen nennen bei Meldung

@@ -22,118 +22,100 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 
 ## Gliederung
 ### [L00_Preface](L00_Preface)
-- Medienkonzeption bei DM
-- Aufbau der Veranstaltung
-- Verwendete Technik
-- Landscape
-- Coding Guidelines
+- Medienkonzeption und Digitale Medien
+- Wichtige Dokumente
+- Veranstaltungskonzept
 
 ### [L01_Recap&Foundation](L01_Recap&Foundation)
-- Code structures as activities
-- Activity- & Object-Nodes
-- Simple and Complex Datatypes
-- Javascript Standard-Objects
-- Javascript Global Functions
-- Document Object Model
-- Retrieving & Creating Elements
-- Designtime, Compiletime, Runtime
-- Tracetable
+- Einleitung
+- Rückblick
+- Einblick
+- Variablen
+- Datentypen
+- Explizite Typisierung
+- Komplexe Datentypen
+- Fehlertypen
+- Trace Table
 - Debugger
+- Aktivitätsdiagramm
 
 ### [L02_Events](L02_Events)
-- Event-Object, Listener, Handler
-- Implementation
-- Propagation (Phases)
-- Targets
-- Pointer, Keyboard, Window
+- Rückblick DOM
+- Ereignisse
+- Event-Handler
+- Event-Phasen
+- Anwendungsfalldiagramm (Use-Case-Diagram)
+- Skizze: User Interface 
+- Iterative Arbeitsweise
   
 ### [L03_FormElements](L03_FormElements)
-- Input Text, different types
-- Radiobutton, Checkbox
-- Slider, Stepper
-- Select, Datalist
-- Output
-- Name 
-- Change- & Input-Event
-- Attributes without value
-  - multiple for select
-  - checked for checkbox
-- Iteration on Elements
-- FormData-Object
-- Process values locally
+- Texteingabe
+- Selektionen
+- Ausgabeelemente
+- Konzeption und Implementation einer formulargesteuerten Anwendung  
+- FormData
   
 ### [L04_DataStructures](L04_DataStructures)
-- Interfaces
-- Associative Array
-  - homogenous
-  - heterogenous
-  - static keys
-  - dynamic keys
-- JSON
-- Export
-- Iterate over elements
+- Separation Of Concerns
+- Trennung von Struktur und Inhalt
+- Algorithmen und Datenstrukturen
+- Datenstruktur für die Cocktailbar
+- Generierung des Formulars
+- Refactoring
+- JSON (Javascript Object Notation)
 
 ### [L05_Client](L05_Client)
-- GET/POST
-- QueryString
-- FormData-Object
-- Fetch (former XMLHttpRequest)
-- Promise
+- Synchrone und asynchrone Kommunikation
+- Forms
+- XmlHttpRequest-Events
+- Fetch & Promises
+- Async/Await
+- Uniform Resource Locator (URL)
+- Lokaler Fileserver
+- JSON-Objekt
 
 ### [L06_Server](L06_Server)
-- ServerSide
-- Node
-  - install @types/node with npm
-  - argv
-  - env
+- Node.js
+- Erweiterungen
+- HTTP-Modul
+- Request-Handling
+- URL-Modul
+- Response-Handling
 - Heroku
-  - start new app in Heroku
-  - connect to repository and branch
-  - deploy app and view log
-  - add and edit package.json
-  - call app via http -> server missing
-- Server- & URL-Class
-  - add http-Server and create response
-  - find parameters in browser analysis (if possible for GET)
-  - show node URL scheme in documentation
-- CORS
-- localhost
+- Clientanpassung
 
 ### [L07_Database](L07_Database)
-- NoSQL
+- Relationale Datenbanken
+- NoSQL-Datenbanken
 - MongoDB
-  - start mongod in terminal
-  - see port and other messages
-  - start shell in system console
-  - type some commands
-  - see response in terminal
-- Mongo in Node
-  -    install @types
-- Database on MongoDB Atlas (former mLab)
-- Database.ts - Module
-- Callbacks
-- Anonymous and nested functions
+- Allgemeine Datenbankstruktur
+- Datenbankstruktur für die Cocktailbar
+- Installation
+- Mongo Shell
+- MongoDB in Node
+- Online Service
+
 
 ### [L08_Canvas](L08_Canvas)
-- HTMLCanvasElement
-- RenderingContext
-- Immediate/Deferred Rendering
-- Path-Metaphor
-- Drawing Commands
-- Relative Positioning
+- CanvasRenderingContext
+- Pfade
+- Rendering
+- Koordinatensystem
+- Transformation
+- Stil
+- Linien
 - Save/Restore
-- Shortcuts fillRect and strokeRect
-- Create functions for drawing repetitive images
+
 
 ### [L09_Classes](L09_Classes)
-- Refactor interfaces to classes
-- Class-Diagram
-- Property/Attribute
-- Method
+- Objektorientierte Programmierung
+- Entwurf
+- Instanzierung
 - Constructor
-- Instance/Object
-- Garbage Collection
-- Animation
+- Konventionen
+- Klassendiagramm
+- Zeitsignale
+
 
 ### [L10_Inheritance](L10_Inheritance)
 - Identify common properties and behaviours
@@ -149,6 +131,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
   - protected
   - private
 - Static
+- Garbage Collection
 
 ### [L12_Addition](L12_Addition)
 - Exceptions

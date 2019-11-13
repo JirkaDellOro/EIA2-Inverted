@@ -2,7 +2,7 @@
 <img src="Material/PassierscheinA38.png">
 <small>Quelle: <a href="https://mueli77.com/2016/12/11/asterix-review-special-45-12-pruefungen-fuer-asterix/">https://mueli77.com/2016/12/11/asterix-review-special-45-12-pruefungen-fuer-asterix/</a></small>
 
-Interaktion war von Anfang an ein Kernpunkt von HTML. Das World-Wide-Web basiert auf der Idee von wissenschaftlichen Dokumenten, die durch interaktive Verweise, den Links, miteinander verknüpft sind. Der Fokus wurde erst sehr viel später auf Katzenvideos gelegt.
+Interaktion war von Anfang an ein Kernpunkt von HTML. Das World-Wide-Web basiert auf der Idee, wissenschaftliche Dokumente durch interaktive Verweise, den Links, miteinander zu verknüpfen. Der Fokus wurde erst sehr viel später auf Katzenvideos gelegt.
 
 > Fun-Fact: Tim Berners Lee ([Github-Profil](https://github.com/timbl)) entwickelte Anfang der 1990er Jahre HTML, HTTP, URL, den ersten Webserver und den ersten Browser. Einen Eindruck davon, wie sich das damals anfühlte, erhält man hier auf interaktive Weise: [WWW](http://line-mode.cern.ch/www/hypertext/WWW/TheProject.html)  
 
@@ -13,7 +13,7 @@ In diesem Kapitel lernst Du die wichtigsten Elemente kennen, erfährst, wie Du s
 
 ## Texteingabe
 Die wichtigste Eingabemöglichkeit ist die von Text. Mit dem Keyboard-Event könnte man zwar beim Tippen jeden Buchstaben abfangen und damit eine Zeichenkette zusammen setzen, es geht aber sehr viel einfacher. Das generische `input`-Element bringt in seiner Urform als Textfeld schon diese Grundfunktionalität, kann aber noch viel mehr.  
-> Beispiel: <input type="text" placeholder="Gib hier etwas ein" required>
+> Beispiel: <input type="text" placeholder="Gib hier etwas ein" required/>
 ### Platzhalter
 Dem Attribut `placeholder` kann ein Wert zugewiesen werden, der dem Nutzer beispielsweise als Eingabeaufforderung dienen kann. Sobald der Nutzer die Eingabe beginnt, verschwindet der Platzhalter automatisch und wird wieder angezeigt, wenn das Feld gelert wird.
 ### Passworteingabe
@@ -83,25 +83,25 @@ Kunden können hier mit Hilfe eines Webformulars spontan einen Cocktail bestelle
 ## Anwendungsfalldiagramm (Use-Case-Diagram)
 Zeichne wieder ganz schnell ein kleines Anwendungsfalldiagramm. Versuche es selbst, bevor Du dir das Video anschaust.  
 
-<a href="https://drive.google.com/open?id=1xNGMhZT0_OQCGjvhwww7xqIkr2joEIl7"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1BBYgdSiVQUjltYc_-rUXIKjq9GpI0hs6"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_UseCaseDiagram.jpg"><img src="Material/CocktailBar_UseCaseDiagram.jpg" width="25%"/></a>
 
 ## Skizze: User-Interface 
 Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und überlege, welche Tags, Attribute und Listener Du brauchst. Investiere ein wenig Zeit um selbst einen ersten Entwurf zu gestalten, bevor Du das Video anschaust.
 
-<a href="https://drive.google.com/open?id=17DIodcq0CdHrADe1oLe1yod6SUuUgW5x"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1WLL2Qk9-yU_2RkH9eT-vAJgICpyFTmjr"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_UI-Scribble.jpg"><img src="Material/CocktailBar_UI-Scribble.jpg" width="25%"/></a>
 
 ## Aktivitätsdiagramme
 Nun ist schon grob konzipiert, was geschehen soll und wie sich das darstellt. Entwickle nun wieder ein Aktivitätsdiagramm mit dessen Hilfe Du festlegst, wie das Ganze funktioniert. Beginne wieder mit den Ereignissen und arbeite dich vom Groben ins Feine. Mach' dir am Anfang also noch nicht zu viele Gedanken über Details, sondern zerlege große Probleme in kleinere. Versuche es selbst, bevor Du das Video anschaust.
 
-<a href="https://drive.google.com/open?id=1vUR3kbYZvTonO9KCOLdbWtGcUKE-d4Bt"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1AaSjskweSpOUPCCgvcMWzo5Ow1m-f8_B"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_ActivityDiagram.jpg"><img src="Material/CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
 
 ## Implementation I
 Versuche dich nun an der Implementation. Schaue dir das Video spätestens an, wenn Du dich an die Zusammenfassung der Bestellung machst. Hier gibt es noch einige Tipps.
 
-<a href="https://drive.google.com/open?id=1Rx7Eejqa3ZDHj82PTx9jGyaRci1omvqp"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=198sTXYtPhoaA6gU61gE8wqhaQkGG9JIr"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 # FormData
 Javascript stellt einen einfachen Mechanismus zur Verfügung um Formularelemente automatisch auszuwerten und auf die Ergebnisse zuzugreifen. Hierzu müssen die Formularelemente in der DOM-Laufzeithierarchie einem `form`-Element untergeordnet sein. Wird bei der Erzeugung eines Objekts des Typs `FormData` nun ein Verweis auf auf dieses `form`-Element übergeben, so werden die Werte der `name`- und `value`-Attribute als Schlüssel-Werte-Paare zur Verfügung gestellt.
@@ -136,7 +136,7 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
 
 ## Implementation II
 
-<a href="https://drive.google.com/open?id=1oZik6RjB5uafqsZh7xqZpuKaJZ9CIPMN"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1cCWnF7-dcGZY8s9kcetkEOBVjB4ISXtA"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_UI-Scribble2.jpg"><img src="Material/CocktailBar_UI-Scribble2.jpg" width="25%"/></a>
 
 - [x] Die Ausgabe der Bestellübersicht funktioniert noch nicht richtig. Finde den Fehler und korrigiere ihn.
@@ -147,4 +147,4 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
 Hinweis: Ungenauigkeiten bei der Berechnung von Fließkommazahlen können sehr schnell zu hässlichen Zahlendarstellungen führen. Der Typ `number` verfügt aber über mehrere Methoden zur Umwandlung in eine formatierte Zeichenkette. Recherchiere danach und nutze sie.
 
 # Wochenaufgabe
-siehe Aufgaben-Wiki
+[L03_CharacterEditor](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L03_CharacterEditor)

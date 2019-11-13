@@ -5,6 +5,7 @@
 	<meta charset="utf-8" />
 	<title>CocktailBar</title>
 	<link rel="stylesheet" href="CocktailBar.css" type="text/css" media="screen" />
+
 	<script src="GenerateContent.js" type="text/javascript" charset="utf-8"></script>
 	<script src="CocktailBar.js" type="text/javascript" charset="utf-8"></script>
 </head>
@@ -15,7 +16,7 @@
 		<p>Choose a drink and the extras. Select the size of your cocktail. Verify your order on the right.</p>
 	</header>
 
-	<form id="form" action="http://localhost:5001">
+	<form id="orderForm" method="GET">
 		<div>
 			<h2>Choose here</h2>
 			<fieldset id="Drink">
@@ -46,8 +47,8 @@
 		<div id="order">
 			...
 		</div>
-		<button type="reset" form="form">Reset</button>
-		<button type="submit" form="form">Order</button>
+		<button type="reset" form="orderForm">Reset</button>
+		<button type="button" form="orderForm">Order</button>
 	</div>
 
 </body>

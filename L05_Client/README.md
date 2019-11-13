@@ -42,9 +42,9 @@ Damit ist es Webseiten beispielsweise möglich, die Darstellung aufzubauen und I
 ## Forms
 HTML-Forms bieten bereits gänzlich ohne zusätzliche Programmierung die Möglichkeit, Daten synchron zu verschicken. Hierzu ist es lediglich erforderlich, dem Form-Tag ein `action`- und ein `method`-Attribut anzufügen, sowie im Formular einen Submit-Button zu integrieren. Der `action`-Wert gibt den URL an, an welchen die Daten gehen soll. Die Daten selbst, also die Werte der Formularelemente, werden bei Betätigung des Submit-Buttons automatisch aufbereitet und verschickt. Wie sie verschickt werden, hängt von der gewählten `method` ab.
 ### Get
-Bei `method="get"` werden die Daten als Zeichenketten einfach im Klartext an den URL angehängt, abgetrennt mit einem `?`. Die Schlüssel- und Wertepaare sind mit `&` (Et, kaufmännisches Und, Ampersand) voneinander getrennt, die Schlüssel und Werte mit einem `=` verbunden. Der Browser ruft dann diese URL mitsamt Anhang auf, die komplette Zeichenkette erscheint in der Adresszeile.
+Bei `method="get"` werden die Daten als Zeichenketten einfach im Klartext an den URL angehängt, abgetrennt mit einem `?`. Die Schlüssel- und Wertepaare sind mit `&` (Et, kaufmännisches Und, Ampersand) voneinander getrennt, die Schlüssel und Werte mit einem `=` verbunden. Der Browser ruft dann diesen URL mitsamt Anhang auf, die komplette Zeichenkette erscheint in der Adresszeile.
 - [x] Surfe im Netz und suche nach Beispielen für die Datenübertragung in dieser Form, in dem Du die Adressezeile beobachtest.
-- [x] Ergänze das Formularelement deiner aktuellen Cocktailbar-Implementation mit den Attributen `method="get"` und `action=""`. Der leere Wert bei `action` bedeutet, dass die aktuelle URL erneut genutzt werden soll. Füge zudem mit
+- [x] Ergänze das Formularelement deiner aktuellen Cocktailbar-Implementation mit den Attributen `method="get"` und `action=""`. Der leere Wert bei `action` bedeutet, dass der aktuelle URL erneut genutzt werden soll. Füge zudem mit
 ```html
 <button type="submit">Abschicken</button>
 ```
@@ -98,7 +98,7 @@ Mit dem Schlüsselwort `async` wird eine Funktion als asynchron deklariert, das 
 - [x] Das ausgegebene Response-Objekt ist komplex und der eigentliche Inhalt der Serverantwort ist noch nicht zu sehen. Erweitere die Funktion `communicate` um eine Zeile, in der Du die Methode text() des Response-Objektes aufrufst. Achtung: text() gibt wieder eine Promise zurück. Nutzt Du aber auch hier `await` erhältst Du als Ergebnis des Ganzen eine Zeichenkette, die Du einer Variablen vom Typ string zuweist. Lasse so den Inhalt der Serverantwort ausgeben.  
 
 ## Uniform Resource Locator (URL)
-Jetzt hast Du einige Werkzeuge an der Hand um synchrone oder asynchrone Kommunikation von der Clientseite aus zu starten, also eine Request zu verschicken und eine Response vom Server zu erhalten. Derzeit wird nur die Get-Methode betrachtet, bei der die Nutzdaten in URL-String eingebettet werden. Bei der asynchronen Kommunikation muss dies nun noch getan werden. Dazu sollte zunächst der Aufbau des URL näher untersucht werden.
+Jetzt hast Du einige Werkzeuge an der Hand um synchrone oder asynchrone Kommunikation von der Clientseite aus zu starten, also eine Request zu verschicken und eine Response vom Server zu erhalten. Derzeit wird nur die Get-Methode betrachtet, bei der die Nutzdaten in den URL-String eingebettet werden. Bei der asynchronen Kommunikation muss dies nun noch getan werden. Dazu sollte zunächst der Aufbau des URL näher untersucht werden.
 - [x] Studiere den Aufbau des URL anhand der folgenden Grafik.  
 <img src="Material/URL.png">  
 <small>Quelle: <a href="https://nodejs.org/dist/latest-v12.x/docs/api/url.html#url_url_strings_and_url_objects">https://nodejs.org/dist/latest-v12.x/docs/api/url.html#url_url_strings_and_url_objects</a></small>  
@@ -115,7 +115,7 @@ Der zweite Teil des URL wird dann von dem erreichten Server beliebig interpretie
 Der Query-String stellt nun die eigentlichen Nutzdaten dar, die bei der synchronen Übertragung mit der Get-Methode des Formulars bereits automatisch aufbereitet und mitgeschickt wurden. Ein Application-Server, der bezüglich Funktionalität über die Möglichkeiten eines reinen Fileservers hinausgeht, kann diesen String interpretieren und mit den gewonnenen Daten Berechnungen anstellen oder weitere Prozesse steuern.
 
 ## Daten asynchron senden
-Um also Daten per Get mit Fetch zu senden, muss lediglich der URL um den Query-String erweitert werden. Wie dieser String zustande kommt ist irrelevant, hier kann man beliebig kreativ werden. Sofern die Daten aus einem Formular aber bereits vorliegen, ist es einfach möglich, ihn aus einem FormData-Objekt zu generieren. Hierbei hilt ein weiteres Standard-Javascript-Objekt: URLSearchParams
+Um also Daten per Get mit Fetch zu senden, muss lediglich der URL um den Query-String erweitert werden. Wie dieser String zustande kommt ist irrelevant, hier kann man beliebig kreativ werden. Sofern die Daten aus einem Formular aber bereits vorliegen, ist es einfach möglich, ihn aus einem FormData-Objekt zu generieren. Hierbei hilft ein weiteres Standard-Javascript-Objekt: URLSearchParams
 ```typescript
 let url: string = "https://whatever.server/path/file";
 let query: URLSearchParams = new URLSearchParams(<any>formData);
@@ -131,51 +131,23 @@ Ein Objekt vom Typ `URLSearchParams` lässt sich fast genauso verwenden wie eine
 
 ## Cocktailbar: Bestellung versenden
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß verschiedene Diagramme, die überarbeitet bzw. neu erstellt werden
-|2. Jirkas sprechender Kopf  
+<a href="https://drive.google.com/open?id=1rZSjcfDJVTfWTzgucu4aTudXEnu91W7d"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/CocktailBar_UI-Scribble.jpg"><img src="Material/CocktailBar_UI-Scribble.jpg" width="25%"/></a>
 
-> Inhalt: die zusätzlichen Planungen für den Datenversand
-> - die Skizze überarbeiten
->   - ein Submit- und bei der Gelegenheit einen Reset-Button einbauen
-> - Aktivitätsdiagram ergänzen auf zweitem Blatt!
->   - dem Submit-Button einen Listener spendieren, ruft asynchrone sendOrder-Funktion auf.
->   - sendOrder packt FormData in URLSearchParams
->   - ruft mit await fetch auf.
->   - erster Endknoten. Nebenläufigkeit an dieser Stelle ansprechen!
-> - Was soll mit der Antwort geschehen?
->     - da derzeit nur ein Fileserver zur Verfügung steht, gibt es noch keine sinnvolle Antwort. Aber es kann schon eine Nachricht kommen, dass die Bestellung erfolgreich versandt wurde. -> alert
+## Implementation I
 
+<a href="https://drive.google.com/open?id=1Af3PeewETTQ90tKc0CJX0Io7A4LENa4-"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Programm, das gerade getippt wird
-|2. klein die Diagramme im Wechsel
-|3. klein Jirkas sprechender Kopf  
+- [x] Ergänze die Implementation so, dass beim Reset die Bestellübersicht gelöscht wird!
 
-> Inhalt:
-> - Cocktailbar bereits kopiert, namespace angepasst auf L05, groups sind spans und nicht mehr divs wegen style
-> - Buttons im HTML anlegen und die Nutzung der Standard-Formularfunktionen demonstrieren.
->   - damit kann man schon viel machen, aber wir wollen einen asynchronen One-Pager
-> - Submit-Button suchen und Listener installieren.
-> - sendOrder implementieren
-> - User-Nachricht als alert
-> - Get-Params in Network suchen und anzeigen!
 
 ## Lokaler Fileserver
 Beim Testen auf der lokalen Maschine tritt nun ein Fehler auf. Der URL wird als ungültig erkannt, da nicht das HyperText-Transfer-Protocol genutzt wird. Es greifen Sicherheitsmechanismen des Browsers, die verhindern, dass Skripte von Websiten auf die lokalen Speichermedien des Clientrechners zugreifen. Sie gehören zur Cross-Origin-Resource-Sharing-Policy (CORS) die regelt, welche Ressourcen von welcher Quelle auf welche Ressourcen von welcher anderen Quelle zugreifen dürfen.  
 Sobald die Cocktailbar von Github-Pages aus aufgerufen wird, tritt das Problem nicht auf. Alle Resourcen befinden sich in derselben Domäne im Netz, wo mit dem http-Protocol gearbeitet wird, und der Zugriff mit `fetch` ist erlaubt.  
 Es wäre natürlich sehr lästig, während der Entwicklung für jeden Test zunächst das aktuelle Projekt auf einen entfernten Fileserver kopieren zu müssen. Stattdessen ist es einfach möglich, die lokale Entwicklungsmaschine zu einem Fileserver zu machen und das Projekt dann unter "Internetbedingungen" zu testen. Im folgenden Beispiel wird hierzu ein winziger Fileserver genutzt, der unter https://www.npmjs.com/package/serve zu finden ist.
 
+<a href="https://drive.google.com/open?id=1-pFM1PUBfzQBUwGBYry6ipuAdJJoa8qB"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß der Screen mit VSCode und Browser. npx serve wird gestartet.
-|2. Jirkas sprechender Kopf  
 
 ## Standardverhalten des Submit-Buttons
 Der Submitbutton hat weiterhin das Standardverhalten den automatischen Datenversand auszulösen, was mit dem im Skript definierten Versand in Konflikt steht. So bewirkt er gegebenenfalls ein Neuladen der Seite, obwohl das Skript im Hintergrund arbeitet. Hierfür gibt es drei Lösungsansätze:
@@ -191,42 +163,14 @@ Im letzten Kapitel wurde die Variable `data` direkt im Code definiert, die Daten
 ### JSON-Objekt
 Hierfür stellt Javascript das JSON-Objekt zur Verfügung, mit dem die Erzeugung eines assoziativen Arrays auf Basis der in einer Zeichenkette enthaltenen Information leicht möglich ist. Ebenso kann damit umgekehrt die Repräsentation eines solchen Arrays in Form einer Zeichenkette erzeugt werden. Das JSON-Objekt stellt hierfür zwei Methoden zur Verfügung: `parse` und `stringify`.
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß verschiedene Diagramme, die überarbeitet bzw. neu erstellt werden
-|2. Jirkas sprechender Kopf  
+<a href="https://drive.google.com/open?id=1V3cu5ofbmTFdNrZUWR7OaBJVumYI9FHU"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/CocktailBar_ActivityDiagram.jpg"><img src="Material/CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
+<a href="Material/CocktailBar_ActivityDiagram_Client.jpg"><img src="Material/CocktailBar_ActivityDiagram_Client.jpg" width="25%"/></a>
 
-> Inhalt: die zusätzlichen Planungen für das Nachladen der Angebotsdaten
-> - die Skizze überarbeiten
->   - bestehende handleLoad-Funktion muss am Anfang erweitert werden
->   - Startknoten durch Konnektor (A) ersetzen
->   - Aktivitätsnamen löschen und Notiz mit Verweis auf Client-Blatt anbringen
-> - Aktivitätsdiagram ergänzen auf Client-Blatt
->   - dort handleLoad anlegen
->   - offer-daten anfordern, Endknoten anbringen und auf wait reponse verweisen
->   - analog mit text-Extraktion 
->   - text nach JSON parsen
-> - auf Konnektor (A) verweisen
+> **Hinweis:** Im Video wird der Begriff "Marker" verwendet, die korrekte Bezeichnung laut UML-Standard ist "Konnektor"
 
+## Implementation II
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Programm, das gerade getippt wird
-|2. klein die Diagramme im Wechsel
-|3. klein Jirkas sprechender Kopf  
+<a href="https://drive.google.com/open?id=15zq9bGt-RJGbVsvcLPKUnzWJPzthgyn9"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
-> Inhalt:  
-> - es sind lediglich die drei Zeilen Code zu implementieren:
-> ```typescript
->        let response: Response = await fetch("Data.json");
->        let offer: string = await response.text();
->        let data = JSON.parse(offer); 
-> ```
-> - und handleLoad muss dafür asynchron deklariert werden
-> - liefert `Promise<void>`
-> - Allerdings sind die Daten auch aufzubereiten
->   - Data.ts wird zu Data.json, .map und .js löschen
->   - Datenstrukturen zu GenerateContent verschieben
->   - in JSON ist alles String, daher Schlüssel per Replace mit Anführungszeichen versehen
+> **Hinweis:** Es existiert bereits eine Fülle von kostenlosen JSON-Editoren, die man dem Barkeeper an die Hand geben könnte, um möglichst fehlerfrei das Angebot zu editieren.

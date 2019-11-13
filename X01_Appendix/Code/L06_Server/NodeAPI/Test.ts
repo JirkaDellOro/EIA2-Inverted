@@ -1,26 +1,29 @@
 namespace L06_NodeAPI {
-    let x: number = 0
-    console.log("Log", x);
-    x++;
-    console.warn("Warn", x);
-    x++;
-    console.error("Error", x);
+    console.log("Hallo");
 
-    console.log("Args", process.argv[2]);
+    let x: number = 0;
+    console.log(x);
+    x++;
+    console.warn(x);
 
-    console.log("Computer", process.env.COMPUTERNAME);
-    console.log("User", process.env.USERNAME);
-    console.log("Port", process.env.PORT);
+    console.log(process.env.COMPUTERNAME);
+    console.log(process.env.USERNAME);
+    console.log(process.env.PORT);
+
+    console.log(process.argv);
+    console.log("Hallo " + process.argv[2]);
 
     process.addListener("exit", handleExit);
+
     setTimeout(handleTimeout, 2000);
 
-    function handleTimeout(_event: Event): void {
-        console.log("Timeout", _event);
+    // timout handler expects no parameter
+    function handleTimeout(): void {
+        console.log("Timeout");
     }
 
-    function handleExit(_event: number): void {
-        console.log("Exit", _event);
+    // exit handler expects a number as parameter
+    function handleExit(_code: number): void {
+        console.log("Tschüss!");
     }
-
 }

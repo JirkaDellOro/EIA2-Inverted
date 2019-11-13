@@ -21,24 +21,15 @@ Zwei Dinge sind aus Obigem zu folgern:
 - es gibt einen weiteren Akteur, den Barkeeper
 - ihm muss eine Möglichkeit zur Verfügung gestellt werden das Angebot anzupassen ohne in die eigentliche Applikation einzugreifen  
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß das Diagramm, das von Hand gezeichnet wird, 
-|2. Jirkas sprechender Kopf  
-
-> Inhalt: die Erweiterung des Anwendungsfalldiagramms um den zweiten Akteur und die Anwendungsfälle
-> - Angebot ändern
-> - Preise ändern
-
-[Use Case Diagram](Material\CocktailBar_UseCaseDiagram.jpg)  
+<a href="https://drive.google.com/open?id=1_4dU4ASqRQstkq_wcYPfgEZAgrty-kuj"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material\CocktailBar_UseCaseDiagram.jpg"><img src="Material\CocktailBar_UseCaseDiagram.jpg" width="25%"/></a>
 
 ## Algorithmen und Datenstrukturen
 Neben dem Prinzip des "Divide et Impere", ist es bei der Konzeption von Anwendungen grundsätzlich eine sehr gute Vorgehensweise zwischen den Algorithmen und den Datenstrukturen zu unterscheiden. In Kombination stellen beide zusammen die Anwendung dar. Bestimme und untersuche einerseits die zu verarbeitenden Information, und überlege, wie diese Information strukturiert werden sollte, um sie gut verarbeiten zu können. Daraus ergeben sich die Datenstrukturen. Überlege andererseits, wie diese Information verarbeitet werden soll, somit konzipierst Du die Algorithmen.  
 
 <img src="Material/AdaLovelace.jpg" align="right"/>
 
-- **FunFact**: viele Quellen schreiben den ersten Algorithmus, der je für einen Computer konzipiert wurde, Lady Ada Lovelace (1815-1852) zu. Der zugehörige mechanische Computer, die "Analytical Engine", konnte zu dieser Zeit noch nicht funktionsfähig hergestellt werden. Adas Algorithmus aber funktionierte!  
+- **FunFact**: viele Quellen schreiben den ersten Algorithmus, der je für einen Computer konzipiert wurde, Lady Ada Lovelace (1815-1852) zu. Der zugehörige mechanische Computer, die "Analytical Engine", konnte zu dieser Zeit noch nicht funktionsfähig hergestellt werden. Adas Algorithmus aber funktionierte! Ihr zu Ehren wurde über ein Jahrhundert später eine populäre Programmiersprache "Ada" genannt.
 
 Die Konzeption der Algorithmen und Datenstrukturen stellt also die Grundlage für eine nachfolgende Programmierung dar. Ohne diese Grundlage die Programmierung zu beginnen ist eine erratische Vorgehensweise und führt bei komplexeren Anwendungen in der Regel zu erhöhtem Aufwand und minderwertigen Lösungen.  
 
@@ -47,154 +38,26 @@ Die getrennte Betrachtung führt zu guten Datenstrukturen, die auch von noch nic
 ## Datenstruktur für die Cocktailbar
 Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und lässt den Barkeeper außen vor. Es ist also wünschenswert, dass die Seite im Prinzip so bleibt, aber nicht von einer statischen HTML-Datei abgeleitet wird sondern dynamisch auf der Grundlage von Daten erzeugt wird, die der Barkeeper selbst pflegen kann. Eine einfache Möglichkeit ist, ihm eine spezielle und simpel strukturierte Textdatei an die Hand zu geben, in welche er nach einem übersichtlichen Muster seine Daten eintragen kann. Er soll also nicht mit einem Chaos konfrontiert werden, das Genialität fordert, sondern mit Ordnung.
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß ein Notizblatt, auf dem verschiedene Ansätze notiert werden, 
-|2. Jirkas sprechender Kopf  
-
-> Inhalt: die Suche nach günstigen Datenstrukturen
-> - Untersuchen, aus welchen Informationen das Angebot des Barkeepers eigentlich besteht
->   - Feststellung: Name und Preis eines Artikels (Item)
->   - Feststellung: unterschiedliche Kategorien z.B. Drinks, Container, Extras etc. (Category)
-> Feststellung in Tabellenform darstellen
-> - Ansatz für jedes Item zwei Variablen anzulegen, z.B. drink1: string = "Mojito" und drink1price: number = 3.50 ist sinnlos, da der Algorithmus dann alle deklarierten Variablen einzeln verwenden muss und bei Veränderungen nicht mehr funktioniert. Auch mit Schleifen nicht behandelbar.
-> - Tabellenform weist aber auch schon auf Arrays hin
->   - simple oder assoziative?
-> - Simple würden den Job erledigen, sind aber unübersichtlich und weniger hilfreich. Unterschiedliche Datentypen? Mehrdimensional? Oder viele einzelne, deren Indizes passen müssen?
-> - und in welchem Format sollen die Daten abgelegt sein. Ein Format schon wohlbekannt aus HTML -> XML
->   - Beispiel mit XML kurz ausführen
-> - Alternative: JSON! So sehen wir Daten im Programmcode und in der Console
->   - einfache Schlüssel-Werte-Paare, wobei die Werte beliebig komplex sein können
-> - Mit assioziativen lassen sich die Daten sehr gut strukturieren
->   - Interface Item mit vordefinierten Schlüsseln name: string und price: number
->   - Interface Data mit variablen Schlüsseln [category: string] und  Item[] als Wert
-> - Damit Daten anlegen.
->   - Eine Datei für die Interfaces, eine für die Daten selbst planen  
-
-[Use Case Diagram](Material\CocktailBar_DataStructures.jpg)  
+<a href="https://drive.google.com/open?id=1CPchD_gaIOV3QdMrRLfyVnRBYu8OOliq"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material\CocktailBar_DataStructures.jpg"><img src="Material\CocktailBar_DataStructures.jpg" width="25%"/></a>
 
 ## Generierung des Formulars
 Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und funktionieren soll ist auch bekannt und bereits getestet. Jetzt muss also noch ein Algorithmus entwickelt werden, welcher mit Hilfe der Daten das Formular generiert. Dazu muss zunächst entschieden werden, welche Teile des DOM automatisch beim Laden der Seite durch die Interpretation der HTML-Datei erzeugt werden sollen, und welche dann dynamisch durch das Skript dazu kommen. Theoretisch ist es natürlich möglich, komplett auf eine Beschreibung der Seitenstruktur in der HTML-Datei zu verzichten, lediglich einen Verweis auf das Skript zu implementieren und die DOM-Erzeugung komplett dem dadurch aufgerufenen Skript zu überlassen. Einerseits würde dies aber auch dem SoC-Prinzip zuwider laufen, weil unnötig viel Verantwortlichkeit auf das Skript übertragen wird, andererseits liegt bereits eine HTML-Datei vor, welche die Struktur beschreibt. Es erscheint also eher sinnvoll, lediglich die Beschreibungen der dynamischen Strukturen aus der bestehenden HTML-Datei zu entfernen und sie auf die statischen zu reduzieren. Das ist eine klassische Design-Entscheidung und wird für dieses Beispiel in obigem Sinne getroffen.  
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß verschiedene Diagramme, die überarbeitet bzw. neu erstellt werden
-|2. Jirkas sprechender Kopf  
 
-> Inhalt: die Änderungen und das Design für die dynamische Generierung
-> - die Skizze überarbeiten
->   - die Inhalte der fieldsets streichen bis auf "Amount"
->   - die Notizen zu den Elementen mit "dynamic" in rot versehen
->   - die Notiz zu den fieldsets mit id= category, letzteres in rot versehen
-> - das Aktivitätsdiagramm überarbeiten
->   - handleLoad um Aktivität "generateDynamicContent" mit Gabel erweitern in rot
-> - neues Aktivitätsdiagramm zu generateDynamicContent
->   - neues Blatt mit Überschrift Cocktailbar
->   - Rückblick auf vorangegangenes Aktivitätsdiagram, generateDynamicContent übertragen
->   - _data als Startknoten am Eingang
->   - da Iteration über Daten erforderlich, Schleife von vorangegangenem Diagramm übertragen
->       - nächste Kategorie holen, items referenzieren
->       - da unterschiedliche Input-Elemente kreiert werden müssen, je nach Kategorie
->         - Fallunterscheidung
->         - Ergebnis soll eine Sammlung von Elementen sein, die an fieldset gehängt werden können
->     - fieldset entsprechend der Kategorie suchen
->     - Sammlung anhängen
->     - Schleife beenden, wenn keine Kategorien mehr vorhanden sind
-> - als Beispiel die Erzeugung der Sammlung für MultipleSelection (Checkboxes) ausführen
->   - Parameter ist eine Itemliste
->   - Container-Div für Elemente erzeugen
->   - über Liste iterieren
->   - jeweils Input-Element erzeugen und mit den erforderlichen Attributen ausstatten
->   - dabei fällt auf, dass die Kategorie als Attribut "name" einzusetzen ist
->       - Kategorie als Parameter ergänzen
->   - dann fällt auf, dass auch noch die Labels erzeugt werden müssen
->   - am Ende Container zurückliefern
-
-[UI-Scribble](Material\CocktailBar_UI-Scribble.jpg)  
-[ActivityDiagram](Material\CocktailBar_ActivityDiagram.jpg)  
-[ActivityDiagram: generateContent](Material\CocktailBar_ActivityDiagram_generateContent.jpg)  
+<a href="https://drive.google.com/open?id=1NSTBUf7Aol96efeIWRSBTgVmBX1f9AXI"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material\CocktailBar_UI-Scribble.jpg"><img src="Material\CocktailBar_UI-Scribble.jpg" width="25%"/></a>
+<a href="Material\CocktailBar_ActivityDiagram.jpg"><img src="Material\CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
+<a href="Material\CocktailBar_ActivityDiagram_generateContent.jpg"><img src="Material\CocktailBar_ActivityDiagram_generateContent.jpg" width="25%"/></a>
 
 > - [x] Konzipiere auch die beiden anderen Aktivitäten zur Erstellung der Interaktionsgruppen.  
 
 ## Implementation I
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Programm, das gerade getippt wird
-|2. klein das Aktivitäts-Diagramm im Wechsel mit anderen
-|3. klein Jirkas sprechender Kopf  
-
-> Inhalt:
-> - Cocktailbar bereits kopiert, namespace angepasst auf L04
-> - Data.ts anlegen, namespace einrichten
->   - da mehrere Files -> Cocktailbar.ts in Main.ts umbenennen
->   - interfaces implementieren
->   - data anlegen, Infos aus html-File kopieren
-> - html-File um die Info kürzen, nur fieldsets und legends stehen lassen
->   - ids an fieldsets fügen
-> - Setup.ts anlegen, namespace einrichten
->   - function generateDynamicContent und Parameter tippen
->   - Data ist unbekannt
->       - export erklären, interface Data exportieren
->   - for..in Schleife anlegen, Item exportiere
->   - switch anlegen, Emmet nutzen
->       - im switch jeweils let group deklarieren mit unterschiedlichem Typ
->       - und definieren durch Funktionsaufruf unbekannter Funktionen create...
->   - zwei Probleme tauchen auf:
->       - group nun mehrfach deklariert
->           - Lösung: einmal vor der Schleife deklarieren als gemeinsamen Supertyp
->       - Funktionen unbekannt -> eine als Dummy umsetzen mit result und return, ohne Funktion
->       - die anderen als Kopien davon ableiten
->   - fieldset mit querySelector("fieldset#" + category) definieren
->    - Problem strict null check
->    -  -> union type einsetzen
->    - prüfen ob fieldset != null
->   - analoges Problem ergibt sich mit group
->       - mit null definieren zu Beginn
-> - generateDynamicContent muss nun noch aufgerufen werden
->   - export
->   - export data
-
-## Testing
-
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. groß das Browserfenster im Wechsel mit VSCode
-|2. klein Jirkas sprechender Kopf  
-
-> Inhalt:
-> - Seite scheint zu laufen, es wurde ja keine spektakuläre Ausgabe erwartet. Aber ein wenig schon, vielleicht ein leeres Select-Element? 
-> - aber es gibt eine Fehlerausgabe in der Console
-> - und es werden keine Inhalte der fieldsets erzeugt!
-> - debugger in generateDynamicContent einsetzen
->   - stoppt nicht
-> - manuell zu Browserdebugger sieht man...
->   - data ist auch null, so wie die Funktion...
->   - es gibt nur Main.ts und .js, die anderen tauchen nicht auf
->   - Scripte wurden gar nicht verlinkt!!
+<a href="https://drive.google.com/open?id=1ra9kKZrvep96MO_qMaJsIQNC_stDc66N"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 ## Implementation II
-
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. groß das Programm, das gerade getippt wird
-|2. klein das Aktivitäts-Diagramm im Wechsel mit anderen
-|3. klein Jirkas sprechender Kopf  
-
-> Inhalt:
-> - die konzipierte Unterfunktion, createMulti wird implementiert
-> - for..of Schleife implementieren
->   - checkbox kreieren
->   - attribute definieren
->   - price mit setAttribut und toString()
->   - label kreieren, attribute definieren
->       - for mit setAttribute? -> im Code htmlFor benutzen
->   - checkbox und label an result hängen
+<a href="https://drive.google.com/open?id=1HlfS8x76eer4N_xV6-4fYEpcR6R8P1YU"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 ## Refactoring
 ### Erfahrungen einfließen lassen
@@ -211,8 +74,12 @@ Betrachtet man nun den Code in der HTML-Datei, dem Skript und der Datendatei fä
 
 ## JSON (Javascript Object Notation)
 Natürlich ist diese Lösung noch nicht unbedingt der Weisheit letzter Schluss um das Angebot für den Barkeeper wartbar zu machen. Aufgrund der Angabe des `namespace`s und der Deklaration sowie dem Zuweisungsoperator `let data: Data = ` handelt es sich bei der Datei "Data.*" immer noch um eine Skript-Datei und der Barkeeper kann bei falscher Handhabung leicht das Programm unbrauchbar machen. Ohne diese Angaben würde es sich aber bereits um eine valide JSON-Datei handeln und in den nächsten Lektionen wird erklärt, wie man damit umgeht und wie man reines JSON tatsächlich als Daten- und Datentransferformat nutzt.  
-JSON wird heute interessanterweise auch intensiv außerhalb der Javascript-Welt in gänzlich andersartigen Anwendungen eingesetzt. Es konnte es sich mittlerweile als Konkurrent zu **XML (Extensible Markup Language)**, dessen Struktur auch HTML folgt, etablieren und bezüglich des öffentlichen Interesses, sofern man das auf Google Trends ermitteln kann, XML seit dem Frühjahr 2016 hinter sich lassen.  
+JSON wird heute interessanterweise auch intensiv außerhalb der Javascript-Welt in gänzlich andersartigen Anwendungen eingesetzt. Es konnte sich mittlerweile als Konkurrent zu **XML (Extensible Markup Language)**, dessen Struktur auch HTML folgt, etablieren und bezüglich des öffentlichen Interesses, sofern man das auf Google Trends ermitteln kann, XML seit dem Frühjahr 2016 hinter sich lassen.  
 
 <img src="Material/XMLvsJSON.png">  
 
 Weiterhin ist aber auch XML ein verbreiteter Standard und in manchen Anwendungen effizienter einzusetzen.
+
+
+# Wochenaufgabe
+[L04_CharacterEditor: Data](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L04_CharacterEditor:Data)
