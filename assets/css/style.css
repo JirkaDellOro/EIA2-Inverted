@@ -742,9 +742,9 @@ by Matt Graham
      }
       #banner .fork2 {
      position: fixed;
-     left: 52%;
+     left: 10%;
      height: 1%;
-     margin-left: -325px;
+     margin-left: 270px;
      padding: 10px 12px;
      margin-top: 4px;
      line-height: 14px;
