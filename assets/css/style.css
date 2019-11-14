@@ -11,6 +11,10 @@ by Matt Graham
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
  */
+ .link { color: #FF0000; } /* CSS link color (red) */
+.link:hover { color: #00FF00; } /* CSS link hover (green) */
+
+
  article,
  aside,
  details,
