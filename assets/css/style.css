@@ -730,23 +730,23 @@ by Matt Graham
        background: linear_gradient(#a2c2d1, #6c88e6);
        background-color: #adcafc; }
    #banner .fork {
-     position: fixed;
+     position: absolute;
      left: 40%;
-     height: 1%;
+     height: 30%;
      margin-left: -325px;
      padding: 10px 12px;
-     margin-top: 4px;
+     margin-top: 2px;
      line-height: 14px;
      font-size: 14px;
      background-color: #aac1f8;
      }
       #banner .fork2 {
-     position: fixed;
-     left: 10%;
-     height: 1%;
-     margin-left: 270px;
+     position: absolute;
+     left: 40%;
+     height: 30%;
+     margin-left: -190px;
      padding: 10px 12px;
-     margin-top: 4px;
+     margin-top: 2px;
      line-height: 14px;
      font-size: 14px;
      background-color: #aac1f8;
