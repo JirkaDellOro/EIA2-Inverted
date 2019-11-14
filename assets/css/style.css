@@ -11,6 +11,10 @@ by Matt Graham
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
  */
+ .link { color: #d8d8d8; } /* CSS link color (red) */
+.link:hover { color: #808080; } /* CSS link hover (green) */
+
+
  article,
  aside,
  details,
@@ -105,7 +109,16 @@ by Matt Graham
   * Addresses font sizes and margins set differently in IE6/7
   * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
   */
-
+  .test {
+ position: absolute;
+ height: 35px;
+ width: 35px;
+ right: 600px;
+ top: 20px;
+ display: block;
+ background: url(../images/octocat-logo.svg);
+ }
+	 
 #HFU {
     max-width:10%;
     height:auto;
@@ -773,8 +786,8 @@ by Matt Graham
          background-color: #FFE788; }
    #banner #logo {
      position: absolute;
-     height: 0px;
-     width: 0px;
+     height: 35px;
+     width: 35px;
      right: 7px;
      top: 7px;
      display: block;
