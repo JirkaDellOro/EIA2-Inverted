@@ -11,8 +11,8 @@ by Matt Graham
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
  */
- .link { color: #FF0000; } /* CSS link color (red) */
-.link:hover { color: #00FF00; } /* CSS link hover (green) */
+ .link { color: #d8d8d8; } /* CSS link color (red) */
+.link:hover { color: #808080; } /* CSS link hover (green) */
 
 
  article,
@@ -777,8 +777,8 @@ by Matt Graham
          background-color: #FFE788; }
    #banner #logo {
      position: absolute;
-     height: 0px;
-     width: 0px;
+     height: 35px;
+     width: 35px;
      right: 7px;
      top: 7px;
      display: block;
