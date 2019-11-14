@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<style>
-    a { color: #FF0000; } /* CSS link color */
-  </style>
+	
 
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -20,7 +18,7 @@
   <body>
 <img ID = "HFU"  src="https://upload.wikimedia.org/wikipedia/de/thumb/a/ab/Hochschule_Furtwangen_logo.svg/1200px-Hochschule_Furtwangen_logo.svg.png" >
       <header>
-        <h1><a href="https://jirkadelloro.github.io/EIA2-Inverted/">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <h1><a id="link" href="https://jirkadelloro.github.io/EIA2-Inverted/">{{ site.title | default: site.github.repository_name }}</a></h1>
         <p>{{ site.description | default: site.github.project_tagline }}</p>
       </header>
 
