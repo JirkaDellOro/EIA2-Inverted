@@ -1,5 +1,7 @@
 # L11 Advanced
 
+![](Material/Sims.png)
+
 **Video:**
 Diese Lektion startet mit einem Video
 - Lösung des Ufo-Projektil-Problems.
@@ -60,10 +62,9 @@ let difference: Vector = Vector.difference(_hotspot, this.position);
 
 - [x] Definiere in deiner Superklasse eine statische Eigenschaft und eine statische Methode. Lasse das Hauptprogramm die Eigenschaft in der Konsole ausgeben und die Methode aufrufen. Nutze statt einer Objektreferenz nun einfach den Klassennamen hierfür.
 
-- `static`
-- speed in Ufo und Projectil
-- Pfade in den Klassen
-- Vector(0,0) in Vector
+- speed in Ufo und Projectil, Pfade in den Klassen, Vector(0,0) in Vector
+
+> **Hinweis**: Im Klassendiagramm werden statische Methoden oder Eigenschaften durch Unterstreichung gekennzeichnet!
 
 ## Gültigkeit
 Variablen, die innerhalb eines mit geschweiften Klammern abgegrenzten Code-Block mit `let` deklariert werden, sind nur innerhalb des entsprechenden Blocks gültig. Dabei können sie andere Variablen gleichen Namens, die ausserhalb des Blocks gültig sind "verdecken". Dies wird in folgendem simplen Beispiel sichtbar.
@@ -85,10 +86,36 @@ Es ist erkennbar, dass für die Dauer der Ausführung des Blocks zwei Variablen 
 
 Solche Blöcke können Schleifenkörper oder if-Blocks abgrenzen, Funktions- oder Methodenrümpfe, Klassen, Objekte und Namespaces. Wie in obigem Beispiel ist es auch möglich, obgleich selten, einen Block zu definieren, ausschließlich um einen Gültigkeitsbereich abzugrenzen.
 
+- [x] Untersuche den Code "Scopes" im Anhang zu dieser Lektion und bringe ihn entweder in der Konsole oder im Browser zum Laufen. In diesem Code wird zehnmal die Variable x als `string` deklariert und mit unterschiedlichen Zeichenketten definiert. Die Werte bezeichnen den Gültigkeitsbereich.
+- [x] Erkläre die Ausgaben und die beiden Abweichungen.
+
 ## Sichtbarkeit
+Es existieren also mehrere Gültigkeitsbereiche nebeneinander und ineinander verschachtelt. Insbesondere dann, wenn aus einem Bereich in einen anderen zugegriffen werden soll, so wie das Asteroid-Hauptprogramm beispielsweise auf die Eigenschaften oder Methoden der Moveables zugreift, kann schnell Verwirrung entstehen. Denn manche Informationen bieten die Klassen und Objekt tatsächlich für den Zugriff "von Außen" als Schnittstelle an, anderes dagegen brauchen sie lediglich für die interne Funktion. Hier kann ein Zugriff zu Fehlern führen
+
+Bei der objektorientierten Modellierung können durch Sichtbarkeitsmodifikatoren Eigenschaften und Methoden gegen den Zugriff geschützt werden. Das erhöht nicht nur die Sicherheit, sondern macht es bei der Entwicklung im Team für alle sehr viel leichter, die richtigen Zugriffe zu finden und auszuwählen. Diese Modifikatoren sind lediglich reservierte Worte, die bei der Deklaration der Methoden und Eigenschaften voran gestellt werden.
+
 ### `public`
+Der Zugriff ist völlig öffentlich. Dies ist auch die Standardsichtbarkeit, wenn kein Modifikator angegeben wird. Daher konnte Asteroids bisher funktionieren. Eine Analogie könnte ein Vorgarten sein, in den jeder hineinlaufen und mit den Dingen dort hantieren kann.
+
+> **Hinweis**: Im Klassendiagramm wird `public` mit dem Zeichen `+` markiert
+
 ### `private`
+Der Zugriff ist nur Objekten der gleichen Klasse erlaubt. In den meisten Fällen greift also das Objekt selbst auf seine eigenen Eigenschaften und Methoden zu. Eine Analogie könnte das Schlafzimmer der Eltern sein, auf dessen Interieur nur die Erwachsenen im Haus haben.
+
+> **Hinweis**: Im Klassendiagramm wird `private` mit dem Zeichen `-` markiert
+
 ### `protected`
+Der Zugriff ist nur Objekten der gleichen Klasse und deren Subklassen erlaubt. Eine Analogie ist dann der Rest des Hauses, den Eltern und Kinder nutzen können, aber anderen, die nicht zur Familie gehören, verschlossen bleibt.
+
+> **Hinweis**: Im Klassendiagramm wird `protected` mit dem Zeichen `#` markiert
+
+
+**Video**
+- die Diagramme werden überarbeitet und untersucht, wo static und die Sichtbarkeitsmodifikatoren eingesetzt werden sollten
+  - Pfade in Klassen static, Geschwindigkeiten
+  -  
+- Es erfolgt gleich die Implementation
+
 
 ## `get`/`set`
 

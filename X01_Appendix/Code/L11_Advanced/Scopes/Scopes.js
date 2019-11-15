@@ -1,43 +1,66 @@
 "use strict";
-var N1;
-(function (N1) {
-    class N1Super {
+var Scope;
+(function (Scope) {
+    class ScopeSuper {
         constructor() {
-            this.x = "N1SuperObject"; // Scope of object
-            //
+            this.x = "ScopeSuperObject"; // Scope of superobject
         }
         log() {
-            let x = "N1SuperMethod";
-            console.log("N1SuperMethod", x);
-            console.log("N1SuperObject", this.x);
+            console.group("Super");
+            let x = "ScopeSuperMethod";
+            log("ScopeSuperMethod", x);
+            log("ScopeSuperObject", this.x);
+            console.groupEnd();
         }
     }
-    N1Super.x = "N1SuperStatic"; // Scope of super class
-    class N1Sub extends N1Super {
+    ScopeSuper.x = "ScopeSuperStatic"; // Scope of superclass
+    class ScopeSub extends ScopeSuper {
         constructor() {
-            super();
-            this.x = "N1SubObject"; // Scope of object
+            super(...arguments);
+            this.x = "ScopeSubObject"; // Scope of subobject
         }
         log() {
-            let x = "N1SubMethod"; // Scope of method
+            console.group("Sub");
+            let x = "ScopeSubMethod"; // Scope of method
             {
-                let x = "N1SubMethodBlock"; // Scope of block
-                console.log("N1SubMethodBlock", x);
-                console.log("N1SubObject", this.x);
-                console.log("N1SuperObject--", super.x);
+                let x = "ScopeSubMethodBlock"; // Scope of block
+                log("ScopeSubMethodBlock", x);
+                log("ScopeSubObject", this.x);
+                log("ScopeSuperObject", super.x);
                 super.log();
             }
-            console.log("N1SubMethod", x);
+            log("ScopeSubMethod", x);
+            console.groupEnd();
         }
     }
-    N1Sub.x = "N1SubStatic"; // Scope of super class
-    let x = "N1"; // Scope of namespace
-    let sub = new N1Sub();
-    console.log("N1", x);
-    console.log("N1SuperStatic", N1Super.x);
-    console.log("N1SubStatic", N1Sub.x);
+    ScopeSub.x = "ScopeSubStatic"; // Scope of subclass
+    let x = "Scope"; // Scope of namespace
+    let sub = new ScopeSub();
+    let sup = new ScopeSuper();
     sub.log();
-})(N1 || (N1 = {}));
-let x = "File";
-console.log(x);
+    sup.log();
+    console.group("Scope");
+    log("Scope", x);
+    log("ScopeSuperStatic", ScopeSuper.x);
+    log("ScopeSubStatic", ScopeSub.x);
+    console.groupEnd();
+    console.group("Method");
+    method();
+    console.groupEnd();
+    function method() {
+        let x = "ScopeMethod";
+        log("ScopeMethod", x);
+    }
+    function log(_expected, _is) {
+        if (_expected == _is)
+            console.log(_expected, " == ", _is);
+        else
+            console.warn(_expected, " != ", _is);
+    }
+    Scope.log = log;
+})(Scope || (Scope = {}));
+console.group("File");
+let x = "File"; // Scope of file
+Scope.log("File", x);
+console.groupEnd();
 //# sourceMappingURL=Scopes.js.map
