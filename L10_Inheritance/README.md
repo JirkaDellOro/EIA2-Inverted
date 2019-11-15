@@ -62,6 +62,11 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
 - Projektile haben gleiches Bewegungsmuster aber Reichweite und festgelegte Geschwindigkeit
 - Aktivitätsdiagramme für Moveable und Asteroids vorzeigen und erklären, nicht neu entwerfen
 
+<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/Asteroids_ClassDiagram.jpg"/><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
+<a href="Material/Asteroids_ActivityDiagram-Moveable.jpg"/><img src="Material/Asteroids_ActivityDiagram-Moveable.jpg" width="25%"></a>
+<a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"/><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
+
 **Video: Implementation I von Moveable, Refaktorierung von Asteroid und Tests**   
 - Asteroids und Moveable aufteilen
 - Testen
@@ -79,6 +84,8 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
     - weitere Liste für Projektile?
     - dann noch eine für Ufos?
     - das ist doof, zumal das Hauptprogramm mit allen das gleiche macht....
+
+<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
     
 > **`extends`** erweitert eine Superklasse um eine Subklasse!  
 > **`super(...)`** ruft aus der Subklasse den Constructor der Superklasse auf!  
@@ -126,6 +133,9 @@ moveables.push(new Projectile(new Vector(0, 0), new Vector(0, 0)));
 **Video: Aktivitätsdigramm Hauptprogramm**  
 Bild/Scan: Aktivitätsdiagramm des Hauptprogramms mit asteroid/asteroids ersetzt durch moveable/moveables
 
+<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/Asteroids_ActivityDiagram-Main.jpg"/><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
+
 ## Implementation II
 
 **Video: Implementation II (Nutzung der Polymorphie)**
@@ -142,6 +152,8 @@ Bild/Scan: Aktivitätsdiagramm des Hauptprogramms mit asteroid/asteroids ersetzt
   - damit aber werden die Projectile zu mächtig
     - eleganter: als expendable markieren und Hauptprogramm löscht sie -> Verweis auf Garbage-Collector für später
 - expendable auch auf Asteroiden nach Break anwenden
+
+<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 > **`a instanceof B`** prüft, ob das Objekt `a` eine Instanz der Klasse `B` ist.
 

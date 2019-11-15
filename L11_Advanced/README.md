@@ -105,7 +105,7 @@ Der Zugriff ist nur Objekten der gleichen Klasse erlaubt. In den meisten Fällen
 > **Hinweis**: Im Klassendiagramm wird `private` mit dem Zeichen `-` markiert
 
 ### `protected`
-Der Zugriff ist nur Objekten der gleichen Klasse und deren Subklassen erlaubt. Eine Analogie ist dann der Rest des Hauses, den Eltern und Kinder nutzen können, aber anderen, die nicht zur Familie gehören, verschlossen bleibt.
+Der Zugriff ist nur Objekten der gleichen Klasse und deren Subklassen erlaubt. Eine Analogie ist der Rest des Hauses, den Eltern und Kinder nutzen können, aber anderen, die nicht zur Familie gehören, verschlossen bleibt.
 
 > **Hinweis**: Im Klassendiagramm wird `protected` mit dem Zeichen `#` markiert
 
