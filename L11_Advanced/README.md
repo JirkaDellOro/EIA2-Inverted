@@ -116,8 +116,8 @@ Der Zugriff ist nur Objekten der gleichen Klasse und deren Subklassen erlaubt. E
   -  
 - Es erfolgt gleich die Implementation
 
-
-## `set`
+## Zugriffsfunktionen 
+### `set`
 Manchmal ist es wünschenswert, dass eine Eigenschaft eines Objektes verändert werden kann, so als wäre sie `public`, aber dass das Objekt selbst von der geplanten Änderung erfährt und noch eingreifen kann oder erforderliche Prozesse dabei auslöst. Beispielsweise könnte das Objekt überprüfen, ob der einzutragende Wert innerhalb bestimmter Grenzen liegt und die Übernahme verweigern, wenn dies nicht so ist. Hierzu könnte es also eine Methode anbieten und das eigentlich Attribut als `private` deklarieren, um nur selbst darauf Zugriff zu haben.
 
 ```typescript
@@ -143,7 +143,7 @@ Nun wird beispielsweise bei der Anweisung `instance.value = 59;` automatisch die
 
 - [x] Die Vektorklasse verfügt bereits über eine Methode `set(...)`. Ist das ein "Setter"?
 
-## `get`
+### `get`
 Das Pendant zu `set` ist natürlich `get`. Damit kann beispielsweise eine Eigenschaft gelesen werden, die gar nicht gespeichert ist, sondern erst berechnet wird, wenn jemand danach fragt. Ein Kandidat für einen sogenannten "Getter" könnte ein Attribut `length` der Vektorklasse sein. Die Länge eines Vektors lässt sich leicht mit dem Satz des Pythagoras berechnen, Javascripts `Math`-Objekt hält hierfür die Methode `hypot` bereit. Da die Elemente des Vektors sich ständig ändern, wäre es unnötiger Aufwand, bei jeder Änderung die Länge zu berechnen und zu speichern. Mit 
 
 ```typescript
