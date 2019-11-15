@@ -117,10 +117,48 @@ Der Zugriff ist nur Objekten der gleichen Klasse und deren Subklassen erlaubt. E
 - Es erfolgt gleich die Implementation
 
 
-## `get`/`set`
+## `set`
+Manchmal ist es wünschenswert, dass eine Eigenschaft eines Objektes verändert werden kann, so als wäre sie `public`, aber dass das Objekt selbst von der geplanten Änderung erfährt und noch eingreifen kann oder erforderliche Prozesse dabei auslöst. Beispielsweise könnte das Objekt überprüfen, ob der einzutragende Wert innerhalb bestimmter Grenzen liegt und die Übernahme verweigern, wenn dies nicht so ist. Hierzu könnte es also eine Methode anbieten und das eigentlich Attribut als `private` deklarieren, um nur selbst darauf Zugriff zu haben.
+
+```typescript
+private value: number;
+
+setValue(_newValue: number): void {
+  if (_newValue < 100)
+    this.value = _newValue;
+}
+```
+Soll nun also die Eigenschaft `value` des Objektes `instance` verändert werden, wird die Anweisung `instance.setValue(...)` genutzt. Da solche Anwendungsfälle häufig auftreten und die Schreibweise `instance.value = ...` für die Veränderung einer Eigenschaft schlicht einfacher und intuitiver erscheint ist, gibt es einen speziellen Methodentyp: den "Setter"
+
+```typescript
+private valuePrivate: number;
+
+set value(_newValue: number): void {
+  if (_newValue < 100)
+    this.valuePrivate = _newValue;
+}
+```
+
+Nun wird beispielsweise bei der Anweisung `instance.value = 59;` automatisch diese Setter-Methode aufgerufen und das, was auf der rechten Seite des Zuweisungsoperators steht, hier `59`, als Parameter übergeben. Gleiches geschieht auch bei den kombinierten Zuweisungsoperatoren (siehe Anhang). Zu beachten ist, dass es nun gar keine Eigenschaft `value` in der Klasse mehr gibt, denn das würde einen Namenskonflikt mit dem Setter bedeuten. Daher wird intern im Beispiel das Attribut intern mit `valuePrivate` bezeichnet. Von "außen" betrachtet aber verfügt `instance` über eine Eigenschaft `value` die nun eine besondere Funktionalität aufweist und nicht unkontrolliert verändert werden kann. 
+
+- [x] Die Vektorklasse verfügt bereits über eine Methode `set(...)`. Ist das ein "Setter"?
+
+## `get`
+Das Pendant zu `set` ist natürlich `get`. Damit kann beispielsweise eine Eigenschaft gelesen werden, die gar nicht gespeichert ist, sondern erst berechnet wird, wenn jemand danach fragt. Ein Kandidat für einen sogenannten "Getter" könnte ein Attribut `length` der Vektorklasse sein. Die Länge eines Vektors lässt sich leicht mit dem Satz des Pythagoras berechnen, Javascripts `Math`-Objekt hält hierfür die Methode `hypot` bereit. Da die Elemente des Vektors sich ständig ändern, wäre es unnötiger Aufwand, bei jeder Änderung die Länge zu berechnen und zu speichern. Mit 
+
+```typescript
+get length(): number {
+    return Math.hypot(this.x, this.y);
+}
+```
+
+erscheint es von außen betrachtet aber so, als wäre diese Eigenschaft ständig vorhanden, denn sie kann einfach mit z.B. `let speed: number = velocity.length;` abgerufen werden. Die Anweisung verschleiert, dass es sich eigentlich um den Aufruf einer Methode handelt.
 
 ## Garbage Collection
 
+Wenn eine Variable ihren Gültigkeitsbereich verlässt, wird der von ihr belegte Speicher freigegeben und steht wieder für andere Informationen zur Vefügung. Bei Variablen, die auf Objekte verweisen, wird aber nur der Verweis gelöscht, das referenzierte Objekt dagegen bleibt im Speicher, denn es könnten noch andere Variablen darauf verweisen. Diese würden dann ins Leere deuten und Fehler erzeugen. Werden die Objekte allerdings nie gelöscht, wird der Speicher immer mehr zugemüllt und es kommt irgendwann zu einem Programmversagen.
+
+Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem sogenannten "Garbage Collector" überwacht. Dieser Müllmann durchforstet in unregelmäßgen Zeitabständen den Speicher, findet Objekte die nicht mehr gebraucht werden und löscht diese. In den meisten Fällen geschieht das völlig unmerklich, bei Animationen allerdings kann dieser Vorgang zu sichtbaren Störungen führen, wenn ein Bild einmal etwas länger stehen bleibt als andere. Durch Wiederverwendung von Objekten kann der Effekt minimiert werden
 
 # Asteroid Reloaded
 - hitDetection generalisieren
