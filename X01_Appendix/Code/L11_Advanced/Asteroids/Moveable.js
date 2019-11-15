@@ -36,9 +36,6 @@ var L11_AsteroidsAdvanced;
             if (this.position.y > L11_AsteroidsAdvanced.crc2.canvas.height)
                 this.position.y -= L11_AsteroidsAdvanced.crc2.canvas.height;
         }
-        draw() {
-            // defined in subclasses
-        }
     }
     L11_AsteroidsAdvanced.Moveable = Moveable;
 })(L11_AsteroidsAdvanced || (L11_AsteroidsAdvanced = {}));

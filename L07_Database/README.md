@@ -131,14 +131,7 @@ Die eigentlichen Daten kann man so nicht einsehen, sie werden in einem effizient
 
 Nachdem Du diese Übungen erfolgreich abgeschlossen hast, kannst Du nicht nur mit der MongoShell umgehen, sondern hast auch schon die grundlegendsten Anweisungen gelernt, die genauso auch im Code Verwendung finden. Sehr viel weitergehend ist die [Dokumentation](https://docs.mongodb.com/manual/reference/method/). Wenn es nicht richtig geklappt hat, kannst Du dir untenstehendes Video anschauen, indem diese Übungen demonstriert werden.
 
-
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. Screencast der Terminals 
-|2. Jirkas sprechender Kopf  
-
->Inhalt: die oben aufgeführte Übung wird durchgeführt zum Vergleich.
+<a href="https://drive.google.com/open?id=1ZL16d1kzSdFy9VLap2fnjU32XAUuCHi3"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 ## MongoDB in Node
 Wenn der Kunde der Cocktailbar eine Bestellung aufgibt, soll der Server diese Bestellung an die Datenbanksoftware schicken, damit sie dort gespeichert wird. Was eben von Hand mit der MongoShell erledigt wurde, soll also das Node.js-Programm bewerkstelligen. Hierzu muss Node zunächst um die entsprechenden Module für die Arbeit mit MongoDB erweitert werden. Führe also die Kommandos `npm install @types/mongodb` sowie `npm install mongodb` auf der obersten Ebene deines EIA2-Projektes aus. 
@@ -167,36 +160,12 @@ orders.insert({...});
 ## Aktivitätsdiagram
 Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server aufgrund der ankommenden Requests und die Formulierung der Antworten konzipiert werden.
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. Aktivitätsdiagramm entsteht auf Papier 
-|2. Jirkas sprechender Kopf  
-
-> Inhalt: aus dem Aktivitätsdiagram von L06 wird das folgende abgeleitet
-> 1. Main umschreiben zu zwei Aufrufen: connectToDatabase und startServer
-> 1. startServer wie Main zuvor, mit port als Parameter
-> 1. connectToDatabase mit url als Parameter
-> 1. handleRequest neu erfassen als einen geraden Durchlauf ohne Verzweigung für retrieveOrders
-> 1. storeOrder zeichnen
-
-
+<a href="https://drive.google.com/open?id=1dzCJMQnLkafOx5MFmC7ECvXCNDsQbHnW"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material\CocktailBar_ActivityDiagram-Server.jpg"><img src="Material\CocktailBar_ActivityDiagram-Server.jpg" width="25%"/></a>
 
 ## Implementation
 
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. Aktivitätsdiagramm 
-|2. Jirkas sprechender Kopf 
-|3. groß VSCode mit entstehendem Code
-
-> Inhalt: Implementation der Bestellungsannahme
-> 1. startServer auslagern
-> 1. connectToDatabase
-> 1. storeOrder, hierzu interface Order einführen
-> 1. handleRequest umbauen, ggf. Vollzugsmeldung zurückschicken
+<a href="https://drive.google.com/open?id=1RkcKlkpSFA1hDAcXK9AHPoMg-ZsApgDR"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>  
 
 ## Test
 - [x] Starte den Server in einem dritten Konsolenfenster. MongoDB sollte den Verbindungsversuch erkennen und eine zweite Connection anzeigen.
@@ -204,13 +173,7 @@ Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server a
 - [x] Setze mit dem Client mehrere unterschiedliche Bestellungen ab und beobachte die Ausgaben im Serverfenster. 
 - [x] Frage mit der MongoShell die Collection "Orders" der Datenbank "Cocktail" ab um zu schauen, ob die Bestellungen eingetragen wurden.
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. Screencast der Terminals 
-|2. Jirkas sprechender Kopf  
-
->Inhalt: Mit vier Fenstern arbeiten, Server und Client dazu
+<a href="https://drive.google.com/open?id=1tjkBi39qFsOfiESPkq4HekTtnTgaIQNZ"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>  
 
 ## Online Service
 Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von Außen sollte niemand Zugriff darauf haben. Die Bestellungen sollen aber in einer Datenbank gespeichert werden, die ständig erreichbar ist. MongoDB bietet mit Atlas ein eigenes Serviceangebot hierfür.

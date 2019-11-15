@@ -53,7 +53,7 @@ static difference(_v0: Vector, _v1: Vector): Vector
 }
 
 ```
-Nun steckt die Komplexität der Erzeugung eines neuen Vektors und der komponentenweisen Subtraktion in der Vektorklasse. Nun kann die neue Klassenmethode `difference` einfach und intuitiv verwendet werden.
+Nun steckt die Komplexität der Erzeugung eines neuen Vektors und der komponentenweisen Subtraktion in der Vektorklasse und die neue Klassenmethode `difference` kann einfach und intuitiv verwendet werden.
 ```typescript
 let difference: Vector = Vector.difference(_hotspot, this.position);
 ```
@@ -66,7 +66,24 @@ let difference: Vector = Vector.difference(_hotspot, this.position);
 - Vector(0,0) in Vector
 
 ## Gültigkeit
-Wiederholung von Sichtbarkeitsbereichen local, global, function, block, namespace, module etc.
+Variablen, die innerhalb eines mit geschweiften Klammern abgegrenzten Code-Block mit `let` deklariert werden, sind nur innerhalb des entsprechenden Blocks gültig. Dabei können sie andere Variablen gleichen Namens, die ausserhalb des Blocks gültig sind "verdecken". Dies wird in folgendem simplen Beispiel sichtbar.
+
+```typescript
+let x: string = "I'm valid outside";
+{
+  let x: string = "I'm valid inside";
+  console.log(x);
+}
+console.log(x);
+```
+Erzeugt wird die Ausgabe
+```plaintext
+I'm valid inside
+I'm valid outside
+```
+Es ist erkennbar, dass für die Dauer der Ausführung des Blocks zwei Variablen namens `x` existierten, denn der Inhalt der "äußeren" wurde nicht verändert. Die "innere" verlor dagegen nach Beendigung des Blocks ihre Gültigkeit. Die verließ ihren "Scope" und der von ihr belegte Speicher wird wieder freigegeben. Die "äußere" aber existiert weiterhin und ihr Inhalt wird ausgegeben.
+
+Solche Blöcke können Schleifenkörper oder if-Blocks abgrenzen, Funktions- oder Methodenrümpfe, Klassen, Objekte und Namespaces. Wie in obigem Beispiel ist es auch möglich, obgleich selten, einen Block zu definieren, ausschließlich um einen Gültigkeitsbereich abzugrenzen.
 
 ## Sichtbarkeit
 ### `public`
