@@ -179,5 +179,8 @@ Ein Unterschied aber ist die Funktionalität innerhalb von Klassen. Wird eine Ar
   - allow drop on element, preventDefault on dragover
   - get dataTransfer-object on drop and process
 
+## Electron
+
+## Cordova/PhoneGap
 
 ## Progressive Web Apps
