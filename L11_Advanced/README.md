@@ -49,20 +49,18 @@ let difference: Vector = new Vector(_hotspot.x - this.position.x, _hotspot.y - t
 Es wäre besser lesbar, wenn die Vektorklasse die Differenz zweier Vektoren berechnen und den resultierenden Vektor liefern könnte. Das ist einfach in der Vektorklasse zu implementieren
 
 ```typescript
-static difference(_v0: Vector, _v1: Vector): Vector
+static getDifference(_v0: Vector, _v1: Vector): Vector
   let vector: Vector = new Vector(_v0.x - _v1.x, _v0.y - _v1.y);
   return vector
 }
 
 ```
-Nun steckt die Komplexität der Erzeugung eines neuen Vektors und der komponentenweisen Subtraktion in der Vektorklasse und die neue Klassenmethode `difference` kann einfach und intuitiv verwendet werden.
+Nun steckt die Komplexität der Erzeugung eines neuen Vektors und der komponentenweisen Subtraktion in der Vektorklasse und die neue Klassenmethode `getDifference` kann einfach und intuitiv verwendet werden.
 ```typescript
-let difference: Vector = Vector.difference(_hotspot, this.position);
+let difference: Vector = Vector.getDifference(_hotspot, this.position);
 ```
 
 - [x] Definiere in deiner Superklasse eine statische Eigenschaft und eine statische Methode. Lasse das Hauptprogramm die Eigenschaft in der Konsole ausgeben und die Methode aufrufen. Nutze statt einer Objektreferenz nun einfach den Klassennamen hierfür.
-
-- speed in Ufo und Projectil, Pfade in den Klassen, Vector(0,0) in Vector
 
 > **Hinweis**: Im Klassendiagramm werden statische Methoden oder Eigenschaften durch Unterstreichung gekennzeichnet!
 
@@ -112,8 +110,8 @@ Der Zugriff ist nur Objekten der gleichen Klasse und deren Subklassen erlaubt. E
 
 **Video**
 - die Diagramme werden überarbeitet und untersucht, wo static und die Sichtbarkeitsmodifikatoren eingesetzt werden sollten
+  - Vector: getDifference, getSum, getScaled, getRandom
   - Pfade in Klassen static, Geschwindigkeiten
-  -  
 - Es erfolgt gleich die Implementation
 
 ## Zugriffsfunktionen 
@@ -155,7 +153,6 @@ get length(): number {
 erscheint es von außen betrachtet aber so, als wäre diese Eigenschaft ständig vorhanden, denn sie kann einfach mit z.B. `let speed: number = velocity.length;` abgerufen werden. Die Anweisung verschleiert, dass es sich eigentlich um den Aufruf einer Methode handelt.
 
 ## Garbage Collection
-
 Wenn eine Variable ihren Gültigkeitsbereich verlässt, wird der von ihr belegte Speicher freigegeben und steht wieder für andere Informationen zur Vefügung. Bei Variablen, die auf Objekte verweisen, wird aber nur der Verweis gelöscht, das referenzierte Objekt dagegen bleibt im Speicher, denn es könnten noch andere Variablen darauf verweisen. Diese würden dann ins Leere deuten und Fehler erzeugen. Werden die Objekte allerdings nie gelöscht, wird der Speicher immer mehr zugemüllt und es kommt irgendwann zu einem Programmversagen.
 
 Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem sogenannten "Garbage Collector" überwacht. Dieser Müllmann durchforstet in unregelmäßgen Zeitabständen den Speicher, findet Objekte die nicht mehr gebraucht werden und löscht diese. In den meisten Fällen geschieht das völlig unmerklich, bei Animationen allerdings kann dieser Vorgang zu sichtbaren Störungen führen, wenn ein Bild einmal etwas länger stehen bleibt als andere. Durch Wiederverwendung von Objekten kann der Effekt minimiert werden

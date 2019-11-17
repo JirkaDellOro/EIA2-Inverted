@@ -19,7 +19,7 @@ namespace L11_AsteroidsAdvanced {
         }
 
         isHitBy(_partner: Moveable): boolean {
-            let difference: Vector = Vector.difference(this.position, _partner.position);
+            let difference: Vector = Vector.getDifference(this.position, _partner.position);
             if (this.hitRadius + _partner.hitRadius < difference.length)
                 return false; // no collision
 

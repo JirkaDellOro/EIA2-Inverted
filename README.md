@@ -95,7 +95,6 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - MongoDB in Node
 - Online Service
 
-
 ### [L08_Canvas](L08_Canvas)
 - CanvasRenderingContext
 - Pfade
@@ -106,7 +105,6 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Linien
 - Save/Restore
 
-
 ### [L09_Classes](L09_Classes)
 - Objektorientierte Programmierung
 - Entwurf
@@ -116,21 +114,18 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Klassendiagramm
 - Zeitsignale
 
-
 ### [L10_Inheritance](L10_Inheritance)
-- Identify common properties and behaviours
-- Superclass, Subclass
-- Inheritance in Diagram
-- Polymorphism
-- Abstract classes & methods
-- Animate different objects with common base
+- Liskov'sches Substitutionsprinzip
+- Generalisierung vs Spezialisierung
+- Regeln für die Modellierung
+- Polymorphie
 
 ### [L11_Advanced](L11_Advanced)
-- Scopes and Visibility
-  - public
-  - protected
-  - private
+- Abstract
 - Static
+- Gültigkeit
+- Sichtbarkeit
+- Zugriffsfunktionen
 - Garbage Collection
 
 ### [L12_Addition](L12_Addition)

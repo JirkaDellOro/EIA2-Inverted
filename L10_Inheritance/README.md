@@ -47,7 +47,6 @@ Bei der Modellierung eines Systems solltes Du diese zwei Regeln beachten:
 Jeder Teil soll also nur das von seiner Umwelt und anderen Teilen wissen, was unbedingt erforderlich für die eigene Funktion ist!
 
 # Ufos in Asteroids
-
 Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entwickelt.
 
 **Video: Erweiterung des Klassendiagramms**
@@ -92,7 +91,6 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
 > **`super.methode(...)`** ruft aus der Subklasse die `methode` der Superklasse auf!
 
 ## Polymorphie
-
 Griechisch πολύς (polýs) = „viel“ und μορφή (morphé) = "Form, Gestalt". Hunde sind vielgestaltig, das wurde in diesen Lektionen bereits ausgiebig behandelt. Die einzelnen Hunderassen können aber nicht nur anders aussehen, sondern sich vielleicht auch unterschiedlich verhalten. Ein Jagdhund wird beim Anblick einer Herde Schafe vielleicht gerne hineinrennen und eines reißen, ein Hütehund eher um die Herde herumlaufen und sie beisammen halten. Für jemanden, der mit diesen Hunden spazierengeht, so wie die angeblich 200.000 professionellen Gassigeher in den USA, ist dabei vordringlich wichtig, genug Leinen und Halsbänder zu haben, um die Hunde bei sich halten zu können. Die Rasse ist nicht erheblich.
 
 > **Polymorphie** ist das vierte Prinzip der Objektorientierung!

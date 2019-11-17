@@ -7,7 +7,7 @@ namespace L11_AsteroidsAdvanced {
             this.set(_x, _y);
         }
 
-        static difference(_vec0: Vector, _vec1: Vector): Vector {
+        static getDifference(_vec0: Vector, _vec1: Vector): Vector {
             return new Vector(_vec0.x - _vec1.x, _vec0.y - _vec1.y);
         }
         

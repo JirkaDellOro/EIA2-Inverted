@@ -14,7 +14,7 @@ var L11_AsteroidsAdvanced;
             this.velocity = new L11_AsteroidsAdvanced.Vector(0, 0);
         }
         isHitBy(_partner) {
-            let difference = L11_AsteroidsAdvanced.Vector.difference(this.position, _partner.position);
+            let difference = L11_AsteroidsAdvanced.Vector.getDifference(this.position, _partner.position);
             if (this.hitRadius + _partner.hitRadius < difference.length)
                 return false; // no collision
             return true;
