@@ -5,7 +5,7 @@
 
 - [x] Klicke auf das Bild, wenn Du sehen möchtest, wie ein kleiner Softwarefehler 290 Millionen Euro in Rauch aufgehen lässt.
 
-In diesem Kapitel lernst Du noch einige fortgeschrittene Strukturen der Softwareentwicklung kennen. Auch wenn Du sie im Kurs vielleicht nicht verwendest, solltest Du sie gesehen und verstanden haben. 
+In diesem Kapitel lernst Du noch einige fortgeschrittene Strukturen kennen, die interaktive Anwendungen flexibler, wartbarer und sicherer machen. Auch wenn Du sie im Kurs vielleicht nicht verwendest, solltest Du sie gesehen und verstanden haben. Zudem werden einige Konstrukte vorgestellt, die nicht unbedingt empfehlenswert, aber weit verbreitet sind, und dich bei deinen Recherchen im Netz irritieren könnten.
 
 ## Aufzählungstyp
 Häufig ist es erforderlich, eine Information mit einem Datentyp zu beschreiben, der nur eine enge und diskrete Auswahl an Werten beschreiben kann. Das simpelste Beispiel für einen solchen Datentyp ist `boolean`. Hier sind nur zwei Werte zulässig `true` und `false`. Der Versuch, einer Variablen dieses Typs beispielsweise ein `maybe` zuzuweisen, scheitert.
@@ -117,30 +117,62 @@ Das bedeutet, dass nun neben `return` und `await` eine dritte Möglichkeit zur V
 
 - [x] Verfolge den Code "Exception" im Anhang zu dieser Lektion mit dem Debugger!
 
-## Arrow-Functions
-Seit Javascript XXX gibt es eine weitere Schreibweise für Funktionen, die etwas kryptischer aussieht, aber im Wesentlichen gleichbedeutend ist mit der dir bekannten und etwas intuitiveren Schreibweise mit `function`.
+## Funktions-Objekt
+Funktionen sind in Javascript, wie alles andere, Objekte. Sie können beispielsweise mit Hilfe von Variablen referenziert werden. Folgendes ist also möglich:
 
 ```typescript
-// classic
 function doSomething(_parameter: number): string {
    ...
 }
 
-// arrow
+let doToo: Function = doSomething;
+doToo(42);
+```
+
+Das Ergebnis ist das gleiche wie beim Aufruf `doSomething(42);` denn `doToo` und `doSomething` referenzieren das gleiche Funktionsobjekt.
+
+### Anonyme Funktionen
+Die Funktion kann auch gleich bei der Erzeugung einer Variablen zugeordnet werden, dann ist es nicht erforderlich einen Funktionsnamen zu vergeben. Die Funktion selbst ist dann "anonym".
+
+```typescript
+let doSomething: Function = function(_parameter: number): string {
+   ...
+}
+```
+
+Die Funktionserzeugung ist gleichbedeutend mit der im Beispiel darüber. Allerdings kann `doSomething(...)` nun erst nach der Definition aufgerufen werden, was eher unschön ist.
+
+Anonyme Funktionen werden häufig dort genutzt, wo sie als Parameter übergeben werden und nicht als mehrfachverwendbare Objekte im Zugriff bleiben müssen. Beispiel:
+
+```typescript
+setTimeout(function (): void {
+        console.log("Timeout");
+    },         2000);
+```
+
+Der Timeout-Funktion wird das anonyme Funktionsobjekt sofort übergeben und nach zwei Sekunden wird es aufgerufen. Danach ist das Funktionsobjekt Müll und wird vom Garbage Collector irgendwann entsorgt. 
+
+Für solche kleinen Funktionen ist diese Anonymität akzeptabel, grundsätzlich vermindern solche Konstrukte aber eher die Lesbarkeit und Wartbarkeit des Programms.
+
+### Arrow-Functions
+Seit 2015 ist in Javascript eine weitere Schreibweise für Funktionen üblich, die etwas kryptischer aussieht, aber im Wesentlichen gleichbedeutend ist mit der dir bekannten und etwas intuitiveren Schreibweise mit `function`.
+
+```typescript
 let doSomething: Function = (_parameter: number): string => {
    ...
 };
 ```
+Aus dem reservierten Wort `function` vor der Parameterliste ist nun der Doppelpfeil zwischen dem Rückgabetyp und dem Funktionskörper geworden.
 
-In beiden Fällen sieht der Aufruf identisch aus, im Beispiel etwa `doSomething(42);`.  
+### this-binding
+Ein Unterschied aber ist die Funktionalität innerhalb von Klassen. Wird eine Arrow-Function als Methode deklariert, wird sie in der Konsole als Eigenschaft. Interessanter aber ist der Unterschied bei der Verwendung als Event-Handler.   
+- Innerhalb klassischer Methoden verweist `this` dann auf das Event-Target und nicht auf die Instanz der Klasse. Das führt häufig zu unerwarteten Fehlern. 
+- Bei Arrow-Functions dagegen verweist `this` weiterhin, wie zu erwarten, auf die Instanz. Daher ist diese Schreibweise in dem Fall zu bevorzugen.
+- Es gibt auch die Möglichkeit, eine klassische Methode so zu modifizieren, dass auch sie als Event-Handler die Instanz mit `this` referenziert. Hierzu existiert die Funktion `bind` des Funktionsobjektes. 
 
-Die Arrow-Schreibweise ähnelt aber eher einer Variablendeklaration und -definition. Was dabei nämlich besser zum Ausdruck kommt ist, dass auch Funktionen nur Objekte sind, die von Variablen referenziert werden. Die Variable `doSomething` verweist also auf ein Funktions-Objekt, das einen Parameter vom Typ `number` entgegen nimmt und einen `string` zurück liefert. Der Pfeil verweist auf den Funktionskörper, der den eigentlichen Code beinhaltet.
+- [x] Wenn Du dies besser verstehen möchtest, experimentiere etwas mit dem Code "FunctionObject" im Anhang.
 
-
-
-## Generics
-- this-binding, Arrow-Function
-- Drag&Drop
+## Drag&Drop
   - mark element as draggable
   - set dataTransfer-object on dragstart
   - event-information is saved and accessible on drop
@@ -148,5 +180,4 @@ Die Arrow-Schreibweise ähnelt aber eher einer Variablendeklaration und -definit
   - get dataTransfer-object on drop and process
 
 
-- Event names asteroidBreak and ufoShoots candidates for enum
-- Progressive Web Apps
+## Progressive Web Apps
