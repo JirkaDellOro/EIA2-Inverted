@@ -49,7 +49,14 @@ Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der e
 
 <a href="https://drive.google.com/open?id=1pGtfVibovgrVIshJsfAPtufAEoOoa8eE"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
-- [x] Eine kleine Aufgabe mit einer Node-App lösen! Hierzu CLI-Parameter entgegen nehmen. Farben-Konverter? Bin-Dez-Hex? Eliza?
+- [x] Entwickle eine kleine Node-Anwendung mit Namen "Convert.js", die eine Zahl von einem Zahlensystem in ein anderes konvertiert. Beim Aufruf mit der Konsole müssen drei Zahlen mit angegeben werden: die zu konvertierende Zahl, das Zahlensystem auf das sie sich bezieht und das Zahlensystem in das sie konvertiert werden soll. Die konvertierte Zahl soll ausgegeben werden. Die ganze Mathematik dahinter nimmt dir Javascript vollständig ab, mit `parseInt(s, a)` wird eine Zeichenkette `s` als Zahl im Zahlensystem `a` interpretiert und als Dezimalzahl zurückgegeben, `n.toString(b)` liefert umgekehrt eine Zeichenkette, welche die Interpretation der Dezimalzahl im Zahlensystem `b` darstellt.  
+
+Folgend eine Darstellung einer möglichen Ein- und Ausgabe, dabei wird die Zahl "A7" vom Hexadezimalsystem in das Binärsystem konvertiert. 
+```plaintext
+node Convert.js A7 16 2
+Converting A7 from base 16 to base 2 yields 10100111
+```
+In diesem Fall war der Wert von `s` also "A7", `a` hatte den Wert 16 und `b` den Wert 2.
 
 ## Erweiterungen
 Zusätzlich zu den schon fest eingebauten Modulen, werden auch Standard-Erweiterungen mitgeliefert. Um einen Server zu bauen, brauchen wir dabei das Module `http`. Das Module `url` ist hilfreich um den query-String zu extrahieren und zu interpretieren. Beide Module können mit dem Schlüsselwort `import` geladen und einer Variablen zugewiesen werden, über welche in der Folge auf die Funktionen und Objekte der Module zugegriffen werden kann. Der Asterisk `*` gibt an, dass sämtliche Funktionalität importiert werden soll, hier könnte auch eine Auswahl getroffen werden.
