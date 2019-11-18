@@ -13,7 +13,13 @@ by Matt Graham
  */
  .link { color: #d8d8d8; } /* CSS link color (red) */
 .link:hover { color: #808080; } /* CSS link hover (green) */
-
+.octocat2{
+   width: 30px;
+   height: 30px;
+   left: 190px;
+   bottom: 50px;
+   position: relative;
+   }
 
  article,
  aside,
