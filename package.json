@@ -1,23 +1,14 @@
 {
-  "name": "eia2-inverted",
+  "name": "aufg6",
   "version": "1.0.0",
-  "description": "Control for the heroku implementation",
-  "main": "",
+  "description": "ServerTest",
+  "main": "CocktailBar.js",
   "scripts": {
-    "start": "node X01_Appendix/Code/L06_Server/CocktailBar/Server/Server.js"
+    "start": "node aufg6/CocktailBar.js "
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JirkaDellOro/EIA2-Inverted.git"
-  },
-  "author": "Jirka R. Dell'Oro-Friedl",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JirkaDellOro/EIA2-Inverted/issues"
-  },
-  "homepage": "https://github.com/JirkaDellOro/EIA2-Inverted#readme",
   "dependencies": {
-    "@types/mongodb": "^3.3.1",
-    "mongodb": "^3.3.2"
+    "@types/node": "^12.12.11"
   }
 }
