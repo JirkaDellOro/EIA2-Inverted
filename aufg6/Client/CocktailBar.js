@@ -10,8 +10,13 @@ var L06_CocktailBar;
         let offer = await response.text();
         let data = JSON.parse(offer);
         L06_CocktailBar.generateContent(data);
-        let form = document.querySelector("form");
+         let form = document.querySelector("form");
+        let mytext = document.querySelector("input#mytext");
         let slider = document.querySelector("input#amount");
+        let eyecolor = document.querySelector("input#eyecolor");
+        let haircolor = document.querySelector("input#haircolor");
+        let clothcolor = document.querySelector("input#clothcolor");
+        let slider2 = document.querySelector("input#weight");
         let submit = document.querySelector("button[type=button]");
         console.log(submit);
         submit.addEventListener("click", sendOrder);
@@ -44,16 +49,34 @@ var L06_CocktailBar;
             let selector = "[value='" + entry[1] + "']"; // "[name='" + entry[0] + "'][value='" + entry[1] + "']";
             let item = document.querySelector(selector);
             let itemPrice = Number(item.getAttribute("price"));
-            switch (entry[0]) {
+              switch (entry[0]) {
                 case "Amount":
-                    break;
-                case "Drink":
-                    let amount = Number(formData.get("Amount"));
-                    itemPrice = amount * itemPrice;
-                    order.innerHTML += amount + " L " + item.value + ": €" + itemPrice + "<br>";
-                    break;
+                        let amount = Number(formData.get("Amount"));
+                        order.innerHTML += amount + " " + "Meter" + "<br>";
+                break;
+                case "Weight":
+                        let weight = Number(formData.get("Weight"));
+                        order.innerHTML += weight + " " + "Kg" + "<br>";
+                break;
+                case "Eyecolor":
+                        let eyecolor = String(formData.get("Eyecolor"));
+                        order.innerHTML += eyecolor + "<br>";
+                break;
+                case "Haircolor":
+                        let haircolor = String(formData.get("Haircolor"));
+                        order.innerHTML += haircolor + "<br>";
+                break;
+                case "Clothcolor":
+                        let clothcolor = String(formData.get("Clothcolor"));
+                        order.innerHTML += clothcolor + "<br>";
+                break;
+                case "Mytext":
+                        let mytext = String(formData.get("Mytext"));
+                        order.innerHTML += mytext + "<br>";
+                break;
+               
                 default:
-                    order.innerHTML += item.value + ": €" + itemPrice.toFixed(2) + "<br>";
+                    order.innerHTML += item.value + "" + "<br>";
             }
             // console.log(item);
             price += itemPrice;
