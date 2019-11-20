@@ -5,11 +5,11 @@ const Url = require("url");
 // @ts-ignore no-unused-variable
 var L06_CocktailBar;
 (function (L06_CocktailBar) {
+    let server = Http.createServer();
     let port = process.env.PORT;
     if (port == undefined)
         port = 5001;
     console.log("Starting server on port " + port);
-    let server = Http.createServer();
     server.listen(port);
     server.addListener("request", handleRequest);
     function handleRequest(_request, _response) {
