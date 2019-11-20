@@ -1,38 +1,23 @@
 namespace L11_AsteroidsAdvanced {
-    export abstract class Moveable {
+    export class Moveable {
         position: Vector;
         velocity: Vector;
         expendable: boolean = false;
-        hitRadius: number = 0;
 
-        constructor(_hitRadius: number = 0, _position?: Vector) { // zweiten Parameter erst später einführen
-            this.hitRadius = _hitRadius;
+        constructor(_position?: Vector) {
+            // console.log("Moveable constructor");
 
-            if (_position) // nach Einführung zweiter Paramter
-                this.position = new Vector(_position.x, _position.y);
+            if (_position)
+                this.position = _position.copy();
             else
-                this.position = new Vector(0, 0); // nur mit dieser Zeile anfangen
+                this.position = new Vector(0, 0);
 
-            // set velocity in pixel per second
             this.velocity = new Vector(0, 0);
-
-        }
-
-        isHitBy(_partner: Moveable): boolean {
-            let difference: Vector = Vector.getDifference(this.position, _partner.position);
-            if (this.hitRadius + _partner.hitRadius < difference.length)
-                return false; // no collision
-
-            return true;
-        }
-
-        hit(): void {
-            console.log("Hit: ", this);
-            this.expendable = true;
         }
 
         move(_timeslice: number): void {
-            let offset: Vector = new Vector(this.velocity.x, this.velocity.y);
+            // console.log("Moveable move");
+            let offset: Vector = this.velocity.copy();
             offset.scale(_timeslice);
             this.position.add(offset);
 
@@ -46,6 +31,8 @@ namespace L11_AsteroidsAdvanced {
                 this.position.y -= crc2.canvas.height;
         }
 
-        abstract draw(): void;
+        draw(): void {
+            // console.log("Moveable move");
+        }
     }
 }

@@ -173,14 +173,35 @@ Ein Unterschied aber ist die Funktionalität innerhalb von Klassen. Wird eine Ar
 - [x] Wenn Du dies besser verstehen möchtest, experimentiere etwas mit dem Code "FunctionObject" im Anhang.
 
 ## Drag&Drop
-  - mark element as draggable
-  - set dataTransfer-object on dragstart
-  - event-information is saved and accessible on drop
-  - allow drop on element, preventDefault on dragover
-  - get dataTransfer-object on drop and process
+Eine wichtige Standardfunktionalität des DOM wurde in diesem Kurs bislang noch nicht behandelt. Insbesondere bei Desktopanwendungen ist es sehr üblich, Objekte direkt zu manipulieren, nicht also über Formularelemente, sondern beispielsweise per drag & drop. Die Verwendung ist recht einfach:
 
-## Electron
+- `draggable` ist eine Eigenschaft, definiert in der Klasse HTMLElement. Erhält sie den Wert `true` verändert sich das Maus-Verhalten auf dem entsprechenden Element.
+- wird die Maustaste gedrückt, während sich der Mauscursor über dem Element befindet, wird ein Event vom Typ `dragstart` gefeuert.
+- das Event-Objekt ist vom Typ `DragEvent` und verfügt über eine Eigenschaft `dataTransfer`, die ein Objekt vom Typ `DataTransfer` referenziert.
+- die Methode `setData(key, value)` fügt `dataTransfer` Informationen hinzu. 
+- ein HTMLElement, auf dem dann der Drop stattfinden können soll, muss diesen zulassen. Dazu muss es auf ein `dragover`-Event hören und mit `event.preventDefault()` sein Standardverhalten unterbinden, welches die Ablehnung des Drops ist.
+- nun kann es auf ein `drop`-Event reagieren, wobei dem entsprechendem Handler das beim `drag` erzeugte und mit zusätzlichen Informationen versorgte Event übergeben wird.
+- mit `getData(key)` können die Informationen ausgelesen und verarbeitet werden, zum Beispiel um das Drop-Ziel zu verändern.
 
-## Cordova/PhoneGap
+- [x] Im Anhang befindet sich ein kleines Beispielprogramm "DragDrop" mit einer rudimentären Implementation des DOM-Drag&Drop-Mechanismus, mit dem noch viel mehr möglich ist. Schaue es dir an! 
 
-## Progressive Web Apps
+## Debugger
+
+
+## Plattformen
+Die technische Basis, die für diese Modulreihe "Entwicklung interaktiver Anwendungen" herangezogen wird, entstammt der Webtechnologie. Das bedeutet aber nicht, dass deine Konzeption sich auf Internetseiten beschränken muss. Mit dem, was Du jetzt gelernt hast, kannst Du vollwertige native Apps und Desktop-Programme konzipieren und entwickeln. Hierzu verwendest Du Techniken, die deine Software auf eine erweiterte Plattform hieven, im Inneren arbeitet dabei weiter ein Browser und/oder Node, der Nutzer bekommt davon aber nichts mit.
+
+### Electron
+Wird von GitHub selbst entwickelt und verwendet Node.js sowie Chromium, die Entwicklerversion des Chrome-Browsers. Der Funktionsumfang wird erweitert um Systemfunktionen wie Zugriffe auf das Dateisystem, so dass aus deiner Web-App eine vollwertige, native Desktopanwendung für Windows, Mac und Linux werden kann. 
+
+Du arbeitest übrigens schon eine Weile mit einer solchen Anwendung, den Visual Studio Code ist eine Electron-App!
+
+### Cordova/PhoneGap
+Cordova und PhoneGap sind zwei im Wesentlichen identische Produkte, die denselben Ursprung haben und von Apache beziehungsweise Adobe weiterentwickelt werden. Ihnen liegt das gleiche Prinzip zugrunde wie Electron, allerdings für mobile Android- und iOS-Geräte. So kann deine WebApp über die entsprechenden Stores vertrieben werden und im Betrieb auf GPS, Beschleunigungssensoren, Kamera etc. zugreifen.
+
+Die Wikipedia mobile App ist eine PhoneGap-Anwendung!
+
+### Progressive Web Apps
+Seit 2015 schickt sich ein weiteres Modell an den App-Markt aufzumischen: Progressive Web Apps. Diese kommen zunächst wie eine gewöhnliche Web-App daher, installieren aber beim ersten Besuch einen "Service-Worker" auf dem Smartphone. Diese Software lädt gezielt Inhalte herunter und speichert sie auf dem Gerät, um die Funktionalität der App auch zu erhalten, wenn keine Internetverbindung besteht. Es wird zudem angeboten, eine Verknüpfung auf dem Home-Screen zu erstellen, sie kann im Vollbildmodus gestartet und Push-Nachrichten vom Server angezeigt werden, auch wenn die App gerade nicht aktiv ist. Dadurch wirkt die PWA wie eine vollwertige native App bei minimalem Mehraufwand gegenüber der reinen Web-Entwicklung. Der riesige Vorteil: ist erst einmal ein potenzieller Nutzer über eine Suchmaschine auf dem Angebot gelandet, muss er es nicht erst wieder verlassen, in den Store geleitet werden um dort die Installation einer App und später den Start derselben in die Wege zu leiten, sondern die Nutzung der App hat bereits begonnen!
+
+Der mobile Twitter Client ist eine Progressive Web App

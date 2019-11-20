@@ -1,4 +1,4 @@
-namespace L11_AsteroidsAdvanced {
+namespace L11_AsteroidsAdvanced_2 {
     export class Hotspot extends Projectile {
         range: number;
         duration: number = 0.5;

@@ -158,6 +158,7 @@ Wenn eine Variable ihren Gültigkeitsbereich verlässt, wird der von ihr belegte
 Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem sogenannten "Garbage Collector" überwacht. Dieser Müllmann durchforstet in unregelmäßgen Zeitabständen den Speicher, findet Objekte die nicht mehr gebraucht werden und löscht diese. In den meisten Fällen geschieht das völlig unmerklich, bei Animationen allerdings kann dieser Vorgang zu sichtbaren Störungen führen, wenn ein Bild einmal etwas länger stehen bleibt als andere. Durch Wiederverwendung von Objekten kann der Effekt minimiert werden
 
 # Asteroid Reloaded
+**Video**
 - hitDetection generalisieren
   - alles kollidiert mit anderem außer Asteroiden untereinander
   - isHit-Methode in Moveable anlegen als isHitBy(_partner)

@@ -1,4 +1,4 @@
-namespace L11_AsteroidsAdvanced {
+namespace L11_AsteroidsAdvanced_2 {
     export class Vector {
         x: number;
         y: number;
@@ -7,6 +7,14 @@ namespace L11_AsteroidsAdvanced {
             this.set(_x, _y);
         }
 
+        static getDifference(_vec0: Vector, _vec1: Vector): Vector {
+            return new Vector(_vec0.x - _vec1.x, _vec0.y - _vec1.y);
+        }
+        
+        get length(): number {
+            return Math.hypot(this.x, this.y);
+        }
+        
         set(_x: number, _y: number): void {
             this.x = _x;
             this.y = _y;
@@ -30,8 +38,6 @@ namespace L11_AsteroidsAdvanced {
             this.scale(length);
         }
 
-        copy(): Vector {
-            return new Vector(this.x, this.y);
-        }
+
     }
 }

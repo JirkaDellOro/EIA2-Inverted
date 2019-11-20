@@ -1,4 +1,4 @@
-namespace L11_AsteroidsAdvanced {
+namespace L11_AsteroidsAdvanced_2 {
     export class Ufo extends Moveable {
         speed: number = 50;
 
