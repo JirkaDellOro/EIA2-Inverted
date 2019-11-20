@@ -2,7 +2,7 @@
   "name": "eia2testlb",
   "version": "1.0.0",
   "description": "ServerTest",
-  "main": "",
+  "main": "index.html",
   "scripts": {
     "start": "node ./aufg6/Server/Server.js "
   },
