@@ -1,4 +1,4 @@
-namespace L05_CocktailBar {
+namespace L06_CocktailBar {
     export interface Item {
         name: string;
         price: number;
@@ -8,7 +8,7 @@ namespace L05_CocktailBar {
         [category: string]: Item[];
     }
 
-    export function generateContent(_data: Data): void {
+    export function generateContent(_data: Data) {
 
         for (let category in _data) {
             // console.log(category);

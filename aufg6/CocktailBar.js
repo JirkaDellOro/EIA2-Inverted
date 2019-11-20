@@ -1,14 +1,16 @@
 "use strict";
-var L05_CocktailBar;
-(function (L05_CocktailBar) {
+var L06_CocktailBar;
+(function (L06_CocktailBar) {
     window.addEventListener("load", handleLoad);
+    // const url: string = "index.html";
+    const url = "localhost:8100";
     async function handleLoad(_event) {
-        //console.log("Init");
+        console.log("Init");
         let response = await fetch("Data.json");
         let offer = await response.text();
         let data = JSON.parse(offer);
-        L05_CocktailBar.generateContent(data);
-        let form = document.querySelector("form");
+        L06_CocktailBar.generateContent(data);
+         let form = document.querySelector("form");
         let mytext = document.querySelector("input#mytext");
         let slider = document.querySelector("input#amount");
         let eyecolor = document.querySelector("input#eyecolor");
@@ -19,23 +21,18 @@ var L05_CocktailBar;
         console.log(submit);
         submit.addEventListener("click", sendOrder);
         form.addEventListener("change", handleChange);
-        //slider.addEventListener("input", displayAmount);
-        //slider2.addEventListener("input", displayWeight);
-        //eyecolor.addEventListener("input", displayEyecolor);
-        //haircolor.addEventListener("input", displayHaircolor);
-        //clothcolor.addEventListener("input", displayClothcolor);
-        //mytext.addEventListener("input", displayMytext);
+        slider.addEventListener("input", displayAmount);
         displayOrder();
     }
     async function sendOrder(_event) {
+        return; // for testing
         console.log("SendOrder");
         // _event.preventDefault();
         let formData = new FormData(document.querySelector("form"));
         let query = new URLSearchParams(formData);
-        await fetch("index.html?" + query.toString());
-        alert("Character got send into pure illusion!");
+        await fetch(url + "?" + query.toString());
+        alert("Order sent!");
     }
-    
     function handleChange(_event) {
         displayOrder();
     }
@@ -51,8 +48,8 @@ var L05_CocktailBar;
             // console.log(entry);
             let selector = "[value='" + entry[1] + "']"; // "[name='" + entry[0] + "'][value='" + entry[1] + "']";
             let item = document.querySelector(selector);
-            //let itemPrice = Number(item.getAttribute("value"));
-            switch (entry[0]) {
+            let itemPrice = Number(item.getAttribute("price"));
+              switch (entry[0]) {
                 case "Amount":
                         let amount = Number(formData.get("Amount"));
                         order.innerHTML += amount + " " + "Meter" + "<br>";
@@ -82,14 +79,15 @@ var L05_CocktailBar;
                     order.innerHTML += item.value + "" + "<br>";
             }
             // console.log(item);
-            //price += itemPrice;
+            price += itemPrice;
         }
         // console.groupEnd();
-    
+        order.innerHTML += "<p><strong>Total: €" + price.toFixed(2);
     }
-// console.groupEnd();
-//order.innerHTML += "<p><strong>Total: €" + price.toFixed(2);
-
-    
-})(L05_CocktailBar || (L05_CocktailBar = {}));
+    function displayAmount(_event) {
+        let progress = document.querySelector("progress");
+        let amount = _event.target.value;
+        progress.value = parseFloat(amount);
+    }
+})(L06_CocktailBar || (L06_CocktailBar = {}));
 //# sourceMappingURL=CocktailBar.js.map

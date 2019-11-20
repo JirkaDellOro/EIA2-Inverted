@@ -23,12 +23,6 @@ progress {
 	transform: rotate(-90deg);
 }
 
-progress2 {
-	height:4em;
-	width: 4em;
-	transform: rotate(-90deg);
-}
-
 #slider {
 	display: grid;
 	grid-template-columns: auto auto;

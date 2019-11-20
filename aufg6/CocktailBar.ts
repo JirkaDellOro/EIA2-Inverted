@@ -1,5 +1,7 @@
-namespace L05_CocktailBar {
+namespace L06_CocktailBar {
     window.addEventListener("load", handleLoad);
+    // const url: string = "index.html";
+    const url: string = "localhost:8100";
     
     async function handleLoad(_event: Event): Promise<void> {
         console.log("Init");
@@ -17,17 +19,18 @@ namespace L05_CocktailBar {
         console.log(submit);
         submit.addEventListener("click", sendOrder);
         form.addEventListener("change", handleChange);
-        
+        slider.addEventListener("input", displayAmount);
 
-       
+        displayOrder();
     }
 
     async function sendOrder(_event: MouseEvent): Promise<void> {
+        return; // for testing
         console.log("SendOrder");
         // _event.preventDefault();
         let formData: FormData = new FormData(<HTMLFormElement>document.querySelector("form"));
         let query: URLSearchParams = new URLSearchParams(<any>formData);
-        await fetch("index.html?" + query.toString());
+        await fetch(url + "?" + query.toString());
         alert("Order sent!");
     }
 
@@ -70,5 +73,9 @@ namespace L05_CocktailBar {
     }
 
 
-
+    function displayAmount(_event: Event): void {
+        let progress: HTMLProgressElement = <HTMLProgressElement>document.querySelector("progress");
+        let amount: string = (<HTMLInputElement>_event.target).value;
+        progress.value = parseFloat(amount);
+    }
 }
