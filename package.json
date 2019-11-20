@@ -2,13 +2,10 @@
   "name": "eia2testlb",
   "version": "1.0.0",
   "description": "ServerTest",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "start": "node ./aufg6/Server/Server.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@types/node": "^12.12.11"
-  }
 }
