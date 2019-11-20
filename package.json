@@ -2,10 +2,22 @@
   "name": "eia2testlb",
   "version": "1.0.0",
   "description": "ServerTest",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "node ./aufg6/Server/Server.js"
+    "start": "node ./aufg6/Server/Server.js "
   },
-  "author": "",
+  "author": "TZ",
   "license": "ISC",
+  "dependencies": {
+    "@types/node": "^12.12.11"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukasBrauschHFU/EIA2-Inverted.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LukasBrauschHFU/EIA2-Inverted/issues"
+  },
+  "homepage": "https://github.com/LukasBrauschHFU/EIA2-Inverted#readme"
 }
