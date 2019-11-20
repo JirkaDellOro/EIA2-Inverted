@@ -4,7 +4,7 @@
   "description": "ServerTest",
   "main": "index.html",
   "scripts": {
-    "start": "node ./aufg6/Server/Server.js "
+    "start": "node ./aufg6/Server/Server.js"
   },
   "author": "",
   "license": "ISC",
