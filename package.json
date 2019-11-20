@@ -2,9 +2,9 @@
   "name": "aufg6",
   "version": "1.0.0",
   "description": "ServerTest",
-  "main": "CocktailBar.js",
+  "main": "",
   "scripts": {
-    "start": "node aufg6/CocktailBar.js "
+    "start": "node ./aufg6/Server/Server.js "
   },
   "author": "",
   "license": "ISC",
