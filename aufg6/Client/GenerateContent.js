@@ -7,19 +7,7 @@ var L06_CocktailBar;
             let items = _data[category];
             let group = null;
             switch (category) {
-                case "Race":
-                    group = createSelect(items, category);
-                    break;
-                 case "Class":
-                    group = createSelect(items, category);
-                    break;
-                case "Weapons":
-                    group = createSingle(items, category);
-                    break;
-                case "Accessoires":
-                    group = createMultiple(items, category);
-                    break;
-				case "Drink":
+                case "Drink":
                     group = createSelect(items, category);
                     break;
                 case "Container":
