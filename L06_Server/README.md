@@ -163,7 +163,7 @@ Das Problem ist nämlich, dass Heroku keine Ahnung davon hat, was es eigentlich 
  - [x] Wenn Du damit durch bist, öffne die entstandene Datei `package.json`
    - [x] ersetze darin den mit "test" bezeichneten Eintrag in "scripts" durch
    ```
-   "node Relativer/Pfad/Zu/Datei.js"
+   "start": "node Relativer/Pfad/Zu/Datei.js"
    ```
    wobei Du den rechten Teil natürlich mit Sinnvollem ersetzt.
 - [x] Teste `package.json` indem Du nun in der Konsole `npm start` eingibst. Der NodePackageManager (npm) sucht jetzt selbst in der Datei nach dem Eintrag "start" unter "scripts" und führt aus was darin steht.
