@@ -2,15 +2,29 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const Http = require("http");
 const Url = require("url");
-var L06_CocktailBar;
-(function (L06_CocktailBar) {
-    let server = Http.createServer();
+const Mongo = require("mongodb");
+var L07_CocktailBar;
+(function (L07_CocktailBar) {
+    let orders;
     let port = process.env.PORT;
     if (port == undefined)
         port = 5001;
-    console.log("Server starting on port:" + port);
-    server.listen(port);
-    server.addListener("request", handleRequest);
+    let databaseUrl = "mongodb+srv://Testuser:iebvu577ngvue@cluster0-g928j.mongodb.net/test?retryWrites=true&w=majority";
+    startServer(port);
+    connectToDatabase(databaseUrl);
+    function startServer(_port) {
+        let server = Http.createServer();
+        console.log("Server starting on port:" + _port);
+        server.listen(_port);
+        server.addListener("request", handleRequest);
+    }
+    async function connectToDatabase(_url) {
+        let options = { useNewUrlParser: true, useUnifiedTopology: true };
+        let mongoClient = new Mongo.MongoClient(_url, options);
+        await mongoClient.connect();
+        orders = mongoClient.db("CocktailBar").collection("Orders");
+        console.log("Database connection ", orders != undefined);
+    }
     function handleRequest(_request, _response) {
         console.log("What's up?");
         _response.setHeader("content-type", "text/html; charset=utf-8");
@@ -22,8 +36,12 @@ var L06_CocktailBar;
             }
             let jsonString = JSON.stringify(url.query);
             _response.write(jsonString);
+            storeOrder(url.query);
         }
         _response.end();
     }
-})(L06_CocktailBar = exports.L06_CocktailBar || (exports.L06_CocktailBar = {}));
+    function storeOrder(_order) {
+        orders.insert(_order);
+    }
+})(L07_CocktailBar = exports.L07_CocktailBar || (exports.L07_CocktailBar = {}));
 //# sourceMappingURL=Server.js.map
