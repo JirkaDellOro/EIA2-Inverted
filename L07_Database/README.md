@@ -62,7 +62,7 @@ MongoDB-Instanz
 ``` 
 - Eine MongoDB-Instanz kann mehrere Datenbanken verwalten.
 - Die Datenbanken admin, config und local werden dabei standardmäßig angelegt und sind für die interne Funktionalität erforderlich
-- Die kannst beliebige viele eigene Datenbanken anlegen
+- Die kannst beliebig viele eigene Datenbanken anlegen
 - In jeder Datenbank können beliebig viele Collections untergebracht sein
 - Jede Collection enthält eine beliebige Anzahl an Dokumenten
 - Ein Dokument ist im Wesentlichen lediglich ein JSON-String
@@ -108,7 +108,7 @@ Test
 ```
 Dann lautet der Aufruf
 ```
-bin/mongod --dbpath ../Database
+MongoDB/bin/mongod --dbpath ../Database
 ``` 
 
 Wenn alles funktioniert, gibt MongoDB einige Meldungen auf der Konsole aus und unter den letzten befinden sich "Listening on ..." und "waiting for connections on port ...". Das Programm läuft jetzt offensichtich als Server auf deinem Localhost und wartet am angegebenen Port auf Kommunikationspartner.
@@ -121,7 +121,7 @@ Die eigentlichen Daten kann man so nicht einsehen, sie werden in einem effizient
 - [x] Gib `show dbs` in der Shell ein, es sollten dir Infos zu den drei internen Datenbanken angezeigt werden.
 - [x] Lege mit `use Test` eine neue Datenbank mit Namen "Test" an. Die Shell bestätigt "switched to db Test". Test ist nun für die folgenden Befehle die Datenbank, mit der gearbeitet wird.
 - [x] Gib `show collections` ein. Da noch keine Collections in Test angelegt sind, sollte nichts ausgegeben werden. Tatsächlich wird auch `show dbs` noch nicht die Datenbank Test ausgeben, da diese noch leer ist.
-- [x] Gib ein `doc = {name: ..., firstname: ..., registration: ...}` wobei Du `...` jeweils mit deinem Nachnamen, Vornamen und deiner Matrikelnummer ersetzt. Damit erzeugst Du eine Javascript-Variable namens `doc` und ein Objekt mit Informationen zu dir, auf welches die Variable verweist.
+- [x] Gib ein `doc = {name: "...", firstname: "...", registration: "..."}` wobei Du `...` jeweils mit deinem Nachnamen, Vornamen und deiner Matrikelnummer ersetzt. Damit erzeugst Du eine Javascript-Variable namens `doc` und ein Objekt mit Informationen zu dir, auf welches die Variable verweist.
 - [x] Mit `db.Students.insert(doc)` fügst Du nun den mit `doc` referenzierten Datensatz in eine Collection namens "Students" in die aktuelle genutzte Datenbank, also in Test, ein.
 - [x] Lasse dir wieder den Überblick über die Datenbanken und über die Collections in der Datenbank Test ausgeben. Test und darin Students sollten nun angezeigt werden. 
 - [x] Den Inhalt der Collection lässt Du dir jetzt mit `db.Students.find()` anzeigen. Dein Datensatz sollte auftauchen, wobei dieser um einen Schlüssel "_id" mit einem zugehörigen Wert erweitert wurde. Jedes Dokument erhält nämlich automatisch eine eindeutige Identifikation. 
@@ -180,7 +180,7 @@ Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von 
 
 - [x] Betrachte die EIA2-Landschaft. Die letzte Wolke wird jetzt in Angriff genommen.
   - [x] Rufe https://www.mongodb.com/ auf
-  - [x] Klicke oben rechts auf "Try Free"
+  - [x] Klicke oben rechts auf "Start Free"
   - [x] Melde dich mit Namen und Mailadresse an
   - [x] Wähle "Create a cluster" unter Starter Clusters
   - [x] Wähle AWS und einen Free Cluster in Europa

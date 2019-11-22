@@ -163,9 +163,9 @@ Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem
   - alles kollidiert mit anderem außer Asteroiden untereinander
   - isHit-Methode in Moveable anlegen als isHitBy(_partner)
     - Kollisionsradius hinzufügen
-    - Vectorklasse einen length-getter spendieren
-    - Vectorklasse eine statische diff-Methode spendieren
-    - bei Kollision expendable = true;
+    - Vectorklasse einen length-getter spendieren -> schon in Lektion geschehen
+    - Vectorklasse eine statische diff-Methode spendieren -> schon in Lektion geschehen
+    - bei Kollision expendable = true; -> schon in Lektion 10 geschehen
   - Asteroiden ausnehmen
   - Ufotorpedos explodieren im Rohr -> einen kleinen Timeslice vorausschicken.
 - Hotspot integrieren als Subklasse von Projectile
