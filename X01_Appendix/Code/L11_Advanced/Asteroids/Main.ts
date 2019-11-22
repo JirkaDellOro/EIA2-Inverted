@@ -21,6 +21,20 @@ namespace L11_AsteroidsAdvanced {
 
         createAsteroids(5);
         // createShip();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
 
         canvas.addEventListener("mousedown", shootProjectile);
         canvas.addEventListener("mouseup", shootLaser);
@@ -73,6 +87,12 @@ namespace L11_AsteroidsAdvanced {
             let asteroid: Asteroid = new Asteroid(1.0);
             moveables.push(asteroid);
         }
+    }
+    
+    function createUfo(): void {
+        console.log("Create ufo");
+        let ufo: Ufo = new Ufo();
+        moveables.push(ufo);
     }
 
     function update(): void {

@@ -17,6 +17,20 @@ var L11_AsteroidsAdvanced;
         console.log("Asteroids paths: ", L11_AsteroidsAdvanced.asteroidPaths);
         createAsteroids(5);
         // createShip();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
+        createUfo();
         canvas.addEventListener("mousedown", shootProjectile);
         canvas.addEventListener("mouseup", shootLaser);
         // canvas.addEventListener("keypress", handleKeypress);
@@ -62,6 +76,11 @@ var L11_AsteroidsAdvanced;
             let asteroid = new L11_AsteroidsAdvanced.Asteroid(1.0);
             moveables.push(asteroid);
         }
+    }
+    function createUfo() {
+        console.log("Create ufo");
+        let ufo = new L11_AsteroidsAdvanced.Ufo();
+        moveables.push(ufo);
     }
     function update() {
         // console.log("Update");

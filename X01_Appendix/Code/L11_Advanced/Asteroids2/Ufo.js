@@ -25,7 +25,6 @@ var L11_AsteroidsAdvanced_2;
                 this.velocity.y = this.speed * (Math.floor(Math.random() * 3) - 1);
         }
         shoot() {
-            // console.log("Shoot");
             let event = new CustomEvent("ufoShoots", { detail: { ufo: this } });
             L11_AsteroidsAdvanced_2.crc2.canvas.dispatchEvent(event);
         }
