@@ -4,14 +4,20 @@
   "description": "ServerTest",
   "main": "index.html",
   "scripts": {
-    "start": "node ./aufg6/Server/Server.js "
+    "start": "node ./aufg6/Server/Server.js remote"
   },
   "author": "TZ",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^12.12.11"
+    "@types/mongodb": "^3.3.11",
+    "@types/node": "^12.12.11",
+    "mongodb": "^3.3.4"
   },
-  "devDependencies": {},
+  "devDependencies": {"@types/node": {
+          "version": "12.12.11",
+          "resolved": "https://registry.npmjs.org/@types/node/-/node-12.12.11.tgz",
+          "integrity": "sha512-O+x6uIpa6oMNTkPuHDa9MhMMehlxLAd5QcOvKRjAFsBVpeFWTOPnXbDvILvFgFFZfQ1xh1EZi1FbXxUix+zpsQ=="
+        }},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LukasBrauschHFU/EIA2-Inverted.git"
