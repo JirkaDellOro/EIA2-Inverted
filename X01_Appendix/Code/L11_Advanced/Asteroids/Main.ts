@@ -22,19 +22,6 @@ namespace L11_AsteroidsAdvanced {
         createAsteroids(5);
         // createShip();
         createUfo();
-        createUfo();
-        createUfo();
-        createUfo();
-        createUfo();
-        createUfo();
-        createUfo();
-        createUfo();
-        createUfo();
-        createUfo();
-        createUfo();
-        createUfo();
-        createUfo();
-        createUfo();
 
         canvas.addEventListener("mousedown", shootProjectile);
         canvas.addEventListener("mouseup", shootLaser);
