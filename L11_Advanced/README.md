@@ -5,13 +5,15 @@
 **Video:**
 Diese Lektion startet mit einem Video
 - Lösung des Ufo-Projektil-Problems.
-  - Lösungsvarianten vorstellen und implementieren
+  - Lösungsvarianten vorstellen
     - Ufo kennt moveables und streut dort Projektile ein
     - Main fragt Ufos, ob sie eins auf Lager haben
     - beide Lösung widersprechen SoC, da die Klassen zu schlau werden
   - dritte Lösungsvariante: Ufo schickt CustomEvent an Canvas
     - in Aktivitätsdiagrammen ergänzen
     - implementieren
+      - zunächst aktuellen Code etwas zeigen
+      - überflüssigen Code im Asteroid-Constructor entfernen
       - shoot projectile nicht mehr als Handler sonder als normale Funktion mit startPosition als Parameter
         - origin -> _origin
 
@@ -111,7 +113,9 @@ Der Zugriff ist nur Objekten der gleichen Klasse und deren Subklassen erlaubt. E
 **Video**
 - die Diagramme werden überarbeitet und untersucht, wo static und die Sichtbarkeitsmodifikatoren eingesetzt werden sollten
   - Vector: getDifference, getSum, getScaled, getRandom
-  - Pfade in Klassen static, Geschwindigkeiten
+  - Geschwindigkeiten
+    - in Ufos Objektattribut speed zeigen und in Klassendiagramm nachtragen 
+  - Pfade als statische Informationen in den Klassen diskutieren aber verwerfen.
 - Es erfolgt gleich die Implementation
 
 ## Zugriffsfunktionen 
@@ -151,6 +155,7 @@ get length(): number {
 ```
 
 erscheint es von außen betrachtet aber so, als wäre diese Eigenschaft ständig vorhanden, denn sie kann einfach mit z.B. `let speed: number = velocity.length;` abgerufen werden. Die Anweisung verschleiert, dass es sich eigentlich um den Aufruf einer Methode handelt.
+
 
 ## Garbage Collection
 Wenn eine Variable ihren Gültigkeitsbereich verlässt, wird der von ihr belegte Speicher freigegeben und steht wieder für andere Informationen zur Vefügung. Bei Variablen, die auf Objekte verweisen, wird aber nur der Verweis gelöscht, das referenzierte Objekt dagegen bleibt im Speicher, denn es könnten noch andere Variablen darauf verweisen. Diese würden dann ins Leere deuten und Fehler erzeugen. Werden die Objekte allerdings nie gelöscht, wird der Speicher immer mehr zugemüllt und es kommt irgendwann zu einem Programmversagen.
