@@ -12,6 +12,7 @@ namespace L11_AsteroidsAdvanced {
 
             this.type = Math.floor(Math.random() * 4);
             this.size = _size;
+            this.hitRadius = 50 * _size;
         }
 
         public draw(): void {
@@ -25,10 +26,10 @@ namespace L11_AsteroidsAdvanced {
             crc2.restore();
         }
 
-        public isHit(_hotspot: Vector): boolean {
-            let hitsize: number = 50 * this.size;
-            let difference: Vector = new Vector(_hotspot.x - this.position.x, _hotspot.y - this.position.y);
-            return (Math.abs(difference.x) < hitsize && Math.abs(difference.y) < hitsize);
+        public hit(): void {
+            super.hit();
+            let event: CustomEvent = new CustomEvent(ASTEROID_EVENT.ASTEROID_HIT, {detail: {asteroid: this}});
+            crc2.canvas.dispatchEvent(event);
         }
     }
 }

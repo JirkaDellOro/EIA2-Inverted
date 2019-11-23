@@ -5,11 +5,22 @@ var L11_AsteroidsAdvanced;
         constructor(_position) {
             // console.log("Moveable constructor");
             this.expendable = false;
+            this.hitRadius = 0;
             if (_position)
                 this.position = _position.copy();
             else
                 this.position = new L11_AsteroidsAdvanced.Vector(0, 0);
             this.velocity = new L11_AsteroidsAdvanced.Vector(0, 0);
+        }
+        isHitBy(_partner) {
+            let difference = L11_AsteroidsAdvanced.Vector.getDifference(this.position, _partner.position);
+            if (this.hitRadius + _partner.hitRadius < difference.length)
+                return false;
+            return true;
+        }
+        hit() {
+            console.log("Hit", this);
+            this.expendable = true;
         }
         move(_timeslice) {
             // console.log("Moveable move");

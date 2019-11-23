@@ -3,6 +3,7 @@ namespace L11_AsteroidsAdvanced {
         public position: Vector;
         public velocity: Vector;
         public expendable: boolean = false;
+        protected hitRadius: number = 0;
 
         constructor(_position?: Vector) {
             // console.log("Moveable constructor");
@@ -13,6 +14,19 @@ namespace L11_AsteroidsAdvanced {
                 this.position = new Vector(0, 0);
 
             this.velocity = new Vector(0, 0);
+        }
+
+        public isHitBy(_partner: Moveable): boolean {
+            let difference: Vector = Vector.getDifference(this.position, _partner.position);
+            if (this.hitRadius + _partner.hitRadius < difference.length)
+                return false;
+
+            return true;
+        }
+
+        public hit(): void {
+            console.log("Hit", this);
+            this.expendable = true;
         }
 
         public move(_timeslice: number): void {

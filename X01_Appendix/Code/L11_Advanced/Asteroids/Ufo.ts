@@ -8,6 +8,7 @@ namespace L11_AsteroidsAdvanced {
 
             this.velocity = new Vector(Math.random() < 0.5 ? -1 : 1, Math.floor(Math.random() * 3) - 1);
             this.velocity.scale(Ufo.speed);
+            this.hitRadius = 25;
         }
 
         public draw(): void {
@@ -20,7 +21,7 @@ namespace L11_AsteroidsAdvanced {
 
         public move(_timeslice: number): void {
             super.move(_timeslice);
-            if (Math.random() < 0.01)
+            if (Math.random() < 0.03)
                 this.shoot();
             if (Math.random() < 0.02)
                 this.velocity.y = Ufo.speed * (Math.floor(Math.random() * 3) - 1);
@@ -28,7 +29,7 @@ namespace L11_AsteroidsAdvanced {
 
         private shoot(): void {
             console.log("Ufo shoots");
-            let event: CustomEvent = new CustomEvent("ufoShoots", {detail: {ufo: this}});
+            let event: CustomEvent = new CustomEvent(ASTEROID_EVENT.UFO_SHOOTS, {detail: {ufo: this}});
             crc2.canvas.dispatchEvent(event);
         }
     }

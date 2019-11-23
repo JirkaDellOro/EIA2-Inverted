@@ -8,6 +8,7 @@ var L11_AsteroidsAdvanced;
             this.velocity = L11_AsteroidsAdvanced.Vector.getRandom(100, 200);
             this.type = Math.floor(Math.random() * 4);
             this.size = _size;
+            this.hitRadius = 50 * _size;
         }
         draw() {
             // console.log("Asteroid draw");
@@ -19,10 +20,10 @@ var L11_AsteroidsAdvanced;
             L11_AsteroidsAdvanced.crc2.stroke(L11_AsteroidsAdvanced.asteroidPaths[this.type]);
             L11_AsteroidsAdvanced.crc2.restore();
         }
-        isHit(_hotspot) {
-            let hitsize = 50 * this.size;
-            let difference = new L11_AsteroidsAdvanced.Vector(_hotspot.x - this.position.x, _hotspot.y - this.position.y);
-            return (Math.abs(difference.x) < hitsize && Math.abs(difference.y) < hitsize);
+        hit() {
+            super.hit();
+            let event = new CustomEvent(L11_AsteroidsAdvanced.ASTEROID_EVENT.ASTEROID_HIT, { detail: { asteroid: this } });
+            L11_AsteroidsAdvanced.crc2.canvas.dispatchEvent(event);
         }
     }
     L11_AsteroidsAdvanced.Asteroid = Asteroid;

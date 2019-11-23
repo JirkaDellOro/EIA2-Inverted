@@ -1,7 +1,7 @@
 namespace L11_AsteroidsAdvanced {
     export class Projectile extends Moveable {
-        private static maxLifetime: number = 2;
-        private lifetime: number = Projectile.maxLifetime;
+        protected static maxLifetime: number = 2;
+        protected lifetime: number = Projectile.maxLifetime;
 
         constructor(_position: Vector, _velocity: Vector) {
             super(_position);

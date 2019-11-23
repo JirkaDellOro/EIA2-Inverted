@@ -7,6 +7,7 @@ var L11_AsteroidsAdvanced;
             this.position = new L11_AsteroidsAdvanced.Vector(0, Math.random() * L11_AsteroidsAdvanced.crc2.canvas.height);
             this.velocity = new L11_AsteroidsAdvanced.Vector(Math.random() < 0.5 ? -1 : 1, Math.floor(Math.random() * 3) - 1);
             this.velocity.scale(Ufo.speed);
+            this.hitRadius = 25;
         }
         draw() {
             L11_AsteroidsAdvanced.crc2.save();
@@ -17,14 +18,14 @@ var L11_AsteroidsAdvanced;
         }
         move(_timeslice) {
             super.move(_timeslice);
-            if (Math.random() < 0.01)
+            if (Math.random() < 0.03)
                 this.shoot();
             if (Math.random() < 0.02)
                 this.velocity.y = Ufo.speed * (Math.floor(Math.random() * 3) - 1);
         }
         shoot() {
             console.log("Ufo shoots");
-            let event = new CustomEvent("ufoShoots", { detail: { ufo: this } });
+            let event = new CustomEvent(L11_AsteroidsAdvanced.ASTEROID_EVENT.UFO_SHOOTS, { detail: { ufo: this } });
             L11_AsteroidsAdvanced.crc2.canvas.dispatchEvent(event);
         }
     }

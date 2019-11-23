@@ -1,4 +1,9 @@
 namespace L11_AsteroidsAdvanced {
+    export enum ASTEROID_EVENT {
+        UFO_SHOOTS = "ufoShoots",
+        ASTEROID_HIT = "asteroidHit"
+    }
+
     window.addEventListener("load", handleLoad);
 
     export let crc2: CanvasRenderingContext2D;
@@ -22,8 +27,11 @@ namespace L11_AsteroidsAdvanced {
         createAsteroids(5);
         // createShip();
         createUfo();
+        createUfo();
+        createUfo();
 
-        canvas.addEventListener("ufoShoots", handleUfoShot);
+        canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
+        canvas.addEventListener(ASTEROID_EVENT.ASTEROID_HIT, breakAsteroid);
         canvas.addEventListener("mouseup", shootLaser);
         // canvas.addEventListener("keypress", handleKeypress);
         // canvas.addEventListener("mousemove", setHeading);
@@ -33,8 +41,10 @@ namespace L11_AsteroidsAdvanced {
 
     function shootProjectile(_origin: Vector): void {
         console.log("Shoot projectile");
-        let velocity: Vector = Vector.getRandom(100, 100);
+        let velocity: Vector = Vector.getRandom(200, 200);
         let projectile: Projectile = new Projectile(_origin, velocity);
+        // move projectile away from ufo to prevent suicide
+        projectile.move(0.15);
         moveables.push(projectile);
     }
 
@@ -45,30 +55,21 @@ namespace L11_AsteroidsAdvanced {
 
     function shootLaser(_event: MouseEvent): void {
         console.log("Shoot laser");
-        let hotspot: Vector = new Vector(_event.clientX - crc2.canvas.offsetLeft, _event.clientY - crc2.canvas.offsetTop);
-        let asteroidHit: Asteroid | null = getAsteroidHit(hotspot);
-        console.log(asteroidHit);
-        if (asteroidHit)
-            breakAsteroid(asteroidHit);
+        let position: Vector = new Vector(_event.clientX - crc2.canvas.offsetLeft, _event.clientY - crc2.canvas.offsetTop);
+        let hotspot: Hotspot = new Hotspot(position);
+        moveables.push(hotspot);
     }
 
-    function getAsteroidHit(_hotspot: Vector): Asteroid | null {
-        for (let moveable of moveables) {
-            if (moveable instanceof Asteroid && moveable.isHit(_hotspot))
-                return moveable;
-        }
-        return null;
-    }
-
-    function breakAsteroid(_asteroid: Asteroid): void {
-        if (_asteroid.size > 0.3) {
+    function breakAsteroid(_event: Event): void {
+        let asteroid: Asteroid = (<CustomEvent>_event).detail.asteroid;
+        if (asteroid.size > 0.3) {
             for (let i: number = 0; i < 2; i++) {
-                let fragment: Asteroid = new Asteroid(_asteroid.size / 2, _asteroid.position);
-                fragment.velocity.add(_asteroid.velocity);
+                let fragment: Asteroid = new Asteroid(asteroid.size / 2, asteroid.position);
+                fragment.velocity.add(asteroid.velocity);
                 moveables.push(fragment);
             }
         }
-        _asteroid.expendable = true;
+        asteroid.expendable = true;
     }
 
     function createAsteroids(_nAsteroids: number): void {
@@ -78,7 +79,7 @@ namespace L11_AsteroidsAdvanced {
             moveables.push(asteroid);
         }
     }
-    
+
     function createUfo(): void {
         console.log("Create ufo");
         let ufo: Ufo = new Ufo();
@@ -96,9 +97,9 @@ namespace L11_AsteroidsAdvanced {
 
         deleteExpandables();
 
-
         // ship.draw();
-        // handleCollisions();
+        handleCollisions();
+
         console.log("Moveable length: ", moveables.length);
     }
 
@@ -106,6 +107,26 @@ namespace L11_AsteroidsAdvanced {
         for (let i: number = moveables.length - 1; i >= 0; i--) {
             if (moveables[i].expendable)
                 moveables.splice(i, 1);
+        }
+    }
+
+    function handleCollisions(): void {
+        for (let i: number = 0; i < moveables.length; i++) {
+            let a: Moveable = moveables[i];
+            for (let j: number = i + 1; j < moveables.length; j++) {
+                let b: Moveable = moveables[j];
+
+                if (a instanceof Asteroid && b instanceof Asteroid)
+                    continue;
+                if (a.expendable || b.expendable)
+                    continue;
+
+                if (a.isHitBy(b)) {
+                    a.hit();
+                    b.hit();
+                }
+
+            }
         }
     }
 }

@@ -21,6 +21,10 @@ namespace L11_AsteroidsAdvanced {
             return vector;
         }
 
+        public get length(): number {
+            return Math.hypot(this.x, this.y);
+        }
+
         public set(_x: number, _y: number): void {
             this.x = _x;
             this.y = _y;
