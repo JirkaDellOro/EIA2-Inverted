@@ -4,7 +4,7 @@ var L11_AsteroidsAdvanced;
     class Projectile extends L11_AsteroidsAdvanced.Moveable {
         constructor(_position, _velocity) {
             super(_position);
-            this.lifetime = 2;
+            this.lifetime = Projectile.maxLifetime;
             console.log("Projectile constructor");
             this.velocity = _velocity.copy();
         }
@@ -22,6 +22,7 @@ var L11_AsteroidsAdvanced;
                 this.expendable = true;
         }
     }
+    Projectile.maxLifetime = 2;
     L11_AsteroidsAdvanced.Projectile = Projectile;
 })(L11_AsteroidsAdvanced || (L11_AsteroidsAdvanced = {}));
 //# sourceMappingURL=Projectile.js.map

@@ -18,19 +18,21 @@ var L11_AsteroidsAdvanced;
         createAsteroids(5);
         // createShip();
         createUfo();
-        canvas.addEventListener("mousedown", shootProjectile);
+        canvas.addEventListener("ufoShoots", handleUfoShot);
         canvas.addEventListener("mouseup", shootLaser);
         // canvas.addEventListener("keypress", handleKeypress);
         // canvas.addEventListener("mousemove", setHeading);
         window.setInterval(update, 20);
     }
-    function shootProjectile(_event) {
+    function shootProjectile(_origin) {
         console.log("Shoot projectile");
-        let origin = new L11_AsteroidsAdvanced.Vector(_event.clientX - L11_AsteroidsAdvanced.crc2.canvas.offsetLeft, _event.clientY - L11_AsteroidsAdvanced.crc2.canvas.offsetTop);
-        let velocity = new L11_AsteroidsAdvanced.Vector(0, 0);
-        velocity.random(100, 100);
-        let projectile = new L11_AsteroidsAdvanced.Projectile(origin, velocity);
+        let velocity = L11_AsteroidsAdvanced.Vector.getRandom(100, 100);
+        let projectile = new L11_AsteroidsAdvanced.Projectile(_origin, velocity);
         moveables.push(projectile);
+    }
+    function handleUfoShot(_event) {
+        let ufo = _event.detail.ufo;
+        shootProjectile(ufo.position);
     }
     function shootLaser(_event) {
         console.log("Shoot laser");

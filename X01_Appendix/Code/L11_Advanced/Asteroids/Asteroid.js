@@ -5,12 +5,7 @@ var L11_AsteroidsAdvanced;
         constructor(_size, _position) {
             super(_position);
             console.log("Asteroid constructor");
-            if (_position)
-                this.position = _position.copy();
-            else
-                this.position = new L11_AsteroidsAdvanced.Vector(0, 0);
-            this.velocity = new L11_AsteroidsAdvanced.Vector(0, 0);
-            this.velocity.random(100, 200);
+            this.velocity = L11_AsteroidsAdvanced.Vector.getRandom(100, 200);
             this.type = Math.floor(Math.random() * 4);
             this.size = _size;
         }

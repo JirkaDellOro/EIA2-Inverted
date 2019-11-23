@@ -23,7 +23,7 @@ namespace L11_AsteroidsAdvanced {
         // createShip();
         createUfo();
 
-        canvas.addEventListener("mousedown", shootProjectile);
+        canvas.addEventListener("ufoShoots", handleUfoShot);
         canvas.addEventListener("mouseup", shootLaser);
         // canvas.addEventListener("keypress", handleKeypress);
         // canvas.addEventListener("mousemove", setHeading);
@@ -31,13 +31,16 @@ namespace L11_AsteroidsAdvanced {
         window.setInterval(update, 20);
     }
 
-    function shootProjectile(_event: MouseEvent): void {
+    function shootProjectile(_origin: Vector): void {
         console.log("Shoot projectile");
-        let origin: Vector = new Vector(_event.clientX - crc2.canvas.offsetLeft, _event.clientY - crc2.canvas.offsetTop);
-        let velocity: Vector = new Vector(0, 0);
-        velocity.random(100, 100);
-        let projectile: Projectile = new Projectile(origin, velocity);
+        let velocity: Vector = Vector.getRandom(100, 100);
+        let projectile: Projectile = new Projectile(_origin, velocity);
         moveables.push(projectile);
+    }
+
+    function handleUfoShot(_event: Event): void {
+        let ufo: Ufo = (<CustomEvent>_event).detail.ufo;
+        shootProjectile(ufo.position);
     }
 
     function shootLaser(_event: MouseEvent): void {

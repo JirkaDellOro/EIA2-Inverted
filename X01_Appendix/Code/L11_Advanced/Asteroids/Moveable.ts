@@ -1,8 +1,8 @@
 namespace L11_AsteroidsAdvanced {
-    export class Moveable {
-        position: Vector;
-        velocity: Vector;
-        expendable: boolean = false;
+    export abstract class Moveable {
+        public position: Vector;
+        public velocity: Vector;
+        public expendable: boolean = false;
 
         constructor(_position?: Vector) {
             // console.log("Moveable constructor");
@@ -15,7 +15,7 @@ namespace L11_AsteroidsAdvanced {
             this.velocity = new Vector(0, 0);
         }
 
-        move(_timeslice: number): void {
+        public move(_timeslice: number): void {
             // console.log("Moveable move");
             let offset: Vector = this.velocity.copy();
             offset.scale(_timeslice);
@@ -31,8 +31,6 @@ namespace L11_AsteroidsAdvanced {
                 this.position.y -= crc2.canvas.height;
         }
 
-        draw(): void {
-            // console.log("Moveable move");
-        }
+        public abstract draw(): void;
     }
 }

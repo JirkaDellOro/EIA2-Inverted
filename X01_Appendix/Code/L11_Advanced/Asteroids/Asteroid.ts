@@ -1,28 +1,20 @@
 namespace L11_AsteroidsAdvanced {
     export class Asteroid extends Moveable {
-        position: Vector;
-        velocity: Vector;
-        type: number;
-        size: number;
+        public size: number;
+        private type: number;
 
         constructor(_size: number, _position?: Vector) {
             super(_position);
             
             console.log("Asteroid constructor");
 
-            if (_position)
-                this.position = _position.copy();
-            else
-                this.position = new Vector(0, 0);
-
-            this.velocity = new Vector(0, 0);
-            this.velocity.random(100, 200);
+            this.velocity = Vector.getRandom(100, 200);
 
             this.type = Math.floor(Math.random() * 4);
             this.size = _size;
         }
 
-        draw(): void {
+        public draw(): void {
             // console.log("Asteroid draw");
             crc2.save();
             crc2.translate(this.position.x, this.position.y);
@@ -33,7 +25,7 @@ namespace L11_AsteroidsAdvanced {
             crc2.restore();
         }
 
-        isHit(_hotspot: Vector): boolean {
+        public isHit(_hotspot: Vector): boolean {
             let hitsize: number = 50 * this.size;
             let difference: Vector = new Vector(_hotspot.x - this.position.x, _hotspot.y - this.position.y);
             return (Math.abs(difference.x) < hitsize && Math.abs(difference.y) < hitsize);
