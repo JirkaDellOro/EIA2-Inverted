@@ -1,16 +1,15 @@
 namespace L11_AsteroidsAdvanced_2 {
     export class Hotspot extends Projectile {
-        range: number;
-        duration: number = 0.5;
+        protected static lifetime: number = 0.5;
 
         constructor(_position: Vector) {
             super(_position, new Vector(0, 0));
-            this.range = this.duration;
+            this.lifetime = Hotspot.lifetime;
             this.hitRadius = 25;
         }
 
         draw(): void {
-            let ratio: number = this.range / this.duration;
+            let ratio: number = this.lifetime / Hotspot.lifetime;
             if (ratio < 0)
                 return;
             crc2.save();
@@ -24,9 +23,9 @@ namespace L11_AsteroidsAdvanced_2 {
         }
 
         hit(): void {
-            this.range -= this.duration / 4;
-            this.expendable = this.range < 0;
-            console.log("Hotspot hit, remaining range: ", this.range);
+            this.lifetime -= Hotspot.lifetime / 3;
+            this.expendable = this.lifetime < 0;
+            console.log("Hotspot hit, remaining range: ", this.lifetime);
         }
     }
 }

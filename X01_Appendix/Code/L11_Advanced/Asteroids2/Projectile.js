@@ -5,7 +5,7 @@ var L11_AsteroidsAdvanced_2;
         constructor(_position, _velocity) {
             super(4, _position);
             this.velocity = new L11_AsteroidsAdvanced_2.Vector(_velocity.x, _velocity.y);
-            this.range = 2;
+            this.lifetime = Projectile.lifetime;
         }
         draw() {
             L11_AsteroidsAdvanced_2.crc2.save();
@@ -16,13 +16,14 @@ var L11_AsteroidsAdvanced_2;
         }
         move(_timeslice) {
             super.move(_timeslice);
-            this.range -= _timeslice;
-            if (this.range < 0) {
+            this.lifetime -= _timeslice;
+            if (this.lifetime < 0) {
                 this.velocity = new L11_AsteroidsAdvanced_2.Vector(0, 0);
                 this.expendable = true;
             }
         }
     }
+    Projectile.lifetime = 2;
     L11_AsteroidsAdvanced_2.Projectile = Projectile;
 })(L11_AsteroidsAdvanced_2 || (L11_AsteroidsAdvanced_2 = {}));
 //# sourceMappingURL=Projectile.js.map

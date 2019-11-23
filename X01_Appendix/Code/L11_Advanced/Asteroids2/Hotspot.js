@@ -4,12 +4,11 @@ var L11_AsteroidsAdvanced_2;
     class Hotspot extends L11_AsteroidsAdvanced_2.Projectile {
         constructor(_position) {
             super(_position, new L11_AsteroidsAdvanced_2.Vector(0, 0));
-            this.duration = 0.5;
-            this.range = this.duration;
+            this.lifetime = Hotspot.lifetime;
             this.hitRadius = 25;
         }
         draw() {
-            let ratio = this.range / this.duration;
+            let ratio = this.lifetime / Hotspot.lifetime;
             if (ratio < 0)
                 return;
             L11_AsteroidsAdvanced_2.crc2.save();
@@ -22,11 +21,12 @@ var L11_AsteroidsAdvanced_2;
             L11_AsteroidsAdvanced_2.crc2.restore();
         }
         hit() {
-            this.range -= this.duration / 4;
-            this.expendable = this.range < 0;
-            console.log("Hotspot hit, remaining range: ", this.range);
+            this.lifetime -= Hotspot.lifetime / 3;
+            this.expendable = this.lifetime < 0;
+            console.log("Hotspot hit, remaining range: ", this.lifetime);
         }
     }
+    Hotspot.lifetime = 0.5;
     L11_AsteroidsAdvanced_2.Hotspot = Hotspot;
 })(L11_AsteroidsAdvanced_2 || (L11_AsteroidsAdvanced_2 = {}));
 //# sourceMappingURL=Hotspot.js.map

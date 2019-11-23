@@ -1,11 +1,12 @@
 namespace L11_AsteroidsAdvanced_2 {
     export class Projectile extends Moveable {
-        range: number;
+        protected static lifetime: number = 2;
+        lifetime: number;
 
         constructor(_position: Vector, _velocity: Vector) {
             super(4, _position);
             this.velocity = new Vector(_velocity.x, _velocity.y);
-            this.range = 2;
+            this.lifetime = Projectile.lifetime;
         }
 
         draw(): void {
@@ -18,9 +19,9 @@ namespace L11_AsteroidsAdvanced_2 {
 
         move(_timeslice: number): void {
             super.move(_timeslice);
-            this.range -= _timeslice;
+            this.lifetime -= _timeslice;
 
-            if (this.range < 0) {
+            if (this.lifetime < 0) {
                 this.velocity = new Vector(0, 0);
                 this.expendable = true;
             }
