@@ -1,6 +1,6 @@
 # L07_Database
 <img src="Material/Dilbert.gif">
-<small>Quelle: <a href="https://dilbert.com/strip/1995-11-17">https://dilbert.com/strip/1995-11-17</a></small>  
+<small>Quelle:<a href="https://dilbert.com/strip/1995-11-17">https://dilbert.com/strip/1995-11-17</a></small>  
 
 Mit dem Cocktailbar-Client kann der Kunde einen Cocktail zusammenstellen, seine Bestellung überprüfen und abschicken. Der Server nimmt die Bestellung entgegen und formuliert eine Bestätigung, die der Client anzeigt. Dumm nur: der Barkeeper bekommt davon immer noch nichts mit. Denn anders als an einer nicht-virtuellen Bar, kommunizieren Barkeeper und Kunde nun asynchron. Der Barkeeper ist also höchstwahrscheinlich nicht zugegen, wenn die Bestellung hereinkommt und arbeitet sie stattdessen zu irgendeiner anderen Zeit ab. Die Bestellungen müssen also irgendwie gespeichert werden und zwar so, dass der Barkeeper darauf jederzeit Zugriff hat.  
 
