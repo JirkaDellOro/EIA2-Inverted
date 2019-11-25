@@ -1,29 +1,23 @@
 {
-  "name": "eia2testlb",
+  "name": "eia2-inverted",
   "version": "1.0.0",
-  "description": "ServerTest",
-  "main": "index.html",
+  "description": "Control for the heroku implementation",
+  "main": "",
   "scripts": {
-    "start": "node ./aufg6/Server/Server.js remote"
+    "start": "node X01_Appendix/Code/L06_Server/CocktailBar/Server/Server.js"
   },
-  "author": "TZ",
-  "license": "ISC",
-  "dependencies": {
-    "@types/mongodb": "^3.3.11",
-    "@types/node": "^12.12.11",
-    "mongodb": "^3.3.4"
-  },
-  "devDependencies": {"@types/node": {
-          "version": "12.12.11",
-          "resolved": "https://registry.npmjs.org/@types/node/-/node-12.12.11.tgz",
-          "integrity": "sha512-O+x6uIpa6oMNTkPuHDa9MhMMehlxLAd5QcOvKRjAFsBVpeFWTOPnXbDvILvFgFFZfQ1xh1EZi1FbXxUix+zpsQ=="
-        }},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LukasBrauschHFU/EIA2-Inverted.git"
+    "url": "git+https://github.com/JirkaDellOro/EIA2-Inverted.git"
   },
+  "author": "Jirka R. Dell'Oro-Friedl",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LukasBrauschHFU/EIA2-Inverted/issues"
+    "url": "https://github.com/JirkaDellOro/EIA2-Inverted/issues"
   },
-  "homepage": "https://github.com/LukasBrauschHFU/EIA2-Inverted#readme"
+  "homepage": "https://github.com/JirkaDellOro/EIA2-Inverted#readme",
+  "dependencies": {
+    "@types/mongodb": "^3.3.1",
+    "mongodb": "^3.3.2"
+  }
 }
