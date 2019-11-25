@@ -86,7 +86,7 @@ crc2.stroke(path);
 Es wird zunächst ein Modell der gesamten darzustellenden Szene erzeugt, was fortwährend manipuliert werden kann. Das Rendering-API kümmert sich dann darum, die Szene als Ganzes zu rendern. Ein dir wohlbekanntes Beispiel für ein solches Modell das DOM. Es wird automatisch gerendert und so die visuelle Darstellung erzeugt, die der Nutzer sieht.
 
 ### Immediate Mode
-CanvasRenderingContext aber arbeitet im Immediate Mode. Es gibt keinerlei Verwaltung für darzustellende Bildteile. Wann, wo und wie jeder Pfad gerendert wird, obliegt vollständig dem Programm, welches den Context nutzt. Sobald ein Zeichenkommando abgearbeitet wird, verändern betroffene Pixel im Zielbild ihre Farbe.
+CanvasRenderingContext aber arbeitet im Immediate Mode. Es gibt keinerlei Verwaltung für darzustellende Bildteile. Wann, wo und wie jeder Pfad gerendert wird, obliegt vollständig dem Programm, welches den Context nutzt. Sobald ein Zeichenkommando abgearbeitet wird, verändern betroffene Pixel im Zielbild ihre Farbe. Da der Canvas aber wiederum ein DOM-Element ist, muss der Browser Gelegenheit bekommen, das fertige Bild auf der Seite darzustellen. Eine Endlosschleife beispielsweise wird ihn daran hindern.
 
 ### Maleralgorithmus
 Das bedeutet, das nachfolgende Zeichenkommandos die Wirkung der vorangegangenen überschreiben können. Das Bild muss also "von hinten nach vorne" aufgebaut werden. Bildteile, die im Hintergrund liegen sollen, werden zuerst gezeichnet, danach die Bildteile im Vordergrund. Das ist der sogenannte Maleralgorithmus, denn ein Maler arbeitet am effizientesten ebenfalls so.  
@@ -195,82 +195,26 @@ Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transf
 # Generierung eines Landschaftsbildes
 
 ## Scribble
-
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. Papier auf dem das Scribble entsteht 
-|2. Jirkas sprechender Kopf  
-
->Inhalt: Scribble wird erstellt, dabei wird bereits auf grundlegende Ideen zur Darstellung eingegangen
-> - Farbverläufe
-> - dynamische Generierung der Wolken, Berge, Bäume
-> - Parameter für die dynamische Generierung
-> - Detail-Scribbles für dynamische Generierung
+<a href="https://drive.google.com/open?id=104IKHB3p5KxiAioCd28xWDr8BMCAsUqs"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material\Alley_Scribble.jpg"><img src="Material\Alley_Scribble.jpg" width="25%"/></a>  
 
 
 ## Aktivitätsdiagramm
+<a href="https://drive.google.com/open?id=1ezYtIGT0RaXONfKfcaquGT7KccYlPfG-"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a><a href="Material\Alley_ActivityDiagram.jpg"><img src="Material\Alley_ActivityDiagram.jpg" width="25%"/></a>
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. Papier auf dem das Diagramm entsteht, im Wechsel mit dem Scribble 
-|2. Jirkas sprechender Kopf  
-
->Inhalt: Diagram wird erstellt, Anfang bis handleLoad existiert bereits
-> - zunächst nur die groben Aktivitäten darstellen, die den Maleralgorithmus bereits sichtbar machen
-> - Überlegen, welche Aktivitäten detailliert werden sollen, und welche Parameter erforderlich sind
-> - Position ist fast immer dabei -> neuen Datentyp "Vector" planen -> Interface
-> - draw Sun zuerst ausführen -> trivial
-> - bereits auf save/restore hinweisen und durchführen
-> - drawCloud aus drawSun kopieren -> size als zweiter Parameter sinnvoll
->   - hier zunächst save/restore vergessen!
->   - Wolke verfliegt
->   - heilen mit save/restore...
->   - mit Partikelzahl, -größe, -farbe spielen
-> - drawMountain
->   - PostTest Schleife
->   - auf Zufall eingehen
->   - letzter Berg wird über den Canvas hinaus gezeichnet und ignoriert
 
 ## Implementation des Hintergrund
-
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. Papier mit Diagram, im Wechsel mit dem Scribble 
-|2. Jirkas sprechender Kopf  
-|3. VSCode  
-
+<a href="https://drive.google.com/open?id=1x1CX5oXh1rluz96UVepLji85ONAf0ule"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 ## Implementation der Wolke
-
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. Papier mit Diagramm, im Wechsel mit dem Scribble 
-|2. Jirkas sprechender Kopf  
-|3. VSCode  
+<a href="https://drive.google.com/open?id=1bja8GKFAze3-R6-xEIncMiKu9-JP3-Mn"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 ## Aktivitätsdiagramm zu den Bergen
+<a href="https://drive.google.com/open?id=1rvXrgWVZDR8l_E6kn-Fw-VGJO8_I9lPw"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a><a href="Material\Alley_ActivityDiagram-Mountains.jpg"><img src="Material\Alley_ActivityDiagram-Mountains.jpg" width="25%"/></a>
 
-|Hier erscheint jetzt ein Video|
-|-
-|Zweigeteilt 
-|1. Papier auf dem das Diagramm entsteht, im Wechsel mit dem Scribble 
-|2. Jirkas sprechender Kopf  
-
->Inhalt: Diagram wird erstellt
 
 ## Implementation der Berge
-
-|Hier erscheint jetzt ein Video|
-|-
-|Dreigeteilt 
-|1. Papier mit Diagramm, im Wechsel mit dem Scribble 
-|2. Jirkas sprechender Kopf  
-|3. VSCode  
-
+<a href="https://drive.google.com/open?id=1s9vq93Lgv-9tef-e2Fjk6RaRu7o0PDFq"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 ## Übungen
 - [x] Isoliere die Funktionalität eine Zufallszahl zwischen einem minimalen und maximalen Wert zu liefern. Konzipiere sie als Aktivität und implementiere sie als Funktion, welche die beiden Grenzwerte entgegenen nimmt und eine entsprechende Zufallszahl zurück gibt. Ersetze die Stellen im Programm, an denen diese Funktion genutzt werden kann und sollte durch entsprechende Aufrufe derselben.
@@ -280,12 +224,3 @@ Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transf
 - [x] Lasse die Position der Straße am Horizont um einen zufälligen Betrag zwischen -200 und 200 Pixeln horizontal verschieben, so dass der Fluchtpunkt bei jedem Aufruf des Programms ein anderer ist. Warum werden die Baumreihen mitbewegt?
 
 - [x] Der CanvasRenderingContext bietet noch weitere Möglichkeiten wie z.B. Schatten. Verschaffe dir einen Überblick über diese.
-
-
-
-
-
-<a href="Material\Alley_ActivityDiagram.jpg"><img src="Material\Alley_ActivityDiagram.jpg" width="25%"/></a>
-<a href="Material\Alley_ActivityDiagram-Mountains.jpg"><img src="Material\Alley_ActivityDiagram-Mountains.jpg" width="25%"/></a>
-<a href="Material\Alley_Scribble.jpg"><img src="Material\Alley_Scribble.jpg" width="25%"/></a>
-
