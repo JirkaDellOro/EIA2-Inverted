@@ -32,7 +32,7 @@ npm install @types/node
 Dabei entsteht ein Ordner `node_modules` und eine Datei `package.lock.json`. Letztere kannst Du in dein Repository übernehmen oder löschen. Im Ordner `node_modules` allerdings befinden sich die Definitionsdateien für TypeScript und später kommen noch weitere Module dazu, die richtig Platz brauchen. Daher solltest Du diese nicht auf dein Github-Repository pushen. Wähle stattdessen im SourceControl-View von VSCode für diesen Ordner die Option "Add File to .gitignore" (z.B. per Rechtsklick). Dann wird sich Git nicht mehr um diesen Ordner kümmern.
 
 ### Run
-Ein Skript mit Node laufen zu lassen ist denkbar einfach. Da auf deiner Maschine bereits Node installiert ist (sonst würden VSCode und der TypeScript-Compiler nicht funktionieren) musst Du lediglich in der Konsole
+Ein Skript mit Node laufen zu lassen ist denkbar einfach. Da auf deiner Maschine bereits Node installiert ist (sonst würden VSCode und der TypeScript-Compiler nicht funktionieren) musst Du lediglich in einem Terminal
 ```
 node NameDesSkripts.js
 ```
@@ -49,7 +49,7 @@ Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der e
 
 <a href="https://drive.google.com/open?id=1pGtfVibovgrVIshJsfAPtufAEoOoa8eE"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
-- [x] Entwickle eine kleine Node-Anwendung mit Namen "Convert.js", die eine Zahl von einem Zahlensystem in ein anderes konvertiert. Beim Aufruf mit der Konsole müssen drei Zahlen mit angegeben werden: die zu konvertierende Zahl, das Zahlensystem auf das sie sich bezieht und das Zahlensystem in das sie konvertiert werden soll. Die konvertierte Zahl soll ausgegeben werden. Die ganze Mathematik dahinter nimmt dir Javascript vollständig ab, mit `parseInt(s, a)` wird eine Zeichenkette `s` als Zahl im Zahlensystem `a` interpretiert und als Dezimalzahl zurückgegeben, `n.toString(b)` liefert umgekehrt eine Zeichenkette, welche die Interpretation der Dezimalzahl im Zahlensystem `b` darstellt.  
+- [x] Entwickle eine kleine Node-Anwendung mit Namen "Convert.js", die eine Zahl von einem Zahlensystem in ein anderes konvertiert. Beim Aufruf mit dem Terminal müssen drei Zahlen mit angegeben werden: die zu konvertierende Zahl, das Zahlensystem auf das sie sich bezieht und das Zahlensystem in das sie konvertiert werden soll. Die konvertierte Zahl soll ausgegeben werden. Die ganze Mathematik dahinter nimmt dir Javascript vollständig ab, mit `parseInt(s, a)` wird eine Zeichenkette `s` als Zahl im Zahlensystem `a` interpretiert und als Dezimalzahl zurückgegeben, `n.toString(b)` liefert umgekehrt eine Zeichenkette, welche die Interpretation der Dezimalzahl im Zahlensystem `b` darstellt.  
 
 Folgend eine Darstellung einer möglichen Ein- und Ausgabe, dabei wird die Zahl "A7" vom Hexadezimalsystem in das Binärsystem konvertiert. 
 ```plaintext
@@ -157,7 +157,7 @@ Das Problem ist nämlich, dass Heroku keine Ahnung davon hat, was es eigentlich 
  ```
  Wenn Du darunter deine Dateien und Ordner siehst, ist alles sehr gut. Du musst also nur eine json-Datei mit dem Namen package auf der obersten Ebene deiner Dateistruktur unterbringen, mit der Du Heroku die notwendigen Informationen mitgeben kannst. Zum Glück hilft dir Node bei der Erstellung dieser Datei.
 
- - [x] Öffne eine Konsole auf der obersten Ebene deines Projektes
+ - [x] Öffne ein Terminal auf der obersten Ebene deines Projektes
  - [x] Gib `npm init` ein
  - [x] Bei den meisten Einträgen kannst Du einfach die Vorschläge akzeptieren. Einen Namen, der wie der Name deiner Heroku-App nur aus Kleinbuchstaben bestehen darf, und deinen Namen als Autor solltest Du wenigstens eingeben.
  - [x] Wenn Du damit durch bist, öffne die entstandene Datei `package.json`
@@ -166,7 +166,7 @@ Das Problem ist nämlich, dass Heroku keine Ahnung davon hat, was es eigentlich 
    "start": "node Relativer/Pfad/Zu/Datei.js"
    ```
    wobei Du den rechten Teil natürlich mit Sinnvollem ersetzt.
-- [x] Teste `package.json` indem Du nun in der Konsole `npm start` eingibst. Der NodePackageManager (npm) sucht jetzt selbst in der Datei nach dem Eintrag "start" unter "scripts" und führt aus was darin steht.
+- [x] Teste `package.json` indem Du nun im Terminal `npm start` eingibst. Der NodePackageManager (npm) sucht jetzt selbst in der Datei nach dem Eintrag "start" unter "scripts" und führt aus was darin steht.
 - [x] Wenn's klappt: Commit und Push!
 - [x] Wenn nicht: Issue posten...
 

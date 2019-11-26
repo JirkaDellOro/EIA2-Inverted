@@ -93,11 +93,9 @@ Diese Collections könnte man auch in einer eigenen Datenbank für das Barkeeper
 Wie der Server kann auch die Datenbanksoftware als Service im Netz genutzt werden. Ebenso ist es aber sinnvoll, während der Entwicklung lokal testen zu können.
 - [x] Installiere MongoDB auf deiner Maschine. Besuche hierzu das [MongoDB Manual](https://docs.mongodb.com/manual/administration/install-community/) (MongoDB **nicht** als Service und auch **nicht** MongoCompass installieren)
 - [x] Finde den Ordner, in den Du MongoDB installiert hast. Darin solltest Du die ausführbaren Programme `mongod` und `mongo` sehen.
-- [x] Um eine Datenbank anzulegen, rufe die Datenbanksoftware `mongod` auf und gib als Parameter "--dbpath" den Pfad zu dem Ordner an, in dem Du die Datenbanken haben möchtest. Den Ordner musst zuvor kreiert haben.   
 
-**Hinweis:** Nutze hier besser den Kommandozeileninterpreter (aka Terminal, Shell, Command, Konsole) deines Betriebssystems. So kannst Du besser mehrere Fenster kontrollieren als innerhalb von VSCode.
+Im unteren Beispiel wurde MongoDB in einem Ordner Test installiert, die Datenbanken sollen im Ordner Database angelegt werden.  
 
-Im unteren Beispiel wurde MongoDB in einem Ordner Test installiert, die Datenbanken sollen im Ordner Database angelegt werden. Die Konsole arbeitet gerade im Ordner Test:
 ```plaintext
 Test
 ├ MongoDB
@@ -105,13 +103,19 @@ Test
 │   ├ mongod (ggf .exe)
 ├   └ ...
 └ Database
+```  
+
+- [x] Um eine Datenbank anzulegen, rufe in einem Terminal die Datenbanksoftware `mongod` auf und gib als Parameter "--dbpath" den Pfad zu dem Ordner an, in dem Du die Datenbanken haben möchtest. Den Ordner musst zuvor kreiert haben.   
+
+Arbeitet das Terminal gerade im Ordner Test, dann lautet der Aufruf
+
 ```
-Dann lautet der Aufruf
-```
-MongoDB/bin/mongod --dbpath ../Database
+MongoDB/bin/mongod --dbpath Database
 ``` 
 
-Wenn alles funktioniert, gibt MongoDB einige Meldungen auf der Konsole aus und unter den letzten befinden sich "Listening on ..." und "waiting for connections on port ...". Das Programm läuft jetzt offensichtich als Server auf deinem Localhost und wartet am angegebenen Port auf Kommunikationspartner.
+**Hinweis:** Nutze hier besser das Terminal  (aka Kommandozeileninterpreter, Shell, Command, Konsole) deines Betriebssystems. So kannst Du besser mehrere Fenster kontrollieren als innerhalb von VSCode.
+
+Wenn alles funktioniert, gibt MongoDB einige Meldungen im Terminal aus und unter den letzten befinden sich "Listening on ..." und "waiting for connections on port ...". Das Programm läuft jetzt offensichtich als Server auf deinem Localhost und wartet am angegebenen Port auf Kommunikationspartner.
 
 - [x] Schaue nun den Inhalt des Datenbankordners an. MongoDB hat hier einige Informationen zur Verwaltung deiner Daten abgelegt.
 
@@ -168,7 +172,7 @@ Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server a
 <a href="https://drive.google.com/open?id=1RkcKlkpSFA1hDAcXK9AHPoMg-ZsApgDR"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>  
 
 ## Test
-- [x] Starte den Server in einem dritten Konsolenfenster. MongoDB sollte den Verbindungsversuch erkennen und eine zweite Connection anzeigen.
+- [x] Starte den Server in einem dritten Terminalfenster. MongoDB sollte den Verbindungsversuch erkennen und eine zweite Connection anzeigen.
 - [x] Starte den Client in einem kleinen neuen Browserfenster. Am besten ordnest Du die Fenster so an, so dass dein Bildschirm nun horizontal und vertikal halbiert erscheint. 
 - [x] Setze mit dem Client mehrere unterschiedliche Bestellungen ab und beobachte die Ausgaben im Serverfenster. 
 - [x] Frage mit der MongoShell die Collection "Orders" der Datenbank "Cocktail" ab um zu schauen, ob die Bestellungen eingetragen wurden.
