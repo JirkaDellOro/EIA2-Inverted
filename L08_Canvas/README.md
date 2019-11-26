@@ -15,8 +15,8 @@ let canvas: HTMLCanvasElement = document.querySelector("canvas");
 let crc2: CanvasRenderingContext2D = canvas.getContext("2d");
 ```
 - [x] Erstelle eine HTML-Datei und lege dort mit `<canvas>` ein Canvas-Element an.
-- [x] Erstelle eine TypeScript-Programm, welches den RenderingContext des Canvas-Elementes anfordert und eine Referenz in einer Variable namens `crc2` speichert, wie oben angegeben.
-- [x] Gib in einer weiteren Zeile `crc2.` und verschaffe dir einen Eindruck von der Menge der Zeichenbefehle, die dir nun zur Verfügung stehen.  
+- [x] Erstelle ein TypeScript-Programm, welches den RenderingContext des Canvas-Elementes anfordert und eine Referenz in einer Variable namens `crc2` speichert, wie oben angegeben.
+- [x] Gib in einer weiteren Zeile `crc2.` ein und verschaffe dir einen Eindruck von der Menge der Zeichenbefehle, die dir nun zur Verfügung stehen.  
 
 Die Pixel des Canvas-Elements werden beim Aufbau des DOMs zunächst mit der Farbe `#FFFFFF`, also weiß, besetzt. Daher fällt der Canvas auf weißem Hintergrund nicht ins Auge. Der einfachste Befehl, den Du nutzen kannst um das zu ändern, ist `fillRect()`, wobei zunächst die Füllfarbe als Eigenschaft `fillStyle` des RenderingContexts definiert werden muss.
 ```typescript
