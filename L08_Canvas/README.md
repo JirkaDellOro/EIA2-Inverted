@@ -226,3 +226,6 @@ Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transf
 - [x] Lasse die Position der Straße am Horizont um einen zufälligen Betrag zwischen -200 und 200 Pixeln horizontal verschieben, so dass der Fluchtpunkt bei jedem Aufruf des Programms ein anderer ist. Warum werden die Baumreihen mitbewegt?
 
 - [x] Der CanvasRenderingContext bietet noch weitere Möglichkeiten wie z.B. Schatten. Verschaffe dir einen Überblick über diese.
+
+# Wochenaufgabe
+https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L08_Vogelhaus:Canvas
