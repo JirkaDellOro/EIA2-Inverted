@@ -185,7 +185,9 @@ Eine wichtige Standardfunktionalität des DOM wurde in diesem Kurs bislang noch 
 
 - [x] Im Anhang befindet sich ein kleines Beispielprogramm "DragDrop" mit einer rudimentären Implementation des DOM-Drag&Drop-Mechanismus, mit dem noch viel mehr möglich ist. Schaue es dir an! 
 
-## Debugger
+## Debugger in VSCode
+
+## Branches
 
 
 ## Plattformen
