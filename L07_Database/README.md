@@ -121,6 +121,9 @@ Wenn alles funktioniert, gibt MongoDB einige Meldungen im Terminal aus und unter
 
 ## Mongo Shell
 Die eigentlichen Daten kann man so nicht einsehen, sie werden in einem effizienten Format gespeichert, das von Menschen nicht gut interpretiert werden kann. Um schnell und einfach von Hand die Datenbank einzusehen und zu manipulieren, bietet MongoDB einen eigenen Kommandozeileninterpreter an: die MongoShell. Dieser Client kann Javascript interpretieren, sich mit dem laufenden Datenbankserver verbinden, Anweisungen an diesen schicken und dessen Antworten ausgeben.  
+
+> **Hinweis:** Wenn bei den nächsten Übungen etwas nicht funktionieren sollte, poste sofort einen Issue. Bis eine Antwort kommt, kannst Du mit dem folgenden Video weiter machen...  
+
 - [x] Öffne in einem zweiten Terminalfenster mit `mongo` die MongoShell. Beobachte im ersten Fenster, dass MongoDB einen Verbindungsversuch registriert und diesen akzeptiert.
 - [x] Gib `show dbs` in der Shell ein, es sollten dir Infos zu den drei internen Datenbanken angezeigt werden.
 - [x] Lege mit `use Test` eine neue Datenbank mit Namen "Test" an. Die Shell bestätigt "switched to db Test". Test ist nun für die folgenden Befehle die Datenbank, mit der gearbeitet wird.
