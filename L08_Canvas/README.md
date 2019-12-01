@@ -59,7 +59,7 @@ Mit den Anweisungen `moveTo(...)` und `lineTo(...)` kannst Du einen Pfad um Lini
 ### Kurven
 Damit kannst Du beliebige eckige Formen darstellen. Wenn es geschmeidiger werden soll, nutzt Du quadratische oder Bezier-Kurven.  
 
-- [x] Experimentiere mit [dieser Anwendung](../X01_Appendix/Canvas/Curves/start.html). Beachte, dass für quadratische Kurven außer dem vorangegangenen Endpunkt des aktuellen Pfades zwei weitere, für Bezierkurven drei weitere Punkte angegeben werden müssen.  
+- [x] Experimentiere mit [dieser Anwendung](https://webuser.hs-furtwangen.de/~del/TypeScriptWorkspace/Examples/Curves/start.html). Beachte, dass für quadratische Kurven außer dem vorangegangenen Endpunkt des aktuellen Pfades zwei weitere, für Bezierkurven drei weitere Punkte angegeben werden müssen.  
 
 ### Text
 Alternativ zu einer Textüberlagerung durch ein weiteres HTML-Element, kann Text auch durch den RenderingContext auf den Canvas gebracht werden. Hierzu dienen die Methoden `fillText(...)` und `strokeText(...)` und weitere Methoden zur Steuerung der Textausgabe.
