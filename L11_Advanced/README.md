@@ -158,10 +158,48 @@ erscheint es von außen betrachtet aber so, als wäre diese Eigenschaft ständig
 
 > **Hinweis:** Zugriffsfunktionen werden im Klassendiagramm standardmäßig nicht markiert, sondern schlicht als Eigenschaft dargestellt.
 
-## Garbage Collection
-Wenn eine Variable ihren Gültigkeitsbereich verlässt, wird der von ihr belegte Speicher freigegeben und steht wieder für andere Informationen zur Vefügung. Bei Variablen, die auf Objekte verweisen, wird aber nur der Verweis gelöscht, das referenzierte Objekt dagegen bleibt im Speicher, denn es könnten noch andere Variablen darauf verweisen. Diese würden dann ins Leere deuten und Fehler erzeugen. Werden die Objekte allerdings nie gelöscht, wird der Speicher immer mehr zugemüllt und es kommt irgendwann zu einem Programmversagen.
+## Aufzählungstypen
+Häufig ist es erforderlich, eine Information mit einem Datentyp zu beschreiben, der nur eine enge und diskrete Auswahl an Werten beschreiben kann. Das simpelste Beispiel für einen solchen Datentyp ist `boolean`. Hier sind nur zwei Werte zulässig `true` und `false`. Der Versuch, einer Variablen dieses Typs beispielsweise ein `maybe` zuzuweisen, scheitert.
 
-Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem sogenannten "Garbage Collector" überwacht. Dieser Müllmann durchforstet in unregelmäßgen Zeitabständen den Speicher, findet Objekte die nicht mehr gebraucht werden und löscht diese. In den meisten Fällen geschieht das völlig unmerklich, bei Animationen allerdings kann dieser Vorgang zu sichtbaren Störungen führen, wenn ein Bild einmal etwas länger stehen bleibt als andere. Durch Wiederverwendung von Objekten kann der Effekt minimiert werden
+Du kannst selbst solche Aufzählungstypen mit dem reservierten Wort `enum` (Enumeration [engl]: Aufzählung) kreieren.
+
+```typescript
+enum TASK {
+    WATCH,
+    PATROL,
+    CHASE,
+    SLEEP
+}
+```
+Der Typ im Beispiel könnte genutzt werden, um die Aufgaben eines Wachhundes zu bezeichnen. Ein Objekt vom Typ des Wachhundes könnte dann über eine Eigenschaft `task` verfügen, welche nur diese vier Werte annehmen kann.
+
+```typescript
+class Watchdog extends Dog {
+    private task: TASK = TASK.WATCH;
+
+    update(): void {
+        switch (this.task) {
+            case TASK.SLEEP:
+                ...
+                break;
+            case TASK.WATCH:
+                ...
+                break;
+            ...
+        }
+    }
+}
+```
+
+Wird die Methode `update` des Wachhundes nun zyklisch abgearbeitet, können je nach aktuellem `task` unterschiedliche Aktivitäten bzw. Verhaltensmethoden aufgerufen werden. Der `switch` stellt bereits das hierfür erforderliche Konstrukt dar.
+
+- [x] wie könnten die zugehörigen Aktivitäten aussehen? Erstelle grobe Aktivitätsdiagramme hierfür.
+
+Ohne den speziellen Aufzählungstyp wäre `task` vielleicht einfach vom Typ `number`. Dann gäbe es die Aufgaben 0, 1, 2 und 3 und man müsste an anderer Stelle festhalten, welche Zahl welche Aufgabe bedeutet. Zudem wären dann auch Zahlen gültig, zu denen gar keine Aufgabe definiert ist. Da sind Fehler vorprogrammiert. `task` könnte aber auch vom Typ `string` sein und mit den Werten `"sleep"`, `"watch"` und so weiter besetzt werden. Dann wäre das Programm wieder lesbar, ist aber sehr fehleranfällig, denn falsche Schreibweisen wie `"petrol"`schleichen sich ein.
+
+Mit Hilfe des Aufzählungstyps aber kann TypeScript schon beim Schreiben des Codes die richtigen Vorschläge machen, die zulässigen Werte zur Auswahl stellen und Fehler sofort erkennen.
+
+> **Hinweis**: Laut UML-Standard wird eine Enumeration im Klassendiagramm durch die Markierung `<<enumeration>>` gekennzeichnet. Analog gilt das für Interfaces mit `<<interface>>`
 
 # Asteroid Reloaded
 **Video**
