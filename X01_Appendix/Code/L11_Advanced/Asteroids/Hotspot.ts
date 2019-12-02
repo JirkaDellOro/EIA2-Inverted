@@ -22,7 +22,7 @@ namespace L11_AsteroidsAdvanced {
             crc2.restore();
         }
 
-        hit(): void {
+        public hit(): void {
             this.lifetime -= Hotspot.maxLifetime / 3;
             this.expendable = this.lifetime < 0;
             console.log("Hotspot hit, remaining range: ", this.lifetime);
