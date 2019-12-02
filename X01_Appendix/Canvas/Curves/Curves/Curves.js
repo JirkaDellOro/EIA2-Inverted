@@ -1,6 +1,7 @@
+"use strict";
 var Curves;
 (function (Curves) {
-    var V2 = Vector.Vector2D;
+    var V2 = Vector2D.Vector2D;
     var controlPoint = new Array();
     var iDragging = -1;
     Setup.size(800, 600);
@@ -30,9 +31,9 @@ var Curves;
     }
     function mousedown(_event) {
         var hit = new V2(Setup.pointerX, Setup.pointerY);
-        for (var i_1 = 0; i_1 < controlPoint.length; i_1++) {
-            if (controlPoint[i_1].testHit(hit)) {
-                iDragging = i_1;
+        for (let i = 0; i < controlPoint.length; i++) {
+            if (controlPoint[i].testHit(hit)) {
+                iDragging = i;
             }
         }
     }

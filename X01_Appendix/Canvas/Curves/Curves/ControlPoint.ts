@@ -1,5 +1,5 @@
 module Curves {
-    import V2 = Vector.Vector2D;
+    import V2 = Vector2D.Vector2D;
 
     export class ControlPoint extends V2 {
         private radius: number = 5;

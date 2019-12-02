@@ -1,5 +1,5 @@
 module Curves {
-    import V2 = Vector.Vector2D;
+    import V2 = Vector2D.Vector2D;
     var controlPoint: ControlPoint[] = new Array<ControlPoint>();
     var iDragging: number = -1;
 
@@ -9,7 +9,7 @@ module Curves {
     Setup.addEventListener(EVENTTYPE.MOUSEUP, mouseup);
     Setup.addEventListener(EVENTTYPE.MOUSEMOVE, mousemove);
 
-    var stepper: HTMLElement = document.getElementById("stepper");
+    var stepper: HTMLElement = <HTMLElement>document.getElementById("stepper");
     stepper.addEventListener("mousedown", Setup.stopPropagation);
     stepper.addEventListener("keydown", Setup.stopPropagation);
     stepper.addEventListener("change", change);
