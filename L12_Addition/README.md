@@ -8,7 +8,7 @@
 In diesem Kapitel lernst Du noch einige fortgeschrittene Strukturen kennen, die interaktive Anwendungen flexibler, wartbarer und sicherer machen. Auch wenn Du sie im Kurs vielleicht nicht verwendest, solltest Du sie gesehen und verstanden haben. Zudem werden einige Konstrukte vorgestellt, die nicht unbedingt empfehlenswert, aber weit verbreitet sind, und dich bei deinen Recherchen im Netz irritieren könnten.
 
 ## Standardparameter
-Neben dem Fragezeichen gibt es noch eine andere Möglichkeit optionale Parameter vorzusehen. Dabei gibt man einfach nach der Deklaration des formalen Parameters einen Zuweisungsoperator und dann einen Standardwert an. Wird nun beim Aufruf kein Parameter übergeben, erhält der formale Parameter automatisch den Standardwert. Praktisch ist das beispielsweise für den Konstruktor der Vector-Klasse.
+Neben dem Fragezeichen gibt es noch eine andere Möglichkeit optionale Parameter bei der Funktions- oder Methodendeklaration vorzusehen. Dabei gibt man einfach nach der Deklaration des formalen Parameters einen Zuweisungsoperator und dann einen Standardwert an. Wird nun beim Aufruf kein Parameter übergeben, erhält der formale Parameter automatisch den Standardwert. Praktisch ist das beispielsweise für den Konstruktor der Vector-Klasse.
 ```typescript
 constructor(_x: number = 0, _y: number = 0) {
     this.set(_x, _y);
@@ -157,6 +157,12 @@ Wenn eine Variable ihren Gültigkeitsbereich verlässt, wird der von ihr belegte
 Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem sogenannten "Garbage Collector" überwacht. Dieser Müllmann durchforstet in unregelmäßgen Zeitabständen den Speicher, findet Objekte die nicht mehr gebraucht werden und löscht diese. In den meisten Fällen geschieht das völlig unmerklich, bei Animationen allerdings kann dieser Vorgang zu sichtbaren Störungen führen, wenn ein Bild einmal etwas länger stehen bleibt als andere. Durch Wiederverwendung von Objekten kann der Effekt minimiert werden
 
 ## Debugger in VSCode
+### Node debuggen
+In der Lektion zum Server wurde bereits kurz der interne Debugger von VSCode vorgestellt. Da bei Node-Programmen der Browser nicht beteiligt ist, kann dessen Debugger nicht genutzt werden um den Programmablauf zu prüfen. Beim Umgang mit dem Debugger von VSCode sind noch einige Informationen sehr nützlich. 
+Da VSCode gleichzeitige mehrere Projekte verwalten kann, braucht der Debugger beim Start die Information, welches Programm ausgeführt und verfolgt werden soll. Im einfachsten Fall, wenn der Debugger "No Configurations" anzeigt, startet er das Programm, das gerade im fokussierten Editor-Fenster angezeigt wird. Mit Hilfe des Menüsystems lassen sich aber auch gezielt Konfigurationen definieren, diese werden in einer Datei `launch.json` im Ordner `.vscode` gespeichert, die der Debugger automatisch dabei anlegt. 
+
+
+Install extension "Debugger for Chrome"
 
 ## Branches
 
