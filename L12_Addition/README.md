@@ -157,10 +157,29 @@ Wenn eine Variable ihren Gültigkeitsbereich verlässt, wird der von ihr belegte
 Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem sogenannten "Garbage Collector" überwacht. Dieser Müllmann durchforstet in unregelmäßgen Zeitabständen den Speicher, findet Objekte die nicht mehr gebraucht werden und löscht diese. In den meisten Fällen geschieht das völlig unmerklich, bei Animationen allerdings kann dieser Vorgang zu sichtbaren Störungen führen, wenn ein Bild einmal etwas länger stehen bleibt als andere. Durch Wiederverwendung von Objekten kann der Effekt minimiert werden
 
 ## Debugger in VSCode
-### Node debuggen
+### Node-Programme debuggen
 In der Lektion zum Server wurde bereits kurz der interne Debugger von VSCode vorgestellt. Da bei Node-Programmen der Browser nicht beteiligt ist, kann dessen Debugger nicht genutzt werden um den Programmablauf zu prüfen. Beim Umgang mit dem Debugger von VSCode sind noch einige Informationen sehr nützlich. 
 Da VSCode gleichzeitige mehrere Projekte verwalten kann, braucht der Debugger beim Start die Information, welches Programm ausgeführt und verfolgt werden soll. Im einfachsten Fall, wenn der Debugger "No Configurations" anzeigt, startet er das Programm, das gerade im fokussierten Editor-Fenster angezeigt wird. Mit Hilfe des Menüsystems lassen sich aber auch gezielt Konfigurationen definieren, diese werden in einer Datei `launch.json` im Ordner `.vscode` gespeichert, die der Debugger automatisch dabei anlegt. 
 
+- [] Öffne den Ordner `X01_Appendix` mit VSCode, navigiere zur Debug-Ansicht und darin zu `Open launch.json` bzw. `Open Configurations`. Nun sollte dir die Datei `launch.json` angezeigt werden.
+- [] Studiere den ersten Eintrag im Array `configurations`. Beachte, dass `${workspaceFolder}` ein Platzhalter ist, an dessen Statt der Pfad zu dem Verzeichnisses eingesetzt wird, dass Du mit VSCode geöffnet hattest. In unserem Fall also der PFad zu `X01_Appendix`.
+- [] Finde den Namen dieser ersten Konfiguration an anderer Stelle im Debug-View. Stelle dann sicher, dass diese Konfiguration genutzt wird, wenn Du den Debugger startest.
+- [] Starte nun den Debugger z.B. mit F5 oder Klick auf den grünen Pfeil.
+- [] Beobachte die Ausgabe im Debug-Terminal. 
+
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "serve",
+            "type": "shell",
+            "command": "serve",
+            "isBackground": true
+        }
+    ]
+}
 
 Install extension "Debugger for Chrome"
 
