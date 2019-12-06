@@ -161,11 +161,16 @@ Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem
 In der Lektion zum Server wurde bereits kurz der interne Debugger von VSCode vorgestellt. Da bei Node-Programmen der Browser nicht beteiligt ist, kann dessen Debugger nicht genutzt werden um den Programmablauf zu prüfen. Beim Umgang mit dem Debugger von VSCode sind noch einige Informationen sehr nützlich. 
 Da VSCode gleichzeitige mehrere Projekte verwalten kann, braucht der Debugger beim Start die Information, welches Programm ausgeführt und verfolgt werden soll. Im einfachsten Fall, wenn der Debugger "No Configurations" anzeigt, startet er das Programm, das gerade im fokussierten Editor-Fenster angezeigt wird. Mit Hilfe des Menüsystems lassen sich aber auch gezielt Konfigurationen definieren, diese werden in einer Datei `launch.json` im Ordner `.vscode` gespeichert, die der Debugger automatisch dabei anlegt. 
 
-- [] Öffne den Ordner `X01_Appendix` mit VSCode, navigiere zur Debug-Ansicht und darin zu `Open launch.json` bzw. `Open Configurations`. Nun sollte dir die Datei `launch.json` angezeigt werden.
-- [] Studiere den ersten Eintrag im Array `configurations`. Beachte, dass `${workspaceFolder}` ein Platzhalter ist, an dessen Statt der Pfad zu dem Verzeichnisses eingesetzt wird, dass Du mit VSCode geöffnet hattest. In unserem Fall also der PFad zu `X01_Appendix`.
-- [] Finde den Namen dieser ersten Konfiguration an anderer Stelle im Debug-View. Stelle dann sicher, dass diese Konfiguration genutzt wird, wenn Du den Debugger startest.
-- [] Starte nun den Debugger z.B. mit F5 oder Klick auf den grünen Pfeil.
-- [] Beobachte die Ausgabe im Debug-Terminal. 
+- [x] Öffne den Ordner `X01_Appendix` mit VSCode, navigiere zur Debug-Ansicht und darin zu `Open launch.json` bzw. `Open Configurations`. Nun sollte dir die Datei `launch.json` angezeigt werden.
+- [x] Studiere den ersten Eintrag im Array `configurations`. Beachte, dass `${workspaceFolder}` ein Platzhalter ist, an dessen Statt der Pfad zu dem Verzeichnisses eingesetzt wird, dass Du mit VSCode geöffnet hattest. In unserem Fall also der PFad zu `X01_Appendix`.
+- [x] Finde den Namen dieser ersten Konfiguration an anderer Stelle im Debug-View. Stelle dann sicher, dass diese Konfiguration genutzt wird, wenn Du den Debugger startest.
+- [x] Starte nun den Debugger z.B. mit F5 oder Klick auf den grünen Pfeil.
+- [x] Beobachte die Ausgabe im Debug-Terminal und im Editor-Fenster.
+
+Zeile 3 enthält die bekannte Anweisung `debugger` deswegen wurde hier der Programmfluss angehalten und dir wird das Control-Panel mit den Optionen angezeigt, die Du schon vom Browserdebugger kennst. Statt diese Anweisung in den Code zu schreiben, kann man natürlich auch, wie üblich, Breakpoints einfach durch Klick vor der Zeilennummer einsetzen.
+
+- [x] Führe zwei mal einen "Step over" aus um die nächste Konsolenausgabe zu sehen.
+- [x] Erkläre, woher der Gruß kommt, der nun erscheint.
 
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
