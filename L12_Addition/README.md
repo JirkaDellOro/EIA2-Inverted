@@ -157,7 +157,7 @@ Wenn eine Variable ihren Gültigkeitsbereich verlässt, wird der von ihr belegte
 Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem sogenannten "Garbage Collector" überwacht. Dieser Müllmann durchforstet in unregelmäßgen Zeitabständen den Speicher, findet Objekte die nicht mehr gebraucht werden und löscht diese. In den meisten Fällen geschieht das völlig unmerklich, bei Animationen allerdings kann dieser Vorgang zu sichtbaren Störungen führen, wenn ein Bild einmal etwas länger stehen bleibt als andere. Durch Wiederverwendung von Objekten kann der Effekt minimiert werden
 
 ## Debugger in VSCode
-### Node-Programme debuggen
+### Node-Programme
 In der Lektion zum Server wurde bereits kurz der interne Debugger von VSCode vorgestellt. Da bei Node-Programmen der Browser nicht beteiligt ist, kann dessen Debugger nicht genutzt werden um den Programmablauf zu prüfen. Beim Umgang mit dem Debugger von VSCode sind noch einige Informationen sehr nützlich. 
 Da VSCode gleichzeitige mehrere Projekte verwalten kann, braucht der Debugger beim Start die Information, welches Programm ausgeführt und verfolgt werden soll. Im einfachsten Fall, wenn der Debugger "No Configurations" anzeigt, startet er das Programm, das gerade im fokussierten Editor-Fenster angezeigt wird. Mit Hilfe des Menüsystems lassen sich aber auch gezielt Konfigurationen definieren, diese werden in einer Datei `launch.json` im Ordner `.vscode` gespeichert, die der Debugger automatisch dabei anlegt. 
 
@@ -172,21 +172,15 @@ Zeile 3 enthält die bekannte Anweisung `debugger` deswegen wurde hier der Progr
 - [x] Führe zwei mal einen "Step over" aus um die nächste Konsolenausgabe zu sehen.
 - [x] Erkläre, woher der Gruß kommt, der nun erscheint.
 
-{
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "serve",
-            "type": "shell",
-            "command": "serve",
-            "isBackground": true
-        }
-    ]
-}
+### Browser-Programme
+Aber auch bei Browser-Programmen muss man nicht auf den Komfort des VSCode-Debuggers verzichten. Über einen lokalen Server kann VSCode mit dem Browser kommunizieren und das laufende Programm kontrollieren. Hierfür ist noch ein wenig Einrichtung erforderlich. Das folgende Beispiel beschreibt dies für die Nutzung von Chrome.
 
-Install extension "Debugger for Chrome"
+- [x] Installiere die Extension "Debugger for Chrome" in VSCode.
+- [x] Betrachte den zweiten Eintrag der `configurations` in `launch.json`. Analog zu `programm` gibt es hier den Eintrag `url`. Hier ist der Pfad zu der auszuführenden HTML-Datei hinterlegt, bezogen auf das Wurzelverzeichnis eines lokalen Fileservers, dem Verzeichnis, dass Du mit VSCode geöffnet hattest.
+- [x] Starte den Fileserver im Wurzelverzeichnis mit `npx serve` oder, wenn Du "serve" bereits global installiert hattest, einfach mit `serve`.
+- [x] Aktiviere die Debug-Konfiguration "Launch DebugBrowser with Chrome" von `launch.json`.
+- [x] Starte den Debugger. Beachte, dass nun Chrome mit der Web-App gestartet wird.
+- [x] Erkläre, woher jetzt die Grußnachricht kommt. 
 
 ## Branches
 

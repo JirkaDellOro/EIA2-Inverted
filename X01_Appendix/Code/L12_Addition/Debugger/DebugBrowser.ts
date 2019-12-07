@@ -1,5 +1,6 @@
 namespace L12_DebugBrowser {
     console.log("Debugging browser application in VSCode!");
     debugger;
-    console.log(process.argv[2]);
+    let params: URLSearchParams = new URLSearchParams(location.search);
+    console.log(params.get("message"));
 }
