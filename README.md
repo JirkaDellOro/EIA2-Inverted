@@ -127,16 +127,14 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Gültigkeit
 - Sichtbarkeit
 - Zugriffsfunktionen
-- Garbage Collection
+- Aufzählungstypen
 
 ### [L12_Addition](L12_Addition)
-- Exceptions
-- Enums
-- Generics
-- this-binding, Arrow-Function
+- Standardparameter
+- Ausnahmebehandlung
+- Funktions-Objekt
 - Drag&Drop
-  - mark element as draggable
-  - set dataTransfer-object on dragstart
-  - event-information is saved and accessible on drop
-  - allow drop on element, preventDefault on dragover
-  - get dataTransfer-object on drop and process
+- Garbage Collection
+- Debugger in VSCode
+- Teamarbeit
+- Plattformen
