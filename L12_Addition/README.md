@@ -182,8 +182,14 @@ Aber auch bei Browser-Programmen muss man nicht auf den Komfort des VSCode-Debug
 - [x] Starte den Debugger. Beachte, dass nun Chrome mit der Web-App gestartet wird.
 - [x] Erkläre, woher jetzt die Grußnachricht kommt. 
 
-## Branches
+## Teamarbeit
+**Git** hat noch mehr Funktionen als die bisher genutzten, sehr wichtig für die Teamarbeit sind dabei "Branches" und "Forks". 
 
+### Branches
+Dabei können mehrere Versionen des gleichen Repositories gleichzeitig gespeichert werden, sie werden als Branches bezeichnet. Bislang hast Du nur mit dem `master`-Branch gearbeitet. Insbesondere, wenn mehrere Leute am oder mit dem Code arbeiten, ist es äußerst wünschenswert, einen Branch mit einem stabilen und getesteten Zustand zu halten (oft `master`), während es weitere Branches gibt, auf denen die Fortentwicklung und Experimente etc. stattfinden. Ist dann in einem Branch etwas entstanden, das in den `master` einfließen soll, so kann **git** diese Verschmelzung, im Englischen "merge" genannt, übernehmen. Nur wenn es Konflikte gibt, also in beiden zu verschmelzenden Branches die gleiche Datei verändert wurde, muss ein Mensch entscheiden, welcher Code erhalten bleiben soll.  
+
+### Forks
+Mit diesem System ist auch die Open-Source-Entwicklung in einer Community möglich, ohne dass die Teammitglieder in einer festgelegten Struktur arbeiten und sich noch nicht einmal kennen müssen. Jeder kann sich auf Github einen Klon (**Fork**) eines öffentlichen Repositories auf seinen Github-Bereich erstellen lassen, und daran arbeiten. Entsteht dabei etwas, das für das Original nützlich sein könnte, kann man einen "Pull-Request" verschicken, in dem automatisch die Veränderungen enthalten sind. Die Entwickler des Originals können diese begutachten und bei Bedarf in ihr Repository "mergen".
 
 ## Plattformen
 Die technische Basis, die für diese Modulreihe "Entwicklung interaktiver Anwendungen" herangezogen wird, entstammt der Webtechnologie. Das bedeutet aber nicht, dass deine Konzeption sich auf Internetseiten beschränken muss. Mit dem, was Du jetzt gelernt hast, kannst Du vollwertige native Apps und Desktop-Programme konzipieren und entwickeln. Hierzu verwendest Du Techniken, die deine Software auf eine erweiterte Plattform hieven, im Inneren arbeitet dabei weiter ein Browser und/oder Node, der Nutzer bekommt davon aber nichts mit.
