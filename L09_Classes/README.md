@@ -154,27 +154,17 @@ Für jeden Objekttyp stellst Du dir dann die folgenden Fragen, wobei "es" ein be
 Die ersten beiden Fragen führen dich direkt zur Darstellung der einzelnen Klassen im Diagramm. Kümmern wir uns zunächst um die Asteroiden...
 
 **Video: Definition der Asteroiden als Klassendiagramm**  
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1dFHMtRSFcMl_cLpCfRz988-xA4czNTss"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/Asteroids_ClassDiagram.jpg"/><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
 
 ## Aktivitätsdiagramm
 Jetzt kannst Du die einzelnen Methoden mit Hilfe von Aktivitätsdiagrammen konzipieren. 
 
-**Video: Definition der Methoden als Aktivitätsdiagramme**
-
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1h5Rk6mLYFN1OLIPtppyL34DWh9_k5aWy"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"/><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
 
 ## Implementation
-
-**Video: Implementation der Klasse und Test mit einem Asteroiden**  
-- Zeigen was da ist: Vectorklasse, Pfade, HTML-Datei mit Links
-- Bei den Pfaden verweise auf die Suche nach Datenstrukturen in Cocktailbar und die verschachtelten Arrays. Video L04_V2 (6:30 - 8:45)
-- Auch die Asteroid-Klasse ist bereits angelegt entsprechend Klassendiagramm
-- Dann Aktivitätsdiagramm dazunehmen und die Methoden implementieren
-- Dann ein paar Asteroiden malen lassen
-- move ausprobieren mit Schleife... -> Problem
-- am Ende: wie kommt Bewegung in die Sache?
+<a href="https://drive.google.com/open?id=1E2H-k11Zwf9Smd-cpIKd0wTIYQriNOxS"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>  
 
 ## Zeitsignale
 Die Animation mit Hilfe einer Schleife zu bewerkstelligen ist nicht einfach machbar, da der Browser dann nur mit der Schleife beschäftigt ist und keine Zeit mehr hat, das Bild anzuzeigen. Stattdessen soll er das Bild anzeigen und dann warten, bis einige Zeit vergangen ist um das nächste Bild zu zeichnen und anzuzeigen und so weiter.  
@@ -194,38 +184,12 @@ Die Anweisung bewirkt, dass die `handler`-Funktion in dem mit `time` angegebenen
 Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die grafische Aufbereitung sinnvoll erscheinendem Zeitintervall aufgerufen wird. Über dieses entscheidet der Browser, Chrome versucht eine Bildwiederholrate von 60 Bildern pro Sekunde zu erreichen (Frames per second, fps).
 
 ## Hauptprogramm
-
-**Video: Aktivitätsdiagramm**
-- Array für die Asteroiden
-- Instanzierung
-- Animation erklären
-  - update
-  - Hintergrund löschen
-  - iterieren über Array
-  - move und draw
-
-
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1wvfbzvyh9_n9CbKR15ZQKmlit4atP3xv"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/Asteroids_ActivityDiagram-Main.jpg"/><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
 
 > **Hinweis:** Nicht alles lässt sich von vorneherein festlegen, manches musst Du ausprobieren, um ein Gefühl dafür zu bekommen, wie ein gutes Nutzungserlebnis erreicht werden kann. In der Konzeption musst Du abschätzen, welche Tests erforderlich sind und wie Du diese ermöglichst. Du musst zudem selbst Prototypen entwickeln können, um kleinere Sachen alleine zu implementieren und auszuprobieren ohne dafür einen Stab von Leuten zu beschäftigen!
 
-**Video: Implementation**
-
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-
-- Hit-Detection
-  - wohin damit?
-  - im Hauptprogramm geht die schöne Kapselung der Details verloren
-    - in Asteroid-Klasse als isHit(...)
-- Break Asteroids
-  - zunächst in Hauptprogramm implementieren
-  - Bruchstücke starten in den Ecken
-  - Extra noch einmal die Position setzen ist doof
-    - als optionaler Parameter in Constructor 
-  - Asteroid könnte Bruchstücke liefern, weiß aber nichts von der Asteroidenliste um sie dort einzutragen und sich selbst zu löschen
-  - Break bleibt im Hauptprogramm
-
+<a href="https://drive.google.com/open?id=1IH1YgYeGSmxsyckkAmYa9sl6qsGnn2sd"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 Ein Problem tritt auf bei der Übergabe der Position an den optionalen Parameter _position im Constructor der Asteroid-Klasse. Da Vector ein komplexer Typ ist, hält eine Variable dieses Typs lediglich eine Referenz auf ein Vektorobjekt. Durch die Zuweisung des Parameterinhaltes an das Objektattribut wurde also kein neues Vektorobjekt erzeugt, sondern nur die Referenz erneut genutzt. Die Bruchstücke referenzieren also das gleiche Vektorobjekt und haben daher die gleiche Position.
 
