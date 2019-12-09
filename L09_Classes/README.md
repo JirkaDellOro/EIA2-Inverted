@@ -155,13 +155,13 @@ Die ersten beiden Fragen führen dich direkt zur Darstellung der einzelnen Klass
 
 **Video: Definition der Asteroiden als Klassendiagramm**  
 <a href="https://drive.google.com/open?id=1dFHMtRSFcMl_cLpCfRz988-xA4czNTss"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-<a href="Material/Asteroids_ClassDiagram.jpg"/><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
+<a href="Material/Asteroids_ClassDiagram.jpg"><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
 
 ## Aktivitätsdiagramm
 Jetzt kannst Du die einzelnen Methoden mit Hilfe von Aktivitätsdiagrammen konzipieren. 
 
 <a href="https://drive.google.com/open?id=1h5Rk6mLYFN1OLIPtppyL34DWh9_k5aWy"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-<a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"/><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
+<a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
 
 ## Implementation
 <a href="https://drive.google.com/open?id=1E2H-k11Zwf9Smd-cpIKd0wTIYQriNOxS"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>  
@@ -185,7 +185,7 @@ Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die 
 
 ## Hauptprogramm
 <a href="https://drive.google.com/open?id=1wvfbzvyh9_n9CbKR15ZQKmlit4atP3xv"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-<a href="Material/Asteroids_ActivityDiagram-Main.jpg"/><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
+<a href="Material/Asteroids_ActivityDiagram-Main.jpg"><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
 
 > **Hinweis:** Nicht alles lässt sich von vorneherein festlegen, manches musst Du ausprobieren, um ein Gefühl dafür zu bekommen, wie ein gutes Nutzungserlebnis erreicht werden kann. In der Konzeption musst Du abschätzen, welche Tests erforderlich sind und wie Du diese ermöglichst. Du musst zudem selbst Prototypen entwickeln können, um kleinere Sachen alleine zu implementieren und auszuprobieren ohne dafür einen Stab von Leuten zu beschäftigen!
 
