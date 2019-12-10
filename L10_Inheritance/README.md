@@ -49,49 +49,21 @@ Jeder Teil soll also nur das von seiner Umwelt und anderen Teilen wissen, was un
 # Ufos in Asteroids
 Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entwickelt.
 
-**Video: Erweiterung des Klassendiagramms**
-- weitere Objekttypen sind Ufo, Schiff, Projektile, Laser und Trefferzone
-- Ufo und Projektile sind den Asteroiden nicht unähnlich
-  - haben einige Gemeinsamkeiten aber anderes Aussehen und andere Bewegungsmethode
-  - werden zuerst modelliert
-- Gemeinsamkeiten werden in Superklasse verlagert und von dort vererbt
-  - Name? Body, Moveable, Thing
-- Asteroid wird als Spezialisierung definiert
-- Ufos haben anderes Bewegungsmuster und festgelegte Geschwindigkeit
-- Projektile haben gleiches Bewegungsmuster aber Reichweite und festgelegte Geschwindigkeit
-- Aktivitätsdiagramme für Moveable und Asteroids vorzeigen und erklären, nicht neu entwerfen
-
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+## Erweiterung des Klassendiagramms
+<a href="https://drive.google.com/open?id=1hOXuvZ1aOGHeHUKKgEKqdAKm-8Zs6Mow"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/Asteroids_ClassDiagram.jpg"/><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
 <a href="Material/Asteroids_ActivityDiagram-Moveable.jpg"/><img src="Material/Asteroids_ActivityDiagram-Moveable.jpg" width="25%"></a>
 <a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"/><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
 
-**Video: Implementation I von Moveable, Refaktorierung von Asteroid und Tests**   
-- Asteroids und Moveable aufteilen
-- Testen
-- extends erklären!
-- super(...) erklären!
-
-- Projektilklasse implementieren und testen
-  - wie Reichweite implementieren?
-    - range in Projectile, wird dezimiert
-    - was passiert wenn 0 unterschritten wird?
-      - zunächst velocity auf (0,0)
-    - aber Projektile müssen gelöscht werden
-  - Zudem: derzeit nur eines, referenziert durch eine Variable
-    - es soll aber viele geben
-    - weitere Liste für Projektile?
-    - dann noch eine für Ufos?
-    - das ist doof, zumal das Hauptprogramm mit allen das gleiche macht....
-
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+## Implementation Moveable, Refaktorierung Asteroid   
+<a href="https://drive.google.com/open?id=1Zx46qYfIrFD9-rPBU3GN4FsMcd9uHud4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
     
 > **`extends`** erweitert eine Superklasse um eine Subklasse!  
 > **`super(...)`** ruft aus der Subklasse den Constructor der Superklasse auf!  
 > **`super.methode(...)`** ruft aus der Subklasse die `methode` der Superklasse auf!
 
 ## Polymorphie
-Griechisch πολύς (polýs) = „viel“ und μορφή (morphé) = "Form, Gestalt". Hunde sind vielgestaltig, das wurde in diesen Lektionen bereits ausgiebig behandelt. Die einzelnen Hunderassen können aber nicht nur anders aussehen, sondern sich vielleicht auch unterschiedlich verhalten. Ein Jagdhund wird beim Anblick einer Herde Schafe vielleicht gerne hineinrennen und eines reißen, ein Hütehund eher um die Herde herumlaufen und sie beisammen halten. Für jemanden, der mit diesen Hunden spazierengeht, so wie die angeblich 200.000 professionellen Gassigeher in den USA, ist dabei vordringlich wichtig, genug Leinen und Halsbänder zu haben, um die Hunde bei sich halten zu können. Die Rasse ist nicht erheblich.
+Griechisch πολύς (polýs) = „viel“ und μορφή (morphé) = "Form, Gestalt". Hunde sind vielgestaltig, das wurde in diesen Lektionen bereits ausgiebig behandelt. Die einzelnen Hunderassen können aber nicht nur anders aussehen, sondern sich vielleicht auch unterschiedlich verhalten. Ein Jagdhund wird beim Anblick einer Herde Schafe vielleicht gerne hineinrennen und eines reißen, ein Hütehund eher um die Herde herumlaufen und sie beisammen halten. Für jemanden, der mit diesen Hunden spazierengeht, so wie die angeblich 200.000 professionellen Gassigeher in den USA, ist dabei vordringlich wichtig, genug Leinen und Halsbänder zu haben, um die Hunde bei sich halten zu können. Die Rasse ist unerheblich.
 
 > **Polymorphie** ist das vierte Prinzip der Objektorientierung!
 
@@ -127,31 +99,15 @@ moveables.push(new Projectile(new Vector(0, 0), new Vector(0, 0)));
 
 - [x] Überprüfe auch dies mit einer entsprechenden Implementation
 
-
-**Video: Aktivitätsdigramm Hauptprogramm**  
+## Aktivitätsdigramm Hauptprogramm  
 Bild/Scan: Aktivitätsdiagramm des Hauptprogramms mit asteroid/asteroids ersetzt durch moveable/moveables
 
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1O2o9lLO5C5MyUGVHk6vK2RsyqbWiZMPB"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/Asteroids_ActivityDiagram-Main.jpg"/><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
 
-## Implementation II
+## Implementation bei Nutzung der Polymorphie
 
-**Video: Implementation II (Nutzung der Polymorphie)**
-- asteroids -> moveables, Type Asteroid -> Moveable
-- asteroid to moveable in Loops
-- moveable instance of Asteroid in getAsteroidHit
-- einzelne projectile-Variable eliminieren
-  - stattdessen Projektile in moveables pushen
-  - Sonderbehandlung in Update eliminieren
-- geht alles recht schnell
-- aber Projektile bleiben auf Canvas kleben
-  - einfache, schnelle Lösung:
-    - moveables exportieren, Projektile finden und löschen sich selbst.
-  - damit aber werden die Projectile zu mächtig
-    - eleganter: als expendable markieren und Hauptprogramm löscht sie -> Verweis auf Garbage-Collector für später
-- expendable auch auf Asteroiden nach Break anwenden
-
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="https://drive.google.com/open?id=1PSxD_WHh9sTXUwJTNcmwUsFqox1PT92K"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 > **`a instanceof B`** prüft, ob das Objekt `a` eine Instanz der Klasse `B` ist.
 
