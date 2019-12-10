@@ -198,3 +198,5 @@ Ein Problem tritt auf bei der Übergabe der Position an den optionalen Parameter
 - [x] Nutze diese Methode um das obige Problem noch eleganter zu lösen.
 - [x] Skaliere die Linienstärke in der draw-Methode der Asteroid-Klasse entsprechend des size-Attributs umgekehrt proportional hoch.
 
+# Wochenaufgabe
+https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L09_Vogelhaus:Classes
