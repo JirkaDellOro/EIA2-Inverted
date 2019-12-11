@@ -56,7 +56,7 @@ var L12_AsteroidsAddition;
     function shootLaser(_event) {
         console.log("Shoot laser");
         let position = mapClientToCanvas(_event.clientX, _event.clientY);
-        let hotspot = new L12_AsteroidsAddition.Hotspot(position);
+        let hotspot = new L12_AsteroidsAddition.Hotspot(position, ship.position);
         moveables.push(hotspot);
     }
     function mapClientToCanvas(_x, _y) {

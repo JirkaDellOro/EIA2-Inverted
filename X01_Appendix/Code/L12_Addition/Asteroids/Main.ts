@@ -67,7 +67,7 @@ namespace L12_AsteroidsAddition {
     function shootLaser(_event: MouseEvent): void {
         console.log("Shoot laser");
         let position: Vector = mapClientToCanvas(_event.clientX, _event.clientY);
-        let hotspot: Hotspot = new Hotspot(position);
+        let hotspot: Hotspot = new Hotspot(position, ship.position);
         moveables.push(hotspot);
     }
 
