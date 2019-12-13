@@ -35,7 +35,7 @@ console.log("Done");
 
 - [x] Implementiere das obenstehende Mini-Programm in einem eigenen Namespace und lasse es im Browser laufen. Was geschieht, wenn Du eine Zahl jenseits 0, 1 und 2 eingibst oder beliebige Zeichen?
 
-Wenn das Programm seinen Dienst quittiert, tut es dies leise. Der Nutzer hat keine Ahnung was passiert, sofern er nicht Medienkonzeption in Furtwangen studiert hat und deswegen selbsverständlich die Entwicklerkonsole geöffnet ist. Dort erscheint eine Fehlermeldung.
+Wenn das Programm seinen Dienst quittiert, tut es dies leise. Der Nutzer hat keine Ahnung was passiert, sofern er nicht Medienkonzeption in Furtwangen studiert deswegen selbstverständlich die Entwicklerkonsole geöffnet hat. Dort erscheint eine Fehlermeldung.
 
 - [x] Erkläre den Fehler!
 
@@ -82,6 +82,12 @@ Du kannst auch selbst eine Exception erzeugen und werfen lassen. Das entspricht 
 Das bedeutet, dass nun neben `return` und `await` eine dritte Möglichkeit zur Verfügung steht, um Funktionen zu beenden oder zu unterbrechen. Je nach Anwendungsfall kann die Verwendung von `throw` äußerst effizient sein.
 
 - [x] Verfolge den Code "Exception" im Anhang zu dieser Lektion mit dem Debugger!
+
+### Darstellung im Aktivitätsdiagramm
+Es gibt zwei Perspektiven um die Ausnahmebehandlung im Aktivitätsdiagramm darzustellen. Bei der "Außenansicht" wird nur gezeigt, dass eine Aktivität mit einer Ausnahme beendet werden kann und wie der Fluss dann weitergeht. Dazu kann hier - eben ausnahmsweise - die Aktivität zwei Abflüsse haben, die dann aber nicht eine parallele Weiterverarbeitung bedeuten. Denn einer davon ist mit einem kleinen Dreieck gekennzeichnet und gegebenenfalls, wie bei einem bedingten Fluß, mit einer Information zu der Ausnahmebedingung in eckigen Klammer.
+![](Material/draw.io/Exceptions.svg)
+
+Die "Innenansicht" zeigt den inneren Aufbau eines unterbrechbaren Bereiches und die Signale, die eine Ausnahmebehandlung erforderlich machen. Der Rahmen des Bereiches wird gestrichelt dargestellt, der Abfluss vom Signalempfang als gezackte Linie. Neben der gezackten Linie und dem Dreieck an einer Linie gibt es noch die Darstellung mit einem Blitzsymbol an der Linie.
 
 ## Funktions-Objekt
 Funktionen sind in Javascript, wie alles andere, Objekte. Sie können beispielsweise mit Hilfe von Variablen referenziert werden. Folgendes ist also möglich:
