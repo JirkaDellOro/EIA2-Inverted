@@ -21,14 +21,15 @@ var L12_AsteroidsAddition;
         L12_AsteroidsAddition.crc2.lineWidth = L12_AsteroidsAddition.linewidth;
         L12_AsteroidsAddition.createPaths();
         console.log("Asteroids paths: ", L12_AsteroidsAddition.asteroidPaths);
-        createAsteroids(1);
+        createAsteroids(5);
         createShip();
         createUfo();
-        // createUfo();
-        // createUfo();
+        createUfo();
+        createUfo();
         canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
         canvas.addEventListener(ASTEROID_EVENT.ASTEROID_HIT, breakAsteroid);
         canvas.addEventListener("mouseup", shootLaser);
+        canvas.addEventListener("mousedown", chargeLaser);
         document.addEventListener("keydown", handleKeypress);
         canvas.addEventListener("mousemove", setHeading);
         window.setInterval(update, 20);
@@ -53,11 +54,15 @@ var L12_AsteroidsAddition;
         let target = mapClientToCanvas(_event.clientX, _event.clientY);
         ship.head(target);
     }
+    function chargeLaser(_event) {
+        console.log("Load laser");
+        ship.charge();
+    }
     function shootLaser(_event) {
         console.log("Shoot laser");
         let position = mapClientToCanvas(_event.clientX, _event.clientY);
-        let hotspot = new L12_AsteroidsAddition.Hotspot(position);
-        moveables.push(hotspot);
+        moveables.push(new L12_AsteroidsAddition.Hotspot(position, ship.gunLeft.position));
+        moveables.push(new L12_AsteroidsAddition.Hotspot(position, ship.gunRight.position));
     }
     function mapClientToCanvas(_x, _y) {
         return new L12_AsteroidsAddition.Vector(_x - L12_AsteroidsAddition.crc2.canvas.offsetLeft, _y - L12_AsteroidsAddition.crc2.canvas.offsetTop);
@@ -100,7 +105,7 @@ var L12_AsteroidsAddition;
         deleteExpandables();
         // ship.draw();
         handleCollisions();
-        console.log("Moveable length: ", moveables.length);
+        // console.log("Moveable length: ", moveables.length);
     }
     function deleteExpandables() {
         for (let i = moveables.length - 1; i >= 0; i--) {

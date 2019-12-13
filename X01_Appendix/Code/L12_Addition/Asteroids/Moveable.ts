@@ -5,7 +5,7 @@ namespace L12_AsteroidsAddition {
         public expendable: boolean = false;
         protected hitRadius: number = 0;
 
-        constructor(_position?: Vector) {
+        protected constructor(_position?: Vector) {
             // console.log("Moveable constructor");
 
             if (_position)

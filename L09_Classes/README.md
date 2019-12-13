@@ -79,7 +79,7 @@ console.log(v1);
 
 ## Klasse vs. Objekt
 Häufig werden die Begriffe Klasse und Objekt verwechselt oder unscharf gebraucht. Das führt zu Verwirrung und Fehlern. Auch wenn der Unterschied in diesem Text bereits mehrfach herausgestellt wurde, soll an dieser Stelle noch einmal explizit darauf eingegangen werden.
-Eine Klasse beschreibt die Struktur, die ein Objekt derselben aufweisen soll, und die Methoden, die mit einem solchen Objekt verknüpft werden. Sie ist vergleichbar mit dem Hunde-Genom oder mit dem Hausbauplan eine Architekten. Ist die Klasse definiert, können beliebig viele Objekte der Klasse erzeugt werden, so wie ein ganzer Hundewurf, eine Siedlung oder ein ganzes Array voller Vektoren. Jedes dieser Objekte besitzt die in der Klasse angegebenen Eigenschaften, gegebenenfalls mit individuellen Werten, wie Fellfarbe, Dachziegeltyp oder Koordinate.  
+Eine Klasse beschreibt die Struktur, die ein Objekt derselben aufweisen soll, und die Methoden, die mit einem solchen Objekt verknüpft werden. Sie ist vergleichbar mit dem Hunde-Genom oder mit dem Hausbauplan eines Architekten. Ist die Klasse definiert, können beliebig viele Objekte der Klasse erzeugt werden, so wie ein ganzer Hundewurf, eine Siedlung oder ein ganzes Array voller Vektoren. Jedes dieser Objekte besitzt die in der Klasse angegebenen Eigenschaften, gegebenenfalls mit individuellen Werten, wie Fellfarbe, Dachziegeltyp oder Koordinate.  
 
 <img src="Material/Instanzierung.svg">
 
@@ -140,7 +140,7 @@ Mit diesen Basisregeln des objekorientierte Entwurfs kann man sich schon daran m
 ![](Material/draw.io/Asteroids_Scribble.svg)
 
 ## Klassendiagramm
-Bei der objektorientierte Modellierung kommt ein weiterer Diagrammtyp hinzu, den Du nutze solltest, bevor Du mit den detaillierten Aktivitätsdiagrammen beginnst. Dabei identifizierst Du zunächst die verschiedenen Objekttypen, die in deiner Anwendung eine Rolle spielen. Sofern es sich dabei um Objekte handelt, die eine sichtbare Repräsentation haben, kannst Du sie im UI-Scribble identifizieren.  
+Bei der objektorientierte Modellierung kommt ein weiterer Diagrammtyp hinzu, den Du nutzen solltest, bevor Du mit den detaillierten Aktivitätsdiagrammen beginnst. Dabei identifizierst Du zunächst die verschiedenen Objekttypen, die in deiner Anwendung eine Rolle spielen. Sofern es sich dabei um Objekte handelt, die eine sichtbare Repräsentation haben, kannst Du sie im UI-Scribble identifizieren.  
 
 ### Fünf Fragen 
 Für jeden Objekttyp stellst Du dir dann die folgenden Fragen, wobei "es" ein beispielhaftes Objekt des Typs meint.
@@ -154,27 +154,17 @@ Für jeden Objekttyp stellst Du dir dann die folgenden Fragen, wobei "es" ein be
 Die ersten beiden Fragen führen dich direkt zur Darstellung der einzelnen Klassen im Diagramm. Kümmern wir uns zunächst um die Asteroiden...
 
 **Video: Definition der Asteroiden als Klassendiagramm**  
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-<a href="Material/Asteroids_ClassDiagram.jpg"/><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
+<a href="https://drive.google.com/open?id=1dFHMtRSFcMl_cLpCfRz988-xA4czNTss"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/Asteroids_ClassDiagram.jpg"><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
 
 ## Aktivitätsdiagramm
 Jetzt kannst Du die einzelnen Methoden mit Hilfe von Aktivitätsdiagrammen konzipieren. 
 
-**Video: Definition der Methoden als Aktivitätsdiagramme**
-
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-<a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"/><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
+<a href="https://drive.google.com/open?id=1h5Rk6mLYFN1OLIPtppyL34DWh9_k5aWy"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
 
 ## Implementation
-
-**Video: Implementation der Klasse und Test mit einem Asteroiden**  
-- Zeigen was da ist: Vectorklasse, Pfade, HTML-Datei mit Links
-- Bei den Pfaden verweise auf die Suche nach Datenstrukturen in Cocktailbar und die verschachtelten Arrays. Video L04_V2 (6:30 - 8:45)
-- Auch die Asteroid-Klasse ist bereits angelegt entsprechend Klassendiagramm
-- Dann Aktivitätsdiagramm dazunehmen und die Methoden implementieren
-- Dann ein paar Asteroiden malen lassen
-- move ausprobieren mit Schleife... -> Problem
-- am Ende: wie kommt Bewegung in die Sache?
+<a href="https://drive.google.com/open?id=1E2H-k11Zwf9Smd-cpIKd0wTIYQriNOxS"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>  
 
 ## Zeitsignale
 Die Animation mit Hilfe einer Schleife zu bewerkstelligen ist nicht einfach machbar, da der Browser dann nur mit der Schleife beschäftigt ist und keine Zeit mehr hat, das Bild anzuzeigen. Stattdessen soll er das Bild anzeigen und dann warten, bis einige Zeit vergangen ist um das nächste Bild zu zeichnen und anzuzeigen und so weiter.  
@@ -194,38 +184,12 @@ Die Anweisung bewirkt, dass die `handler`-Funktion in dem mit `time` angegebenen
 Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die grafische Aufbereitung sinnvoll erscheinendem Zeitintervall aufgerufen wird. Über dieses entscheidet der Browser, Chrome versucht eine Bildwiederholrate von 60 Bildern pro Sekunde zu erreichen (Frames per second, fps).
 
 ## Hauptprogramm
-
-**Video: Aktivitätsdiagramm**
-- Array für die Asteroiden
-- Instanzierung
-- Animation erklären
-  - update
-  - Hintergrund löschen
-  - iterieren über Array
-  - move und draw
-
-
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-<a href="Material/Asteroids_ActivityDiagram-Main.jpg"/><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
+<a href="https://drive.google.com/open?id=1wvfbzvyh9_n9CbKR15ZQKmlit4atP3xv"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/Asteroids_ActivityDiagram-Main.jpg"><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
 
 > **Hinweis:** Nicht alles lässt sich von vorneherein festlegen, manches musst Du ausprobieren, um ein Gefühl dafür zu bekommen, wie ein gutes Nutzungserlebnis erreicht werden kann. In der Konzeption musst Du abschätzen, welche Tests erforderlich sind und wie Du diese ermöglichst. Du musst zudem selbst Prototypen entwickeln können, um kleinere Sachen alleine zu implementieren und auszuprobieren ohne dafür einen Stab von Leuten zu beschäftigen!
 
-**Video: Implementation**
-
-<a href=""><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-
-- Hit-Detection
-  - wohin damit?
-  - im Hauptprogramm geht die schöne Kapselung der Details verloren
-    - in Asteroid-Klasse als isHit(...)
-- Break Asteroids
-  - zunächst in Hauptprogramm implementieren
-  - Bruchstücke starten in den Ecken
-  - Extra noch einmal die Position setzen ist doof
-    - als optionaler Parameter in Constructor 
-  - Asteroid könnte Bruchstücke liefern, weiß aber nichts von der Asteroidenliste um sie dort einzutragen und sich selbst zu löschen
-  - Break bleibt im Hauptprogramm
-
+<a href="https://drive.google.com/open?id=1IH1YgYeGSmxsyckkAmYa9sl6qsGnn2sd"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 Ein Problem tritt auf bei der Übergabe der Position an den optionalen Parameter _position im Constructor der Asteroid-Klasse. Da Vector ein komplexer Typ ist, hält eine Variable dieses Typs lediglich eine Referenz auf ein Vektorobjekt. Durch die Zuweisung des Parameterinhaltes an das Objektattribut wurde also kein neues Vektorobjekt erzeugt, sondern nur die Referenz erneut genutzt. Die Bruchstücke referenzieren also das gleiche Vektorobjekt und haben daher die gleiche Position.
 
@@ -234,3 +198,5 @@ Ein Problem tritt auf bei der Übergabe der Position an den optionalen Parameter
 - [x] Nutze diese Methode um das obige Problem noch eleganter zu lösen.
 - [x] Skaliere die Linienstärke in der draw-Methode der Asteroid-Klasse entsprechend des size-Attributs umgekehrt proportional hoch.
 
+# Wochenaufgabe
+https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L09_Vogelhaus:Classes
