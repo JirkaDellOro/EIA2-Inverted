@@ -25,15 +25,16 @@ namespace L12_AsteroidsAddition {
         createPaths();
         console.log("Asteroids paths: ", asteroidPaths);
 
-        createAsteroids(1);
+        createAsteroids(5);
         createShip();
         createUfo();
-        // createUfo();
-        // createUfo();
+        createUfo();
+        createUfo();
 
         canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
         canvas.addEventListener(ASTEROID_EVENT.ASTEROID_HIT, breakAsteroid);
         canvas.addEventListener("mouseup", shootLaser);
+        canvas.addEventListener("mousedown", chargeLaser);
         document.addEventListener("keydown", handleKeypress);
         canvas.addEventListener("mousemove", setHeading);
 
@@ -64,11 +65,16 @@ namespace L12_AsteroidsAddition {
         ship.head(target);
     }
 
+    function chargeLaser(_event: MouseEvent): void {
+        console.log("Load laser");
+        ship.charge();
+    }
+
     function shootLaser(_event: MouseEvent): void {
         console.log("Shoot laser");
         let position: Vector = mapClientToCanvas(_event.clientX, _event.clientY);
-        let hotspot: Hotspot = new Hotspot(position, ship.position);
-        moveables.push(hotspot);
+        moveables.push(new Hotspot(position, ship.gunLeft.position));
+        moveables.push(new Hotspot(position, ship.gunRight.position));
     }
 
     function mapClientToCanvas(_x: number, _y: number): Vector {
@@ -121,7 +127,7 @@ namespace L12_AsteroidsAddition {
         // ship.draw();
         handleCollisions();
 
-        console.log("Moveable length: ", moveables.length);
+        // console.log("Moveable length: ", moveables.length);
     }
 
     function deleteExpandables(): void {
