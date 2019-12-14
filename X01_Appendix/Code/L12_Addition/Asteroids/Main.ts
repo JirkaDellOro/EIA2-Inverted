@@ -1,6 +1,7 @@
 namespace L12_AsteroidsAddition {
     export enum ASTEROID_EVENT {
         UFO_SHOOTS = "ufoShoots",
+        SHIP_SHOOTS = "shipShoots",
         ASTEROID_HIT = "asteroidHit"
     }
 
@@ -25,13 +26,14 @@ namespace L12_AsteroidsAddition {
         createPaths();
         console.log("Asteroids paths: ", asteroidPaths);
 
-        createAsteroids(5);
         createShip();
+        createAsteroids(2);
         createUfo();
         createUfo();
-        createUfo();
+        // createUfo();
 
         canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
+        canvas.addEventListener(ASTEROID_EVENT.SHIP_SHOOTS, handleShipShot);
         canvas.addEventListener(ASTEROID_EVENT.ASTEROID_HIT, breakAsteroid);
         canvas.addEventListener("mouseup", shootLaser);
         canvas.addEventListener("mousedown", chargeLaser);
@@ -60,6 +62,16 @@ namespace L12_AsteroidsAddition {
         shootProjectile(ufo.position);
     }
 
+    function handleShipShot(_event: Event): void {
+        let event: CustomEvent = <CustomEvent>_event;
+        let charge: number = event.detail.charge;
+        let target: Vector = event.detail.target;
+
+        moveables.push(new Hotspot(target, charge));
+        moveables.push(new Laser(event.detail.pathLaserLeft, charge));
+        moveables.push(new Laser(event.detail.pathLaserRight, charge));
+    }
+
     function setHeading(_event: MouseEvent): void {
         let target: Vector = mapClientToCanvas(_event.clientX, _event.clientY);
         ship.head(target);
@@ -67,14 +79,13 @@ namespace L12_AsteroidsAddition {
 
     function chargeLaser(_event: MouseEvent): void {
         console.log("Load laser");
-        ship.charge();
+        ship.charge(true);
     }
 
     function shootLaser(_event: MouseEvent): void {
         console.log("Shoot laser");
         let position: Vector = mapClientToCanvas(_event.clientX, _event.clientY);
-        moveables.push(new Hotspot(position, ship.gunLeft.position));
-        moveables.push(new Hotspot(position, ship.gunRight.position));
+        ship.shoot(position);
     }
 
     function mapClientToCanvas(_x: number, _y: number): Vector {
@@ -140,9 +151,11 @@ namespace L12_AsteroidsAddition {
     function handleCollisions(): void {
         for (let i: number = 0; i < moveables.length; i++) {
             let a: Moveable = moveables[i];
+            if (a instanceof Laser) continue;
             for (let j: number = i + 1; j < moveables.length; j++) {
                 let b: Moveable = moveables[j];
 
+                if (b instanceof Laser) continue;
                 if (a instanceof Asteroid && b instanceof Asteroid)
                     continue;
                 if (a.expendable || b.expendable)
@@ -155,5 +168,12 @@ namespace L12_AsteroidsAddition {
 
             }
         }
+    }
+
+    export function getColorCharge(_charge: number, _alpha: number): string {
+        _charge = Math.max(Math.min(1, _charge), 0);
+        let angle: number = 240 + 180 * _charge;
+        let light: number = 50 + 30 * _charge;
+        return  `HSL(${angle}, 100%, ${light}%, ${_alpha})`;
     }
 }
