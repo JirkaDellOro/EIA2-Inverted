@@ -8,7 +8,7 @@ namespace L12_AsteroidsAddition {
             super(_position, new Vector());
             // console.log("Hotspot constructor");
 
-            this.charge = Math.max(0, Math.min(1, _charge);
+            this.charge = Math.max(0, Math.min(1, _charge));
             this.maxLifetime = this.lifetime = Hotspot.maxLifetime * this.charge;
             this.hitRadius = 5 + 40 * this.charge;
         }
