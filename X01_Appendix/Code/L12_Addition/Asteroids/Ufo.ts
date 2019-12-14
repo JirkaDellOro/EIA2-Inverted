@@ -28,7 +28,7 @@ namespace L12_AsteroidsAddition {
         }
 
         private shoot(): void {
-            console.log("Ufo shoots");
+            // console.log("Ufo shoots");
             let event: CustomEvent = new CustomEvent(ASTEROID_EVENT.UFO_SHOOTS, {detail: {ufo: this}});
             crc2.canvas.dispatchEvent(event);
         }

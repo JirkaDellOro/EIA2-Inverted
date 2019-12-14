@@ -17,7 +17,7 @@ var L12_AsteroidsAddition;
             L12_AsteroidsAddition.crc2.translate(this.position.x, this.position.y);
             L12_AsteroidsAddition.crc2.beginPath();
             L12_AsteroidsAddition.crc2.fillStyle = L12_AsteroidsAddition.getColorCharge(this.charge, ratio);
-            console.log(L12_AsteroidsAddition.getColorCharge(this.charge, ratio));
+            // console.log(getColorCharge(this.charge, ratio));
             L12_AsteroidsAddition.crc2.arc(0, 0, this.hitRadius * (1 - ratio), 0, 2 * Math.PI);
             L12_AsteroidsAddition.crc2.arc(0, 0, this.hitRadius, 2 * Math.PI, 0, true);
             L12_AsteroidsAddition.crc2.fill();
@@ -29,7 +29,7 @@ var L12_AsteroidsAddition;
         hit() {
             this.lifetime -= Hotspot.maxLifetime / 5;
             this.expendable = this.lifetime < 0;
-            console.log("Hotspot hit, remaining range: ", this.lifetime);
+            // console.log("Hotspot hit, remaining range: ", this.lifetime);
         }
     }
     Hotspot.maxLifetime = 2;

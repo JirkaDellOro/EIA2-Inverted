@@ -41,7 +41,7 @@ var L12_AsteroidsAddition;
             ship.thrust();
     }
     function shootProjectile(_origin) {
-        console.log("Shoot projectile");
+        // console.log("Shoot projectile");
         let velocity = L12_AsteroidsAddition.Vector.getRandom(200, 200);
         let projectile = new L12_AsteroidsAddition.Projectile(_origin, velocity);
         // move projectile away from ufo to prevent suicide
@@ -65,11 +65,11 @@ var L12_AsteroidsAddition;
         ship.head(target);
     }
     function chargeLaser(_event) {
-        console.log("Load laser");
+        // console.log("Load laser");
         ship.charge(true);
     }
     function shootLaser(_event) {
-        console.log("Shoot laser");
+        // console.log("Shoot laser");
         let position = mapClientToCanvas(_event.clientX, _event.clientY);
         ship.shoot(position);
     }
@@ -136,6 +136,7 @@ var L12_AsteroidsAddition;
                 if (a.expendable || b.expendable)
                     continue;
                 if (a.isHitBy(b)) {
+                    console.log("Collision ", a, b);
                     a.hit();
                     b.hit();
                 }

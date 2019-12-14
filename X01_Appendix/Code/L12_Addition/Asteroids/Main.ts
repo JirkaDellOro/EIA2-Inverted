@@ -49,7 +49,7 @@ namespace L12_AsteroidsAddition {
     }
 
     function shootProjectile(_origin: Vector): void {
-        console.log("Shoot projectile");
+        // console.log("Shoot projectile");
         let velocity: Vector = Vector.getRandom(200, 200);
         let projectile: Projectile = new Projectile(_origin, velocity);
         // move projectile away from ufo to prevent suicide
@@ -78,12 +78,12 @@ namespace L12_AsteroidsAddition {
     }
 
     function chargeLaser(_event: MouseEvent): void {
-        console.log("Load laser");
+        // console.log("Load laser");
         ship.charge(true);
     }
 
     function shootLaser(_event: MouseEvent): void {
-        console.log("Shoot laser");
+        // console.log("Shoot laser");
         let position: Vector = mapClientToCanvas(_event.clientX, _event.clientY);
         ship.shoot(position);
     }
@@ -162,6 +162,7 @@ namespace L12_AsteroidsAddition {
                     continue;
 
                 if (a.isHitBy(b)) {
+                    console.log("Collision ", a, b);
                     a.hit();
                     b.hit();
                 }

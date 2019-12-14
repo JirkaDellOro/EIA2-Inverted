@@ -24,7 +24,7 @@ var L12_AsteroidsAddition;
                 this.velocity.y = Ufo.speed * (Math.floor(Math.random() * 3) - 1);
         }
         shoot() {
-            console.log("Ufo shoots");
+            // console.log("Ufo shoots");
             let event = new CustomEvent(L12_AsteroidsAddition.ASTEROID_EVENT.UFO_SHOOTS, { detail: { ufo: this } });
             L12_AsteroidsAddition.crc2.canvas.dispatchEvent(event);
         }

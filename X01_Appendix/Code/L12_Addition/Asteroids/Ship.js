@@ -78,7 +78,7 @@ var L12_AsteroidsAddition;
             super.move(_timeslice);
         }
         shoot(_target) {
-            console.log("Ship shoots");
+            // console.log("Ship shoots");
             let event = new CustomEvent(L12_AsteroidsAddition.ASTEROID_EVENT.SHIP_SHOOTS, {
                 detail: {
                     target: _target,

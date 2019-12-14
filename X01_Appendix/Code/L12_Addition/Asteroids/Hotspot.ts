@@ -21,7 +21,7 @@ namespace L12_AsteroidsAddition {
             crc2.translate(this.position.x, this.position.y);
             crc2.beginPath();
             crc2.fillStyle = getColorCharge(this.charge, ratio);
-            console.log(getColorCharge(this.charge, ratio));
+            // console.log(getColorCharge(this.charge, ratio));
             crc2.arc(0, 0, this.hitRadius * (1 - ratio), 0, 2 * Math.PI);
             crc2.arc(0, 0, this.hitRadius, 2 * Math.PI, 0, true);
             crc2.fill();
@@ -35,7 +35,7 @@ namespace L12_AsteroidsAddition {
         public hit(): void {
             this.lifetime -= Hotspot.maxLifetime / 5;
             this.expendable = this.lifetime < 0;
-            console.log("Hotspot hit, remaining range: ", this.lifetime);
+            // console.log("Hotspot hit, remaining range: ", this.lifetime);
         }
     }
 }

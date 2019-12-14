@@ -5,8 +5,7 @@ namespace L12_AsteroidsAddition {
 
         constructor(_size: number, _position?: Vector) {
             super(_position);
-            
-            console.log("Asteroid constructor");
+            // console.log("Asteroid constructor");
 
             this.velocity = Vector.getRandom(100, 200);
 

@@ -94,7 +94,7 @@ namespace L12_AsteroidsAddition {
         }
 
         public shoot(_target: Vector): void {
-            console.log("Ship shoots");
+            // console.log("Ship shoots");
             let event: CustomEvent = new CustomEvent(ASTEROID_EVENT.SHIP_SHOOTS, {
                 detail: {
                     target: _target,
