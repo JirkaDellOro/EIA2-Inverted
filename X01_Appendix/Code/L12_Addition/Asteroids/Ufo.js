@@ -18,6 +18,7 @@ var L12_AsteroidsAddition;
         }
         move(_timeslice) {
             super.move(_timeslice);
+            L12_AsteroidsAddition.Sound.play("saucerBig");
             if (Math.random() < 0.03)
                 this.shoot();
             if (Math.random() < 0.02)

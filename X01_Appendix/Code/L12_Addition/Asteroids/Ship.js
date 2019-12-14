@@ -44,6 +44,7 @@ var L12_AsteroidsAddition;
             this.velocity.add(change);
             // console.log(this.velocity);
             this.exhaust = true;
+            L12_AsteroidsAddition.Sound.play("thrust");
         }
         draw() {
             L12_AsteroidsAddition.crc2.save();

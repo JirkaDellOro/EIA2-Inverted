@@ -13,6 +13,7 @@ var L12_AsteroidsAddition;
     let ship;
     function handleLoad(_event) {
         console.log("Asteroids starting");
+        L12_AsteroidsAddition.Sound.init();
         let canvas = document.querySelector("canvas");
         if (!canvas)
             return;
@@ -23,7 +24,7 @@ var L12_AsteroidsAddition;
         L12_AsteroidsAddition.createPaths();
         console.log("Asteroids paths: ", L12_AsteroidsAddition.asteroidPaths);
         createShip();
-        createAsteroids(2);
+        createAsteroids(5);
         createUfo();
         createUfo();
         // createUfo();
@@ -47,6 +48,7 @@ var L12_AsteroidsAddition;
         // move projectile away from ufo to prevent suicide
         projectile.move(0.15);
         moveables.push(projectile);
+        L12_AsteroidsAddition.Sound.play("fire");
     }
     function handleUfoShot(_event) {
         let ufo = _event.detail.ufo;
@@ -59,6 +61,7 @@ var L12_AsteroidsAddition;
         moveables.push(new L12_AsteroidsAddition.Hotspot(target, charge));
         moveables.push(new L12_AsteroidsAddition.Laser(event.detail.pathLaserLeft, charge));
         moveables.push(new L12_AsteroidsAddition.Laser(event.detail.pathLaserRight, charge));
+        L12_AsteroidsAddition.Sound.play("fire");
     }
     function setHeading(_event) {
         let target = mapClientToCanvas(_event.clientX, _event.clientY);
@@ -78,6 +81,7 @@ var L12_AsteroidsAddition;
     }
     function breakAsteroid(_event) {
         let asteroid = _event.detail.asteroid;
+        L12_AsteroidsAddition.Sound.breakAsteroid(asteroid.size);
         if (asteroid.size > 0.3) {
             for (let i = 0; i < 2; i++) {
                 let fragment = new L12_AsteroidsAddition.Asteroid(asteroid.size / 2, asteroid.position);
@@ -145,8 +149,8 @@ var L12_AsteroidsAddition;
     }
     function getColorCharge(_charge, _alpha) {
         _charge = Math.max(Math.min(1, _charge), 0);
-        let angle = 240 + 180 * _charge;
-        let light = 50 + 30 * _charge;
+        let angle = 240 + 150 * _charge * _alpha;
+        let light = 30 + 60 * _charge;
         return `HSL(${angle}, 100%, ${light}%, ${_alpha})`;
     }
     L12_AsteroidsAddition.getColorCharge = getColorCharge;

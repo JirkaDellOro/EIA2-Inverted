@@ -21,6 +21,7 @@ namespace L12_AsteroidsAddition {
 
         public move(_timeslice: number): void {
             super.move(_timeslice);
+            Sound.play("saucerBig");
             if (Math.random() < 0.03)
                 this.shoot();
             if (Math.random() < 0.02)

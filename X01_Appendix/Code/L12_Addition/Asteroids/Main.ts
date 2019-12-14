@@ -15,6 +15,8 @@ namespace L12_AsteroidsAddition {
 
     function handleLoad(_event: Event): void {
         console.log("Asteroids starting");
+        Sound.init();
+
         let canvas: HTMLCanvasElement | null = document.querySelector("canvas");
         if (!canvas)
             return;
@@ -27,7 +29,7 @@ namespace L12_AsteroidsAddition {
         console.log("Asteroids paths: ", asteroidPaths);
 
         createShip();
-        createAsteroids(2);
+        createAsteroids(5);
         createUfo();
         createUfo();
         // createUfo();
@@ -55,21 +57,23 @@ namespace L12_AsteroidsAddition {
         // move projectile away from ufo to prevent suicide
         projectile.move(0.15);
         moveables.push(projectile);
+        Sound.play("fire");
     }
-
+    
     function handleUfoShot(_event: Event): void {
         let ufo: Ufo = (<CustomEvent>_event).detail.ufo;
         shootProjectile(ufo.position);
     }
-
+    
     function handleShipShot(_event: Event): void {
         let event: CustomEvent = <CustomEvent>_event;
         let charge: number = event.detail.charge;
         let target: Vector = event.detail.target;
-
+        
         moveables.push(new Hotspot(target, charge));
         moveables.push(new Laser(event.detail.pathLaserLeft, charge));
         moveables.push(new Laser(event.detail.pathLaserRight, charge));
+        Sound.play("fire");
     }
 
     function setHeading(_event: MouseEvent): void {
@@ -94,6 +98,7 @@ namespace L12_AsteroidsAddition {
 
     function breakAsteroid(_event: Event): void {
         let asteroid: Asteroid = (<CustomEvent>_event).detail.asteroid;
+        Sound.breakAsteroid(asteroid.size);
         if (asteroid.size > 0.3) {
             for (let i: number = 0; i < 2; i++) {
                 let fragment: Asteroid = new Asteroid(asteroid.size / 2, asteroid.position);
@@ -173,8 +178,8 @@ namespace L12_AsteroidsAddition {
 
     export function getColorCharge(_charge: number, _alpha: number): string {
         _charge = Math.max(Math.min(1, _charge), 0);
-        let angle: number = 240 + 180 * _charge;
-        let light: number = 50 + 30 * _charge;
+        let angle: number = 240 + 150 * _charge * _alpha;
+        let light: number = 30 + 60 * _charge;
         return  `HSL(${angle}, 100%, ${light}%, ${_alpha})`;
     }
 }

@@ -53,6 +53,7 @@ namespace L12_AsteroidsAddition {
             this.velocity.add(change);
             // console.log(this.velocity);
             this.exhaust = true;
+            Sound.play("thrust");
         }
 
         public draw(): void {
