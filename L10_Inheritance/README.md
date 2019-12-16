@@ -117,3 +117,6 @@ Bild/Scan: Aktivitätsdiagramm des Hauptprogramms mit asteroid/asteroids ersetzt
     - wenn Hauptprogramm: wie erkennt das Hauptprogramm, dass das Ufo ein Projektil abfeuert? 
 
 >**Hinweis:** Der Pfad zum Zeichnen der Ufos wird bereits von der Funktion `createUfoPath()` erzeugt. 
+
+# Wochenaufgabe
+https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L10_Vogelhaus:Inheritance
