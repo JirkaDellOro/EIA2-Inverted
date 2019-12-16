@@ -99,7 +99,7 @@ moveables.push(new Projectile(new Vector(0, 0), new Vector(0, 0)));
 
 - [x] Überprüfe auch dies mit einer entsprechenden Implementation
 
-## Aktivitätsdigramm Hauptprogramm  
+## Aktivitätsdiagramm Hauptprogramm  
 Bild/Scan: Aktivitätsdiagramm des Hauptprogramms mit asteroid/asteroids ersetzt durch moveable/moveables
 
 <a href="https://drive.google.com/open?id=1O2o9lLO5C5MyUGVHk6vK2RsyqbWiZMPB"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
