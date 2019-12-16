@@ -40,7 +40,7 @@ Wegen der Vererbungsbeziehung werden Superklassen manchmal auch als Elternklasse
 ## Regeln für die Modellierung
 Ein Dompteur im Zirkus muss nicht nur die Eigenheiten jeder Hunderasse in seiner Truppe kennen, sondern sogar die jeder einzelnen Instanz. Dem Schalterbeamten "in Zollhafe von modernes Planet" genügte dagegen zu wissen, ob eine Lebensform ein Säuger ist, um das richtige Zimmer zuzuweisen ([siehe Ijon Tichy, Folge 2, 4:23 - 5:33](https://www.youtube.com/watch?v=_DSCXsIR03Q))
 
-Bei der Modellierung eines Systems solltes Du diese zwei Regeln beachten:
+Bei der Modellierung eines Systems solltest Du diese zwei Regeln beachten:
 - jeder Teil darf nur so schlau wie nötig sein
 - jeder Teil muss so dumm wie möglich sein  
 
