@@ -16,6 +16,20 @@ constructor(_x: number = 0, _y: number = 0) {
 ```
 Nun kann ein neuer Vector einfach mit dem Aufruf `new Vector()` erzeugt werden, die Koordinaten haben dann automatisch beide den Wert 0. Es muss also nicht im Schleifenrumpf geprüft werden, ob Parameter übergeben wurden um auf diesen Fall zu reagieren. Werden aber Parameterwerte übergeben, werden diese verwendet.
 
+## Eigenschaftsparameter
+Eigenschaften eines Objektes mit Werten zu definieren, die dem Konstrukter übergeben werden, ist ein sehr häufiges Muster. Daher ist in Typescript eine Kurzschreibweise möglich. Dabei werden die Eigenschaften mit der Signatur des Konstruktors durch die Liste der formalen Parameter deklariert.  
+
+```typescript
+class Test {
+  constructor (public a: number, protected b: number, private c: number) {
+  }
+}
+```  
+
+Eine Instanz der Klasse Test verfügt nun über die Eigenschaften a, b und c, obwohl diese nicht in der Klasse deklariert wurden, sondern in der Konstruktorsignatur. Erzeugt mit `let test: Test = new Test(1, 2, 3);` sind die Eigenschaften dann mit den Werten 1, 2 und 3 definiert.  
+
+Diese Schreibweise "versteckt" allerdings die Eigenschaften in der Signatur und der Coding-Style der Lektionen kann nicht sinnvoll eingehalten werden, da es sich gleichzeitig um Parameter und Eigenschaften handelt. Daher wurde diese Schreibweise nicht verwendet, soll hier aber erwähnt sein.
+
 ## Ausnahmebehandlung
 In den vorangegangenen Lektionen wurde das Thema Fehlerbehandlung weitestgehend ausgeklammert. Lediglich wenn TypeScript durch die strikten Einstellungen des Compilers und des Linters Fehlerquellen angezeigt hat, wurde der Code entsprechend angepasst.  
 

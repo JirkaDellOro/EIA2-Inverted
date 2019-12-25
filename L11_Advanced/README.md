@@ -101,6 +101,8 @@ Der Zugriff ist nur Objekten der gleichen Klasse und deren Subklassen erlaubt. E
 
 <a href="https://drive.google.com/open?id=16CfAazrAZrekSTJ7FTPeDR1sWztdUaIu"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
+### `readonly`
+Unterschiedliche Programmiersprachen können noch weitere Modifikatoren anbieten. Erwähnenswert ist für TypeScript noch `readonly`, das mit den vorangegangenen Modifikatoren kombiniert werden kann. Eine so gekennzeichnete Eigenschaft kann nur direkt bei der Deklaration oder im Konstruktor definiert, danach der Wert aber nicht mehr geändert werden. Es entspricht somit dem Schlüsselwort `const` für übliche Variablen.
 
 ## Zugriffsfunktionen 
 ### `set`
@@ -141,6 +143,11 @@ get length(): number {
 erscheint es von außen betrachtet aber so, als wäre diese Eigenschaft ständig vorhanden, denn sie kann einfach mit z.B. `let speed: number = velocity.length;` abgerufen werden. Die Anweisung verschleiert, dass es sich eigentlich um den Aufruf einer Methode handelt.
 
 > **Hinweis:** Zugriffsfunktionen werden im Klassendiagramm standardmäßig nicht markiert, sondern schlicht als Eigenschaft dargestellt.
+
+## Asteroid Reloaded
+
+<a href="https://drive.google.com/open?id=1D18nvxbGernXTXBMeXQfqL8CLdURmP8r"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<a href="Material/draw.io/Asteroids_ClassDiagram.svg"><img src="Material/draw.io/Asteroids_ClassDiagram.svg" width="25%"></a>
 
 ## Aufzählungstypen
 Häufig ist es erforderlich, eine Information mit einem Datentyp zu beschreiben, der nur eine enge und diskrete Auswahl an Werten beschreiben kann. Das simpelste Beispiel für einen solchen Datentyp ist `boolean`. Hier sind nur zwei Werte zulässig `true` und `false`. Der Versuch, einer Variablen dieses Typs beispielsweise ein `maybe` zuzuweisen, scheitert.
@@ -184,8 +191,3 @@ Ohne den speziellen Aufzählungstyp wäre `task` vielleicht einfach vom Typ `num
 Mit Hilfe des Aufzählungstyps aber kann TypeScript schon beim Schreiben des Codes die richtigen Vorschläge machen, die zulässigen Werte zur Auswahl stellen und Fehler sofort erkennen.
 
 > **Hinweis**: Laut UML-Standard wird eine Enumeration im Klassendiagramm durch die Markierung `<<enumeration>>` gekennzeichnet. Analog gilt das für Interfaces mit `<<interface>>`
-
-# Asteroid Reloaded
-
-<a href="https://drive.google.com/open?id=1D18nvxbGernXTXBMeXQfqL8CLdURmP8r"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-<a href="Material/draw.io/Asteroids_ClassDiagram.svg"><img src="Material/draw.io/Asteroids_ClassDiagram.svg" width="25%"></a>
