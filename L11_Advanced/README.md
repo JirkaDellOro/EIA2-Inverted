@@ -4,7 +4,7 @@
 
 <hr>
 <a href="https://drive.google.com/open?id=1_k4lpYR71AglQXTEqxZBjYpISO_rvWWR"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-<a href="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg" width="12%"></a>
+<a href="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg" width="13%"></a>
 <a href="Material/draw.io/Asteroids_ActivityDiagram-Main_2.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Main_2.svg" width="25%"></a>
 <hr>
 Die objektorientierte Modellierung bietet noch einige zusätzliche Möglichkeiten, welche die Entwicklung und Wartung von Softwaresystemen vereinfachen und verbessern. Komplexere Software wird meist im Team entwickelt, verschiedene Teile, Module und Klassen werden von unterschiedlichen Leuten entworfen, implementiert und genutzt. Es ist ungemein hilfreich und praktisch, wenn diese Mechanismen genutzt werden, um Missverständnisse zwischen den Teammitgliedern zu vermeiden oder Fehler bei der Programmierung von vorneherein auszuschließen.
