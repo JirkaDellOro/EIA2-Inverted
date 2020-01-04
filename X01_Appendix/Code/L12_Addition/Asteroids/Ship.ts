@@ -1,5 +1,6 @@
 namespace L12_AsteroidsAddition {
     class Gun {
+        private static size: Vector = new Vector(15, 6);
         position: Vector;
 
         public constructor(_position: Vector) {
@@ -10,22 +11,24 @@ namespace L12_AsteroidsAddition {
             crc2.beginPath();
             crc2.save();
             crc2.translate(this.position.x, this.position.y);
-            crc2.strokeRect(0, -3, -15, 6);
-            crc2.fillRect(0, -3, -_charge, 6);
+            crc2.fillStyle = getColorCharge(_charge, 1);
+            crc2.fillRect(0, -Gun.size.y / 2, -Gun.size.x * Math.min(1, _charge), Gun.size.y);
+            crc2.strokeRect(0, -Gun.size.y / 2, -Gun.size.x, Gun.size.y);
             crc2.restore();
         }
     }
 
     export class Ship extends Moveable {
         private static acceleration: number = 10;
+        private static timeToChargeFully: number = 1;
         public gunLeft: Gun = new Gun(new Vector(10, -12));
         public gunRight: Gun = new Gun(new Vector(10, 12));
+        public charged: number = 0;
         // private static maxCharge: number = 1;
         // private charge: number = 0;
         private rotation: number = 0;
         private exhaust: boolean = false;
         private charging: boolean = false;
-        private charged: number = 0;
 
         public constructor(_position: Vector) {
             super(_position);
@@ -34,8 +37,10 @@ namespace L12_AsteroidsAddition {
             this.hitRadius = 10;
         }
 
-        public charge(): void {
-            this.charging = true;
+        public charge(_on: boolean): void {
+            this.charging = _on;
+            if (!_on)
+                this.charged = 0;
         }
 
         public head(_target: Vector): void {
@@ -48,6 +53,7 @@ namespace L12_AsteroidsAddition {
             this.velocity.add(change);
             // console.log(this.velocity);
             this.exhaust = true;
+            Sound.play("thrust");
         }
 
         public draw(): void {
@@ -83,9 +89,39 @@ namespace L12_AsteroidsAddition {
 
         public move(_timeslice: number): void {
             if (this.charging)
-                this.charged += _timeslice;
+                this.charged += _timeslice / Ship.timeToChargeFully;
             this.velocity.scale(0.99);
             super.move(_timeslice);
+        }
+
+        public shoot(_target: Vector): void {
+            // console.log("Ship shoots");
+            let event: CustomEvent = new CustomEvent(ASTEROID_EVENT.SHIP_SHOOTS, {
+                detail: {
+                    target: _target,
+                    charge: this.charged,
+                    rotation: this.rotation,
+                    pathLaserLeft: this.getLaserPath(this.gunLeft, _target),
+                    pathLaserRight: this.getLaserPath(this.gunRight, _target)
+                }
+            });
+            this.charge(false);
+            this.charged = 0;
+            crc2.canvas.dispatchEvent(event);
+        }
+
+        public getLaserPath(_gun: Gun, _target: Vector): Function {
+            let position: Vector = this.position.copy();
+            let rotation: number = this.rotation;
+            return () => {
+                crc2.save();
+                crc2.beginPath();
+                crc2.translate(position.x, position.y);
+                crc2.rotate(rotation);
+                crc2.moveTo(_gun.position.x, _gun.position.y);
+                crc2.restore();
+                crc2.lineTo(_target.x, _target.y);
+            };
         }
     }
 }

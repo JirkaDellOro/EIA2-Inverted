@@ -5,7 +5,7 @@ var L12_AsteroidsAddition;
         constructor(_position, _velocity) {
             super(_position);
             this.lifetime = Projectile.maxLifetime;
-            console.log("Projectile constructor");
+            // console.log("Projectile constructor");
             this.velocity = _velocity.copy();
         }
         draw() {

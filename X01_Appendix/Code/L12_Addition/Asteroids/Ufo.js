@@ -18,13 +18,14 @@ var L12_AsteroidsAddition;
         }
         move(_timeslice) {
             super.move(_timeslice);
+            L12_AsteroidsAddition.Sound.play("saucerBig");
             if (Math.random() < 0.03)
                 this.shoot();
             if (Math.random() < 0.02)
                 this.velocity.y = Ufo.speed * (Math.floor(Math.random() * 3) - 1);
         }
         shoot() {
-            console.log("Ufo shoots");
+            // console.log("Ufo shoots");
             let event = new CustomEvent(L12_AsteroidsAddition.ASTEROID_EVENT.UFO_SHOOTS, { detail: { ufo: this } });
             L12_AsteroidsAddition.crc2.canvas.dispatchEvent(event);
         }

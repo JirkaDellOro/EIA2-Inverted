@@ -131,6 +131,7 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 
 ### [L12_Addition](L12_Addition)
 - Standardparameter
+- Eigenschaftsparameter
 - Ausnahmebehandlung
 - Funktions-Objekt
 - Drag&Drop

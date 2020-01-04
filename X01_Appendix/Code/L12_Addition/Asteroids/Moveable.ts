@@ -25,7 +25,7 @@ namespace L12_AsteroidsAddition {
         }
 
         public hit(): void {
-            console.log("Hit", this);
+            // console.log("Hit", this);
             this.expendable = true;
         }
 

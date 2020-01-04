@@ -5,8 +5,8 @@ namespace L12_AsteroidsAddition {
 
         constructor(_position: Vector, _velocity: Vector) {
             super(_position);
+            // console.log("Projectile constructor");
 
-            console.log("Projectile constructor");
             this.velocity = _velocity.copy();
         }
 

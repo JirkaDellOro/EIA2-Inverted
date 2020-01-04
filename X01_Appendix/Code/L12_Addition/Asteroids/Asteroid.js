@@ -4,7 +4,7 @@ var L12_AsteroidsAddition;
     class Asteroid extends L12_AsteroidsAddition.Moveable {
         constructor(_size, _position) {
             super(_position);
-            console.log("Asteroid constructor");
+            // console.log("Asteroid constructor");
             this.velocity = L12_AsteroidsAddition.Vector.getRandom(100, 200);
             this.type = Math.floor(Math.random() * 4);
             this.size = _size;

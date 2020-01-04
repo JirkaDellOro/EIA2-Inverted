@@ -1,6 +1,7 @@
 namespace L12_AsteroidsAddition {
     export enum ASTEROID_EVENT {
         UFO_SHOOTS = "ufoShoots",
+        SHIP_SHOOTS = "shipShoots",
         ASTEROID_HIT = "asteroidHit"
     }
 
@@ -14,6 +15,8 @@ namespace L12_AsteroidsAddition {
 
     function handleLoad(_event: Event): void {
         console.log("Asteroids starting");
+        Sound.init();
+
         let canvas: HTMLCanvasElement | null = document.querySelector("canvas");
         if (!canvas)
             return;
@@ -25,13 +28,14 @@ namespace L12_AsteroidsAddition {
         createPaths();
         console.log("Asteroids paths: ", asteroidPaths);
 
-        createAsteroids(5);
         createShip();
+        createAsteroids(5);
         createUfo();
         createUfo();
-        createUfo();
+        // createUfo();
 
         canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
+        canvas.addEventListener(ASTEROID_EVENT.SHIP_SHOOTS, handleShipShot);
         canvas.addEventListener(ASTEROID_EVENT.ASTEROID_HIT, breakAsteroid);
         canvas.addEventListener("mouseup", shootLaser);
         canvas.addEventListener("mousedown", chargeLaser);
@@ -47,17 +51,29 @@ namespace L12_AsteroidsAddition {
     }
 
     function shootProjectile(_origin: Vector): void {
-        console.log("Shoot projectile");
+        // console.log("Shoot projectile");
         let velocity: Vector = Vector.getRandom(200, 200);
         let projectile: Projectile = new Projectile(_origin, velocity);
         // move projectile away from ufo to prevent suicide
         projectile.move(0.15);
         moveables.push(projectile);
+        Sound.play("fire");
     }
-
+    
     function handleUfoShot(_event: Event): void {
         let ufo: Ufo = (<CustomEvent>_event).detail.ufo;
         shootProjectile(ufo.position);
+    }
+    
+    function handleShipShot(_event: Event): void {
+        let event: CustomEvent = <CustomEvent>_event;
+        let charge: number = event.detail.charge;
+        let target: Vector = event.detail.target;
+        
+        moveables.push(new Hotspot(target, charge));
+        moveables.push(new Laser(event.detail.pathLaserLeft, charge));
+        moveables.push(new Laser(event.detail.pathLaserRight, charge));
+        Sound.play("fire");
     }
 
     function setHeading(_event: MouseEvent): void {
@@ -66,15 +82,14 @@ namespace L12_AsteroidsAddition {
     }
 
     function chargeLaser(_event: MouseEvent): void {
-        console.log("Load laser");
-        ship.charge();
+        // console.log("Load laser");
+        ship.charge(true);
     }
 
     function shootLaser(_event: MouseEvent): void {
-        console.log("Shoot laser");
+        // console.log("Shoot laser");
         let position: Vector = mapClientToCanvas(_event.clientX, _event.clientY);
-        moveables.push(new Hotspot(position, ship.gunLeft.position));
-        moveables.push(new Hotspot(position, ship.gunRight.position));
+        ship.shoot(position);
     }
 
     function mapClientToCanvas(_x: number, _y: number): Vector {
@@ -83,6 +98,7 @@ namespace L12_AsteroidsAddition {
 
     function breakAsteroid(_event: Event): void {
         let asteroid: Asteroid = (<CustomEvent>_event).detail.asteroid;
+        Sound.breakAsteroid(asteroid.size);
         if (asteroid.size > 0.3) {
             for (let i: number = 0; i < 2; i++) {
                 let fragment: Asteroid = new Asteroid(asteroid.size / 2, asteroid.position);
@@ -140,20 +156,30 @@ namespace L12_AsteroidsAddition {
     function handleCollisions(): void {
         for (let i: number = 0; i < moveables.length; i++) {
             let a: Moveable = moveables[i];
+            if (a instanceof Laser) continue;
             for (let j: number = i + 1; j < moveables.length; j++) {
                 let b: Moveable = moveables[j];
 
+                if (b instanceof Laser) continue;
                 if (a instanceof Asteroid && b instanceof Asteroid)
                     continue;
                 if (a.expendable || b.expendable)
                     continue;
 
                 if (a.isHitBy(b)) {
+                    console.log("Collision ", a, b);
                     a.hit();
                     b.hit();
                 }
 
             }
         }
+    }
+
+    export function getColorCharge(_charge: number, _alpha: number): string {
+        _charge = Math.max(Math.min(1, _charge), 0);
+        let angle: number = 240 + 150 * _charge * _alpha;
+        let light: number = 30 + 60 * _charge;
+        return  `HSL(${angle}, 100%, ${light}%, ${_alpha})`;
     }
 }

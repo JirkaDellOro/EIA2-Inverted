@@ -4,6 +4,7 @@ var L12_AsteroidsAddition;
     let ASTEROID_EVENT;
     (function (ASTEROID_EVENT) {
         ASTEROID_EVENT["UFO_SHOOTS"] = "ufoShoots";
+        ASTEROID_EVENT["SHIP_SHOOTS"] = "shipShoots";
         ASTEROID_EVENT["ASTEROID_HIT"] = "asteroidHit";
     })(ASTEROID_EVENT = L12_AsteroidsAddition.ASTEROID_EVENT || (L12_AsteroidsAddition.ASTEROID_EVENT = {}));
     window.addEventListener("load", handleLoad);
@@ -12,6 +13,7 @@ var L12_AsteroidsAddition;
     let ship;
     function handleLoad(_event) {
         console.log("Asteroids starting");
+        L12_AsteroidsAddition.Sound.init();
         let canvas = document.querySelector("canvas");
         if (!canvas)
             return;
@@ -21,12 +23,13 @@ var L12_AsteroidsAddition;
         L12_AsteroidsAddition.crc2.lineWidth = L12_AsteroidsAddition.linewidth;
         L12_AsteroidsAddition.createPaths();
         console.log("Asteroids paths: ", L12_AsteroidsAddition.asteroidPaths);
-        createAsteroids(5);
         createShip();
+        createAsteroids(5);
         createUfo();
         createUfo();
-        createUfo();
+        // createUfo();
         canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
+        canvas.addEventListener(ASTEROID_EVENT.SHIP_SHOOTS, handleShipShot);
         canvas.addEventListener(ASTEROID_EVENT.ASTEROID_HIT, breakAsteroid);
         canvas.addEventListener("mouseup", shootLaser);
         canvas.addEventListener("mousedown", chargeLaser);
@@ -39,36 +42,46 @@ var L12_AsteroidsAddition;
             ship.thrust();
     }
     function shootProjectile(_origin) {
-        console.log("Shoot projectile");
+        // console.log("Shoot projectile");
         let velocity = L12_AsteroidsAddition.Vector.getRandom(200, 200);
         let projectile = new L12_AsteroidsAddition.Projectile(_origin, velocity);
         // move projectile away from ufo to prevent suicide
         projectile.move(0.15);
         moveables.push(projectile);
+        L12_AsteroidsAddition.Sound.play("fire");
     }
     function handleUfoShot(_event) {
         let ufo = _event.detail.ufo;
         shootProjectile(ufo.position);
+    }
+    function handleShipShot(_event) {
+        let event = _event;
+        let charge = event.detail.charge;
+        let target = event.detail.target;
+        moveables.push(new L12_AsteroidsAddition.Hotspot(target, charge));
+        moveables.push(new L12_AsteroidsAddition.Laser(event.detail.pathLaserLeft, charge));
+        moveables.push(new L12_AsteroidsAddition.Laser(event.detail.pathLaserRight, charge));
+        L12_AsteroidsAddition.Sound.play("fire");
     }
     function setHeading(_event) {
         let target = mapClientToCanvas(_event.clientX, _event.clientY);
         ship.head(target);
     }
     function chargeLaser(_event) {
-        console.log("Load laser");
-        ship.charge();
+        // console.log("Load laser");
+        ship.charge(true);
     }
     function shootLaser(_event) {
-        console.log("Shoot laser");
+        // console.log("Shoot laser");
         let position = mapClientToCanvas(_event.clientX, _event.clientY);
-        moveables.push(new L12_AsteroidsAddition.Hotspot(position, ship.gunLeft.position));
-        moveables.push(new L12_AsteroidsAddition.Hotspot(position, ship.gunRight.position));
+        ship.shoot(position);
     }
     function mapClientToCanvas(_x, _y) {
         return new L12_AsteroidsAddition.Vector(_x - L12_AsteroidsAddition.crc2.canvas.offsetLeft, _y - L12_AsteroidsAddition.crc2.canvas.offsetTop);
     }
     function breakAsteroid(_event) {
         let asteroid = _event.detail.asteroid;
+        L12_AsteroidsAddition.Sound.breakAsteroid(asteroid.size);
         if (asteroid.size > 0.3) {
             for (let i = 0; i < 2; i++) {
                 let fragment = new L12_AsteroidsAddition.Asteroid(asteroid.size / 2, asteroid.position);
@@ -116,18 +129,30 @@ var L12_AsteroidsAddition;
     function handleCollisions() {
         for (let i = 0; i < moveables.length; i++) {
             let a = moveables[i];
+            if (a instanceof L12_AsteroidsAddition.Laser)
+                continue;
             for (let j = i + 1; j < moveables.length; j++) {
                 let b = moveables[j];
+                if (b instanceof L12_AsteroidsAddition.Laser)
+                    continue;
                 if (a instanceof L12_AsteroidsAddition.Asteroid && b instanceof L12_AsteroidsAddition.Asteroid)
                     continue;
                 if (a.expendable || b.expendable)
                     continue;
                 if (a.isHitBy(b)) {
+                    console.log("Collision ", a, b);
                     a.hit();
                     b.hit();
                 }
             }
         }
     }
+    function getColorCharge(_charge, _alpha) {
+        _charge = Math.max(Math.min(1, _charge), 0);
+        let angle = 240 + 150 * _charge * _alpha;
+        let light = 30 + 60 * _charge;
+        return `HSL(${angle}, 100%, ${light}%, ${_alpha})`;
+    }
+    L12_AsteroidsAddition.getColorCharge = getColorCharge;
 })(L12_AsteroidsAddition || (L12_AsteroidsAddition = {}));
 //# sourceMappingURL=Main.js.map

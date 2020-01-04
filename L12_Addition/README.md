@@ -16,6 +16,20 @@ constructor(_x: number = 0, _y: number = 0) {
 ```
 Nun kann ein neuer Vector einfach mit dem Aufruf `new Vector()` erzeugt werden, die Koordinaten haben dann automatisch beide den Wert 0. Es muss also nicht im Schleifenrumpf geprüft werden, ob Parameter übergeben wurden um auf diesen Fall zu reagieren. Werden aber Parameterwerte übergeben, werden diese verwendet.
 
+## Eigenschaftsparameter
+Eigenschaften eines Objektes mit Werten zu definieren, die dem Konstrukter übergeben werden, ist ein sehr häufiges Muster. Daher ist in Typescript eine Kurzschreibweise möglich. Dabei werden die Eigenschaften mit der Signatur des Konstruktors durch die Liste der formalen Parameter deklariert.  
+
+```typescript
+class Test {
+  constructor (public a: number, protected b: number, private c: number) {
+  }
+}
+```  
+
+Eine Instanz der Klasse Test verfügt nun über die Eigenschaften a, b und c, obwohl diese nicht in der Klasse deklariert wurden, sondern in der Konstruktorsignatur. Erzeugt mit `let test: Test = new Test(1, 2, 3);` sind die Eigenschaften dann mit den Werten 1, 2 und 3 definiert.  
+
+Diese Schreibweise "versteckt" allerdings die Eigenschaften in der Signatur und der Coding-Style der Lektionen kann nicht sinnvoll eingehalten werden, da es sich gleichzeitig um Parameter und Eigenschaften handelt. Daher wurde diese Schreibweise nicht verwendet, soll hier aber erwähnt sein.
+
 ## Ausnahmebehandlung
 In den vorangegangenen Lektionen wurde das Thema Fehlerbehandlung weitestgehend ausgeklammert. Lediglich wenn TypeScript durch die strikten Einstellungen des Compilers und des Linters Fehlerquellen angezeigt hat, wurde der Code entsprechend angepasst.  
 
@@ -35,7 +49,7 @@ console.log("Done");
 
 - [x] Implementiere das obenstehende Mini-Programm in einem eigenen Namespace und lasse es im Browser laufen. Was geschieht, wenn Du eine Zahl jenseits 0, 1 und 2 eingibst oder beliebige Zeichen?
 
-Wenn das Programm seinen Dienst quittiert, tut es dies leise. Der Nutzer hat keine Ahnung was passiert, sofern er nicht Medienkonzeption in Furtwangen studiert hat und deswegen selbsverständlich die Entwicklerkonsole geöffnet ist. Dort erscheint eine Fehlermeldung.
+Wenn das Programm seinen Dienst quittiert, tut es dies leise. Der Nutzer hat keine Ahnung was passiert, sofern er nicht Medienkonzeption in Furtwangen studiert deswegen selbstverständlich die Entwicklerkonsole geöffnet hat. Dort erscheint eine Fehlermeldung.
 
 - [x] Erkläre den Fehler!
 
@@ -82,6 +96,12 @@ Du kannst auch selbst eine Exception erzeugen und werfen lassen. Das entspricht 
 Das bedeutet, dass nun neben `return` und `await` eine dritte Möglichkeit zur Verfügung steht, um Funktionen zu beenden oder zu unterbrechen. Je nach Anwendungsfall kann die Verwendung von `throw` äußerst effizient sein.
 
 - [x] Verfolge den Code "Exception" im Anhang zu dieser Lektion mit dem Debugger!
+
+### Darstellung im Aktivitätsdiagramm
+Es gibt zwei Perspektiven um die Ausnahmebehandlung im Aktivitätsdiagramm darzustellen. Bei der "Außenansicht" wird nur gezeigt, dass eine Aktivität mit einer Ausnahme beendet werden kann und wie der Fluss dann weitergeht. Dazu kann hier - eben ausnahmsweise - die Aktivität zwei Abflüsse haben, die dann aber nicht eine parallele Weiterverarbeitung bedeuten. Denn einer davon ist mit einem kleinen Dreieck gekennzeichnet und gegebenenfalls, wie bei einem bedingten Fluß, mit einer Information zu der Ausnahmebedingung in eckigen Klammer.
+![](Material/draw.io/Exceptions.svg)
+
+Die "Innenansicht" zeigt den inneren Aufbau eines unterbrechbaren Bereiches und die Signale, die eine Ausnahmebehandlung erforderlich machen. Der Rahmen des Bereiches wird gestrichelt dargestellt, der Abfluss vom Signalempfang als gezackte Linie. Neben der gezackten Linie und dem Dreieck an einer Linie gibt es noch die Darstellung mit einem Blitzsymbol an der Linie.
 
 ## Funktions-Objekt
 Funktionen sind in Javascript, wie alles andere, Objekte. Sie können beispielsweise mit Hilfe von Variablen referenziert werden. Folgendes ist also möglich:
@@ -208,6 +228,9 @@ Die Wikipedia mobile App ist eine PhoneGap-Anwendung!
 Seit 2015 schickt sich ein weiteres Modell an den App-Markt aufzumischen: Progressive Web Apps. Diese kommen zunächst wie eine gewöhnliche Web-App daher, installieren aber beim ersten Besuch einen "Service-Worker" auf dem Smartphone. Diese Software lädt gezielt Inhalte herunter und speichert sie auf dem Gerät, um die Funktionalität der App auch zu erhalten, wenn keine Internetverbindung besteht. Es wird zudem angeboten, eine Verknüpfung auf dem Home-Screen zu erstellen, sie kann im Vollbildmodus gestartet und Push-Nachrichten vom Server angezeigt werden, auch wenn die App gerade nicht aktiv ist. Dadurch wirkt die PWA wie eine vollwertige native App bei minimalem Mehraufwand gegenüber der reinen Web-Entwicklung. Der riesige Vorteil: ist erst einmal ein potenzieller Nutzer über eine Suchmaschine auf dem Angebot gelandet, muss er es nicht erst wieder verlassen, in den Store geleitet werden um dort die Installation einer App und später den Start derselben in die Wege zu leiten, sondern die Nutzung der App hat bereits begonnen!
 
 Der mobile Twitter Client ist eine Progressive Web App
+
+
+<a href="https://drive.google.com/open?id=1hDPTTa-cCJcffHAXh2lPPgQEmLGPp9Ls"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 
 [Asteroids](..\X01_Appendix\Code\L11_Advanced\Asteroids2\index.html)

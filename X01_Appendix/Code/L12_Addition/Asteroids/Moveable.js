@@ -19,7 +19,7 @@ var L12_AsteroidsAddition;
             return true;
         }
         hit() {
-            console.log("Hit", this);
+            // console.log("Hit", this);
             this.expendable = true;
         }
         move(_timeslice) {

@@ -21,6 +21,7 @@ namespace L12_AsteroidsAddition {
 
         public move(_timeslice: number): void {
             super.move(_timeslice);
+            Sound.play("saucerBig");
             if (Math.random() < 0.03)
                 this.shoot();
             if (Math.random() < 0.02)
@@ -28,7 +29,7 @@ namespace L12_AsteroidsAddition {
         }
 
         private shoot(): void {
-            console.log("Ufo shoots");
+            // console.log("Ufo shoots");
             let event: CustomEvent = new CustomEvent(ASTEROID_EVENT.UFO_SHOOTS, {detail: {ufo: this}});
             crc2.canvas.dispatchEvent(event);
         }
