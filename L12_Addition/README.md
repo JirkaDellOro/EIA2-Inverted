@@ -151,7 +151,7 @@ let doSomething: Function = (_parameter: number): string => {
 Aus dem reservierten Wort `function` vor der Parameterliste ist nun der Doppelpfeil zwischen dem Rückgabetyp und dem Funktionskörper geworden.
 
 ### this-binding
-Ein Unterschied aber ist die Funktionalität innerhalb von Klassen. Wird eine Arrow-Function als Methode deklariert, wird sie in der Konsole als Eigenschaft. Interessanter aber ist der Unterschied bei der Verwendung als Event-Handler.   
+Ein Unterschied aber ist die Funktionalität innerhalb von Klassen. Wird eine Arrow-Function als Methode deklariert, wird sie in der Konsole als Eigenschaft angezeigt. Interessanter aber ist der Unterschied bei der Verwendung als Event-Handler.   
 - Innerhalb klassischer Methoden verweist `this` dann auf das Event-Target und nicht auf die Instanz der Klasse. Das führt häufig zu unerwarteten Fehlern. 
 - Bei Arrow-Functions dagegen verweist `this` weiterhin, wie zu erwarten, auf die Instanz. Daher ist diese Schreibweise in dem Fall zu bevorzugen.
 - Es gibt auch die Möglichkeit, eine klassische Methode so zu modifizieren, dass auch sie als Event-Handler die Instanz mit `this` referenziert. Hierzu existiert die Funktion `bind` des Funktionsobjektes. 
@@ -174,7 +174,7 @@ Eine wichtige Standardfunktionalität des DOM wurde in diesem Kurs bislang noch 
 ## Garbage Collection
 Wenn eine Variable ihren Gültigkeitsbereich verlässt, wird der von ihr belegte Speicher freigegeben und steht wieder für andere Informationen zur Vefügung. Bei Variablen, die auf Objekte verweisen, wird aber nur der Verweis gelöscht, das referenzierte Objekt dagegen bleibt im Speicher, denn es könnten noch andere Variablen darauf verweisen. Diese würden dann ins Leere deuten und Fehler erzeugen. Werden die Objekte allerdings nie gelöscht, wird der Speicher immer mehr zugemüllt und es kommt irgendwann zu einem Programmversagen.
 
-Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem sogenannten "Garbage Collector" überwacht. Dieser Müllmann durchforstet in unregelmäßgen Zeitabständen den Speicher, findet Objekte die nicht mehr gebraucht werden und löscht diese. In den meisten Fällen geschieht das völlig unmerklich, bei Animationen allerdings kann dieser Vorgang zu sichtbaren Störungen führen, wenn ein Bild einmal etwas länger stehen bleibt als andere. Durch Wiederverwendung von Objekten kann der Effekt minimiert werden
+Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem sogenannten "Garbage Collector" überwacht. Dieser Müllmann durchforstet in unregelmäßgen Zeitabständen den Speicher, findet Objekte die nicht mehr gebraucht werden und löscht diese. In den meisten Fällen geschieht das völlig unmerklich, bei Animationen allerdings kann dieser Vorgang zu sichtbaren Störungen führen, wenn ein Bild einmal etwas länger stehen bleibt als andere. Durch Wiederverwendung von Objekten kann der Effekt minimiert werden.
 
 ## Debugger in VSCode
 ### Node-Programme
@@ -182,7 +182,7 @@ In der Lektion zum Server wurde bereits kurz der interne Debugger von VSCode vor
 Da VSCode gleichzeitige mehrere Projekte verwalten kann, braucht der Debugger beim Start die Information, welches Programm ausgeführt und verfolgt werden soll. Im einfachsten Fall, wenn der Debugger "No Configurations" anzeigt, startet er das Programm, das gerade im fokussierten Editor-Fenster angezeigt wird. Mit Hilfe des Menüsystems lassen sich aber auch gezielt Konfigurationen definieren, diese werden in einer Datei `launch.json` im Ordner `.vscode` gespeichert, die der Debugger automatisch dabei anlegt. 
 
 - [x] Öffne den Ordner `X01_Appendix` mit VSCode, navigiere zur Debug-Ansicht und darin zu `Open launch.json` bzw. `Open Configurations`. Nun sollte dir die Datei `launch.json` angezeigt werden.
-- [x] Studiere den ersten Eintrag im Array `configurations`. Beachte, dass `${workspaceFolder}` ein Platzhalter ist, an dessen Statt der Pfad zu dem Verzeichnisses eingesetzt wird, dass Du mit VSCode geöffnet hattest. In unserem Fall also der PFad zu `X01_Appendix`.
+- [x] Studiere den ersten Eintrag im Array `configurations`. Beachte, dass `${workspaceFolder}` ein Platzhalter ist, an dessen Statt der Pfad zu dem Verzeichnisses eingesetzt wird, dass Du mit VSCode geöffnet hattest. In unserem Fall also der Pfad zu `X01_Appendix`.
 - [x] Finde den Namen dieser ersten Konfiguration an anderer Stelle im Debug-View. Stelle dann sicher, dass diese Konfiguration genutzt wird, wenn Du den Debugger startest.
 - [x] Starte nun den Debugger z.B. mit F5 oder Klick auf den grünen Pfeil.
 - [x] Beobachte die Ausgabe im Debug-Terminal und im Editor-Fenster.
@@ -233,4 +233,4 @@ Der mobile Twitter Client ist eine Progressive Web App
 <a href="https://drive.google.com/open?id=1hDPTTa-cCJcffHAXh2lPPgQEmLGPp9Ls"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 
-[Asteroids](..\X01_Appendix\Code\L11_Advanced\Asteroids2\index.html)
+[Asteroids](..\X01_Appendix\Code\L12_Addition\Asteroids\index.html)
