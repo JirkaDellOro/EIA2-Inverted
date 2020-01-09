@@ -5,15 +5,19 @@
 ## Medienkonzeption und Digitale Medien
 [Fragen](Material/Fragen.md)  
 
-### Anforderungen an Medienkonzepter
-- sehr schnell auch in komplexe Sachverhalte selbständig einarbeiten
-- Information aufbereiten und für Nutzer auf unterschiedlichen Kanälen zugänglich machen.
-- Für Interaktion Algorithmen entwerfen und beschreiben.
-- sehr gute Kenntnisse in allen Bereichen der Produktion und Anwendung der zu konzipierenden Medienanwendung  
+### Anforderungen an Medienkonzepter im Bereich der digitalen Medien
+- Arbeitet sich sehr schnell auch in komplexe Sachverhalte selbständig ein.
+- Kommuniziert intensiv und strukturiert mit allen Projektbeteiligten.
+- Bereitet Information auf und macht sie für Nutzer auf unterschiedlichen Kanälen zugänglich.
+- Entwirft und beschreibt Algorithmen und Datenstrukturen für interaktive Anwendungen.
+- Verfügt über tiefgreifende und weitreichende Kenntnisse in allen Bereichen der Konzeption, Produktion, Distribution und Anwendung des Medienprodukts.
 
 **Der Idiot macht Simples kompliziert, das Genie macht Kompliziertes simpel**
 
 ### Motivation
+[Liukas](https://youtu.be/-jRREn6ifEQ)
+[Partovi](https://www.youtube.com/watch?v=MvTSPwftvyo)
+[Nijssen](https://www.youtube.com/watch?v=Z35ovSEJOps)
 [Crawford](../X01_Appendix/Crawford/Crawford.html)
 
 ## Wichtige Dokumente
@@ -52,5 +56,5 @@ Jede Lektion schließt mit einer Aufgabe, an der im Rest der Woche die Inhalte g
 ### Issues
 Der Dozent und die studentischen Hilfskräfte freuen sich auch außerhalb des Workshops und des Praktikums über qualifizierte Fragen zu den aktuellen Inhalten. Poste für jede Frage eine Issue hier: https://github.com/JirkaDellOro/EIA2-Inverted/issues. Wir versuchen so schnell wie möglich zu antworten. Auch Du bist herzlich eingelaen, dich an der Beantwortung zu beteiligen, auch wenn Du dir nicht ganz sicher bist. Auch eine falsche Antwort ist wertvoll, wenn sie korrigiert wird. **Achtung:** beim Posten gelten die Regeln, dass Du ein Issue posten solltest, wenn Du für ein Problem innerhalb von 10 Minuten noch keinen Lösungsansatz findest und dass Du deine Issues selbständig schließt, wenn das Problem gelöst ist.
 
-## Wochenaufgabe
-[L00_Preparation](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L00_Preparation)
+## Tipps
+Um diesen Kurs erfolgreich bestehen zu können, ist ein wenig Planung sicher äußerst hilfreich. Mach' dir einen Zeitplan für die Auseinandersetzung mit dem Stoff. Plane wenigstens fünf Stunden für die Vorbereitung zum Workshop ein, in denen Du in Ruhe daran arbeiten kannst. Vielleicht verteilt auf die beiden Tage vor dem Workshop. Beachte dabei, dass es unbedingt erforderlich ist, dass Du auch die Übungen innerhalb der Lektionen machst. Trage in deinem Stundenplan noch einmal zwei Stunden zwischen dem Workshop und dem Praktikum ein, um die Wochenaufgabe zu beginnen und schließlich mit entsprechend vorbereitetem Material und sinnvollen Fragen ins Praktikum zu kommen. Wieviel Zeit Du dann noch brauchst um die Aufgabe abzuschließen ist natürlich sehr individuell, aber auch hierfür solltest Du etwas reservieren.
