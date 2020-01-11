@@ -7,10 +7,27 @@ var L12_AsteroidsAddition;
         ASTEROID_EVENT["SHIP_SHOOTS"] = "shipShoots";
         ASTEROID_EVENT["ASTEROID_HIT"] = "asteroidHit";
     })(ASTEROID_EVENT = L12_AsteroidsAddition.ASTEROID_EVENT || (L12_AsteroidsAddition.ASTEROID_EVENT = {}));
+    let POINTS;
+    (function (POINTS) {
+        POINTS[POINTS["ASTEROID_BIG"] = 10] = "ASTEROID_BIG";
+        POINTS[POINTS["ASTEROID_MEDIUM"] = 25] = "ASTEROID_MEDIUM";
+        POINTS[POINTS["ASTEROID_SMALL"] = 50] = "ASTEROID_SMALL";
+        POINTS[POINTS["UFO_LARGE"] = 100] = "UFO_LARGE";
+        POINTS[POINTS["UFO_SMALL"] = 250] = "UFO_SMALL";
+    })(POINTS || (POINTS = {}));
     window.addEventListener("load", handleLoad);
     L12_AsteroidsAddition.linewidth = 2;
     let moveables = [];
     let ship;
+    let barEnergy;
+    let barCharge;
+    let energy = 1; // start with full energy
+    let score = 0;
+    const timeEnergyRestore = 20; // energy recovery from 0 in seconds
+    const frameRate = 50; // frames per second
+    const frameTime = 1 / frameRate; // time per frame in seconds
+    const energyToLaserRate = 0.05;
+    const energyToThrust = 0.01;
     function handleLoad(_event) {
         console.log("Asteroids starting");
         L12_AsteroidsAddition.Sound.init();
@@ -21,25 +38,31 @@ var L12_AsteroidsAddition;
         L12_AsteroidsAddition.crc2.fillStyle = "black";
         L12_AsteroidsAddition.crc2.strokeStyle = "white";
         L12_AsteroidsAddition.crc2.lineWidth = L12_AsteroidsAddition.linewidth;
+        barEnergy = new L12_AsteroidsAddition.Bar(new L12_AsteroidsAddition.Vector(canvas.width / 2 - 80, 30), new L12_AsteroidsAddition.Vector(-300, 30));
+        barCharge = new L12_AsteroidsAddition.Bar(new L12_AsteroidsAddition.Vector(canvas.width / 2 + 80, 30), new L12_AsteroidsAddition.Vector(300, 30));
+        L12_AsteroidsAddition.crc2.textAlign = "right";
+        L12_AsteroidsAddition.crc2.font = "40px Consolas";
         L12_AsteroidsAddition.createPaths();
         console.log("Asteroids paths: ", L12_AsteroidsAddition.asteroidPaths);
         createShip();
         createAsteroids(5);
         createUfo();
         createUfo();
-        // createUfo();
+        createUfo();
         canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
         canvas.addEventListener(ASTEROID_EVENT.SHIP_SHOOTS, handleShipShot);
         canvas.addEventListener(ASTEROID_EVENT.ASTEROID_HIT, breakAsteroid);
-        canvas.addEventListener("mouseup", shootLaser);
-        canvas.addEventListener("mousedown", chargeLaser);
+        canvas.addEventListener("pointerup", shootLaser);
+        canvas.addEventListener("pointerdown", chargeLaser);
         document.addEventListener("keydown", handleKeypress);
-        canvas.addEventListener("mousemove", setHeading);
-        window.setInterval(update, 20);
+        canvas.addEventListener("pointermove", setHeading);
+        window.setInterval(update, 1000 * frameTime);
     }
     function handleKeypress(_event) {
-        if (_event.code == "KeyW")
+        if (_event.code == "ShiftLeft") {
             ship.thrust();
+            energy -= energyToThrust;
+        }
     }
     function shootProjectile(_origin) {
         // console.log("Shoot projectile");
@@ -68,11 +91,13 @@ var L12_AsteroidsAddition;
         ship.head(target);
     }
     function chargeLaser(_event) {
-        // console.log("Load laser");
+        console.log("Charge laser");
         ship.charge(true);
     }
     function shootLaser(_event) {
         // console.log("Shoot laser");
+        let energyToLaser = Math.max(0, ship.charged) * energyToLaserRate;
+        energy -= energyToLaser;
         let position = mapClientToCanvas(_event.clientX, _event.clientY);
         ship.shoot(position);
     }
@@ -112,18 +137,20 @@ var L12_AsteroidsAddition;
         // console.log("Update");
         L12_AsteroidsAddition.crc2.fillRect(0, 0, L12_AsteroidsAddition.crc2.canvas.width, L12_AsteroidsAddition.crc2.canvas.height);
         for (let moveable of moveables) {
-            moveable.move(1 / 50);
+            moveable.move(frameTime);
             moveable.draw();
         }
         deleteExpandables();
-        // ship.draw();
         handleCollisions();
-        // console.log("Moveable length: ", moveables.length);
+        handleEnergy();
+        displayInfo();
     }
     function deleteExpandables() {
         for (let i = moveables.length - 1; i >= 0; i--) {
-            if (moveables[i].expendable)
+            if (moveables[i].expendable) {
+                scorePoints(moveables[i]);
                 moveables.splice(i, 1);
+            }
         }
     }
     function handleCollisions() {
@@ -150,9 +177,37 @@ var L12_AsteroidsAddition;
     function getColorCharge(_charge, _alpha) {
         _charge = Math.max(Math.min(1, _charge), 0);
         let angle = 240 + 150 * _charge * _alpha;
-        let light = 30 + 60 * _charge;
+        let light = 30 + 30 * _charge;
         return `HSL(${angle}, 100%, ${light}%, ${_alpha})`;
     }
     L12_AsteroidsAddition.getColorCharge = getColorCharge;
+    function handleEnergy() {
+        energy += frameTime / timeEnergyRestore;
+        energy = Math.min(1, Math.max(0, energy));
+    }
+    function displayInfo() {
+        L12_AsteroidsAddition.crc2.save();
+        let energyToLaser = Math.max(0, ship.charged) * energyToLaserRate;
+        barEnergy.draw(energy - energyToLaser, "#80ff8080");
+        barCharge.draw(ship.charged, getColorCharge(ship.charged, 0.8), ship.charged < 0 ? "grey" : "white");
+        L12_AsteroidsAddition.crc2.fillStyle = "white";
+        L12_AsteroidsAddition.crc2.fillText(score.toString(), L12_AsteroidsAddition.crc2.canvas.width / 2 + 60, 44);
+        L12_AsteroidsAddition.crc2.restore();
+    }
+    function scorePoints(_expended) {
+        let points = 0;
+        if (_expended instanceof L12_AsteroidsAddition.Asteroid) {
+            console.log(_expended.size);
+            if (_expended.size < 0.3)
+                points = POINTS.ASTEROID_SMALL;
+            else if (_expended.size > 0.8)
+                points = POINTS.ASTEROID_BIG;
+            else
+                points = POINTS.ASTEROID_MEDIUM;
+        }
+        if (_expended instanceof L12_AsteroidsAddition.Ufo)
+            points = POINTS.UFO_LARGE;
+        score += points;
+    }
 })(L12_AsteroidsAddition || (L12_AsteroidsAddition = {}));
 //# sourceMappingURL=Main.js.map

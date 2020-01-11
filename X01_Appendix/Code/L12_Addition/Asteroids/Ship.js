@@ -1,21 +1,16 @@
 "use strict";
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
-    class Gun {
+    class Gun extends L12_AsteroidsAddition.Bar {
+        // position: Vector;
         constructor(_position) {
-            this.position = _position.copy();
+            super(_position, Gun.size);
         }
         draw(_charge) {
-            L12_AsteroidsAddition.crc2.beginPath();
-            L12_AsteroidsAddition.crc2.save();
-            L12_AsteroidsAddition.crc2.translate(this.position.x, this.position.y);
-            L12_AsteroidsAddition.crc2.fillStyle = L12_AsteroidsAddition.getColorCharge(_charge, 1);
-            L12_AsteroidsAddition.crc2.fillRect(0, -Gun.size.y / 2, -Gun.size.x * Math.min(1, _charge), Gun.size.y);
-            L12_AsteroidsAddition.crc2.strokeRect(0, -Gun.size.y / 2, -Gun.size.x, Gun.size.y);
-            L12_AsteroidsAddition.crc2.restore();
+            super.draw(_charge, L12_AsteroidsAddition.getColorCharge(_charge, 1), "white");
         }
     }
-    Gun.size = new L12_AsteroidsAddition.Vector(15, 6);
+    Gun.size = new L12_AsteroidsAddition.Vector(-15, 6);
     class Ship extends L12_AsteroidsAddition.Moveable {
         constructor(_position) {
             super(_position);
@@ -79,6 +74,9 @@ var L12_AsteroidsAddition;
             super.move(_timeslice);
         }
         shoot(_target) {
+            this.charging = false;
+            if (this.charged < 0)
+                return;
             // console.log("Ship shoots");
             let event = new CustomEvent(L12_AsteroidsAddition.ASTEROID_EVENT.SHIP_SHOOTS, {
                 detail: {
@@ -90,7 +88,7 @@ var L12_AsteroidsAddition;
                 }
             });
             this.charge(false);
-            this.charged = 0;
+            this.charged = -Ship.timeCooling / Ship.timeToChargeFully;
             L12_AsteroidsAddition.crc2.canvas.dispatchEvent(event);
         }
         getLaserPath(_gun, _target) {
@@ -107,8 +105,9 @@ var L12_AsteroidsAddition;
             };
         }
     }
-    Ship.acceleration = 10;
+    Ship.acceleration = 20;
     Ship.timeToChargeFully = 1;
+    Ship.timeCooling = 0.5; // time the laser gun cools down before charge starts
     L12_AsteroidsAddition.Ship = Ship;
 })(L12_AsteroidsAddition || (L12_AsteroidsAddition = {}));
 //# sourceMappingURL=Ship.js.map
