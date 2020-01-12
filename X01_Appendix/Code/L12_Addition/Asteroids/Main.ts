@@ -13,27 +13,24 @@ namespace L12_AsteroidsAddition {
     UFO_SMALL = 250
   }
 
-  enum GAMESTATE {
+  export enum GAMESTATE {
     START, PLAY, OVER
   }
 
   window.addEventListener("load", handleLoad);
 
-  export let crc2: CanvasRenderingContext2D;
   export const linewidth: number = 2;
+  export let crc2: CanvasRenderingContext2D;
+  export let gamestate: GAMESTATE;
 
-  let gamestate: GAMESTATE = GAMESTATE.START;
   let moveables: Moveable[] = [];
   let ship: Ship;
-  let barEnergy: Bar;
-  let barCharge: Bar;
-  let score: number = 0;
   const frameRate: number = 50; // frames per second
   const frameTime: number = 1 / frameRate; // time per frame in seconds
 
   function handleLoad(_event: Event): void {
     console.log("Asteroids starting");
-    Sound.init();
+    setGameState(GAMESTATE.START);
 
     let canvas: HTMLCanvasElement | null = document.querySelector("canvas");
     if (!canvas)
@@ -43,19 +40,16 @@ namespace L12_AsteroidsAddition {
     crc2.strokeStyle = "white";
     crc2.lineWidth = linewidth;
 
-    barEnergy = new Bar(new Vector(canvas.width / 2 - 80, 30), new Vector(-300, 30));
-    barCharge = new Bar(new Vector(canvas.width / 2 + 80, 30), new Vector(300, 30));
-    crc2.textAlign = "right";
-    crc2.font = "40px Consolas";
-
     createPaths();
-    console.log("Asteroids paths: ", asteroidPaths);
+
+    Info.init(canvas);
+    Sound.init();
 
     createShip();
-    createAsteroids(5);
-    createUfo();
-    createUfo();
-    createUfo();
+    // createAsteroids(5);
+    // createUfo();
+    // createUfo();
+    // createUfo();
 
     canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
     canvas.addEventListener(ASTEROID_EVENT.SHIP_SHOOTS, handleShipShot);
@@ -68,11 +62,24 @@ namespace L12_AsteroidsAddition {
     window.setInterval(update, 1000 * frameTime);
   }
 
+  function setGameState(_newState: GAMESTATE): void {
+    if (gamestate == GAMESTATE.OVER)
+      return;
+    gamestate = _newState;
+  }
+
   function handleKeypress(_event: KeyboardEvent): void {
-    if (_event.code == "ShiftLeft") {
+    switch (_event.code) {
+      case "ShiftLeft":
+      case "ShiftRight":
         ship.thrust();
+        break;
+      case "Space": {
+        setGameState(GAMESTATE.PLAY);
+      }
     }
   }
+
 
   function shootProjectile(_origin: Vector): void {
     // console.log("Shoot projectile");
@@ -164,7 +171,11 @@ namespace L12_AsteroidsAddition {
 
     deleteExpandables();
     handleCollisions();
-    displayInfo();
+
+    if (ship.expendable)
+      setGameState(GAMESTATE.OVER);
+
+    Info.display(ship);
   }
 
   function deleteExpandables(): void {
@@ -194,7 +205,6 @@ namespace L12_AsteroidsAddition {
           a.hit();
           b.hit();
         }
-
       }
     }
   }
@@ -204,15 +214,6 @@ namespace L12_AsteroidsAddition {
     let angle: number = 240 + 150 * _charge * _alpha;
     let light: number = 30 + 30 * _charge;
     return `HSL(${angle}, 100%, ${light}%, ${_alpha})`;
-  }
-
-  function displayInfo(): void {
-    crc2.save();
-    barEnergy.draw(ship.energy, "#80ff8080", ship.energy <= 0 ? "grey" : "white");
-    barCharge.draw(ship.charged, getColorCharge(ship.charged, 0.8), ship.coolDown > 0 ? "grey" : "white");
-    crc2.fillStyle = "white";
-    crc2.fillText(score.toString(), crc2.canvas.width / 2 + 60, 44);
-    crc2.restore();
   }
 
   function scorePoints(_expended: Moveable): void {
@@ -229,6 +230,6 @@ namespace L12_AsteroidsAddition {
     if (_expended instanceof Ufo)
       points = POINTS.UFO_LARGE;
 
-    score += points;
+    Info.score += points;
   }
 }

@@ -20,20 +20,16 @@ var L12_AsteroidsAddition;
         GAMESTATE[GAMESTATE["START"] = 0] = "START";
         GAMESTATE[GAMESTATE["PLAY"] = 1] = "PLAY";
         GAMESTATE[GAMESTATE["OVER"] = 2] = "OVER";
-    })(GAMESTATE || (GAMESTATE = {}));
+    })(GAMESTATE = L12_AsteroidsAddition.GAMESTATE || (L12_AsteroidsAddition.GAMESTATE = {}));
     window.addEventListener("load", handleLoad);
     L12_AsteroidsAddition.linewidth = 2;
-    let gamestate = GAMESTATE.START;
     let moveables = [];
     let ship;
-    let barEnergy;
-    let barCharge;
-    let score = 0;
     const frameRate = 50; // frames per second
     const frameTime = 1 / frameRate; // time per frame in seconds
     function handleLoad(_event) {
         console.log("Asteroids starting");
-        L12_AsteroidsAddition.Sound.init();
+        setGameState(GAMESTATE.START);
         let canvas = document.querySelector("canvas");
         if (!canvas)
             return;
@@ -41,17 +37,14 @@ var L12_AsteroidsAddition;
         L12_AsteroidsAddition.crc2.fillStyle = "black";
         L12_AsteroidsAddition.crc2.strokeStyle = "white";
         L12_AsteroidsAddition.crc2.lineWidth = L12_AsteroidsAddition.linewidth;
-        barEnergy = new L12_AsteroidsAddition.Bar(new L12_AsteroidsAddition.Vector(canvas.width / 2 - 80, 30), new L12_AsteroidsAddition.Vector(-300, 30));
-        barCharge = new L12_AsteroidsAddition.Bar(new L12_AsteroidsAddition.Vector(canvas.width / 2 + 80, 30), new L12_AsteroidsAddition.Vector(300, 30));
-        L12_AsteroidsAddition.crc2.textAlign = "right";
-        L12_AsteroidsAddition.crc2.font = "40px Consolas";
         L12_AsteroidsAddition.createPaths();
-        console.log("Asteroids paths: ", L12_AsteroidsAddition.asteroidPaths);
+        L12_AsteroidsAddition.Info.init(canvas);
+        L12_AsteroidsAddition.Sound.init();
         createShip();
-        createAsteroids(5);
-        createUfo();
-        createUfo();
-        createUfo();
+        // createAsteroids(5);
+        // createUfo();
+        // createUfo();
+        // createUfo();
         canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
         canvas.addEventListener(ASTEROID_EVENT.SHIP_SHOOTS, handleShipShot);
         canvas.addEventListener(ASTEROID_EVENT.ASTEROID_HIT, breakAsteroid);
@@ -61,9 +54,20 @@ var L12_AsteroidsAddition;
         canvas.addEventListener("pointermove", setHeading);
         window.setInterval(update, 1000 * frameTime);
     }
+    function setGameState(_newState) {
+        if (L12_AsteroidsAddition.gamestate == GAMESTATE.OVER)
+            return;
+        L12_AsteroidsAddition.gamestate = _newState;
+    }
     function handleKeypress(_event) {
-        if (_event.code == "ShiftLeft") {
-            ship.thrust();
+        switch (_event.code) {
+            case "ShiftLeft":
+            case "ShiftRight":
+                ship.thrust();
+                break;
+            case "Space": {
+                setGameState(GAMESTATE.PLAY);
+            }
         }
     }
     function shootProjectile(_origin) {
@@ -142,7 +146,9 @@ var L12_AsteroidsAddition;
         }
         deleteExpandables();
         handleCollisions();
-        displayInfo();
+        if (ship.expendable)
+            setGameState(GAMESTATE.OVER);
+        L12_AsteroidsAddition.Info.display(ship);
     }
     function deleteExpandables() {
         for (let i = moveables.length - 1; i >= 0; i--) {
@@ -180,14 +186,6 @@ var L12_AsteroidsAddition;
         return `HSL(${angle}, 100%, ${light}%, ${_alpha})`;
     }
     L12_AsteroidsAddition.getColorCharge = getColorCharge;
-    function displayInfo() {
-        L12_AsteroidsAddition.crc2.save();
-        barEnergy.draw(ship.energy, "#80ff8080", ship.energy <= 0 ? "grey" : "white");
-        barCharge.draw(ship.charged, getColorCharge(ship.charged, 0.8), ship.coolDown > 0 ? "grey" : "white");
-        L12_AsteroidsAddition.crc2.fillStyle = "white";
-        L12_AsteroidsAddition.crc2.fillText(score.toString(), L12_AsteroidsAddition.crc2.canvas.width / 2 + 60, 44);
-        L12_AsteroidsAddition.crc2.restore();
-    }
     function scorePoints(_expended) {
         let points = 0;
         if (_expended instanceof L12_AsteroidsAddition.Asteroid) {
@@ -201,7 +199,7 @@ var L12_AsteroidsAddition;
         }
         if (_expended instanceof L12_AsteroidsAddition.Ufo)
             points = POINTS.UFO_LARGE;
-        score += points;
+        L12_AsteroidsAddition.Info.score += points;
     }
 })(L12_AsteroidsAddition || (L12_AsteroidsAddition = {}));
 //# sourceMappingURL=Main.js.map
