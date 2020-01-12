@@ -15,19 +15,22 @@ var L12_AsteroidsAddition;
         POINTS[POINTS["UFO_LARGE"] = 100] = "UFO_LARGE";
         POINTS[POINTS["UFO_SMALL"] = 250] = "UFO_SMALL";
     })(POINTS || (POINTS = {}));
+    let GAMESTATE;
+    (function (GAMESTATE) {
+        GAMESTATE[GAMESTATE["START"] = 0] = "START";
+        GAMESTATE[GAMESTATE["PLAY"] = 1] = "PLAY";
+        GAMESTATE[GAMESTATE["OVER"] = 2] = "OVER";
+    })(GAMESTATE || (GAMESTATE = {}));
     window.addEventListener("load", handleLoad);
     L12_AsteroidsAddition.linewidth = 2;
+    let gamestate = GAMESTATE.START;
     let moveables = [];
     let ship;
     let barEnergy;
     let barCharge;
-    let energy = 1; // start with full energy
     let score = 0;
-    const timeEnergyRestore = 20; // energy recovery from 0 in seconds
     const frameRate = 50; // frames per second
     const frameTime = 1 / frameRate; // time per frame in seconds
-    const energyToLaserRate = 0.05;
-    const energyToThrust = 0.01;
     function handleLoad(_event) {
         console.log("Asteroids starting");
         L12_AsteroidsAddition.Sound.init();
@@ -46,9 +49,9 @@ var L12_AsteroidsAddition;
         console.log("Asteroids paths: ", L12_AsteroidsAddition.asteroidPaths);
         createShip();
         createAsteroids(5);
-        createUfo();
-        createUfo();
-        createUfo();
+        // createUfo();
+        // createUfo();
+        // createUfo();
         canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
         canvas.addEventListener(ASTEROID_EVENT.SHIP_SHOOTS, handleShipShot);
         canvas.addEventListener(ASTEROID_EVENT.ASTEROID_HIT, breakAsteroid);
@@ -61,7 +64,6 @@ var L12_AsteroidsAddition;
     function handleKeypress(_event) {
         if (_event.code == "ShiftLeft") {
             ship.thrust();
-            energy -= energyToThrust;
         }
     }
     function shootProjectile(_origin) {
@@ -96,8 +98,6 @@ var L12_AsteroidsAddition;
     }
     function shootLaser(_event) {
         // console.log("Shoot laser");
-        let energyToLaser = Math.max(0, ship.charged) * energyToLaserRate;
-        energy -= energyToLaser;
         let position = mapClientToCanvas(_event.clientX, _event.clientY);
         ship.shoot(position);
     }
@@ -142,7 +142,6 @@ var L12_AsteroidsAddition;
         }
         deleteExpandables();
         handleCollisions();
-        handleEnergy();
         displayInfo();
     }
     function deleteExpandables() {
@@ -181,15 +180,10 @@ var L12_AsteroidsAddition;
         return `HSL(${angle}, 100%, ${light}%, ${_alpha})`;
     }
     L12_AsteroidsAddition.getColorCharge = getColorCharge;
-    function handleEnergy() {
-        energy += frameTime / timeEnergyRestore;
-        energy = Math.min(1, Math.max(0, energy));
-    }
     function displayInfo() {
         L12_AsteroidsAddition.crc2.save();
-        let energyToLaser = Math.max(0, ship.charged) * energyToLaserRate;
-        barEnergy.draw(energy - energyToLaser, "#80ff8080");
-        barCharge.draw(ship.charged, getColorCharge(ship.charged, 0.8), ship.charged < 0 ? "grey" : "white");
+        barEnergy.draw(ship.energy, "#80ff8080", ship.energy <= 0 ? "grey" : "white");
+        barCharge.draw(ship.charged, getColorCharge(ship.charged, 0.8), ship.coolDown > 0 ? "grey" : "white");
         L12_AsteroidsAddition.crc2.fillStyle = "white";
         L12_AsteroidsAddition.crc2.fillText(score.toString(), L12_AsteroidsAddition.crc2.canvas.width / 2 + 60, 44);
         L12_AsteroidsAddition.crc2.restore();

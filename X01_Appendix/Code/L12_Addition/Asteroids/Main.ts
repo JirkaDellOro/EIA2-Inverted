@@ -13,22 +13,23 @@ namespace L12_AsteroidsAddition {
     UFO_SMALL = 250
   }
 
+  enum GAMESTATE {
+    START, PLAY, OVER
+  }
+
   window.addEventListener("load", handleLoad);
 
   export let crc2: CanvasRenderingContext2D;
-  export let linewidth: number = 2;
+  export const linewidth: number = 2;
 
+  let gamestate: GAMESTATE = GAMESTATE.START;
   let moveables: Moveable[] = [];
   let ship: Ship;
   let barEnergy: Bar;
   let barCharge: Bar;
-  let energy: number = 1; // start with full energy
   let score: number = 0;
-  const timeEnergyRestore: number = 20; // energy recovery from 0 in seconds
   const frameRate: number = 50; // frames per second
   const frameTime: number = 1 / frameRate; // time per frame in seconds
-  const energyToLaserRate: number = 0.05;
-  const energyToThrust: number = 0.01;
 
   function handleLoad(_event: Event): void {
     console.log("Asteroids starting");
@@ -52,9 +53,9 @@ namespace L12_AsteroidsAddition {
 
     createShip();
     createAsteroids(5);
-    createUfo();
-    createUfo();
-    createUfo();
+    // createUfo();
+    // createUfo();
+    // createUfo();
 
     canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
     canvas.addEventListener(ASTEROID_EVENT.SHIP_SHOOTS, handleShipShot);
@@ -69,8 +70,7 @@ namespace L12_AsteroidsAddition {
 
   function handleKeypress(_event: KeyboardEvent): void {
     if (_event.code == "ShiftLeft") {
-      ship.thrust();
-      energy -= energyToThrust;
+        ship.thrust();
     }
   }
 
@@ -112,8 +112,6 @@ namespace L12_AsteroidsAddition {
 
   function shootLaser(_event: MouseEvent): void {
     // console.log("Shoot laser");
-    let energyToLaser: number = Math.max(0, ship.charged) * energyToLaserRate;
-    energy -= energyToLaser;
     let position: Vector = mapClientToCanvas(_event.clientX, _event.clientY);
     ship.shoot(position);
   }
@@ -166,7 +164,6 @@ namespace L12_AsteroidsAddition {
 
     deleteExpandables();
     handleCollisions();
-    handleEnergy();
     displayInfo();
   }
 
@@ -209,16 +206,10 @@ namespace L12_AsteroidsAddition {
     return `HSL(${angle}, 100%, ${light}%, ${_alpha})`;
   }
 
-  function handleEnergy(): void {
-    energy += frameTime / timeEnergyRestore;
-    energy = Math.min(1, Math.max(0, energy));
-  }
-
   function displayInfo(): void {
     crc2.save();
-    let energyToLaser: number = Math.max(0, ship.charged) * energyToLaserRate;
-    barEnergy.draw(energy - energyToLaser, "#80ff8080");
-    barCharge.draw(ship.charged, getColorCharge(ship.charged, 0.8), ship.charged < 0 ? "grey" : "white");
+    barEnergy.draw(ship.energy, "#80ff8080", ship.energy <= 0 ? "grey" : "white");
+    barCharge.draw(ship.charged, getColorCharge(ship.charged, 0.8), ship.coolDown > 0 ? "grey" : "white");
     crc2.fillStyle = "white";
     crc2.fillText(score.toString(), crc2.canvas.width / 2 + 60, 44);
     crc2.restore();

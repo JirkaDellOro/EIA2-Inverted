@@ -13,14 +13,18 @@ namespace L12_AsteroidsAddition {
   }
 
   export class Ship extends Moveable {
+    private static timeEnergyRestore: number = 20; // energy recovery from 0 in seconds
+    private static energyToCharge: number = 0.002;
+    private static energyToThrust: number = 0.003;
+    private static energyToShield: number = 0.4;
     private static acceleration: number = 20;
     private static timeToChargeFully: number = 1;
     private static timeCooling: number = 0.5; // time the laser gun cools down before charge starts
     public gunLeft: Gun = new Gun(new Vector(10, -12));
     public gunRight: Gun = new Gun(new Vector(10, 12));
-    public charged: number = 0;
-    // private static maxCharge: number = 1;
-    // private charge: number = 0;
+    public charged: number = 0; // start uncharged
+    public energy: number = 1; // start with full energy
+    public coolDown: number = 0; // start with guns cool
     private rotation: number = 0;
     private exhaust: boolean = false;
     private charging: boolean = false;
@@ -44,6 +48,10 @@ namespace L12_AsteroidsAddition {
     }
 
     public thrust(): void {
+      this.energy -= Ship.energyToThrust;
+      if (this.energy <= 0)
+        return;
+
       let change: Vector = Vector.getPolar(this.rotation, Ship.acceleration);
       this.velocity.add(change);
       // console.log(this.velocity);
@@ -83,15 +91,29 @@ namespace L12_AsteroidsAddition {
     }
 
     public move(_timeslice: number): void {
-      if (this.charging)
-        this.charged += _timeslice / Ship.timeToChargeFully;
+      this.coolDown = (Math.max(0, this.coolDown - _timeslice / Ship.timeCooling));
+      if (this.charging) {
+        this.energy -= Ship.energyToCharge;
+        if (!this.coolDown && this.energy > 0)
+          this.charged += _timeslice / Ship.timeToChargeFully;
+      } else {
+        this.energy += _timeslice / Ship.timeEnergyRestore;
+        this.energy = Math.min(1, Math.max(0, this.energy));
+      }
+
       this.velocity.scale(0.99);
       super.move(_timeslice);
     }
 
+    public hit(): void {
+      this.energy -= Ship.energyToShield;
+      if (this.energy < 0)
+        super.hit();
+    }
+
     public shoot(_target: Vector): void {
       this.charging = false;
-      if (this.charged < 0)
+      if (this.coolDown > 0)
         return;
       // console.log("Ship shoots");
       let event: CustomEvent = new CustomEvent(ASTEROID_EVENT.SHIP_SHOOTS, {
@@ -103,8 +125,11 @@ namespace L12_AsteroidsAddition {
           pathLaserRight: this.getLaserPath(this.gunRight, _target)
         }
       });
+
       this.charge(false);
-      this.charged = -Ship.timeCooling / Ship.timeToChargeFully;
+      // this.charged = -Ship.timeCooling / Ship.timeToChargeFully;
+      this.coolDown = 1;
+
       crc2.canvas.dispatchEvent(event);
     }
 
