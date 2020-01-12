@@ -53,9 +53,9 @@ namespace L12_AsteroidsAddition {
 
     createShip();
     createAsteroids(5);
-    // createUfo();
-    // createUfo();
-    // createUfo();
+    createUfo();
+    createUfo();
+    createUfo();
 
     canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
     canvas.addEventListener(ASTEROID_EVENT.SHIP_SHOOTS, handleShipShot);

@@ -7,27 +7,31 @@ namespace L12_AsteroidsAddition {
       super(_position, Gun.size);
     }
 
-    public draw(_charge: number): void {
-      super.draw(_charge, getColorCharge(_charge, 1), "white");
+    public draw(_charge: number, _strokeStyle: string = "white"): void {
+      super.draw(_charge, getColorCharge(_charge, 1), _strokeStyle);
     }
   }
 
   export class Ship extends Moveable {
-    private static timeEnergyRestore: number = 20; // energy recovery from 0 in seconds
     private static energyToCharge: number = 0.002;
     private static energyToThrust: number = 0.003;
     private static energyToShield: number = 0.4;
     private static acceleration: number = 20;
+    private static timeEnergyRestore: number = 20; // energy recovery from 0 in seconds
     private static timeToChargeFully: number = 1;
     private static timeCooling: number = 0.5; // time the laser gun cools down before charge starts
+    private static timeToShowShield: number = 2; // time to display shield color when hit
+
     public gunLeft: Gun = new Gun(new Vector(10, -12));
     public gunRight: Gun = new Gun(new Vector(10, 12));
     public charged: number = 0; // start uncharged
     public energy: number = 1; // start with full energy
     public coolDown: number = 0; // start with guns cool
+
     private rotation: number = 0;
     private exhaust: boolean = false;
     private charging: boolean = false;
+    private timeShield: number = 0;
 
     public constructor(_position: Vector) {
       super(_position);
@@ -60,7 +64,10 @@ namespace L12_AsteroidsAddition {
     }
 
     public draw(): void {
+      let color: string = `HSL(0, 100%, ${100 - 20 * this.timeShield}%)`;
+
       crc2.save();
+      crc2.strokeStyle = color;
       crc2.translate(this.position.x, this.position.y);
       crc2.rotate(this.rotation);
       crc2.beginPath();
@@ -71,8 +78,8 @@ namespace L12_AsteroidsAddition {
       crc2.lineTo(0, -8);
       crc2.stroke();
 
-      this.gunLeft.draw(this.charged);
-      this.gunRight.draw(this.charged);
+      this.gunLeft.draw(this.charged, color);
+      this.gunRight.draw(this.charged, color);
 
       if (this.exhaust)
         this.drawExhaust();
@@ -92,6 +99,8 @@ namespace L12_AsteroidsAddition {
 
     public move(_timeslice: number): void {
       this.coolDown = (Math.max(0, this.coolDown - _timeslice / Ship.timeCooling));
+      this.timeShield = (Math.max(0, this.timeShield - _timeslice));
+
       if (this.charging) {
         this.energy -= Ship.energyToCharge;
         if (!this.coolDown && this.energy > 0)
@@ -107,6 +116,7 @@ namespace L12_AsteroidsAddition {
 
     public hit(): void {
       this.energy -= Ship.energyToShield;
+      this.timeShield = Ship.timeToShowShield;
       if (this.energy < 0)
         super.hit();
     }

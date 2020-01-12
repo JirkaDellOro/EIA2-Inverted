@@ -6,8 +6,8 @@ var L12_AsteroidsAddition;
         constructor(_position) {
             super(_position, Gun.size);
         }
-        draw(_charge) {
-            super.draw(_charge, L12_AsteroidsAddition.getColorCharge(_charge, 1), "white");
+        draw(_charge, _strokeStyle = "white") {
+            super.draw(_charge, L12_AsteroidsAddition.getColorCharge(_charge, 1), _strokeStyle);
         }
     }
     Gun.size = new L12_AsteroidsAddition.Vector(-15, 6);
@@ -22,6 +22,7 @@ var L12_AsteroidsAddition;
             this.rotation = 0;
             this.exhaust = false;
             this.charging = false;
+            this.timeShield = 0;
             this.velocity = new L12_AsteroidsAddition.Vector();
             this.hitRadius = 10;
         }
@@ -45,7 +46,9 @@ var L12_AsteroidsAddition;
             L12_AsteroidsAddition.Sound.play("thrust");
         }
         draw() {
+            let color = `HSL(0, 100%, ${100 - 20 * this.timeShield}%)`;
             L12_AsteroidsAddition.crc2.save();
+            L12_AsteroidsAddition.crc2.strokeStyle = color;
             L12_AsteroidsAddition.crc2.translate(this.position.x, this.position.y);
             L12_AsteroidsAddition.crc2.rotate(this.rotation);
             L12_AsteroidsAddition.crc2.beginPath();
@@ -55,8 +58,8 @@ var L12_AsteroidsAddition;
             L12_AsteroidsAddition.crc2.moveTo(0, 8);
             L12_AsteroidsAddition.crc2.lineTo(0, -8);
             L12_AsteroidsAddition.crc2.stroke();
-            this.gunLeft.draw(this.charged);
-            this.gunRight.draw(this.charged);
+            this.gunLeft.draw(this.charged, color);
+            this.gunRight.draw(this.charged, color);
             if (this.exhaust)
                 this.drawExhaust();
             L12_AsteroidsAddition.crc2.restore();
@@ -72,6 +75,7 @@ var L12_AsteroidsAddition;
         }
         move(_timeslice) {
             this.coolDown = (Math.max(0, this.coolDown - _timeslice / Ship.timeCooling));
+            this.timeShield = (Math.max(0, this.timeShield - _timeslice));
             if (this.charging) {
                 this.energy -= Ship.energyToCharge;
                 if (!this.coolDown && this.energy > 0)
@@ -86,6 +90,7 @@ var L12_AsteroidsAddition;
         }
         hit() {
             this.energy -= Ship.energyToShield;
+            this.timeShield = Ship.timeToShowShield;
             if (this.energy < 0)
                 super.hit();
         }
@@ -122,13 +127,14 @@ var L12_AsteroidsAddition;
             };
         }
     }
-    Ship.timeEnergyRestore = 20; // energy recovery from 0 in seconds
     Ship.energyToCharge = 0.002;
     Ship.energyToThrust = 0.003;
     Ship.energyToShield = 0.4;
     Ship.acceleration = 20;
+    Ship.timeEnergyRestore = 20; // energy recovery from 0 in seconds
     Ship.timeToChargeFully = 1;
     Ship.timeCooling = 0.5; // time the laser gun cools down before charge starts
+    Ship.timeToShowShield = 2; // time to display shield color when hit
     L12_AsteroidsAddition.Ship = Ship;
 })(L12_AsteroidsAddition || (L12_AsteroidsAddition = {}));
 //# sourceMappingURL=Ship.js.map
