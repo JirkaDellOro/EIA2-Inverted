@@ -53,7 +53,11 @@ var L12_AsteroidsAddition;
     function setGameState(_newState) {
         if (L12_AsteroidsAddition.gamestate == GAMESTATE.OVER)
             return;
+        if (L12_AsteroidsAddition.gamestate == _newState)
+            return;
         L12_AsteroidsAddition.gamestate = _newState;
+        if (L12_AsteroidsAddition.gamestate == GAMESTATE.PLAY)
+            L12_AsteroidsAddition.Sound.playAtmo(2);
     }
     function handleKeypress(_event) {
         switch (_event.code) {
@@ -200,8 +204,10 @@ var L12_AsteroidsAddition;
         L12_AsteroidsAddition.Info.score += points;
     }
     function progress() {
-        if (moveables.length < 5 + L12_AsteroidsAddition.Info.score / 500)
-            if (Math.random() < 1 / Math.floor(1 + L12_AsteroidsAddition.Info.score / 500))
+        let difficulty = L12_AsteroidsAddition.Info.score / 500;
+        L12_AsteroidsAddition.Sound.atmoDelay = 0.3 + 1.7 / Math.floor(1 + difficulty);
+        if (moveables.length < 5 + difficulty)
+            if (Math.random() < 1 / Math.floor(1 + difficulty))
                 createAsteroids(1);
             else
                 createUfo();

@@ -61,7 +61,11 @@ namespace L12_AsteroidsAddition {
   function setGameState(_newState: GAMESTATE): void {
     if (gamestate == GAMESTATE.OVER)
       return;
+    if (gamestate == _newState)
+      return;
     gamestate = _newState;
+    if (gamestate == GAMESTATE.PLAY)
+      Sound.playAtmo(2);
   }
 
   function handleKeypress(_event: KeyboardEvent): void {
@@ -233,8 +237,11 @@ namespace L12_AsteroidsAddition {
   }
 
   function progress(): void {
-    if (moveables.length < 5 + Info.score / 500)
-      if (Math.random() < 1 / Math.floor(1 + Info.score / 500))
+    let difficulty: number = Info.score / 500;
+    Sound.atmoDelay = 0.3 + 1.7 / Math.floor(1 + difficulty);
+
+    if (moveables.length < 5 + difficulty)
+      if (Math.random() < 1 / Math.floor(1 + difficulty))
         createAsteroids(1);
       else
         createUfo();

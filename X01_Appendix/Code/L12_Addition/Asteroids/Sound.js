@@ -6,15 +6,16 @@ var L12_AsteroidsAddition;
             let audioElements = document.querySelectorAll("audio");
             for (let element of audioElements)
                 Sound.sounds[element.id] = element;
-            Sound.playAtmo(true, 1.5);
         }
         static play(_id) {
             Sound.sounds[_id].play();
         }
-        static playAtmo(_on, _delay) {
+        static playAtmo(_delay = Sound.atmoDelay) {
             Sound.play("beat" + Sound.atmoBeat);
             Sound.atmoBeat = (Sound.atmoBeat == 1) ? 2 : 1;
-            window.setTimeout(Sound.playAtmo, _delay * 1000, _on, _delay);
+            Sound.atmoDelay = _delay;
+            if (Sound.atmoDelay > 0)
+                window.setTimeout(Sound.playAtmo, Sound.atmoDelay * 1000);
         }
         static breakAsteroid(_size) {
             let sound = "bangMedium";
@@ -25,6 +26,7 @@ var L12_AsteroidsAddition;
             this.play(sound);
         }
     }
+    Sound.atmoDelay = 0;
     Sound.sounds = {};
     Sound.atmoBeat = 1;
     L12_AsteroidsAddition.Sound = Sound;
