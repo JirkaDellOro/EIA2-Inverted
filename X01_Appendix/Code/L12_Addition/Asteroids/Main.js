@@ -41,10 +41,6 @@ var L12_AsteroidsAddition;
         L12_AsteroidsAddition.Info.init(canvas);
         L12_AsteroidsAddition.Sound.init();
         createShip();
-        // createAsteroids(5);
-        // createUfo();
-        // createUfo();
-        // createUfo();
         canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
         canvas.addEventListener(ASTEROID_EVENT.SHIP_SHOOTS, handleShipShot);
         canvas.addEventListener(ASTEROID_EVENT.ASTEROID_HIT, breakAsteroid);
@@ -97,11 +93,9 @@ var L12_AsteroidsAddition;
         ship.head(target);
     }
     function chargeLaser(_event) {
-        console.log("Charge laser");
         ship.charge(true);
     }
     function shootLaser(_event) {
-        // console.log("Shoot laser");
         let position = mapClientToCanvas(_event.clientX, _event.clientY);
         ship.shoot(position);
     }
@@ -148,6 +142,8 @@ var L12_AsteroidsAddition;
         handleCollisions();
         if (ship.expendable)
             setGameState(GAMESTATE.OVER);
+        if (L12_AsteroidsAddition.gamestate == GAMESTATE.PLAY)
+            progress();
         L12_AsteroidsAddition.Info.display(ship);
     }
     function deleteExpandables() {
@@ -187,6 +183,8 @@ var L12_AsteroidsAddition;
     }
     L12_AsteroidsAddition.getColorCharge = getColorCharge;
     function scorePoints(_expended) {
+        if (L12_AsteroidsAddition.gamestate != GAMESTATE.PLAY)
+            return;
         let points = 0;
         if (_expended instanceof L12_AsteroidsAddition.Asteroid) {
             console.log(_expended.size);
@@ -200,6 +198,13 @@ var L12_AsteroidsAddition;
         if (_expended instanceof L12_AsteroidsAddition.Ufo)
             points = POINTS.UFO_LARGE;
         L12_AsteroidsAddition.Info.score += points;
+    }
+    function progress() {
+        if (moveables.length < 5 + L12_AsteroidsAddition.Info.score / 500)
+            if (Math.random() < 1 / Math.floor(1 + L12_AsteroidsAddition.Info.score / 500))
+                createAsteroids(1);
+            else
+                createUfo();
     }
 })(L12_AsteroidsAddition || (L12_AsteroidsAddition = {}));
 //# sourceMappingURL=Main.js.map

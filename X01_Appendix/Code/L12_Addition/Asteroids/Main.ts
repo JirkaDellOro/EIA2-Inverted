@@ -46,10 +46,6 @@ namespace L12_AsteroidsAddition {
     Sound.init();
 
     createShip();
-    // createAsteroids(5);
-    // createUfo();
-    // createUfo();
-    // createUfo();
 
     canvas.addEventListener(ASTEROID_EVENT.UFO_SHOOTS, handleUfoShot);
     canvas.addEventListener(ASTEROID_EVENT.SHIP_SHOOTS, handleShipShot);
@@ -113,12 +109,10 @@ namespace L12_AsteroidsAddition {
   }
 
   function chargeLaser(_event: MouseEvent): void {
-    console.log("Charge laser");
     ship.charge(true);
   }
 
   function shootLaser(_event: MouseEvent): void {
-    // console.log("Shoot laser");
     let position: Vector = mapClientToCanvas(_event.clientX, _event.clientY);
     ship.shoot(position);
   }
@@ -175,6 +169,9 @@ namespace L12_AsteroidsAddition {
     if (ship.expendable)
       setGameState(GAMESTATE.OVER);
 
+    if (gamestate == GAMESTATE.PLAY)
+      progress();
+
     Info.display(ship);
   }
 
@@ -217,6 +214,8 @@ namespace L12_AsteroidsAddition {
   }
 
   function scorePoints(_expended: Moveable): void {
+    if (gamestate != GAMESTATE.PLAY)
+      return;
     let points: number = 0;
     if (_expended instanceof Asteroid) {
       console.log(_expended.size);
@@ -231,5 +230,13 @@ namespace L12_AsteroidsAddition {
       points = POINTS.UFO_LARGE;
 
     Info.score += points;
+  }
+
+  function progress(): void {
+    if (moveables.length < 5 + Info.score / 500)
+      if (Math.random() < 1 / Math.floor(1 + Info.score / 500))
+        createAsteroids(1);
+      else
+        createUfo();
   }
 }
