@@ -1,4 +1,13 @@
+/**
+ * eiaSteroids 
+ * 
+ * @see Main.ts for details
+ */
 namespace L12_AsteroidsAddition {
+  /**
+   * The user interface overlay displaying the energy bar, the charge bar, the score and text.  
+   * Also keeps the score.
+   */
   export class Info {
     public static score: number = 0;
     private static barEnergy: Bar;

@@ -1,9 +1,16 @@
 "use strict";
+/**
+ * eiaSteroids
+ *
+ * @see Main.ts for details
+ */
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
+    /**
+     * The base class for all moving objects. Implements standard methods for moving and hit detection
+     */
     class Moveable {
         constructor(_position) {
-            // console.log("Moveable constructor");
             this.expendable = false;
             this.hitRadius = 0;
             if (_position)
@@ -19,11 +26,9 @@ var L12_AsteroidsAddition;
             return true;
         }
         hit() {
-            // console.log("Hit", this);
             this.expendable = true;
         }
         move(_timeslice) {
-            // console.log("Moveable move");
             let offset = this.velocity.copy();
             offset.scale(_timeslice);
             this.position.add(offset);

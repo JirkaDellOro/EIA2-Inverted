@@ -1,10 +1,17 @@
 "use strict";
+/**
+ * eiaSteroids
+ *
+ * @see Main.ts for details
+ */
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
+    /**
+     * The laser beam pointing from the [[Gun]] to the [[Hotspot]]
+     */
     class Laser extends L12_AsteroidsAddition.Projectile {
         constructor(_path, _charge) {
             super(new L12_AsteroidsAddition.Vector(), new L12_AsteroidsAddition.Vector());
-            // console.log("Laser constructor");
             this.lifetime = Laser.maxLifetime;
             this.charge = _charge;
             this.path = _path;

@@ -1,3 +1,8 @@
+/**
+ * eiaSteroids 
+ * 
+ * @see Main.ts for details
+ */
 namespace L12_AsteroidsAddition {
     export let asteroidPaths: Path2D[];
     export let ufoPath: Path2D;

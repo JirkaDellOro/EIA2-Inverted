@@ -1,8 +1,15 @@
 "use strict";
+/**
+ * eiaSteroids
+ *
+ * @see Main.ts for details
+ */
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
+    /**
+     * Describes a laser gun which is just a special [[Bar]]
+     */
     class Gun extends L12_AsteroidsAddition.Bar {
-        // position: Vector;
         constructor(_position) {
             super(_position, Gun.size);
         }
@@ -11,6 +18,14 @@ var L12_AsteroidsAddition;
         }
     }
     Gun.size = new L12_AsteroidsAddition.Vector(-15, 6);
+    /**
+     * Describes the space ship the player controls.
+     * Can head towards a given point, thrust in this direction and dispatch an event to the main program in order
+     * to create the [[Laser]] beams and a [[Hotspot]]. Handles its energy and dispatches it to
+     * - shield when hit,
+     * - thrust when moving
+     * - and laser guns while charging
+     */
     class Ship extends L12_AsteroidsAddition.Moveable {
         constructor(_position) {
             super(_position);
@@ -109,7 +124,6 @@ var L12_AsteroidsAddition;
                 }
             });
             this.charge(false);
-            // this.charged = -Ship.timeCooling / Ship.timeToChargeFully;
             this.coolDown = 1;
             L12_AsteroidsAddition.crc2.canvas.dispatchEvent(event);
         }

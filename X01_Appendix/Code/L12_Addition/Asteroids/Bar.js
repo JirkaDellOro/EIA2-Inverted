@@ -1,6 +1,14 @@
 "use strict";
+/**
+ * eiaSteroids
+ *
+ * @see Main.ts for details
+ */
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
+    /**
+     * Decribes a meter bar to display in a user interface. Also used for the laser guns on the spaceship
+     */
     class Bar {
         constructor(_position, _size, _maxValue = 1) {
             this.size = new L12_AsteroidsAddition.Vector(100, 10);

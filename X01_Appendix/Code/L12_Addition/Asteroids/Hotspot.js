@@ -1,6 +1,14 @@
 "use strict";
+/**
+ * eiaSteroids
+ *
+ * @see Main.ts for details
+ */
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
+    /**
+     * The area of destruction the laser gun creates. The higher the charge, the bigger and more robust it is.
+     */
     class Hotspot extends L12_AsteroidsAddition.Projectile {
         constructor(_position, _charge) {
             super(_position, new L12_AsteroidsAddition.Vector());

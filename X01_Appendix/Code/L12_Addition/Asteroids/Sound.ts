@@ -1,8 +1,16 @@
+/**
+ * eiaSteroids 
+ * 
+ * @see Main.ts for details
+ */
 namespace L12_AsteroidsAddition {
   interface Sounds {
     [id: string]: HTMLAudioElement;
   }
 
+  /**
+   * Handles and plays the sounds 
+   */
   export class Sound {
     public static atmoDelay: number = 0;
     private static sounds: Sounds = {};

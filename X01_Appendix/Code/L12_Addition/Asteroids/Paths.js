@@ -1,4 +1,9 @@
 "use strict";
+/**
+ * eiaSteroids
+ *
+ * @see Main.ts for details
+ */
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
     L12_AsteroidsAddition.shapesAsteroids = [

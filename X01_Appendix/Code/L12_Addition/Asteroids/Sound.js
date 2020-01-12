@@ -1,6 +1,14 @@
 "use strict";
+/**
+ * eiaSteroids
+ *
+ * @see Main.ts for details
+ */
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
+    /**
+     * Handles and plays the sounds
+     */
     class Sound {
         static init() {
             let audioElements = document.querySelectorAll("audio");

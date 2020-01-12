@@ -1,6 +1,15 @@
 "use strict";
+/**
+ * eiaSteroids
+ *
+ * @see Main.ts for details
+ */
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
+    /**
+     * The user interface overlay displaying the energy bar, the charge bar, the score and text.
+     * Also keeps the score.
+     */
     class Info {
         static init(_canvas) {
             Info.barEnergy = new L12_AsteroidsAddition.Bar(new L12_AsteroidsAddition.Vector(_canvas.width / 2 - 80, 30), new L12_AsteroidsAddition.Vector(-300, 30));

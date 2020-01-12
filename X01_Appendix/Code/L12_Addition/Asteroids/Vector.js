@@ -1,6 +1,14 @@
 "use strict";
+/**
+ * eiaSteroids
+ *
+ * @see Main.ts for details
+ */
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
+    /**
+     * Describes a two-dimensional vector and implements various helpful methods to use it.
+     */
     class Vector {
         constructor(_x = 0, _y = 0) {
             this.set(_x, _y);

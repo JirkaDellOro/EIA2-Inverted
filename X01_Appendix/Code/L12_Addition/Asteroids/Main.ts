@@ -1,3 +1,17 @@
+/**
+ * # eiaSteroids
+ * 
+ * Example project demonstrating object oriented design for the course
+ * Entwicklung Interaktiver Anwendungen II (EIA2) {@link https://jirkadelloro.github.io/EIA2-Inverted/}
+ * 
+ * Project heavily inspired by Asteroids, the arcade classic created by Atari {@link https://www.atari.com/}
+ * 
+ * To create this documentation using TypeDoc: `typedoc --tsconfig ../../tsconfig.json`
+ * 
+ * @author Jirka Dell'Oro-Friedl
+ * @copyright Jirka Dell'Oro-Friedl, Hochschule Furtwangen University, 2020
+ */
+
 namespace L12_AsteroidsAddition {
   export enum ASTEROID_EVENT {
     UFO_SHOOTS = "ufoShoots",

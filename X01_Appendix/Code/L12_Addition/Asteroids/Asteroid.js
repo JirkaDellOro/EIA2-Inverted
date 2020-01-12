@@ -1,17 +1,23 @@
 "use strict";
+/**
+ * eiaSteroids
+ *
+ * @see Main.ts for details
+ */
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
+    /**
+     * Describes an asteroid with individual size and shape (type)
+     */
     class Asteroid extends L12_AsteroidsAddition.Moveable {
         constructor(_size, _position) {
             super(_position);
-            // console.log("Asteroid constructor");
             this.velocity = L12_AsteroidsAddition.Vector.getRandom(100, 200);
             this.type = Math.floor(Math.random() * 4);
             this.size = _size;
             this.hitRadius = 50 * _size;
         }
         draw() {
-            // console.log("Asteroid draw");
             L12_AsteroidsAddition.crc2.save();
             L12_AsteroidsAddition.crc2.translate(this.position.x, this.position.y);
             L12_AsteroidsAddition.crc2.scale(this.size, this.size);

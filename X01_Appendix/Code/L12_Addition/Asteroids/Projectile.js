@@ -1,6 +1,14 @@
 "use strict";
+/**
+ * eiaSteroids
+ *
+ * @see Main.ts for details
+ */
 var L12_AsteroidsAddition;
 (function (L12_AsteroidsAddition) {
+    /**
+     * Describes a small projectile as fired by the [[Ufo]]s
+     */
     class Projectile extends L12_AsteroidsAddition.Moveable {
         constructor(_position, _velocity) {
             super(_position);

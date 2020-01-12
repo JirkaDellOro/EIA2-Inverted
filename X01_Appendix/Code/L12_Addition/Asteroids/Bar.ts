@@ -1,4 +1,12 @@
+/**
+ * eiaSteroids 
+ * 
+ * @see Main.ts for details
+ */
 namespace L12_AsteroidsAddition {
+  /**
+   * Decribes a meter bar to display in a user interface. Also used for the laser guns on the spaceship
+   */
   export class Bar {
     public size: Vector = new Vector(100, 10);
     public position: Vector;
@@ -26,5 +34,4 @@ namespace L12_AsteroidsAddition {
       crc2.restore();
     }
   }
-
 }
