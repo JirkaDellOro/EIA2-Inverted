@@ -1,9 +1,0 @@
-{
-    "mode": "file",
-    "out": "Documentation",
-    "name": "eiaSteroid",
-    "readme": "none",
-    "ignoreCompilerErrors": "true",
-    "entryPoint": "L12_AsteroidsAddition",
-    "tsconfig": "../../tsconfig.json"
-}
