@@ -98,7 +98,6 @@ namespace L12_eiaSteroids {
    * Creates a projectile at the point given with random heading, moving away a little to protect the source
    */
   function shootProjectile(_origin: Vector): void {
-    // console.log("Shoot projectile");
     let velocity: Vector = Vector.getRandom(200, 200);
     let projectile: Projectile = new Projectile(_origin, velocity);
     // move projectile away from ufo to prevent suicide
@@ -218,12 +217,7 @@ namespace L12_eiaSteroids {
 
     deleteExpandables();
     handleCollisions();
-
-    if (ship.expendable)
-      setGameState(GAMESTATE.OVER);
-
-    if (gamestate == GAMESTATE.PLAY)
-      progress();
+    progress();
 
     Info.display(ship);
   }
@@ -283,7 +277,6 @@ namespace L12_eiaSteroids {
       return;
     let points: number = 0;
     if (_expended instanceof Asteroid) {
-      console.log(_expended.size);
       if (_expended.size < 0.3)
         points = POINTS.ASTEROID_SMALL;
       else if (_expended.size > 0.8)
@@ -298,10 +291,16 @@ namespace L12_eiaSteroids {
   }
 
   /**
-   * Calculates when to spawn which objects dependend on the current score 
-   * and the number of currently moving objects
+   * Handles gamestate and calculates when to spawn which objects dependend on the current score 
+   * and the number of currently moving objects. 
    */
   function progress(): void {
+    if (ship.expendable)
+      setGameState(GAMESTATE.OVER);
+
+    if (gamestate != GAMESTATE.PLAY)
+      return;
+      
     let difficulty: number = Info.score / 500;
     Sound.atmoDelay = 0.3 + 1.7 / Math.floor(1 + difficulty);
 
