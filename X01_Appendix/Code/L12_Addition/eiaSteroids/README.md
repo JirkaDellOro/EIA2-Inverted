@@ -2,7 +2,7 @@
 Welcome to this example project demonstrating the skills taught in the course  
 **Entwicklung interaktiver Anwendungen II (EIA2)**  
 at the Hochschule Furtwangen University (HFU)  
-to the students of the subject Medienkonzeption (MKB)  
+to the students of the curriculum Medienkonzeption (MKB)  
 
 ## Design
 Most prominent are the skills to design complex software solutions using UML diagrams, specifically Use-Case, Activity- and Class-Diagrams. Thus, browse the design documentation first:  
