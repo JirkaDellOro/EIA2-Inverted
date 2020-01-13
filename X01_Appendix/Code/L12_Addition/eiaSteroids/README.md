@@ -12,12 +12,22 @@ Most prominent are the skills to design complex software solutions using UML dia
 ## Production
 Programming skills are required to prove the designs and to reiterate them. Also a designer must be capable of creating prototypes herself in order to tinker and come up with new ideas. Here is the game designed:
 
-- [Game](index.html)
+- [Play **eiaSteroids**](index.html)
+
 
 ## Reference
-For completeness, this project also offers a code documentation automatically create by TypeDoc, based on the comments in the code files in JSDoc format. See here:
+For completeness, this project also offers a code documentation automatically created by [TypeDoc](https://typedoc.org/), based on the comments in the code files in JSDoc format. See here:
 
 - [Reference](Documentation/Code/index.html)
+
+## Tools
+These are the tools used for this project and throughout the course.
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [git](https://git-scm.com/)
+- [Github](https://github.com/)
+- [draw.io](https://www.draw.io/)
 
 ## Notice
 eiaSteroids was created by Prof. Jirka Dell'Oro-Friedl at the HFU in 2020. Please contact me for questions at del@hs-furtwangen.de
