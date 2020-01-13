@@ -42,24 +42,24 @@ The activity diagrams are not complete, since many small functions were trivial 
 ![](Documentation/Diagrams/Asteroids_Scribble.svg)
 
 ## Use-Case-Diagram
-![](Documentation\Diagrams\Asteroids_UseCaseDiagram.svg)
+![](Documentation/Diagrams/Asteroids_UseCaseDiagram.svg)
 
 ## Class-Diagram
-![](Documentation\Diagrams\Asteroids_ClassDiagram.svg)
+![](Documentation/Diagrams/Asteroids_ClassDiagram.svg)
 
 ## Activity diagrams for the main program
-![](Documentation\Diagrams\Asteroids_ActivityDiagram-Main_1.svg)  
-![](Documentation\Diagrams\Asteroids_ActivityDiagram-Main_2.svg)
+![](Documentation/Diagrams/Asteroids_ActivityDiagram-Main_1.svg)  
+![](Documentation/Diagrams/Asteroids_ActivityDiagram-Main_2.svg)
 
 ## Activity diagram for the class Moveable
-![](Documentation\Diagrams\Asteroids_ActivityDiagram-Moveable.svg) 
+![](Documentation/Diagrams/Asteroids_ActivityDiagram-Moveable.svg) 
 
 ## Activity diagram for the class Asteroid
-![](Documentation\Diagrams\Asteroids_ActivityDiagram-Asteroid.svg) 
+![](Documentation/Diagrams/Asteroids_ActivityDiagram-Asteroid.svg) 
 
 ## Activity diagram for the class Projectile
-![](Documentation\Diagrams\Asteroids_ActivityDiagram-Projectile.svg) 
+![](Documentation/Diagrams/Asteroids_ActivityDiagram-Projectile.svg) 
 
 ## Activity diagram for the class Ufo
-![](Documentation\Diagrams\Asteroids_ActivityDiagram-Ufo.svg) 
+![](Documentation/Diagrams/Asteroids_ActivityDiagram-Ufo.svg) 
 
