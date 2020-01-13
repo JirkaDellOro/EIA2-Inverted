@@ -39,7 +39,7 @@ The following documentation is a compilation of the finalized UML-diagrams creat
 The activity diagrams are not complete, since many small functions were trivial or already designed on similar entities. Also, in contrast to the first scribble, there is no hyperjump. Instead, a more interesting energy handling was designed which included a shield to protect the players spaceship at the cost of energy loss.
 
 ## Scribble
-![](Documentation\Diagrams\Asteroids_Scribble.svg)
+![](Documentation/Diagrams/Asteroids_Scribble.svg)
 
 ## Use-Case-Diagram
 ![](Documentation\Diagrams\Asteroids_UseCaseDiagram.svg)
