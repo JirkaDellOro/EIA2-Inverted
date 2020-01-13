@@ -11,7 +11,7 @@ namespace L12_eiaSteroids {
     public x: number;
     public y: number;
 
-    constructor(_x: number = 0, _y: number = 0) {
+    public constructor(_x: number = 0, _y: number = 0) {
       this.set(_x, _y);
     }
 

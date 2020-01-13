@@ -11,7 +11,7 @@ namespace L12_eiaSteroids {
     public size: number;
     private type: number;
 
-    constructor(_size: number, _position?: Vector) {
+    public constructor(_size: number, _position?: Vector) {
       super(_position);
       this.velocity = Vector.getRandom(100, 200);
 

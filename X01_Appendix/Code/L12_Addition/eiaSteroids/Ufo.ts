@@ -11,7 +11,7 @@ namespace L12_eiaSteroids {
   export class Ufo extends Moveable {
     private static speed: number = 50;
 
-    constructor() {
+    public constructor() {
       super();
       this.position = new Vector(0, Math.random() * crc2.canvas.height);
 

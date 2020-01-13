@@ -12,7 +12,7 @@ namespace L12_eiaSteroids {
     private charge: number;
     private path: Function;
 
-    constructor(_path: Function, _charge: number) {
+    public constructor(_path: Function, _charge: number) {
       super(new Vector(), new Vector());
 
       this.lifetime = Laser.maxLifetime;
@@ -20,7 +20,7 @@ namespace L12_eiaSteroids {
       this.path = _path;
     }
 
-    draw(): void {
+    public draw(): void {
       crc2.save();
       crc2.strokeStyle = getColorCharge(this.charge, this.lifetime / Laser.maxLifetime);
       this.path();

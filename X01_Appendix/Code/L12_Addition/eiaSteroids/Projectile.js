@@ -13,11 +13,9 @@ var L12_eiaSteroids;
         constructor(_position, _velocity) {
             super(_position);
             this.lifetime = Projectile.maxLifetime;
-            // console.log("Projectile constructor");
             this.velocity = _velocity.copy();
         }
         draw() {
-            // console.log("Projectile draw");
             L12_eiaSteroids.crc2.save();
             L12_eiaSteroids.crc2.translate(this.position.x, this.position.y);
             L12_eiaSteroids.crc2.strokeRect(-2, -2, 2, 2);

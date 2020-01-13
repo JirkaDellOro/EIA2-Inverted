@@ -12,7 +12,7 @@ namespace L12_eiaSteroids {
     private maxLifetime: number;
     private charge: number;
 
-    constructor(_position: Vector, _charge: number) {
+    public constructor(_position: Vector, _charge: number) {
       super(_position, new Vector());
 
       this.charge = Math.max(0, Math.min(1, _charge));
@@ -20,7 +20,7 @@ namespace L12_eiaSteroids {
       this.hitRadius = 5 + 40 * this.charge;
     }
 
-    draw(): void {
+    public draw(): void {
       let ratio: number = this.lifetime / this.maxLifetime;
       if (ratio < 0)
         return;
