@@ -12,7 +12,6 @@ var L12_eiaSteroids;
     class Hotspot extends L12_eiaSteroids.Projectile {
         constructor(_position, _charge) {
             super(_position, new L12_eiaSteroids.Vector());
-            // console.log("Hotspot constructor");
             this.charge = Math.max(0, Math.min(1, _charge));
             this.maxLifetime = this.lifetime = Hotspot.maxLifetime * this.charge;
             this.hitRadius = 5 + 40 * this.charge;
@@ -25,7 +24,6 @@ var L12_eiaSteroids;
             L12_eiaSteroids.crc2.translate(this.position.x, this.position.y);
             L12_eiaSteroids.crc2.beginPath();
             L12_eiaSteroids.crc2.fillStyle = L12_eiaSteroids.getColorCharge(this.charge, ratio);
-            // console.log(getColorCharge(this.charge, ratio));
             L12_eiaSteroids.crc2.arc(0, 0, this.hitRadius * (1 - ratio), 0, 2 * Math.PI);
             L12_eiaSteroids.crc2.arc(0, 0, this.hitRadius, 2 * Math.PI, 0, true);
             L12_eiaSteroids.crc2.fill();
@@ -37,7 +35,6 @@ var L12_eiaSteroids;
         hit() {
             this.lifetime -= Hotspot.maxLifetime / 5;
             this.expendable = this.lifetime < 0;
-            // console.log("Hotspot hit, remaining range: ", this.lifetime);
         }
     }
     Hotspot.maxLifetime = 2;

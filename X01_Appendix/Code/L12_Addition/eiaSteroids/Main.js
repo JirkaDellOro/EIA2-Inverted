@@ -87,7 +87,6 @@ var L12_eiaSteroids;
      * Creates a projectile at the point given with random heading, moving away a little to protect the source
      */
     function shootProjectile(_origin) {
-        // console.log("Shoot projectile");
         let velocity = L12_eiaSteroids.Vector.getRandom(200, 200);
         let projectile = new L12_eiaSteroids.Projectile(_origin, velocity);
         // move projectile away from ufo to prevent suicide
@@ -193,10 +192,7 @@ var L12_eiaSteroids;
         }
         deleteExpandables();
         handleCollisions();
-        if (ship.expendable)
-            setGameState(GAMESTATE.OVER);
-        if (L12_eiaSteroids.gamestate == GAMESTATE.PLAY)
-            progress();
+        progress();
         L12_eiaSteroids.Info.display(ship);
     }
     /**
@@ -252,7 +248,6 @@ var L12_eiaSteroids;
             return;
         let points = 0;
         if (_expended instanceof L12_eiaSteroids.Asteroid) {
-            console.log(_expended.size);
             if (_expended.size < 0.3)
                 points = POINTS.ASTEROID_SMALL;
             else if (_expended.size > 0.8)
@@ -265,10 +260,14 @@ var L12_eiaSteroids;
         L12_eiaSteroids.Info.score += points;
     }
     /**
-     * Calculates when to spawn which objects dependend on the current score
-     * and the number of currently moving objects
+     * Handles gamestate and calculates when to spawn which objects dependend on the current score
+     * and the number of currently moving objects.
      */
     function progress() {
+        if (ship.expendable)
+            setGameState(GAMESTATE.OVER);
+        if (L12_eiaSteroids.gamestate != GAMESTATE.PLAY)
+            return;
         let difficulty = L12_eiaSteroids.Info.score / 500;
         L12_eiaSteroids.Sound.atmoDelay = 0.3 + 1.7 / Math.floor(1 + difficulty);
         if (moveables.length < 5 + difficulty)
