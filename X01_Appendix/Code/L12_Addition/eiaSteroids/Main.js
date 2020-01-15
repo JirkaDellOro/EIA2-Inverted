@@ -86,8 +86,12 @@ var L12_eiaSteroids;
     /**
      * Creates a projectile at the point given with random heading, moving away a little to protect the source
      */
-    function shootProjectile(_origin) {
+    function shootProjectile(_origin, _target) {
         let velocity = L12_eiaSteroids.Vector.getRandom(200, 200);
+        if (_target) {
+            velocity = L12_eiaSteroids.Vector.getDifference(_target, _origin);
+            velocity.scale(200 / velocity.length);
+        }
         let projectile = new L12_eiaSteroids.Projectile(_origin, velocity);
         // move projectile away from ufo to prevent suicide
         projectile.move(0.15);
@@ -99,7 +103,10 @@ var L12_eiaSteroids;
      */
     function handleUfoShot(_event) {
         let ufo = _event.detail.ufo;
-        shootProjectile(ufo.position);
+        if (ufo instanceof L12_eiaSteroids.UfoSmall)
+            shootProjectile(ufo.position, ship.position);
+        else
+            shootProjectile(ufo.position);
     }
     /**
      * Creates laser beams and a hotspot when ship dispatched the shoot event.
@@ -176,9 +183,9 @@ var L12_eiaSteroids;
     /**
      * Create a Ufo
      */
-    function createUfo() {
+    function createUfo(_small = false) {
         console.log("Create ufo");
-        let ufo = new L12_eiaSteroids.Ufo();
+        let ufo = _small ? new L12_eiaSteroids.UfoSmall : new L12_eiaSteroids.Ufo();
         moveables.push(ufo);
     }
     /**
@@ -271,10 +278,12 @@ var L12_eiaSteroids;
         let difficulty = L12_eiaSteroids.Info.score / 500;
         L12_eiaSteroids.Sound.atmoDelay = 0.3 + 1.7 / Math.floor(1 + difficulty);
         if (moveables.length < 5 + difficulty)
-            if (Math.random() < 1 / Math.floor(1 + difficulty))
+            if (Math.random() * difficulty < 1)
                 createAsteroids(1);
+            else if (Math.random() * difficulty < 1)
+                createUfo(false);
             else
-                createUfo();
+                createUfo(true);
     }
 })(L12_eiaSteroids || (L12_eiaSteroids = {}));
 //# sourceMappingURL=Main.js.map

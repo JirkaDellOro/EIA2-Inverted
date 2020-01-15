@@ -23,6 +23,7 @@ namespace L12_eiaSteroids {
     public draw(): void {
       crc2.save();
       crc2.translate(this.position.x, this.position.y);
+      this.scale();
       crc2.translate(-30, -17);
       crc2.stroke(ufoPath);
       crc2.restore();
@@ -30,16 +31,33 @@ namespace L12_eiaSteroids {
 
     public move(_timeslice: number): void {
       super.move(_timeslice);
-      Sound.play("saucerBig");
       if (Math.random() < 0.03)
         this.shoot();
       if (Math.random() < 0.02)
         this.velocity.y = Ufo.speed * (Math.floor(Math.random() * 3) - 1);
+      this.playSound();
+    }
+
+    protected playSound(): void {
+      Sound.play("saucerBig");
+    }
+    protected scale(): void {
+      // to be overriden by the small Ufo
     }
 
     private shoot(): void {
       let event: CustomEvent = new CustomEvent(ASTEROID_EVENT.UFO_SHOOTS, { detail: { ufo: this } });
       crc2.canvas.dispatchEvent(event);
+    }
+  }
+
+  export class UfoSmall extends Ufo {
+    protected playSound(): void {
+      Sound.play("saucerSmall");
+    }
+    protected scale(): void {
+      crc2.scale(0.5, 0.5);
+      crc2.lineWidth = linewidth * 2;
     }
   }
 }

@@ -97,8 +97,12 @@ namespace L12_eiaSteroids {
   /**
    * Creates a projectile at the point given with random heading, moving away a little to protect the source
    */
-  function shootProjectile(_origin: Vector): void {
+  function shootProjectile(_origin: Vector, _target?: Vector): void {
     let velocity: Vector = Vector.getRandom(200, 200);
+    if (_target) {
+      velocity = Vector.getDifference(_target, _origin);
+      velocity.scale(200 / velocity.length);
+    }
     let projectile: Projectile = new Projectile(_origin, velocity);
     // move projectile away from ufo to prevent suicide
     projectile.move(0.15);
@@ -111,7 +115,10 @@ namespace L12_eiaSteroids {
    */
   function handleUfoShot(_event: Event): void {
     let ufo: Ufo = (<CustomEvent>_event).detail.ufo;
-    shootProjectile(ufo.position);
+    if (ufo instanceof UfoSmall)
+      shootProjectile(ufo.position, ship.position);
+    else
+      shootProjectile(ufo.position);
   }
 
   /**
@@ -198,9 +205,9 @@ namespace L12_eiaSteroids {
   /**
    * Create a Ufo
    */
-  function createUfo(): void {
+  function createUfo(_small: boolean = false): void {
     console.log("Create ufo");
-    let ufo: Ufo = new Ufo();
+    let ufo: Ufo = _small ? new UfoSmall : new Ufo();
     moveables.push(ufo);
   }
 
@@ -300,14 +307,17 @@ namespace L12_eiaSteroids {
 
     if (gamestate != GAMESTATE.PLAY)
       return;
-      
+
     let difficulty: number = Info.score / 500;
     Sound.atmoDelay = 0.3 + 1.7 / Math.floor(1 + difficulty);
 
     if (moveables.length < 5 + difficulty)
-      if (Math.random() < 1 / Math.floor(1 + difficulty))
+      if (Math.random() * difficulty < 1)
         createAsteroids(1);
       else
-        createUfo();
+        if (Math.random() * difficulty < 1)
+          createUfo(false);
+        else
+          createUfo(true);
   }
 }

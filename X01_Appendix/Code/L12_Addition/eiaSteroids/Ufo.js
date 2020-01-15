@@ -21,17 +21,24 @@ var L12_eiaSteroids;
         draw() {
             L12_eiaSteroids.crc2.save();
             L12_eiaSteroids.crc2.translate(this.position.x, this.position.y);
+            this.scale();
             L12_eiaSteroids.crc2.translate(-30, -17);
             L12_eiaSteroids.crc2.stroke(L12_eiaSteroids.ufoPath);
             L12_eiaSteroids.crc2.restore();
         }
         move(_timeslice) {
             super.move(_timeslice);
-            L12_eiaSteroids.Sound.play("saucerBig");
             if (Math.random() < 0.03)
                 this.shoot();
             if (Math.random() < 0.02)
                 this.velocity.y = Ufo.speed * (Math.floor(Math.random() * 3) - 1);
+            this.playSound();
+        }
+        playSound() {
+            L12_eiaSteroids.Sound.play("saucerBig");
+        }
+        scale() {
+            // to be overriden by the small Ufo
         }
         shoot() {
             let event = new CustomEvent(L12_eiaSteroids.ASTEROID_EVENT.UFO_SHOOTS, { detail: { ufo: this } });
@@ -40,5 +47,15 @@ var L12_eiaSteroids;
     }
     Ufo.speed = 50;
     L12_eiaSteroids.Ufo = Ufo;
+    class UfoSmall extends Ufo {
+        playSound() {
+            L12_eiaSteroids.Sound.play("saucerSmall");
+        }
+        scale() {
+            L12_eiaSteroids.crc2.scale(0.5, 0.5);
+            L12_eiaSteroids.crc2.lineWidth = L12_eiaSteroids.linewidth * 2;
+        }
+    }
+    L12_eiaSteroids.UfoSmall = UfoSmall;
 })(L12_eiaSteroids || (L12_eiaSteroids = {}));
 //# sourceMappingURL=Ufo.js.map
