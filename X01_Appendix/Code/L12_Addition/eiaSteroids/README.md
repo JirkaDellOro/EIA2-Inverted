@@ -7,7 +7,7 @@ to the students of the curriculum Medienkonzeption (MKB)
 ## Design
 Most prominent are the skills to design complex software solutions using UML diagrams, specifically use-case, activity- and class-diagrams. Thus, browse the design documentation below first:  
 
-- [Design](#-design)  
+- [Design Documentation](#design-documentation)  
 
 ## Production
 Programming skills are required to prove the designs and to reiterate them. Also a designer must be capable of creating prototypes herself in order to tinker and come up with new ideas. Here is the game designed:
@@ -34,7 +34,7 @@ These are the tools used for this project and throughout the course.
 ## Notice
 eiaSteroids was created by Prof. Jirka Dell'Oro-Friedl at the HFU in 2020. Please contact me for questions at del@hs-furtwangen.de
 
-# Design
+# Design Documentation
 The following documentation is a compilation of the finalized UML-diagrams created during the design, the production and the documentation of eiaSteroids. The first drafts where created with draw.io, the second draft by hand during the video shootings for the online course. Scans of the handmade diagrams can be found in the online course.  
 The activity diagrams are not complete, since many small functions were trivial or already designed on similar entities. Also, in contrast to the first scribble, there is no hyperjump. Instead, a more interesting energy handling was designed which included a shield to protect the players spaceship at the cost of energy loss.
 
