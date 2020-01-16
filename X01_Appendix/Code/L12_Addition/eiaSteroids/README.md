@@ -47,19 +47,22 @@ The activity diagrams are not complete, since many small functions were trivial 
 ## Class-Diagram
 ![](Documentation/Diagrams/Asteroids_ClassDiagram.svg)
 
-## Activity diagrams for the main program
+## Activity-Diagrams: main program
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Main_1.svg)  
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Main_2.svg)
 
-## Activity diagram for the class Moveable
+## Activity-Diagram: Moveable
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Moveable.svg) 
 
-## Activity diagram for the class Asteroid
+## Activity-Diagram: Asteroid
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Asteroid.svg) 
 
-## Activity diagram for the class Projectile
+## Activity-Diagram: Projectile
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Projectile.svg) 
 
-## Activity diagram for the class Ufo
+## Activity-Diagram: Ufo
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Ufo.svg) 
+
+## Activity-Diagram: Ship
+![](Documentation/Diagrams/Asteroids_ActivityDiagram-Ship.svg) 
 
