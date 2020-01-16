@@ -60,6 +60,7 @@ var L12_eiaSteroids;
         canvas.addEventListener("pointerup", shootLaser);
         canvas.addEventListener("pointerdown", chargeLaser);
         document.addEventListener("keydown", handleKeypress);
+        document.addEventListener("keyup", handleKeypress);
         canvas.addEventListener("pointermove", setHeading);
         window.setInterval(update, 1000 * frameTime);
     }
@@ -76,7 +77,7 @@ var L12_eiaSteroids;
         switch (_event.code) {
             case "ShiftLeft":
             case "ShiftRight":
-                ship.thrust();
+                ship.thrust(_event.type == "keydown");
                 break;
             case "Space": {
                 setGameState(GAMESTATE.PLAY);

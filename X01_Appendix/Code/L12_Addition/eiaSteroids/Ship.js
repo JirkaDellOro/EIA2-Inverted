@@ -35,7 +35,7 @@ var L12_eiaSteroids;
             this.energy = 1; // start with full energy
             this.coolDown = 0; // start with guns cool
             this.rotation = 0;
-            this.exhaust = false;
+            this.thrusting = false;
             this.charging = false;
             this.timeShield = 0;
             this.velocity = new L12_eiaSteroids.Vector();
@@ -46,18 +46,19 @@ var L12_eiaSteroids;
             if (!_on)
                 this.charged = 0;
         }
+        thrust(_on) {
+            this.thrusting = _on;
+        }
         head(_target) {
             let difference = L12_eiaSteroids.Vector.getDifference(_target, this.position);
             this.rotation = Math.atan2(difference.y, difference.x);
         }
-        thrust() {
+        accelerate() {
             this.energy -= Ship.energyToThrust;
             if (this.energy <= 0)
                 return;
             let change = L12_eiaSteroids.Vector.getPolar(this.rotation, Ship.acceleration);
             this.velocity.add(change);
-            // console.log(this.velocity);
-            this.exhaust = true;
             L12_eiaSteroids.Sound.play("thrust");
         }
         draw() {
@@ -75,10 +76,9 @@ var L12_eiaSteroids;
             L12_eiaSteroids.crc2.stroke();
             this.gunLeft.draw(this.charged, color);
             this.gunRight.draw(this.charged, color);
-            if (this.exhaust)
+            if (this.thrusting)
                 this.drawExhaust();
             L12_eiaSteroids.crc2.restore();
-            this.exhaust = false;
         }
         drawExhaust() {
             L12_eiaSteroids.crc2.moveTo(0, 0);
@@ -100,6 +100,8 @@ var L12_eiaSteroids;
                 this.energy += _timeslice / Ship.timeEnergyRestore;
                 this.energy = Math.min(1, Math.max(0, this.energy));
             }
+            if (this.thrusting)
+                this.accelerate();
             this.velocity.scale(0.99);
             super.move(_timeslice);
         }

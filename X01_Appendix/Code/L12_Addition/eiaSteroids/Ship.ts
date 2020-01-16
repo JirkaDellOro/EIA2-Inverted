@@ -44,7 +44,7 @@ namespace L12_eiaSteroids {
     public coolDown: number = 0; // start with guns cool
 
     private rotation: number = 0;
-    private exhaust: boolean = false;
+    private thrusting: boolean = false;
     private charging: boolean = false;
     private timeShield: number = 0;
 
@@ -60,21 +60,23 @@ namespace L12_eiaSteroids {
       if (!_on)
         this.charged = 0;
     }
+    
+    public thrust(_on: boolean): void {
+      this.thrusting = _on;
+    }
 
     public head(_target: Vector): void {
       let difference: Vector = Vector.getDifference(_target, this.position);
       this.rotation = Math.atan2(difference.y, difference.x);
     }
 
-    public thrust(): void {
+    public accelerate(): void {
       this.energy -= Ship.energyToThrust;
       if (this.energy <= 0)
         return;
 
       let change: Vector = Vector.getPolar(this.rotation, Ship.acceleration);
       this.velocity.add(change);
-      // console.log(this.velocity);
-      this.exhaust = true;
       Sound.play("thrust");
     }
 
@@ -96,11 +98,10 @@ namespace L12_eiaSteroids {
       this.gunLeft.draw(this.charged, color);
       this.gunRight.draw(this.charged, color);
 
-      if (this.exhaust)
+      if (this.thrusting)
         this.drawExhaust();
 
       crc2.restore();
-      this.exhaust = false;
     }
 
     public drawExhaust(): void {
@@ -124,6 +125,9 @@ namespace L12_eiaSteroids {
         this.energy += _timeslice / Ship.timeEnergyRestore;
         this.energy = Math.min(1, Math.max(0, this.energy));
       }
+
+      if (this.thrusting)
+        this.accelerate();
 
       this.velocity.scale(0.99);
       super.move(_timeslice);
