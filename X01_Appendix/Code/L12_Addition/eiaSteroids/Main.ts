@@ -291,16 +291,10 @@ namespace L12_eiaSteroids {
         points = POINTS.ASTEROID_BIG;
       else
         points = POINTS.ASTEROID_MEDIUM;
-      return;
-    }
-    if (_expended instanceof UfoSmall) {
+    } else if (_expended instanceof UfoSmall)
       points = POINTS.UFO_SMALL;
-      return;
-    }
-    if (_expended instanceof Ufo) {
+    else if (_expended instanceof Ufo)
       points = POINTS.UFO_LARGE;
-      return;
-    }
 
     Info.score += points;
   }
