@@ -262,9 +262,16 @@ var L12_eiaSteroids;
                 points = POINTS.ASTEROID_BIG;
             else
                 points = POINTS.ASTEROID_MEDIUM;
+            return;
         }
-        if (_expended instanceof L12_eiaSteroids.Ufo)
+        if (_expended instanceof L12_eiaSteroids.UfoSmall) {
+            points = POINTS.UFO_SMALL;
+            return;
+        }
+        if (_expended instanceof L12_eiaSteroids.Ufo) {
             points = POINTS.UFO_LARGE;
+            return;
+        }
         L12_eiaSteroids.Info.score += points;
     }
     /**
