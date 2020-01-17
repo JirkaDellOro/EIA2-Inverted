@@ -1,6 +1,7 @@
 <script>
   function printMe() {
     let w = window.open();
+    w.document.body.innerHTML = document.querySelector("section").innerHTML;
     w.print();
     w.close();
   }
