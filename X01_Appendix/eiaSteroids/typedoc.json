@@ -1,0 +1,8 @@
+{
+    "mode": "file",
+    "out": "Documentation/Code",
+    "name": "eiaSteroid",
+    "readme": "none",
+    "ignoreCompilerErrors": "true",
+    "entryPoint": "eiaSteroids"
+}
