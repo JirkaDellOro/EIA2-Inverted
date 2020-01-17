@@ -1,4 +1,4 @@
-<a onclick='alert("Hallo")'>Test click</a>
+<button onclick='alert("Hallo")'>Test</button>
 ## Anhang
 
 # 1. Unified Modelling Language
