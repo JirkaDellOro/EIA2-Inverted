@@ -75,13 +75,13 @@ console.log(patronus);
 <tr></tr>
 <tr><td><img src="UML/LoopPreTest.svg"/></td></tr>
 <tr>
-<table><tr><td>Option 1<pre lang="typescript">
+<table><tr><td valign="top">Option 1<pre lang="typescript">
 let i: number = 0;
 while (i < 10) {
   console.log(i);
   i++;
 }
-</pre></td><td>Option 2<pre lang="typescript">
+</pre></td><td valign="top">Option 2<pre lang="typescript">
 for (let i: number = 0; i < 10; i++)
   console.log(i);
 </pre></td></tr>
