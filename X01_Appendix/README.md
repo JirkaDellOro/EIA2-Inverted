@@ -1,6 +1,8 @@
 <script>
   function printMe() {
-    alert("Hallo");
+    let w = window.open();
+    w.print();
+    w.close();
   }
 </script>
 <button onclick="printMe()">Test</button>
