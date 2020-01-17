@@ -116,6 +116,9 @@ namespace L12_eiaSteroids {
     }
 
     public move(_timeslice: number): void {
+      this.velocity.scale(0.99);
+      super.move(_timeslice);
+
       this.coolDown = (Math.max(0, this.coolDown - _timeslice / Ship.timeCooling));
       this.timeShield = (Math.max(0, this.timeShield - _timeslice));
 
@@ -130,9 +133,6 @@ namespace L12_eiaSteroids {
 
       if (this.thrusting)
         this.accelerate();
-
-      this.velocity.scale(0.99);
-      super.move(_timeslice);
     }
 
     public hit(): void {
