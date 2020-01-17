@@ -8,4 +8,11 @@ body {
   display: grid;
   align-content: center;
   text-align: center;
+  font-family: "Quantum";
 }
+
+@font-face{
+  font-family:"Quantum";
+  src:url('Font/Quantum\ 400.otf');
+ }
+ 

@@ -18,7 +18,7 @@ var L12_eiaSteroids;
         static display(ship) {
             L12_eiaSteroids.crc2.save();
             L12_eiaSteroids.crc2.textAlign = "right";
-            L12_eiaSteroids.crc2.font = "40px Consolas";
+            L12_eiaSteroids.crc2.font = "40px Quantum";
             Info.barEnergy.draw(ship.energy, "#80ff8080", ship.energy <= 0 ? "grey" : "white");
             Info.barCharge.draw(ship.charged, L12_eiaSteroids.getColorCharge(ship.charged, 0.8), ship.coolDown > 0 ? "grey" : "white");
             L12_eiaSteroids.crc2.fillStyle = "white";
@@ -34,30 +34,34 @@ var L12_eiaSteroids;
         static displayStartText() {
             L12_eiaSteroids.crc2.save();
             L12_eiaSteroids.crc2.fillStyle = "white";
-            L12_eiaSteroids.crc2.font = "120px Consolas";
+            L12_eiaSteroids.crc2.font = "120px Quantum";
             L12_eiaSteroids.crc2.textAlign = "center";
             L12_eiaSteroids.crc2.strokeText("eiaSteroids", L12_eiaSteroids.crc2.canvas.width / 2, L12_eiaSteroids.crc2.canvas.height * 0.38);
-            L12_eiaSteroids.crc2.font = "40px Consolas";
-            L12_eiaSteroids.crc2.textAlign = "left";
+            L12_eiaSteroids.crc2.font = "40px Quantum";
             let text = [
-                "heading:     mouse",
-                "charge guns: hold",
-                "fire guns:   release",
-                "thrust:      shift",
-                "start:       space"
+                ["heading: ", " mouse"],
+                ["charge guns: ", " hold"],
+                ["fire guns: ", " release"],
+                ["thrust: ", " shift"],
+                ["start: ", " space"]
             ];
-            let y = L12_eiaSteroids.crc2.canvas.height * 0.62;
-            for (let line of text)
-                L12_eiaSteroids.crc2.fillText(line, 50, y += 40);
+            let y = L12_eiaSteroids.crc2.canvas.height * 0.7;
+            for (let line of text) {
+                L12_eiaSteroids.crc2.textAlign = "right";
+                L12_eiaSteroids.crc2.fillText(line[0], L12_eiaSteroids.crc2.canvas.width / 2, y);
+                L12_eiaSteroids.crc2.textAlign = "left";
+                L12_eiaSteroids.crc2.fillText(line[1], L12_eiaSteroids.crc2.canvas.width / 2, y);
+                y += 40;
+            }
             L12_eiaSteroids.crc2.restore();
         }
         static displayOverText() {
             L12_eiaSteroids.crc2.save();
             L12_eiaSteroids.crc2.fillStyle = "white";
-            L12_eiaSteroids.crc2.font = "120px Consolas";
+            L12_eiaSteroids.crc2.font = "110px Quantum";
             L12_eiaSteroids.crc2.textAlign = "center";
             L12_eiaSteroids.crc2.strokeText("GAME OVER", L12_eiaSteroids.crc2.canvas.width / 2, L12_eiaSteroids.crc2.canvas.height * 0.38);
-            L12_eiaSteroids.crc2.font = "40px Consolas";
+            L12_eiaSteroids.crc2.font = "40px Quantum";
             L12_eiaSteroids.crc2.fillText("press F5 to restart", L12_eiaSteroids.crc2.canvas.width / 2, L12_eiaSteroids.crc2.canvas.height * 0.62);
             L12_eiaSteroids.crc2.restore();
         }

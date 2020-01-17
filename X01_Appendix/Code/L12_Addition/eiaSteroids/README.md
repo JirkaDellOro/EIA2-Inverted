@@ -1,4 +1,6 @@
 # eiaSteroids
+
+![](Img/Splash.png)
 Welcome to this example project demonstrating the skills taught in the course  
 **Entwicklung interaktiver Anwendungen II (EIA2)**  
 at the Hochschule Furtwangen University (HFU)  
@@ -10,17 +12,17 @@ Most prominent are the skills to design complex software solutions using UML dia
 - [Design Documentation](#design-documentation)  
 
 ## Production
-Programming skills are required to prove the designs and to reiterate them. Also a designer must be capable of creating prototypes herself in order to tinker and come up with new ideas. Here is the game designed:
+Programming skills are required to prove the designs and to reiterate them. Also a designer must be capable of creating prototypes herself in order to tinker and come up with new ideas. Click on the link below to play the game designed:  
 
-- [Play **eiaSteroids**](eiaSteroids.html)
+https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/Code/L12_Addition/eiaSteroids/eiaSteroids.html
 
 Find the code here
-- [Code](https://github.com/JirkaDellOro/EIA2-Inverted/tree/master/X01_Appendix/Code/L12_Addition/eiaSteroids) 
+https://github.com/JirkaDellOro/EIA2-Inverted/tree/master/X01_Appendix/Code/L12_Addition/eiaSteroids
 
 ## Reference
 For completeness, this project also offers a code documentation automatically created by [TypeDoc](https://typedoc.org/), based on the comments in the code files in JSDoc format. See here:
 
-- [Reference](Documentation/Code/index.html)
+https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/Code/L12_Addition/eiaSteroids/Documentation/Code/index.html)
 
 ## Tools
 These are the tools used for this project and throughout the course.
@@ -32,7 +34,10 @@ These are the tools used for this project and throughout the course.
 - [draw.io](https://www.draw.io/)
 
 ## Notice
-eiaSteroids was created by Prof. Jirka Dell'Oro-Friedl at the HFU in 2020. Please contact me for questions at del@hs-furtwangen.de
+eiaSteroids was created by Prof. Jirka Dell'Oro-Friedl at the HFU in 2020.  
+If you have any questions, please contact me at del@hs-furtwangen.de
+
+<p style="page-break-after:always;"></p>  
 
 # Design Documentation
 The following documentation is a compilation of the finalized UML-diagrams created during the design, the production and the documentation of eiaSteroids. The first drafts where created with draw.io, the second draft by hand during the video shootings for the online course. Scans of the handmade diagrams can be found in the online course.  
