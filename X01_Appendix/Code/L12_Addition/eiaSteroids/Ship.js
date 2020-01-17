@@ -55,8 +55,10 @@ var L12_eiaSteroids;
         }
         accelerate() {
             this.energy -= Ship.energyToThrust;
-            if (this.energy <= 0)
+            if (this.energy <= 0) {
+                this.thrust(false);
                 return;
+            }
             let change = L12_eiaSteroids.Vector.getPolar(this.rotation, Ship.acceleration);
             this.velocity.add(change);
             L12_eiaSteroids.Sound.play("thrust");

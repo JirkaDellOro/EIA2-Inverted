@@ -60,7 +60,7 @@ namespace L12_eiaSteroids {
       if (!_on)
         this.charged = 0;
     }
-    
+
     public thrust(_on: boolean): void {
       this.thrusting = _on;
     }
@@ -72,8 +72,10 @@ namespace L12_eiaSteroids {
 
     public accelerate(): void {
       this.energy -= Ship.energyToThrust;
-      if (this.energy <= 0)
+      if (this.energy <= 0) {
+        this.thrust(false);
         return;
+      }
 
       let change: Vector = Vector.getPolar(this.rotation, Ship.acceleration);
       this.velocity.add(change);
