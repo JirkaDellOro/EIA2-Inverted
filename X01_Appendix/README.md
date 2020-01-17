@@ -1,4 +1,9 @@
-<button onclick='alert("Hallo")'>Test</button>
+<script>
+  function printMe() {
+    alert("Hallo");
+  }
+</script>
+<button onclick="printMe()">Test</button>
 ## Anhang
 
 # 1. Unified Modelling Language
