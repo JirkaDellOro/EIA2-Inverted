@@ -42,6 +42,7 @@ console.log(", my dear");
 </pre></td></tr>
 </table>
 
+<p style="page-break-after:always;"></p>  
 
 <table>
 <th align="left">Multiple Conditions</th>
