@@ -1,4 +1,4 @@
-# Entwicklung interaktiver Anwendungen | Anhang
+# Anhang
 ## 1. Unified Modelling Language
 ### 1.1. Activity Diagrams
 #### 1.1.1. Elements
