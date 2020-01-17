@@ -14,15 +14,25 @@ Most prominent are the skills to design complex software solutions using UML dia
 ## Production
 Programming skills are required to prove the designs and to reiterate them. Also a designer must be capable of creating prototypes herself in order to tinker and come up with new ideas. Click on the link below to play the game designed:  
 
+<a href="
 https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/Code/L12_Addition/eiaSteroids/eiaSteroids.html
+">
+https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/Code/L12_Addition/eiaSteroids/eiaSteroids.html
+</a>  
 
-Find the code here
+Find the code here:  
+
+<a href="
+https://github.com/JirkaDellOro/EIA2-Inverted/tree/master/X01_Appendix/Code/L12_Addition/eiaSteroids
+">
 https://github.com/JirkaDellOro/EIA2-Inverted/tree/master/X01_Appendix/Code/L12_Addition/eiaSteroids
 
 ## Reference
 For completeness, this project also offers a code documentation automatically created by [TypeDoc](https://typedoc.org/), based on the comments in the code files in JSDoc format. See here:
-
-https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/Code/L12_Addition/eiaSteroids/Documentation/Code/index.html)
+<a href="
+https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/Code/L12_Addition/eiaSteroids/Documentation/Code/index.html
+">
+https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/Code/L12_Addition/eiaSteroids/Documentation/Code/index.html
 
 ## Tools
 These are the tools used for this project and throughout the course.
