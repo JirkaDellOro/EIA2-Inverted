@@ -102,7 +102,7 @@ do {
 </table>
 
 <table>
-<th align="left">Complex</th>
+<th align="left">Complex Control</th>
 <tr></tr>
 <tr><td><img src="UML/LoopComplex.svg"/></td></tr>
 <tr><td><pre lang="typescript">
