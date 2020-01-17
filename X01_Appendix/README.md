@@ -87,3 +87,18 @@ for (let i: number = 0; i < 10; i++)
 </pre></td></tr>
 </table></tr>
 </table>
+
+<table>
+<th align="left">Post Test</th>
+<tr></tr>
+<tr><td><img src="UML/LoopPostTest.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+let i: number = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 10);
+</pre></td></tr>
+</table>
+
+
