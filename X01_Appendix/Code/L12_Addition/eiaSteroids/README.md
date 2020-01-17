@@ -41,7 +41,12 @@ The activity diagrams are not complete, since many small functions were trivial 
 ## Scribble
 ![](Documentation/Diagrams/Asteroids_Scribble.svg)
 
+<p style="page-break-after:always;"></p>  
+
 ## Use-Case-Diagram
+
+<p style="page-break-after:always;"></p>  
+
 ![](Documentation/Diagrams/Asteroids_UseCaseDiagram.svg)
 
 ## Class-Diagram
