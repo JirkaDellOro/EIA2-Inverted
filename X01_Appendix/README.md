@@ -1,30 +1,28 @@
 # Anhang
+
 ## 1. Unified Modelling Language
+
 ### 1.1. Activity Diagrams
+
 #### 1.1.1. Elements
 ![](UML/Elements.png)
+
 #### 1.1.2. Basic flow structures
-|Linear|
-|---|
-| ```typescript asdv ```|
-
-
-
-| a    | b    |
-|------|------|
-| asfv | asvd |
-|<img src="Img/Video.jpg" width=25%/>|<pre lang="typwscript">
-types
-cript
-</pre>|
+<table>
+<th>Linear</th>
+<tr><td><img src="Uml/BasicLinear.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+console.log("Hello");
+</pre></td></tr>
+</table>
 
 <table>
-<tr><td><img src="Img/Video.jpg" width=25%/></td><td>b</td></tr>
-<tr><td>c</td><td>
-  
-```typescript
-let a: number;
-typescript
-```
-</td></tr>
+<th>Conditional</th>
+<tr><td><img src="Uml/BasicConditional.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+...
+if (!(x > 1))
+  console.log("Hello");
+</pre></td></tr>
 </table>
+
