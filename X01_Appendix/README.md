@@ -28,3 +28,17 @@ if (!(x > 1))
 </pre></td></tr>
 </table>
 
+<table>
+<th>Exclusive Conditional</th>
+<tr></tr>
+<tr><td><img src="UML/BasicExclusive.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+...
+if (x > 1)
+  console.log("Goodbye");
+else
+  console.log("Hello");
+console.log(", my dear");
+</pre></td></tr>
+</table>
+
