@@ -46,14 +46,25 @@ console.log(", my dear");
 <table>
 <th align="left">Multiple Conditions</th>
 <tr></tr>
-<tr><td><img src="UML/BasicExclusive.svg"/></td></tr>
+<tr><td><img src="UML/BasicMultiple.svg"/></td></tr>
 <tr><td><pre lang="typescript">
 ...
-if (x > 1)
-  console.log("Goodbye");
-else
-  console.log("Hello");
-console.log(", my dear");
+let patronus: string;
+switch (person) {
+  case "Harry":
+    patronus = "Deer";
+    break;
+  case "Hermine":
+    patronus = "Otter";
+    break;
+  case "Ron":
+    patronus = "Rat";
+    break;
+  default:
+    patronus = "not found";
+    break;
+}
+console.log(patronus);
 </pre></td></tr>
 </table>
 
