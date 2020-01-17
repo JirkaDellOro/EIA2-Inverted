@@ -21,9 +21,10 @@ cript
 <table>
 <tr><td><img src="Img/Video.jpg" width=25%/></td><td>b</td></tr>
 <tr><td>c</td><td>
-<pre lang="typescript">
+  
+```typescript
 let a: number;
 typescript
-</pre>
+```
 </td></tr>
 </table>
