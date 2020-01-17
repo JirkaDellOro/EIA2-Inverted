@@ -44,29 +44,40 @@ The activity diagrams are not complete, since many small functions were trivial 
 <p style="page-break-after:always;"></p>  
 
 ## Use-Case-Diagram
+![](Documentation/Diagrams/Asteroids_UseCaseDiagram.svg)
 
 <p style="page-break-after:always;"></p>  
 
-![](Documentation/Diagrams/Asteroids_UseCaseDiagram.svg)
-
 ## Class-Diagram
 ![](Documentation/Diagrams/Asteroids_ClassDiagram.svg)
+
+<p style="page-break-after:always;"></p>  
 
 ## Activity-Diagrams: main program
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Main_1.svg)  
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Main_2.svg)
 
+<p style="page-break-after:always;"></p>  
+
 ## Activity-Diagram: Moveable
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Moveable.svg) 
+
+<p style="page-break-after:always;"></p>  
 
 ## Activity-Diagram: Asteroid
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Asteroid.svg) 
 
+<p style="page-break-after:always;"></p>  
+
 ## Activity-Diagram: Projectile
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Projectile.svg) 
 
+<p style="page-break-after:always;"></p>  
+
 ## Activity-Diagram: Ufo
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Ufo.svg) 
+
+<p style="page-break-after:always;"></p>  
 
 ## Activity-Diagram: Ship
 ![](Documentation/Diagrams/Asteroids_ActivityDiagram-Ship.svg) 
