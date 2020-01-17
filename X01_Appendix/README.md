@@ -10,7 +10,7 @@
 #### 1.1.2. Basic flow structures
 <table>
 <th>Linear</th>
-<tr><td><img src="Uml/BasicLinear.svg"/></td></tr>
+<tr><td><img src="UML/BasicLinear.svg"/></td></tr>
 <tr><td><pre lang="typescript">
 console.log("Hello");
 </pre></td></tr>
@@ -18,7 +18,7 @@ console.log("Hello");
 
 <table>
 <th>Conditional</th>
-<tr><td><img src="Uml/BasicConditional.svg"/></td></tr>
+<tr><td><img src="UML/BasicConditional.svg"/></td></tr>
 <tr><td><pre lang="typescript">
 ...
 if (!(x > 1))
