@@ -1,4 +1,4 @@
-# Entwicklung interaktiver Anwendungen | Anhang
+# Anhang
 ## 1. Unified Modelling Language
 ### 1.1. Activity Diagrams
 #### 1.1.1. Elements
@@ -13,16 +13,17 @@
 | a    | b    |
 |------|------|
 | asfv | asvd |
-|<img src="Img/Video.jpg" width=25%/>|```types\
-cript```|
+|<img src="Img/Video.jpg" width=25%/>|<pre lang="typwscript">
+types
+cript
+</pre>|
 
 <table>
 <tr><td><img src="Img/Video.jpg" width=25%/></td><td>b</td></tr>
 <tr><td>c</td><td>
-<code>
+<pre lang="typescript">
 let a: number;
 typescript
-ef
-</code>
+</pre>
 </td></tr>
 </table>
