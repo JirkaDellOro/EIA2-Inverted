@@ -9,7 +9,7 @@
 
 #### 1.1.2. Basic flow structures
 <table>
-<th>Linear</th>
+<th align="left">Linear</th>
 <tr></tr>
 <tr><td><img src="UML/BasicLinear.svg"/></td></tr>
 <tr><td><pre lang="typescript">
@@ -18,7 +18,7 @@ console.log("Hello");
 </table>
 
 <table>
-<th>Conditional</th>
+<th align="left">Conditional</th>
 <tr></tr>
 <tr><td><img src="UML/BasicConditional.svg"/></td></tr>
 <tr><td><pre lang="typescript">
@@ -29,7 +29,7 @@ if (!(x > 1))
 </table>
 
 <table>
-<th>Exclusive Conditional</th>
+<th align="left">Exclusive Conditional</th>
 <tr></tr>
 <tr><td><img src="UML/BasicExclusive.svg"/></td></tr>
 <tr><td><pre lang="typescript">
@@ -41,4 +41,20 @@ else
 console.log(", my dear");
 </pre></td></tr>
 </table>
+
+
+<table>
+<th align="left">Multiple Conditions</th>
+<tr></tr>
+<tr><td><img src="UML/BasicExclusive.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+...
+if (x > 1)
+  console.log("Goodbye");
+else
+  console.log("Hello");
+console.log(", my dear");
+</pre></td></tr>
+</table>
+
 
