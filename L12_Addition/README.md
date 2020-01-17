@@ -233,4 +233,5 @@ Der mobile Twitter Client ist eine Progressive Web App
 <a href="https://drive.google.com/open?id=1hDPTTa-cCJcffHAXh2lPPgQEmLGPp9Ls"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 
-## [Hier geht's zu **eiaSteroids**](../X01_Appendix/Code/L12_Addition/eiaSteroids)
+## eiaSteroids
+Das Beispielprojekt hat nun auch diesen eigenen und eigenwilligen Namen bekommen. Schau es dir genau an, insbesondere die finale Dokumentation. Es ist beispielhaft für deine Abschlussarbeit und Du solltest dich daran orientieren! Hier geht's also zu [**eiaSteroids**](../X01_Appendix/eiaSteroids)
