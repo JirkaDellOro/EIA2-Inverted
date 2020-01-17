@@ -1,13 +1,13 @@
-# Anhang
+## Anhang
 
-## 1. Unified Modelling Language
+# 1. Unified Modelling Language
 
-### 1.1. Activity Diagrams
+## 1.1. Activity Diagrams
 
-#### 1.1.1. Elements
+### 1.1.1. Elements
 ![](UML/Elements.png)
 
-#### 1.1.2. Basic flow structures
+### 1.1.2. Basic flow structures
 <table>
 <th align="left">Linear</th>
 <tr></tr>
@@ -68,4 +68,20 @@ console.log(patronus);
 </pre></td></tr>
 </table>
 
+### 1.1.3. Loops
 
+<table>
+<th align="left">Pre Test</th>
+<tr></tr>
+<tr><td><img src="UML/LoopPreTest.svg"/></td></tr>
+<tr><td>Option 1<pre lang="typescript">
+let i: number = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+</pre></td><td>Option 2<pre lang="typescript">
+for (let i: number = 0; i < 10; i++)
+  console.log(i);
+</pre></td></tr>
+</table>
