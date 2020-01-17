@@ -74,7 +74,8 @@ console.log(patronus);
 <th align="left">Pre Test</th>
 <tr></tr>
 <tr><td><img src="UML/LoopPreTest.svg"/></td></tr>
-<tr><td>Option 1<pre lang="typescript">
+<tr>
+<table><tr><td>Option 1<pre lang="typescript">
 let i: number = 0;
 while (i < 10) {
   console.log(i);
@@ -84,4 +85,5 @@ while (i < 10) {
 for (let i: number = 0; i < 10; i++)
   console.log(i);
 </pre></td></tr>
+</table></tr>
 </table>
