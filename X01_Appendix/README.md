@@ -101,4 +101,19 @@ do {
 </pre></td></tr>
 </table>
 
+<table>
+<th align="left">Complex</th>
+<tr></tr>
+<tr><td><img src="UML/LoopComplex.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+for (let i: number = b; i > 1; i/=2) {
+  if (i == 3)
+    continue;
+  if (i == a)
+    break;
+  console.log(i);
+}
+</pre></td></tr>
+</table>
+
 
