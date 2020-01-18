@@ -11,7 +11,15 @@
     document.body.innerHTML = bodyHTML;
   }" >Print</button> 
 
-**Anhang**
+<div align="center">
+<h1>Entwicklung interaktiver Anwendungen</h1>
+<h2>Cheatsheet | Booklet | Excerpt</h2>
+V1.0, 1/2020<br/>
+Prof. Jirka Dell'Oro-Friedl<br/>
+Hochschule Furtwangen University
+</div>
+
+<p style="page-break-after:always;"></p>  
 
 # 1. Unified Modelling Language
 Digital Media Designers need a precise and international language to create ideas and convey their designs to a team of developers. 
@@ -38,8 +46,6 @@ There may be various user roles using different interactions the system offers.
 
 User roles may be extended to access more interactions, e.g. Power-User extends User.
 Use cases may include internal use cases that can also be depicted in the diagram.
-
-<p style="page-break-after:always;"></p>  
 
 ## 1.2. **Activity Diagram**
 This type of diagram is arguably the most versatile of the UML diagrams.
@@ -542,10 +548,14 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 ### 3.2.6. Bitweise Operatoren
 Damit werden direkt Bitmuster manipuliert. Siehe [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
+<p style="page-break-after:always;"></p>  
+
 # 4. Hierarchy of DOM-Classes
 <div id="DOM" style="transform:rotate(-90deg); height:64em; width:64em">
 <img src="DO-Hierarchy/DOM-Classhierachy.svg" style="height:100%; width:100%; top:-11em;position:absolute"/>
 </div>
+
+<p style="page-break-after:always;"></p>  
 
 # 5. Topology/Technology
 <img src="Landscape/EIA2Landscape2019.png" style="height:80%; width:80%;"/>
