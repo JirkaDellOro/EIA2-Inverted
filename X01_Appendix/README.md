@@ -64,6 +64,8 @@ and the initial problem is solved.
 ### 1.2.1. Elements
 ![](UML/Elements.svg)
 
+<p style="page-break-after:always;"></p>
+
 ### 1.2.2. Basic flow structure
 <table>
 <th align="left">Linear</th>
@@ -123,6 +125,8 @@ switch (person) {
 console.log(patronus);
 </pre></td></tr>
 </table>
+
+<p style="page-break-after:always;"></p>
 
 ### 1.2.3. Loop
 
@@ -187,6 +191,7 @@ for (let key in o) {
 </pre></td></tr>
 </table>
 
+<p style="page-break-after:always;"></p>
 
 <table>
 <th align="left">All values</th>
@@ -314,6 +319,8 @@ done waiting for something
 
 ![](UML/Partition.svg)
 
+<p style="page-break-after:always;"></p>
+
 ## 1.3. Class Diagram
 The class diagram models complex structures of information used in the system designed.
 The focus is less on the activities within the system, but on the data those activities are applied to. 
@@ -429,9 +436,13 @@ Course: Art
 • Student 2: Dali
 ```
 
+<p style="page-break-after:always;"></p>
+
 # 2. Design Process
 
 ![](UML/AD_Konzeption.svg)
+
+<p style="page-break-after:always;"></p>
 
 # 3. Production
 ## 3.1. Coding Style
