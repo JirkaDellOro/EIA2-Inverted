@@ -275,10 +275,35 @@ window.setTimeout(greet, 2000);
 </pre></td></tr>
 </table>
 
-<p style="page-break-after:always;"></p>  
+<table>
+<th align="left">Parallel Processing</th>
+<tr></tr>
+<tr><td><img src="UML/Parallel.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+waitForSomething();
+doSomethingElse();
+<br/>
+async function waitForSomething(): Promise<void> {
+  console.log("starting to wait for something")
+  await something();
+  console.log("done waiting for something");
+}
+<br/>
+function doSomethingElse(): void {
+  console.log("doing something else")
+}
+</pre></td></tr>
+</table>
 
-### 1.2.6. Parallel Processing
-### 1.2.7. Cross Domain Aktivity
+**Output**  
+```plaintext
+starting to wait for something
+doing something else
+done waiting for something
+```
+### 1.2.6. Activity Partitions
+
+![](UML/Partition.svg)
 
 ## 1.3. Class Diagram
 The class diagram models complex structures of information used in the system designed.
@@ -394,6 +419,7 @@ Course: Art
 • Student 0: Heisenberg
 • Student 2: Dali
 ```
+
 # 2. Design Process
 
 ![](UML/AD_Konzeption.svg)
