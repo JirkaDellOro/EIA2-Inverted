@@ -12,12 +12,14 @@
 
 # 1. Unified Modelling Language
 
-## 1.1. Activity Diagrams
+## 1.1. Use Case Diagram
 
-### 1.1.1. Elements
+## 1.2. Activity Diagram
+
+### 1.2.1. Elements
 ![](UML/Elements.svg)
 
-### 1.1.2. Basic flow structures
+### 1.2.2. Basic flow structure
 <table>
 <th align="left">Linear</th>
 <tr></tr>
@@ -79,7 +81,7 @@ console.log(patronus);
 </pre></td></tr>
 </table>
 
-### 1.1.3. Loops
+### 1.2.3. Loop
 
 <table>
 <th align="left">Pre Test</th>
@@ -155,7 +157,7 @@ for (let value of o) {
 </pre></td></tr>
 </table>
 
-### 1.1.4 Subactivity
+### 1.2.4 Subactivity
 
 <table>
 <th align="left">Subactivity simple</th>
@@ -206,5 +208,35 @@ class Greeter {
     return greeting;
   }
 }
+</pre></td></tr>
+</table>
+
+### 1.2.5 Signals
+
+<table>
+<th align="left">Accept Event</th>
+<tr></tr>
+<tr><td><img src="UML/SignalAccept.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+someEventTarget.addEventListener("triggerGreet", greet);
+</pre></td></tr>
+</table>
+
+<table>
+<th align="left">Send Signal</th>
+<tr></tr>
+<tr><td><img src="UML/SignalSend.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+let event: Event = new Event("triggerGreet");
+someEventTarget.dispatchEvent(event);
+</pre></td></tr>
+</table>
+
+<table>
+<th align="left">Accept Time Event</th>
+<tr></tr>
+<tr><td><img src="UML/SignalTime.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+window.setTimeout(greet, 2000);
 </pre></td></tr>
 </table>
