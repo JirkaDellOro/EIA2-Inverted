@@ -542,13 +542,15 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 ### 3.2.6. Bitweise Operatoren
 Damit werden direkt Bitmuster manipuliert. Siehe [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
-# 4. DOM-Klassenhierarchie
+# 4. Hierarchy of DOM-Classes
 <div id="DOM" style="transform:rotate(-90deg); height:64em; width:64em">
 <img src="DO-Hierarchy/DOM-Classhierachy.svg" style="height:100%; width:100%; top:-11em;position:absolute"/>
 </div>
 
-# x. Ressources
+# 5. Topology/Technology
+![](Landscape/EIA2Landscape2019.png)
 
+# 6. Ressources
 - Object Management Group. (2015, Mai). About the Unified Modeling Language Specification Version 2.5. Abgerufen 18. Januar 2020, von https://www.omg.org/spec/UML/2.5
 - Kecher, C., Salvanos, A., & Hoffmann-Elbern, R. (2017). UML 2.5: Das umfassende Handbuch. Ausgabe 2018. Inkl. DIN A2-Poster mit allen Diagrammtypen. Bonn: Rheinwerk Verlag GmbH.
 - Oestereich, B., & Scheithauer, A. (2013). Analyse Und Design Mit Der Uml 2.5: Objektorientierte Softwareentwicklung (German Edition) (11th 11., Umfassend Uberarbeitete Und Aktualisierte Auflage ed.). München: Walter de Gruyter.
