@@ -259,6 +259,8 @@ class Greeter {
 </pre></td></tr>
 </table>
 
+<p style="page-break-after:always;"></p>
+
 ### 1.2.5. Signals
 
 <table>
@@ -505,6 +507,7 @@ https://github.com/basarat/typescript-book/blob/master/docs/styleguide/styleguid
 https://github.com/Platypi/style_typescript  
 https://github.com/excelmicro/typescript
 
+<p style="page-break-after:always;"></p>
 
 ## 3.2. Operatoren
 Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
@@ -569,7 +572,7 @@ Damit werden direkt Bitmuster manipuliert. Siehe [MDN](https://developer.mozilla
 <p style="page-break-after:always;"></p>  
 
 # 5. Topology/Technology
-<img src="Landscape/EIA2Landscape2019.png" style="height:80%; width:80%;"/>
+<img src="Landscape/EIA2Landscape2019.png" style="height:88%; width:88%;"/>
 
 # 6. Ressources
 - Object Management Group. (2015, Mai). About the Unified Modeling Language Specification Version 2.5. Abgerufen 18. Januar 2020, von https://www.omg.org/spec/UML/2.5
