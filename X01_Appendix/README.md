@@ -242,3 +242,13 @@ window.setTimeout(greet, 2000);
 </table>
 
 ## 1.3. Class Diagram
+### 1.3.1. Legend
+|  Symbol/Format  | Meaning               |
+|:---------------:|-----------------------|
+|        +        | public                |
+|        #        | protected             |
+|        -        | private               |
+|   underlined    | static                |
+|     italic      | abstract              |
+| << interface >> | specifies interface   |
+|   << enum >>    | specifies enumeration |
