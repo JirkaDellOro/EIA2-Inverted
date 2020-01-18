@@ -1,5 +1,3 @@
-# eiaSteroids
-
 ![](Img/Splash.png)
 Welcome to this example project demonstrating the skills taught in the course  
 **Entwicklung interaktiver Anwendungen II (EIA2)**  

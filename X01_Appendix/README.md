@@ -240,3 +240,5 @@ someEventTarget.dispatchEvent(event);
 window.setTimeout(greet, 2000);
 </pre></td></tr>
 </table>
+
+## 1.3. Class Diagram
