@@ -492,14 +492,14 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 ### 3.2.1. Zuweisungsoperator
 
 <table>
-<tr><td>Op</td><td>Beispiel</td><td>Beschreibung</td></tr>  
+<tr><td width="20px">Op</td><td width="70px">Beispiel</td><td>Beschreibung</td></tr>  
 <tr><td><code>=</code></td><td style="white-space:nowrap;"><code>x = 7;</code></td><td>Der Variablen auf der linken Seite wird der Wert auf der rechten Seite zugewiesen</td></tr>  
 </table>
 
 ### 3.2.2. Arithmetische Operatoren  
 
-<table width="100%">
-<tr><td>Op</td><td>Beispiel</td><td>Beschreibung</td></tr>  
+<table>
+<tr><td width="20px">Op</td><td width="70px">Beispiel</td><td>Beschreibung</td></tr>  
 <tr><td><code>+</code></td><td style="white-space:nowrap;"><code>x + 5;</code></td><td>Addition: Liefert das Ergebnis der Addition des linken und rechten Wertes ohne Speicherung.</td></tr>  
 <tr><td><code>-</code></td><td style="white-space:nowrap;"><code>17 - x;</code></td><td>Subtraktion: Liefert das Ergebnis der Subtraktion des linken und rechten Wertes ohne Speicherung.</td></tr>
 <tr><td><code>*</code></td><td style="white-space:nowrap;"><code>5 * x;</code></td><td>Multiplikation: Liefert das Ergebnis der Multiplikation des linken und rechten Wertes ohne Speicherung.</td></tr>
@@ -510,7 +510,7 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 ### 3.2.3. Kombinierte Operatoren  
 
 <table>
-<tr><td width="3em">Op</td><td width="10em">Beispiel</td><td>Beschreibung</td></tr>  
+<tr><td width="20px">Op</td><td width="70px">Beispiel</td><td>Beschreibung</td></tr>  
 <tr><td><code>+=</code></td><td style="white-space:nowrap;"><code>x += 19;</code></td><td>Additionszuweisung: Der Wert der Variablen wird um den rechtsstehenden Wert erhöht. Gleichbedeutend mit <code>x = x + 19;</code></td></tr>
 <tr><td><code>-=</code></td><td style="white-space:nowrap;"><code>x -= 3;</code></td><td>Subtraktionszuweisung: Der Wert der Variablen wird um den rechtsstehenden Wert vermindert. Gleichbedeutend mit <code>x = x - 3;</code></td></tr>
 <tr><td><code>*=</code></td><td style="white-space:nowrap;"><code>x *= 100;</code></td><td>Multiplikationszuweisung: Der Wert der Variablen wird um den rechtsstehenden Faktor erhöht. Gleichbedeutend mit <code>x = x *100;</code></td></tr>
@@ -522,7 +522,7 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 ### 3.2.4. Vergleichsoperatoren  
 
 <table>
-<tr><td width="3em">Op</td><td width="10em">Beispiel</td><td>Beschreibung</td></tr>  
+<tr><td width="20px">Op</td><td width="70px">Beispiel</td><td>Beschreibung</td></tr>  
 <tr><td><code>==</code></td><td style="white-space:nowrap;"><code>x == "AB"</code></td><td>Wertgleichheit: Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!</td></tr>
 <tr><td><code>===</code></td><td style="white-space:nowrap;"><code>x === "42"</code></td><td>Wert- und Typgleichheit: Liefert den Wert true, wenn die Wertgleichheit zutrifft und beide Ausdrücke auch vom gleichen Typ sind.</td></tr>
 <tr><td><code>!=</code></td><td style="white-space:nowrap;"><code>x != "AB"</code></td><td>Ungleichheit: Liefert den Wert true, wenn die Werte auf der linken und rechten Seite unterschiedlich sind.</td></tr>
@@ -535,7 +535,7 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 ### 3.2.5. Logische Operatoren  
 
 <table>
-<tr><td>Op</td><td>Beispiel</td><td>Beschreibung</td></tr>  
+<tr><td width="20px">Op</td><td width="70px">Beispiel</td><td>Beschreibung</td></tr>  
 <tr><td><code>&&</code></td><td style="white-space:nowrap;"><code>x>2 && x<9</code></td><td>Und: Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.</td></tr>  
 <tr><td><code>||</code></td><td style="white-space:nowrap;"><code>x<2 || x>9</code></td><td>Oder: Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.</td></tr>  
 <tr><td><code>!</code></td><td style="white-space:nowrap;"><code>!(x > 10)</code></td><td>Nicht: Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.</td></tr> 
