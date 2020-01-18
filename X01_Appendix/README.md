@@ -341,15 +341,16 @@ for (let course of courses) {
 }
 ```
 
-**Output**\
-Course: Physics\
-~ Docent: Prof. Einstein, age: 71\
-~ Student 1: Hawking\
-~ Student 0: Heisenberg\
-Course: Art\
-~ No docent assigned to this course\
-~ Student 0: Heisenberg\
-~ Student 2: Dali
+**Output**  
+Course: Physics  
+- Docent: Prof. Einstein, age: 71
+- Student 1: Hawking
+- Student 0: Heisenberg  
+
+Course: Art
+- No docent assigned to this course
+- Student 0: Heisenberg
+- Student 2: Dali
 
 # 2. Design
 
