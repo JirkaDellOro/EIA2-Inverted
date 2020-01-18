@@ -340,7 +340,8 @@ for (let course of courses) {
     console.log("~ Student " + student.getInfo());
 }
 ```
-> **Output**\
+
+**Output**\
 Course: Physics\
 ~ Docent: Prof. Einstein, age: 71\
 ~ Student 1: Hawking\
