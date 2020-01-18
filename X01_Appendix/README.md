@@ -247,6 +247,7 @@ window.setTimeout(greet, 2000);
 <img src="UML/ClassStructure.svg"/>  
 
 ### 1.3.2. Modifiers
+
 |  Symbol/Format  | Meaning               |
 |:---------------:|-----------------------|
 |        +        | public                |
@@ -264,7 +265,7 @@ window.setTimeout(greet, 2000);
 <th align="center">Typescript Code</th>
 <tr></tr>
 <tr><td valign="top"><br/><img src="UML/ClassExample.svg"/></td>
-<td valign="top"><pre lang="typescript" style="font-size:smaller">
+<td valign="top"><pre lang="typescript" style="font-size:x-small">
 interface Course {
   name: string;
   docent: Docent;
