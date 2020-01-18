@@ -332,26 +332,26 @@ for (let course of courses) {
   console.log("Course: " + course.name);
   
   if (course.docent)
-    console.log("~ Docent: " + course.docent.getInfo());
+    console.log("• Docent: " + course.docent.getInfo());
   else
-    console.warn("~ No docent assigned to this course");
+    console.warn("• No docent assigned to this course");
 
   for (let student of course.students)
-    console.log("~ Student " + student.getInfo());
+    console.log("• Student " + student.getInfo());
 }
 ```
 
 **Output**  
+```plaintext
 Course: Physics  
-- Docent: Prof. Einstein, age: 71
-- Student 1: Hawking
-- Student 0: Heisenberg  
-
+• Docent: Prof. Einstein, age: 71
+• Student 1: Hawking
+• Student 0: Heisenberg  
 Course: Art
-- No docent assigned to this course
-- Student 0: Heisenberg
-- Student 2: Dali
-
+• No docent assigned to this course
+• Student 0: Heisenberg
+• Student 2: Dali
+```
 # 2. Design
 
 <img src="UML/AD_Konzeption.svg"/>

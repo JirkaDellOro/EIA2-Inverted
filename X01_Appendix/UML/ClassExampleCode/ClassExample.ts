@@ -57,11 +57,11 @@ namespace ClassExample {
     console.log("Course: " + course.name);
     
     if (course.docent)
-      console.log("~ Docent: " + course.docent.getInfo());
+      console.log("• Docent: " + course.docent.getInfo());
     else
-      console.warn("~ No docent assigned to this course");
+      console.warn("• No docent assigned to this course");
 
     for (let student of course.students)
-      console.log("~ Student " + student.getInfo());
+      console.log("• Student " + student.getInfo());
   }
 }
