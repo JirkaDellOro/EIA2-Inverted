@@ -11,6 +11,18 @@
 **Anhang**
 
 # 1. Unified Modelling Language
+Digital Media Designers need a precise and international language to create ideas and convey their designs to a team of developers. 
+The Unified Modelling Language (UML) fulfills this requirement not only in the realm of software development,
+but for arbitrary complex systems. Its development started in the 1990s and is still going on. 
+It is standardized as ISO/IEC 19505.  
+
+This little booklet displays only three of the many types of diagrams UML defines:
+- Use Case Diagram
+- Activity Diagram
+- Class Diagram
+
+and of those only a subset of the features. 
+This resembles the minimum expertise a Digial Media Designer needs to show and should be sufficient to design systems of non trivial complexity. 
 
 ## 1.1. Use Case Diagram
 A use case diagram modells a system on a very high level of abstraction from the perspective of the user. 
