@@ -1,24 +1,13 @@
-<script>
-  function printMe() {
+<button id="printMe" style="float: right" onclick="{
     let bodyHTML = document.body.innerHTML;
-    let button = document.querySelector("button#printMe");
-    button.parentNode.removeChild(button);
-    let sectionHTML = document.querySelector("section").innerHTML;
-    document.body.innerHTML = sectionHTML;
-    print();
-    document.body.innerHTML = bodyHTML;
-  }
-</script>
-<button onclick="printMe()" id="printMe" float="right">Print</button>
-<button onclick="{
-    let bodyHTML = document.body.innerHTML;
-    let button = document.querySelector('button#printMe2');
+    let button = document.querySelector('button#printMe');
     button.parentNode.removeChild(button);
     let sectionHTML = document.querySelector('section').innerHTML;
     document.body.innerHTML = sectionHTML;
     print();
     document.body.innerHTML = bodyHTML;
-  }" id="printMe2" float="right">Print2</button>
+  }" >Print</button> 
+
 ## Anhang
 
 # 1. Unified Modelling Language
