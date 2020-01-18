@@ -258,3 +258,51 @@ window.setTimeout(greet, 2000);
 |   << enum >>    | specifies enumeration |
 
 ### 1.3.3. Example
+
+<table>
+<th align="center">Class Diagram</th>
+<th align="center">Typescript Code</th>
+<tr></tr>
+<tr><td valign="top"><br/><img src="UML/ClassExample.svg"/></td>
+<td valign="top"><pre lang="typescript">
+interface Course {
+  name: string;
+  docent: Docent;
+  students: Student[];
+}
+<br/>
+class Person {
+  public name: string;
+  protected age: number;
+  public constructor(_name: string, _age: number) {
+    this.name = _name;
+    this.age = _age;
+  }
+  public getInfo(): string {
+    return this.name;
+  }
+}
+<br/>
+class Docent extends Person {
+  private skills: string[] = [];
+  public getInfo(): string {
+    return "Prof. " + super.getInfo() + ", age: " + this.age;
+  }
+  public addSkill(_skill: string): void {
+    this.skills.push(_skill);
+  }
+}
+<br/>
+class Student extends Person {
+  private static nextNumber: number = 0;
+  private matriculation: number;
+  public constructor(_name: string, _age: number) {
+    super(_name, _age);
+    this.matriculation = Student.nextNumber;
+    Student.nextNumber++;
+  }
+  public getInfo(): string {
+    return  this.matriculation + ": " + super.getInfo();
+}
+</pre></td></tr>
+</table>
