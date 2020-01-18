@@ -8,13 +8,19 @@
     document.body.innerHTML = bodyHTML;
   }" >Print</button> 
 
-## Anhang
+**Anhang**
 
 # 1. Unified Modelling Language
 
 ## 1.1. Use Case Diagram
+A use case diagram modells a system on a very high level of abstraction from the perspective of the user. 
+The system is modelled as a black box, offering interactions to the user. 
+There may be various user roles using different interactions the system offers. 
 
 ![](UML/UseCaseDiagram.svg)
+
+User roles may be extended to access more interactions, e.g. Power-User extends User.
+Use cases may include internal use cases that can also be depicted in the diagram.
 
 <p style="page-break-after:always;"></p>  
 
@@ -248,7 +254,7 @@ window.setTimeout(greet, 2000);
 ## 1.3. Class Diagram
 ### 1.3.1. Structure
 
-<img src="UML/ClassStructure.svg"/>  
+![](UML/ClassStructure.svg)  
 
 ### 1.3.2. Modifiers
 
@@ -356,5 +362,5 @@ Course: Art
 ```
 # 2. Design
 
-<img src="UML/AD_Konzeption.svg"/>
+![](UML/AD_Konzeption.svg)
 
