@@ -178,3 +178,35 @@ class Greeter {
 </table>
 </tr>
 </table>
+
+<table>
+<th align="left">Subactivity with input and output</th>
+<tr></tr>
+<tr><td><img src="UML/SubActivityInOut.svg"/></td></tr>
+<tr>
+<table><tr><td valign="top">Function<pre lang="typescript">
+let name: string = "my friend";
+let text: string = createGreeting(name);
+console.log(text);
+
+function createGreeting(_to: string): string {
+  let greeting: string;
+  greeting = "Hello, " + _to;
+  return greeting;
+}
+</pre></td><td valign="top">Object<pre lang="typescript">
+let name: string = "my friend";
+let text: string = Greeter.createGreeting(name);
+console.log(text);
+
+class Greeter {
+  public static createGreeting(_to: string): string {
+  let greeting: string;
+  greeting = "Hello, " + _to;
+  return greeting;
+  }
+}
+</pre></td></tr>
+</table>
+</tr>
+</table>
