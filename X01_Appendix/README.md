@@ -510,35 +510,35 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 ### 3.2.3. Kombinierte Operatoren  
 
 <table>
-<tr><td>Zeichen</td><td>Name</td><td>Beispiel</td><td>Anmerkung</td></tr>  
-<tr><td><code>+=</code></td><td>Additionszuweisung</td><td style="white-space:nowrap;"><code>x += 19;</code></td><td>Der Wert der Variablen wird um den rechtsstehenden Wert erhöht. Gleichbedeutend mit <code>x = x + 19;</code></td></tr>
-<tr><td><code>-=</code></td><td>Subtraktionszuweisung</td><td style="white-space:nowrap;"><code>x -= 3;</code></td><td>Der Wert der Variablen wird um den rechtsstehenden Wert vermindert. Gleichbedeutend mit <code>x = x - 3;</code></td></tr>
-<tr><td><code>*=</code></td><td>Multiplikationszuweisung</td><td style="white-space:nowrap;"><code>x *= 100;</code></td><td>Der Wert der Variablen wird um den rechtsstehenden Faktor erhöht. Gleichbedeutend mit <code>x = x *100;</code></td></tr>
-<tr><td><code>/=</code></td><td>Divisionszuweisung</td><td style="white-space:nowrap;"><code>x /= 4;</code></td><td>Der Wert der Variablen wird um den rechtsstehenden  Divisor vermindert. Gleichbedeutend mit <code>x = x / 4;</code></td></tr>
-<tr><td><code>++</code></td><td>Inkrement</td><td style="white-space:nowrap;"><code>x++;</code></td><td>Der Wert der Variablen wird um 1 erhöht. Gleichbedeutend mit <code>x += 1;</code></td></tr>
-<tr><td><code>--</code></td><td>Dekrement</td><td style="white-space:nowrap;"><code>x--;</code></td><td>Der Wert der Variablen wird um 1 vermindert. Gleichbedeutend mit <code>x -= 1;</code></td></tr>
+<tr><td width="3em">Op</td><td width="10em">Beispiel</td><td>Beschreibung</td></tr>  
+<tr><td><code>+=</code></td><td style="white-space:nowrap;"><code>x += 19;</code></td><td>Additionszuweisung: Der Wert der Variablen wird um den rechtsstehenden Wert erhöht. Gleichbedeutend mit <code>x = x + 19;</code></td></tr>
+<tr><td><code>-=</code></td><td style="white-space:nowrap;"><code>x -= 3;</code></td><td>Subtraktionszuweisung: Der Wert der Variablen wird um den rechtsstehenden Wert vermindert. Gleichbedeutend mit <code>x = x - 3;</code></td></tr>
+<tr><td><code>*=</code></td><td style="white-space:nowrap;"><code>x *= 100;</code></td><td>Multiplikationszuweisung: Der Wert der Variablen wird um den rechtsstehenden Faktor erhöht. Gleichbedeutend mit <code>x = x *100;</code></td></tr>
+<tr><td><code>/=</code></td><td style="white-space:nowrap;"><code>x /= 4;</code></td><td>Divisionszuweisung: Der Wert der Variablen wird um den rechtsstehenden  Divisor vermindert. Gleichbedeutend mit <code>x = x / 4;</code></td></tr>
+<tr><td><code>++</code></td><td style="white-space:nowrap;"><code>x++;</code></td><td>Inkrement: Der Wert der Variablen wird um 1 erhöht. Gleichbedeutend mit <code>x += 1;</code></td></tr>
+<tr><td><code>--</code></td><td style="white-space:nowrap;"><code>x--;</code></td><td>Dekrement: Der Wert der Variablen wird um 1 vermindert. Gleichbedeutend mit <code>x -= 1;</code></td></tr>
 </table>
 
 ### 3.2.4. Vergleichsoperatoren  
 
 <table>
-<tr><td>Zeichen</td><td>Name</td><td  >Beispiel</td><td>Anmerkung</td></tr>  
-<tr><td><code>==</code></td><td>Wertgleichheit</td><td style="white-space:nowrap;"><code>x == "AB"</code></td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!</td></tr>
-<tr><td><code>===</code></td><td>Wert- und Typgleichheit</td><td style="white-space:nowrap;"><code>x === "42"</code></td><td>Liefert den Wert true, wenn die Wertgleichheit zutrifft und beide Ausdrücke auch vom gleichen Typ sind.</td></tr>
-<tr><td><code>!=</code></td><td>Ungleichheit</td><td style="white-space:nowrap;"><code>x != "AB"</code></td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite unterschiedlich sind.</td></tr>
-<tr><td><code>></code></td><td>Größer</td><td style="white-space:nowrap;"><code>x > 2.32</code></td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte ist.</td></tr>
-<tr><td><code><</code></td><td>Kleiner</td><td style="white-space:nowrap;"><code>x < 2.32</code></td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte ist.</td></tr>
-<tr><td><code>>=</code></td><td>Größergleich</td><td style="white-space:nowrap;"><code>x >= 2.32</code></td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte oder genau gleich ist.</td></tr>
-<tr><td><code><=</code></td><td>Kleinergleich</td><td style="white-space:nowrap;"><code>x <= 2.32</code></td><td>Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.</td></tr>
+<tr><td width="3em">Op</td><td width="10em">Beispiel</td><td>Beschreibung</td></tr>  
+<tr><td><code>==</code></td><td style="white-space:nowrap;"><code>x == "AB"</code></td><td>Wertgleichheit: Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!</td></tr>
+<tr><td><code>===</code></td><td style="white-space:nowrap;"><code>x === "42"</code></td><td>Wert- und Typgleichheit: Liefert den Wert true, wenn die Wertgleichheit zutrifft und beide Ausdrücke auch vom gleichen Typ sind.</td></tr>
+<tr><td><code>!=</code></td><td style="white-space:nowrap;"><code>x != "AB"</code></td><td>Ungleichheit: Liefert den Wert true, wenn die Werte auf der linken und rechten Seite unterschiedlich sind.</td></tr>
+<tr><td><code>></code></td><td style="white-space:nowrap;"><code>x > 2.32</code></td><td>Größer: Liefert den Wert true, wenn der linke Wert größer als der rechte ist.</td></tr>
+<tr><td><code><</code></td><td style="white-space:nowrap;"><code>x < 2.32</code></td><td>Kleiner: Liefert den Wert true, wenn der linke Wert kleiner als der rechte ist.</td></tr>
+<tr><td><code>>=</code></td><td style="white-space:nowrap;"><code>x >= 2.32</code></td><td>Größergleich: Liefert den Wert true, wenn der linke Wert größer als der rechte oder genau gleich ist.</td></tr>
+<tr><td><code><=</code></td><td style="white-space:nowrap;"><code>x <= 2.32</code></td><td>Kleinergleich: Liefert den Wert true, wenn der linke Wert kleiner als der rechte oder genau gleich ist.</td></tr>
 </table>
 
 ### 3.2.5. Logische Operatoren  
 
 <table>
-<tr><td>Zeichen</td><td>Name</td><td>Beispiel</td><td>Anmerkung</td></tr>  
-<tr><td><code>&&</code></td><td>Und</td><td style="white-space:nowrap;"><code>x>2 && x<9</code></td><td>Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.</td></tr>  
-<tr><td><code>||</code></td><td>Oder</td><td style="white-space:nowrap;"><code>x<2 || x>9</code></td><td>Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.</td></tr>  
-<tr><td><code>!</code></td><td>Nicht</td><td style="white-space:nowrap;"><code>!(x > 10)</code></td><td>Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.</td></tr> 
+<tr><td>Op</td><td>Beispiel</td><td>Beschreibung</td></tr>  
+<tr><td><code>&&</code></td><td style="white-space:nowrap;"><code>x>2 && x<9</code></td><td>Und: Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.</td></tr>  
+<tr><td><code>||</code></td><td style="white-space:nowrap;"><code>x<2 || x>9</code></td><td>Oder: Liefert true, wenn wenigstens einer der beiden Ausdrücke true ist. Hier, wenn x außerhalb des Bereichs 2 bis 9 liegt.</td></tr>  
+<tr><td><code>!</code></td><td style="white-space:nowrap;"><code>!(x > 10)</code></td><td>Nicht: Negiert den Ausdruck, liefert also true, wenn der folgende Ausdruck false ist. Hier, wenn x <= 10.</td></tr> 
 </table>
 
 ### 3.2.6. Bitweise Operatoren
