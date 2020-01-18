@@ -26,7 +26,7 @@ This little booklet displays only three of the many types of diagrams UML 2.5 de
 and of those only a subset of the features. 
 This resembles the minimum expertise a Digial Media Designer needs to master and should be sufficient to design systems of non trivial complexity. 
 
-## 1.1. Use Case Diagram
+## 1.1. **Use Case Diagram**
 A use case diagram modells a system on a very high level of abstraction from the perspective of the user. 
 The system is modelled as a black box, offering interactions to the user. 
 There may be various user roles using different interactions the system offers. 
@@ -38,7 +38,7 @@ Use cases may include internal use cases that can also be depicted in the diagra
 
 <p style="page-break-after:always;"></p>  
 
-## 1.2. Activity Diagram
+## 1.2. **Activity Diagram**
 This type of diagram is arguably the most versatile of the UML diagrams.
 An activity diagram models the behaviour of a system.
 While natural language is only suited to describe simple processes,
