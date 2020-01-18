@@ -186,8 +186,7 @@ class Greeter {
 <tr><td valign="top">Function<pre lang="typescript">
 let name: string = "my friend";
 let text: string = createGreeting(name);
-console.log(text);
-
+console.log(text);</br>
 function createGreeting(_to: string): string {
   let greeting: string;
   greeting = "Hello, " + _to;
@@ -197,8 +196,7 @@ function createGreeting(_to: string): string {
 <tr><td valign="top">Object<pre lang="typescript">
 let name: string = "my friend";
 let text: string = Greeter.createGreeting(name);
-console.log(text);
-
+console.log(text);</br>
 class Greeter {
   public static createGreeting(_to: string): string {
     let greeting: string;
