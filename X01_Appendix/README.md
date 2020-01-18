@@ -17,7 +17,7 @@
 ## 1.1. Activity Diagrams
 
 ### 1.1.1. Elements
-![](UML/Elements.png)
+![](UML/Elements.svg)
 
 ### 1.1.2. Basic flow structures
 <table>
@@ -119,12 +119,39 @@ do {
 <tr></tr>
 <tr><td><img src="UML/LoopComplex.svg"/></td></tr>
 <tr><td><pre lang="typescript">
+...
 for (let i: number = b; i > 1; i/=2) {
   if (i == 3)
     continue;
   if (i == a)
     break;
   console.log(i);
+}
+</pre></td></tr>
+</table>
+
+
+<table>
+<th align="left">All keys or indices</th>
+<tr></tr>
+<tr><td><img src="UML/LoopKeys.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+let o = {x:1, y:2};
+for (let key in o) {
+  console.log(o[key]);
+}
+</pre></td></tr>
+</table>
+
+
+<table>
+<th align="left">All values</th>
+<tr></tr>
+<tr><td><img src="UML/LoopValues.svg"/></td></tr>
+<tr><td><pre lang="typescript">
+let o = {x:1, y:2};
+for (let value of o) {
+  console.log(o);
 }
 </pre></td></tr>
 </table>
