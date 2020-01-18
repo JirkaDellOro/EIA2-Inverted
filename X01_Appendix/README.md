@@ -39,7 +39,18 @@ Use cases may include internal use cases that can also be depicted in the diagra
 <p style="page-break-after:always;"></p>  
 
 ## 1.2. Activity Diagram
+This type of diagram is arguably the most versatile of the UML diagrams.
+An activity diagram models the behaviour of a system.
+While natural language is only suited to describe simple processes,
+using the graphical language in two dimensions and nesting (sub-activities) enables the designer to describe basically arbitrary complexity
+while maintaining readability and comprehensibility.
+In this chapter, designs displayed are on a very low level, so that they can be translated into very low level code for explanation.
+But the same structures apply when working with activities that nest atomic actions. 
+By nesting activities in again larger activities and so forth, the designer works on different levels of abstractions.
 
+However, in the design process, the designer starts with the activities definied in the use case diagram,
+splits them up in smaller ones, and those again in even smaller, until all activities designed are trivial 
+and the initial problem is solved.
 
 ### 1.2.1. Elements
 ![](UML/Elements.svg)
@@ -378,7 +389,7 @@ Course: Art
 • Student 0: Heisenberg
 • Student 2: Dali
 ```
-# 2. Design
+# 2. Design Process
 
 ![](UML/AD_Konzeption.svg)
 
