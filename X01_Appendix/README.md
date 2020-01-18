@@ -350,3 +350,8 @@ Course: Art\
 ~ No docent assigned to this course\
 ~ Student 0: Heisenberg\
 ~ Student 2: Dali
+
+# 2. Design
+
+<img src="UML/AD_Konzeption.svg"/>
+
