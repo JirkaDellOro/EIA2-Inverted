@@ -283,7 +283,7 @@ window.setTimeout(greet, 2000);
 waitForSomething();
 doSomethingElse();
 <br/>
-async function waitForSomething(): Promise<void> {
+async function waitForSomething(): Promise&lt;void&gt; {
   console.log("starting to wait for something")
   await something();
   console.log("done waiting for something");
