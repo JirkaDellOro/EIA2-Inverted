@@ -1,16 +1,15 @@
 <script>
   function printMe() {
-    // let w = window.open();
     let bodyHTML = document.body.innerHTML;
+    let button = document.querySelector("button#printMe");
+    button.parentNode.removeChild(button);
     let sectionHTML = document.querySelector("section").innerHTML;
-    // w.document.body.innerHTML = document.querySelector("section").innerHTML;
     document.body.innerHTML = sectionHTML;
     print();
     document.body.innerHTML = bodyHTML;
-    // w.close();
   }
 </script>
-<button onclick="printMe()">Test</button>
+<button onclick="printMe()" id="printMe" float="right">Print</button>
 ## Anhang
 
 # 1. Unified Modelling Language
