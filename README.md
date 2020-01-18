@@ -144,3 +144,6 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 
 ### [eiaSteroids](X01_Appendix/eiaSteroids)
 Beispielprojekt
+
+### [Cheatsheet](X01_Appendix)
+Ein(e) kleine(s) Büchlein/Formelsammlung/Zusammenfassung
