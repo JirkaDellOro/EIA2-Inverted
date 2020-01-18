@@ -281,6 +281,11 @@ window.setTimeout(greet, 2000);
 ### 1.2.7. Cross Domain Aktivity
 
 ## 1.3. Class Diagram
+The class diagram models complex structures of information used in the system designed.
+The focus is less on the activities within the system, but on the data those activities are applied to. 
+Designing these structures well is crucial for the performance, stability, maintainability as well as the producibility of the system.
+Thus, in complex systems, the class diagram and the activity diagrams are created in parallel, each reflecting on the other.
+
 ### 1.3.1. Structure
 
 ![](UML/ClassStructure.svg)  
