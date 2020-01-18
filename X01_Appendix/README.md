@@ -14,6 +14,8 @@
 
 ## 1.1. Use Case Diagram
 
+![](UML/UseCaseDiagram.svg)
+
 <p style="page-break-after:always;"></p>  
 
 ## 1.2. Activity Diagram
