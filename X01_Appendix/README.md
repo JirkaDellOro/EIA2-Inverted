@@ -14,15 +14,17 @@
 Digital Media Designers need a precise and international language to create ideas and convey their designs to a team of developers. 
 The Unified Modelling Language (UML) fulfills this requirement not only in the realm of software development,
 but for arbitrary complex systems. Its development started in the 1990s and is still going on. 
-It is standardized as ISO/IEC 19505.  
+It is standardized as ISO/IEC 19505. UML makes systems, algorithms and data structures visible and tangible, 
+thus enabling the designers and their teams to discuss, improve and produce them not only in early stages of development,
+but throughout the process, and, done well, even produces in large parts the final documentation.
 
-This little booklet displays only three of the many types of diagrams UML defines:
+This little booklet displays only three of the many types of diagrams UML 2.5 defines:
 - Use Case Diagram
 - Activity Diagram
 - Class Diagram
 
 and of those only a subset of the features. 
-This resembles the minimum expertise a Digial Media Designer needs to show and should be sufficient to design systems of non trivial complexity. 
+This resembles the minimum expertise a Digial Media Designer needs to master and should be sufficient to design systems of non trivial complexity. 
 
 ## 1.1. Use Case Diagram
 A use case diagram modells a system on a very high level of abstraction from the perspective of the user. 
@@ -37,6 +39,7 @@ Use cases may include internal use cases that can also be depicted in the diagra
 <p style="page-break-after:always;"></p>  
 
 ## 1.2. Activity Diagram
+
 
 ### 1.2.1. Elements
 ![](UML/Elements.svg)
@@ -177,7 +180,7 @@ for (let value of o) {
 </pre></td></tr>
 </table>
 
-### 1.2.4 Subactivity
+### 1.2.4. Subactivity
 
 <table>
 <th align="left">Subactivity simple</th>
@@ -231,7 +234,7 @@ class Greeter {
 </pre></td></tr>
 </table>
 
-### 1.2.5 Signals
+### 1.2.5. Signals
 
 <table>
 <th align="left">Accept Event</th>
@@ -262,6 +265,9 @@ window.setTimeout(greet, 2000);
 </table>
 
 <p style="page-break-after:always;"></p>  
+
+### 1.2.6. Parallel Processing
+### 1.2.7. Cross Domain Aktivity
 
 ## 1.3. Class Diagram
 ### 1.3.1. Structure
@@ -376,3 +382,9 @@ Course: Art
 
 ![](UML/AD_Konzeption.svg)
 
+# x. Ressources
+
+- Object Management Group. (2015, Mai). About the Unified Modeling Language Specification Version 2.5. Abgerufen 18. Januar 2020, von https://www.omg.org/spec/UML/2.5
+- Kecher, C., Salvanos, A., & Hoffmann-Elbern, R. (2017). UML 2.5: Das umfassende Handbuch. Ausgabe 2018. Inkl. DIN A2-Poster mit allen Diagrammtypen. Bonn: Rheinwerk Verlag GmbH.
+- Oestereich, B., & Scheithauer, A. (2013). Analyse Und Design Mit Der Uml 2.5: Objektorientierte Softwareentwicklung (German Edition) (11th 11., Umfassend Uberarbeitete Und Aktualisierte Auflage ed.). München: Walter de Gruyter.
+- Microsoft. (2020). TypeScript - JavaScript that scales. Abgerufen 18. Januar 2020, von http://www.typescriptlang.org/
