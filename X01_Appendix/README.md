@@ -10,15 +10,15 @@
   }
 </script>
 <button onclick="printMe()" id="printMe" float="right">Print</button>
-<button onclick='() => {
+<button onclick="function() {
     let bodyHTML = document.body.innerHTML;
-    let button = document.querySelector("button#printMe2");
+    let button = document.querySelector('button#printMe2');
     button.parentNode.removeChild(button);
-    let sectionHTML = document.querySelector("section").innerHTML;
+    let sectionHTML = document.querySelector('section').innerHTML;
     document.body.innerHTML = sectionHTML;
     print();
     document.body.innerHTML = bodyHTML;
-  }' id="printMe2" float="right">Print2</button>
+  }" id="printMe2" float="right">Print2</button>
 ## Anhang
 
 # 1. Unified Modelling Language
