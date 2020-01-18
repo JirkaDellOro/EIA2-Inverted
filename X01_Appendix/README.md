@@ -264,7 +264,7 @@ window.setTimeout(greet, 2000);
 <th align="center">Typescript Code</th>
 <tr></tr>
 <tr><td valign="top"><br/><img src="UML/ClassExample.svg"/></td>
-<td valign="top"><pre lang="typescript">
+<td valign="top"><pre lang="typescript" style="font-size:smaller">
 interface Course {
   name: string;
   docent: Docent;
