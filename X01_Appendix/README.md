@@ -272,7 +272,7 @@ window.setTimeout(greet, 2000);
 <td valign="top"><pre lang="typescript" style="font-size:x-small">
 interface Course {
   name: string;
-  docent: Docent;
+  docent?: Docent;
   students: Student[];
 }
 <br/>
@@ -311,3 +311,41 @@ class Student extends Person {
 }
 </pre></td></tr>
 </table>
+
+### 1.3.4. Example Main Program
+
+```typescript
+let courses: Course[] = [];
+let course: Course = { name: "Physics", students: [] };
+course.docent = new Docent("Einstein", 71);
+course.docent.addSkill("Relativity");
+
+let student: Student = new Student("Heisenberg", 49);
+course.students.push(new Student("Hawking", 8), student);
+courses.push(course);
+courses.push({
+  name: "Art",
+  students: [student, new Student("Dali", 46)]
+});
+
+for (let course of courses) {
+  console.log("Course: " + course.name);
+  
+  if (course.docent)
+    console.log("~ Docent: " + course.docent.getInfo());
+  else
+    console.warn("~ No docent assigned to this course");
+
+  for (let student of course.students)
+    console.log("~ Student " + student.getInfo());
+}
+```
+> **Output**\
+Course: Physics\
+~ Docent: Prof. Einstein, age: 71\
+~ Student 1: Hawking\
+~ Student 0: Heisenberg\
+Course: Art\
+~ No docent assigned to this course\
+~ Student 0: Heisenberg\
+~ Student 2: Dali
