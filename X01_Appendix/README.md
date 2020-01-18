@@ -14,6 +14,8 @@
 
 ## 1.1. Use Case Diagram
 
+<p style="page-break-after:always;"></p>  
+
 ## 1.2. Activity Diagram
 
 ### 1.2.1. Elements
@@ -53,8 +55,6 @@ else
 console.log(", my dear");
 </pre></td></tr>
 </table>
-
-<p style="page-break-after:always;"></p>  
 
 <table>
 <th align="left">Multiple Conditions</th>
@@ -241,6 +241,8 @@ window.setTimeout(greet, 2000);
 </pre></td></tr>
 </table>
 
+<p style="page-break-after:always;"></p>  
+
 ## 1.3. Class Diagram
 ### 1.3.1. Structure
 
@@ -257,6 +259,8 @@ window.setTimeout(greet, 2000);
 |     italic      | abstract              |
 | << interface >> | specifies interface   |
 |   << enum >>    | specifies enumeration |
+
+<p style="page-break-after:always;"></p>  
 
 ### 1.3.3. Example
 
