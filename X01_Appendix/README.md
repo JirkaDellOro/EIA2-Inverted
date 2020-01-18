@@ -242,7 +242,11 @@ window.setTimeout(greet, 2000);
 </table>
 
 ## 1.3. Class Diagram
-### 1.3.1. Legend
+### 1.3.1. Structure
+
+<img src="UML/ClassStructure.svg"/>  
+
+### 1.3.2. Modifiers
 |  Symbol/Format  | Meaning               |
 |:---------------:|-----------------------|
 |        +        | public                |
@@ -252,3 +256,5 @@ window.setTimeout(greet, 2000);
 |     italic      | abstract              |
 | << interface >> | specifies interface   |
 |   << enum >>    | specifies enumeration |
+
+### 1.3.3. Example
