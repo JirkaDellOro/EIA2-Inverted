@@ -490,14 +490,12 @@ https://github.com/excelmicro/typescript
 Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 
 ### 3.2.1. Zuweisungsoperator
-
 <table>
 <tr><td width="40px">Op</td><td width="120px">Beispiel</td><td>Beschreibung</td></tr>  
 <tr><td><code>=</code></td><td style="white-space:nowrap;"><code>x = 7;</code></td><td>Der Variablen auf der linken Seite wird der Wert auf der rechten Seite zugewiesen</td></tr>  
 </table>
 
 ### 3.2.2. Arithmetische Operatoren  
-
 <table>
 <tr><td width="40px">Op</td><td width="120px">Beispiel</td><td>Beschreibung</td></tr>  
 <tr><td><code>+</code></td><td style="white-space:nowrap;"><code>x + 5;</code></td><td>Addition: Liefert das Ergebnis der Addition des linken und rechten Wertes ohne Speicherung.</td></tr>  
@@ -508,7 +506,6 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 </table>  
 
 ### 3.2.3. Kombinierte Operatoren  
-
 <table>
 <tr><td width="40px">Op</td><td width="120px">Beispiel</td><td>Beschreibung</td></tr>  
 <tr><td><code>+=</code></td><td style="white-space:nowrap;"><code>x += 19;</code></td><td>Additionszuweisung: Der Wert der Variablen wird um den rechtsstehenden Wert erhöht. Gleichbedeutend mit <code>x = x + 19;</code></td></tr>
@@ -520,7 +517,6 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 </table>
 
 ### 3.2.4. Vergleichsoperatoren  
-
 <table>
 <tr><td width="40px">Op</td><td width="120px">Beispiel</td><td>Beschreibung</td></tr>  
 <tr><td><code>==</code></td><td style="white-space:nowrap;"><code>x == "AB"</code></td><td>Wertgleichheit: Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!</td></tr>
@@ -533,7 +529,6 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 </table>
 
 ### 3.2.5. Logische Operatoren  
-
 <table>
 <tr><td width="40px">Op</td><td width="120px">Beispiel</td><td>Beschreibung</td></tr>  
 <tr><td><code>&&</code></td><td style="white-space:nowrap;"><code>x>2 && x<9</code></td><td>Und: Liefert den Wert true, wenn der linke und der rechte Ausdruck beide den Wert true haben. Hier, wenn x zwischen 2 und 9 liegt.</td></tr>  
@@ -542,8 +537,10 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 </table>
 
 ### 3.2.6. Bitweise Operatoren
-
 Damit werden direkt Bitmuster manipuliert. Siehe [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
+
+# 4. DOM-Klassenhierarchie
+<img src="DO-Hierarchy/DOM-Classhierachy.svg" style="transform:rotate(-90deg);">
 
 # x. Ressources
 
