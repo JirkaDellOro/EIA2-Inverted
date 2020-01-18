@@ -167,7 +167,7 @@ greet();
 function greet(): void {
   console.log("Hello");
 }
-</pre></td><td valign="top">Object<pre lang="typescript">
+</pre></td><td valign="top">Method<pre lang="typescript">
 Greeter.greet();
 class Greeter {
   public static greet(): void {
@@ -194,7 +194,7 @@ function createGreeting(_to: string): string {
   return greeting;
 }
 </pre></td></tr>
-<tr><td valign="top">Object<pre lang="typescript">
+<tr><td valign="top">Method<pre lang="typescript">
 let name: string = "my friend";
 let text: string = Greeter.createGreeting(name);
 console.log(text);
