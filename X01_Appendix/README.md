@@ -540,7 +540,7 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 Damit werden direkt Bitmuster manipuliert. Siehe [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
 
 # 4. DOM-Klassenhierarchie
-<img src="DO-Hierarchy/DOM-Classhierachy.svg" style="transform:rotate(-90deg); height:100%;">
+<img src="DO-Hierarchy/DOM-Classhierachy.svg" style="transform:rotate(-90deg); height:600px;"/>
 
 # x. Ressources
 
