@@ -521,9 +521,9 @@ Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
 
 ### 3.2.4. Vergleichsoperatoren  
 
-<table>
-<tr align="left" style="white-space:nowrap;"><td width="10%">Zeichen</td><td width="10%">Name</td><td  style="white-space:nowrap;">Beispiel</td><td>Anmerkung</td></tr>  
-<tr><td><code>==</code></td><td>Wertgleichheit</td><td><code>x == "AB"</code></td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!</td></tr>
+<table style="white-space:nowrap;">
+<tr align="left"><td width="10%">Zeichen</td><td width="10%">Name</td><td  >Beispiel</td><td>Anmerkung</td></tr>  
+<tr><td><code>==</code></td><td>Wertgleichheit</td><td style="white-space:nowrap;"><code>x == "AB"</code></td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite gleich sind. Vorsicht bei floats!!</td></tr>
 <tr><td><code>===</code></td><td>Wert- und Typgleichheit</td><td><code>x === "42"</code></td><td>Liefert den Wert true, wenn die Wertgleichheit zutrifft und beide Ausdrücke auch vom gleichen Typ sind.</td></tr>
 <tr><td><code>!=</code></td><td>Ungleichheit</td><td><code>x != "AB"</code></td><td>Liefert den Wert true, wenn die Werte auf der linken und rechten Seite unterschiedlich sind.</td></tr>
 <tr><td><code>></code></td><td>Größer</td><td><code>x > 2.32</code></td><td>Liefert den Wert true, wenn der linke Wert größer als der rechte ist.</td></tr>
