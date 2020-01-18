@@ -107,7 +107,8 @@ while (i < 10) {
 for (let i: number = 0; i < 10; i++)
   console.log(i);
 </pre></td></tr>
-</table></tr>
+</table>
+</tr>
 </table>
 
 <table>
@@ -165,4 +166,26 @@ for (let value of o) {
 </pre></td></tr>
 </table>
 
+### 1.1.4 Subactivity
 
+<table>
+<th align="left">Subactivity simple</th>
+<tr></tr>
+<tr><td><img src="UML/SubActivitySimple.svg"/></td></tr>
+<tr>
+<table><tr><td valign="top">Function<pre lang="typescript">
+greet();
+function greet(): void {
+  console.log("Hello");
+}
+</pre></td><td valign="top">Object<pre lang="typescript">
+Greeter.greet();
+class Greeter {
+  public static greet(): void {
+      console.log("Hello");
+  }
+}
+</pre></td></tr>
+</table>
+</tr>
+</table>
