@@ -5,6 +5,8 @@
     let dom = document.querySelector('div#DOM');
     dom.style.height='85em';
     dom.style.width='85em';
+    let code = document.querySelector('pre#codeClass');
+    code.style.fontSize='medium';
     let sectionHTML = document.querySelector('section').innerHTML;
     document.body.innerHTML = sectionHTML;
     print();
@@ -354,7 +356,7 @@ Thus, in complex systems, the class diagram and the activity diagrams are create
 <th align="center">Typescript Code</th>
 <tr></tr>
 <tr><td valign="top"><br/><img src="UML/ClassExample.svg"/></td>
-<td valign="top"><pre lang="typescript" style="font-size: small">
+<td valign="top"><pre id="codeClass" lang="typescript" style="font-size: x-small">
 interface Course {
   name: string;
   docent?: Docent;
