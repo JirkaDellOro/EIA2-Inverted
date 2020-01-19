@@ -13,6 +13,8 @@
     document.body.innerHTML = bodyHTML;
   }" >Print</button> 
 
+<img src="Img/Logo_HFU_A6_RGB.jpg" width="25%">
+<br/>
 <div align="center">
 <h1>Entwicklung interaktiver Anwendungen</h1>
 <h2>Cheatsheet | Booklet | Excerpt</h2>
