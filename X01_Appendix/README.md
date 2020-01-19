@@ -13,8 +13,9 @@
     document.body.innerHTML = bodyHTML;
   }" >Print</button> 
 
-<img src="Img/Logo_HFU_A6_RGB.jpg" width="25%">
-<br/>
+<div align="right" style="height:20em;">
+<img src="Img/1200px-Hochschule_Furtwangen_logo.svg.png" width="50%">
+</div>
 <div align="center">
 <h1>Entwicklung interaktiver Anwendungen</h1>
 <h2>Cheatsheet | Booklet | Excerpt</h2>
