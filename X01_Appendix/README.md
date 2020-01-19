@@ -361,7 +361,7 @@ The designer tries to identify classes of objects in the domain of the problem t
 | what is it?        | inheritance, polymorphism           |
 | who cares?         | owner, maintainer, creator          |
 
-When answering those questions, the designer must strive to reach the following goals: make an object/class
+When answering those questions, the designer must strive to make every part of the system...
 - only as "smart" as necessary
 - as "dumb" as possible
 
