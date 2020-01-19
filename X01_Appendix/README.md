@@ -358,7 +358,7 @@ The designer tries to identify classes of objects in the domain of the problem t
 | what does it have? | attributes, properties              |
 | what can it do?    | methods                             |
 | what does it know? | parameters to methods, entanglement |
-| what is it?        | inheritance                         |
+| what is it?        | inheritance, polymorphism           |
 | who cares?         | owner, maintainer, creator          |
 
 When answering those questions, the designer must strive to reach the following goals: make an object/class
