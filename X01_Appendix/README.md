@@ -597,7 +597,7 @@ Damit werden direkt Bitmuster manipuliert. Siehe [MDN](https://developer.mozilla
 
 <p style="page-break-after:always;"></p>  
 
-# 5. Topology/Technology
+# 5. Topology / Technology
 <img src="Landscape/EIA2Landscape2019.png" style="height:88%; width:88%;"/>
 
 # 6. Ressources
