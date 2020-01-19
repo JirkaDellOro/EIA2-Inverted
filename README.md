@@ -143,7 +143,9 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Plattformen
 
 ### [eiaSteroids](X01_Appendix/eiaSteroids)
-Beispielprojekt
+- Beispielprojekt
+- [Play](X01_Appendix/eiaSteroids/eiaSteroids.html)
 
 ### [Cheatsheet](X01_Appendix)
-Ein(e) kleine(s) Büchlein/Formelsammlung/Zusammenfassung
+- Ein(e) kleine(s) Büchlein/Formelsammlung/Zusammenfassung
+- [Download PDF](X01_Appendix/EIA2-Inverted_Booklet.pdf)
