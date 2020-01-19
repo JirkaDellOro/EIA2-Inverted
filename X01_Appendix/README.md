@@ -350,9 +350,30 @@ Thus, in complex systems, the class diagram and the activity diagrams are create
 | << interface >> | specifies interface   |
 |   << enum >>    | specifies enumeration |
 
+### 1.3.3 Design
+The designer tries to identify classes of objects in the domain of the problem to be solved. During this process it is required to iterate over these five questions over and over again. Considering one object ...
+
+| Question           | Infers                              |
+|--------------------|-------------------------------------|
+| what does it have? | attributes, properties              |
+| what can it do?    | methods                             |
+| what does it know? | parameters to methods, entanglement |
+| what is it?        | inheritance                         |
+| who cares?         | owner, maintainer, creator          |
+
+When answering those questions, the designer must strive to reach the following goals: make an object/class
+- only as "smart" as necessary
+- as "dumb" as possible
+
+While doing so the designer makes use of the four principles of object-oriented modelling:
+- Abstraction
+- Encapsulization
+- Inheritance
+- Polymorphism
+
 <p style="page-break-after:always;"></p>  
 
-### 1.3.3. Example
+### 1.3.4. Example
 
 <table>
 <th align="center">Class Diagram</th>
@@ -402,7 +423,7 @@ class Student extends Person {
 </pre></td></tr>
 </table>
 
-### 1.3.4. Example Main Program
+### 1.3.5. Example Main Program
 
 ```typescript
 let courses: Course[] = [];
