@@ -146,6 +146,6 @@ Zunächst werden mit diesen Mittel Aufgabenstellungen bearbeitet, die sich direk
 - Beispielprojekt
 - [Play](https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/eiaSteroids/eiaSteroids.html)
 
-### [Cheatsheet](X01_Appendix)
+### [Booklet](X01_Appendix)
 - Ein(e) kleine(s) Büchlein/Formelsammlung/Zusammenfassung
 - [Download PDF](https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/EIA2-Inverted_Booklet.pdf)
