@@ -354,7 +354,7 @@ Thus, in complex systems, the class diagram and the activity diagrams are create
 <th align="center">Typescript Code</th>
 <tr></tr>
 <tr><td valign="top"><br/><img src="UML/ClassExample.svg"/></td>
-<td valign="top"><pre lang="typescript" style="font-size:x-small; transform: scale(1.5,1)">
+<td valign="top"><pre lang="typescript" style="font-size: small">
 interface Course {
   name: string;
   docent?: Docent;
