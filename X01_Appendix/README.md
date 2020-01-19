@@ -60,7 +60,7 @@ using the graphical language in two dimensions and nesting (sub-activities) enab
 while maintaining readability and comprehensibility.
 In this chapter, designs displayed are on a very low level, so that they can be translated into very low level code for explanation.
 But the same structures apply when working with activities that nest atomic actions. 
-By nesting activities in again larger activities and so forth, the designer works on different levels of abstractions.
+By nesting activities in again larger activities and so forth, the designer works on different levels of abstraction.
 
 However, in the design process, the designer starts with the activities definied in the use case diagram,
 splits them up in smaller ones, and those again in even smaller, until all activities designed are trivial 
