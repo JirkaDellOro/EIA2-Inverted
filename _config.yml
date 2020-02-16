@@ -1,2 +1,4 @@
 theme: jekyll-theme-leap-day
 markdown: kramdown
+# Google Analytics
+google_analytics: UA-41348479-2
