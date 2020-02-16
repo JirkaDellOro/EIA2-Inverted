@@ -13,7 +13,9 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
   </head>
   <body>
 <img ID = "HFU"  src="https://upload.wikimedia.org/wikipedia/de/thumb/a/ab/Hochschule_Furtwangen_logo.svg/1200px-Hochschule_Furtwangen_logo.svg.png" >
