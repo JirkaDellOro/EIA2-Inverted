@@ -15,10 +15,10 @@
 **Der Idiot macht Simples kompliziert, das Genie macht Kompliziertes simpel**
 
 ### Motivation
-<img src="../X01_Appendix/Img/video.jpg" width="3%"/></a> [The poetry of programming | Linda Liukas | TEDxCERN](https://youtu.be/-jRREn6ifEQ)  
-<img src="../X01_Appendix/Img/video.jpg" width="3%"/></a> [Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito](https://www.youtube.com/watch?v=MvTSPwftvyo)  
-<img src="../X01_Appendix/Img/video.jpg" width="3%"/></a> [Just code it | Emile Nijssen | TEDxTwenteU](https://www.youtube.com/watch?v=Z35ovSEJOps)  
-<img src="../X01_Appendix/Img/video.jpg" width="3%"/></a> [Algorithms and Art | Chris Crawford](../X01_Appendix/Crawford/Crawford.html)  
+[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN](https://youtu.be/-jRREn6ifEQ)  
+[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito](https://www.youtube.com/watch?v=MvTSPwftvyo)  
+[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU](https://www.youtube.com/watch?v=Z35ovSEJOps)  
+[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Algorithms and Art | Chris Crawford](../X01_Appendix/Crawford/Crawford.html)  
 
 ## Veranstaltungskonzept
 [Use Case Diagram](../X01_Appendix/UML/UCD_EIA2-Contact.svg)  
