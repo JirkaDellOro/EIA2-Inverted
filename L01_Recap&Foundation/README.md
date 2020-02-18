@@ -176,7 +176,7 @@ Logikfehler sind nicht auf eine falsche Programmierung zurückzuführen, sondern
 >**Hinweis:** TypeScript spielt gerade bei der Fehlervermeidung eine seiner großen Stärken aus, indem es viele Fehler zur Entwicklungszeit anzeigt. JavaScript hat hier fast nichts zu bieten, die Fehler zeigen sich erst im Betrieb.
 
 ## Trace Table
-Mit Hilfe einer Verfolgungstabelle kann man den Zustand eines Programms zu jeder Zeit während des Laufs ermitteln und festhalten. Solche Tabellen von Hand zu erstellen ist eine gute Übung um den Programmlauf zu verstehen. Daher exerzieren wir dies im folgenden Video gemeinsam durch. Den Code dazu findest Du hier: [Cows.ts](../X01_Appendix/Code/L01_Recap&Foundation/Cows/Cows.ts)
+Mit Hilfe einer Verfolgungstabelle kann man den Zustand eines Programms zu jeder Zeit während des Laufs ermitteln und festhalten. Solche Tabellen von Hand zu erstellen ist eine gute Übung um den Programmlauf zu verstehen. Daher exerzieren wir dies im folgenden Video gemeinsam durch. Den Code dazu findest Du hier: [Cows.ts](../X00_Code/L01_Recap&Foundation/Cows/Cows.ts)
 
 <a href="https://drive.google.com/open?id=1NPw7w_8Es87bD1tJ2r_SrcizFRid5H2j"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/Cows_TraceTable.jpg"><img src="Material/Cows_TraceTable.jpg" width="25%"/></a>  

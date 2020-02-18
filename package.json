@@ -4,7 +4,7 @@
   "description": "Control for the heroku implementation",
   "main": "",
   "scripts": {
-    "start": "node X01_Appendix/Code/L06_Server/CocktailBar/Server/Server.js"
+    "start": "node X00_Code/L06_Server/CocktailBar/Server/Server.js"
   },
   "repository": {
     "type": "git",
