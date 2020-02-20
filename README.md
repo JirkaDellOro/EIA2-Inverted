@@ -5,7 +5,8 @@ Willkommen zum invertierten Unterricht des Moduls
 ## Inhalte
 <small>und grob geschätzte Zeitangaben für Lektion + Übungen | Wochenaufgabe in Stunden </small> 
 
-### [L00_Preface](L00_Preface) (0:45|0:00)
+### [L00_Preface](L00_Preface)  
+<small style="position: absolute; top: -20px">(0:45|0:00)</small>
 - Rückblick
 - Einblick
 - Ausblick
@@ -14,7 +15,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Veranstaltungskonzept
 - Tipps
 
-### [L01_Recap&Foundation](L01_Recap&Foundation) (2:00|1:45) 
+### [L01_Recap&Foundation](L01_Recap&Foundation)  
+<small style="float: right">(2:00|1:45)</small>
 - Einleitung
 - Rückblick
 - Einblick
