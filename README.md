@@ -3,10 +3,10 @@ Willkommen zum invertierten Unterricht des Moduls
 <small><a href="https://jirkadelloro.github.io/EIA2-Inverted">Pages-Version</a></small>
 
 ## Inhalte
-<small>und grob geschätzte Zeitangaben für Lektion + Übungen | Wochenaufgabe in Stunden </small> 
+<small>und grob geschätzte Zeitangaben in Stunden ( Lektion + Übungen | Wochenaufgabe )</small> 
 
 ### [L00_Preface](L00_Preface)  
-<small style="position: relative; top: -10px; right: 5px; margin:0px; padding:0px">(0:45|0:00)</small>
+<small style="float: right; position: relative; top: -40px; height: 0px">( 0:45 | 0:00 )</small>
 - Rückblick
 - Einblick
 - Ausblick
@@ -16,7 +16,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Tipps
 
 ### [L01_Recap&Foundation](L01_Recap&Foundation)  
-<small style="float: right">(2:00|1:45)</small>
+<small style="float: right; position: relative; top: -40px; height: 0px">( 2:00 | 1:45 )</small>
 - Einleitung
 - Rückblick
 - Einblick
@@ -30,7 +30,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Aktivitätsdiagramm  
 
 ### [L02_Events](L02_Events) 
-<small style="float: right; position: relative; top: -50px">(6:30|2:45)</small>
+<small style="float: right; position: relative; top: -40px; height: 0px">( 6:30 | 2:45 )</small>
 - Rückblick DOM
 - Ereignisse
 - Event-Handler
@@ -39,14 +39,16 @@ Willkommen zum invertierten Unterricht des Moduls
 - Skizze: User Interface 
 - Iterative Arbeitsweise   
   
-### [L03_FormElements](L03_FormElements) (6:30|4:30)
+### [L03_FormElements](L03_FormElements) 
+<small style="float: right; position: relative; top: -40px; height: 0px">( 6:30 | 4:30 )</small>
 - Texteingabe
 - Selektionen
 - Ausgabeelemente
 - Konzeption und Implementation einer formulargesteuerten Anwendung  
 - FormData
   
-### [L04_DataStructures](L04_DataStructures) (5:45|7:30)
+### [L04_DataStructures](L04_DataStructures) 
+<small style="float: right; position: relative; top: -40px; height: 0px">( 5:45 | 7:30 )</small>
 - Separation Of Concerns
 - Trennung von Struktur und Inhalt
 - Algorithmen und Datenstrukturen
@@ -55,7 +57,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Refactoring
 - JSON (Javascript Object Notation)
 
-### [L05_Client](L05_Client) (4:45|1:45)
+### [L05_Client](L05_Client) 
+<small style="float: right; position: relative; top: -40px; height: 0px">( 4:45 | 1:45 )</small>
 - Synchrone und asynchrone Kommunikation
 - Forms
 - XmlHttpRequest-Events
@@ -65,7 +68,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Lokaler Fileserver
 - JSON-Objekt
 
-### [L06_Server](L06_Server) (4:30|0:45)
+### [L06_Server](L06_Server) 
+<small style="float: right; position: relative; top: -40px; height: 0px">( 4:30 | 0:45 )</small>
 - Node.js
 - Erweiterungen
 - HTTP-Modul
@@ -75,7 +79,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Heroku
 - Clientanpassung
 
-### [L07_Database](L07_Database) (6:15|1:30)
+### [L07_Database](L07_Database) 
+<small style="float: right; position: relative; top: -40px; height: 0px">( 6:15 | 1:30 )</small>
 - Relationale Datenbanken
 - NoSQL-Datenbanken
 - MongoDB
@@ -86,7 +91,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - MongoDB in Node
 - Online Service
 
-### [L08_Canvas](L08_Canvas) (5:30|5:00)
+### [L08_Canvas](L08_Canvas) 
+<small style="float: right; position: relative; top: -40px; height: 0px">( 5:30 | 5:00 )</small>
 - CanvasRenderingContext
 - Pfade
 - Rendering
@@ -96,7 +102,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Linien
 - Save/Restore
 
-### [L09_Classes](L09_Classes) (3:30|4:15)
+### [L09_Classes](L09_Classes) 
+<small style="float: right; position: relative; top: -40px; height: 0px">( 3:30 | 4:15 )</small>
 - Objektorientierte Programmierung
 - Entwurf
 - Instanzierung
@@ -105,13 +112,15 @@ Willkommen zum invertierten Unterricht des Moduls
 - Klassendiagramm
 - Zeitsignale
 
-### [L10_Inheritance](L10_Inheritance) (4:15|0:30)
+### [L10_Inheritance](L10_Inheritance) 
+<small style="float: right; position: relative; top: -40px; height: 0px">( 4:15 | 0:30 )</small>
 - Liskov'sches Substitutionsprinzip
 - Generalisierung vs Spezialisierung
 - Regeln für die Modellierung
 - Polymorphie
 
-### [L11_Advanced](L11_Advanced) (3:00|4:30)
+### [L11_Advanced](L11_Advanced) 
+<small style="float: right; position: relative; top: -40px; height: 0px">( 3:00 | 4:30 )</small>
 - Abstract
 - Static
 - Gültigkeit
@@ -119,7 +128,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Zugriffsfunktionen
 - Aufzählungstypen
 
-### [L12_Addition](L12_Addition) (1:75|0:00)
+### [L12_Addition](L12_Addition) 
+<small style="float: right; position: relative; top: -40px; height: 0px">( 1:75 | 0:00 )</small>
 - Standardparameter
 - Eigenschaftsparameter
 - Ausnahmebehandlung
