@@ -145,6 +145,3 @@ Bedenke, dass Du die Konzeption jederzeit verbessern kannst und solltest, wenn d
   - In einem weiteren Bereich sollen alle zulässigen Buchstaben zur Auswahl bereit stehen, so dass man sie per Touch aktivieren kann
   - Der aktuell ausgewählte Buchstabe soll in dieser Auswahl hervorgehoben erscheinen, so dass der Nutzer weiß, was er gewählt hat, bevor er den Brief ändert
 - Hinweis: recherchiere nach dem Pointer-Event
-
-# Wochenaufgabe
-[L02_Memory](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L02_Memory)
