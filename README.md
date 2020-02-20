@@ -12,7 +12,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Veranstaltungskonzept
 - Tipps
 
-### [L01_Recap&Foundation](L01_Recap&Foundation)
+### [L01_Recap&Foundation](L01_Recap&Foundation)  
+<small>Lektion und Übungen 2:00 h | Aufgabe 2:00 h</small> 
 - Einleitung
 - Rückblick
 - Einblick
@@ -23,7 +24,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Fehlertypen
 - Trace Table
 - Debugger
-- Aktivitätsdiagramm
+- Aktivitätsdiagramm  
 
 ### [L02_Events](L02_Events)
 - Rückblick DOM
