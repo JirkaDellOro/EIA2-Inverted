@@ -3,9 +3,9 @@ Willkommen zum invertierten Unterricht des Moduls
 <small><a href="https://jirkadelloro.github.io/EIA2-Inverted">Pages-Version</a></small>
 
 ## Inhalte
-<small>und grob geschätzte Zeitangaben für Lektion + Übungen | Wochenaufgabe </small> 
+<small>und grob geschätzte Zeitangaben für Lektion + Übungen | Wochenaufgabe in Stunden </small> 
 
-### [L00_Preface](L00_Preface)
+### [L00_Preface](L00_Preface) (0:45|0:00)
 - Rückblick
 - Einblick
 - Ausblick
@@ -14,7 +14,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Veranstaltungskonzept
 - Tipps
 
-### [L01_Recap&Foundation](L01_Recap&Foundation) (2:00 h | 2:00 h) 
+### [L01_Recap&Foundation](L01_Recap&Foundation) (2:00|1:45) 
 - Einleitung
 - Rückblick
 - Einblick
@@ -27,7 +27,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Debugger
 - Aktivitätsdiagramm  
 
-### [L02_Events](L02_Events)
+### [L02_Events](L02_Events) (6:30|2:45)
 - Rückblick DOM
 - Ereignisse
 - Event-Handler
@@ -36,14 +36,14 @@ Willkommen zum invertierten Unterricht des Moduls
 - Skizze: User Interface 
 - Iterative Arbeitsweise   
   
-### [L03_FormElements](L03_FormElements)
+### [L03_FormElements](L03_FormElements) (6:30|4:30)
 - Texteingabe
 - Selektionen
 - Ausgabeelemente
 - Konzeption und Implementation einer formulargesteuerten Anwendung  
 - FormData
   
-### [L04_DataStructures](L04_DataStructures)
+### [L04_DataStructures](L04_DataStructures) (5:45|7:30)
 - Separation Of Concerns
 - Trennung von Struktur und Inhalt
 - Algorithmen und Datenstrukturen
@@ -52,7 +52,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Refactoring
 - JSON (Javascript Object Notation)
 
-### [L05_Client](L05_Client)
+### [L05_Client](L05_Client) (4:45|1:45)
 - Synchrone und asynchrone Kommunikation
 - Forms
 - XmlHttpRequest-Events
@@ -62,7 +62,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Lokaler Fileserver
 - JSON-Objekt
 
-### [L06_Server](L06_Server)
+### [L06_Server](L06_Server) (4:30|0:45)
 - Node.js
 - Erweiterungen
 - HTTP-Modul
@@ -72,7 +72,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Heroku
 - Clientanpassung
 
-### [L07_Database](L07_Database)
+### [L07_Database](L07_Database) (6:15|1:30)
 - Relationale Datenbanken
 - NoSQL-Datenbanken
 - MongoDB
@@ -83,7 +83,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - MongoDB in Node
 - Online Service
 
-### [L08_Canvas](L08_Canvas)
+### [L08_Canvas](L08_Canvas) (5:30|5:00)
 - CanvasRenderingContext
 - Pfade
 - Rendering
@@ -93,7 +93,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Linien
 - Save/Restore
 
-### [L09_Classes](L09_Classes)
+### [L09_Classes](L09_Classes) (3:30|4:15)
 - Objektorientierte Programmierung
 - Entwurf
 - Instanzierung
@@ -102,13 +102,13 @@ Willkommen zum invertierten Unterricht des Moduls
 - Klassendiagramm
 - Zeitsignale
 
-### [L10_Inheritance](L10_Inheritance)
+### [L10_Inheritance](L10_Inheritance) (4:15|0:30)
 - Liskov'sches Substitutionsprinzip
 - Generalisierung vs Spezialisierung
 - Regeln für die Modellierung
 - Polymorphie
 
-### [L11_Advanced](L11_Advanced)
+### [L11_Advanced](L11_Advanced) (3:00|4:30)
 - Abstract
 - Static
 - Gültigkeit
@@ -116,7 +116,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Zugriffsfunktionen
 - Aufzählungstypen
 
-### [L12_Addition](L12_Addition)
+### [L12_Addition](L12_Addition) (1:75|0:00)
 - Standardparameter
 - Eigenschaftsparameter
 - Ausnahmebehandlung
