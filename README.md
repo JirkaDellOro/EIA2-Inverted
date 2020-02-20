@@ -3,7 +3,7 @@ Willkommen zum invertierten Unterricht des Moduls
 <small><a href="https://jirkadelloro.github.io/EIA2-Inverted">Pages-Version</a></small>
 
 ## Inhalte
-<small>und grob geschätzte Zeitangaben</small> 
+<small>und grob geschätzte Zeitangaben für Lektion + Übungen | Wochenaufgabe </small> 
 
 ### [L00_Preface](L00_Preface)
 - Rückblick
@@ -14,8 +14,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Veranstaltungskonzept
 - Tipps
 
-### [L01_Recap&Foundation](L01_Recap&Foundation)  
-<small>Lektion und Übungen 2:00 h | Aufgabe 2:00 h</small> 
+### [L01_Recap&Foundation](L01_Recap&Foundation) (2:00 h | 2:00 h) 
 - Einleitung
 - Rückblick
 - Einblick
@@ -36,7 +35,6 @@ Willkommen zum invertierten Unterricht des Moduls
 - Anwendungsfalldiagramm (Use-Case-Diagram)
 - Skizze: User Interface 
 - Iterative Arbeitsweise   
-<small>Lektion und Übungen 2:00 h | Aufgabe 2:00 h</small> 
   
 ### [L03_FormElements](L03_FormElements)
 - Texteingabe
