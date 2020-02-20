@@ -196,11 +196,3 @@ Hier wird nun noch das Cows-Programm in ein Aktivitätsdiagramm überführt und 
 
 <a href="https://drive.google.com/open?id=1zp2S2wlZQdbBXxKyDKL8RwoDwKbWifi1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 <a href="Material/Cows_ActivityDiagram.jpg"><img src="Material/Cows_ActivityDiagram.jpg" width="25%"/></a>
-
-# Wochenaufgaben
-1. [L00_Preparation](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L00_Preparation)
-2. Registrierung eines neuen Steckbriefs auf der [Kursseite](https://webuser.hs-furtwangen.de/~del/EIA2) 
-3. Folgende Diagramme studieren und erklären
-    - [Week](../X01_Appendix/UML/AD_EIA2-Week.svg)
-    - [Design](../X01_Appendix/UML/AD_EIA-Konzeption.svg)
-4. [L01_Boxes](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L01_Boxes)
