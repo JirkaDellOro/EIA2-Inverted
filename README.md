@@ -6,7 +6,7 @@ Willkommen zum invertierten Unterricht des Moduls
 <small>und grob geschätzte Zeitangaben für Lektion + Übungen | Wochenaufgabe in Stunden </small> 
 
 ### [L00_Preface](L00_Preface)  
-<small style="position: absolute; top: -20px">(0:45|0:00)</small>
+<small style="position: relative; top: -20px">(0:45|0:00)</small>
 - Rückblick
 - Einblick
 - Ausblick
@@ -29,7 +29,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Debugger
 - Aktivitätsdiagramm  
 
-### [L02_Events](L02_Events) (6:30|2:45)
+### [L02_Events](L02_Events) 
+<small style="float: right; position: relative; top: -20px">(6:30|2:45)</small>
 - Rückblick DOM
 - Ereignisse
 - Event-Handler
