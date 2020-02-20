@@ -6,7 +6,7 @@ Willkommen zum invertierten Unterricht des Moduls
 <small>und grob geschätzte Zeitangaben in Stunden ( Lektion + Übungen | Wochenaufgabe )</small> 
 
 ### [L00_Preface](L00_Preface)  
-<small style="float: right; position: relative; top: -40px; height: 0px">( 0:45 | 0:00 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 0:45 | 0:00 )</small>
 - Rückblick
 - Einblick
 - Ausblick
@@ -16,7 +16,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Tipps
 
 ### [L01_Recap&Foundation](L01_Recap&Foundation)  
-<small style="float: right; position: relative; top: -40px; height: 0px">( 2:00 | 1:45 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 2:00 | 1:45 )</small>
 - Einleitung
 - Rückblick
 - Einblick
@@ -30,7 +30,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Aktivitätsdiagramm  
 
 ### [L02_Events](L02_Events) 
-<small style="float: right; position: relative; top: -40px; height: 0px">( 6:30 | 2:45 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 6:30 | 2:45 )</small>
 - Rückblick DOM
 - Ereignisse
 - Event-Handler
@@ -40,7 +40,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Iterative Arbeitsweise   
   
 ### [L03_FormElements](L03_FormElements) 
-<small style="float: right; position: relative; top: -40px; height: 0px">( 6:30 | 4:30 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 6:30 | 4:30 )</small>
 - Texteingabe
 - Selektionen
 - Ausgabeelemente
@@ -48,7 +48,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - FormData
   
 ### [L04_DataStructures](L04_DataStructures) 
-<small style="float: right; position: relative; top: -40px; height: 0px">( 5:45 | 7:30 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 5:45 | 7:30 )</small>
 - Separation Of Concerns
 - Trennung von Struktur und Inhalt
 - Algorithmen und Datenstrukturen
@@ -58,7 +58,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - JSON (Javascript Object Notation)
 
 ### [L05_Client](L05_Client) 
-<small style="float: right; position: relative; top: -40px; height: 0px">( 4:45 | 1:45 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 4:45 | 1:45 )</small>
 - Synchrone und asynchrone Kommunikation
 - Forms
 - XmlHttpRequest-Events
@@ -69,7 +69,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - JSON-Objekt
 
 ### [L06_Server](L06_Server) 
-<small style="float: right; position: relative; top: -40px; height: 0px">( 4:30 | 0:45 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 4:30 | 0:45 )</small>
 - Node.js
 - Erweiterungen
 - HTTP-Modul
@@ -80,7 +80,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Clientanpassung
 
 ### [L07_Database](L07_Database) 
-<small style="float: right; position: relative; top: -40px; height: 0px">( 6:15 | 1:30 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 6:15 | 1:30 )</small>
 - Relationale Datenbanken
 - NoSQL-Datenbanken
 - MongoDB
@@ -92,7 +92,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Online Service
 
 ### [L08_Canvas](L08_Canvas) 
-<small style="float: right; position: relative; top: -40px; height: 0px">( 5:30 | 5:00 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 5:30 | 5:00 )</small>
 - CanvasRenderingContext
 - Pfade
 - Rendering
@@ -103,7 +103,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Save/Restore
 
 ### [L09_Classes](L09_Classes) 
-<small style="float: right; position: relative; top: -40px; height: 0px">( 3:30 | 4:15 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 3:30 | 4:15 )</small>
 - Objektorientierte Programmierung
 - Entwurf
 - Instanzierung
@@ -113,14 +113,14 @@ Willkommen zum invertierten Unterricht des Moduls
 - Zeitsignale
 
 ### [L10_Inheritance](L10_Inheritance) 
-<small style="float: right; position: relative; top: -40px; height: 0px">( 4:15 | 0:30 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 4:15 | 0:30 )</small>
 - Liskov'sches Substitutionsprinzip
 - Generalisierung vs Spezialisierung
 - Regeln für die Modellierung
 - Polymorphie
 
 ### [L11_Advanced](L11_Advanced) 
-<small style="float: right; position: relative; top: -40px; height: 0px">( 3:00 | 4:30 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 3:00 | 4:30 )</small>
 - Abstract
 - Static
 - Gültigkeit
@@ -129,7 +129,7 @@ Willkommen zum invertierten Unterricht des Moduls
 - Aufzählungstypen
 
 ### [L12_Addition](L12_Addition) 
-<small style="float: right; position: relative; top: -40px; height: 0px">( 1:75 | 0:00 )</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">( 1:45 | 0:00 )</small>
 - Standardparameter
 - Eigenschaftsparameter
 - Ausnahmebehandlung
