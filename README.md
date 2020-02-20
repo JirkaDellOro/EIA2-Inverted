@@ -1,5 +1,5 @@
 Willkommen zum invertierten Unterricht des Moduls
-# Entwicklung interaktiver Anwendungen II (EIA2-Inverted)
+# Entwicklung interaktiver Anwendungen II
 <small><a href="https://jirkadelloro.github.io/EIA2-Inverted">Pages-Version</a></small>
 
 ## Inhalte
