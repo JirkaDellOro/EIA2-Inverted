@@ -197,6 +197,3 @@ Ein Problem tritt auf bei der Übergabe der Position an den optionalen Parameter
 - [x] Erweitere die Vektorklasse um eine Methode `copy()`, welche ein neues Vektorobjekt zurückliefert, das die gleichen Attributwerte hat wie der Vektor der sie ausführt.
 - [x] Nutze diese Methode um das obige Problem noch eleganter zu lösen.
 - [x] Skaliere die Linienstärke in der draw-Methode der Asteroid-Klasse entsprechend des size-Attributs umgekehrt proportional hoch.
-
-# Wochenaufgabe
-https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L09_Vogelhaus:Classes

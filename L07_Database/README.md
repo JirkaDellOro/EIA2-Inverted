@@ -224,6 +224,3 @@ Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von 
 - [x] Plane eine Funktion retrieveOrders, welche mit `orders.find()` alle Bestellungen ausliest und ein Array von `Orders` zurückliefert. Nutze dazu die asynchrone Funktion `toArray()` des Cursor-Objektes.
 - [x] Plane eine Erweiterung der Funktion `handleRequest`, so dass retrieveOrders aufgerufen und das Ergebnis als Zeichenkette in die Serverantwort eingefügt wird, wenn der Server mit dem Query-String `command=retrieve` aufgerufen wird.
 - [x] Implementiere diese Erweiterungen und teste sie.
-
-# Wochenaufgabe
-[L07_CharacterCreator:Database](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L07_CharacterCreator:Database)

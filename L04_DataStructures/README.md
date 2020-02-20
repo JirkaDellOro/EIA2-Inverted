@@ -79,7 +79,3 @@ JSON wird heute interessanterweise auch intensiv außerhalb der Javascript-Welt 
 <img src="Material/XMLvsJSON.png">  
 
 Weiterhin ist aber auch XML ein verbreiteter Standard und in manchen Anwendungen effizienter einzusetzen.
-
-
-# Wochenaufgabe
-[L04_CharacterEditor: Data](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L04_CharacterEditor:Data)

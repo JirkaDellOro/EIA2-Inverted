@@ -187,7 +187,3 @@ Jetzt musst Du lediglich noch die url-Variable in deiner Clientsoftware anpassen
   - [x] Finde deine Bestell-Angaben im Log 
 
 - [x] Überlege: warum erscheinen die Bestellungen nicht auf der geöffneten Server-App-Seite? Was geschieht mit den Antworten des Servers, wenn der CocktailBar-Client die Requests verschickt?
-
-
-# Wochenaufgabe
-[L06_CharacterEditor: Server](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L06_CharacterCreator:Server)

@@ -174,7 +174,3 @@ Hierfür stellt Javascript das JSON-Objekt zur Verfügung, mit dem die Erzeugung
 <a href="https://drive.google.com/open?id=15zq9bGt-RJGbVsvcLPKUnzWJPzthgyn9"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
 > **Hinweis:** Es existiert bereits eine Fülle von kostenlosen JSON-Editoren, die man dem Barkeeper an die Hand geben könnte, um möglichst fehlerfrei das Angebot zu editieren.
-
-
-# Wochenaufgabe
-[L05_CharacterEditor: Client](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L05_CharacterEditor:Client)
