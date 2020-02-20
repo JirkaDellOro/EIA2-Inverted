@@ -145,6 +145,3 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
 - [x] Überprüfe die Konzeption und korrigiere gegebenfalls die Diagramme entsprechend der gemachten Erfahrungen.  
 
 Hinweis: Ungenauigkeiten bei der Berechnung von Fließkommazahlen können sehr schnell zu hässlichen Zahlendarstellungen führen. Der Typ `number` verfügt aber über mehrere Methoden zur Umwandlung in eine formatierte Zeichenkette. Recherchiere danach und nutze sie.
-
-# Wochenaufgabe
-[L03_CharacterEditor](https://github.com/JirkaDellOro/EIA2-Inverted/wiki/L03_CharacterEditor)
