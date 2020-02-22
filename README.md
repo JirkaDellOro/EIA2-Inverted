@@ -1,7 +1,7 @@
 Willkommen zum invertierten Unterricht des Moduls
 # Entwicklung interaktiver Anwendungen II
 
-## Inhalte
+#### Inhalte
 <small>und grob geschätzte Zeitangaben in Stunden im Format Lektion + Übungen | Wochenaufgabe</small> 
 
 <hr/>
@@ -168,17 +168,17 @@ Willkommen zum invertierten Unterricht des Moduls
 <hr/>  
 
 ## Appendix
-### Code
+#### Code
 - [Github-Repository](https://github.com/JirkaDellOro/EIA2-Inverted/tree/master/X00_Code)  
 
-### Booklet
+#### Booklet
 - [Online](X01_Appendix)
 - [Download PDF](https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/EIA2-Inverted_Booklet.pdf)  
 
-### eiaSteroids
+#### eiaSteroids
 - [Dokumentation](X01_Appendix/eiaSteroids)
 - [Play](https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/eiaSteroids/eiaSteroids.html)
 
-### Tafelbilder
+#### Tafelbilder
 - [S20](https://github.com/JirkaDellOro/EIA2-Inverted/tree/master/X02_Notes/S20)
 - [W19](https://github.com/JirkaDellOro/EIA2-Inverted/tree/master/X02_Notes/W19) 
