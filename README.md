@@ -167,10 +167,18 @@ Willkommen zum invertierten Unterricht des Moduls
 
 <hr/>  
 
-### [eiaSteroids](X01_Appendix/eiaSteroids)
-- Beispielprojekt
+## Appendix
+### Code
+- [Github-Repository](https://github.com/jirkadelloro/EIA2-Inverted/X00_Code)  
+
+### Booklet
+- [Online](X01_Appendix)
+- [Download PDF](https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/EIA2-Inverted_Booklet.pdf)  
+
+### eiaSteroids
+- [Dokumentation](X01_Appendix/eiaSteroids)
 - [Play](https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/eiaSteroids/eiaSteroids.html)
 
-### [Booklet](X01_Appendix)
-- Ein(e) kleine(s) Büchlein/Formelsammlung/Zusammenfassung
-- [Download PDF](https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/EIA2-Inverted_Booklet.pdf)
+### Tafelbilder
+- [S20](https://github.com/jirkadelloro/EIA2-Inverted/X02_Notes/S20)
+- [W19](https://github.com/jirkadelloro/EIA2-Inverted/X02_Notes/W19) 
