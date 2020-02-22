@@ -1,9 +1,10 @@
 Willkommen zum invertierten Unterricht des Moduls
 # Entwicklung interaktiver Anwendungen II
-<small><a href="https://jirkadelloro.github.io/EIA2-Inverted">Pages-Version</a></small>
 
 ## Inhalte
 <small>und grob geschätzte Zeitangaben in Stunden im Format Lektion + Übungen | Wochenaufgabe</small> 
+
+<hr/>
 
 ### [L00_Preface](L00_Preface)  
 <small style="float: right; position: relative; top: -30px; height: 0px">0:45 | 0:00</small>
@@ -14,6 +15,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Motivation
 - Veranstaltungskonzept
 - Tipps
+
+<hr/>
 
 ### [L01_Recap&Foundation](L01_Recap&Foundation)  
 <small style="float: right; position: relative; top: -30px; height: 0px">2:00 | 1:45</small>
@@ -29,6 +32,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Debugger
 - Aktivitätsdiagramm  
 
+<hr/>
+
 ### [L02_Events](L02_Events) 
 <small style="float: right; position: relative; top: -30px; height: 0px">6:30 | 2:45</small>
 - Rückblick DOM
@@ -39,6 +44,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Skizze: User Interface 
 - Iterative Arbeitsweise   
   
+<hr/>
+
 ### [L03_FormElements](L03_FormElements) 
 <small style="float: right; position: relative; top: -30px; height: 0px">6:30 | 4:30</small>
 - Texteingabe
@@ -47,6 +54,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Konzeption und Implementation einer formulargesteuerten Anwendung  
 - FormData
   
+<hr/>
+
 ### [L04_DataStructures](L04_DataStructures) 
 <small style="float: right; position: relative; top: -30px; height: 0px">5:45 | 7:30</small>
 - Separation Of Concerns
@@ -56,6 +65,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Generierung des Formulars
 - Refactoring
 - JSON (Javascript Object Notation)
+
+<hr/>
 
 ### [L05_Client](L05_Client) 
 <small style="float: right; position: relative; top: -30px; height: 0px">4:45 | 1:45</small>
@@ -68,6 +79,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Lokaler Fileserver
 - JSON-Objekt
 
+<hr/>
+
 ### [L06_Server](L06_Server) 
 <small style="float: right; position: relative; top: -30px; height: 0px">4:30 | 0:45</small>
 - Node.js
@@ -78,6 +91,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Response-Handling
 - Heroku
 - Clientanpassung
+
+<hr/>
 
 ### [L07_Database](L07_Database) 
 <small style="float: right; position: relative; top: -30px; height: 0px">6:15 | 1:30</small>
@@ -91,6 +106,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - MongoDB in Node
 - Online Service
 
+<hr/>
+
 ### [L08_Canvas](L08_Canvas) 
 <small style="float: right; position: relative; top: -30px; height: 0px">5:30 | 5:00</small>
 - CanvasRenderingContext
@@ -102,6 +119,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Linien
 - Save/Restore
 
+<hr/>
+
 ### [L09_Classes](L09_Classes) 
 <small style="float: right; position: relative; top: -30px; height: 0px">3:30 | 4:15</small>
 - Objektorientierte Programmierung
@@ -112,12 +131,16 @@ Willkommen zum invertierten Unterricht des Moduls
 - Klassendiagramm
 - Zeitsignale
 
+<hr/>
+
 ### [L10_Inheritance](L10_Inheritance) 
 <small style="float: right; position: relative; top: -30px; height: 0px">4:15 | 0:30</small>
 - Liskov'sches Substitutionsprinzip
 - Generalisierung vs Spezialisierung
 - Regeln für die Modellierung
 - Polymorphie
+
+<hr/>
 
 ### [L11_Advanced](L11_Advanced) 
 <small style="float: right; position: relative; top: -30px; height: 0px">3:00 | 4:30</small>
@@ -127,6 +150,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Sichtbarkeit
 - Zugriffsfunktionen
 - Aufzählungstypen
+
+<hr/>
 
 ### [L12_Addition](L12_Addition) 
 <small style="float: right; position: relative; top: -30px; height: 0px">1:45 | 0:00</small>
@@ -139,6 +164,8 @@ Willkommen zum invertierten Unterricht des Moduls
 - Debugger in VSCode
 - Teamarbeit
 - Plattformen
+
+<hr/>  
 
 ### [eiaSteroids](X01_Appendix/eiaSteroids)
 - Beispielprojekt
