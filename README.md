@@ -169,7 +169,7 @@ Willkommen zum invertierten Unterricht des Moduls
 
 ## Appendix
 ### Code
-- [Github-Repository](https://github.com/jirkadelloro/EIA2-Inverted/X00_Code)  
+- [Github-Repository](https://github.com/JirkaDellOro/EIA2-Inverted/tree/master/X00_Code)  
 
 ### Booklet
 - [Online](X01_Appendix)
@@ -180,5 +180,5 @@ Willkommen zum invertierten Unterricht des Moduls
 - [Play](https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/eiaSteroids/eiaSteroids.html)
 
 ### Tafelbilder
-- [S20](https://github.com/jirkadelloro/EIA2-Inverted/X02_Notes/S20)
-- [W19](https://github.com/jirkadelloro/EIA2-Inverted/X02_Notes/W19) 
+- [S20](https://github.com/JirkaDellOro/EIA2-Inverted/tree/master/X02_Notes/S20)
+- [W19](https://github.com/JirkaDellOro/EIA2-Inverted/tree/master/X02_Notes/W19) 
