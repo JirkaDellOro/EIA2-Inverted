@@ -1,5 +1,6 @@
 Willkommen zum invertierten Unterricht des Moduls
 # Entwicklung interaktiver Anwendungen II
+<img src="X01_Appendix/Img/Banner.png">
 
 #### Inhalte
 <small style="float: right; position: relative; top: -30px; height: 0px">und grob geschätzte Zeitangaben in Stunden im Format: Lektion+Übungen | Wochenaufgabe</small> 
