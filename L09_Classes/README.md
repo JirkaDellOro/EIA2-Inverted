@@ -111,7 +111,7 @@ class Vector {
     ...
 }
 ```
-Der Konstruktor verlangt nur zur Instanzierung eines Vektors zwingend die Übergabe zweier Werte. TypeScript wird einen Fehler melden, wenn Du versuchst einen Vektor wie zuvor nur mit `new Vector();` zu instanzieren. `new Vector(10, -3)` dagegen wird akzeptiert und der Vektor wird mit den gegebenen Werten angelegt.
+Der Konstruktor verlangt nun zur Instanzierung eines Vektors zwingend die Übergabe zweier Werte. TypeScript wird einen Fehler melden, wenn Du versuchst einen Vektor wie zuvor nur mit `new Vector();` zu instanzieren. `new Vector(10, -3)` dagegen wird akzeptiert und der Vektor wird mit den gegebenen Werten angelegt.
 
 > **Hinweis:** Die set-Methode ist übrigens die, welche Du weiter oben schon hättest implementieren sollen. Falls es nicht geklappt hat, kannst Du hier spicken...
 
