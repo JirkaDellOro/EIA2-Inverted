@@ -1,7 +1,8 @@
 # L00_Preface  
 <video controls width="100%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4"> 
-  <a href="https://drive.google.com/open?id=1HDQeoBuY41BnWDnC_Ipw0O7J9F0H8nO1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<!-- <a href="https://drive.google.com/open?id=1HDQeoBuY41BnWDnC_Ipw0O7J9F0H8nO1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a> -->
+<a href=http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
 
 ## Rückblick
