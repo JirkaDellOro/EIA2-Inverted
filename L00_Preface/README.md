@@ -1,6 +1,9 @@
 # L00_Preface  
-<a href="https://drive.google.com/open?id=1HDQeoBuY41BnWDnC_Ipw0O7J9F0H8nO1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4"> 
+  <a href="https://drive.google.com/open?id=1HDQeoBuY41BnWDnC_Ipw0O7J9F0H8nO1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 
+</video>
 ## Rückblick
 Im Modul "Entwicklung interaktiver Anwendungen I" (EIA1) wurdest Du zunächst an HTML und CSS heran geführt, um damit eine Grundlage für die weiteren Schritte zu schaffen. Denn als technische Plattform dienen in dieser Modulreihe Internetbrowser, da sie auf allen gängigen Geräten zur Verfügung stehen. 
 Darüber hinaus hast Du tiefergehende Kenntnisse im Umgang mit einer imperativen Programmiersprache erlangt und Aufgaben mit Hilfe einfacher, prozeduraler Algorithmen gelöst. Es wurde TypeScript verwendet, da - im Vergleich zu Javascript - einerseits die verwendeten Datenstrukturen sichtbar werden und andererseits automatische und umfassende Hilfestellung bei der Implementation gewährleistet wird. Auch erste Interaktionen konntest Du mit Hilfe der Ereignissteuerung umsetzen. Durch die Manipulation des "Document Object Model" (DOM) konntest Du die Reaktionen des Systems für Nutzer planvoll sichtbar machen. Hierzu hast Du ein gutes Verständnis der DOM-Klassenhierarchie und des Laufzeitverhaltens erlangt.
