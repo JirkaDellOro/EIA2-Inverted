@@ -3,7 +3,10 @@
 ![](Material/Sims.png)
 
 <hr>
-<a href="https://drive.google.com/open?id=1_k4lpYR71AglQXTEqxZBjYpISO_rvWWR"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4" type="video/mp4" width="25%"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 <a href="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg" width="13%"></a>
 <a href="Material/draw.io/Asteroids_ActivityDiagram-Main_2.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Main_2.svg" width="25%"></a>
 <hr>
@@ -99,7 +102,10 @@ Der Zugriff ist nur Objekten der gleichen Klasse und deren Subklassen erlaubt. E
 
 > **Hinweis**: Im Klassendiagramm wird `protected` mit dem Zeichen `#` markiert
 
-<a href="https://drive.google.com/open?id=16CfAazrAZrekSTJ7FTPeDR1sWztdUaIu"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V2_UpdateClasses.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V2_UpdateClasses.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 
 ### `readonly`
 Unterschiedliche Programmiersprachen können noch weitere Modifikatoren anbieten. Erwähnenswert ist für TypeScript noch `readonly`, das mit den vorangegangenen Modifikatoren kombiniert werden kann. Eine so gekennzeichnete Eigenschaft kann nur direkt bei der Deklaration oder im Konstruktor definiert, danach der Wert aber nicht mehr geändert werden. Es entspricht somit dem Schlüsselwort `const` für übliche Variablen.
@@ -146,7 +152,10 @@ erscheint es von außen betrachtet aber so, als wäre diese Eigenschaft ständig
 
 ## Asteroid Reloaded
 
-<a href="https://drive.google.com/open?id=1D18nvxbGernXTXBMeXQfqL8CLdURmP8r"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V3_AsteroidReloaded.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V3_AsteroidReloaded.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 <a href="Material/draw.io/Asteroids_ClassDiagram.svg"><img src="Material/draw.io/Asteroids_ClassDiagram.svg" width="25%"></a>
 
 ## Aufzählungstypen

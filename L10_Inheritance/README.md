@@ -50,14 +50,20 @@ Jeder Teil soll also nur das von seiner Umwelt und anderen Teilen wissen, was un
 Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entwickelt.
 
 ## Erweiterung des Klassendiagramms
-<a href="https://drive.google.com/open?id=1hOXuvZ1aOGHeHUKKgEKqdAKm-8Zs6Mow"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V1_Classdiagram.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V1_Classdiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 <a href="Material/Asteroids_ClassDiagram.jpg"><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
 <a href="Material/Asteroids_ActivityDiagram-Moveable.jpg"><img src="Material/Asteroids_ActivityDiagram-Moveable.jpg" width="25%"></a>
 <a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
 
 ## Implementation Moveable, Refaktorierung Asteroid   
-<a href="https://drive.google.com/open?id=1Zx46qYfIrFD9-rPBU3GN4FsMcd9uHud4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-    
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V2_Implementation1.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V2_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
+
 > **`extends`** erweitert eine Superklasse um eine Subklasse!  
 > **`super(...)`** ruft aus der Subklasse den Constructor der Superklasse auf!  
 > **`super.methode(...)`** ruft aus der Subklasse die `methode` der Superklasse auf!
@@ -102,12 +108,18 @@ moveables.push(new Projectile(new Vector(0, 0), new Vector(0, 0)));
 ## Aktivitätsdiagramm Hauptprogramm  
 Bild/Scan: Aktivitätsdiagramm des Hauptprogramms mit asteroid/asteroids ersetzt durch moveable/moveables
 
-<a href="https://drive.google.com/open?id=1O2o9lLO5C5MyUGVHk6vK2RsyqbWiZMPB"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V3_ActivitydiagramMain.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V3_ActivitydiagramMain.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 <a href="Material/Asteroids_ActivityDiagram-Main.jpg"><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
 
 ## Implementation bei Nutzung der Polymorphie
 
-<a href="https://drive.google.com/open?id=1PSxD_WHh9sTXUwJTNcmwUsFqox1PT92K"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V4_Implementation2.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V4_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 
 > **`a instanceof B`** prüft, ob das Objekt `a` eine Instanz der Klasse `B` ist.
 

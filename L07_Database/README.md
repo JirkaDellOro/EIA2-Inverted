@@ -138,7 +138,10 @@ Die eigentlichen Daten kann man so nicht einsehen, sie werden in einem effizient
 
 Nachdem Du diese Übungen erfolgreich abgeschlossen hast, kannst Du nicht nur mit der MongoShell umgehen, sondern hast auch schon die grundlegendsten Anweisungen gelernt, die genauso auch im Code Verwendung finden. Sehr viel weitergehend ist die [Dokumentation](https://docs.mongodb.com/manual/reference/method/). Wenn es nicht richtig geklappt hat, kannst Du dir untenstehendes Video anschauen, indem diese Übungen demonstriert werden.
 
-<a href="https://drive.google.com/open?id=1ZL16d1kzSdFy9VLap2fnjU32XAUuCHi3"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L07_V1_MongoShell.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V1_MongoShell.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 
 ## MongoDB in Node
 Wenn der Kunde der Cocktailbar eine Bestellung aufgibt, soll der Server diese Bestellung an die Datenbanksoftware schicken, damit sie dort gespeichert wird. Was eben von Hand mit der MongoShell erledigt wurde, soll also das Node.js-Programm bewerkstelligen. Hierzu muss Node zunächst um die entsprechenden Module für die Arbeit mit MongoDB erweitert werden. Führe also die Kommandos `npm install @types/mongodb` sowie `npm install mongodb` auf der obersten Ebene deines EIA2-Projektes aus. 
@@ -167,12 +170,18 @@ orders.insert({...});
 ## Aktivitätsdiagram
 Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server aufgrund der ankommenden Requests und die Formulierung der Antworten konzipiert werden.
 
-<a href="https://drive.google.com/open?id=1dzCJMQnLkafOx5MFmC7ECvXCNDsQbHnW"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L07_V2_ActivityDiagram.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V2_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 <a href="Material\CocktailBar_ActivityDiagram-Server.jpg"><img src="Material\CocktailBar_ActivityDiagram-Server.jpg" width="25%"/></a>
 
 ## Implementation
 
-<a href="https://drive.google.com/open?id=1RkcKlkpSFA1hDAcXK9AHPoMg-ZsApgDR"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>  
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L07_V3_Implementation.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V3_Implementation.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>    
 
 ## Test
 - [x] Starte den Server in einem dritten Terminalfenster. MongoDB sollte den Verbindungsversuch erkennen und eine zweite Connection anzeigen.
@@ -180,7 +189,10 @@ Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server a
 - [x] Setze mit dem Client mehrere unterschiedliche Bestellungen ab und beobachte die Ausgaben im Serverfenster. 
 - [x] Frage mit der MongoShell die Collection "Orders" der Datenbank "Cocktail" ab um zu schauen, ob die Bestellungen eingetragen wurden.
 
-<a href="https://drive.google.com/open?id=1tjkBi39qFsOfiESPkq4HekTtnTgaIQNZ"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>  
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L07_V4_Test.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V4_Test.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>    
 
 ## Online Service
 Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von Außen sollte niemand Zugriff darauf haben. Die Bestellungen sollen aber in einer Datenbank gespeichert werden, die ständig erreichbar ist. MongoDB bietet mit Atlas ein eigenes Serviceangebot hierfür.

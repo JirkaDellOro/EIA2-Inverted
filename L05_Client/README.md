@@ -131,12 +131,18 @@ Ein Objekt vom Typ `URLSearchParams` lässt sich fast genauso verwenden wie eine
 
 ## Cocktailbar: Bestellung versenden
 
-<a href="https://drive.google.com/open?id=1rZSjcfDJVTfWTzgucu4aTudXEnu91W7d"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L05_V1_ActivityDiagram.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L05_V1_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 <a href="Material/CocktailBar_UI-Scribble.jpg"><img src="Material/CocktailBar_UI-Scribble.jpg" width="25%"/></a>
 
 ## Implementation I
 
-<a href="https://drive.google.com/open?id=1Af3PeewETTQ90tKc0CJX0Io7A4LENa4-"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L05_V2_Implementation1.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L05_V2_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 
 - [x] Ergänze die Implementation so, dass beim Reset die Bestellübersicht gelöscht wird!
 
@@ -146,7 +152,10 @@ Beim Testen auf der lokalen Maschine tritt nun ein Fehler auf. Der URL wird als 
 Sobald die Cocktailbar von Github-Pages aus aufgerufen wird, tritt das Problem nicht auf. Alle Resourcen befinden sich in derselben Domäne im Netz, wo mit dem http-Protocol gearbeitet wird, und der Zugriff mit `fetch` ist erlaubt.  
 Es wäre natürlich sehr lästig, während der Entwicklung für jeden Test zunächst das aktuelle Projekt auf einen entfernten Fileserver kopieren zu müssen. Stattdessen ist es einfach möglich, die lokale Entwicklungsmaschine zu einem Fileserver zu machen und das Projekt dann unter "Internetbedingungen" zu testen. Im folgenden Beispiel wird hierzu ein winziger Fileserver genutzt, der unter https://www.npmjs.com/package/serve zu finden ist.
 
-<a href="https://drive.google.com/open?id=1-pFM1PUBfzQBUwGBYry6ipuAdJJoa8qB"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L05_V3_Local_Fileserver.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L05_V3_Local_Fileserver.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 
 
 ## Standardverhalten des Submit-Buttons
@@ -163,7 +172,10 @@ Im letzten Kapitel wurde die Variable `data` direkt im Code definiert, die Daten
 ### JSON-Objekt
 Hierfür stellt Javascript das JSON-Objekt zur Verfügung, mit dem die Erzeugung eines assoziativen Arrays auf Basis der in einer Zeichenkette enthaltenen Information leicht möglich ist. Ebenso kann damit umgekehrt die Repräsentation eines solchen Arrays in Form einer Zeichenkette erzeugt werden. Das JSON-Objekt stellt hierfür zwei Methoden zur Verfügung: `parse` und `stringify`.
 
-<a href="https://drive.google.com/open?id=1V3cu5ofbmTFdNrZUWR7OaBJVumYI9FHU"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L05_V4_Diagrams.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L05_V4_Diagrams.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 <a href="Material/CocktailBar_ActivityDiagram.jpg"><img src="Material/CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
 <a href="Material/CocktailBar_ActivityDiagram_Client.jpg"><img src="Material/CocktailBar_ActivityDiagram_Client.jpg" width="25%"/></a>
 
@@ -171,6 +183,9 @@ Hierfür stellt Javascript das JSON-Objekt zur Verfügung, mit dem die Erzeugung
 
 ## Implementation II
 
-<a href="https://drive.google.com/open?id=15zq9bGt-RJGbVsvcLPKUnzWJPzthgyn9"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L05_V5_Implementation2.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L05_V5_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 
 > **Hinweis:** Es existiert bereits eine Fülle von kostenlosen JSON-Editoren, die man dem Barkeeper an die Hand geben könnte, um möglichst fehlerfrei das Angebot zu editieren.

@@ -108,30 +108,45 @@ Erpresserbriefe zu basteln ist mühsam. So ist es doch eine interessante Geschä
 ## Anwendungsfalldiagramm (Use-Case-Diagram)
 Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Überblick über die Anforderungen an deine Anwendung. Das geht ganz schnell und hilft ungemein bei der Konzeption.  
 
-<a href="https://drive.google.com/open?id=1yc2xPFAkGlpWyLf-pWqlw7amGD2qJE1s"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a><a href="Material/BlackmailerCompanion_UseCaseDiagram.jpg"><img src="Material/BlackmailerCompanion_UseCaseDiagram.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V1_UseCase.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V1_UseCase.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  <a href="Material/BlackmailerCompanion_UseCaseDiagram.jpg"><img src="Material/BlackmailerCompanion_UseCaseDiagram.jpg" width="25%"/></a>
 
 ## Skizze: User Interface 
 Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Das wird schon einiges über die erforderliche darunterliegende Struktur verraten. Die Skizze versiehst Du schon mit den HTML-Auszeichnungen und Eigenschaften, die dir dabei sinnvoll erscheinen. Unterscheide dabei zwischen statischen und dynamischen Elementen und Eigenschaften. Für die Dynamik trägst Du hier schon ein, an welchen Elementen Listener installiert werden soll und welche Ereignisse dabei mit welchen Aktivitäten verknüpft werden. Prüfe, ob alle Interaktionsmöglichkeiten zur Realisierung der Anwendungsfälle gegeben sind.
 
-<a href="https://drive.google.com/open?id=1hCpYP-9rsHBN4VT8vO3vVR9r6ZSVuucJ"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V2_UserInterface.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V2_UserInterface.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 <a href="Material/BlackmailerCompanion_UI-Scribble.jpg"><img src="Material/BlackmailerCompanion_UI-Scribble.jpg" width="25%"/></a>
 
 ## Aktivitätsdiagramme
 Jetzt hast Du bereits aus der Sicht des Nutzers die wesentlichen Aktivitäten, die beteiligten Elemente und die auszuwerteten Ereignisse festgehalten. Nun wechselst Du auf die Sicht aus dem System heraus und legst fest, wie es arbeiten soll. Dazu nutzt Du jetzt Aktivitätsdiagramme. Ein Event bildet dabei jeweils als Signalempfang einen Startknoten für eine Aktivität.  
 Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm dir dann nacheinander die einzelnen Aktivitäten vor und verfeinere sie. Wiederhole diesen Prozess, bis Du zu den atomaren Aktionen gekommen bist die sich in Programmanweisungen umsetzen lassen. Am Anfang musst Du hierzu wahrscheinlich nach diesen Anweisungen noch etwas recherchieren.  
-<a href="https://drive.google.com/open?id=1-9bFB-bL7URGy2jE2URw68h6Q34m3rBY"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V3_ActivityDiagram.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V3_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 <a href="Material/BlackmailerCompanion_ActivityDiagram.jpg"><img src="Material/BlackmailerCompanion_ActivityDiagram.jpg" width="25%"/></a>
 
 ## Implementation
 Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implementation der Anwendung berücksichtigt zu haben, kannst Du dich daran machen.  
 
-<a href="https://drive.google.com/open?id=1HJr-cp-f5N2z1S-4_6gVAwvapg85M59c"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V4_Implementierung_071019.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V4_Implementierung_071019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 <a href="Material/BlackmailerCompanion_ActivityDiagram2.jpg"><img src="Material/BlackmailerCompanion_ActivityDiagram2.jpg" width="25%"/></a>
 
 ## Testing
 Während der Implementation wird das Programm immer wieder getestet. Es ist wichtig möglichst so zu implementieren, dass nicht erst ein abschließender Test Fehler zu Tage fördert, sondern dass immer lauffähige Zwischenstände existieren, die entsprechend in das Code-Repository aufgenommen werden.  
 
-<a href="https://drive.google.com/open?id=1LtL6I7dJZtIei1Nlw1oKy2p35rSZ1-P1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V5_Testing.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V5_Testing.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 
 ## Iterative Arbeitsweise
 Bedenke, dass Du die Konzeption jederzeit verbessern kannst und solltest, wenn dir auffällt, dass etwas fehlt oder nicht funktioniert. Dasselbe gilt für alle vorangegangenen Schritte. So können Überlegungen beim Zeichnen der Skizze zurück auf das Use-Case-Diagramm reflektieren, oder Erkenntnisse bei der Implementation die Änderung der Skizze nach sich ziehen, was dann wiederum die Aktivitätsdiagramme beeinflusst. Es ist unwahrscheinlich, dass der erste konzeptionelle Ansatz sich unverändert durchführen lässt und zur perfekten Anwendung führt. 

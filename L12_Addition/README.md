@@ -230,7 +230,10 @@ Seit 2015 schickt sich ein weiteres Modell an den App-Markt aufzumischen: Progre
 Der mobile Twitter Client ist eine Progressive Web App
 
 # Abschluss
-<a href="https://drive.google.com/open?id=1hDPTTa-cCJcffHAXh2lPPgQEmLGPp9Ls"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+<video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L12_Extro.mp4" type="video/mp4"> 
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L12_Extro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>  
 
 
 ## eiaSteroids
