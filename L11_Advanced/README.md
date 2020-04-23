@@ -4,7 +4,7 @@
 
 <hr>
 <video controls width="100%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4" type="video/mp4" width="25%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4" type="video/mp4" style="width:25%"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
 <a href="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg" width="13%"></a>
