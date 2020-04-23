@@ -21,7 +21,7 @@ Zwei Dinge sind aus Obigem zu folgern:
 - es gibt einen weiteren Akteur, den Barkeeper
 - ihm muss eine Möglichkeit zur Verfügung gestellt werden das Angebot anzupassen ohne in die eigentliche Applikation einzugreifen  
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V1_UseCase.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V1_UseCase.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
@@ -41,7 +41,7 @@ Die getrennte Betrachtung führt zu guten Datenstrukturen, die auch von noch nic
 ## Datenstruktur für die Cocktailbar
 Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und lässt den Barkeeper außen vor. Es ist also wünschenswert, dass die Seite im Prinzip so bleibt, aber nicht von einer statischen HTML-Datei abgeleitet wird sondern dynamisch auf der Grundlage von Daten erzeugt wird, die der Barkeeper selbst pflegen kann. Eine einfache Möglichkeit ist, ihm eine spezielle und simpel strukturierte Textdatei an die Hand zu geben, in welche er nach einem übersichtlichen Muster seine Daten eintragen kann. Er soll also nicht mit einem Chaos konfrontiert werden, das Genialität fordert, sondern mit Ordnung.
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V2_Datenstruktur.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V2_Datenstruktur.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
@@ -51,7 +51,7 @@ Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und l
 Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und funktionieren soll ist auch bekannt und bereits getestet. Jetzt muss also noch ein Algorithmus entwickelt werden, welcher mit Hilfe der Daten das Formular generiert. Dazu muss zunächst entschieden werden, welche Teile des DOM automatisch beim Laden der Seite durch die Interpretation der HTML-Datei erzeugt werden sollen, und welche dann dynamisch durch das Skript dazu kommen. Theoretisch ist es natürlich möglich, komplett auf eine Beschreibung der Seitenstruktur in der HTML-Datei zu verzichten, lediglich einen Verweis auf das Skript zu implementieren und die DOM-Erzeugung komplett dem dadurch aufgerufenen Skript zu überlassen. Einerseits würde dies aber auch dem SoC-Prinzip zuwider laufen, weil unnötig viel Verantwortlichkeit auf das Skript übertragen wird, andererseits liegt bereits eine HTML-Datei vor, welche die Struktur beschreibt. Es erscheint also eher sinnvoll, lediglich die Beschreibungen der dynamischen Strukturen aus der bestehenden HTML-Datei zu entfernen und sie auf die statischen zu reduzieren. Das ist eine klassische Design-Entscheidung und wird für dieses Beispiel in obigem Sinne getroffen.  
 
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V3_GenerierungFormular.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V3_GenerierungFormular.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
@@ -63,13 +63,13 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 
 ## Implementation I
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V4_Implementation1.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V4_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
 
 ## Implementation II
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V5_Implementation2.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V5_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  

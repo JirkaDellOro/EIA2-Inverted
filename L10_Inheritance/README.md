@@ -50,7 +50,7 @@ Jeder Teil soll also nur das von seiner Umwelt und anderen Teilen wissen, was un
 Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entwickelt.
 
 ## Erweiterung des Klassendiagramms
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V1_Classdiagram.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V1_Classdiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
@@ -59,7 +59,7 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
 <a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
 
 ## Implementation Moveable, Refaktorierung Asteroid   
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V2_Implementation1.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V2_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
@@ -106,9 +106,8 @@ moveables.push(new Projectile(new Vector(0, 0), new Vector(0, 0)));
 - [x] Überprüfe auch dies mit einer entsprechenden Implementation
 
 ## Aktivitätsdiagramm Hauptprogramm  
-Bild/Scan: Aktivitätsdiagramm des Hauptprogramms mit asteroid/asteroids ersetzt durch moveable/moveables
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V3_ActivitydiagramMain.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V3_ActivitydiagramMain.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
@@ -116,7 +115,7 @@ Bild/Scan: Aktivitätsdiagramm des Hauptprogramms mit asteroid/asteroids ersetzt
 
 ## Implementation bei Nutzung der Polymorphie
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V4_Implementation2.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V4_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  

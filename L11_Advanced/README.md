@@ -3,8 +3,8 @@
 ![](Material/Sims.png)
 
 <hr>
-<video controls width="100%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4" type="video/mp4" style="width:25%"> 
+<video controls width="30%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
 <a href="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg" width="13%"></a>
@@ -102,7 +102,7 @@ Der Zugriff ist nur Objekten der gleichen Klasse und deren Subklassen erlaubt. E
 
 > **Hinweis**: Im Klassendiagramm wird `protected` mit dem Zeichen `#` markiert
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V2_UpdateClasses.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V2_UpdateClasses.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
@@ -152,7 +152,7 @@ erscheint es von außen betrachtet aber so, als wäre diese Eigenschaft ständig
 
 ## Asteroid Reloaded
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V3_AsteroidReloaded.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V3_AsteroidReloaded.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  

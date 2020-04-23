@@ -47,7 +47,7 @@ Mit Tastendruck auf F5 alleine startest Du den Debugger mit der vollen Funktiona
 Node kommt mit einigen neuen Standardobjekten und Modulen, für EIA2 brauchst Du aber nur sehr wenige davon. Die Dokumentation findest Du im Netz auf https://nodejs.org/de/docs/.  
 Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der ein Node-Programm gerade ausgeführt wird. 
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V1_API.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V1_API.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
@@ -77,7 +77,7 @@ Auch die Standardmodule, die wahlweise importiert werden wie `http` und `url`, s
 
 ## Design
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V2_Design.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V2_Design.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
@@ -85,7 +85,7 @@ Auch die Standardmodule, die wahlweise importiert werden wie `http` und `url`, s
 
 ## Implementation 1
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V3_Implementation_Server1.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V3_Implementation_Server1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
@@ -113,14 +113,14 @@ Im Beispiel verschickt der Server lediglich die Antwort mit dem Inhalt "Was geht
 
 ## Implementation 2
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V4_Implementation_Server2.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V4_Implementation_Server2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
 
 ### Client
 
-<video controls width="100%"> 
+<video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V5_Implementation_Client.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V5_Implementation_Client.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
