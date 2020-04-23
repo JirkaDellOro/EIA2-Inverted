@@ -197,44 +197,50 @@ Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transf
 # Generierung eines Landschaftsbildes
 
 ## Scribble
-<video controls width="30%"> 
+<div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V1_Scribble.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V1_Scribble.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
 <a href="Material\Alley_Scribble.jpg"><img src="Material\Alley_Scribble.jpg" width="25%"/></a>  
+</div>
 
 
 ## Aktivitätsdiagramm
-<video controls width="30%"> 
+<div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V2_ActivityDiagram.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V2_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  <a href="Material\Alley_ActivityDiagram.jpg"><img src="Material\Alley_ActivityDiagram.jpg" width="25%"/></a>
+</div>
 
 
 ## Implementation des Hintergrund
-<video controls width="30%"> 
+<div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V3_Implementation1.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V3_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
+</div>
 
 ## Implementation der Wolke
-<video controls width="30%"> 
+<div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V4_Implementation2.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V4_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
+</div>
 
 ## Aktivitätsdiagramm zu den Bergen
-<video controls width="30%"> 
+<div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V5_ActivitydiagramMountains.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V5_ActivitydiagramMountains.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  <a href="Material\Alley_ActivityDiagram-Mountains.jpg"><img src="Material\Alley_ActivityDiagram-Mountains.jpg" width="25%"/></a>
+</div>
 
 
 ## Implementation der Berge
-<video controls width="30%"> 
+<div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V6_ImplementationMountains.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V6_ImplementationMountains.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
+</div>
 
 ## Übungen
 - [x] Isoliere die Funktionalität eine Zufallszahl zwischen einem minimalen und maximalen Wert zu liefern. Konzipiere sie als Aktivität und implementiere sie als Funktion, welche die beiden Grenzwerte entgegenen nimmt und eine entsprechende Zufallszahl zurück gibt. Ersetze die Stellen im Programm, an denen diese Funktion genutzt werden kann und sollte durch entsprechende Aufrufe derselben.
