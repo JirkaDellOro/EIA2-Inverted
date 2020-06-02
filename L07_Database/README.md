@@ -203,7 +203,7 @@ Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von 
 
 - [x] Betrachte die EIA2-Landschaft. Die letzte Wolke wird jetzt in Angriff genommen.
   - [x] Rufe https://www.mongodb.com/ auf
-  - [x] Klicke oben rechts auf "Start Free"
+  - [x] Klicke auf "Start Free"
   - [x] Melde dich mit Namen und Mailadresse an
   - [x] Wähle "Create a cluster" unter Starter Clusters
   - [x] Wähle AWS und einen Free Cluster in Europa
