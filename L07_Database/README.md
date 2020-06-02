@@ -85,7 +85,7 @@ Collection Extras
 { name: "Lemon", price: 0.20}
 ...
 ```
-Diese Collections könnte man auch in einer eigenen Datenbank für das Barkeeper-Angebot anlegen und damit man strenger von den Bestellungen trennen.  
+Diese Collections könnte man auch in einer eigenen Datenbank für das Barkeeper-Angebot anlegen und damit strenger von den Bestellungen trennen.  
 
 > **Achtung:** Wie also die Informationen in Datenbanken strukturiert sein sollen, ist eine Designentscheidung, die Du treffen musst!
 
