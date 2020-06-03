@@ -210,7 +210,7 @@ Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von 
   - [x] Wähle einen Clusternamen, vielleicht deinen eigenen oder "EIA2"?
   - [x] Klicke auf "Create Cluster"
 
-- [x] Folge jetzt dem "Get Started"-Guide!
+- [x] Folge jetzt dem "Get Started"-Guide! https://docs.atlas.mongodb.com/getting-started/
   - [x] Erlaube deinem Testuser Read/Write-Zugriff
   - [x] Erlaube in der Whitelist Zugriff von überall
   - [x] Lege KEINE Beispieldaten an
