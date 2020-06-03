@@ -212,7 +212,7 @@ Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von 
 
 - [x] Folge jetzt dem "Get Started"-Guide! https://docs.atlas.mongodb.com/getting-started/
   - [x] Erlaube deinem Testuser Read/Write-Zugriff
-  - [x] Erlaube in der Whitelist Zugriff von überall
+  - [x] Erlaube in der Whitelist Zugriff von überall mit der IP-Adresse 0.0.0.0/0
   - [x] Lege KEINE Beispieldaten an
   - [x] Wähle "Connect Your Application" und kopiere den Connection-String, lege ihn zunächst als Kommentar in deinem Servercode ab.
 - [x] Wähle dann Collections->Add my own data
