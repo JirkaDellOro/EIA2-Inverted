@@ -237,6 +237,6 @@ Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von 
   - im Heroku-Log
   - in Atlas
   dass und wie die Daten fließen.
-- [x] Plane eine Funktion retrieveOrders, welche mit `orders.find()` alle Bestellungen ausliest und ein Array von `Orders` zurückliefert. Nutze dazu die asynchrone Funktion `toArray()` des Cursor-Objektes. Dieses Array soll ind er Folge dem Barkeeper dargestellt werden, sodass er die Bestellungen abarbeiten kann.
+- [x] Plane eine Funktion retrieveOrders, welche mit `orders.find()` alle Bestellungen ausliest und ein Array von `Orders` zurückliefert. Nutze dazu die asynchrone Funktion `toArray()` des Cursor-Objektes. Dieses Array soll in der Folge dem Barkeeper dargestellt werden, sodass er die Bestellungen abarbeiten kann.
 - [x] Plane eine Erweiterung der Funktion `handleRequest`, so dass retrieveOrders aufgerufen und das Ergebnis als Zeichenkette in die Serverantwort eingefügt wird, wenn der Server mit dem Query-String `command=retrieve` aufgerufen wird. Eine Clientsoftware für den Barkeeper kann damit die Bestellungen abrufen.
 - [x] Implementiere diese Erweiterungen und teste sie.
