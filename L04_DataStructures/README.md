@@ -6,8 +6,6 @@ Albert Einstein war wohl unbestritten eines der größten Genies, welche die Men
 
 - **FunFact**: Einstein wird noch ein weiteres Zitat zugesprochen, welches in diesem Zusammenhang nicht unerwähnt bleiben sollte: "Genie ist 1 % Talent und 99 % harte Arbeit ..."  
 
-Quelle: https://beruhmte-zitate.de/zitate/2005417-albert-einstein-genie-ist-1-talent-und-99-harte-arbeit/
-
 ## Separation Of Concerns
 Ebenso unstrittig wie Einsteins Genialität ist das Prinzip der Trennung der Zuständigkeiten (SoC) in der Softwareentwicklung. Hierbei geht es darum, dass jeder Teil der ganzen Software auch eine klare und von den anderen Teilen getrennte Zuständigkeit hat. Diese Zuständigkeit soll sich mit einem knappen Satz beschreiben lassen. Wenn in diesem Satz das Wort "und" vorkommt, ist möglicherweise etwas faul und dem Teil sind zu viele Zuständigkeiten übertragen.  
 Bei der Cocktailbar haben wir schon vieles richtig gemacht, insbesondere, wenn wir das Ganze aus einer sehr übergeordneten Perspektive und die für die Entwicklung von Web-Applikationen grundlegende Separation betrachten.  
