@@ -76,6 +76,8 @@ Hiermit wird das `window`-Objekt, welches dem Browsertab entspricht in dem die A
 - [x] Installiere den Listener am `document`-Objekt, statt am `window`-Objekt. Was geschieht nun?
 - [x] Experimentiere in der gleichen Form mit `DOMContentLoaded`, wie verhält sich das System nun?
 
+> **Hinweis:** Um die Ausführung eines Scripts zu verzögern, steht mittlerweile auch das HTML-Attribut `defer` zur Verfügung. 
+
 ## Event-Phasen
 Nicht alle Ereignisse werden allen Objekten im System mitgeteilt. Es ist also nur sinnvoll dort Listener zu installieren, wo sie auch wirken können. Besonders interessant wird das Ganze bei Nutzerinteraktionen, die auf DOM-Objekten ausgeführt werden, wie beispielsweise der Klick auf einen Button. Solche Ereignisse werden nämlich in drei Phasen durch den DOM-Graphen durchgereicht.
 
