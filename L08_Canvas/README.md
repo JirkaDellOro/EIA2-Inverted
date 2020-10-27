@@ -29,7 +29,7 @@ crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height);
 `fillRect(...)`, `clearRect(...)` und `strokeRect(...)` sind die einzigen Zeichenbefehle, die sofort ein sichtbares Ergebnis liefern. Komplexere Formen definierst Du zunächst mit Hilfe eines Pfad-Objektes.
 
 ### Vektorgrafik
-Wenn auch das entstehende Bild am Ende als Rastergrafik vorliegt, die Definition der Pfade erfolgt nach den Regeln der Vektorgrafik. Das bedeutet, dass Du nicht einzelne Pixel manipulierst, sondern mathematische Beschreibungen der zu zeichnenden Formen und ihrer Koordinaten formulierst. Die Rasterisierung übernimmt dann der RenderingContext wenn die Zeichenmethoden `stroke()` und `fill()` aufgerufen werden. Daraufhin erst werden die Pixel, die innerhalb oder am Rande des Pfades liegen nach der zuvor definierten Füll- oder Linienvorschrift mit Farbe versehen.  
+Wenn auch das entstehende Bild am Ende als Rastergrafik vorliegt, die Definition der Pfade erfolgt nach den Regeln der Vektorgrafik. Das bedeutet, dass Du nicht einzelne Pixel manipulierst, sondern mathematische Beschreibungen der zu zeichnenden Formen und ihrer Koordinaten formulierst. Die Rasterung übernimmt dann der RenderingContext wenn die Zeichenmethoden `stroke()` und `fill()` aufgerufen werden. Daraufhin erst werden die Pixel, die innerhalb oder am Rande des Pfades liegen nach der zuvor definierten Füll- oder Linienvorschrift mit Farbe versehen.  
 Es gibt allerdings auch Methoden zur direkten Manipulation von Pixeln, die in dieser Lektion aber keine Rolle spielen sollen.
 
 ### Arc  
@@ -57,9 +57,9 @@ Mit den Anweisungen `moveTo(...)` und `lineTo(...)` kannst Du einen Pfad um Lini
 - [x] Lasse ein Dreieck zeichnen.
 
 ### Kurven
-Damit kannst Du beliebige eckige Formen darstellen. Wenn es geschmeidiger werden soll, nutzt Du quadratische oder Bezier-Kurven.  
+Mit `moveTo(...)` und `lineTo(...)` kannst Du beliebige eckige Formen darstellen. Wenn es geschmeidiger werden soll, nutzt Du quadratische oder Bezier-Kurven.  
 
-- [x] Experimentiere mit [dieser Anwendung](../X01_Appendix/Canvas/Curves/Curves/start.html). Beachte, dass für quadratische Kurven außer dem vorangegangenen Endpunkt des aktuellen Pfades zwei weitere, für Bezierkurven drei weitere Punkte angegeben werden müssen.  
+- [x] Experimentiere mit [dieser Anwendung](https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/Canvas/Curves/Curves/start.html). Beachte, dass für quadratische Kurven außer dem vorangegangenen Endpunkt des aktuellen Pfades zwei weitere, für Bezierkurven drei weitere Punkte angegeben werden müssen.  
 
 ### Text
 Alternativ zu einer Textüberlagerung durch ein weiteres HTML-Element, kann Text auch durch den RenderingContext auf den Canvas gebracht werden. Hierzu dienen die Methoden `fillText(...)` und `strokeText(...)` und weitere Methoden zur Steuerung der Textausgabe.

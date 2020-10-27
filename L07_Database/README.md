@@ -7,7 +7,7 @@ Mit dem Cocktailbar-Client kann der Kunde einen Cocktail zusammenstellen, seine 
 Es wäre möglich, dass der Server für jede Bestellung eine Datei anlegt und diese in seinem Massenspeicher ablegt, oder alle Bestellungen in einer Datei sammelt. Allerdings sollten auch alte Bestellungen gelöscht, oder vielleicht alle Bestellungen des gleichen Kunden herausgesucht, oder zur Optimierung des Angebots die Häufigkeit der Bestellung einer bestimmten Drink-Extra-Kombination ermittelt werden können. Für all dies müssten wieder entsprechende Algorithmen und Datenstrukturen konzipiert und implementiert werden. Da solche Anforderungen bei der Entwicklung interaktiver Anwendungen aber sehr häufig auftreten und oft ähnlich sind, gibt es bereits Standardsoftware, welche Daten speichert, verwaltet und auswertet: Datenbanksysteme!  
 
 ## Relationale Datenbanken
-Seit den 1970er Jahren dominieren relationale Datenbanken, bei denen die Daten in Tabellenstrukturen untergebracht werden und durch Querverweise ein Netz von Tabellen aufgespannt wird. Mit der Standard-Query-Language (SQL) wurde eine Abfragesprache entwickelt, mit der komplexe Anweisungen formuliert werden können, welche die Datenbanksoftware dann selbständig ausführt um Daten aus dem Bestand zu liefern oder zu manipulieren. Heute ist insbesondere die Open-Source-Datenbanksoftware MySQL sehr weit im Internet verbreitet.
+Seit den 1970er Jahren dominieren relationale Datenbanken, bei denen die Daten in Tabellenstrukturen untergebracht werden und durch Querverweise ein Netz von Tabellen aufgespannt wird. Mit der Structured-Query-Language (SQL) wurde eine Abfragesprache entwickelt, mit der komplexe Anweisungen formuliert werden können, welche die Datenbanksoftware dann selbständig ausführt um Daten aus dem Bestand zu liefern oder zu manipulieren. Heute ist insbesondere die Open-Source-Datenbanksoftware MySQL sehr weit im Internet verbreitet.
 > **FunFact:** Dem Namen MySQL wird meist intuitiv die Bedeutung "MeinSQL" zugesprochen. Tatsächlich aber hat der finnische Entwickler Michael Widenius sein 1994 gestartetes Open-Source-Projekt nach seiner Tochter My benannt.
 
 ## NoSQL-Datenbanken
@@ -85,7 +85,7 @@ Collection Extras
 { name: "Lemon", price: 0.20}
 ...
 ```
-Diese Collections könnte man auch in einer eigenen Datenbank für das Barkeeper-Angebot anlegen und damit man strenger von den Bestellungen trennen.  
+Diese Collections könnte man auch in einer eigenen Datenbank für das Barkeeper-Angebot anlegen und damit strenger von den Bestellungen trennen.  
 
 > **Achtung:** Wie also die Informationen in Datenbanken strukturiert sein sollen, ist eine Designentscheidung, die Du treffen musst!
 
@@ -203,16 +203,16 @@ Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von 
 
 - [x] Betrachte die EIA2-Landschaft. Die letzte Wolke wird jetzt in Angriff genommen.
   - [x] Rufe https://www.mongodb.com/ auf
-  - [x] Klicke oben rechts auf "Start Free"
+  - [x] Klicke auf "Start Free"
   - [x] Melde dich mit Namen und Mailadresse an
   - [x] Wähle "Create a cluster" unter Starter Clusters
   - [x] Wähle AWS und einen Free Cluster in Europa
   - [x] Wähle einen Clusternamen, vielleicht deinen eigenen oder "EIA2"?
   - [x] Klicke auf "Create Cluster"
 
-- [x] Folge jetzt dem "Get Started"-Guide!
+- [x] Folge jetzt dem "Get Started"-Guide! https://docs.atlas.mongodb.com/getting-started/
   - [x] Erlaube deinem Testuser Read/Write-Zugriff
-  - [x] Erlaube in der Whitelist Zugriff von überall
+  - [x] Erlaube in der Whitelist Zugriff von überall mit der IP-Adresse 0.0.0.0/0
   - [x] Lege KEINE Beispieldaten an
   - [x] Wähle "Connect Your Application" und kopiere den Connection-String, lege ihn zunächst als Kommentar in deinem Servercode ab.
 - [x] Wähle dann Collections->Add my own data
@@ -237,6 +237,6 @@ Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von 
   - im Heroku-Log
   - in Atlas
   dass und wie die Daten fließen.
-- [x] Plane eine Funktion retrieveOrders, welche mit `orders.find()` alle Bestellungen ausliest und ein Array von `Orders` zurückliefert. Nutze dazu die asynchrone Funktion `toArray()` des Cursor-Objektes.
-- [x] Plane eine Erweiterung der Funktion `handleRequest`, so dass retrieveOrders aufgerufen und das Ergebnis als Zeichenkette in die Serverantwort eingefügt wird, wenn der Server mit dem Query-String `command=retrieve` aufgerufen wird.
+- [x] Plane eine Funktion retrieveOrders, welche mit `orders.find()` alle Bestellungen ausliest und ein Array von `Orders` zurückliefert. Nutze dazu die asynchrone Funktion `toArray()` des Cursor-Objektes. Dieses Array soll in der Folge dem Barkeeper dargestellt werden, sodass er die Bestellungen abarbeiten kann.
+- [x] Plane eine Erweiterung der Funktion `handleRequest`, so dass retrieveOrders aufgerufen und das Ergebnis als Zeichenkette in die Serverantwort eingefügt wird, wenn der Server mit dem Query-String `command=retrieve` aufgerufen wird. Eine Clientsoftware für den Barkeeper kann damit die Bestellungen abrufen.
 - [x] Implementiere diese Erweiterungen und teste sie.

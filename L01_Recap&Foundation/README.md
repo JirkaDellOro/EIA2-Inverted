@@ -64,7 +64,7 @@ v = v + 1;
 console.log(v);
 ```  
 
-- [x] Erstelle das Programm mit TypeScript und teste es im Browser.
+- [x] Erstelle das Programm mit TypeScript in VSCode und teste es im Browser.
 
 >**Achtung:** 
 > - Deklaration und Definition können in eine Zeile geschrieben werden.
@@ -74,7 +74,7 @@ console.log(v);
 Die heute gebräuchlichen Computer speichern Informationen als lange Serien von Bits, kleinste Informationseinheiten, die nur zwei Zustände aufweisen können: an und aus. Damit werden aber ganz unterschiedliche Typen von Informationen kodiert: Zahlen, Texte, Bilder, Musik, Videos usw.  
 Damit der Rechner nun aber die Informationen korrekt verarbeiten kann, muss bekannt sein, welchen Typ eine Bitfolge darstellen soll.  
 
-- [x] Zeige mit dem Mauscursor auf `v` in dem zuvor eingegebenen Programm. Was erscheint im Tooltip?
+- [x] Zeige mit dem Mauscursor in VSCode auf `v` in dem zuvor eingegebenen Programm. Was erscheint im Tooltip?
 
 Typescript erkennt aus dem Zusammenhang, dass `v` vom Typ `number` sein soll. Diese Erkennung nennt man "inference".  
 
