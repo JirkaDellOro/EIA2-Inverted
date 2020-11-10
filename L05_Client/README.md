@@ -68,7 +68,7 @@ Im einfachsten Fall sieht das ganze Konstrukt dann so aus:
     function communicate(_url: RequestInfo): void {
         // try to communicate
         let promise: Promise<Response> = fetch(_url);
-        // establish the functions to call when communications 1. succeeds, 2. fails
+        // establish the functions to call when communication 1. succeeds, 2. fails
         promise.then(handleSuccess, handleFailure);
     }
 
