@@ -602,6 +602,9 @@ by Matt Graham
    color: #3399cc;
    font-weight: 400;
    text-decoration: none; }
+
+ a::after {
+   content: "⇲"; }
  
  a small {
    font-size: 11px;
