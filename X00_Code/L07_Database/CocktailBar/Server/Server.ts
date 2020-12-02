@@ -57,6 +57,8 @@ export namespace L07_CocktailBar {
 
 
     function storeOrder(_order: Order): void {
-        orders.insert(_order);
+      // orders.insert(_order);
+        // insert is depricated, use insertOne instead (Jirka Dell'Oro-Friedl, 2020)
+        orders.insertOne(_order);
     }
 }

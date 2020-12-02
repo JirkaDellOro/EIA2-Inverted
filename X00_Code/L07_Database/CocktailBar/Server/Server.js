@@ -41,7 +41,7 @@ var L07_CocktailBar;
         _response.end();
     }
     function storeOrder(_order) {
-        orders.insert(_order);
+        orders.insertOne(_order);
     }
 })(L07_CocktailBar = exports.L07_CocktailBar || (exports.L07_CocktailBar = {}));
 //# sourceMappingURL=Server.js.map
