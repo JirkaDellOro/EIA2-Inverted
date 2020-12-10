@@ -39,6 +39,17 @@ In EIA2 lernst Du, auch komplizierte Aufgabenstellungen anzugehen, wobei die Kon
 
 **Der Idiot macht Simples kompliziert, das Genie macht Kompliziertes simpel**
 
+### Ziele bezüglich fachlicher Kompetenzen laut Studiengangsbeschreibung MKB
+- Kenntnisse der Kommunikationstheorien, -Prozesse und Mediensysteme
+- **Methodische Kenntnisse von Kreativ- und Konzeptionsprozessen**
+- **Anwendung dieser auf (multi)mediale Konzepte und Mediensysteme**
+- **Tiefergehende Kenntnisse von Medienproduktionsprozessen**
+- **Weitreichende Kenntnisse der Technologie von Mediensystemen**
+- Kenntnisse des Selbstmanagements, Teambuildings und Projektmanagements
+- **Erwerb erster Praxiserfahrungen im Feld der Medienkonzeption**  
+
+Alle diese Ziele werden in EIA2 adressiert, die fettgedruckten im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der Grundlagen erwirken.
+
 ## Motivation
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN](https://youtu.be/-jRREn6ifEQ)  
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito](https://www.youtube.com/watch?v=MvTSPwftvyo)  
