@@ -48,7 +48,7 @@ In EIA2 lernst Du, auch komplizierte Aufgabenstellungen anzugehen, wobei die Kon
 - Kenntnisse des Selbstmanagements, Teambuildings und Projektmanagements
 - **Erwerb erster Praxiserfahrungen im Feld der Medienkonzeption**  
 
-Alle diese Ziele werden in EIA2 adressiert, die fettgedruckten im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der Grundlagen erwirken.
+Alle diese Ziele werden in EIA2 adressiert, die fettgedruckten im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen zum Großteil eigenverantwortlich im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der Grundlagen erwirken.
 
 ## Motivation
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN](https://youtu.be/-jRREn6ifEQ)  
