@@ -14,19 +14,43 @@ Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und
 - [x] Diskutiere mit deinen Kommilitonen: welche Fähigkeiten und Eigenschaften braucht der Konzepter im Bereich der Digitalen Medien außer der oben beschriebenen Kommunikationsbereitschaft? Wie können diese vermittelt werden? Was muss ein Student tun um sie sich anzueignen, was ist seine Aufgabe im Lernprozess?
 - [x] Stelle deine Ergebnisse im Workshop vor!
 
+<details>
+  <summary>
+    Anforderungen an Medienkonzepter im Bereich der digitalen Medien
+  </summary>
+  <ul>
+<li> Arbeitet sich sehr schnell auch in komplexe Sachverhalte selbständig ein.</li>
+<li> Kommuniziert intensiv und strukturiert mit allen Projektbeteiligten.</li>
+<li> Bereitet Information auf und macht sie für Nutzer auf unterschiedlichen Kanälen zugänglich.</li>
+<li> Entwirft und beschreibt Algorithmen und Datenstrukturen für interaktive Anwendungen.</li>
+<li> Verfügt über tiefgreifende und weitreichende Kenntnisse in allen Bereichen der Konzeption, Produktion, Distribution und Anwendung des Medienprodukts.</li>
+  </ul>
+</details>
+
+<details>
+  <summary>
+    Ziele bezüglich fachlicher Kompetenzen laut Studiengangsbeschreibung MKB
+  </summary>
+  <ol>
+<li> Kenntnisse der Kommunikationstheorien, -Prozesse und Mediensysteme</li>
+<li> Methodische Kenntnisse von Kreativ- und Konzeptionsprozessen</li>
+<li> Anwendung dieser auf (multi)mediale Konzepte und Mediensysteme</li>
+<li> Tiefergehende Kenntnisse von Medienproduktionsprozessen</li>
+<li> Weitreichende Kenntnisse der Technologie von Mediensystemen</li>
+<li> Kenntnisse des Selbstmanagements, Teambuildings und Projektmanagements</li>
+<li> Erwerb erster Praxiserfahrungen im Feld der Medienkonzeption</li>
+  </ol>
+  
+Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen zum Großteil eigenverantwortlich im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der unverzichtbaren Grundlagen erwirken.
+</details>
 
 ## Motivation  
-
-
 - [x] Klicke auf die Startsymbole der Videos. Die folgenden vier Videos zu schauen ist nicht Pflicht, aber sehr empfohlen um dir einen Einblick in die Möglichkeiten zu gewähren, die sich durch den Kurs für dich eröffnen werden. Alle weiteren Videos sind aber Teil der Lektionen und ihr Inhalt ergänzt maßgeblich die Texte und Übungen, einiges wird ausschließlich durch die Videos vermittelt.  
 
-<hr/>
-
-[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN](https://youtu.be/-jRREn6ifEQ)  
-[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito](https://www.youtube.com/watch?v=MvTSPwftvyo)  
-[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU](https://www.youtube.com/watch?v=Z35ovSEJOps)  
-[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Algorithms and Art | Chris Crawford](../X01_Appendix/Crawford/Crawford.html)  
-
+<a href="https://youtu.be/-jRREn6ifEQ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN<a/>  
+<a href="https://www.youtube.com/watch?v=MvTSPwftvyo"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito]<a/>  
+<a href="https://www.youtube.com/watch?v=Z35ovSEJOps"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU]<a/>  
+<a href="../X01_Appendix/Crawford/Crawford.html"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Algorithms and Art | Chris Crawford]<a/>  
 
 ## Überblick
 <div align="center"><video controls width="100%"> 
