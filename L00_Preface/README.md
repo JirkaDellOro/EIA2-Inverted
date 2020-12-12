@@ -4,7 +4,10 @@
 ## Medienkonzeption und Digitale Medien  
 Die grundlegendste Eigenschaft eines Konzepters ist die Kommunikationsbereitschaft, und zwar in beide Richtungen. Es genügt bei Weitem nicht gute Ideen zu haben und sie anderen mitzuteilen. Zunächst muss er herausfinden, welches Problem überhaupt mit der Idee gelöst werden soll. Hierzu muss er vor allem die richtigen Fragen stellen! Und natürlich dann auch die Antworten aufnehmen und verstehen. Kernideen werden meist ohnehin in der Gruppe erdacht, es ist die Aufgabe des Konzepters sie dann weiterzuentwickeln und dabei ständig in der Kommunikation mit allen Beteiligten zu bleiben. Ein Konzepter kann nicht verharren und warten, bis ihm mitgeteilt wird, was er zu tun hat. Stattdessen ist es die Aufgabe des Konzepters Probleme zu erkennen, zu recherchieren, fachgerechte Lösungen zu finden und sie nach den Regeln der Kunst in unterschiedlichen Formaten, insbesondere Skizzen und Diagrammen, festzuhalten und mit deren Hilfe den anderen Teammitgliedern mitzuteilen, was wie zu tun ist.  
 
-Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und eignet sich so zur Übung: 
+Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und eignet sich so zur Übung:  
+
+> **Hinweis:** mit der Checkbox werden in diesen Lektionen Übungen markiert. Es ist wichtig, dass Du diese Übungen tatsächlich selbst machst, manches erschließt sich erst dadurch und wird nicht auf andere Art vermittelt!  
+
 - [x] Stelle dir zunächst selbst folgende Fragen: Warum studierst Du? Warum studierst Du Medienkonzeption? Warum an der Fakultät Digitale Medien?
 - [x] Recherchiere: Was sind Medien? Was sind digitale Medien? Was bedeutet digital überhaupt? Was ist der Unterschied zwischen digitalen und analogen Medien? Welche Medienerlebnisse kann man mit digitalen Medien erschaffen, die mit analogen Medien nicht möglich sind oder nur mit unverhältnismäßig hohem Aufwand?
 - [x] Recherchiere: Was ist ein Konzepter? Was macht ein Konzepter im Bereich der digitalen oder "neuen" Medien? Was sind weitere ggf. englische Bezeichnungen für den Konzepter in diesem Bereich?
@@ -45,6 +48,8 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 
 
 ## Motivation
+- [x] klicke auf die Startsymbole der Videos. Die folgenden vier Videos zu schauen ist nicht Pflicht, aber sehr empfohlen um euch einen Einblick in die Möglichkeiten zu gwähren, die sich durch den Kurs für euch eröffnen werden. Alle weiteren Videos sind aber Teil der Lektionen und ihr Inhalt ergänzt maßgeblich die Texte und Übungen, einiges wird ausschließlich durch die Videos vermittelt.
+
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN](https://youtu.be/-jRREn6ifEQ)  
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito](https://www.youtube.com/watch?v=MvTSPwftvyo)  
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU](https://www.youtube.com/watch?v=Z35ovSEJOps)  
@@ -84,6 +89,8 @@ In EIA2 lernst Du, auch komplizierte Aufgabenstellungen anzugehen, wobei die Kon
 [Use Case Diagram](../X01_Appendix/UML/UCD_EIA2-Contact.svg)  
 [Activity Diagram - Woche](../X01_Appendix/UML/AD_EIA2-Week.svg)  
 [Activity Diagram - Konzeption](../X01_Appendix/UML/AD_Konzeption.svg)  
+
+- [x] Untersuche die Diagramme. Kannst Du schon etwas nachvollziehen, was sie vermitteln? Alle Symbole sind genormt und haben besondere Bedeutung, grobe Zusammenhänge erschließen sich aber vielleicht schon intuitiv. In diesem Kurs geht es vordringlich darum dich in die Lage zu versetzen, solche Diagramme korrekt und sinnvoll selbst zu zeichnen.
 
 ### Sektionen
 #### Sektion 1
