@@ -1,16 +1,13 @@
 # L00_Preface  
-<div align="center"><video controls width="100%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4"> 
-<!-- <div align="center"><video controls width="100%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/=1HDQeoBuY41BnWDnC_Ipw0O7J9F0H8nO1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a> -->
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>
-</div>
+> **Hinweis:** in diesen Lektionen wird das geschlechtsneutrale generische Maskulinum genutzt, wenn von Personengruppen und Rollen die Sprache ist. Sämtliche Geschlechter sind damit gleichbereichtigt adressiert. Andere Formen werden nur genutzt, wenn das Geschlecht in dem Kontext wichtig ist, was im Themenbereich diese Moduls sehr selten ist.
 
-## Medienkonzeption und Digitale Medien
-[Fragen](Material/Fragen.md)  
+## Medienkonzeption und Digitale Medien  
+Die grundlegendste Eigenschaft eines Konzepters ist die Kommunikationsbereitschaft, und zwar in beide Richtungen. Es genügt bei Weitem nicht gute Ideen zu haben und sie anderen mitzuteilen. Zunächst muss er herausfinden, welches Problem überhaupt mit der Idee gelöst werden soll. Hierzu muss er vor allem die richtigen Fragen stellen! Und natürlich dann auch die Antworten aufnehmen und verstehen. Kernideen werden meist ohnehin in der Gruppe erdacht, es ist die Aufgabe des Konzepters sie dann weiterzuentwickeln und dabei ständig in der Kommunikation mit allen Beteiligten zu bleiben. Ein Konzepter kann nicht verharren und warten, bis ihm mitgeteilt wird, was er zu tun hat. Stattdessen ist es die Aufgabe des Konzepters Probleme zu erkennen, zu recherchieren, fachgerechte Lösungen zu finden und sie nach den Regeln der Kunst in unterschiedlichen Formaten, insbesondere Skizzen und Diagrammen, festzuhalten und mit deren Hilfe den anderen Teammitgliedern mitzuteilen, was wie zu tun ist.  
 
-Die grundlegendste Eigenschaft eines Konzepters (m/w/d) ist die Kommunikationsbereitschaft, und zwar in beide Richtungen. Es genügt bei Weitem nicht gute Ideen zu haben und sie anderen mitzuteilen. Zunächst muss er herausfinden, welches Problem überhaupt mit der Idee gelöst werden soll. Hierzu muss er vor allem die richtigen Fragen stellen! Und natürlich dann auch die Antworten aufnehmen und verstehen. Kernideen werden meist ohnehin in der Gruppe erdacht, es ist die Aufgabe des Konzepters sie dann weiterzuentwickeln und dabei ständig in der Kommunikation mit allen Beteiligten zu bleiben. 
+Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und eignet sich so zur Übung: 
+- [x] Stelle dir zunächst selbst folgende Frage: Warum studierst Du? Warum studierst Du Medienkonzeption? Warum an der Fakultät Digitale Medien?
+
+
 
 ### Anforderungen an Medienkonzepter im Bereich der digitalen Medien
 - Arbeitet sich sehr schnell auch in komplexe Sachverhalte selbständig ein.
@@ -40,6 +37,13 @@ Alle diese Ziele werden in EIA2 adressiert, die fettgedruckten im Besonderen. In
 
 
 ## Überblick
+<div align="center"><video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4"> 
+<!-- <div align="center"><video controls width="100%"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/=1HDQeoBuY41BnWDnC_Ipw0O7J9F0H8nO1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a> -->
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</video>
+</div>
 ### Rückblick
 Im Modul "Entwicklung interaktiver Anwendungen I" (EIA1) wurdest Du zunächst an HTML und CSS heran geführt, um damit eine Grundlage für die weiteren Schritte zu schaffen. Denn als technische Plattform dienen in dieser Modulreihe Internetbrowser, da sie auf allen gängigen Geräten zur Verfügung stehen. 
 Darüber hinaus hast Du tiefergehende Kenntnisse im Umgang mit einer imperativen Programmiersprache erlangt und Aufgaben mit Hilfe einfacher, prozeduraler Algorithmen gelöst. Es wurde TypeScript verwendet, da - im Vergleich zu Javascript - einerseits die verwendeten Datenstrukturen sichtbar werden und andererseits automatische und umfassende Hilfestellung bei der Implementation gewährleistet wird. Auch erste Interaktionen konntest Du mit Hilfe der Ereignissteuerung umsetzen. Durch die Manipulation des "Document Object Model" (DOM) konntest Du die Reaktionen des Systems für Nutzer planvoll sichtbar machen. Hierzu hast Du ein gutes Verständnis der DOM-Klassenhierarchie und des Laufzeitverhaltens erlangt.
