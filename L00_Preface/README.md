@@ -38,8 +38,11 @@ Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und
 <li> Erwerb erster Praxiserfahrungen im Feld der Medienkonzeption</li>
   </ol>
   
-Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen zum Großteil eigenverantwortlich im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der Grundlagen erwirken.
+Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen zum Großteil eigenverantwortlich im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der unverzichtbaren Grundlagen erwirken.
 </details>
+
+<br/>
+
 
 ## Motivation
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN](https://youtu.be/-jRREn6ifEQ)  
