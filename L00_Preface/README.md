@@ -11,25 +11,37 @@ Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und
 - [x] Diskutiere mit deinen Kommilitonen: welche Fähigkeiten und Eigenschaften braucht der Konzepter im Bereich der Digitalen Medien außer der oben beschriebenen Kommunikationsbereitschaft? Wie können diese vermittelt werden? Was muss ein Student tun um sie sich anzueignen, was ist seine Aufgabe im Lernprozess?
 - [x] Stelle deine Ergebnisse im Workshop vor!
 
-### Anforderungen an Medienkonzepter im Bereich der digitalen Medien
-- Arbeitet sich sehr schnell auch in komplexe Sachverhalte selbständig ein.
-- Kommuniziert intensiv und strukturiert mit allen Projektbeteiligten.
-- Bereitet Information auf und macht sie für Nutzer auf unterschiedlichen Kanälen zugänglich.
-- Entwirft und beschreibt Algorithmen und Datenstrukturen für interaktive Anwendungen.
-- Verfügt über tiefgreifende und weitreichende Kenntnisse in allen Bereichen der Konzeption, Produktion, Distribution und Anwendung des Medienprodukts.
+<details>
+  <summary>
+    Anforderungen an Medienkonzepter im Bereich der digitalen Medien
+  </summary>
+  <ul>
+<li> Arbeitet sich sehr schnell auch in komplexe Sachverhalte selbständig ein.</li>
+<li> Kommuniziert intensiv und strukturiert mit allen Projektbeteiligten.</li>
+<li> Bereitet Information auf und macht sie für Nutzer auf unterschiedlichen Kanälen zugänglich.</li>
+<li> Entwirft und beschreibt Algorithmen und Datenstrukturen für interaktive Anwendungen.</li>
+<li> Verfügt über tiefgreifende und weitreichende Kenntnisse in allen Bereichen der Konzeption, Produktion, Distribution und Anwendung des Medienprodukts.</li>
+  </ul>
+  <strong>Der Idiot macht Simples kompliziert, das Genie macht Kompliziertes simpel</strong>
+</details>
 
-**Der Idiot macht Simples kompliziert, das Genie macht Kompliziertes simpel**
-
-### Ziele bezüglich fachlicher Kompetenzen laut Studiengangsbeschreibung MKB
-- Kenntnisse der Kommunikationstheorien, -Prozesse und Mediensysteme
-- **Methodische Kenntnisse von Kreativ- und Konzeptionsprozessen**
-- **Anwendung dieser auf (multi)mediale Konzepte und Mediensysteme**
-- **Tiefergehende Kenntnisse von Medienproduktionsprozessen**
-- **Weitreichende Kenntnisse der Technologie von Mediensystemen**
-- Kenntnisse des Selbstmanagements, Teambuildings und Projektmanagements
-- **Erwerb erster Praxiserfahrungen im Feld der Medienkonzeption**  
-
-Alle diese Ziele werden in EIA2 adressiert, die fettgedruckten im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen zum Großteil eigenverantwortlich im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der Grundlagen erwirken.
+<details>
+  <summary>
+    Ziele bezüglich fachlicher Kompetenzen laut Studiengangsbeschreibung MKB
+  </summary>
+  <ol>
+<li> Kenntnisse der Kommunikationstheorien, -Prozesse und Mediensysteme</li>
+<li> Methodische Kenntnisse von Kreativ- und Konzeptionsprozessen</li>
+<li> Anwendung dieser auf (multi)mediale Konzepte und Mediensysteme</li>
+<li> Tiefergehende Kenntnisse von Medienproduktionsprozessen</li>
+<li> Weitreichende Kenntnisse der Technologie von Mediensystemen</li>
+<li> Kenntnisse des Selbstmanagements, Teambuildings und Projektmanagements</li>
+<li> Erwerb erster Praxiserfahrungen im Feld der Medienkonzeption</li>
+  </ol>
+  <strong>Der Idiot macht Simples kompliziert, das Genie macht Kompliziertes simpel</strong>  
+  
+Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen zum Großteil eigenverantwortlich im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der Grundlagen erwirken.
+</details>
 
 ## Motivation
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN](https://youtu.be/-jRREn6ifEQ)  
