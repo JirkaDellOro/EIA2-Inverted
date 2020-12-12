@@ -5,9 +5,11 @@
 Die grundlegendste Eigenschaft eines Konzepters ist die Kommunikationsbereitschaft, und zwar in beide Richtungen. Es genügt bei Weitem nicht gute Ideen zu haben und sie anderen mitzuteilen. Zunächst muss er herausfinden, welches Problem überhaupt mit der Idee gelöst werden soll. Hierzu muss er vor allem die richtigen Fragen stellen! Und natürlich dann auch die Antworten aufnehmen und verstehen. Kernideen werden meist ohnehin in der Gruppe erdacht, es ist die Aufgabe des Konzepters sie dann weiterzuentwickeln und dabei ständig in der Kommunikation mit allen Beteiligten zu bleiben. Ein Konzepter kann nicht verharren und warten, bis ihm mitgeteilt wird, was er zu tun hat. Stattdessen ist es die Aufgabe des Konzepters Probleme zu erkennen, zu recherchieren, fachgerechte Lösungen zu finden und sie nach den Regeln der Kunst in unterschiedlichen Formaten, insbesondere Skizzen und Diagrammen, festzuhalten und mit deren Hilfe den anderen Teammitgliedern mitzuteilen, was wie zu tun ist.  
 
 Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und eignet sich so zur Übung: 
-- [x] Stelle dir zunächst selbst folgende Frage: Warum studierst Du? Warum studierst Du Medienkonzeption? Warum an der Fakultät Digitale Medien?
-
-
+- [x] Stelle dir zunächst selbst folgende Fragen: Warum studierst Du? Warum studierst Du Medienkonzeption? Warum an der Fakultät Digitale Medien?
+- [x] Recherchiere: Was sind Medien? Was sind digitale Medien? Was bedeutet digital überhaupt? Was ist der Unterschied zwischen digitalen und analogen Medien? Welche Medienerlebnisse kann man mit digitalen Medien erschaffen, die mit analogen Medien nicht möglich sind oder nur mit unverhältnismäßig hohem Aufwand?
+- [x] Recherchiere: Was ist ein Konzepter? Was macht ein Konzepter im Bereich der digitalen oder "neuen" Medien? Was sind weitere, auch englische Bezeichnungen für den Konzepter in diesem Bereich?
+- [x] Diskutiere mit deinen Kommilitonen: welche Fähigkeiten und Eigenschaften braucht der Konzepter im Bereich der Digitalen Medien außer der oben beschriebenen Kommunikationsbereitschaft?
+- [x] Stelle deine Ergbnisse im Workshop vor!
 
 ### Anforderungen an Medienkonzepter im Bereich der digitalen Medien
 - Arbeitet sich sehr schnell auch in komplexe Sachverhalte selbständig ein.
