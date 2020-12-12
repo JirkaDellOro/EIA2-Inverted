@@ -9,7 +9,7 @@ Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und
 - [x] Recherchiere: Was sind Medien? Was sind digitale Medien? Was bedeutet digital überhaupt? Was ist der Unterschied zwischen digitalen und analogen Medien? Welche Medienerlebnisse kann man mit digitalen Medien erschaffen, die mit analogen Medien nicht möglich sind oder nur mit unverhältnismäßig hohem Aufwand?
 - [x] Recherchiere: Was ist ein Konzepter? Was macht ein Konzepter im Bereich der digitalen oder "neuen" Medien? Was sind weitere ggf. englische Bezeichnungen für den Konzepter in diesem Bereich?
 - [x] Diskutiere mit deinen Kommilitonen: welche Fähigkeiten und Eigenschaften braucht der Konzepter im Bereich der Digitalen Medien außer der oben beschriebenen Kommunikationsbereitschaft? Wie können diese vermittelt werden? Was muss ein Student tun um sie sich anzueignen, was ist seine Aufgabe im Lernprozess?
-- [x] Stelle deine Ergbnisse im Workshop vor!
+- [x] Stelle deine Ergebnisse im Workshop vor!
 
 ### Anforderungen an Medienkonzepter im Bereich der digitalen Medien
 - Arbeitet sich sehr schnell auch in komplexe Sachverhalte selbständig ein.
