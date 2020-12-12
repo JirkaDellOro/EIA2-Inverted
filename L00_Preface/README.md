@@ -22,7 +22,6 @@ Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und
 <li> Entwirft und beschreibt Algorithmen und Datenstrukturen für interaktive Anwendungen.</li>
 <li> Verfügt über tiefgreifende und weitreichende Kenntnisse in allen Bereichen der Konzeption, Produktion, Distribution und Anwendung des Medienprodukts.</li>
   </ul>
-  <strong>Der Idiot macht Simples kompliziert, das Genie macht Kompliziertes simpel</strong>
 </details>
 
 <details>
@@ -38,7 +37,6 @@ Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und
 <li> Kenntnisse des Selbstmanagements, Teambuildings und Projektmanagements</li>
 <li> Erwerb erster Praxiserfahrungen im Feld der Medienkonzeption</li>
   </ol>
-  <strong>Der Idiot macht Simples kompliziert, das Genie macht Kompliziertes simpel</strong>  
   
 Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen zum Großteil eigenverantwortlich im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der Grundlagen erwirken.
 </details>
