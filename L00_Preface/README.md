@@ -44,10 +44,8 @@ Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und
 Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen zum Großteil eigenverantwortlich im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der unverzichtbaren Grundlagen erwirken.
 </details>
 
-<br/>
 
-
-## Motivation
+## Motivation  
 - [x] Klicke auf die Startsymbole der Videos. Die folgenden vier Videos zu schauen ist nicht Pflicht, aber sehr empfohlen um dir einen Einblick in die Möglichkeiten zu gewähren, die sich durch den Kurs für dich eröffnen werden. Alle weiteren Videos sind aber Teil der Lektionen und ihr Inhalt ergänzt maßgeblich die Texte und Übungen, einiges wird ausschließlich durch die Videos vermittelt.  
 
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN](https://youtu.be/-jRREn6ifEQ)  
