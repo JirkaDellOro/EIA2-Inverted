@@ -47,6 +47,11 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 
 ## Motivation  
 
+
+- [x] Klicke auf die Startsymbole der Videos. Die folgenden vier Videos zu schauen ist nicht Pflicht, aber sehr empfohlen um dir einen Einblick in die Möglichkeiten zu gewähren, die sich durch den Kurs für dich eröffnen werden. Alle weiteren Videos sind aber Teil der Lektionen und ihr Inhalt ergänzt maßgeblich die Texte und Übungen, einiges wird ausschließlich durch die Videos vermittelt.  
+
+<hr/>
+
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN](https://youtu.be/-jRREn6ifEQ)  
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito](https://www.youtube.com/watch?v=MvTSPwftvyo)  
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU](https://www.youtube.com/watch?v=Z35ovSEJOps)  
