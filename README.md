@@ -5,7 +5,7 @@
 <hr/>
 
 ### [L00_Preface](L00_Preface)  
-<small style="float: right; position: relative; top: -30px; height: 0px">0:45 | 0:00</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">1:15 | 0:00</small>
 - Rückblick
 - Einblick
 - Ausblick
