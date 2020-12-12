@@ -7,28 +7,10 @@
 </video>
 </div>
 
-## Rückblick
-Im Modul "Entwicklung interaktiver Anwendungen I" (EIA1) wurdest Du zunächst an HTML und CSS heran geführt, um damit eine Grundlage für die weiteren Schritte zu schaffen. Denn als technische Plattform dienen in dieser Modulreihe Internetbrowser, da sie auf allen gängigen Geräten zur Verfügung stehen. 
-Darüber hinaus hast Du tiefergehende Kenntnisse im Umgang mit einer imperativen Programmiersprache erlangt und Aufgaben mit Hilfe einfacher, prozeduraler Algorithmen gelöst. Es wurde TypeScript verwendet, da - im Vergleich zu Javascript - einerseits die verwendeten Datenstrukturen sichtbar werden und andererseits automatische und umfassende Hilfestellung bei der Implementation gewährleistet wird. Auch erste Interaktionen konntest Du mit Hilfe der Ereignissteuerung umsetzen. Durch die Manipulation des "Document Object Model" (DOM) konntest Du die Reaktionen des Systems für Nutzer planvoll sichtbar machen. Hierzu hast Du ein gutes Verständnis der DOM-Klassenhierarchie und des Laufzeitverhaltens erlangt.
-
-## Einblick
-Es ist erforderlich, dass sämtliche Inhalte des Moduls EIA1 verinnerlicht sind und angewendet werden können, insbesondere
-- Die Arbeit mit Github und Visual Studio Code
-- Die Informationsrepräsentation im binären und hexadezimalen System
-- Die grundlegenden in Javascript und TypeScript verwendeten Datentypen
-- Einfache und assoziative Arrays
-- Die Sprachkonstrukte imperativer
-Programmiersprachen: Anweisungen, Operatoren, Kontrollstrukturen, Funktionen
-- Generierung dynamischer Webseiten
-- DOM-Klassen- und Laufzeit-Hierarchie
-- Problemlösungsstrategie
-- Die Arbeit mit der Browserkonsole und Debugging im Browser
-
-## Ausblick
-In EIA2 lernst Du, auch komplizierte Aufgabenstellungen anzugehen, wobei die Konzeption im Vordergrund steht. Hierzu wirst Du Diagrammformen der "Unified Modelling Language" (UML) verwenden, um mit deren Hilfe Probleme zu durchdringen und Lösungen zu konzipieren. Ihre nachfolgenden Implementationen mit TypeScript stellen lediglich Nachweise der erfolgreichen Konzeption dar.  
-
 ## Medienkonzeption und Digitale Medien
 [Fragen](Material/Fragen.md)  
+
+Die grundlegendste Eigenschaft eines Konzepters (m/w/d) ist die Kommunikationsbereitschaft, und zwar in beide Richtungen. Es genügt bei Weitem nicht gute Ideen zu haben und sie anderen mitzuteilen. Zunächst muss er herausfinden, welches Problem überhaupt mit der Idee gelöst werden soll. Hierzu muss er vor allem die richtigen Fragen stellen! Und natürlich dann auch die Antworten aufnehmen und verstehen. Kernideen werden meist ohnehin in der Gruppe erdacht, es ist die Aufgabe des Konzepters sie dann weiterzuentwickeln und dabei ständig in der Kommunikation mit allen Beteiligten zu bleiben. 
 
 ### Anforderungen an Medienkonzepter im Bereich der digitalen Medien
 - Arbeitet sich sehr schnell auch in komplexe Sachverhalte selbständig ein.
@@ -55,6 +37,28 @@ Alle diese Ziele werden in EIA2 adressiert, die fettgedruckten im Besonderen. In
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito](https://www.youtube.com/watch?v=MvTSPwftvyo)  
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU](https://www.youtube.com/watch?v=Z35ovSEJOps)  
 [<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Algorithms and Art | Chris Crawford](../X01_Appendix/Crawford/Crawford.html)  
+
+
+## Überblick
+### Rückblick
+Im Modul "Entwicklung interaktiver Anwendungen I" (EIA1) wurdest Du zunächst an HTML und CSS heran geführt, um damit eine Grundlage für die weiteren Schritte zu schaffen. Denn als technische Plattform dienen in dieser Modulreihe Internetbrowser, da sie auf allen gängigen Geräten zur Verfügung stehen. 
+Darüber hinaus hast Du tiefergehende Kenntnisse im Umgang mit einer imperativen Programmiersprache erlangt und Aufgaben mit Hilfe einfacher, prozeduraler Algorithmen gelöst. Es wurde TypeScript verwendet, da - im Vergleich zu Javascript - einerseits die verwendeten Datenstrukturen sichtbar werden und andererseits automatische und umfassende Hilfestellung bei der Implementation gewährleistet wird. Auch erste Interaktionen konntest Du mit Hilfe der Ereignissteuerung umsetzen. Durch die Manipulation des "Document Object Model" (DOM) konntest Du die Reaktionen des Systems für Nutzer planvoll sichtbar machen. Hierzu hast Du ein gutes Verständnis der DOM-Klassenhierarchie und des Laufzeitverhaltens erlangt.
+
+### Einblick
+Es ist erforderlich, dass sämtliche Inhalte des Moduls EIA1 verinnerlicht sind und angewendet werden können, insbesondere
+- Die Arbeit mit Github und Visual Studio Code
+- Die Informationsrepräsentation im binären und hexadezimalen System
+- Die grundlegenden in Javascript und TypeScript verwendeten Datentypen
+- Einfache und assoziative Arrays
+- Die Sprachkonstrukte imperativer
+Programmiersprachen: Anweisungen, Operatoren, Kontrollstrukturen, Funktionen
+- Generierung dynamischer Webseiten
+- DOM-Klassen- und Laufzeit-Hierarchie
+- Problemlösungsstrategie
+- Die Arbeit mit der Browserkonsole und Debugging im Browser
+
+### Ausblick
+In EIA2 lernst Du, auch komplizierte Aufgabenstellungen anzugehen, wobei die Konzeption im Vordergrund steht. Hierzu wirst Du Diagrammformen der "Unified Modelling Language" (UML) verwenden, um mit deren Hilfe Probleme zu durchdringen und Lösungen zu konzipieren. Ihre nachfolgenden Implementationen mit TypeScript stellen lediglich Nachweise der erfolgreichen Konzeption dar.  
 
 ## Veranstaltungskonzept
 [Use Case Diagram](../X01_Appendix/UML/UCD_EIA2-Contact.svg)  
