@@ -1,17 +1,73 @@
 # L00_Preface  
+> **Hinweis:** im Themenbereich diese Moduls spielt biologisches Geschlecht (Sexus) in der Regel keinerlei Rolle. Es wird deswegen in den Texten dieser Lektionen davon Abstand genommen, ständig darauf hinzuweisen, außer es sollte doch im Kontext erforderlich sein. Stattdessen wird das geschlechtsneutrale generische Maskulinum (Genus) genutzt, wenn von Personengruppen und Rollen die Sprache ist. Sämtliche Geschlechter (m/w/d) sind damit gleichberechtigt adressiert.
+
+## Medienkonzeption und Digitale Medien  
+Die grundlegendste Eigenschaft eines Konzepters ist die Kommunikationsbereitschaft, und zwar in beide Richtungen. Es genügt bei Weitem nicht gute Ideen zu haben und sie anderen mitzuteilen. Zunächst muss er herausfinden, welches Problem überhaupt mit der Idee gelöst werden soll. Hierzu muss er vor allem die richtigen Fragen stellen! Und natürlich dann auch die Antworten aufnehmen und verstehen. Kernideen werden meist ohnehin in der Gruppe erdacht, es ist die Aufgabe des Konzepters sie dann weiterzuentwickeln und dabei ständig in der Kommunikation mit allen Beteiligten zu bleiben. Ein Konzepter kann nicht verharren und warten, bis ihm mitgeteilt wird, was er zu tun hat. Stattdessen ist es die Aufgabe des Konzepters Probleme zu erkennen, zu recherchieren, fachgerechte Lösungen zu finden und sie nach den Regeln der Kunst in unterschiedlichen Formaten, insbesondere Skizzen und Diagrammen, festzuhalten und mit deren Hilfe den anderen Teammitgliedern mitzuteilen, was wie zu tun ist.  
+
+Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und eignet sich so zur Übung:  
+
+> **Hinweis:** mit der Checkbox werden in diesen Lektionen Übungen markiert. Es ist wichtig, dass Du diese Übungen tatsächlich selbst machst, manches erschließt sich erst dadurch und wird nicht auf andere Art vermittelt!  
+
+- [x] Stelle dir zunächst selbst folgende Fragen: Warum studierst Du? Warum studierst Du Medienkonzeption? Warum an der Fakultät Digitale Medien?
+- [x] Recherchiere: Was sind Medien? Was sind digitale Medien? Was bedeutet digital überhaupt? Was ist der Unterschied zwischen digitalen und analogen Medien? Welche Medienerlebnisse kann man mit digitalen Medien erschaffen, die mit analogen Medien nicht möglich sind oder nur mit unverhältnismäßig hohem Aufwand?
+- [x] Recherchiere: Was ist ein Konzepter? Was macht ein Konzepter im Bereich der digitalen oder "neuen" Medien? Was sind weitere ggf. englische Bezeichnungen für den Konzepter in diesem Bereich?
+- [x] Diskutiere mit deinen Kommilitonen: welche Fähigkeiten und Eigenschaften braucht der Konzepter im Bereich der Digitalen Medien außer der oben beschriebenen Kommunikationsbereitschaft? Wie können diese vermittelt werden? Was muss ein Student tun um sie sich anzueignen, was ist seine Aufgabe im Lernprozess?
+- [x] Stelle deine Ergebnisse im Workshop vor!
+
+<details>
+  <summary>
+    Anforderungen an Medienkonzepter im Bereich der digitalen Medien
+  </summary>
+  <ul>
+<li> Arbeitet sich sehr schnell auch in komplexe Sachverhalte selbständig ein.</li>
+<li> Kommuniziert intensiv und strukturiert mit allen Projektbeteiligten.</li>
+<li> Bereitet Information auf und macht sie für Nutzer auf unterschiedlichen Kanälen zugänglich.</li>
+<li> Entwirft und beschreibt Algorithmen und Datenstrukturen für interaktive Anwendungen.</li>
+<li> Verfügt über tiefgreifende und weitreichende Kenntnisse in allen Bereichen der Konzeption, Produktion, Distribution und Anwendung des Medienprodukts.</li>
+  </ul>
+</details>
+
+<details>
+  <summary>
+    Ziele bezüglich fachlicher Kompetenzen laut Studiengangsbeschreibung MKB
+  </summary>
+  <ol>
+<li> Kenntnisse der Kommunikationstheorien, -Prozesse und Mediensysteme</li>
+<li> Methodische Kenntnisse von Kreativ- und Konzeptionsprozessen</li>
+<li> Anwendung dieser auf (multi)mediale Konzepte und Mediensysteme</li>
+<li> Tiefergehende Kenntnisse von Medienproduktionsprozessen</li>
+<li> Weitreichende Kenntnisse der Technologie von Mediensystemen</li>
+<li> Kenntnisse des Selbstmanagements, Teambuildings und Projektmanagements</li>
+<li> Erwerb erster Praxiserfahrungen im Feld der Medienkonzeption</li>
+  </ol>
+  
+Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen zum Großteil eigenverantwortlich im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der unverzichtbaren Grundlagen erwirken.
+</details>
+
+<br/>
+
+## Motivation  
+- [x] Klicke auf die Startsymbole der Videos. Die folgenden vier Videos zu schauen ist nicht Pflicht, aber sehr empfohlen um dir einen Einblick in die Möglichkeiten zu gewähren, die sich durch den Kurs für dich eröffnen werden. Alle weiteren Videos sind aber Teil der Lektionen und ihr Inhalt ergänzt maßgeblich die Texte und Übungen, einiges wird ausschließlich durch die Videos vermittelt.  
+
+<a href="https://youtu.be/-jRREn6ifEQ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN<a/>  
+<a href="https://www.youtube.com/watch?v=MvTSPwftvyo"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito]<a/>  
+<a href="https://www.youtube.com/watch?v=Z35ovSEJOps"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU]<a/>  
+<a href="../X01_Appendix/Crawford/Crawford.html"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Algorithms and Art | Chris Crawford]<a/>  
+
+## Überblick
 <div align="center"><video controls width="100%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4"> 
 <!-- <div align="center"><video controls width="100%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/=1HDQeoBuY41BnWDnC_Ipw0O7J9F0H8nO1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a> -->
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>
-</div>
+</div>  
 
-## Rückblick
+### Rückblick
 Im Modul "Entwicklung interaktiver Anwendungen I" (EIA1) wurdest Du zunächst an HTML und CSS heran geführt, um damit eine Grundlage für die weiteren Schritte zu schaffen. Denn als technische Plattform dienen in dieser Modulreihe Internetbrowser, da sie auf allen gängigen Geräten zur Verfügung stehen. 
 Darüber hinaus hast Du tiefergehende Kenntnisse im Umgang mit einer imperativen Programmiersprache erlangt und Aufgaben mit Hilfe einfacher, prozeduraler Algorithmen gelöst. Es wurde TypeScript verwendet, da - im Vergleich zu Javascript - einerseits die verwendeten Datenstrukturen sichtbar werden und andererseits automatische und umfassende Hilfestellung bei der Implementation gewährleistet wird. Auch erste Interaktionen konntest Du mit Hilfe der Ereignissteuerung umsetzen. Durch die Manipulation des "Document Object Model" (DOM) konntest Du die Reaktionen des Systems für Nutzer planvoll sichtbar machen. Hierzu hast Du ein gutes Verständnis der DOM-Klassenhierarchie und des Laufzeitverhaltens erlangt.
 
-## Einblick
+### Einblick
 Es ist erforderlich, dass sämtliche Inhalte des Moduls EIA1 verinnerlicht sind und angewendet werden können, insbesondere
 - Die Arbeit mit Github und Visual Studio Code
 - Die Informationsrepräsentation im binären und hexadezimalen System
@@ -24,31 +80,15 @@ Programmiersprachen: Anweisungen, Operatoren, Kontrollstrukturen, Funktionen
 - Problemlösungsstrategie
 - Die Arbeit mit der Browserkonsole und Debugging im Browser
 
-## Ausblick
+### Ausblick
 In EIA2 lernst Du, auch komplizierte Aufgabenstellungen anzugehen, wobei die Konzeption im Vordergrund steht. Hierzu wirst Du Diagrammformen der "Unified Modelling Language" (UML) verwenden, um mit deren Hilfe Probleme zu durchdringen und Lösungen zu konzipieren. Ihre nachfolgenden Implementationen mit TypeScript stellen lediglich Nachweise der erfolgreichen Konzeption dar.  
-
-## Medienkonzeption und Digitale Medien
-[Fragen](Material/Fragen.md)  
-
-### Anforderungen an Medienkonzepter im Bereich der digitalen Medien
-- Arbeitet sich sehr schnell auch in komplexe Sachverhalte selbständig ein.
-- Kommuniziert intensiv und strukturiert mit allen Projektbeteiligten.
-- Bereitet Information auf und macht sie für Nutzer auf unterschiedlichen Kanälen zugänglich.
-- Entwirft und beschreibt Algorithmen und Datenstrukturen für interaktive Anwendungen.
-- Verfügt über tiefgreifende und weitreichende Kenntnisse in allen Bereichen der Konzeption, Produktion, Distribution und Anwendung des Medienprodukts.
-
-**Der Idiot macht Simples kompliziert, das Genie macht Kompliziertes simpel**
-
-## Motivation
-[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN](https://youtu.be/-jRREn6ifEQ)  
-[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito](https://www.youtube.com/watch?v=MvTSPwftvyo)  
-[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU](https://www.youtube.com/watch?v=Z35ovSEJOps)  
-[<img src="../X01_Appendix/Img/video.jpg" width="3%"/> Algorithms and Art | Chris Crawford](../X01_Appendix/Crawford/Crawford.html)  
 
 ## Veranstaltungskonzept
 [Use Case Diagram](../X01_Appendix/UML/UCD_EIA2-Contact.svg)  
 [Activity Diagram - Woche](../X01_Appendix/UML/AD_EIA2-Week.svg)  
 [Activity Diagram - Konzeption](../X01_Appendix/UML/AD_Konzeption.svg)  
+
+- [x] Untersuche die Diagramme. Kannst Du schon etwas nachvollziehen, was sie vermitteln? Alle Symbole sind genormt und haben besondere Bedeutung, grobe Zusammenhänge erschließen sich aber vielleicht schon intuitiv. In diesem Kurs geht es vordringlich darum dich in die Lage zu versetzen, solche Diagramme korrekt und sinnvoll selbst zu zeichnen.
 
 ### Sektionen
 #### Sektion 1

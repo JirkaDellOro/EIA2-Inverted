@@ -52,7 +52,7 @@ einen Submit-Button im Formular ein. Untersuche was geschieht, wenn Du nun die S
 > Der typ `"submit"` ist die Voreinstellung für Buttons und muss nicht explizit angegeben werden. Jeder Button innerhalb eines Formulars, bei dem nicht explizit ein anderer Typ angegeben ist, führt also zum Datenversand. Und häufig zu Verwirrung bei den Entwicklern...
 
 ### Post
-Bei `method="post"` werden die Daten als eigene Datenpaket versand und sind nicht für den Nutzer sichtbar. Post wird aber vor allem auch dann verwendet, wenn größere Datenmengen verschickt werden, da die zulässige Länge des URL begrenzt ist. Auf der Serverseite müssen die Datenpakete zunächst erst wieder zu einer zusammenhängenden Request zusammengefügt werden.
+Bei `method="post"` werden die Daten als eigene Datenpakete versand und sind nicht für den Nutzer sichtbar. Post wird aber vor allem auch dann verwendet, wenn größere Datenmengen verschickt werden, da die zulässige Länge des URL begrenzt ist. Auf der Serverseite müssen die Datenpakete zunächst erst wieder zu einer zusammenhängenden Request zusammengefügt werden.
 - [x] Verwende nun die Methode `"post"` im Formular und betätige den Submit-Button. Versuche nun mit Hilfe der Entwicklertools die Daten zu finden. Klicke dazu auf den Reiter "Netzwerk" oder "Netzwerkanalyse" und dann auf den Post-Request bei den gelisteten Anfragen.  
 
 ## Implementation asynchroner Kommunikation
@@ -68,7 +68,7 @@ Im einfachsten Fall sieht das ganze Konstrukt dann so aus:
     function communicate(_url: RequestInfo): void {
         // try to communicate
         let promise: Promise<Response> = fetch(_url);
-        // establish the functions to call when communications 1. succeeds, 2. fails
+        // establish the functions to call when communication 1. succeeds, 2. fails
         promise.then(handleSuccess, handleFailure);
     }
 
