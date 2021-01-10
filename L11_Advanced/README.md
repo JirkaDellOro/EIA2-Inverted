@@ -27,7 +27,7 @@ Objekte der Subklassen können dennoch weiter die Methoden der abstrakten Superk
 ### Abstrakte Methode
 Es gibt aber auch Methoden, die in der abstrakten Superklasse nicht sinnvoll implementiert werden können, sondern nur in den Subklassen. `draw()` in `Moveable` ist hierfür ein gutes Beispiel. Dennoch muss die Superklasse `Moveable` die Methode `draw` aufweisen, damit das Hauptprogramm alle `Moveable`s einfach verwalten und deren `draw`-Methoden aufrufen kann.  
 
-Solche Methoden abstrakter Klassen sollten ebenfalls mit `abstract` markiert werden. Dann muss dort keinen Rumpf implementiert werden und es wird erzwungen, dass die Methode in der Subklasse definiert werden muss.
+Solche Methoden abstrakter Klassen sollten ebenfalls mit `abstract` markiert werden. Dann muss dort kein Rumpf implementiert werden und es wird erzwungen, dass die Methode in der Subklasse definiert werden muss.
 
 - [x] Markiere eine neue Methode deiner abstrakten Superklasse als abstrakt. Erhältst Du eine Fehlermeldung, wenn Du diese Methode in der Subklasse nicht definierst?
 
