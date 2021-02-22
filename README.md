@@ -1,11 +1,11 @@
 <img src="X01_Appendix/Img/Banner.png">
 
-<small>Inhalt </small><small style="float: right;">und grob geschätzte Zeitangaben in Stunden im Format Lektion+Übungen | Wochenaufgabe</small> 
+<small>Inhalt </small><small style="float: right;">und grob geschätzte Zeitangaben in Stunden im Format Semesterwoche | Lektion+Übungen | Wochenaufgabe</small> 
 
 <hr/>
 
-### [L00_Preface](L00_Preface) (Woche 1)
-<small style="float: right; position: relative; top: -30px; height: 0px">1:15 | 0:00</small>
+### [L00_Preface](L00_Preface) 
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 1 | 1:15 | 0:00</small>
 - Rückblick
 - Einblick
 - Ausblick
@@ -15,8 +15,9 @@
 - Tipps
 <hr/>
 
-### [L01_Recap&Foundation](L01_Recap&Foundation) (Woche 2 & 3)
-<small style="float: right; position: relative; top: -30px; height: 0px">2:00 | 1:45</small>  
+### [L01_Recap&Foundation](L01_Recap&Foundation) 
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 2 & 3 | 2:00 | 1:45</small>  
+
 #### Teil 1: Grundlagen
 - Einleitung
 - Rückblick
@@ -26,27 +27,30 @@
 - Explizite Typisierung
 - Komplexe Datentypen
 - Fehlertypen  
+
 #### Teil 2: Programmablauf und Aktivitätsdiagramm
 - Trace Table
 - Debugger
 - Aktivitätsdiagramm  
 <hr/>
 
-### [L02_Events](L02_Events) (Woche 3 & 4)
-<small style="float: right; position: relative; top: -30px; height: 0px">6:30 | 2:45</small>
+### [L02_Events](L02_Events) 
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 3 & 4 | 6:30 | 2:45</small>  
+
 #### Teil 1: Grundlagen
 - Rückblick DOM
 - Ereignisse
 - Event-Handler
 - Event-Phasen  
+
 #### Teil 2: Konzeption und Implementation einer ereignisgesteuerten Anwendung
 - Anwendungsfalldiagramm (Use-Case-Diagram)
 - Skizze: User Interface 
 - Iterative Arbeitsweise   
 <hr/>
 
-### [L03_FormElements](L03_FormElements) (Woche 5)
-<small style="float: right; position: relative; top: -30px; height: 0px">6:30 | 4:30</small>
+### [L03_FormElements](L03_FormElements) 
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 5 | 6:30 | 4:30</small>
 - Texteingabe
 - Selektionen
 - Ausgabeelemente
@@ -106,8 +110,8 @@
 
 <hr/>
 
-### [L08_Canvas](L08_Canvas) (Woche 6 & 7)
-<small style="float: right; position: relative; top: -30px; height: 0px">5:30 | 5:00</small>
+### [L08_Canvas](L08_Canvas) 
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 6 & 7 | 5:30 | 5:00</small>
 #### Teil 1: Grundlagen
 - CanvasRenderingContext
 - Pfade
@@ -126,8 +130,8 @@
 - Implementation der Berge
 <hr/>
 
-### [L09_Classes](L09_Classes) (Woche 8 & 9)
-<small style="float: right; position: relative; top: -30px; height: 0px">3:30 | 4:15</small>
+### [L09_Classes](L09_Classes) 
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 8 & 9 | 3:30 | 4:15</small>
 - Objektorientierte Programmierung
 - Entwurf
 - Instanzierung
@@ -138,8 +142,8 @@
 
 <hr/>
 
-### [L10_Inheritance](L10_Inheritance) (Woche 10 & 11)
-<small style="float: right; position: relative; top: -30px; height: 0px">4:15 | 0:30</small>
+### [L10_Inheritance](L10_Inheritance) 
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 10 & 11 | 4:15 | 0:30</small>
 - Liskov'sches Substitutionsprinzip
 - Generalisierung vs Spezialisierung
 - Regeln für die Modellierung
@@ -147,8 +151,8 @@
 
 <hr/>
 
-### [L11_Advanced](L11_Advanced) (Woche 12 & 13)
-<small style="float: right; position: relative; top: -30px; height: 0px">3:00 | 4:30</small>
+### [L11_Advanced](L11_Advanced) 
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 12 & 13 | 3:00 | 4:30</small>
 - Abstract
 - Static
 - Gültigkeit
@@ -158,8 +162,8 @@
 
 <hr/>
 
-### [L12_Addition](L12_Addition) (Woche 14 & 15)
-<small style="float: right; position: relative; top: -30px; height: 0px">1:45 | 0:00</small>
+### [L12_Addition](L12_Addition) 
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 14 & 15 | 1:45 | 0:00</small>
 - Standardparameter
 - Eigenschaftsparameter
 - Ausnahmebehandlung
