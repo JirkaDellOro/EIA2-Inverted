@@ -111,7 +111,8 @@
 <hr/>
 
 ### [L08_Canvas](L08_Canvas) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 6 & 7 | 5:30 | 5:00</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 6 & 7 | 5:30 | 5:00</small>  
+
 #### Teil 1: Grundlagen
 - CanvasRenderingContext
 - Pfade
@@ -120,7 +121,8 @@
 - Transformation
 - Stil
 - Linien
-- Save/Restore
+- Save/Restore  
+
 #### Teil 2: Generierung eines Landschaftsbildes
 - Scribble
 - Aktivitätsdiagramm
@@ -131,39 +133,54 @@
 <hr/>
 
 ### [L09_Classes](L09_Classes) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 8 & 9 | 3:30 | 4:15</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 8 & 9 | 3:30 | 4:15</small>  
+
+#### Teil 1: Grundlagen
 - Objektorientierte Programmierung
 - Entwurf
 - Instanzierung
 - Constructor
 - Konventionen
 - Klassendiagramm
-- Zeitsignale
+
+#### Teil 2: Asteroids (eiaSteroids)
+- Konzeption und Implementation Grundfunktion
+- Zeitsignale  
 
 <hr/>
 
 ### [L10_Inheritance](L10_Inheritance) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 10 & 11 | 4:15 | 0:30</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 10 & 11 | 4:15 | 0:30</small>  
+
+#### Teil 1: Vererbung
 - Liskov'sches Substitutionsprinzip
 - Generalisierung vs Spezialisierung
-- Regeln für die Modellierung
-- Polymorphie
+- Regeln für die Modellierung  
+- Ufos in Asteroid
+
+#### Teil 2: Polymorphie
+- Vielgestaltigkeit
+- Anwendung in Asteroids
 
 <hr/>
 
 ### [L11_Advanced](L11_Advanced) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 12 & 13 | 3:00 | 4:30</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 12 & 13 | 3:00 | 4:30</small>  
+
+#### Teil 1: Modifikatoren & Accessoren
 - Abstract
 - Static
 - Gültigkeit
 - Sichtbarkeit
-- Zugriffsfunktionen
+- Zugriffsfunktionen  
+
+#### Teil 2: Asteroids reloaded
 - Aufzählungstypen
 
 <hr/>
 
 ### [L12_Addition](L12_Addition) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 14 & 15 | 1:45 | 0:00</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 14 | 1:45 | 0:00</small>
 - Standardparameter
 - Eigenschaftsparameter
 - Ausnahmebehandlung
