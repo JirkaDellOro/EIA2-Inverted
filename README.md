@@ -1,6 +1,6 @@
 <img src="X01_Appendix/Img/Banner.png">
 
-<small>Inhalt </small><small style="float: right;">und grob geschätzte Zeitangaben in Stunden im Format Semesterwoche | Lektion+Übungen | Wochenaufgabe</small>  
+<small>Inhalt </small><small style="float: right;">und grob geschätzte Zeitangaben in Stunden im Format<br/> Semesterwoche | Lektion+Übungen | Wochenaufgabe</small>  
 &nbsp;
 <hr/>
 
