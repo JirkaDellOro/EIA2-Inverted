@@ -41,7 +41,7 @@ Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und
 <li> Erwerb erster Praxiserfahrungen im Feld der Medienkonzeption</li>
   </ol>
   
-Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besonderen. In der Kürze der Zeit kann vieles nur angerissen werden, insbesondere die **weitreichenden Kenntnisse der Technologie von Mediensystemen** müssen zum Großteil eigenverantwortlich im Hauptstudium erlangt werden, EIA2 kann und muss hier lediglich ein Verständnis der unverzichtbaren Grundlagen erwirken.
+Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besonderen. Um die erforderlichen weitreichenden und tiefergehenden Kenntnisse zu erlangen, ist sehr viel eigenverantwortliches Lernen und Üben über die Präsenzveranstaltungen hinaus nötig. Dabei kann und muss die EIA-Reihe lediglich ein unverzichtbares Verständnis einiger der wichtigsten Grundlagen erwirken, im Hauptstudium werden damit praxisnahe Anwendungen konzipiert und entwickelt und damit die Kompetenz weiter gesteigert.
 </details>
 
 <br/>
@@ -95,13 +95,10 @@ In EIA2 lernst Du, auch komplizierte Aufgabenstellungen anzugehen, wobei die Kon
 besteht aus den Lektionen 01 bis 04 und behandelt tiefergehend die Arbeit mit HTML-Elementen und dem DOM, um komplexere und vor allem dynamische interaktive Anwendungen auf dieser Basis planen und entwickeln zu können. Außerdem werden die interaktiven Formularelemente des HTML-Standards eingesetzt und ausgewertet. 
 
 #### Sektion 2
-besteht aus den Lektionen 05 bis 07 und behandelt die Verteilung einer Anwendung auf Client-Server-Datenbank-Systeme, so dass Du moderne Anwendungen entwickeln kannst, welche Informationen im Internet dynamisch verarbeiten und verwalten und den Nutzern zur Interaktion bereit stellen. Die Komplexität liegt hier weniger in den Algorithmen als in der Vielzahl der Systeme und der Kommunikation zwischen ihnen.
-
-#### Sektion 3
 besteht aus den Lektionen 08 bis 11 und behandelt die Frage, was überhaupt diese "Objekte" sind, mit denen die ganze Zeit gearbeitet wurde, wie man solche selbst erstellt und was man damit noch machen kann. Hier öffnet sich ein intuitiver Zugang zur Entwicklung interaktiver Anwendungen der unabhängig von Betriebssystemen, Plattformen und dergleichen ist. Mit den erlangten Kenntnissen lassen sich nicht nur klassische Websites, sondern Anwendungen in völlig anderen Bereichen planen und entwickeln, von der nativen Smartphone-App bis zu voll ausgereiften Konsolengames. Es wird mit animierter und interaktiver Grafik und dem HTMLCanvasElement gearbeitet, was eine freie Gestaltung zulässt.
 
 ### Vorbereitung
-Jede Woche steht eine neue Lektion an. Du arbeitest diese Lektionen selbständig durch und bereitest dich damit auf den Workshop vor. Dabei ist es wichtig, dass Du die Übungen, die in den Lektionen angegeben sind auch tatsächlich machst und bei den Videos parallel selbst mitarbeitest. Das gilt sowohl für die Konzeption, insbesondere das Zeichnen der Diagramme, als auch die Codierung. Allein das Durchlesen und Anschauen der Lektionen wird dir nicht den erforderlichen Lernerfolg bescheren. Pflege so dein persönliches EIA2-Repository auf Github.
+Jede Woche steht eine neue Lektion oder ein neuer Lektionsteil an. Du arbeitest diese selbständig durch und bereitest dich damit auf den Workshop vor. Dabei ist es wichtig, dass Du die Übungen, die in den Lektionen angegeben sind auch tatsächlich machst und bei den Videos parallel selbst mitarbeitest. Das gilt sowohl für die Konzeption, insbesondere das Zeichnen der Diagramme, als auch die Codierung. Allein das Durchlesen und Anschauen der Lektionen wird dir nicht den erforderlichen Lernerfolg bescheren. Pflege so dein eigenes EIA2-Repository auf Github.
 
 ### Fragensammlung
 Mache dir bei der Vorbereitung Notizen und formuliere Fragen für den Workshop. Notiere dabei möglichst genau die Situation, um die es geht und gegebenfalls was erforderlich ist, um sie zu reproduzieren. Poste deine Fragen in den Issue zum nächsten Workshop. So entsteht eine Sammlung von Fragen die im Workshop diskutiert und beantwortet werden.
@@ -110,7 +107,7 @@ Mache dir bei der Vorbereitung Notizen und formuliere Fragen für den Workshop. 
 Im Workshop werden Fragen beantwortet und Unklarheiten beseitigt. Dabei steht der Austausch mit deinen Kommilitonen im Vordergrund. Im Idealfall klärt ihr die Dinge selbst, anstatt nur die Antworten eines Dozenten zu rezipieren. Der Dozent ist aber dabei um Irrwege und Ineffizienz zu vermeiden und im Zweifelsfall zu klären. **Achtung:** es gilt die strenge Regel, dass im Workshop nur Fragen zur aktuellen Lektion bearbeitet werden!
 
 ### Wochenaufgabe
-Jede Lektion schließt mit einer Aufgabe, an der im Rest der Woche die Inhalte geübt und verinnerlicht werden können. Im Praktikum solltest Du bereits mit der Lösung der Aufgabe fortgeschritten sein, um dort qualifizierte Fragen stellen zu können. **Achtung:** im Praktikum gelten die Regeln, dass nur die aktuelle Aufgabe bearbeitet wird und dass Fragen zum Code oder zur Programmierung nur beantwortet werden, wenn ein sinnvolles Konzept vorliegt.
+Jeder Lektionsteil schließt mit einer Aufgabe, an der im Rest der Woche die Inhalte geübt und verinnerlicht werden können. Im Praktikum solltest Du bereits mit der Lösung der Aufgabe fortgeschritten sein, um dort qualifizierte Fragen stellen zu können. **Achtung:** im Praktikum gelten die Regeln, dass nur die aktuelle Aufgabe bearbeitet wird und dass Fragen zum Code oder zur Programmierung nur beantwortet werden, wenn ein sinnvolles Konzept vorliegt.
 
 ### Issues
 Der Dozent und die studentischen Hilfskräfte freuen sich auch außerhalb des Workshops und des Praktikums über qualifizierte Fragen zu den aktuellen Inhalten. Poste für jede Frage eine Issue hier: https://github.com/JirkaDellOro/EIA2-Inverted/issues. Wir versuchen so schnell wie möglich zu antworten. Auch Du bist herzlich eingelaen, dich an der Beantwortung zu beteiligen, auch wenn Du dir nicht ganz sicher bist. Auch eine falsche Antwort ist wertvoll, wenn sie korrigiert wird. **Achtung:** beim Posten gelten die Regeln, dass Du ein Issue posten solltest, wenn Du für ein Problem innerhalb von 15 Minuten noch keinen Lösungsansatz findest und dass Du deine Issues selbständig schließt, wenn das Problem gelöst ist.
