@@ -101,6 +101,9 @@ Den kompletten Pfad, den das Event durch das DOM nimmt, kann man im Attribut `pa
 - [x] Untersuche die Seite [Phases](../X00_Code/L02_Events/Phases) und lasse den Code laufen.
 - [x] Was geschieht bei Klick auf den Button, bei Klick rechts daneben und bei Klick darunter? Warum?
 
+## CustomEvents
+Neben den Ereignissen, die automatisch vom System erzeugt und verschickt werden, ist es auch Möglich explizit Ereignisse durch den eigenen Code erzeugen und verschicken zu lassen. Dabei können auch neue Ereignistypen definiert und beliebige Informationen mitgegeben werden.
+
 # L02_Events-Teil2: Konzeption und Implementation einer ereignisgesteuerten Anwendung
 <img src="Material/erpresserbrief.jpg" width="50%">
 <figcaption><small>Quelle: https://www.paketda.de/juniorpost/erpresserbrief-basteln.php</small></figcaption>
