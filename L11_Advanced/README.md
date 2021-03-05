@@ -2,15 +2,18 @@
 
 ![](Material/Sims.png)
 
-<hr>
-**Einschub**: Eine Lösung für die letzte Übung von Lektion 10 mit CustomEvents, die bereits in [Lektion03](../L02_Events/README.md#customevents) kurz angerissen wurden.
+<hr>  
+
+**Einschub**: Eine Lösung für die letzte Übung von Lektion 10 mit CustomEvents, die bereits in [Lektion03](../L02_Events/README.md#customevents) kurz angerissen wurden.  
 <div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video><a href="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg" width="13%"></a>
 <a href="Material/draw.io/Asteroids_ActivityDiagram-Main_2.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Main_2.svg" width="25%"></a>
 </div>
-<hr>
+
+<hr>  
+
 Die objektorientierte Modellierung bietet noch einige zusätzliche Möglichkeiten, welche die Entwicklung und Wartung von Softwaresystemen vereinfachen und verbessern. Komplexere Software wird meist im Team entwickelt, verschiedene Teile, Module und Klassen werden von unterschiedlichen Leuten entworfen, implementiert und genutzt. Es ist ungemein hilfreich und praktisch, wenn diese Mechanismen genutzt werden, um Missverständnisse zwischen den Teammitgliedern zu vermeiden oder Fehler bei der Programmierung von vorneherein auszuschließen.
 
 - [x] Entwirf für diese Lektion ein kleines Programm bestehend aus einer Superklasse, einer Subklasse davon, einem Hauptprogramm und einer HTML-Datei, welche deine Skripte lädt. Die Funktion ist zunächst irrelevant, es geht nur um Struktur.
