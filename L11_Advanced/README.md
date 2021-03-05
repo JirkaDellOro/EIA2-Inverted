@@ -3,7 +3,7 @@
 ![](Material/Sims.png)
 
 <hr>
-**Einschub**: Eine Lösung für die letzte Übung von Lektion 10 mit CustomEvents, die bereits in [Lektion03](https://github.com/JirkaDellOro/EIA2-Inverted/blob/master/L02_Events/README.md#customevents) kurz angerissen wurden.
+**Einschub**: Eine Lösung für die letzte Übung von Lektion 10 mit CustomEvents, die bereits in [Phases](../X00_Code/L02_Events/Phases) [Lektion03](/L02_Events/README.md#customevents) kurz angerissen wurden.
 <div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
