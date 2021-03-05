@@ -102,7 +102,14 @@ Den kompletten Pfad, den das Event durch das DOM nimmt, kann man im Attribut `pa
 - [x] Was geschieht bei Klick auf den Button, bei Klick rechts daneben und bei Klick darunter? Warum?
 
 ## CustomEvents
-Neben den Ereignissen, die automatisch vom System erzeugt und verschickt werden, ist es auch Möglich explizit Ereignisse durch den eigenen Code erzeugen und verschicken zu lassen. Dabei können auch neue Ereignistypen definiert und beliebige Informationen mitgegeben werden.
+Neben den Ereignissen, die automatisch vom System erzeugt und verschickt werden, ist es auch möglich, explizit Ereignisse durch den eigenen Code erzeugen und verschicken zu lassen. Dabei können auch neue Ereignistypen definiert und beliebige Informationen als `detail` mitgegeben werden.
+```typescript
+// define a custom event that bubbles and carries some information
+let event: CustomEvent = new CustomEvent("someSpecialType", {bubbles: true, detail: {someKey: someData}});
+// send the event from some dispatcher
+someEventTarget.dispatchEvent(event);
+```
+Alle Bezeichnungen, die im Beispiel mit "some" beginnen, können und sollten natürlich mit sinnvollen Bezeichnungen ersetzt werden.  
 
 # L02_Events-Teil2: Konzeption und Implementation einer ereignisgesteuerten Anwendung
 <img src="Material/erpresserbrief.jpg" width="50%">
