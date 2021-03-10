@@ -62,6 +62,7 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>
 </div>  
+
 > **Hinweis:** die Themen zu verteilten Anwendungen (Client-Server-Datenbank) werden im vierten Semester behandelt und sind nicht mehr Teil von EIA2 (Stand S21)  
 
 ### Rückblick
