@@ -30,8 +30,7 @@ by Matt Graham
  header,
  hgroup,
  nav,
- section,
- summary {
+ section {
    display: block; }
  
  /*
