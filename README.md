@@ -28,7 +28,7 @@
 - Komplexe Datentypen
 - Fehlertypen  
 
-#### Teil 2: Programmablauf und Aktivitätsdiagramm
+#### Teil 2: Ablauf und Aktivität
 - Trace Table
 - Debugger
 - Aktivitätsdiagramm  
