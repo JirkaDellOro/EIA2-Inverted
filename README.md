@@ -136,14 +136,16 @@
 <small style="float: right; position: relative; top: -30px; height: 0px">Woche 8 & 9 | 3:30 | 4:15</small>  
 
 #### Teil 1: Grundlagen
-- Objektorientierte Programmierung
-- Entwurf
+- Objektorientierung
+- Abstraktion
+- Modellierung
+- Klassendiagramm
+- Kapselung
 - Instanzierung
 - Constructor
 - Konventionen
-- Klassendiagramm
 
-#### Teil 2: Asteroids (eiaSteroids)
+#### [Teil 2: Asteroids (eiaSteroids)](L09_Classes#l092-asteroids)
 - Konzeption und Implementation Grundfunktion
 - Zeitsignale  
 
