@@ -19,6 +19,7 @@
 - Variablen
 - Datentypen
 - Komplexe Datentypen
+- Funktion
 - Objekte
 - Fehlertypen  
 
