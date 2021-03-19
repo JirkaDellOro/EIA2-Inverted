@@ -1,4 +1,4 @@
-# L03.1 FormElements
+# L03 FormElements
 <img src="Material/PassierscheinA38.png">
 <small>Quelle: <a href="https://mueli77.com/2016/12/11/asterix-review-special-45-12-pruefungen-fuer-asterix/">https://mueli77.com/2016/12/11/asterix-review-special-45-12-pruefungen-fuer-asterix/</a></small>
 
@@ -72,7 +72,7 @@ Es gibt zudem noch ein paar standardisierte Elemente, welche dem Nutzer Rückmel
 - [x] Aktiviere das letzte Fieldset, es hat die `id` "fsOutput". 
 - [x] Aktiviere auch die letzten Codefragmente. Erkläre, wie die Ausgabeelemente angesteuert werden.  
 
-# L03.2 Formulargesteuerte Anwendung  
+# Formulargesteuerte Anwendung  
 
 <img src="Material/CocktailBar.png"/>
 
