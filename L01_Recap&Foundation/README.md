@@ -154,7 +154,8 @@ let vector: VectorWithMeaning = {x: 12.4, y: -7.2, meaning: "Ortsvektor"};
 Eine Funktion ist ein Stückchen Code innerhalb eines Programms, das ein eigenes kleines Programm darstellt, einen eigenen Namen hat, eingehende Daten verarbeiten und ausgehende Daten erzeugen kann. Eine solche Funktion kann dann von anderen Programmteilen genutzt werden, indem der Name zusammen mit den zu verarbeitenden Daten aufgerufen wird. Liefert die Funktion Daten zurück, können sie zum Beispiel einfach mit Hilfe des Zuweisungsoperators `=` einer Variablen zugewiesen werden und stehen damit zur Weiterverarbeitung zur Verfügung.  
 Eine Funktion definierst Du mit Hilfe des Schlüsselwortes `function` gefolgt von einem frei wählbaren Namen und einer Liste von Parametern in einer Klammer. Das Ganze ist die sogenannte Signatur. Dann folgt der Funktionskörper, in dem der eigentliche Code steht, in geschweiften Klammern. Soll die Funktion einen Wert zurückliefern, wird dieser nach dem Schlüsselwort `return` angegeben.
 
-- [x] Schreibe in die Konsole `function isDivisible(_dividend, _divisor) {return (_dividend % _divisor == 0)}`
+- [x] Schreibe in die Konsole  
+`function isDivisible(_dividend, _divisor) {return (_dividend % _divisor == 0)}`
 - [x] Schreibe nun `isDivisible(4, 3)`, welches Ergebnis wird angezeigt?
 - [x] Schreibe nun `isDivisible(4, 2)`, welches Ergebnis erhältst Du jetzt?
 - [x] Erkläre, wie die Funktion `isDivisible` arbeitet. Nutze hierzu das Kapitel "Operatoren" im [EIA2-Booklet](../X01_Appendix)
