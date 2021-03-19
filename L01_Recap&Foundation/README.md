@@ -155,12 +155,13 @@ Eine Funktion ist ein Stückchen Code innerhalb eines Programms, das ein eigenes
 Eine Funktion definierst Du mit Hilfe des Schlüsselwortes `function` gefolgt von einem frei wählbaren Namen und einer Liste von Parametern in einer Klammer. Das Ganze ist die sogenannte Signatur. Dann folgt der Funktionskörper, in dem der eigentliche Code steht, in geschweiften Klammern. Soll die Funktion einen Wert zurückliefern, wird dieser nach dem Schlüsselwort `return` angegeben.
 
 - [x] Schreibe in die Konsole  
-`function isDivisible(_dividend, _divisor) {return (_dividend % _divisor == 0)}`
+`function isDivisible(dividend, divisor) {return (dividend % divisor == 0)}`
 - [x] Schreibe nun `isDivisible(4, 3)`, welches Ergebnis wird angezeigt?
 - [x] Schreibe nun `isDivisible(4, 2)`, welches Ergebnis erhältst Du jetzt?
+- [x] Experimentiere mit anderen Zahlen
 - [x] Erkläre, wie die Funktion `isDivisible` arbeitet. Nutze hierzu das Kapitel "Operatoren" im [EIA2-Booklet](../X01_Appendix)
 
-Diese Javascript-Funktion ist sehr unsicher, sie liefert zum Beispiel auch ein Ergebnis, wenn Du `isDivisible(false, true)` aufrufst, was aber keinen Sinn ergibt. Ordentlich und etwas ausführlicher in TypeScript geschrieben sieht die Funktion so aus:  
+Diese Javascript-Funktion ist sehr unsicher, sie liefert zum Beispiel auch ein Ergebnis, wenn Du `isDivisible(false, true)` aufrufst, was aber keinen Sinn ergibt. Ordentlich, nach unseren Stilregeln und etwas ausführlicher in TypeScript geschrieben, sieht die Funktion so aus:  
 
 ```typescript
   function isDivisible(_dividend: number, _divisor: number): boolean {
@@ -171,6 +172,8 @@ Diese Javascript-Funktion ist sehr unsicher, sie liefert zum Beispiel auch ein E
 Hier hat jeder der Parameter eine Typnotation erhalten, TypeScript wird sich also beschweren, wenn die Funktion mit Werten von anderem Typ als `number` aufgerufen werden soll. Außerdem wird auch festgelegt, dass die Funktion einen Wahrheitswert zurück liefern soll, dazu wurde die Signatur um die Annotation `boolean` erweitert.
 
 > **Hinweis:** Es ist üblich, dass die Signatur als Ganzes eine Funktion identifiziert. Es kann also innerhalb eines Programms zwei Funktionen gleichen Namens geben, die ganz anderen Code beinhalten, solange sie sich durch ihre Parameterlisten unterscheiden. In Javascript/TypeScript ist das nicht so. Hier ist nur der Name entscheidend, er muss also eindeutig sein.
+
+- [x] Verschaffe dir einen Überblick über das Booklet, jetzt insbesondere über das Kapitel "Coding Style". Bei der Bearbeitung der Aufgaben ist dieser Stil bindend. Vieles wird sich dir jetzt noch nicht erschließen, später solltest Du aber immer wieder hier nachschlagen.
 
 ### Objekt
 Ein Objekt ist ein assoziatives Array, dem Funktionen anhaften. Diese Funktionen können die Elemente des Arrays verändern, ohne dass ihnen Informationen zu dem Objekt mitgegeben werden müssen, denn sie sind ja ein Teil davon und haben Zugriff darauf. Um diese Funktionen von den üblichen zu unterscheiden werden sie Methoden genannt. Ein Objekt verfügt also über Methoden, mit der es sich, oder auch seine Umwelt, verändern kann. In den nächsten Lektionen wirst Du vordefinierte Objekte lediglich nutzen und erzeugen, später wirst Du lernen, wie Du ganz neue Objektstrukturen definieren kannst.
