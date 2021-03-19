@@ -43,7 +43,7 @@
 - Event-Handler
 - Event-Phasen  
 
-#### [Teil 2: Ereignisgesteuerte Anwendung](L02_Events#l022-ereignisgesteuerte-anwendung)
+#### [Teil 2: Ereignisgesteuerte Anwendung](L02_Events#l021-ereignisgesteuerte-anwendung)
 - Anwendungsfalldiagramm (Use-Case-Diagram)
 - Skizze: User Interface 
 - Iterative Arbeitsweise   
