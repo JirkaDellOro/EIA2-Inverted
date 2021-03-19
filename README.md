@@ -123,7 +123,7 @@
 - Linien
 - Save/Restore  
 
-#### Teil 2: Generierung eines Landschaftsbildes
+#### Teil 2: Landschaftsbild
 - Scribble
 - Aktivitätsdiagramm
 - Implementation des Hintergrund
