@@ -88,7 +88,7 @@ Zeichne wieder ganz schnell ein kleines Anwendungsfalldiagramm. Versuche es selb
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V1_UseCase_071019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
 <a href="Material/CocktailBar_UseCaseDiagram.jpg"><img src="Material/CocktailBar_UseCaseDiagram.jpg" width="25%"/></a>
-</div>
+</div> 
 
 ## Skizze: User-Interface 
 Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und überlege, welche Tags, Attribute und Listener Du brauchst. Investiere ein wenig Zeit um selbst einen ersten Entwurf zu gestalten, bevor Du das Video anschaust.
