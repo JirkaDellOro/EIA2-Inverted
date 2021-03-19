@@ -1,4 +1,4 @@
-# L09_Classes
+# L09.1 Classes
 <img src="Material/Alan-kay.jpg">  
 
 <small>Quelle: https://www.thepositiveencourager.global/alan-kay-on-creativity-3</small>
@@ -123,7 +123,7 @@ Im Umgang mit Klassen und Objekten solltest Du dich unbedingt an einige Konventi
 - Die Namen der Methoden wiederholen nicht den Klassennamen (`scale` statt `scaleVector`)
 - Der Klassenname beschreibt das Wesen genau einer Instanz der Klasse, nicht mehrerer (`Vector` statt `Vectors`)
 
-# Asteroids
+# L09.2 Asteroids
 Mit diesen Basisregeln des objekorientierte Entwurfs kann man sich schon daran machen, eine komplexe interaktive Anwendung zu konzipieren und zu implementieren. Als Beispiel für diese und die folgenden Lektionen wird das Videospiel "Asteroids" (Atari 1979) in seiner ursprünglichen Arcade-Version herangezogen. 
 
 > **FunFact:** Asteroids ist einer der größten Erfolge in der Geschichte der Videogames und Ataris meistverkaufter Münzautomat. Es gab allerdings eine dominante Strategie, die es geübten Spielern erlaubte nach Einwurf nur einer Münze stundenlang zu spielen und dabei so viele Bonus-Schiffe anzuhäufen, dass der Automat, dann vom Spieler allein gelassen, noch lange Zeit brauchte um alle Schiffe zu zerstören...  
