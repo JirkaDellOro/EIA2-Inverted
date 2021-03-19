@@ -1,4 +1,4 @@
-# L03_FormElements
+# L03 FormElements
 <img src="Material/PassierscheinA38.png">
 <small>Quelle: <a href="https://mueli77.com/2016/12/11/asterix-review-special-45-12-pruefungen-fuer-asterix/">https://mueli77.com/2016/12/11/asterix-review-special-45-12-pruefungen-fuer-asterix/</a></small>
 
@@ -72,7 +72,7 @@ Es gibt zudem noch ein paar standardisierte Elemente, welche dem Nutzer Rückmel
 - [x] Aktiviere das letzte Fieldset, es hat die `id` "fsOutput". 
 - [x] Aktiviere auch die letzten Codefragmente. Erkläre, wie die Ausgabeelemente angesteuert werden.  
 
-# Konzeption und Implementation einer formulargesteuerten Anwendung  
+# Formulargesteuerte Anwendung  
 
 <img src="Material/CocktailBar.png"/>
 
@@ -88,7 +88,7 @@ Zeichne wieder ganz schnell ein kleines Anwendungsfalldiagramm. Versuche es selb
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V1_UseCase_071019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
 <a href="Material/CocktailBar_UseCaseDiagram.jpg"><img src="Material/CocktailBar_UseCaseDiagram.jpg" width="25%"/></a>
-</div>
+</div> 
 
 ## Skizze: User-Interface 
 Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und überlege, welche Tags, Attribute und Listener Du brauchst. Investiere ein wenig Zeit um selbst einen ersten Entwurf zu gestalten, bevor Du das Video anschaust.

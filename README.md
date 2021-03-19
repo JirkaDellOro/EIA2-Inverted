@@ -6,9 +6,6 @@
 
 ### [L00_Preface](L00_Preface) 
 <small style="float: right; position: relative; top: -30px; height: 0px">Woche 1 | 1:15 | 0:00</small>
-- Rückblick
-- Einblick
-- Ausblick
 - Medienkonzeption und Digitale Medien
 - Motivation
 - Veranstaltungskonzept
@@ -18,17 +15,14 @@
 ### [L01_Recap&Foundation](L01_Recap&Foundation) 
 <small style="float: right; position: relative; top: -30px; height: 0px">Woche 2 & 3 | 2:00 | 1:45</small>  
 
-#### Teil 1: Grundlagen
-- Einleitung
-- Rückblick
-- Einblick
+#### [Teil 1: Grundlagen](L01_Recap&Foundation#l011-grundlagen)
 - Variablen
 - Datentypen
-- Explizite Typisierung
 - Komplexe Datentypen
+- Objekte
 - Fehlertypen  
 
-#### Teil 2: Programmablauf und Aktivitätsdiagramm
+#### [Teil 2: Ablauf und Aktivität](L01_Recap&Foundation#l012-ablauf-und-aktivität)
 - Trace Table
 - Debugger
 - Aktivitätsdiagramm  
@@ -37,15 +31,17 @@
 ### [L02_Events](L02_Events) 
 <small style="float: right; position: relative; top: -30px; height: 0px">Woche 3 & 4 | 6:30 | 2:45</small>  
 
-#### Teil 1: Grundlagen
+#### [Teil 1: Grundlagen](L02_Events#l021-grundlagen)
 - Rückblick DOM
 - Ereignisse
 - Event-Handler
 - Event-Phasen  
+- Custom-Events
 
-#### Teil 2: Konzeption und Implementation einer ereignisgesteuerten Anwendung
+#### [Teil 2: Ereignisgesteuerte Anwendung](L02_Events#l021-ereignisgesteuerte-anwendung)
 - Anwendungsfalldiagramm (Use-Case-Diagram)
-- Skizze: User Interface 
+- UI-Scribble 
+- Aktivitätsdiagramm
 - Iterative Arbeitsweise   
 <hr/>
 
@@ -113,7 +109,7 @@
 ### [L08_Canvas](L08_Canvas) 
 <small style="float: right; position: relative; top: -30px; height: 0px">Woche 6 & 7 | 5:30 | 5:00</small>  
 
-#### Teil 1: Grundlagen
+#### [Teil 1: Grundlagen](L08_Canvas#l081-grundlagen)
 - CanvasRenderingContext
 - Pfade
 - Rendering
@@ -123,7 +119,7 @@
 - Linien
 - Save/Restore  
 
-#### Teil 2: Generierung eines Landschaftsbildes
+#### [Teil 2: Landschaftsbild](L08_Canvas#l082-landschaftsbild)
 - Scribble
 - Aktivitätsdiagramm
 - Implementation des Hintergrund
@@ -135,15 +131,15 @@
 ### [L09_Classes](L09_Classes) 
 <small style="float: right; position: relative; top: -30px; height: 0px">Woche 8 & 9 | 3:30 | 4:15</small>  
 
-#### Teil 1: Grundlagen
-- Objektorientierte Programmierung
-- Entwurf
+#### [Teil 1: Grundlagen](L09_Classes#l091-grundlagen)
+- Objektorientierung
+- Abstraktion
+- Klassendiagramm
+- Kapselung
 - Instanzierung
 - Constructor
-- Konventionen
-- Klassendiagramm
 
-#### Teil 2: Asteroids (eiaSteroids)
+#### [Teil 2: Asteroids (eiaSteroids)](L09_Classes#l092-asteroids)
 - Konzeption und Implementation Grundfunktion
 - Zeitsignale  
 
@@ -152,29 +148,28 @@
 ### [L10_Inheritance](L10_Inheritance) 
 <small style="float: right; position: relative; top: -30px; height: 0px">Woche 10 & 11 | 4:15 | 0:30</small>  
 
-#### Teil 1: Vererbung
+#### [Teil 1: Vererbung](L10_Inheritance#l101-vererbung)
 - Liskov'sches Substitutionsprinzip
 - Generalisierung vs Spezialisierung
 - Regeln für die Modellierung  
 - Ufos in Asteroid
 
-#### Teil 2: Polymorphie
-- Vielgestaltigkeit
-- Anwendung in Asteroids
+#### [Teil 2: Ufos](L10_Inheritance#l102-ufos)
+- Polymorphie
 
 <hr/>
 
 ### [L11_Advanced](L11_Advanced) 
 <small style="float: right; position: relative; top: -30px; height: 0px">Woche 12 & 13 | 3:00 | 4:30</small>  
 
-#### Teil 1: Modifikatoren & Accessoren
+#### [Teil 1: Modifikatoren & Accessoren](L11_Advanced#l111-modifikatoren--accessoren)
 - Abstract
 - Static
 - Gültigkeit
 - Sichtbarkeit
 - Zugriffsfunktionen  
 
-#### Teil 2: Asteroids reloaded
+#### [Teil 2: Asteroids reloaded](L11_Advanced#l112-asteroids-reloaded)
 - Aufzählungstypen
 
 <hr/>

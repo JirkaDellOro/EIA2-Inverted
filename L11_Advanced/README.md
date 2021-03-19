@@ -1,4 +1,5 @@
-# L11 Advanced
+## L11 Advanced
+# L11.1 Modifikatoren & Accessoren
 
 ![](Material/Sims.png)
 
@@ -155,7 +156,7 @@ erscheint es von außen betrachtet aber so, als wäre diese Eigenschaft ständig
 
 > **Hinweis:** Zugriffsfunktionen werden im Klassendiagramm standardmäßig nicht markiert, sondern schlicht als Eigenschaft dargestellt.
 
-## Asteroid Reloaded
+# L11.2 Asteroids reloaded
 
 <div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V3_AsteroidReloaded.mp4" type="video/mp4"> 

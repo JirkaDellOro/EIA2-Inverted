@@ -1,5 +1,5 @@
 # L00_Preface  
-> **Hinweis:** im Themenbereich diese Moduls spielt biologisches Geschlecht (Sexus) in der Regel keinerlei Rolle. Es wird deswegen in den Texten dieser Lektionen davon Abstand genommen, ständig darauf hinzuweisen, außer es sollte doch im Kontext erforderlich sein. Stattdessen wird das geschlechtsneutrale generische Maskulinum (Genus) genutzt, wenn von Personengruppen und Rollen die Sprache ist. Sämtliche Geschlechter (m/w/d) sind damit gleichberechtigt adressiert.
+> **Hinweis:** im Themenbereich dieses Moduls spielt biologisches Geschlecht (Sexus) in der Regel keinerlei Rolle. Es wird deswegen in den Texten dieser Lektionen davon Abstand genommen, ständig darauf hinzuweisen, außer es sollte doch im Kontext erforderlich sein. Stattdessen wird das geschlechtsneutrale generische Maskulinum (Genus) genutzt, wenn von Personengruppen und Rollen die Sprache ist. Sämtliche Geschlechter (m/w/d) sind damit gleichberechtigt adressiert.
 
 ## Medienkonzeption und Digitale Medien  
 Die grundlegendste Eigenschaft eines Konzepters ist die Kommunikationsbereitschaft, und zwar in beide Richtungen. Es genügt bei Weitem nicht gute Ideen zu haben und sie anderen mitzuteilen. Zunächst muss er herausfinden, welches Problem überhaupt mit der Idee gelöst werden soll. Hierzu muss er vor allem die richtigen Fragen stellen! Und natürlich dann auch die Antworten aufnehmen und verstehen. Kernideen werden meist ohnehin in der Gruppe erdacht, es ist die Aufgabe des Konzepters sie dann weiterzuentwickeln und dabei ständig in der Kommunikation mit allen Beteiligten zu bleiben. Ein Konzepter kann nicht verharren und warten, bis ihm mitgeteilt wird, was er zu tun hat. Stattdessen ist es die Aufgabe des Konzepters Probleme zu erkennen, zu recherchieren, fachgerechte Lösungen zu finden und sie nach den Regeln der Kunst in unterschiedlichen Formaten, insbesondere Skizzen und Diagrammen, festzuhalten und mit deren Hilfe den anderen Teammitgliedern mitzuteilen, was wie zu tun ist.  
@@ -47,7 +47,7 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 <br/>
 
 ## Motivation  
-- [x] Klicke auf die Startsymbole der Videos. Die folgenden vier Videos zu schauen ist nicht Pflicht, aber sehr empfohlen um dir einen Einblick in die Möglichkeiten zu gewähren, die sich durch den Kurs für dich eröffnen werden. Alle weiteren Videos sind aber Teil der Lektionen und ihr Inhalt ergänzt maßgeblich die Texte und Übungen, einiges wird ausschließlich durch die Videos vermittelt.  
+- [x] Klicke auf die Startsymbole und schaue dir die Videos an. Sie geben dir einen Einblick in die Möglichkeiten, die sich durch den Kurs für dich eröffnen werden, wenn Du aktiv mitarbeitest, und sie vermitteln dir, wie dringlich die Inhalte sind. Verlasse die Rolle des Konsumenten und werde zum Macher! Du stehst am Scheideweg: wirst Du zu denen gehören, die Maschinen beherrschen, oder zu jenen, die Maschinen beherrschen? (kleines Kōan zum Meditieren)
 
 <a href="https://youtu.be/-jRREn6ifEQ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN<a/>  
 <a href="https://www.youtube.com/watch?v=MvTSPwftvyo"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito]<a/>  
@@ -62,6 +62,8 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>
 </div>  
+
+> **Hinweis:** die Themen zu verteilten Anwendungen (Client-Server-Datenbank) werden im vierten Semester behandelt und sind nicht mehr Teil von EIA2 (Stand S21)  
 
 ### Rückblick
 Im Modul "Entwicklung interaktiver Anwendungen I" (EIA1) wurdest Du zunächst an HTML und CSS heran geführt, um damit eine Grundlage für die weiteren Schritte zu schaffen. Denn als technische Plattform dienen in dieser Modulreihe Internetbrowser, da sie auf allen gängigen Geräten zur Verfügung stehen. 

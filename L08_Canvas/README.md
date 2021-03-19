@@ -1,4 +1,5 @@
-# L08_Canvas
+## L08 Canvas
+# L08.1 Grundlagen
 <img src="Material/bobross.jpg"/>
 <small>Quelle: <a href="http://pix4.qmde.de/www.quotenmeter.de/pics/sonstiges/2019/medien/bobross_ox__W1000xh0.jpg">http://pix4.qmde.de/www.quotenmeter.de/pics/sonstiges/2019/medien/bobross_ox__W1000xh0.jpg</a></small>  
 
@@ -194,7 +195,7 @@ Natürlich lässt sich auch die Gestaltung der Linien, die mit der Anweisung `st
 ## Save/Restore
 Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transformationsmatrix zwischen, sondern auch die Stilangaben für die Füllungen und Linien und weitere Informationen, die insgesamt den Zustand (`state`) des RenderingContexts beschreiben. Somit ist es möglich, beispielsweise wieder zum vorangegangenen Stil zurück zu kehren, wenn zwischenzeitlich ein anderer benötigt wurde. `save()` speichert die Informationen auf einem Ablagestapel (stack), weitere Aufrufe von `save()` legen weitere solcher Informationen oben auf. Mit `restore()` wird der Stapel von oben nach unten Stück für Stück geleert und die Zustände des CanvasRenderingContexts in umgekehrter Reihenfolge der Speicherung wiederhergestellt.
 
-# Generierung eines Landschaftsbildes
+# L08.2 Landschaftsbild
 
 ## Scribble
 <div align="center"><video controls width="30%"> 

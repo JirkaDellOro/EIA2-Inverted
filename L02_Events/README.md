@@ -1,5 +1,5 @@
-
-# L02_Events-Teil 1: Grundlagen
+## L02 Events
+# L02.1 Grundlagen
 [<img src="Material/EventInfo_Child2Parent.png">](https://www.youtube.com/watch?v=IHbQdC5VHfw)
 <small>Quelle: <a href="https://www.youtube.com/watch?v=IHbQdC5VHfw">https://www.youtube.com/watch?v=IHbQdC5VHfw</a></small>
 
@@ -111,7 +111,7 @@ someEventTarget.dispatchEvent(event);
 ```
 Alle Bezeichnungen, die im Beispiel mit "some" beginnen, können und sollten natürlich mit sinnvollen Bezeichnungen ersetzt werden.  
 
-# L02_Events-Teil2: Konzeption und Implementation einer ereignisgesteuerten Anwendung
+# L02.1 Ereignisgesteuerte Anwendung
 <img src="Material/erpresserbrief.jpg" width="50%">
 <figcaption><small>Quelle: https://www.paketda.de/juniorpost/erpresserbrief-basteln.php</small></figcaption>
 

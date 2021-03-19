@@ -1,4 +1,5 @@
-# L01 Recap & Foundation
+## L01 Recap & Foundation
+# L01.1 Grundlagen
 <img src="Material/steve-jobs-learn-to-program.jpg">
 <small>Quelle: <a href="https://www.challengecharterschool.net/wp-content/uploads/2017/07/Steve-Jobs.jpg">https://www.challengecharterschool.net/wp-content/uploads/2017/07/Steve-Jobs.jpg</a></small>
 
@@ -196,6 +197,8 @@ Das sind Fehler, die bereits angezeigt werden während Du den Code schreibst und
 Logikfehler sind nicht auf eine falsche Programmierung zurückzuführen, sondern auf schlechte Konzeption. Diese Fehler kann der Computer meistens gar nicht aufzeigen, da er nicht weiß, was Du eigentlich vorhattest. Solange das Programm ausführbar ist und keiner der anderen Fehlertypen auftritt, wird er es ausführen und davon ausgehen, dass er tut was Du dir vorgestellt hast. Hier hilft nur nachdenken, aber es gibt einige Hilfsmittel, die man dabei einsetzen kann!  
 
 >**Hinweis:** TypeScript spielt gerade bei der Fehlervermeidung eine seiner großen Stärken aus, indem es viele Fehler zur Entwicklungszeit anzeigt. JavaScript hat hier fast nichts zu bieten, die Fehler zeigen sich erst im Betrieb... besonders gerne beim Nutzer!
+
+# L01.2 Ablauf und Aktivität
 
 ## Trace Table
 Mit Hilfe einer Verfolgungstabelle kann man den Zustand eines Programms zu jeder Zeit während des Laufs ermitteln und festhalten. Solche Tabellen von Hand zu erstellen ist eine gute Übung um den Programmlauf zu verstehen. Daher exerzieren wir dies im folgenden Video gemeinsam durch. Den Code dazu findest Du hier: [Cows.ts](../X00_Code/L01_Recap&Foundation/Cows/Cows.ts)
