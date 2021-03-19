@@ -167,14 +167,14 @@
 ### [L11_Advanced](L11_Advanced) 
 <small style="float: right; position: relative; top: -30px; height: 0px">Woche 12 & 13 | 3:00 | 4:30</small>  
 
-#### [Teil 1: Modifikatoren & Accessoren](L11_Advanced#l101-modifikatoren-&-accessoren)
+#### [Teil 1: Modifikatoren & Accessoren](L11_Advanced#l111-modifikatoren--accessoren)
 - Abstract
 - Static
 - Gültigkeit
 - Sichtbarkeit
 - Zugriffsfunktionen  
 
-#### [Teil 2: Asteroids reloaded](L11_Advanced#l102-asteroids-reloaded)
+#### [Teil 2: Asteroids reloaded](L11_Advanced#l112-asteroids-reloaded)
 - Aufzählungstypen
 
 <hr/>
