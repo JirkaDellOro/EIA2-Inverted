@@ -177,7 +177,7 @@ Logikfehler sind nicht auf eine falsche Programmierung zurückzuführen, sondern
 
 <hr/>
 
-# L01.2 Teil 2
+# L01.2 Recap & Foundation
 
 ## Trace Table
 Mit Hilfe einer Verfolgungstabelle kann man den Zustand eines Programms zu jeder Zeit während des Laufs ermitteln und festhalten. Solche Tabellen von Hand zu erstellen ist eine gute Übung um den Programmlauf zu verstehen. Daher exerzieren wir dies im folgenden Video gemeinsam durch. Den Code dazu findest Du hier: [Cows.ts](../X00_Code/L01_Recap&Foundation/Cows/Cows.ts)
