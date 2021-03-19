@@ -176,8 +176,6 @@ Logikfehler sind nicht auf eine falsche Programmierung zurückzuführen, sondern
 
 >**Hinweis:** TypeScript spielt gerade bei der Fehlervermeidung eine seiner großen Stärken aus, indem es viele Fehler zur Entwicklungszeit anzeigt. JavaScript hat hier fast nichts zu bieten, die Fehler zeigen sich erst im Betrieb.
 
-<hr/>
-
 # L01.2 Ablauf und Aktivität
 
 ## Trace Table
