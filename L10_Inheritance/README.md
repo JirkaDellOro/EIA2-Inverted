@@ -1,4 +1,4 @@
-# L10_Inheritance
+# L10.1 Inheritance
 
 ![](Material/Evolution.jpg)
 
@@ -46,7 +46,7 @@ Bei der Modellierung eines Systems solltest Du diese zwei Regeln beachten:
 
 Jeder Teil soll also nur das von seiner Umwelt und anderen Teilen wissen, was unbedingt erforderlich für die eigene Funktion ist!
 
-# Ufos in Asteroids
+# L10.2 Ufos
 Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entwickelt.
 
 ## Erweiterung des Klassendiagramms
