@@ -71,7 +71,7 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
 > **`super(...)`** ruft aus der Subklasse den Constructor der Superklasse auf!  
 > **`super.methode(...)`** ruft aus der Subklasse die `methode` der Superklasse auf!
 
-# L09.2 Polymorphie
+## Polymorphie
 Griechisch πολύς (polýs) = „viel“ und μορφή (morphé) = "Form, Gestalt". Hunde sind vielgestaltig, das wurde in diesen Lektionen bereits ausgiebig behandelt. Die einzelnen Hunderassen können aber nicht nur anders aussehen, sondern sich vielleicht auch unterschiedlich verhalten. Ein Jagdhund wird beim Anblick einer Herde Schafe vielleicht gerne hineinrennen und eines reißen, ein Hütehund eher um die Herde herumlaufen und sie beisammen halten. Für jemanden, der mit diesen Hunden spazierengeht, so wie die angeblich 200.000 professionellen Gassigeher in den USA, ist dabei vordringlich wichtig, genug Leinen und Halsbänder zu haben, um die Hunde bei sich halten zu können. Die Rasse ist unerheblich.
 
 > **Polymorphie** ist das vierte Prinzip der Objektorientierung!
