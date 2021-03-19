@@ -173,7 +173,7 @@ Hier hat jeder der Parameter eine Typnotation erhalten, TypeScript wird sich als
 
 > **Hinweis:** Es ist üblich, dass die Signatur als Ganzes eine Funktion identifiziert. Es kann also innerhalb eines Programms zwei Funktionen gleichen Namens geben, die ganz anderen Code beinhalten, solange sie sich durch ihre Parameterlisten unterscheiden. In Javascript/TypeScript ist das nicht so. Hier ist nur der Name entscheidend, er muss also eindeutig sein.
 
-> **Achtung:** Wird die Anweisung `return` ausgeführt, wird die Funktion an dieser Stelle verlassen. Meist steht daher das `return` am Ende einer Funktion. Man kann sich diese Mechanik aber auch zu nutze machen, um unter bestimmten Bedingungen z.B. mit Hilfe einer if-Anweisung eine Funktion zu verlassen. Das kann auch eine Funktion ohne Rückgabewerte sein, dann steht das `return` alleine.
+> **Achtung:** Die Anweisung `return` führt dazu, dass die Funktion an dieser Stelle verlassen wird. Meist steht daher das `return` am Ende einer Funktion. Man kann sich diese Mechanik aber auch zu Nutze machen, um unter bestimmten Bedingungen z.B. mit Hilfe einer if-Anweisung eine Funktion frühzeitig zu verlassen ("early out"). Das kann auch eine Funktion ohne Rückgabewerte sein, dann steht das `return` alleine.
 
 - [x] Verschaffe dir einen Überblick über das Booklet, jetzt insbesondere über das Kapitel "Coding Style". Bei der Bearbeitung der Aufgaben ist dieser Stil bindend. Vieles wird sich dir jetzt noch nicht erschließen, später solltest Du aber immer wieder hier nachschlagen.
 
