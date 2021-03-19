@@ -43,7 +43,7 @@
 - Event-Handler
 - Event-Phasen  
 
-#### Teil 2: Konzeption und Implementation einer ereignisgesteuerten Anwendung
+#### Teil 2: Ereignisgesteuerte Anwendung
 - Anwendungsfalldiagramm (Use-Case-Diagram)
 - Skizze: User Interface 
 - Iterative Arbeitsweise   
