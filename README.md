@@ -6,9 +6,6 @@
 
 ### [L00_Preface](L00_Preface) 
 <small style="float: right; position: relative; top: -30px; height: 0px">Woche 1 | 1:15 | 0:00</small>
-- Rückblick
-- Einblick
-- Ausblick
 - Medienkonzeption und Digitale Medien
 - Motivation
 - Veranstaltungskonzept
@@ -19,13 +16,10 @@
 <small style="float: right; position: relative; top: -30px; height: 0px">Woche 2 & 3 | 2:00 | 1:45</small>  
 
 #### [Teil 1: Grundlagen](L01_Recap&Foundation#l011-grundlagen)
-- Einleitung
-- Rückblick
-- Einblick
 - Variablen
 - Datentypen
-- Explizite Typisierung
 - Komplexe Datentypen
+- Objekte
 - Fehlertypen  
 
 #### [Teil 2: Ablauf und Aktivität](L01_Recap&Foundation#l012-ablauf-und-aktivität)
@@ -42,10 +36,12 @@
 - Ereignisse
 - Event-Handler
 - Event-Phasen  
+- Custom-Events
 
 #### [Teil 2: Ereignisgesteuerte Anwendung](L02_Events#l021-ereignisgesteuerte-anwendung)
 - Anwendungsfalldiagramm (Use-Case-Diagram)
-- Skizze: User Interface 
+- UI-Scribble 
+- Aktivitätsdiagramm
 - Iterative Arbeitsweise   
 <hr/>
 
@@ -158,9 +154,8 @@
 - Regeln für die Modellierung  
 - Ufos in Asteroid
 
-#### [Teil 2: Polymorphie](L10_Inheritance#l092-polymorphie)
-- Vielgestaltigkeit
-- Anwendung in Asteroids
+#### [Teil 2: Ufos](L10_Inheritance#l102-ufos)
+- Polymorphie
 
 <hr/>
 
