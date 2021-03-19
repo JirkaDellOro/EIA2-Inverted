@@ -158,7 +158,7 @@
 - Regeln für die Modellierung  
 - Ufos in Asteroid
 
-#### [Teil 2: Polymorphie](L10_Inheritance#l102-polymorhpie)
+#### [Teil 2: Polymorphie](L10_Inheritance#l102-polymorphie)
 - Vielgestaltigkeit
 - Anwendung in Asteroids
 
