@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.L07_CocktailBar = void 0;
 const Http = require("http");
 const Url = require("url");
 const Mongo = require("mongodb");
@@ -41,6 +42,8 @@ var L07_CocktailBar;
         _response.end();
     }
     function storeOrder(_order) {
+        // orders.insert(_order);
+        // insert is depricated, use insertOne instead (Jirka Dell'Oro-Friedl, 2020)
         orders.insertOne(_order);
     }
 })(L07_CocktailBar = exports.L07_CocktailBar || (exports.L07_CocktailBar = {}));
