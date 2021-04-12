@@ -84,7 +84,7 @@ Nicht alle Ereignisse werden allen Objekten im System mitgeteilt. Es ist also nu
 ### Phase 1: Capture
 Das Event-Objekt wird zunächst an das `window` übergeben. Von dort wandert es zum `document`, zum `html`, zum `body` und weiter in den Baum in Richtung des `target`.
 ### Phase 2: Target
-Wenn es vom Elternobjekt zum `target` gereicht wird, befindet sich das Event-Objekt in der Target-Phase.
+Wenn es vom Elternobjekt zum `target` gereicht wird, beispielsweise also zum angeklickten Button-Element, befindet sich das Event-Objekt in der Target-Phase.
 ### Phase 3: Bubble
 Schließlich steigt das Event-Objekt im Baum wieder auf, bis es erneut das `window` erreicht. Es steigt also wie eine Luftblase unter Wasser an die Oberfläche.
 
