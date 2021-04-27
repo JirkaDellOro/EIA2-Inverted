@@ -157,7 +157,8 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V4_Implementation2_111019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
 <a href="Material/CocktailBar_UI-Scribble2.jpg"><img src="Material/CocktailBar_UI-Scribble2.jpg" width="25%"/></a>
-</div>
+</div>  
+> Achtung: im Video wird mehrfach von FormData-Element gesprochen. Besser ist FormData-Objekt, denn es ist kein HTML-Element.
 
 - [x] Die Ausgabe der Bestellübersicht funktioniert noch nicht richtig. Finde den Fehler und korrigiere ihn.
 - [x] Implementiere die Sonderbehandlung der Drinks.
