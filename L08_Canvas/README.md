@@ -245,7 +245,7 @@ Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transf
 
 ## Übungen
 - [x] Isoliere die Funktionalität eine Zufallszahl zwischen einem minimalen und maximalen Wert zu liefern. Konzipiere sie als Aktivität und implementiere sie als Funktion, welche die beiden Grenzwerte entgegenen nimmt und eine entsprechende Zufallszahl zurück gibt. Ersetze die Stellen im Programm, an denen diese Funktion genutzt werden kann und sollte durch entsprechende Aufrufe derselben.
-- [x] Studiere das Aktivitätsprogramm zum Aufbau der Baumreihe und die Implementation. Hier findest Du vielleicht noch einige wertvolle Hinweise für deine weitere Arbeit.
+- [x] Studiere das [Scribble](Material/draw.io/Alley_Scribble.svg) und das [Aktivitätsdiagramm](Material/draw.io/Trees_ActivityDiagram.svg) zum Aufbau der Baumreihe sowie die Implementation. Hier findest Du vielleicht noch einige wertvolle Hinweise für deine weitere Arbeit.
 - [x] Studiere den Code der Allee und ergründe, warum noch weitere Variablen vor den Aufrufen der draw-Functionen dazu gekommen sind.
 - [x] Experimentiere mit den Parametern der verschiedenen Funktionen und auch mit den hardkodierten Werten innerhalb dieser. Modifiziere so das Bild nach deinem ästhetischen Empfinden.
 - [x] Lasse die Position der Straße am Horizont um einen zufälligen Betrag zwischen -200 und 200 Pixeln horizontal verschieben, so dass der Fluchtpunkt bei jedem Aufruf des Programms ein anderer ist. Warum werden die Baumreihen mitbewegt?
