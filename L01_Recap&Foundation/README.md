@@ -214,11 +214,11 @@ Logikfehler sind nicht auf eine falsche Programmierung zurückzuführen, sondern
 Mit Hilfe einer Verfolgungstabelle kann man den Zustand eines Programms zu jeder Zeit während des Laufs ermitteln und festhalten. Solche Tabellen von Hand zu erstellen ist eine gute Übung um den Programmlauf zu verstehen. Daher exerzieren wir dies im folgenden Video gemeinsam durch. Den Code dazu findest Du hier: [Cows.ts](../X00_Code/L01_Recap&Foundation/Cows/Cows.ts)
 
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L01_V1_Tracetables_041019.mp4" type="video/mp4"/> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L01_V1_Tracetables_041019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
-<a href="Material/Cows_TraceTable.jpg"><img src="Material/Cows_TraceTable.jpg" width="25%"/></a>
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L01_V1_Tracetables_041019.mp4" type="video/mp4"/></video>  
+  <a href="Material/Cows_TraceTable.jpg"><img src="Material/Cows_TraceTable.jpg" width="25%"/></a>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L01_V1_Tracetables_041019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L01 Foundation: Trace Table</a>
 </div>
 
 ## Debugger
@@ -228,20 +228,18 @@ Natürlich gibt es technische Hilfsmittel etwas ähnliches wie eine Verfolgungst
 
 Mit dem Debugger kannst Du auf die Jagd nach Fehlern gehen. Da wir das Programm untersuchen, während es im Browser läuft, ist es sehr praktisch, dass der Browser einen solchen Debugger integriert hat. Unser kleines Programm weist derzeit keine Fehler auf, aber wir schauen trotzdem einmal, ob unsere Verfolgungstabelle mit den Ergebnissen des Debuggers übereinstimmt.  
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L01_V2_Debugger_041019.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L01_V2_Debugger_041019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L01_V2_Debugger_041019.mp4" type="video/mp4"></video>
+  <br/>
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L01_V2_Debugger_041019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L01 Foundation: Debugger</a>
 </div>
 
 ## Aktivitätsdiagramm
 Hier wird nun noch das Cows-Programm in ein Aktivitätsdiagramm überführt und dabei die wichtigsten Knoten und Kanten erklärt.  
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L01_V3_ActivityDiagram_041019.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L01_V3_ActivityDiagram_041019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
-<!-- <div align="center"><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/=1zp2S2wlZQdbBXxKyDKL8RwoDwKbWifi1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a> -->
-<a href="Material/Cows_ActivityDiagram.jpg"><img src="Material/Cows_ActivityDiagram.jpg" width="25%"/></a>
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L01_V3_ActivityDiagram_041019.mp4" type="video/mp4"></video>
+  <a href="Material/Cows_ActivityDiagram.jpg"><img src="Material/Cows_ActivityDiagram.jpg" width="25%"/></a>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L01_V3_ActivityDiagram_041019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L01 Foundation: Aktivitätsdiagramm</a>
 </div>
