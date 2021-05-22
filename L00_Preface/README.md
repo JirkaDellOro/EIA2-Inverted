@@ -49,17 +49,16 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 ## Motivation  
 - [x] Klicke auf die Startsymbole und schaue dir die Videos an. Sie geben dir einen Einblick in die Möglichkeiten, die sich durch den Kurs für dich eröffnen werden, wenn Du aktiv mitarbeitest, und sie vermitteln dir, wie dringlich die Inhalte sind. Verlasse die Rolle des Konsumenten und werde zum Macher! Du stehst am Scheideweg: wirst Du zu denen gehören, die Maschinen beherrschen, oder zu jenen, die Maschinen beherrschen? (kleines Kōan zum Meditieren)
 
-<a href="https://youtu.be/-jRREn6ifEQ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN<a/>  
-<a href="https://www.youtube.com/watch?v=MvTSPwftvyo"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito]<a/>  
-<a href="https://www.youtube.com/watch?v=Z35ovSEJOps"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU]<a/>  
-<a href="../X01_Appendix/Crawford/Crawford.html"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Algorithms and Art | Chris Crawford]<a/>  
+<a href="https://youtu.be/-jRREn6ifEQ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN</a>  
+<a href="https://www.youtube.com/watch?v=MvTSPwftvyo"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito]</a>  
+<a href="https://www.youtube.com/watch?v=Z35ovSEJOps"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU]</a>  
+<a href="../X01_Appendix/Crawford/Crawford.html"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Algorithms and Art | Chris Crawford]</a>  
 
-## Überblick
+## Überblick  
 <div align="center"><video controls width="100%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4"> 
-<!-- <div align="center"><video controls width="100%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/=1HDQeoBuY41BnWDnC_Ipw0O7J9F0H8nO1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a> -->
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4">  
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+</source>
 </video>
 </div>  
 
