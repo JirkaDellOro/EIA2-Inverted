@@ -135,12 +135,12 @@ Das bedeutet, dass immer wiederkehrende Transformatsaufrufe in der Matrix kumuli
 ### Farbe
 Der CanvasRenderingContext kann Farbangaben als Zeichenketten verarbeiten, wie sie ebenso in CSS3 verwendet werden. Hier hat man also die Auswahl der Farbkodierung und kann die heranziehen, die sich für die Aufgabe am besten eignet. Für eine Serie von Bildelementen, die mit gleicher Farbe aber unterschiedlicher Helligkeit dargestellt werden sollen, ist die Angabe im HSL-Format deutlich leichter zu bewerkstelligen als in den anderen Formaten. Folgende Zeichenketten produzieren alle das gleiche  <span style="background-color: salmon; width:130px; display:inline-block; text-align:center">Lachsrot</span>
 
-Format | Zeichenkette
---- | --- 
-Hexadezimal | #FA8072
-RGB | RGB( 250, 128, 114 ) oder RGB( 98%, 50%, 45% )
-HSL | HSL( 6, 93%, 71% )
-Predefiniert | salmon
+| Format       | Zeichenkette                                   |
+|--------------|------------------------------------------------|
+| Hexadezimal  | #FA8072                                        |
+| RGB          | RGB( 250, 128, 114 ) oder RGB( 98%, 50%, 45% ) |
+| HSL          | HSL( 6, 93%, 71% )                             |
+| Predefiniert | salmon                                         |
 
 RGB und HSL erlauben (dann auch als RGBA und HSLA bezeichnet) noch einen vierten Parameter, nämlich die Opazität (Alpha) die als Fließkommazahl zwischen 0 und 1 angegeben wird. Zudem ist auch die weniger präzise Angabe mit nur drei hexadezimalen Ziffern möglich.
 
@@ -198,46 +198,51 @@ Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transf
 # L08.2 Landschaftsbild
 
 ## Scribble
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V1_Scribble.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V1_Scribble.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
-<a href="Material\Alley_Scribble.jpg"><img src="Material\Alley_Scribble.jpg" width="25%"/></a>  
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V1_Scribble.mp4" type="video/mp4"></video>  
+  <a href="Material\Alley_Scribble.jpg"><img src="Material\Alley_Scribble.jpg" width="25%"/></a>  
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V1_Scribble.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Scribble</a>
 </div>
 
 
 ## Aktivitätsdiagramm
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V2_ActivityDiagram.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V2_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  <a href="Material\Alley_ActivityDiagram.jpg"><img src="Material\Alley_ActivityDiagram.jpg" width="25%"/></a>
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V2_ActivityDiagram.mp4" type="video/mp4"></video>
+  <a href="Material\Alley_ActivityDiagram.jpg"><img src="Material\Alley_ActivityDiagram.jpg" width="25%"/></a>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V2_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Aktivitätsdiagramm</a>
 </div>
 
 
 ## Implementation des Hintergrund
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V3_Implementation1.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V3_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V3_Implementation1.mp4" type="video/mp4"></video>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V3_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Implementation I</a>
 </div>
 
 ## Implementation der Wolke
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V4_Implementation2.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V4_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V4_Implementation2.mp4" type="video/mp4"></video>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V4_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Implementation II</a>
 </div>
 
 ## Aktivitätsdiagramm zu den Bergen
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V5_ActivitydiagramMountains.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V5_ActivitydiagramMountains.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  <a href="Material\Alley_ActivityDiagram-Mountains.jpg"><img src="Material\Alley_ActivityDiagram-Mountains.jpg" width="25%"/></a>
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V5_ActivitydiagramMountains.mp4" type="video/mp4"></video>
+  <a href="Material\Alley_ActivityDiagram-Mountains.jpg"><img src="Material\Alley_ActivityDiagram-Mountains.jpg" width="25%"/></a>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V5_ActivitydiagramMountains.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Aktivitätsdiagramm Berge</a>
 </div>
 
 
 ## Implementation der Berge
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V6_ImplementationMountains.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V6_ImplementationMountains.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V6_ImplementationMountains.mp4" type="video/mp4"></video> 
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V6_ImplementationMountains.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Implementation Berge</a>
 </div>
 
 ## Übungen
