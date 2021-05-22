@@ -54,12 +54,12 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 <a href="https://www.youtube.com/watch?v=Z35ovSEJOps"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU]</a>  
 <a href="../X01_Appendix/Crawford/Crawford.html"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Algorithms and Art | Chris Crawford]</a>  
 
-## Überblick  
-<a><div align="center"><video controls width="100%">
+## Überblick 
+<div align="center"><video controls width="100%">
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4"/> 
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>
-</div></a>
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4">Intro-Video</a>
+</div>
 
 
 > **Hinweis:** die Themen zu verteilten Anwendungen (Client-Server-Datenbank) werden im vierten Semester behandelt und sind nicht mehr Teil von EIA2 (Stand S21)  
