@@ -6,11 +6,12 @@
 <hr>  
 
 **Einschub**: Eine Lösung für die letzte Übung von Lektion 10 mit CustomEvents, die bereits in [Lektion03](../L02_Events/README.md#customevents) kurz angerissen wurden.  
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a> <a href="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg" width="13%"></a>
-<a href="Material/draw.io/Asteroids_ActivityDiagram-Main_2.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Main_2.svg" width="25%"></a>
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4" type="video/mp4"></video>
+  <a href="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Ufo.svg" width="13%"></a>
+  <a href="Material/draw.io/Asteroids_ActivityDiagram-Main_2.svg"><img src="Material/draw.io/Asteroids_ActivityDiagram-Main_2.svg" width="25%"></a>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V1_UFOs_181219_MixedSharp.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L11 Advanced: UFOs</a>
 </div>
 
 <hr>  
@@ -107,10 +108,10 @@ Der Zugriff ist nur Objekten der gleichen Klasse und deren Subklassen erlaubt. E
 
 > **Hinweis**: Im Klassendiagramm wird `protected` mit dem Zeichen `#` markiert
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V2_UpdateClasses.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V2_UpdateClasses.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V2_UpdateClasses.mp4" type="video/mp4"></video>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V2_UpdateClasses.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L11 Advanced: Aktualisierung der Klassen</a>
 </div>
 
 ### `readonly`
@@ -158,11 +159,11 @@ erscheint es von außen betrachtet aber so, als wäre diese Eigenschaft ständig
 
 # L11.2 Asteroids reloaded
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V3_AsteroidReloaded.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V3_AsteroidReloaded.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
-<a href="Material/draw.io/Asteroids_ClassDiagram.svg"><img src="Material/draw.io/Asteroids_ClassDiagram.svg" width="25%"></a>
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L11_V3_AsteroidReloaded.mp4" type="video/mp4"></video> 
+  <a href="Material/draw.io/Asteroids_ClassDiagram.svg"><img src="Material/draw.io/Asteroids_ClassDiagram.svg" width="25%"></a>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L11_V3_AsteroidReloaded.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L11 Advanced: Klassendiagramm</a>
 </div>
 
 ## Aufzählungstypen
