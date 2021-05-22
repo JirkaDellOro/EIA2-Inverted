@@ -212,7 +212,9 @@ Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L09_V5_ImplementationMain.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L09_V5_ImplementationMain.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
 </video>  
-</div>
+</div>  
+
+> **Hinweis**: MouseEvent bietet, derzeit (Mai/2021) als experimentelle Technologie, die Information offsetX und offsetY an.  
 
 Ein Problem tritt auf bei der Übergabe der Position an den optionalen Parameter `_position` im Constructor der Asteroid-Klasse. Da Vector ein komplexer Typ ist, hält eine Variable dieses Typs lediglich eine Referenz auf ein Vektorobjekt (siehe [Werte vs. Referenzen](https://JirkaDellOro.github.io/EIA2-Inverted/L01_Recap%26Foundation#werte-vs-referenzen)). Durch die Zuweisung des Parameterinhaltes an das Objektattribut wurde also kein neues Vektorobjekt erzeugt, sondern nur die Referenz erneut genutzt. Die Bruchstücke referenzieren also das gleiche Vektorobjekt und haben daher die gleiche Position.
 
