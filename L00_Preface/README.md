@@ -56,9 +56,8 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 
 ## Überblick  
 <div align="center"><a><video controls width="100%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4"> 
+  <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4"></source> 
   <a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-  </source>
 </video></a>
 </div>
 
