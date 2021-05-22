@@ -138,10 +138,10 @@ Die eigentlichen Daten kann man so nicht einsehen, sie werden in einem effizient
 
 Nachdem Du diese Übungen erfolgreich abgeschlossen hast, kannst Du nicht nur mit der MongoShell umgehen, sondern hast auch schon die grundlegendsten Anweisungen gelernt, die genauso auch im Code Verwendung finden. Sehr viel weitergehend ist die [Dokumentation](https://docs.mongodb.com/manual/reference/method/). Wenn es nicht richtig geklappt hat, kannst Du dir untenstehendes Video anschauen, indem diese Übungen demonstriert werden.
 
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L07_V1_MongoShell.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V1_MongoShell.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  
+</video></a>  
 </div>
 
 ## MongoDB in Node
@@ -171,19 +171,17 @@ orders.insert({...});
 ## Aktivitätsdiagram
 Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server aufgrund der ankommenden Requests und die Formulierung der Antworten konzipiert werden.
 
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L07_V2_ActivityDiagram.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V2_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V2_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  
 <a href="Material\CocktailBar_ActivityDiagram-Server.jpg"><img src="Material\CocktailBar_ActivityDiagram-Server.jpg" width="25%"/></a>
 </div>
 
 ## Implementation
 
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L07_V3_Implementation.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V3_Implementation.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>    
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V3_Implementation.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>    
 </div>
 
 ## Test
@@ -192,10 +190,10 @@ Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server a
 - [x] Setze mit dem Client mehrere unterschiedliche Bestellungen ab und beobachte die Ausgaben im Serverfenster. 
 - [x] Frage mit der MongoShell die Collection "Orders" der Datenbank "Cocktail" ab um zu schauen, ob die Bestellungen eingetragen wurden.
 
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L07_V4_Test.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V4_Test.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>    
+</video></a>    
 </div>
 
 ## Online Service

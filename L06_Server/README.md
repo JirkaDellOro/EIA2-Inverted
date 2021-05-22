@@ -47,10 +47,10 @@ Mit Tastendruck auf F5 alleine startest Du den Debugger mit der vollen Funktiona
 Node kommt mit einigen neuen Standardobjekten und Modulen, für EIA2 brauchst Du aber nur sehr wenige davon. Die Dokumentation findest Du im Netz auf https://nodejs.org/de/docs/.  
 Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der ein Node-Programm gerade ausgeführt wird. 
 
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V1_API.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V1_API.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  
+</video></a>  
 </div>
 
 - [x] Entwickle eine kleine Node-Anwendung mit Namen "Convert.js", die eine Zahl von einem Zahlensystem in ein anderes konvertiert. Beim Aufruf mit dem Terminal müssen drei Zahlen mit angegeben werden: die zu konvertierende Zahl, das Zahlensystem auf das sie sich bezieht und das Zahlensystem in das sie konvertiert werden soll. Die konvertierte Zahl soll ausgegeben werden. Die ganze Mathematik dahinter nimmt dir Javascript vollständig ab, mit `parseInt(s, a)` wird eine Zeichenkette `s` als Zahl im Zahlensystem `a` interpretiert und als Dezimalzahl zurückgegeben, `n.toString(b)` liefert umgekehrt eine Zeichenkette, welche die Interpretation der Dezimalzahl im Zahlensystem `b` darstellt.  
@@ -78,19 +78,19 @@ Auch die Standardmodule, die wahlweise importiert werden wie `http` und `url`, s
 
 ## Design
 
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V2_Design.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V2_Design.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  
+</video></a>  
 <a href="Material/CocktailBar_ActivityDiagram-Server.jpg"><img src="Material/CocktailBar_ActivityDiagram-Server.jpg" width="25%"/></a>
 </div>
 
 ## Implementation 1
 
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V3_Implementation_Server1.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V3_Implementation_Server1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  
+</video></a>  
 </div>
 
 ### handleRequest
@@ -116,18 +116,16 @@ Im Beispiel verschickt der Server lediglich die Antwort mit dem Inhalt "Was geht
 
 ## Implementation 2
 
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V4_Implementation_Server2.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V4_Implementation_Server2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V4_Implementation_Server2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  
 </div>
 
 ### Client
 
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V5_Implementation_Client.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V5_Implementation_Client.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V5_Implementation_Client.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  
 </div>
 
 

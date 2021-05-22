@@ -198,49 +198,46 @@ Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transf
 # L08.2 Landschaftsbild
 
 ## Scribble
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V1_Scribble.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V1_Scribble.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  
+</video></a>  
 <a href="Material\Alley_Scribble.jpg"><img src="Material\Alley_Scribble.jpg" width="25%"/></a>  
 </div>
 
 
 ## Aktivitätsdiagramm
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V2_ActivityDiagram.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V2_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  <a href="Material\Alley_ActivityDiagram.jpg"><img src="Material\Alley_ActivityDiagram.jpg" width="25%"/></a>
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V2_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  <a href="Material\Alley_ActivityDiagram.jpg"><img src="Material\Alley_ActivityDiagram.jpg" width="25%"/></a>
 </div>
 
 
 ## Implementation des Hintergrund
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V3_Implementation1.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V3_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V3_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  
 </div>
 
 ## Implementation der Wolke
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V4_Implementation2.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V4_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V4_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  
 </div>
 
 ## Aktivitätsdiagramm zu den Bergen
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V5_ActivitydiagramMountains.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V5_ActivitydiagramMountains.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  <a href="Material\Alley_ActivityDiagram-Mountains.jpg"><img src="Material\Alley_ActivityDiagram-Mountains.jpg" width="25%"/></a>
+</video></a>  <a href="Material\Alley_ActivityDiagram-Mountains.jpg"><img src="Material\Alley_ActivityDiagram-Mountains.jpg" width="25%"/></a>
 </div>
 
 
 ## Implementation der Berge
-<div align="center"><video controls width="30%"> 
+<div align="center"><a><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V6_ImplementationMountains.mp4" type="video/mp4"> 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V6_ImplementationMountains.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>  
+</video></a>  
 </div>
 
 ## Übungen
