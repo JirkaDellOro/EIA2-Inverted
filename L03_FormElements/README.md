@@ -104,7 +104,7 @@ Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und 
 Nun ist schon grob konzipiert, was geschehen soll und wie sich das darstellt. Entwickle nun wieder ein Aktivitätsdiagramm mit dessen Hilfe Du festlegst, wie das Ganze funktioniert. Beginne wieder mit den Ereignissen und arbeite dich vom Groben ins Feine. Mach' dir am Anfang also noch nicht zu viele Gedanken über Details, sondern zerlege große Probleme in kleinere. Versuche es selbst, bevor Du das Video anschaust.
 
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V3_ActivityDiagram_081019.mp4" type="video/mp4"></video>/<a>  
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V3_ActivityDiagram_081019.mp4" type="video/mp4"></video> 
   <a href="Material/CocktailBar_ActivityDiagram.jpg"><img src="Material/CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
   <br/>
   <a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V3_ActivityDiagram_081019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L03 FormLements: Aktivitätsdiagramm</a>
