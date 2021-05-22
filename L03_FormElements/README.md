@@ -83,40 +83,40 @@ Kunden können hier mit Hilfe eines Webformulars spontan einen Cocktail bestelle
 ## Anwendungsfalldiagramm (Use-Case-Diagram)
 Zeichne wieder ganz schnell ein kleines Anwendungsfalldiagramm. Versuche es selbst, bevor Du dir das Video anschaust.  
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V1_UseCase_071019.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V1_UseCase_071019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
-<a href="Material/CocktailBar_UseCaseDiagram.jpg"><img src="Material/CocktailBar_UseCaseDiagram.jpg" width="25%"/></a>
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V1_UseCase_071019.mp4" type="video/mp4"></video>
+  <a href="Material/CocktailBar_UseCaseDiagram.jpg"><img src="Material/CocktailBar_UseCaseDiagram.jpg" width="25%"/></a>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V1_UseCase_071019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L03 FormLements: Anwendungsfalldiagramm</a>
 </div> 
 
 ## Skizze: User-Interface 
 Das User-Interface wird nun schon ein wenig komplexer. Erstelle eine Skizze und überlege, welche Tags, Attribute und Listener Du brauchst. Investiere ein wenig Zeit um selbst einen ersten Entwurf zu gestalten, bevor Du das Video anschaust.
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V2_UserInterface_071019.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V2_UserInterface_071019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
-<a href="Material/CocktailBar_UI-Scribble.jpg"><img src="Material/CocktailBar_UI-Scribble.jpg" width="25%"/></a>
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V2_UserInterface_071019.mp4" type="video/mp4"></video>
+  <a href="Material/CocktailBar_UI-Scribble.jpg"><img src="Material/CocktailBar_UI-Scribble.jpg" width="25%"/></a>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V2_UserInterface_071019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L03 FormLements: UI-Scribble</a>
 </div>
 
 ## Aktivitätsdiagramme
 Nun ist schon grob konzipiert, was geschehen soll und wie sich das darstellt. Entwickle nun wieder ein Aktivitätsdiagramm mit dessen Hilfe Du festlegst, wie das Ganze funktioniert. Beginne wieder mit den Ereignissen und arbeite dich vom Groben ins Feine. Mach' dir am Anfang also noch nicht zu viele Gedanken über Details, sondern zerlege große Probleme in kleinere. Versuche es selbst, bevor Du das Video anschaust.
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V3_ActivityDiagram_081019.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V3_ActivityDiagram_081019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>/<a>  
-<a href="Material/CocktailBar_ActivityDiagram.jpg"><img src="Material/CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V3_ActivityDiagram_081019.mp4" type="video/mp4"></video>/<a>  
+  <a href="Material/CocktailBar_ActivityDiagram.jpg"><img src="Material/CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V3_ActivityDiagram_081019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L03 FormLements: Aktivitätsdiagramm</a>
 </div>
 
 ## Implementation I
 Versuche dich nun an der Implementation. Schaue dir das Video spätestens an, wenn Du dich an die Zusammenfassung der Bestellung machst. Hier gibt es noch einige Tipps.
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V4_Implementation1_091019.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V4_Implementation1_091019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V4_Implementation1_091019.mp4" type="video/mp4"></video>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V4_Implementation1_091019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L03 FormLements: Implementation I</a>
 </div>
 
 # FormData
@@ -152,11 +152,11 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
 
 ## Implementation II
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V4_Implementation2_111019.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V4_Implementation2_111019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
-<a href="Material/CocktailBar_UI-Scribble2.jpg"><img src="Material/CocktailBar_UI-Scribble2.jpg" width="25%"/></a>
+<div align="center">
+  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L03_V4_Implementation2_111019.mp4" type="video/mp4"></video>
+  <a href="Material/CocktailBar_UI-Scribble2.jpg"><img src="Material/CocktailBar_UI-Scribble2.jpg" width="25%"/></a>
+  <br/>
+  <a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V4_Implementation2_111019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L03 FormLements: Implementation 2</a>
 </div>  
 > Achtung: im Video wird mehrfach von FormData-Element gesprochen. Besser ist FormData-Objekt, denn es ist kein HTML-Element.
 
