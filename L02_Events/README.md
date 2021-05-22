@@ -133,7 +133,7 @@ Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Da
 <div align="center">
   <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V2_UserInterface.mp4" type="video/mp4"></video>  
   <a href="Material/BlackmailerCompanion_UI-Scribble.jpg"><img src="Material/BlackmailerCompanion_UI-Scribble.jpg" width="25%"/></a>
-  </br>
+  <br/>
   <a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V2_UserInterface.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: UI-Scribble</a>
 </div>
 
@@ -143,7 +143,7 @@ Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm
 <div align="center">
   <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V3_ActivityDiagram.mp4" type="video/mp4"></video>
   <a href="Material/BlackmailerCompanion_ActivityDiagram.jpg"><img src="Material/BlackmailerCompanion_ActivityDiagram.jpg" width="25%"/></a>
-  </br>
+  <br/>
   <a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V3_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Aktivitätsdiagramm1</a>
 </div>
 
@@ -153,7 +153,7 @@ Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implement
 <div align="center">
   <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V4_Implementierung_071019.mp4" type="video/mp4"></video>
   <a href="Material/BlackmailerCompanion_ActivityDiagram2.jpg"><img src="Material/BlackmailerCompanion_ActivityDiagram2.jpg" width="25%"/></a>
-  </br>
+  <br/>
   <a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V4_Implementierung_071019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Aktivitätsdiagramm2</a>
 </div>
 
@@ -162,7 +162,7 @@ Während der Implementation wird das Programm immer wieder getestet. Es ist wich
 
 <div align="center">
   <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V5_Testing.mp4" type="video/mp4"></video> 
-  </br>
+  <br/>
   <a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V5_Testing.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Testing</a>
 </div>
 
