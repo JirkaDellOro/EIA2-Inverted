@@ -198,10 +198,12 @@ Die Anweisung bewirkt, dass die `handler`-Funktion in dem mit `time` angegebenen
 ### window.requestAnimationFrame(handler)
 Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die grafische Aufbereitung sinnvoll erscheinendem Zeitintervall aufgerufen wird. Über dieses entscheidet der Browser, Chrome versucht eine Bildwiederholrate von 60 Bildern pro Sekunde zu erreichen (Frames per second, fps).
 
-## Hauptprogramm
-<div align="center"><video controls width="30%"> 
+## Hauptprogramm  
+
+<div align="center"><video controls width="100%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L09_V4_ActivitydiagramMain.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L09_V4_ActivitydiagramMain.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+     <a href="http://games.hs-furtwangen.de/EIA2_Video/L09_V4_ActivitydiagramMain.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
+  </source>
 </video>  
 <a href="Material/Asteroids_ActivityDiagram-Main.jpg"><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
 </div>
@@ -214,14 +216,6 @@ Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die 
 </video>  
 </div> 
 
-
-<div align="center"><video controls width="100%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4"> 
-<!-- <div align="center"><video controls width="100%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/=1HDQeoBuY41BnWDnC_Ipw0O7J9F0H8nO1"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a> -->
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video>
-</div>  
 
 > **Hinweis**: MouseEvent bietet, derzeit (Mai/2021) als experimentelle Technologie, die Information offsetX und offsetY an.  
 
