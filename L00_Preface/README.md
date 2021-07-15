@@ -54,17 +54,17 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 When I was a girl, I wanted to be a storyteller. I loved make-believe worlds and my favorite thing to do was to wake up in the mornings in Moominvalley, in afternoons I would roam around the Tatooines, and in the evenings I would go to sleep in Narnia. And programming turned out to be the perfect profession for me. I still create worlds. Instead of stories, I create them with code. Programming gives me this amazing power to build my whole little universe with its own rules and paradigms and practices. Create something out of nothing with the pure power of logic. And that probably makes me into a poet. 
 </div>  
 
-<div style="float:left; min-height:17em"><img src="Material/ChrisCrawford.jpg" style="float:left; margin-right: 5px"/><a href="../X01_Appendix/Crawford/Crawford.html"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Algorithms and Art | Chris Crawford]</a><br/>   
+<div style="float:left; min-height:17em"><img src="Material/ChrisCrawford.jpg" style="float:left; margin-right: 5px"/><a href="../X01_Appendix/Crawford/Crawford.html"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Algorithms and Art | Chris Crawford</a><br/>   
 
 Good artists have never been intimidated by some technology. They figure a technology is a tool to express myself with. They roll up their sleeves, they get their hands dirty and they use the tool to get the job done! Wether it's a welding torch, the intestines of a cat, oil paint, whatever. You use the technology to get the job done. And the computer is far and away the most expressive and the most powerful medium of expression that we ever had, and if you want to use it, you've got to speak its language... sorry.
 </div>  
 
-<div style="float:left; min-height:17em"><img src="Material/AliPartovi.jpg" style="float:left; margin-right: 5px"/><a href="https://www.youtube.com/watch?v=MvTSPwftvyo"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito]</a><br/>  
+<div style="float:left; min-height:17em"><img src="Material/AliPartovi.jpg" style="float:left; margin-right: 5px"/><a href="https://www.youtube.com/watch?v=MvTSPwftvyo"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Learning to Code is Not Just for Coders| Ali Partovi | TEDxSausalito</a><br/>  
 
 Learning how to write isn't just for people who grow up to become writers, math isn't just for mathematicians. Every public school teaches these topics because they're foundational for other pursuits. Once you know how to read and write, you use those skills to learn new ideas and more importantly, to create your own ideas and to share them. Computer science isn't simply about learning how to code. Learning how to code is a start. Once you know the language, that's when your imagination takes over. That's when you can begin to take on complex problems and to create new things.
 </div>  
 
-<div style="float:left; min-height:17em"><img src="Material/EmileNijssen.jpg" style="float:left; margin-right: 5px"/><a href="https://www.youtube.com/watch?v=Z35ovSEJOps"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU]</a><br/>   
+<div style="float:left; min-height:17em"><img src="Material/EmileNijssen.jpg" style="float:left; margin-right: 5px"/><a href="https://www.youtube.com/watch?v=Z35ovSEJOps"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Just code it | Emile Nijssen | TEDxTwenteU</a><br/>   
 
 What I want to tell you guys today: just code it! If you can't code: learn it. It's not so hard as you think. If you can code: just do it. Don't stick around with your ideas, just do it. You know, it'll cost you an evening, but otherwise you would have wasted that on Netflix or drinking beer. So just do it and see what happens.
 </div>  
