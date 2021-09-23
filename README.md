@@ -28,7 +28,7 @@
 <hr/>
 
 ### [L02_Events](L02_Events) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 3 & 4 | 6:30 | 2:45</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 4 & 5 | 6:30 | 2:45</small>  
 
 <!-- #### [Teil 1: Grundlagen](L02_Events#l021-grundlagen) -->
 - Rückblick DOM
@@ -43,7 +43,7 @@
 <hr/>
 
 ### [L03_FormElements](L03_FormElements) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 5 | 6:30 | 4:30</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 6 | 6:30 | 4:30</small>
 - Texteingabe
 - Selektionen
 - Ausgabeelemente
@@ -104,7 +104,7 @@
 <hr/>
 
 ### [L08_Canvas](L08_Canvas) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 6 & 7 | 5:30 | 5:00</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 7 & 8 | 5:30 | 5:00</small>  
 
 <!-- #### [Teil 1: Grundlagen](L08_Canvas#l081-grundlagen) -->
 - CanvasRenderingContext
@@ -124,7 +124,7 @@
 <hr/>
 
 ### [L09_Classes](L09_Classes) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 8 & 9 | 3:30 | 4:15</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 9 & 10 | 3:30 | 4:15</small>  
 
 <!-- #### [Teil 1: Grundlagen](L09_Classes#l091-grundlagen) -->
 - Objektorientierung
@@ -139,7 +139,7 @@
 <hr/>
 
 ### [L10_Inheritance](L10_Inheritance) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 10 & 11 | 4:15 | 0:30</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 11 & 12 | 4:15 | 0:30</small>  
 
 <!-- #### [Teil 1: Vererbung](L10_Inheritance#l101-vererbung) -->
 - Liskov'sches Substitutionsprinzip
@@ -151,7 +151,7 @@
 <hr/>
 
 ### [L11_Advanced](L11_Advanced) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 12 & 13 | 3:00 | 4:30</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 13 & 14 | 3:00 | 4:30</small>  
 
 <!-- #### [Teil 1: Modifikatoren & Accessoren](L11_Advanced#l111-modifikatoren--accessoren) -->
 - Abstract
@@ -164,7 +164,7 @@
 <hr/>
 
 ### [L12_Addition](L12_Addition) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 14 | 1:45 | 0:00</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 15 | 1:45 | 0:00</small>
 - Standardparameter
 - Eigenschaftsparameter
 - Ausnahmebehandlung
