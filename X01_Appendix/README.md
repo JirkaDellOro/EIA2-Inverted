@@ -19,7 +19,7 @@
 <div align="center">
 <h1>Entwicklung interaktiver Anwendungen</h1>
 <h2>Cheatsheet | Booklet | Excerpt</h2>
-V1.0, 1/2020<br/>
+V1.1, 10/2021<br/>
 Prof. Jirka Dell'Oro-Friedl<br/>
 Hochschule Furtwangen University
 </div>
@@ -27,44 +27,29 @@ Hochschule Furtwangen University
 <p style="page-break-after:always;"></p>  
 
 # 1. Unified Modelling Language
-Digital Media Designers need a precise and international language to create ideas and convey their designs to a team of developers. 
-The Unified Modelling Language (UML) fulfills this requirement not only in the realm of software development,
-but for arbitrary complex systems. Its development started in the 1990s and is still going on. 
-It is standardized as ISO/IEC 19505. UML makes systems, algorithms and data structures visible and tangible, 
-thus enabling the designers and their teams to discuss, improve and produce them not only in early stages of development,
-but throughout the process, and, done well, even produces in large parts the final documentation.
+Digital Media Designers need a precise and international language to create ideas and convey their designs to a team of developers. The Unified Modelling Language (UML) fulfills this requirement not only in the realm of software development, but for arbitrary complex systems. Its development started in the 1990s and is still going on. It is standardized as ISO/IEC 19505. UML makes systems, algorithms and data structures visible and tangible, thus enabling the designers and their teams to discuss, improve and produce them not only in early stages of development, but throughout the process, and, done well, even produces in large parts the final documentation.
 
 This little booklet displays only three of the many types of diagrams UML 2.5 defines:
 - Use Case Diagram
 - Activity Diagram
 - Class Diagram
 
-and of those only a subset of the features. 
-This resembles the minimum expertise a Digial Media Designer needs to master and should be sufficient to design systems of non trivial complexity. 
+and of those only a subset of the features. This resembles the minimum expertise a Digial Media Designer needs to master and should be sufficient to design systems of non trivial complexity. 
 
 ## 1.1. Use Case Diagram
-A use case diagram modells a system on a very high level of abstraction from the perspective of the user. 
-The system is modelled as a black box, offering interactions to the user. 
-There may be various user roles using different interactions the system offers. 
+A use case diagram modells a system on a very high level of abstraction from the perspective of the user. The system is modelled as a black box, offering interactions to the user. There may be various user roles using different interactions the system offers. 
 
 ![](UML/UseCaseDiagram.svg)
 
-User roles may be extended to access more interactions, e.g. Power-User extends User.
-Use cases may include internal use cases that can also be depicted in the diagram.
+User roles may be extended to access more interactions, e.g. Power-User extends User. Use cases may include internal use cases that can also be depicted in the diagram and connected by a dashed line. Notes can further specify conditions or additional information.  
+Make sure not to go too much into details in the use case diagram. Stay on a level that provides a good overview!
 
 ## 1.2. Activity Diagram
 This type of diagram is arguably the most versatile of the UML diagrams.
-An activity diagram models the behaviour of a system.
-While natural language is only suited to describe simple processes,
-using the graphical language in two dimensions and nesting (sub-activities) enables the designer to describe basically arbitrary complexity
-while maintaining readability and comprehensibility.
-In this chapter, designs displayed are on a very low level, so that they can be translated into very low level code for explanation.
-But the same structures apply when working with activities that nest atomic actions. 
-By nesting activities in again larger activities and so forth, the designer works on different levels of abstraction.
+An activity diagram models the behaviour of a system. While natural language is only suited to describe simple processes, using the graphical language in two dimensions and nesting (sub-activities) enables the designer to describe arbitrary complexity while maintaining readability and comprehensibility.
+In this chapter, designs displayed are on a very low level, so that they can be translated into very low level code. This is for explanation only and in real life, the designer will not go down into that much detail. The same structures apply though when working with activities that nest atomic actions. By nesting activities in again larger activities and so forth, the designer works on different levels of abstraction. 
 
-However, in the design process, the designer starts with the activities definied in the use case diagram,
-splits them up in smaller ones, and those again in even smaller, until all activities designed are trivial 
-and the initial problem is solved.
+However, in the design process, the designer starts with the activities definied in the use case diagram, splits them up in smaller ones, and those again in even smaller, until all activities designed are trivial and the initial problem is solved.
 
 ### 1.2.1. Elements
 ![](UML/Elements.svg)
@@ -329,14 +314,14 @@ done waiting for something
 <p style="page-break-after:always;"></p>
 
 ## 1.3. Class Diagram
-The class diagram models complex structures of information used in the system designed.
-The focus is less on the activities within the system, but on the data those activities are applied to. 
-Designing these structures well is crucial for the performance, stability, maintainability as well as the producibility of the system.
-Thus, in complex systems, the class diagram and the activity diagrams are created in parallel, each reflecting on the other.
+The class diagram models complex structures of information used in the system designed. The focus is less on the activities within the system, but on the data those activities are applied to. 
+Designing these structures well is crucial for the performance, stability, maintainability as well as the producibility of the system. Thus, in complex systems, the class diagram and the activity diagrams are created in parallel, each reflecting on the other.
 
 ### 1.3.1. Structure
 
 ![](UML/ClassStructure.svg)  
+
+Carefully consider the arrows, they symbolize different relationships. The right arrow symbolizes inheritance and points to the generalization. The left arrow is some kind of association, in this case objects of the class in the center know, use or contain objects of the associated class. This can also be bidirectional or, if the relationship is not yet to be further specified, just a line without a direction.
 
 ### 1.3.2. Modifiers
 
