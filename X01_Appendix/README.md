@@ -451,6 +451,14 @@ Course: Art
 
 <p style="page-break-after:always;"></p>
 
+## 1.4 UI-Scribble
+In order to design interactive applications there is at least one more thing necessary, which is not part of the UML-specification. At least for applications with a visible user interface, this needs to be defined and is done so with UI-Scribbles.  
+UI-Scribbles depict the layouts of screens and point out the elements used, especially those for interaction. It's far less about colors and shapes than about defining the core structures the following design process builds on. That's why this step comes right after the Use-Case-Diagram.  
+
+![](UML/UI-Scribble.png)  
+
+For a user interface to be created with standard DOM-elements, annotations in the scribble hint to the types of elements to use and possibly additional information like identifiers, css-classes and other attributes. Most importantly, the annotations define which elements will receive signals about the user interaction. Thereby, the starting points of the algorithms processing the user interaction are also defined.
+
 # 2. Design Process
 
 ![](UML/AD_Konzeption.svg)
