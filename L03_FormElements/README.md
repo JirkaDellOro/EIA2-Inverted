@@ -157,10 +157,11 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
   <a href="Material/CocktailBar_UI-Scribble2.jpg"><img src="Material/CocktailBar_UI-Scribble2.jpg" width="25%"/></a>
   <br/>
   <a href="http://games.hs-furtwangen.de/EIA2_Video/L03_V4_Implementation2_111019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L03 FormLements: Implementation 2</a>
-</div>  
-> Achtung: 
-- im Video wird mehrfach von FormData-Element gesprochen. Besser ist FormData-Objekt, denn es ist kein HTML-Element.
-- zum Zeitpunkt des Drehs war für die Schleife noch die kurze Schreibweise `for (let entry of formData)` akzeptiert. Das hat sich mittlerweile geändert. Bleibe bei der oben angegebenen Schreibweise `for (let entry of formData.entries())`!
+</div>   
+
+> Achtung:   
+> - im Video wird mehrfach von FormData-Element gesprochen. Besser ist FormData-Objekt, denn es ist kein HTML-Element.
+> - zum Zeitpunkt des Drehs war für die Schleife noch die kurze Schreibweise `for (let entry of formData)` akzeptiert. Das hat sich mittlerweile geändert. Bleibe bei der oben angegebenen Schreibweise `for (let entry of formData.entries())`!
 
 - [x] Die Ausgabe der Bestellübersicht funktioniert noch nicht richtig. Finde den Fehler und korrigiere ihn.
 - [x] Implementiere die Sonderbehandlung der Drinks.
