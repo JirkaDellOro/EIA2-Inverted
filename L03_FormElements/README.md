@@ -161,7 +161,7 @@ Jedes `entry`-Objekt ist also ein kleines Array mit zwei Einträgen, an Stelle 0
 
 > Achtung:   
 > - im Video wird mehrfach von FormData-Element gesprochen. Besser ist FormData-Objekt, denn es ist kein HTML-Element.
-> - zum Zeitpunkt des Drehs war für die Schleife noch die kurze Schreibweise `for (let entry of formData)` akzeptiert. Das hat sich mittlerweile geändert. Bleibe bei der oben angegebenen Schreibweise `for (let entry of formData.entries())`!
+> - zum im Video wird die auch zulässige Kurzschreibweise `for (let entry of formData)` genutzt. Ordentlicher aber ist die oben angegebene `for (let entry of formData.entries())`
 
 - [x] Die Ausgabe der Bestellübersicht funktioniert noch nicht richtig. Finde den Fehler und korrigiere ihn.
 - [x] Implementiere die Sonderbehandlung der Drinks.
