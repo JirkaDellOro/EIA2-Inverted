@@ -3,10 +3,6 @@ var L12_FunctionObject;
 (function (L12_FunctionObject) {
     class Test {
         constructor() {
-            // arrow function as event handler
-            this.arrow = (_event) => {
-                console.log("Arrow", this);
-            };
             // bind this to method bound of this object
             this.bound = this.bound.bind(this);
         }
@@ -14,6 +10,10 @@ var L12_FunctionObject;
         classic(_event) {
             console.log("Classic", this);
         }
+        // arrow function as event handler
+        arrow = (_event) => {
+            console.log("Arrow", this);
+        };
         // classic event handler bound to this
         bound(_event) {
             console.log("Bound", this);

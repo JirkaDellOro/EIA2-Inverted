@@ -2,6 +2,8 @@
 var L11_AsteroidsAdvanced;
 (function (L11_AsteroidsAdvanced) {
     class Vector {
+        x;
+        y;
         constructor(_x, _y) {
             this.set(_x, _y);
         }

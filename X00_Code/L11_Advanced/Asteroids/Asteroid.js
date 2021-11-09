@@ -2,6 +2,8 @@
 var L11_AsteroidsAdvanced;
 (function (L11_AsteroidsAdvanced) {
     class Asteroid extends L11_AsteroidsAdvanced.Moveable {
+        size;
+        type;
         constructor(_size, _position) {
             super(_position);
             console.log("Asteroid constructor");

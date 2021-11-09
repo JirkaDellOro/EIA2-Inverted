@@ -22,8 +22,8 @@ namespace L03_FormElements {
             console.log("Input: " + target.name + " = " + target.value, _event);
 
         // Handling checkbox
-        if (target.type == "checkbox")
-            console.log("Checked: " + target.name + " = " + target.checked);
+        // if (target.type == "checkbox")
+        //     console.log("Checked: " + target.name + " = " + target.checked);
 
         // Slider response
         // if (target.name == "Slider") {

@@ -2,10 +2,12 @@
 var L11_AsteroidsAdvanced;
 (function (L11_AsteroidsAdvanced) {
     class Moveable {
+        position;
+        velocity;
+        expendable = false;
+        hitRadius = 0;
         constructor(_position) {
             // console.log("Moveable constructor");
-            this.expendable = false;
-            this.hitRadius = 0;
             if (_position)
                 this.position = _position.copy();
             else

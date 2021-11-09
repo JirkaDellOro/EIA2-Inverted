@@ -20,8 +20,8 @@ var L03_FormElements;
         else
             console.log("Input: " + target.name + " = " + target.value, _event);
         // Handling checkbox
-        if (target.type == "checkbox")
-            console.log("Checked: " + target.name + " = " + target.checked);
+        // if (target.type == "checkbox")
+        //     console.log("Checked: " + target.name + " = " + target.checked);
         // Slider response
         // if (target.name == "Slider") {
         //     let progress: HTMLProgressElement = <HTMLProgressElement>document.getElementsByTagName("progress")[0];

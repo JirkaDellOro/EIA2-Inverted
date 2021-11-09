@@ -2,9 +2,9 @@
 var L10_AsteroidsInheritance;
 (function (L10_AsteroidsInheritance) {
     class Projectile extends L10_AsteroidsInheritance.Moveable {
+        lifetime = 2;
         constructor(_position, _velocity) {
             super(_position);
-            this.lifetime = 2;
             console.log("Projectile constructor");
             this.velocity = _velocity.copy();
         }

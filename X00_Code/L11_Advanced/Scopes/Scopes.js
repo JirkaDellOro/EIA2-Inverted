@@ -2,9 +2,8 @@
 var Scope;
 (function (Scope) {
     class ScopeSuper {
-        constructor() {
-            this.x = "ScopeSuperObject"; // Scope of superobject
-        }
+        static x = "ScopeSuperStatic"; // Scope of superclass
+        x = "ScopeSuperObject"; // Scope of superobject
         log() {
             console.group("Super");
             let x = "ScopeSuperMethod";
@@ -13,12 +12,9 @@ var Scope;
             console.groupEnd();
         }
     }
-    ScopeSuper.x = "ScopeSuperStatic"; // Scope of superclass
     class ScopeSub extends ScopeSuper {
-        constructor() {
-            super(...arguments);
-            this.x = "ScopeSubObject"; // Scope of subobject
-        }
+        static x = "ScopeSubStatic"; // Scope of subclass
+        x = "ScopeSubObject"; // Scope of subobject
         log() {
             console.group("Sub");
             let x = "ScopeSubMethod"; // Scope of method
@@ -33,7 +29,6 @@ var Scope;
             console.groupEnd();
         }
     }
-    ScopeSub.x = "ScopeSubStatic"; // Scope of subclass
     let x = "Scope"; // Scope of namespace
     let sub = new ScopeSub();
     let sup = new ScopeSuper();

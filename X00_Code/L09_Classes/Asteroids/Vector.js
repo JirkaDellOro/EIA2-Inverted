@@ -2,6 +2,8 @@
 var L09_Asteroids;
 (function (L09_Asteroids) {
     class Vector {
+        x;
+        y;
         constructor(_x, _y) {
             this.set(_x, _y);
         }

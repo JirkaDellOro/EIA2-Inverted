@@ -2,9 +2,11 @@
 var L10_AsteroidsInheritance;
 (function (L10_AsteroidsInheritance) {
     class Moveable {
+        position;
+        velocity;
+        expendable = false;
         constructor(_position) {
             // console.log("Moveable constructor");
-            this.expendable = false;
             if (_position)
                 this.position = _position.copy();
             else

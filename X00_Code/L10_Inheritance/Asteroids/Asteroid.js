@@ -2,6 +2,10 @@
 var L10_AsteroidsInheritance;
 (function (L10_AsteroidsInheritance) {
     class Asteroid extends L10_AsteroidsInheritance.Moveable {
+        position;
+        velocity;
+        type;
+        size;
         constructor(_size, _position) {
             super(_position);
             console.log("Asteroid constructor");

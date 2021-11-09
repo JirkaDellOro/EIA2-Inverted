@@ -2,6 +2,8 @@
 var L10_AsteroidsInheritance;
 (function (L10_AsteroidsInheritance) {
     class Vector {
+        x;
+        y;
         constructor(_x, _y) {
             this.set(_x, _y);
         }

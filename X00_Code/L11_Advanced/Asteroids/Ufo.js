@@ -2,6 +2,7 @@
 var L11_AsteroidsAdvanced;
 (function (L11_AsteroidsAdvanced) {
     class Ufo extends L11_AsteroidsAdvanced.Moveable {
+        static speed = 50;
         constructor() {
             super();
             this.position = new L11_AsteroidsAdvanced.Vector(0, Math.random() * L11_AsteroidsAdvanced.crc2.canvas.height);
@@ -29,7 +30,6 @@ var L11_AsteroidsAdvanced;
             L11_AsteroidsAdvanced.crc2.canvas.dispatchEvent(event);
         }
     }
-    Ufo.speed = 50;
     L11_AsteroidsAdvanced.Ufo = Ufo;
 })(L11_AsteroidsAdvanced || (L11_AsteroidsAdvanced = {}));
 //# sourceMappingURL=Ufo.js.map

@@ -2,6 +2,7 @@
 var L11_AsteroidsAdvanced;
 (function (L11_AsteroidsAdvanced) {
     class Hotspot extends L11_AsteroidsAdvanced.Projectile {
+        static maxLifetime = 0.5;
         constructor(_position) {
             super(_position, new L11_AsteroidsAdvanced.Vector(0, 0));
             this.lifetime = Hotspot.maxLifetime;
@@ -26,7 +27,6 @@ var L11_AsteroidsAdvanced;
             console.log("Hotspot hit, remaining range: ", this.lifetime);
         }
     }
-    Hotspot.maxLifetime = 0.5;
     L11_AsteroidsAdvanced.Hotspot = Hotspot;
 })(L11_AsteroidsAdvanced || (L11_AsteroidsAdvanced = {}));
 //# sourceMappingURL=Hotspot.js.map
