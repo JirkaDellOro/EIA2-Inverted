@@ -122,7 +122,7 @@ Sollen ähnliche Bildbestandteile, z.B. Bäume, Häuser, Schneeflocken etc., meh
 Hier schaffen Transformationen Abhilfe. Anstatt die Koordinaten und Dimensionen neu anzugeben, kann mit Transformationen das Koordinatensystem verändert werden, auf das sich die Angaben beziehen. 
 
 - [x] Lade dir den Standalone [FlashPlayer-Projector von Adobe](https://www.adobe.com/support/flashplayer/debug_downloads.html) herunter. Eine Installation ist nicht erforderlich.
-- [x] Öffne damit diese URL: https://webuser.hs-furtwangen.de/~del/Apps/Transformation/Transformation.html
+- [x] Öffne damit diese URL: https://webuser.hs-furtwangen.de/~del/Apps/Transformation/Transformation.swf
 - [x] Experimentiere mit der Transformator-App. Erzeuge drei unterschiedliche und aktive Transformationen und beobachte die Auswirkungen.
 - [x] Vertausche sie durch Klick auf das Doppelpfeil-Symbol. Erkläre, warum das Haus des Nikolaus seine Position oder Erscheinung dabei ändert.
 
