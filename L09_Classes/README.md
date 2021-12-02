@@ -122,7 +122,9 @@ Im Umgang mit Klassen und Objekten solltest Du dich unbedingt an einige Konventi
 - Jede Klasse wird in einer eigenen Datei implementiert
 - Der Dateiname entspricht dem Namen der Klasse (z.B. `Vector` findet sich in Vector.ts)
 - Die Namen der Methoden wiederholen nicht den Klassennamen (`scale` statt `scaleVector`)
-- Der Klassenname beschreibt das Wesen genau einer Instanz der Klasse, nicht mehrerer (`Vector` statt `Vectors`)
+- Der Klassenname beschreibt das Wesen genau einer Instanz der Klasse, nicht mehrerer (`Vector` statt `Vectors`)  
+
+> **Hinweis:** Javascript grenzt standardmäßig Namensräume dateibezogen ab. Nutze das Schlüsselwort `export` um Informationen wie Klassen oder Variablen in deinem ganzen Namensraum ohne Einschränkung publik zu machen.
 
 # L09.2 Asteroids
 Mit diesen Basisregeln des objekorientierte Entwurfs kann man sich schon daran machen, eine komplexe interaktive Anwendung zu konzipieren und zu implementieren. Als Beispiel für diese und die folgenden Lektionen wird das Videospiel "Asteroids" (Atari 1979) in seiner ursprünglichen Arcade-Version herangezogen. 
