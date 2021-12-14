@@ -66,6 +66,8 @@ Es gibt noch einige Eingabeelemente, die sich gänzlich anders verhalten. Ihre g
 - [x] Aktiviere das Fieldset mit der `id` "fsSpecial". Experimentiere damit, verändere die Attributwerte und bediene die Elemente im Browser. Beobachte die Konsolenausgaben.
 - [x] Beantworte die Frage nach der Wirkung des `value`-Attributs  
 
+> **Hinweis**: es wird jetzt sehr deutlich, wie extrem das Input-Element standardmäßig seine Erscheinungsform ändert, abhängig von seinem Typ-Attribut. Das macht es zu einer "Allzweckwaffe". Neben den Attributen `name` und `value`, bringen Inputelemente zudem die Attribute `readonly` und `disabled` mit. Nutzer können dann den Inhalt nicht mehr ändern, bei `disabled` das Element noch nicht inaml mehr fokussieren oder Inhalte herauskopieren.
+
 ## Ausgabeelemente
 Es gibt zudem noch ein paar standardisierte Elemente, welche dem Nutzer Rückmeldung geben. Sie dienen also der Interaktion des Systems mit dem Nutzer.
 
