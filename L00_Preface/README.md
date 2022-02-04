@@ -54,7 +54,7 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 Wenn Du der Digital Designer werden willst, wenn Du das wirklich richtig machen willst, musst Du sowohl diese Gestaltungskompetenz mitbringen, als auch diese Materialkunde. Und in unserem Fall ist das Material eben halt digital. "Kenne ich die Methoden? Kenne ich die Tools? Weiß ich was das bedeutet? Kenne ich die Technologien?"
 </div>  
 
-<div style="float:left; min-height:17em"><img src="Material/LindaLiukas.jpg" style="float:left; margin-right: 5px"/><a href="https://youtu.be/-jRREn6ifEQ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN</a><br/>   
+<div style="float:left; min-height:17em"><a href="https://youtu.be/-jRREn6ifEQ"><img src="Material/LindaLiukas.jpg" style="float:left; margin-right: 5px"/><img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN</a><br/>   
 
 When I was a girl, I wanted to be a storyteller. I loved make-believe worlds and my favorite thing to do was to wake up in the mornings in Moominvalley, in afternoons I would roam around the Tatooines, and in the evenings I would go to sleep in Narnia. And programming turned out to be the perfect profession for me. I still create worlds. Instead of stories, I create them with code. Programming gives me this amazing power to build my whole little universe with its own rules and paradigms and practices. Create something out of nothing with the pure power of logic. And that probably makes me into a poet. 
 </div>  
