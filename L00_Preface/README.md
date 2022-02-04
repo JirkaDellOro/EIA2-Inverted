@@ -49,6 +49,8 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 ## Motivation  
 - [x] Klicke auf die Startsymbole und schaue dir die Videos an. Sie geben dir einen Einblick in die Möglichkeiten, die sich durch den Kurs für dich eröffnen werden, wenn Du aktiv mitarbeitest, und sie vermitteln dir, wie dringlich die Inhalte sind. Verlasse die Rolle des Konsumenten und werde zum Macher! Du stehst am Scheideweg: wirst Du zu denen gehören, die Maschinen beherrschen, oder zu jenen, die Maschinen beherrschen? (kleines Kōan zum Meditieren)
 
+<div style="float:left; min-height:17em"><img src="Material/LindaLiukas.jpg" style="float:left; margin-right: 5px"/><a href="https://www.youtube.com/watch?v=y-t8SWdogGo&t=1439s"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Digital Ecosystems & Digital Designer | Dr. Marcus Trapp | UX-DAY KONFERENZ 2018</a><br/>   
+
 <div style="float:left; min-height:17em"><img src="Material/LindaLiukas.jpg" style="float:left; margin-right: 5px"/><a href="https://youtu.be/-jRREn6ifEQ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN</a><br/>   
 
 When I was a girl, I wanted to be a storyteller. I loved make-believe worlds and my favorite thing to do was to wake up in the mornings in Moominvalley, in afternoons I would roam around the Tatooines, and in the evenings I would go to sleep in Narnia. And programming turned out to be the perfect profession for me. I still create worlds. Instead of stories, I create them with code. Programming gives me this amazing power to build my whole little universe with its own rules and paradigms and practices. Create something out of nothing with the pure power of logic. And that probably makes me into a poet. 
