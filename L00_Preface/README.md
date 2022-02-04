@@ -49,7 +49,10 @@ Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besondere
 ## Motivation  
 - [x] Klicke auf die Startsymbole und schaue dir die Videos an. Sie geben dir einen Einblick in die Möglichkeiten, die sich durch den Kurs für dich eröffnen werden, wenn Du aktiv mitarbeitest, und sie vermitteln dir, wie dringlich die Inhalte sind. Verlasse die Rolle des Konsumenten und werde zum Macher! Du stehst am Scheideweg: wirst Du zu denen gehören, die Maschinen beherrschen, oder zu jenen, die Maschinen beherrschen? (kleines Kōan zum Meditieren)
 
-<div style="float:left; min-height:17em"><img src="Material/LindaLiukas.jpg" style="float:left; margin-right: 5px"/><a href="https://www.youtube.com/watch?v=y-t8SWdogGo&t=1439s"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Digital Ecosystems & Digital Designer | Dr. Marcus Trapp | UX-DAY KONFERENZ 2018</a><br/>   
+<div style="float:left; min-height:17em"><img src="Material/Trapp.jpg" style="float:left; margin-right: 5px"/><a href="https://www.youtube.com/watch?v=y-t8SWdogGo&t=1439s"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> Digital Designer | Dr. Marcus Trapp | UX-DAY KONFERENZ 2018</a><br/>   
+
+Wenn Du der Digital Designer werden willst, wenn Du das wirklich richtig machen willst, musst Du sowohl diese Gestaltungskompetenz mitbringen, als auch diese Materialkunde. Und in unserem Fall ist das Material eben halt digital. "Kenne ich die Methoden? Kenne ich die Tools? Weiß ich was das bedeutet? Kenne ich die Technologien?"
+</div>  
 
 <div style="float:left; min-height:17em"><img src="Material/LindaLiukas.jpg" style="float:left; margin-right: 5px"/><a href="https://youtu.be/-jRREn6ifEQ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> The poetry of programming | Linda Liukas | TEDxCERN</a><br/>   
 
