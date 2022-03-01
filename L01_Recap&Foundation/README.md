@@ -251,6 +251,7 @@ Logikfehler sind nicht auf eine falsche Programmierung zurückzuführen, sondern
 1. Lies bei Design- und Compiletime Errors aufmerksam die Hinweise, die TypeScript dir gibt, meist steht dort schon eine akkurate Beschreibung des Problems. Frag' nach, wenn Du sie nicht verstehst.
 1. Aus- und Entkommentieren: Wandle nacheinander einzelne Zeilen in Kommentare um (Strg + #) und schaue wie sich das Programmverhalten verändert. Oder wandle ganze Blöcke von Code in einen Kommentar und entkommentiere nacheinander einzelne Zeilen wieder zu Code. Schau, wann der Fehler auftritt oder verschwindet.
 1. Lasse dir an verschiedenen Stellen Ausgaben mit sinnvollen Inhalten erzeugen per `console.log(...)`. Anhand der Folge der Ausgaben kannst Du den Programmverlauf und ggf. bestimmte Speicherzustände erkennen.
+1. Verfolge den Programmablauf mit dem Debugger, damit kommst Du auch den hartnäckigsten Fehlern auf die Schliche. Nutze Step-In, -Over und -Out.
 1. Nutze die **Gummientenmethode** bei logischen Problemen, die auch von Profis verwendet wird. Kein Witz! Platziere eine Gummiente, zur Not tut es auch ein Stofftier oder ein WG-Mitbewohneri, in deiner Nähe und schaue zusammen mit ihr auf deinen Code. Erkläre ihr im Detail, wie der Code funktioniert. Die Wahrscheinlichkeit ist groß, dass ihr dabei gemeinsam den logischen Fehler findet. Gummienten sind sehr schlau!
 
 ### Präventive Maßnahmen
