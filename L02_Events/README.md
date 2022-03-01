@@ -12,7 +12,7 @@ Es wird deutlich, dass ein `html`-Element enstanden ist und darin ein `head`-Ele
 
 ### DOM-Manipulation
 Ein Skript kann das DOM manipulieren, darin Elemente verändern, hinzufügen oder löschen, der Browser kümmert sich automatisch um die Darstellung für den User. Das wurde im ersten Modul dieser Reihe bereits umfassend geübt und auch in der vorangegangenen Lektion wiederholt.
->**Achtung:** Die Begriffe Objekt, Element und Knoten können teilweise synonym verwendet werden, es ist aber Vorsicht geboten. 'Alles' in Javascript/TypeScript ist Objekt, auch etwas vom Typ `number` oder `string`. Ein Knoten (Node) ist ein Objekt mit speziellen Eigenschaften und Fähigkeiten, mit dem sich ein Graph aufbauen lässt. Ein Element wiederum ist ein spezieller Knoten, der Eigenschaften eines HTML-Elementes aufweist.
+>**Achtung:** Die Begriffe Objekt, Element und Knoten können teilweise synonym verwendet werden, es ist aber Vorsicht geboten. 'Alles' in Javascript/TypeScript ist Objekt, auch etwas vom Typ `number` oder `string`, trotz der scheinbaren Primitivität. Ein Knoten (Node) ist ein Objekt mit speziellen Eigenschaften und Fähigkeiten, mit dem sich ein Graph aufbauen lässt. Ein Element wiederum ist ein spezieller Knoten, der Eigenschaften eines HTML-Elementes aufweist. Mit Element werden aber auch allgemein Einträge in Arrays bezeichnet. Der Kontext ist also entscheidend.
 - [x] Wiederhole hierzu die Inhalte des Schaubildes zur [DOM-Klassenhierarchie](../X01_Appendix\DO-Hierarchy\DOM-Classhierachy.svg)
 
 ### Baumstruktur
@@ -117,7 +117,7 @@ Alle Bezeichnungen, die im Beispiel mit "some" beginnen, können und sollten nat
 <img src="Material/erpresserbrief.jpg" width="50%">
 <figcaption><small>Quelle: https://www.paketda.de/juniorpost/erpresserbrief-basteln.php</small></figcaption>
 
-Erpresserbriefe zu basteln ist mühsam. So ist es doch eine interessante Geschäftsidee, eine Web-App zu entwickeln, mit der Erpresser im Handumdrehen ihre Korrespondenz erledigen können. Wie geht man das an?
+Erpresserbriefe zu basteln ist mühsam. So ist es doch eine interessante Geschäftsidee, eine Web-App zu entwickeln, mit der Erpresseris im Handumdrehen ihre Korrespondenz erledigen können. Wie geht man das an?
 
 ## Anwendungsfalldiagramm (Use-Case-Diagram)
 Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Überblick über die Anforderungen an deine Anwendung. Das geht ganz schnell und hilft ungemein bei der Konzeption.  
@@ -140,7 +140,7 @@ Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Da
 </div>
 
 ## Aktivitätsdiagramme
-Jetzt hast Du bereits aus der Sicht des Nutzers die wesentlichen Aktivitäten, die beteiligten Elemente und die auszuwerteten Ereignisse festgehalten. Nun wechselst Du auf die Sicht aus dem System heraus und legst fest, wie es arbeiten soll. Dazu nutzt Du jetzt Aktivitätsdiagramme. Ein Event bildet dabei jeweils als Signalempfang einen Startknoten für eine Aktivität.  
+Jetzt hast Du bereits aus der Sicht des Nutzeris die wesentlichen Aktivitäten, die beteiligten Elemente und die auszuwerteten Ereignisse festgehalten. Nun wechselst Du auf die Sicht aus dem System heraus und legst fest, wie es arbeiten soll. Dazu nutzt Du jetzt Aktivitätsdiagramme. Ein Event bildet dabei jeweils als Signalempfang einen Startknoten für eine Aktivität.  
 Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm dir dann nacheinander die einzelnen Aktivitäten vor und verfeinere sie. Wiederhole diesen Prozess, bis Du zu den atomaren Aktionen gekommen bist die sich in Programmanweisungen umsetzen lassen. Am Anfang musst Du hierzu wahrscheinlich nach diesen Anweisungen noch etwas recherchieren.  
 <div align="center">
   <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V3_ActivityDiagram.mp4" type="video/mp4"></video>
