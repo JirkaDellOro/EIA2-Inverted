@@ -225,7 +225,7 @@ Ein wichtiger Unterschied zwischen primitiven und komplexen Datentypen ist die A
 Das kennen wir alle, Du bist nicht allein. Beachte folgende Regeln:
 1. don't panic!
 1. der Computer ist eher unkreativ und folgt nur deinen Anweisungen. Wahrscheinlich ist mit ihm oder anderer Sofware, wie dem Browser, alles in Ordnung und er kann dir helfen, den Fehler zu finden.
-1. sammle Informationen zu dem Problem. Ziehe nicht wild an allen Hebeln sondern untersuche das Verhalten. Nutze dazu die zahlreichen Hilfestellungen die der Rechner dir anzeigen kann. Wende die Lösungstrategien an!
+1. sammle Informationen zu dem Problem. Ziehe nicht wild an allen Hebeln sondern untersuche das Verhalten. Nutze dazu die zahlreichen Hilfestellungen die der Rechner dir anzeigen kann. Wende die [Lösungstrategien](#l%C3%B6sungsstrategien) an!
 1. wenn Du das Problem nach 15 Minuten nicht gelöst hast, schreibe einen Issue oder nimm über Discord Kontakt auf. Poste dabei die gesammelten Infos und Links auf dein Programm, sowohl auf Pages zu Probieren als auch zum Code.
 
 >**Hinweis:** TypeScript spielt gerade bei der Fehlervermeidung eine seiner großen Stärken aus, indem es viele Fehler zur Entwicklungszeit anzeigt. JavaScript hat hier fast nichts zu bieten, die Fehler zeigen sich erst im Betrieb... besonders gerne beim Nutzer!
