@@ -5,7 +5,7 @@
 <hr/>
 
 ### [L00_Preface](L00_Preface) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 1 | 1:15 | 0:00</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 1 | 1:15 | 1:00</small>
 - Medienkonzeption und Digitale Medien
 - Motivation
 - Veranstaltungskonzept
@@ -13,7 +13,7 @@
 <hr/>
 
 ### [L01_Recap&Foundation](L01_Recap&Foundation) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 2 & 3 | 2:00 | 1:45</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 2 | 2:00 | 4:00</small>  
 
 <!--#### [Teil 1: Grundlagen](L01_Recap&Foundation#l011-grundlagen)-->
 - Variablen
@@ -28,7 +28,7 @@
 <hr/>
 
 ### [L02_Events](L02_Events) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 4 & 5 | 6:30 | 2:45</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 3 & 4 | 6:30 | 2:45</small>  
 
 <!-- #### [Teil 1: Grundlagen](L02_Events#l021-grundlagen) -->
 - Rückblick DOM
@@ -43,12 +43,20 @@
 <hr/>
 
 ### [L03_FormElements](L03_FormElements) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 6 | 6:30 | 4:30</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 5 | 6:30 | 4:30</small>
 - Texteingabe
 - Selektionen
 - Ausgabeelemente
 - Konzeption und Implementation einer formulargesteuerten Anwendung  
 - FormData
+<hr/>
+
+
+### Einschub  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 6 | 6:30 | 4:30</small>
+- Arbeit mit Low-Code-Tool Thunkable
+- Datenstruktur Tabelle
+- Domänenübergreifende Aktivität
 <hr/>
 
 **[L04_DataStructures](L04_DataStructures)** entfällt
