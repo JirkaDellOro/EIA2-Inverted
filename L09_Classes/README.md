@@ -22,8 +22,6 @@ Aus deiner Erfahrung weißt Du, dass sich die von dir wahrgenommene Realität au
 ## Modellierung
 Bislang hatten wir komplexere Datenstrukturen mit Interfaces irgendwo im Code beschrieben. Damit haben wir schon Eigenschaften von Objekten angegeben. Beispielsweise besitzen alle Vektoren aus dem vorangegangenen Kapitel die Eigenschaften x und y, bei jedem einzelnen tatsächlich erschaffenen Vektor sind sie mit individuellen Werten definiert. Was mit diesen Vektoren aber geschieht, ist an ganz anderen Stellen im Code implementiert. So werden Vektoren addiert oder skaliert und der Code dafür muss jedes mal neu geschrieben werden.
 
-> **FunFact:** Schau dir einmal im kompilierten Javascript-Code an, was von Interfaces übrig bleibt... sie sind komplett verschwunden. Interfaces sind lediglich ein Anweisung für den Compiler mit der Du angibst, welche Datenstruktur Du willst, damit er dir helfen kann, dich daran zu halten.  
-
 Bei der objektorientierten Modellierung definierst Du nicht nur die Eigenschaften, sondern auch die Aktivitäten, die ein Objekt der beschriebenenen Klasse ausführen können soll. So wie der Hund beißen, bellen, knurren und stinken kann, kann der Vektor vielleicht seine Länge ändern, oder durch Addition mit einem anderen Vektor zu einem resultierenden Vektor werden und so weiter. Im Diagramm schreibst Du hierzu einfach unter dem Feld für den Namen des Typs und dem Feld für die Eigenschaften nun ein drittes Feld, in dem Du die Aktivitäten auflistest.  
 
 <img src="Material/draw.io/Vector_ClassDiagram.svg">
@@ -80,14 +78,14 @@ console.log(v1);
 
 ## Klasse vs. Objekt
 Häufig werden die Begriffe Klasse und Objekt verwechselt oder unscharf gebraucht. Das führt zu Verwirrung und Fehlern. Auch wenn der Unterschied in diesem Text bereits mehrfach herausgestellt wurde, soll an dieser Stelle noch einmal explizit darauf eingegangen werden.
-Eine Klasse beschreibt die Struktur, die ein Objekt derselben aufweisen soll, und die Methoden, die mit einem solchen Objekt verknüpft werden. Sie ist vergleichbar mit dem Hunde-Genom oder mit dem Hausbauplan eines Architekten. Ist die Klasse definiert, können beliebig viele Objekte der Klasse erzeugt werden, so wie ein ganzer Hundewurf, eine Siedlung oder ein ganzes Array voller Vektoren. Jedes dieser Objekte besitzt die in der Klasse angegebenen Eigenschaften, gegebenenfalls mit individuellen Werten, wie Fellfarbe, Dachziegeltyp oder Koordinate.  
+Eine Klasse beschreibt die Struktur, die ein Objekt derselben aufweisen soll, und die Methoden, die mit einem solchen Objekt verknüpft werden. Sie ist vergleichbar mit dem Hunde-Genom oder mit dem Hausbauplan eines Architektis. Ist die Klasse definiert, können beliebig viele Objekte der Klasse erzeugt werden, so wie ein ganzer Hundewurf, eine Siedlung oder ein ganzes Array voller Vektoren. Jedes dieser Objekte besitzt die in der Klasse angegebenen Eigenschaften, gegebenenfalls mit individuellen Werten, wie Fellfarbe, Dachziegeltyp oder Koordinate.  
 
 <img src="Material/Instanzierung.svg">
 
 Ein Objekt einer Klasse kann zudem die in der Klasse definierten Methoden nutzen, ohne dass eine Referenz auf das Objekt der Methode als Parameter übergeben werden muss. Stattdessen wird das Objekt innerhalb der Methode automatisch mit dem reservierten Wort `this` referenziert. Der Aufruf der Methode erfolgt mit Hilfe der Punkt-Syntax `object.method(...)`. Da das Objekt eine Instanz einer bestimmten Klasse ist, wird damit die Methode eindeutig identifiziert, auch wenn andere Klassen über eine Methode gleichen Namens verfügen sollten.
 
 ## Constructor
-Die Hausbau-Metapher führt dich gleich zu einem weiteren interessanten Aspekt. Der Architekt, also Du, macht zwar den Plan, gebaut wird ein Haus aber von einem Bauunternehmer. Im Englischen ist das der Constructor.  
+Die Hausbau-Metapher führt dich gleich zu einem weiteren interessanten Aspekt. Das Architekti, also Du, macht zwar den Plan, gebaut wird ein Haus aber von einem Bauunternehmeri. Im Englischen: Constructor.  
 
 Auch bei der Instanzierung von Objekten kommt ein Constructor zum Einsatz, den Du im Deutschen wiederum Konstruktor nennen kannst. Er ist eine besondere Methode, die automatisch aufgerufen wird, wenn die Anweisung `new` ausgeführt wird und kümmert sich darum, dass das Objekt ordentlich gebaut wird. Ein Standardkonstruktor ist in Javascript immer dabei und tritt nicht in Erscheinung. Du kannst aber für jede Klasse einen eigenen Konstruktor definieren.   
 
@@ -142,7 +140,7 @@ Mit diesen Basisregeln des objekorientierte Entwurfs kann man sich schon daran m
 ## UI-Scribble
 ![](Material/draw.io/Asteroids_Scribble.svg)  
 
-Um das Spiel interessanter zu machen, insbesondere für die Übungszwecke in diesem Kurs, wird eine etwas andere Verteidigungsmechanik für das Raumschiff konzipiert. Statt einzelner kleiner Projektile, wie die Ufos sie verschießen, werden Laserstrahlen eingesetzt, die in ihrem Kreuzungspunkt ein vernichtendes Kraftfeld erzeugen. Somit kann die Maus als Steuerung besser genutzt und die zusätzliche Herausforderung eines Energiemanagements für den Spieler geschaffen werden.
+Um das Spiel interessanter zu machen, insbesondere für die Übungszwecke in diesem Kurs, wird eine etwas andere Verteidigungsmechanik für das Raumschiff konzipiert. Statt einzelner kleiner Projektile, wie die Ufos sie verschießen, werden Laserstrahlen eingesetzt, die in ihrem Kreuzungspunkt ein vernichtendes Kraftfeld erzeugen. Somit kann die Maus als Steuerung besser genutzt und die zusätzliche Herausforderung eines Energiemanagements für das Spieleri geschaffen werden.
 
 ## Klassendiagramm
 Bei der objektorientierte Modellierung kommt ein weiterer Diagrammtyp hinzu, den Du nutzen solltest, bevor Du mit den detaillierten Aktivitätsdiagrammen beginnst. Dabei identifizierst Du zunächst die verschiedenen Objekttypen, die in deiner Anwendung eine Rolle spielen. Sofern es sich dabei um Objekte handelt, die eine sichtbare Repräsentation haben, kannst Du sie im UI-Scribble identifizieren.  
@@ -221,7 +219,7 @@ Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die 
 
 Ein Problem tritt auf bei der Übergabe der Position an den optionalen Parameter `_position` im Constructor der Asteroid-Klasse. Da Vector ein komplexer Typ ist, hält eine Variable dieses Typs lediglich eine Referenz auf ein Vektorobjekt (siehe [Werte vs. Referenzen](https://JirkaDellOro.github.io/EIA2-Inverted/L01_Recap%26Foundation#werte-vs-referenzen)). Durch die Zuweisung des Parameterinhaltes an das Objektattribut wurde also kein neues Vektorobjekt erzeugt, sondern nur die Referenz erneut genutzt. Die Bruchstücke referenzieren also das gleiche Vektorobjekt und haben daher die gleiche Position.
 
-- [x]  Löse das Problem, in dem Du nicht die Referenz zuweist, sondern mit den Informationen des Parameters ein neues Positionsobjekt instanzierst und dieses zuweist.
+- [x] Löse das Problem, in dem Du nicht die Referenz zuweist, sondern mit den Informationen des Parameters ein neues Positionsobjekt instanzierst und dieses zuweist.
 - [x] Erweitere die Vektorklasse um eine Methode `copy()`, welche ein neues Vektorobjekt zurückliefert, das die gleichen Attributwerte hat wie der Vektor der sie ausführt.
 - [x] Nutze diese Methode um das obige Problem noch eleganter zu lösen.
 - [x] Skaliere die Linienstärke in der draw-Methode der Asteroid-Klasse entsprechend des size-Attributs umgekehrt proportional hoch.
