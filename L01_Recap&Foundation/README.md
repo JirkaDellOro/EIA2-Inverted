@@ -256,8 +256,9 @@ Logikfehler sind nicht auf eine falsche Programmierung zurückzuführen, sondern
 
 ### Präventive Maßnahmen
 Du kannst schon beim Coden dafür sorgen, dass gar nicht erst Fehler auftreten oder dass Du die Ursachen schnell findest.
+- Halte dich strikt an die Coding Guidelines, siehe [Booklet](../X01_Appendix/)
 - Teste häufig! Mache immer nur kleine Änderungen und lasse das Programm wieder laufen. Damit weißt Du, dass der Fehler gerade erst implementiert wurde.
-- Lasse dabei immer die Browserkonsole offen. Wie bei einer Krankheit erscheinen manche Fehler erscheinen nicht gravierend und das Programm läuft zunächst weiter. Sie müssen aber behandelt werden!
+- Lasse dabei immer die Browserkonsole offen. Wie bei einer Krankheit erscheinen manche Fehler nicht gravierend und das Programm läuft zunächst weiter. Sie müssen aber behandelt werden!
 - Bevor Du eine Funktion implementierst, implementiere den Aufruf und einen Rumpf aus Platzhalter-Code, der vielleicht nur aus einer Konsolenausgabe besteht. Dann weißt Du, dass die übergeordnete Struktur schon passt und kannst Details implementieren. 
 - Mache häufige Commits in Git mit sinnvollen Messages und pushe sie auf dein Remote-Repository (ui...Denglisch!). Du kannst nämlich später vorangegangene Versionen wieder aufrufen und testen und alle Veränderungen nachvollziehen. So kann man genau feststellen, wann ein Fehler implementiert wurde und die Ursache schnell eingrenzen.
 
