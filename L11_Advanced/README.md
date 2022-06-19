@@ -37,7 +37,7 @@ Solche Methoden abstrakter Klassen sollten ebenfalls mit `abstract` markiert wer
 
 - [x] Markiere eine neue Methode deiner abstrakten Superklasse als abstrakt. Erhältst Du eine Fehlermeldung, wenn Du diese Methode in der Subklasse nicht definierst?
 
-> **Hinweis**: Du kannst die Abstraktion schon beim Entwurf im Klassendiagramm darstellen, hierzu werden die entsprechenden Klassen- und Methodennamen lediglich kursiv geschrieben. 
+> **Hinweis**: Du kannst abstrakte Klassen oder Methoden schon beim Entwurf im Klassendiagramm auszeichnen, hierfür werden die entsprechenden Klassen- und Methodennamen lediglich kursiv geschrieben. 
 
 ## Static
 In die entgegengesetzte Richtung zielt das Prinzip der statischen Methoden und Eigenschaften von Klassen. Diese können nämlich genutzt werden, ohne dass eine Instanz der Klasse geschaffen werden muss. Die Klasse, oder ein Teil davon, wird also sehr konkret. Hierfür genügt es, das reservierte Wort `static` der Deklaration einer Methode oder Eigenschaft voran zu stellen.  
