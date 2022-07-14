@@ -26,8 +26,7 @@ Zwei Dinge sind aus Obigem zu folgern:
 <div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V1_UseCase.mp4" type="video/mp4"> </video>
 <a href="Material\CocktailBar_UseCaseDiagram.jpg"><img src="Material\CocktailBar_UseCaseDiagram.jpg" width="25%"/></a><br/>
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V1_UseCase.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Use Case Diagram</a>
-</a>  <br/>
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V1_UseCase.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Use Case Diagram</a><br/>
 </div>
 
 ## Algorithmen und Datenstrukturen
