@@ -75,7 +75,7 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 ## Implementation II
 <div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V5_Implementation2.mp4" type="video/mp4"></video> <br/>
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V5_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L05 Implementation 2<a>  
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V5_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L05 Implementation 2</a>  
 </div>
 
 ## Refactoring
