@@ -67,7 +67,7 @@ Das Skript dient gleichzeitig als Server, mit dem der Client kommuniziert. Norma
 
 ### Installation
 
--[x] Hole dir nun MingiDB von https://github.com/JirkaDellOro/MingiDB und folge den Anweisung zur Installation und dem Tutorial. Nutze einen ftp-Client deiner Wahl um auf dem Webspace, den dir die Hochschule zur Verfügung gestellt hat, einen Ordner für eine Datenbank anzulegen und das MingiDB-File dort hineinzukopieren.
+- [x] Hole dir nun MingiDB von <https://github.com/JirkaDellOro/MingiDB> und folge den Anweisung zur Installation und dem Tutorial. Nutze einen ftp-Client deiner Wahl um auf dem Webspace, den dir die Hochschule zur Verfügung gestellt hat, einen Ordner für eine Datenbank anzulegen und das MingiDB-File dort hineinzukopieren.
 
 ## Datenbankstruktur für die Cocktailbar
 Es bietet sich an, die Bestellungen in einer Collection namens `orders` abzulegen. Das Angebot des Barkeepers sollte in einer Collection `offer` liegen. Dabei wäre es möglich, das komplette Angebot als ein einziges Dokument abzulegen, so wie es derzeit auch vorliegt. Allerdings wäre die Funktionalität einer Datenbank vielleicht besser genutzt, wenn man das Angebot auf mehrere Dokumente aufteilt. Diese könnten so aussehen:
