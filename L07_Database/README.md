@@ -200,7 +200,7 @@ Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server a
 Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von Außen sollte niemand Zugriff darauf haben. Die Bestellungen sollen aber in einer Datenbank gespeichert werden, die ständig erreichbar ist. MongoDB bietet mit Atlas ein eigenes Serviceangebot hierfür.
 
 - [x] Betrachte die EIA2-Landschaft. Die letzte Wolke wird jetzt in Angriff genommen.
-  - [x] Rufe https://www.mongodb.com/ auf
+  - [x] Rufe <https://www.mongodb.com/> auf
   - [x] Klicke auf "Start Free"
   - [x] Melde dich mit Namen und Mailadresse an
   - [x] Wähle "Create a cluster" unter Starter Clusters
@@ -208,7 +208,7 @@ Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von 
   - [x] Wähle einen Clusternamen, vielleicht deinen eigenen oder "EIA2"?
   - [x] Klicke auf "Create Cluster"
 
-- [x] Folge jetzt dem "Get Started"-Guide! https://docs.atlas.mongodb.com/getting-started/
+- [x] Folge jetzt dem "Get Started"-Guide! <https://docs.atlas.mongodb.com/getting-started/>
   - [x] Erlaube deinem Testuser Read/Write-Zugriff
   - [x] Erlaube in der Whitelist Zugriff von überall mit der IP-Adresse 0.0.0.0/0
   - [x] Lege KEINE Beispieldaten an

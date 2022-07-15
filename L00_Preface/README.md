@@ -122,14 +122,14 @@ Eine Lektion wird im Zeitraum von ein bis zwei Wochen bearbeitet. Du arbeitest v
 ### Fragensammlung
 Mache dir bei der Vorbereitung Notizen und formuliere Fragen für den Workshop. Notiere dabei möglichst genau die Situation, um die es geht und gegebenfalls was erforderlich ist, um sie zu reproduzieren. Poste deine Fragen gerne vorab auf Gihub oder auf Discord. So entsteht eine Sammlung von Fragen, die im Workshop diskutiert und beantwortet werden. Gerne kann dies aber auch schon im Vorfeld auf diesen Plattformen stattfinden, insbesondere wenn es erforderlich ist, um die Lektion überhaupt weiter bearbeiten zu können. Neben dem Dozenten und den Betreueris tummeln sich dort auch fortgeschrittene Studentis und Alumni, die Spaß daran haben, dir zu helfen.
 
-Spiellabor Server auf Discord: https://discord.gg/xTWvup8A5j  
-EIA2-Repository Issues: https://github.com/JirkaDellOro/EIA2-Inverted/issues
+Spiellabor Server auf Discord: <https://discord.gg/xTWvup8A5j>  
+EIA2-Repository Issues: <https://github.com/JirkaDellOro/EIA2-Inverted/issues>
 
 ### Workshop 
 Im Workshop werden Fragen beantwortet und Unklarheiten beseitigt. Dabei steht der Austausch mit deinen Kommilitonis im Vordergrund. Im Idealfall klärt ihr die Dinge selbst, anstatt nur die Antworten eines Dozenten zu rezipieren. Der Dozent ist aber dabei um Irrwege und Ineffizienz zu vermeiden und im Zweifelsfall zu klären. **Achtung:** es gilt die strenge Regel, dass im Workshop nur Detailfragen zur aktuellen Lektion bearbeitet werden!
 
 ### Wochenaufgabe
-Jede Woche ist eine Aufgabe zur Lektion zu bearbeiten, die in der Regel am Ende des Workshops präsentiert wird (tretet dem Dozenten virtuell auf die Füße, wenn er nicht bis zum Abend eine schriftliche Version vorlegt!). Bei Lektionen, die über zwei Wochen bearbeitet werden, wird eine Aufgabe zum Einstieg und in der zweiten Woche eine weitergehende Aufgabe formuliert. Daran sollen die Inhalte geübt und verinnerlicht werden. Mache dich mit den Regeln zu den Wochenaufgaben vertraut: https://github.com/JirkaDellOro/EIA2-Inverted/wiki
+Jede Woche ist eine Aufgabe zur Lektion zu bearbeiten, die in der Regel am Ende des Workshops präsentiert wird (tretet dem Dozenten virtuell auf die Füße, wenn er nicht bis zum Abend eine schriftliche Version vorlegt!). Bei Lektionen, die über zwei Wochen bearbeitet werden, wird eine Aufgabe zum Einstieg und in der zweiten Woche eine weitergehende Aufgabe formuliert. Daran sollen die Inhalte geübt und verinnerlicht werden. Mache dich mit den Regeln zu den Wochenaufgaben vertraut: <https://github.com/JirkaDellOro/EIA2-Inverted/wiki>
 
 ### Praktikum
 Im Praktikum werden eure Ansätze zur Lösung der aktuellen Aufgabe diskutiert, Ideen gesammelt und Rückmeldung zu euren Formulierungen gegeben. Daher musst Du zu diesem Zeitpunkt wenigstens ein Minimalkonzept vorlegen können oder im Idealfall bereits mit der Lösung der Aufgabe etwas fortgeschritten sein, um dort qualifizierte Fragen stellen zu können. Hast Du die Aufgabe bereits vollständig gelöst, freuen wir uns trotzdem über deine Mitwirkung.
