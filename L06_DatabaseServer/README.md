@@ -8,9 +8,9 @@ Nun müssen wir davon ausgehen, dass der Barkeeper nicht im Keller eines Rechenz
 
 ## Use-Case-Diagramm
 
-![](../L07_Database/Material/draw.io/UseCase.svg)
+![](Material/UseCase.svg)
 
-Neben dem Datenspeicher wurde nun auch ein Client für den Barkeeper berücksichtigt. Spätestens jetzt wird klar, wie hilfreich Anwendungsfalldiagramme in frühen Stadien der Softwareentwicklung sind. 
+Neben dem Datenspeicher wurde im Diagramm auch ein Client für den Barkeeper berücksichtigt. Spätestens jetzt wird klar, wie hilfreich Anwendungsfalldiagramme in frühen Stadien der Softwareentwicklung sind. 
 
 > - [x] Studiere intensiv das dargestellte Diagramm und erkläre was es darstellt.
 
