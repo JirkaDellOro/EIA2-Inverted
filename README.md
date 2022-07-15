@@ -28,7 +28,7 @@
 <hr/>
 
 ### [L02_Events](L02_Events) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 3 & 4 | 6:30 | 2:45</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 3 | 6:30 | 2:45</small>  
 
 <!-- #### [Teil 1: Grundlagen](L02_Events#l021-grundlagen) -->
 - Rückblick DOM
@@ -43,7 +43,7 @@
 <hr/>
 
 ### [L03_FormElements](L03_FormElements) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 5 | 6:30 | 4:30</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 4 | 6:30 | 4:30</small>
 - Texteingabe
 - Selektionen
 - Ausgabeelemente
@@ -51,16 +51,8 @@
 - FormData
 <hr/>
 
-
-### Einschub  
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 6 | 6:30 | 4:30</small>
-- Arbeit mit Low-Code-Tool Thunkable
-- Datenstruktur Tabelle
-- Domänenübergreifende Aktivität
-<hr/>
-
-**[L04_DataStructures](L04_DataStructures)** entfällt
-<small style="float: right; position: relative; top: -30px; height: 0px">5:45 | 7:30</small>
+### [L04_DataStructures](L04_DataStructures)
+<small style="float: right; position: relative; top: -30px; height: 0px">>Woche 5 | 5:45 | 7:30</small>
 - Separation Of Concerns
 - Trennung von Struktur und Inhalt
 - Algorithmen und Datenstrukturen
@@ -71,8 +63,8 @@
 
 <hr/>
 
-**[L05_Client](L05_Client)** entfällt
-<small style="float: right; position: relative; top: -30px; height: 0px">4:45 | 1:45</small>
+### [L05_Client](L05_Client)
+<small style="float: right; position: relative; top: -30px; height: 0px">>Woche 6 | 4:45 | 1:45</small>
 - Synchrone und asynchrone Kommunikation
 - Forms
 - XmlHttpRequest-Events
@@ -84,21 +76,8 @@
 
 <hr/>
 
-**[L06_Server](L06_Server)** entfällt
-<small style="float: right; position: relative; top: -30px; height: 0px">4:30 | 0:45</small>
-- Node.js
-- Erweiterungen
-- HTTP-Modul
-- Request-Handling
-- URL-Modul
-- Response-Handling
-- Heroku
-- Clientanpassung
-
-<hr/>
-
-**[L07_Database](L07_Database)** entfällt
-<small style="float: right; position: relative; top: -30px; height: 0px">6:15 | 1:30</small>
+### [L06_DatabaseServer](L06_DatabaseServer)
+<small style="float: right; position: relative; top: -30px; height: 0px">>Woche 7 | 6:15 | 1:30</small>
 - Relationale Datenbanken
 - NoSQL-Datenbanken
 - MongoDB
@@ -112,7 +91,7 @@
 <hr/>
 
 ### [L08_Canvas](L08_Canvas) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 7 & 8 | 5:30 | 5:00</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 8 & 9 | 5:30 | 5:00</small>  
 
 <!-- #### [Teil 1: Grundlagen](L08_Canvas#l081-grundlagen) -->
 - CanvasRenderingContext
@@ -132,7 +111,7 @@
 <hr/>
 
 ### [L09_Classes](L09_Classes) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 9 & 10 | 3:30 | 4:15</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 10 & 11 | 3:30 | 4:15</small>  
 
 <!-- #### [Teil 1: Grundlagen](L09_Classes#l091-grundlagen) -->
 - Objektorientierung
@@ -147,7 +126,7 @@
 <hr/>
 
 ### [L10_Inheritance](L10_Inheritance) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 11 & 12 | 4:15 | 0:30</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 12 & 13 | 4:15 | 0:30</small>  
 
 <!-- #### [Teil 1: Vererbung](L10_Inheritance#l101-vererbung) -->
 - Liskov'sches Substitutionsprinzip
@@ -159,7 +138,7 @@
 <hr/>
 
 ### [L11_Advanced](L11_Advanced) 
-<small style="float: right; position: relative; top: -30px; height: 0px">Woche 13 & 14 | 3:00 | 4:30</small>  
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 14 | 3:00 | 4:30</small>  
 
 <!-- #### [Teil 1: Modifikatoren & Accessoren](L11_Advanced#l111-modifikatoren--accessoren) -->
 - Abstract
