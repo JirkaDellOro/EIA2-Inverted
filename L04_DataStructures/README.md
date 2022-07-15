@@ -26,8 +26,7 @@ Zwei Dinge sind aus Obigem zu folgern:
 <div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V1_UseCase.mp4" type="video/mp4"> </video>
 <a href="Material\CocktailBar_UseCaseDiagram.jpg"><img src="Material\CocktailBar_UseCaseDiagram.jpg" width="25%"/></a><br/>
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V1_UseCase.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Use Case Diagram</a>
-</a>  <br/>
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V1_UseCase.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Use Case Diagram</a><br/>
 </div>
 
 ## Algorithmen und Datenstrukturen
@@ -75,7 +74,7 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 ## Implementation II
 <div align="center"><video controls width="30%"> 
   <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V5_Implementation2.mp4" type="video/mp4"></video> <br/>
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V5_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L05 Implementation 2<a>  
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V5_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L05 Implementation 2</a>  
 </div>
 
 ## Refactoring
