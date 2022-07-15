@@ -168,11 +168,11 @@ Es wäre natürlich sehr lästig, während der Entwicklung für jeden Test zunä
 <summary>Submit-Button</summary>  
 
 Es gibt verschiedene Möglichkeiten, das Problem des Submitbuttons zu lösen.  
-
-  - im Skript mit `_event.preventDefault()` das Standardverhalten unterbinden
-  - als Typ des Buttons in der HTML-Datei `"button"` definieren
-  - den Button außerhalb des Formulars platzieren  
-
+<ul>
+  <li>im Skript mit `_event.preventDefault()` das Standardverhalten unterbinden</li>
+  <li>als Typ des Buttons in der HTML-Datei `"button"` definieren</li>
+  <li>den Button außerhalb des Formulars platzieren</li>  
+</ul>
 </details>
 
 ## Daten nachladen
