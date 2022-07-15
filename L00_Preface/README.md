@@ -1,5 +1,5 @@
 # L00_Preface  
-> **Hinweis:** In den Texten dieser Lektionen wird das geschlechtergerechte Neutrum verwendet, siehe [https://jirkadelloro.github.io/Neutrum]
+> **Hinweis:** In den Texten dieser Lektionen wird das geschlechtergerechte Neutrum verwendet, siehe <https://jirkadelloro.github.io/Neutrum>
 
 ## Medienkonzeption und Digitale Medien  
 Die grundlegendste Eigenschaft eines Konzepteris ist die Kommunikationsbereitschaft, und zwar in beide Richtungen. Es genügt bei Weitem nicht gute Ideen zu haben und sie anderen mitzuteilen. Zunächst muss es herausfinden, welches Problem überhaupt mit der Idee gelöst werden soll. Hierzu muss es vor allem die richtigen Fragen stellen! Und natürlich dann auch die Antworten aufnehmen und verstehen. Kernideen werden meist ohnehin in der Gruppe erdacht, es ist die Aufgabe des Konzepteris sie dann weiterzuentwickeln und dabei ständig in der Kommunikation mit allen Beteiligten zu bleiben. Ein Konzepteri kann nicht verharren und warten, bis ihm mitgeteilt wird, was es zu tun hat. Stattdessen ist es die Aufgabe des Konzepteris Probleme zu erkennen, zu recherchieren, fachgerechte Lösungen zu finden und sie nach den Regeln der Kunst in unterschiedlichen Formaten, insbesondere Skizzen und Diagrammen, festzuhalten und mit deren Hilfe den anderen Teammitgliedern mitzuteilen, was wie zu tun ist.  
