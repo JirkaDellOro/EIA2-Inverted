@@ -7,24 +7,25 @@ Ein reiner Fileserver wird natürlich den Ansprüchen nicht gerecht, welche die 
 Nun müssen wir davon ausgehen, dass der Barkeeper nicht im Keller eines Rechenzentrums sitzt und wartet, bis auf irgendeinem Monitor ein Fenster aufgeht und eine Bestellung anzeigt. Anders als an einer nicht-virtuellen Bar, kommunizieren Barkeeper und Kunde nun asynchron. Die Bestellungen müssen also gespeichert werden und zwar so, dass der Barkeeper darauf jederzeit von anderen Clients aus Zugriff hat. Damit brauchen wir als weiteres System einen Datenspeicher.
 
 ## Use-Case-Diagramm
-Durch den Einsatz einer Datenbanksoftware ist es nicht mehr erforderlich, eine Datenverwaltung selbst zu entwickeln. Komplexität entsteht nun aber durch die Kommunikation zwischen den Systemen Client, Server und Datenbanksystem. Das wird schon im erweiterten Use-Case-Diagram deutlich.
 
 ![](../L07_Database/Material/draw.io/UseCase.svg)
 
-Neben der Datenbank wurde nun auch ein Client für den Barkeeper berücksichtigt, denn schließlich sitzt er wahrscheinlich nicht im Rechenzentrum und kann direkt die Maschinen manipulieren, auf denen der Server läuft.  
-Spätestens jetzt sollte klar werden, wie hilfreich Anwendungsfalldiagramme in frühen Stadien der Softwareentwicklung sind. 
+Neben dem Datenspeicher wurde nun auch ein Client für den Barkeeper berücksichtigt. Spätestens jetzt wird klar, wie hilfreich Anwendungsfalldiagramme in frühen Stadien der Softwareentwicklung sind. 
 
 > - [x] Studiere intensiv das dargestellte Diagramm und erkläre was es darstellt.
 
-Das Diagramm stellt lediglich die Grundfunktionalitäten dar, tatsächlich kann es schnell noch deutlich komplexer werden, wenn die Anforderungen steigen. Beispielsweise wäre es sicher wünschenswert, wenn der Barkeeper nach dem Ändern des Angebotes oder dem Löschen einer Bestellung eine Rückmeldung bekommt und sein Interface auf den aktuellen Stand gebracht wird.  
-Auch ist hier nur das Verhalten dargestellt, welches im fehlerfreien Lauf erwartet wird. Wenn unterschiedliche Systeme aber miteinander kommunizieren sind Fehler wie Verbindungsabbrüche oder falsche Nutzereingaben an der Tagesordnung. Die Fehlerbehandlung macht oft den größten Teil der letztlich entwickelten Software aus, und würde an dieser Stelle den Rahmen weit sprengen.
-
+## Swimlane-Activity Diagram
+Im Use-Case-Diagramm ist ein Muster zu erkennen. Häufig löst eine Interaktion des Nutzeris eine Aktivität im Client aus, wodurch eine Request an den Server geschickt wird, welcher dann auf den Datenspeicher zugreift, eine Response formuliert und an den Client zurückschickt, der diese aufbereitet und dem Nutzeri eine Rückmeldung gibt. Diese Standard-Aktivität über Systemgrenzen hinweg kann auch in einem Aktivitätsdiagramm dargestellt werden.
 
 ![](Material/Activity.svg)  
-Der Anwendungsfall kann in obenstehendem, domänenübergreifenden Aktivitätsdiagramm dargestellt werden. Jedes beteiligte System, gegebenenfalls auch der Nutzer, wird dabei in einem eigenen Bereich, einer sogenannten Swimlane, also Schwimmbahn, dargestellt.
+
+ Jedes beteiligte System, gegebenenfalls auch das Nutzeri, wird dabei in einem eigenen Bereich, einer sogenannten Swimlane, also Schwimmbahn, dargestellt.
 
 
 Es wäre möglich, dass der Server für jede Bestellung eine Datei anlegt und diese in seinem Massenspeicher ablegt, oder alle Bestellungen in einer Datei sammelt. Allerdings sollten auch alte Bestellungen gelöscht, oder vielleicht alle Bestellungen des gleichen Kunden herausgesucht, oder zur Optimierung des Angebots die Häufigkeit der Bestellung einer bestimmten Drink-Extra-Kombination ermittelt werden können. Für all dies müssten wieder entsprechende Algorithmen und Datenstrukturen konzipiert und implementiert werden. Da solche Anforderungen bei der Entwicklung interaktiver Anwendungen aber sehr häufig auftreten und oft ähnlich sind, gibt es bereits Standardsoftware, welche Daten speichert, verwaltet und auswertet: Datenbanksysteme!  
+
+
+Durch den Einsatz einer Datenbanksoftware ist es nicht mehr erforderlich, eine Datenverwaltung selbst zu entwickeln. Komplexität entsteht nun aber durch die Kommunikation zwischen den Systemen Client, Server und Datenbanksystem. Das wird schon im erweiterten Use-Case-Diagram deutlich.
 
 ## Relationale Datenbanken
 Seit den 1970er Jahren dominieren relationale Datenbanken, bei denen die Daten in Tabellenstrukturen untergebracht werden und durch Querverweise ein Netz von Tabellen aufgespannt wird. Mit der Structured-Query-Language (SQL) wurde eine Abfragesprache entwickelt, mit der komplexe Anweisungen formuliert werden können, welche die Datenbanksoftware dann selbständig ausführt um Daten aus dem Bestand zu liefern oder zu manipulieren. Heute ist insbesondere die Open-Source-Datenbanksoftware MySQL sehr weit im Internet verbreitet.
