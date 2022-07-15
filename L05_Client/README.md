@@ -131,11 +131,13 @@ Ein Objekt vom Typ `URLSearchParams` lässt sich fast genauso verwenden wie eine
 
 ## Cocktailbar: Bestellung versenden
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L05_V1_ActivityDiagram.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L05_V1_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  
+<div align="center">
+<video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L05_V1_ActivityDiagram.mp4" type="video/mp4"></video>
 <a href="Material/CocktailBar_UI-Scribble.jpg"><img src="Material/CocktailBar_UI-Scribble.jpg" width="25%"/></a>
+  <br/>
+<a href="http://games.hs-furtwangen.de/EIA2_Video/L05_V1_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L05 Client: Anwendungsfalldiagramm</a>
 </div>
+
 
 ## Implementation I
 
