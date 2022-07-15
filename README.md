@@ -52,7 +52,7 @@
 <hr/>
 
 ### [L04_DataStructures](L04_DataStructures)
-<small style="float: right; position: relative; top: -30px; height: 0px">>Woche 5 | 5:45 | 7:30</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 5 | 5:45 | 7:30</small>
 - Separation Of Concerns
 - Trennung von Struktur und Inhalt
 - Algorithmen und Datenstrukturen
@@ -64,7 +64,7 @@
 <hr/>
 
 ### [L05_Client](L05_Client)
-<small style="float: right; position: relative; top: -30px; height: 0px">>Woche 6 | 4:45 | 1:45</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 6 | 4:45 | 1:45</small>
 - Synchrone und asynchrone Kommunikation
 - Forms
 - XmlHttpRequest-Events
@@ -77,7 +77,7 @@
 <hr/>
 
 ### [L06_DatabaseServer](L06_DatabaseServer)
-<small style="float: right; position: relative; top: -30px; height: 0px">>Woche 7 | 6:15 | 1:30</small>
+<small style="float: right; position: relative; top: -30px; height: 0px">Woche 7 | 6:15 | 1:30</small>
 - Relationale Datenbanken
 - NoSQL-Datenbanken
 - MongoDB
