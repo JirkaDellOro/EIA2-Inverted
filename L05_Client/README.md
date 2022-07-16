@@ -129,7 +129,7 @@ Ein Objekt vom Typ `URLSearchParams` lässt sich fast genauso verwenden wie eine
 
 > **Zusatzinfo**: `fetch` akzeptiert neben dem URL noch einen zweiten Parameter, ein `RequestInit`-Objekt. Damit lassen sich noch viele weitere zusätzliche Steuerinformationen für die Kommunikation angeben und auch sehr einfach die Post-Methode für die Datenübertragung verwenden. Auch kann dabei das FormData-Objekt direkt genutzt werden. 
 
-## Cocktailbar: Bestellung versenden
+# Cocktailbar: Bestellung versenden
 
 <div align="center">
 <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L05_V1_ActivityDiagram.mp4" type="video/mp4"></video>
