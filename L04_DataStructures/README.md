@@ -15,12 +15,12 @@ Der CSS-Teil der Cocktailbar beeinflusst nur die visuelle Gestaltung und fügt k
 
 ## Trennung von Struktur und Inhalt
 In SelfHTML ist beschrieben, dass das HTML-Dokument Struktur und Inhalt bereit stellen soll. Das passt auch recht gut für statische Seiten, bei denen die Inhalte sich nie wesentlich ändern werden. Schon der Blackmailer Companion war aber ein gutes Gegenbeispiel. Der wesentliche Inhalt entsteht dort erst durch die Interaktion mit dem Nutzer und weder kann noch sollte er in der HTML-Datei statisch festgelegt sein. Diese legt nur die grobe Struktur fest. Richtig bleibt aber, dass das, was mit Hilfe der HTML-Datei entsteht, nämlich das DOM, weiterhin Struktur und Inhalt bereitstellt, selbst aber dynamisch ist und vom Skript manipuliert wird.  
-Die Vereinigung von Struktur und Inhalt bei der Cocktailbar ist problematisch, denn das Angebot der Bar und die Preise können sich ändern. Und gehen wir davon aus, dass der Barkeeper nicht selbst unter den Entwicklern der Online-Cocktailbar ist, stellt sich die Frage, wie das geänderte Angebot nun in die App findet. Soll der Betreiber selbst im HTML-Code herumfuhrwerken? Und riskieren, dass die ganze App nicht mehr funktioniert, weil er einen Tippfehler bei einem Attribut hat? Diese Option darf ausgeschlossen werden.  
+Die Vereinigung von Struktur und Inhalt bei der Cocktailbar ist problematisch, denn das Angebot der Bar und die Preise können sich ändern. Und gehen wir davon aus, dass das Barkeeperi nicht selbst unter den Entwickleris der Online-Cocktailbar ist, stellt sich die Frage, wie das geänderte Angebot nun in die App findet. Soll das Betreiberi selbst im HTML-Code herumfuhrwerken? Und riskieren, dass die ganze App nicht mehr funktioniert, weil es einen Tippfehler bei einem Attribut hat? Diese Option darf ausgeschlossen werden.  
 Das heißt, die bisherige Trennung der Zuständigkeiten muss um die Trennung des Inhaltes von Struktur, Verhalten und Gestaltung erweitert werden, sodass der Inhalt verändert werden kann, ohne Änderungen an den anderen Zuständigkeiten vornehmen zu müssen oder versehentlich zu vorzunehmen.  
 
 ## Erweiterung des Anwendungsfalldiagramms
 Zwei Dinge sind aus Obigem zu folgern:
-- es gibt einen weiteren Akteur, den Barkeeper
+- es gibt einen weiteren Akteur, das Barkeeperi
 - ihm muss eine Möglichkeit zur Verfügung gestellt werden das Angebot anzupassen ohne in die eigentliche Applikation einzugreifen  
 
 <div align="center"><video controls width="30%"> 
@@ -41,7 +41,7 @@ Die Konzeption der Algorithmen und Datenstrukturen stellt also die Grundlage fü
 Die getrennte Betrachtung führt zu guten Datenstrukturen, die auch von noch nicht geplanten Algorithmen für andere Zwecke verarbeitet werden können, und zu Algorithmen, die wiederum noch nicht bekannte Daten verarbeiten können.  
 
 # Cocktailbar: Datenstruktur
-Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und lässt den Barkeeper außen vor. Es ist also wünschenswert, dass die Seite im Prinzip so bleibt, aber nicht von einer statischen HTML-Datei abgeleitet wird sondern dynamisch auf der Grundlage von Daten erzeugt wird, die der Barkeeper selbst pflegen kann. Eine einfache Möglichkeit ist, ihm eine spezielle und simpel strukturierte Textdatei an die Hand zu geben, in welche er nach einem übersichtlichen Muster seine Daten eintragen kann. Er soll also nicht mit einem Chaos konfrontiert werden, das Genialität fordert, sondern mit Ordnung.
+Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und lässt das Barkeeperi außen vor. Es ist also wünschenswert, dass die Seite im Prinzip so bleibt, aber nicht von einer statischen HTML-Datei abgeleitet wird sondern dynamisch auf der Grundlage von Daten erzeugt wird, die das Barkeeperi selbst pflegen kann. Eine einfache Möglichkeit ist, ihm eine spezielle und simpel strukturierte Textdatei an die Hand zu geben, in welche es nach einem übersichtlichen Muster seine Daten eintragen kann. Es soll also nicht mit einem Chaos konfrontiert werden, das Genialität fordert, sondern mit Ordnung.
 
 <div align="center">
   <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V2_Datenstruktur.mp4" type="video/mp4"></video>
@@ -79,11 +79,11 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 
 ## Refactoring
 ### Erfahrungen einfließen lassen  
-> - [x] Reflektiere die Korrekturen, die sich bei der ersten Implementation ergeben haben, im Konzept. Konzipiere auch Fehlerhinweise, so dass der Barkeeper einen Tipp bekommt, wenn aufgrund einer Fehleingabe seinerseits etwas nicht funktioniert.
+> - [x] Reflektiere die Korrekturen, die sich bei der ersten Implementation ergeben haben, im Konzept. Konzipiere auch Fehlerhinweise, so dass das Barkeeperi einen Tipp bekommt, wenn aufgrund einer Fehleingabe etwas nicht funktioniert.
 
 ### Vervollständigen  
 > - [x] Überarbeite und vervollständige die Implementierung entsprechend der verbesserten Konzeption. Passe auch die zu verwendenden Elementtypen und ggf. das Stylesheet an.
-> - [x] Lagere die Interfaces in eine eigene Datei aus, so dass der Barkeeper nicht versehentlich daran manipuliert.  
+> - [x] Lagere die Interfaces in eine eigene Datei aus, so dass das Barkeeperi nicht versehentlich daran manipuliert.  
 
 ### Separation of Concerns
 Betrachtet man nun den Code in der HTML-Datei, dem Skript und der Datendatei fällt auf, dass die Kategorien des Angebots der Cocktailbar überall auftauchen und nicht nur für die Bezeichnung, sondern auch für die Steuerung des Programms verwendet werden. Das widerspricht dem SoC-Prinzip!
@@ -91,7 +91,7 @@ Betrachtet man nun den Code in der HTML-Datei, dem Skript und der Datendatei fä
 
 
 ## JSON (Javascript Object Notation)
-Natürlich ist diese Lösung noch nicht unbedingt der Weisheit letzter Schluss um das Angebot für den Barkeeper wartbar zu machen. Aufgrund der Angabe des `namespace`s und der Deklaration sowie dem Zuweisungsoperator `let data: Data = ` handelt es sich bei der Datei "Data.*" immer noch um eine Skript-Datei und der Barkeeper kann bei falscher Handhabung leicht das Programm unbrauchbar machen. Ohne diese Angaben würde es sich aber bereits um eine valide JSON-Datei handeln und in den nächsten Lektionen wird erklärt, wie man damit umgeht und wie man reines JSON tatsächlich als Daten- und Datentransferformat nutzt.  
+Natürlich ist diese Lösung noch nicht unbedingt der Weisheit letzter Schluss um das Angebot für das Barkeeperi wartbar zu machen. Aufgrund der Angabe des `namespace`s und der Deklaration sowie dem Zuweisungsoperator `let data: Data = ` handelt es sich bei der Datei "Data.*" immer noch um eine Skript-Datei und das Barkeeperi kann bei falscher Handhabung leicht das Programm unbrauchbar machen. Ohne diese Angaben würde es sich aber bereits um eine valide JSON-Datei handeln und in den nächsten Lektionen wird erklärt, wie man damit umgeht und wie man reines JSON tatsächlich als Daten- und Datentransferformat nutzt.  
 JSON wird heute interessanterweise auch intensiv außerhalb der Javascript-Welt in gänzlich andersartigen Anwendungen eingesetzt. Es konnte sich mittlerweile als Konkurrent zu **XML (Extensible Markup Language)**, dessen Struktur auch HTML folgt, etablieren und bezüglich des öffentlichen Interesses, sofern man das auf Google Trends ermitteln kann, XML seit dem Frühjahr 2016 hinter sich lassen.  
 
 <img src="Material/XMLvsJSON.png">  

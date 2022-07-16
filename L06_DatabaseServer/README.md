@@ -4,13 +4,13 @@
 
 Ein reiner Fileserver wird natürlich den Ansprüchen nicht gerecht, welche die Cocktailbar an die Gegenseite der Kommunikation stellt. Die Bestellung kommt zwar an, aber die Serversoftware ist nicht darauf programmiert, damit etwas anzufangen. Der Query-String wird schlicht ignoriert. Was genau damit geschehen soll, wurde allerdings auch noch gar nicht definiert. Im vorangegangenen Kapitel wurde lediglich festgehalten, dass der Server die Bestellung entgegen nehmen soll.  
 
-Nun müssen wir davon ausgehen, dass der Barkeeper nicht im Keller eines Rechenzentrums sitzt und wartet, bis auf irgendeinem Monitor ein Fenster aufgeht und eine Bestellung anzeigt. Anders als an einer nicht-virtuellen Bar, kommunizieren Barkeeper und Kunde nun asynchron. Die Bestellungen müssen also gespeichert werden und zwar so, dass der Barkeeper darauf jederzeit von anderen Clients aus Zugriff hat. Damit brauchen wir als weiteres System einen Datenspeicher.
+Nun müssen wir davon ausgehen, dass das Barkeeperi nicht im Keller eines Rechenzentrums sitzt und wartet, bis auf irgendeinem Monitor ein Fenster aufgeht und eine Bestellung anzeigt. Anders als an einer nicht-virtuellen Bar, kommunizieren Barkeeperi und Kundi nun asynchron. Die Bestellungen müssen also gespeichert werden und zwar so, dass das Barkeeperi darauf jederzeit von anderen Clients aus Zugriff hat. Damit brauchen wir als weiteres System einen Datenspeicher.
 
 ## Use-Case-Diagramm
 
 ![](Material/UseCase.svg)
 
-Neben dem Datenspeicher wurde im Diagramm auch ein Client für den Barkeeper berücksichtigt. Spätestens jetzt wird klar, wie hilfreich Anwendungsfalldiagramme in frühen Stadien der Softwareentwicklung sind. 
+Neben dem Datenspeicher wurde im Diagramm auch ein Client für das Barkeeperi berücksichtigt. Spätestens jetzt wird klar, wie hilfreich Anwendungsfalldiagramme in frühen Stadien der Softwareentwicklung sind. 
 
 > - [x] Studiere intensiv das dargestellte Diagramm und erkläre was es darstellt.
 
@@ -107,7 +107,7 @@ Ein so erzeugter Query sieht in der Zeichenkettendarstellung nun beispielsweise 
 - [x] Übertrage den Code in die `sendOrder`-Funktion deiner Cocktailbar (oder hole dir den Code aus dem Anhang) und bringe ihn mit deiner eigenen Datenbank zum Laufen. Dazu musst Du dort die Collection "Orders" zuvor angelegt haben und im Code den URL auf deine Datenbank angeben.
 
 ## Angebot
-Das Angebot des Barkeepers liegt derzeit noch als statische Datei bei der Applikation. Entsprechend des Use-Case-Diagramms sollte es in einer Collection `offer` liegen. Dabei wäre es möglich, das komplette Angebot als ein einziges Dokument abzulegen, so wie es derzeit auch vorliegt. Allerdings wäre die Funktionalität einer Datenbank vielleicht besser genutzt, wenn man das Angebot auf mehrere Dokumente aufteilt. Diese könnten so aussehen:
+Das Angebot des Barkeeperis liegt derzeit noch als statische Datei bei der Applikation. Entsprechend des Use-Case-Diagramms sollte es in einer Collection `offer` liegen. Dabei wäre es möglich, das komplette Angebot als ein einziges Dokument abzulegen, so wie es derzeit auch vorliegt. Allerdings wäre die Funktionalität einer Datenbank vielleicht besser genutzt, wenn man das Angebot auf mehrere Dokumente aufteilt. Diese könnten so aussehen:
 ```typescript
 { Drink: [ { name: "Mojito", price: 25.00 }, { name: "Caipirinha", price: 30.00 }, ... ] }
 { Extras: [ { name: "Ice", price: 0.50 }, { name: "Lemon", price: 0.20}, ... ]}
@@ -124,7 +124,7 @@ Collection Extras
 { name: "Lemon", price: 0.20}
 ...
 ```
-Diese Collections könnte man auch in einer eigenen Datenbank, bei MingiDB also einem eigenen Ordner, für das Barkeeper-Angebot anlegen und damit strenger von den Bestellungen trennen.  
+Diese Collections könnte man auch in einer eigenen Datenbank, bei MingiDB also einem eigenen Ordner, für das Barkeeperi-Angebot anlegen und damit strenger von den Bestellungen trennen.  
 
 > **Achtung:** Wie also Informationen in Datenbanken strukturiert sein sollen, ist eine Designentscheidung, die Du treffen musst!
 
