@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>CocktailBar</title>
+	<link rel="stylesheet" href="CocktailBar.css" type="text/css" media="screen" />
+
+	<script src="GenerateContent.js" type="text/javascript" charset="utf-8"></script>
+	<script src="CocktailBar.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Cocktail Bar</h1>
+		<p>Choose a drink and the extras. Select the size of your cocktail. Verify your order on the right.</p>
+	</header>
+
+	<form id="orderForm" method="GET">
+		<div>
+			<h2>Choose here</h2>
+			<fieldset id="Drink">
+				<legend>Drink</legend>
+			</fieldset>
+			<fieldset id="Container">
+				<legend>Container</legend>
+			</fieldset>
+			<fieldset id="Extras">
+				<legend>Extras</legend>
+			</fieldset>
+			<fieldset>
+				<legend>Amount</legend>
+				<span id="slider">
+					<span>
+						0.1 L
+						<input type="range" name="Amount" id="amount" min="0.1" max="1.0" step="0.1" value="0.1">
+						1.0 L
+					</span>
+					<progress max="1.0" value="0.1" />
+				</span>
+			</fieldset>
+		</div>
+	</form>
+
+	<div>
+		<h2>Your order</h2>
+		<div id="order">
+			...
+		</div>
+		<button type="reset" form="orderForm">Reset</button>
+		<button type="button" form="orderForm">Order</button>
+	</div>
+
+</body>
+
+</html>

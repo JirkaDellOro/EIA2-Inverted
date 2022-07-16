@@ -28,7 +28,7 @@ namespace L06_CocktailBar {
     async function sendOrder(_event: Event): Promise<void> {
         console.log("Send order");
         let formData: FormData = new FormData(form);
-        let query: URLSearchParams = new URLSearchParams(<any>formData);
+        let query: URLSearchParams = new URLSearchParams(<URLSearchParams>formData);
         let response: Response = await fetch(url + "?" + query.toString());
         let responseText: string = await response.text();
         alert(responseText);
