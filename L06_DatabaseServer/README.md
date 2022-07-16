@@ -71,11 +71,43 @@ Das Skript dient gleichzeitig als Server, mit dem der Client kommuniziert. Norma
 - [x] experimentiere mit dem MingiDB-Client und deiner Datenbank.
 
 # Cocktailbar: Datenbankanbindung
+MingiDB kann also GET-Requests vom Client entgegen nehmen, den Query interpretieren und den Datenspeicher verwalten, darin Datensätze erzeugen (Create), lesen (Read), verändern (Update) und löschen (Delete). Diese vier Aktivitäten sind fundamental und werden kurz durch das Akronym `CRUD` zusammengefasst.  
 
+Wie MongoDB erwartet auch MingiDB die Daten im JSON-Format. Zudem wird im Query ein Kommando und die Angabe der Collection erwartet. Das bedeutet, dass er bearbeitet werden muss, bevor er abgeschickt wird.
 
+## Umwandlung
+Leider bieten weder FormData noch URLSearchParams Methoden zur Umwandlung der Formulardaten in das erforderliche JSON-Format. Der Algorithmus hierfür ist aber nicht sonderlich komplex.
+```typescript 
+interface FormDataJSON {
+  [key: string]: FormDataEntryValue | FormDataEntryValue[];
+}
 
-## Datenbankstruktur für die Cocktailbar
-Es bietet sich an, die Bestellungen in einer Collection namens `orders` abzulegen. Das Angebot des Barkeepers sollte in einer Collection `offer` liegen. Dabei wäre es möglich, das komplette Angebot als ein einziges Dokument abzulegen, so wie es derzeit auch vorliegt. Allerdings wäre die Funktionalität einer Datenbank vielleicht besser genutzt, wenn man das Angebot auf mehrere Dokumente aufteilt. Diese könnten so aussehen:
+let formData: FormData = new FormData(form);
+let json: FormDataJSON = {};
+
+for (let key of formData.keys())
+  if (!json[key]) {
+    let values: FormDataEntryValue[] = formData.getAll(key);
+    json[key] = values.length > 1 ? values : values[0];
+  }
+```
+- [x] Ergründe, was hier geschieht. Recherchiere nach den Typen und Anweisungen im Internet.
+
+## Query
+Es geht zunächst nur um die Bestellung, also ist nur das Kommando "insert" erforderlich. Die Collection heißt "Orders" und es wird davon ausgegangen, dass sie in der Datenbank bereits existiert. Mit Hilfe eines leeren URLSearchParams-Objekt kann der Query nun leicht erzeugt werden.
+```typescript
+let query: URLSearchParams = new URLSearchParams();
+query.set("command", "insert");
+query.set("collection", "Orders");
+query.set("data", JSON.stringify(json));
+```
+Ein so erzeugter Query sieht in der Zeichenkettendarstellung nun beispielsweise so aus:  
+`?command=insert&collection=Orders&data={"Drink":"Sex on the beach","Container":"Papercup","Extras":["Lemon","Orange"],"Amount":"0.4"}`
+
+- [x] Übertrage den Code in die `sendOrder`-Funktion deiner Cocktailbar (oder hole dir den Code aus dem Anhang) und bringe ihn mit deiner eigenen Datenbank zum Laufen. Dazu musst Du dort die Collection "Orders" zuvor angelegt haben und im Code den URL auf deine Datenbank angeben.
+
+## Angebot
+Das Angebot des Barkeepers liegt derzeit noch als statische Datei bei der Applikation. Entsprechend des Use-Case-Diagramms sollte es in einer Collection `offer` liegen. Dabei wäre es möglich, das komplette Angebot als ein einziges Dokument abzulegen, so wie es derzeit auch vorliegt. Allerdings wäre die Funktionalität einer Datenbank vielleicht besser genutzt, wenn man das Angebot auf mehrere Dokumente aufteilt. Diese könnten so aussehen:
 ```typescript
 { Drink: [ { name: "Mojito", price: 25.00 }, { name: "Caipirinha", price: 30.00 }, ... ] }
 { Extras: [ { name: "Ice", price: 0.50 }, { name: "Lemon", price: 0.20}, ... ]}
@@ -94,5 +126,5 @@ Collection Extras
 ```
 Diese Collections könnte man auch in einer eigenen Datenbank, bei MingiDB also einem eigenen Ordner, für das Barkeeper-Angebot anlegen und damit strenger von den Bestellungen trennen.  
 
-> **Achtung:** Wie also die Informationen in Datenbanken strukturiert sein sollen, ist eine Designentscheidung, die Du treffen musst!
+> **Achtung:** Wie also Informationen in Datenbanken strukturiert sein sollen, ist eine Designentscheidung, die Du treffen musst!
 

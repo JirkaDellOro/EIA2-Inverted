@@ -3,7 +3,7 @@ var L06_CocktailBarDBS;
 (function (L06_CocktailBarDBS) {
     window.addEventListener("load", handleLoad);
     let form;
-    let url = "https://webuser.hs-furtwangen.de/~del/Database/";
+    let url = "https://webuser.hs-furtwangen.de/<username>/<foldername>/";
     async function handleLoad(_event) {
         console.log("Init");
         let response = await fetch("Data.json");
@@ -22,16 +22,17 @@ var L06_CocktailBarDBS;
     async function sendOrder(_event) {
         console.log("Send order");
         let formData = new FormData(form);
-        let o = {};
+        let json = {};
         for (let key of formData.keys())
-            if (!o[key]) {
+            if (!json[key]) {
                 let values = formData.getAll(key);
-                o[key] = values.length > 1 ? values : values[0];
+                json[key] = values.length > 1 ? values : values[0];
             }
         let query = new URLSearchParams();
         query.set("command", "insert");
         query.set("collection", "Orders");
-        query.set("data", JSON.stringify(o));
+        query.set("data", JSON.stringify(json));
+        console.log(query.toString());
         let response = await fetch(url + "?" + query.toString());
         let responseText = await response.text();
         alert(responseText);

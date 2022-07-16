@@ -1,7 +1,11 @@
 namespace L06_CocktailBarDBS {
   window.addEventListener("load", handleLoad);
   let form: HTMLFormElement;
-  let url: string = "https://webuser.hs-furtwangen.de/~del/Database/";
+  let url: string = "https://webuser.hs-furtwangen.de/<username>/<foldername>/";
+
+  interface FormDataJSON {
+    [key: string]: FormDataEntryValue | FormDataEntryValue[];
+  }
 
   async function handleLoad(_event: Event): Promise<void> {
     console.log("Init");
@@ -28,18 +32,20 @@ namespace L06_CocktailBarDBS {
     console.log("Send order");
 
     let formData: FormData = new FormData(form);
-    let o: { [key: string]: FormDataEntryValue | FormDataEntryValue[] } = {};
+    let json: FormDataJSON = {};
     for (let key of formData.keys())
-      if (!o[key]) {
+      if (!json[key]) {
         let values: FormDataEntryValue[] = formData.getAll(key);
-        o[key] = values.length > 1 ? values : values[0];
+        json[key] = values.length > 1 ? values : values[0];
       }
 
     let query: URLSearchParams = new URLSearchParams();
     query.set("command", "insert");
     query.set("collection", "Orders");
-    query.set("data", JSON.stringify(o));
-    
+    query.set("data", JSON.stringify(json));
+
+    console.log(query.toString());
+
     let response: Response = await fetch(url + "?" + query.toString());
     let responseText: string = await response.text();
     alert(responseText);

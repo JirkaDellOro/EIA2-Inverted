@@ -74,7 +74,7 @@ Es gibt zudem noch ein paar standardisierte Elemente, welche dem Nutzeri Rückme
 - [x] Aktiviere das letzte Fieldset, es hat die `id` "fsOutput". 
 - [x] Aktiviere auch die letzten Codefragmente. Erkläre, wie die Ausgabeelemente angesteuert werden.  
 
-# Formulargesteuerte Anwendung  
+# Cocktailbar 
 
 <img src="Material/CocktailBar.png"/>
 
