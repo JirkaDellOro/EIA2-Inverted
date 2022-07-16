@@ -40,7 +40,7 @@ Die Konzeption der Algorithmen und Datenstrukturen stellt also die Grundlage fü
 
 Die getrennte Betrachtung führt zu guten Datenstrukturen, die auch von noch nicht geplanten Algorithmen für andere Zwecke verarbeitet werden können, und zu Algorithmen, die wiederum noch nicht bekannte Daten verarbeiten können.  
 
-## Datenstruktur für die Cocktailbar
+# Datenstruktur der Cocktailbar
 Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und lässt den Barkeeper außen vor. Es ist also wünschenswert, dass die Seite im Prinzip so bleibt, aber nicht von einer statischen HTML-Datei abgeleitet wird sondern dynamisch auf der Grundlage von Daten erzeugt wird, die der Barkeeper selbst pflegen kann. Eine einfache Möglichkeit ist, ihm eine spezielle und simpel strukturierte Textdatei an die Hand zu geben, in welche er nach einem übersichtlichen Muster seine Daten eintragen kann. Er soll also nicht mit einem Chaos konfrontiert werden, das Genialität fordert, sondern mit Ordnung.
 
 <div align="center">
