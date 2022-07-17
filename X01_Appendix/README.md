@@ -591,7 +591,7 @@ Damit werden direkt Bitmuster manipuliert. Siehe [MDN](https://developer.mozilla
 <p style="page-break-after:always;"></p>  
 
 # 5. Topology / Technology
-<img src="Landscape/EIA2Landscape2019.png" style="height:88%; width:88%;"/>
+<img src="Landscape/EIA2Landscape2022.png" style="height:88%; width:88%;"/>
 
 # 6. Ressources
 - Object Management Group. (2015, Mai). About the Unified Modeling Language Specification Version 2.5. Abgerufen 18. Januar 2020, von <https://www.omg.org/spec/UML/2.5>

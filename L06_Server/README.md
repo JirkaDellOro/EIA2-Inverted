@@ -134,7 +134,7 @@ Der Server auf dem Entwicklungsrechner funktioniert, nun gilt es, ihn in einem R
 Mittlerweile gibt es aber auch einen großen Markt für "Platform As A Service" (PaaS), bei dem sich der Nutzer nicht um die Infrastruktur kümmern muss, sondern diese einfach nutzen kann. Der Anbieter kümmert sich um deren Bereitstellung, Wartung, Skalierung und so weiter. Heroku ist eine solche PaaS, sie findet in diesem Modul Anwendung.  
 
 - [x] Schau' dir das [NewsWatch-Video](https://newswatchtv.com/2018/06/15/heroku-newswatch-review/) zu Heroku an.
-- [x] Versuche in der [EIA2-Landschaft](../X01_Appendix/Landscape/EIA2Landscape2019.svg) die Laufzeitumgebung für deinen Server auf deiner Entwicklungsmaschine und in der Cloud zu verorten.
+- [x] Versuche in der [EIA2-Landschaft](../X01_Appendix/Landscape/EIA2Landscape2022.svg) die Laufzeitumgebung für deinen Server auf deiner Entwicklungsmaschine und in der Cloud zu verorten.
 
 ### Installation
 - [x] Öffne die Seite www.heroku.com
