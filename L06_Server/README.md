@@ -9,7 +9,7 @@ Ein reiner Fileserver wird natürlich den Ansprüchen nicht gerecht, welche die 
 In diesem Kapitel soll daher zunächst die Grundlage für die Weiterverarbeitung geschaffen werden. Der Server soll eine asynchrone Kommunikation mit dem Client führen, Daten von diesem entgegen nehmen und eine Antwort erzeugen können, die über das einfache Ausliefern von statischen Dateiinhalten hinausgeht. Kurzum: ein Applikation-Server wird erstellt.
 
 ![](../L06_Server/Material/ClientServer.svg)  
-Der Anwendungsfall kann in obenstehendem, domänenübergreifenden Aktivitätsdiagramm dargestellt werden. Jedes beteiligte System, gegebenenfalls auch der Nutzer, wird dabei in einem eigenen Bereich, einer sogenannten Swimlane, also Schwimmbahn, dargestellt.
+Der Anwendungsfall kann in obenstehendem, domänenübergreifenden Aktivitätsdiagramm dargestellt werden. Jedes beteiligte System, gegebenenfalls auch das Nutzeri, wird dabei in einem eigenen Bereich, einer sogenannten Swimlane, also Schwimmbahn, dargestellt.
 
 ## Node.js
 Der Server wird voraussichtlich nicht in einem Browser laufen. Üblicherweise sind Server auf Maschinen installiert, die in einem Rechenzentrum in lebensfeindlicher Umgebung stehen und nicht mit der Interaktion mit Usern beschäftigt sind. Ein Browser, der doch vordringlich für die Mensch-Maschine-Kommunikation verantwortlich ist, wäre da nur hinderlich. Daher sind Server meist in niederen Sprachen wie C++, Java usw. programmiert und werden ggf. in ihrere Funktionalität mit Hilfe von Skriptsprachen wie Pearl, CGI oder PHP erweitert.  
@@ -131,7 +131,7 @@ Im Beispiel verschickt der Server lediglich die Antwort mit dem Inhalt "Was geht
 
 ## Heroku
 Der Server auf dem Entwicklungsrechner funktioniert, nun gilt es, ihn in einem Rechenzentrum unterzubringen, damit der Cocktailbar-Client auch von anderen Rechnern aus damit kommunizieren kann. Eine Möglichkeit ist es, einen realen oder virtuellen Rechner anzumieten, ihn selbst zu konfigurieren und die erforderliche Software darauf zu installieren etc. Das erfordert einiges an Spezialwissen und teilweise obliegt auch die Wartung, Erweiterung und Aktualisierung in der Verantwortung des Mieters.
-Mittlerweile gibt es aber auch einen großen Markt für "Platform As A Service" (PaaS), bei dem sich der Nutzer nicht um die Infrastruktur kümmern muss, sondern diese einfach nutzen kann. Der Anbieter kümmert sich um deren Bereitstellung, Wartung, Skalierung und so weiter. Heroku ist eine solche PaaS, sie findet in diesem Modul Anwendung.  
+Mittlerweile gibt es aber auch einen großen Markt für "Platform As A Service" (PaaS), bei dem sich das Nutzeri nicht um die Infrastruktur kümmern muss, sondern diese einfach nutzen kann. Der Anbieter kümmert sich um deren Bereitstellung, Wartung, Skalierung und so weiter. Heroku ist eine solche PaaS, sie findet in diesem Modul Anwendung.  
 
 - [x] Schau' dir das [NewsWatch-Video](https://newswatchtv.com/2018/06/15/heroku-newswatch-review/) zu Heroku an.
 - [x] Versuche in der [EIA2-Landschaft](../X01_Appendix/Landscape/EIA2Landscape2022.svg) die Laufzeitumgebung für deinen Server auf deiner Entwicklungsmaschine und in der Cloud zu verorten.

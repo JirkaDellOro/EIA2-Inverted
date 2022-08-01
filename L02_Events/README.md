@@ -23,7 +23,7 @@ Diese Knoten enthalten die Kernfunktionalität zur Bildung des Graphen und damit
 - [x] Wähle aus deinen eigenen vorangegangenen Arbeiten eine kleine Webseite aus und stelle deren DOM grafisch dar.
 
 ## Ereignisse
-Das DOM bietet aber auch ein System für die Interaktion mit dem Nutzer: das Eventsystem. Es stellt äußerst bequem Informationen zu Ereignissen innerhalb der Anwendung zur Verfügung, ohne dass Kenntnisse der Hardware erforderlich sind. Das Betriebssystem und der Browser werten diese Ereignisse bereits aus und bringen die Informationen darüber in eine allgemeine Form.
+Das DOM bietet aber auch ein System für die Interaktion mit dem Nutzeri: das Eventsystem. Es stellt äußerst bequem Informationen zu Ereignissen innerhalb der Anwendung zur Verfügung, ohne dass Kenntnisse der Hardware erforderlich sind. Das Betriebssystem und der Browser werten diese Ereignisse bereits aus und bringen die Informationen darüber in eine allgemeine Form.
 
 ### Event-Objekt
 Events sind spezielle Objekte, die Informationen über ein Ereignis
@@ -79,7 +79,7 @@ Hiermit wird das `window`-Objekt, welches dem Browsertab entspricht in dem die A
 > **Hinweis:** Um die Ausführung eines Scripts zu verzögern, steht mittlerweile auch das HTML-Attribut `defer` zur Verfügung. 
 
 ## Event-Phasen
-Nicht alle Ereignisse werden allen Objekten im System mitgeteilt. Es ist also nur sinnvoll dort Listener zu installieren, wo sie auch wirken können. Besonders interessant wird das Ganze bei Nutzerinteraktionen, die auf DOM-Objekten ausgeführt werden, wie beispielsweise der Klick auf einen Button. Solche Ereignisse werden nämlich in drei Phasen durch den DOM-Graphen durchgereicht.
+Nicht alle Ereignisse werden allen Objekten im System mitgeteilt. Es ist also nur sinnvoll dort Listener zu installieren, wo sie auch wirken können. Besonders interessant wird das Ganze bei Interaktionen, die auf DOM-Objekten ausgeführt werden, wie beispielsweise der Klick auf einen Button. Solche Ereignisse werden nämlich in drei Phasen durch den DOM-Graphen durchgereicht.
  
 ![](./Material/Event.svg) 
 
@@ -130,7 +130,7 @@ Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Über
 </div>
 
 ## Skizze: User Interface 
-Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Das wird schon einiges über die erforderliche darunterliegende Struktur verraten. Die Skizze versiehst Du schon mit den HTML-Auszeichnungen und Eigenschaften, die dir dabei sinnvoll erscheinen. Unterscheide dabei zwischen statischen und dynamischen Elementen und Eigenschaften. Für die Dynamik trägst Du hier schon ein, an welchen Elementen Listener installiert werden soll und welche Ereignisse dabei mit welchen Aktivitäten verknüpft werden. Prüfe, ob alle Interaktionsmöglichkeiten zur Realisierung der Anwendungsfälle gegeben sind.
+Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Das wird schon einiges über die erforderliche darunterliegende Struktur verraten. Die Skizze versiehst Du schon mit den HTML-Auszeichnungen und Eigenschaften, die dir sinnvoll erscheinen. Unterscheide dabei zwischen statischen und dynamischen Elementen und Eigenschaften. Für die Dynamik trägst Du hier schon ein, an welchen Elementen Listener installiert werden soll und welche Ereignisse dabei mit welchen Aktivitäten verknüpft werden. Prüfe, ob alle Interaktionsmöglichkeiten zur Realisierung der Anwendungsfälle gegeben sind.
 
 <div align="center">
   <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V2_UserInterface.mp4" type="video/mp4"></video>  
@@ -178,5 +178,5 @@ Bedenke, dass Du die Konzeption jederzeit verbessern kannst und solltest, wenn d
   - Plane dann Lösung 3 und implementiere sie.  
 - [x] Erweitere die Erpresserbrief-App so dass sie auch auf Smartphone anwendbar ist
   - In einem weiteren Bereich sollen alle zulässigen Buchstaben zur Auswahl bereit stehen, so dass man sie per Touch aktivieren kann
-  - Der aktuell ausgewählte Buchstabe soll in dieser Auswahl hervorgehoben erscheinen, so dass der Nutzer weiß, was er gewählt hat, bevor er den Brief ändert
+  - Der aktuell ausgewählte Buchstabe soll in dieser Auswahl hervorgehoben erscheinen, so dass das Nutzeri weiß, was es gewählt hat, bevor es den Brief ändert
 - Hinweis: recherchiere nach dem Pointer-Event
