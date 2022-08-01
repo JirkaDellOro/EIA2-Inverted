@@ -32,7 +32,7 @@ So klein diese Schleife auch erscheint, sie kann ein großes Problem darstellen.
 
 ### Asynchron
 ![](Material/Asynchron.svg)  
-Daher hat sich die asynchrone Kommunikation durchgesetzt. Die Kommunikationspartner setzen eine oder mehrere Anfragen ab, damit ist ihr Teil zunächst erledigt und sie können sich um andere Aufgaben kümmern. Irgendwann kommt ein Signal, dass eine Antwort auf eine der Anfragen vorliegt. Dieses dient als Startpunkt für einen neuen Prozess, bei dem zunächst die Antwort verarbeitet wird und gegebenenfalls weitere Anfragen verschickt werden.  
+Daher hat sich die asynchrone Kommunikation durchgesetzt. Die Kommunikationspartner setzen eine oder mehrere Anfragen ab, damit ist ihr Teil zunächst erledigt und sie können sich um andere Aufgaben kümmern. Wenn eine Antwort auf eine der Anfragen vorliegt, erhält das anfragende System ein Signal. Dieses dient als Startpunkt für einen neuen Prozess, bei dem zunächst die Antwort verarbeitet wird und gegebenenfalls weitere Anfragen verschickt werden.  
 
 - [x] Sammle Beispiele für asynchrone Kommunikation in deinem eigenen Alltag.
 - [x] Was sind die besonderen Herausforderungen bei der asynchronen Kommunikation?
