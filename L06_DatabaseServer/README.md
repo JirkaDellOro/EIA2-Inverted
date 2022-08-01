@@ -67,7 +67,8 @@ Das Skript dient gleichzeitig als Server, mit dem der Client kommuniziert. Norma
 
 ### Installation
 
-- [x] Hole dir nun MingiDB von <https://github.com/JirkaDellOro/MingiDB> und folge den Anweisung zur Installation und dem Tutorial. Nutze einen ftp-Client deiner Wahl um auf dem Webspace, den dir die Hochschule zur Verfügung gestellt hat, einen Ordner für eine Datenbank anzulegen und das MingiDB-File dort hineinzukopieren.
+- [x] Mache dich zunächst mit dem Webspace vertraut, den dir die Hochschule zur Verfügung gestellt hat, und mit einem der empfohlenen FTP-Clients. Siehe <https://howto.hs-furtwangen.de/webdata/>
+- [x] Hole dir nun MingiDB von <https://github.com/JirkaDellOro/MingiDB> und folge den Anweisung zur Installation und dem Tutorial. 
 - [x] experimentiere mit dem MingiDB-Client und deiner Datenbank.
 
 # Cocktailbar: Datenbankanbindung
