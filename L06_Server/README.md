@@ -1,4 +1,6 @@
 # L06_Server
+> **Achtung**: diese Lektion ist aktuell nicht Teil des Inverted Classrooms EIA2. In L06_DatabaseServer sind wesentliche Inhalte zusammengefasst und extrem simplifiziert.
+
 <img src="Material/ServerName.jpg">
 <small>Quelle: <a href="https://xkcd.com/910/">https://xkcd.com/910/</a></small>  
 

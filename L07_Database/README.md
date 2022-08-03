@@ -1,4 +1,7 @@
 # L07_Database
+
+> **Achtung**: diese Lektion ist aktuell nicht Teil des Inverted Classrooms EIA2. In L06_DatabaseServer sind wesentliche Inhalte zusammengefasst und extrem simplifiziert.
+
 <img src="Material/Dilbert.gif">
 <small>Quelle:<a href="https://dilbert.com/strip/1995-11-17">https://dilbert.com/strip/1995-11-17</a></small>  
 
