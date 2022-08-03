@@ -66,7 +66,7 @@ Database
 Das Skript dient gleichzeitig als Server, mit dem der Client kommuniziert. Normalerweise kann ein solcher Server frei programmiert werden und selbstständig Daten auch erzeugen, verändern und prüfen. Für diesen Kurs genügt es, dass er die Queries, die er vom Client erhält, nach einem festgelegten Schema interpretiert und damit die Daten verwaltet.
 
 ### Installation
-
+Github-Pages ist ein reiner Fileserver und Du hast keine Möglichkeit, mehr Funktionalität auf der Serverseite zu implementieren. Deine Datenbank muss von einem Service betrieben werden, der dir diese Möglichkeit bietet. Und Du brauchst einen freien Zugang dazu. Nutze jetzt deinen eigenen HFU-Webspace, hier können selbstgeschriebene Programme serverseitig ausgeführt werden. Diese und weitere Daten kannst Du dort mit Hilfe des File-Transfer-Protocol (ftp bzw. sftp) selbst verwalten, fast so wie mit deinem lokalen Dateisystem.
 - [x] Mache dich zunächst mit dem Webspace vertraut, den dir die Hochschule zur Verfügung gestellt hat, und mit einem der empfohlenen FTP-Clients. Siehe <https://howto.hs-furtwangen.de/webdata/>
 - [x] Hole dir nun MingiDB von <https://github.com/JirkaDellOro/MingiDB> und folge den Anweisung zur Installation und dem Tutorial. 
 - [x] experimentiere mit dem MingiDB-Client und deiner Datenbank.
