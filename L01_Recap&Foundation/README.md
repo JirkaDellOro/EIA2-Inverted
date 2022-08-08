@@ -7,10 +7,6 @@ In diesem Kapitel wiederholst und festigst Du einige Inhalte der Veranstaltung "
 Außerdem wirst Du die Aktivitätsdiagramme der "Unified Modelling Language" (UML2.5) kennen lernen, mit deren Hilfe Du im weiteren Verlauf der Veranstaltung Algorithmen beschreiben und konzipieren wirst.
 Darüber hinaus lernst Du mit Verfolgungstabellen (Trace Tables) und dem browserinternen Debugger umzugehen, welche wichtige Werkzeuge für die Fehlersuche während der Implementation deiner konzipierten Anwendungen sind.  
 
-<img src="Material/AdaLovelace.jpg" align="right"/>
-
-- **FunFact**: viele Quellen schreiben den ersten Algorithmus, der je für einen Computer konzipiert wurde, Lady Ada Lovelace (1815-1852) zu. Der zugehörige mechanische Computer, die "Analytical Engine", konnte zu dieser Zeit noch nicht funktionsfähig hergestellt werden. Adas Algorithmus aber funktionierte! Ihr zu Ehren wurde über ein Jahrhundert später eine populäre Programmiersprache "Ada" genannt.
-
 ## Rückblick
 Aus "Entwicklung interaktiver Anwendungen I" sind dir bekannt:
 - Grundlagen imperativer, prozeduraler Programmierung
