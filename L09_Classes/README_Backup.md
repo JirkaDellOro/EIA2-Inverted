@@ -86,7 +86,7 @@ Ein Objekt einer Klasse kann zudem die in der Klasse definierten Methoden nutzen
 ## Constructor
 Die Hausbau-Metapher führt dich gleich zu einem weiteren interessanten Aspekt. Der Architekt, also Du, macht zwar den Plan, gebaut wird ein Haus aber von einem Bauunternehmer. Im Englischen ist das der Constructor.  
 
-Auch bei der Instanzierung von Objekten kommt ein Constructor zum Einsatz, den Du im Deutschen wiederum Konstruktor nennen kannst. Er ist eine besondere Methode, die automatisch aufgerufen wird, wenn die Anweisung `new` ausgeführt wird und kümmert sich darum, dass das Objekt ordentlich gebaut wird. Ein Standardkonstruktor ist in Javascript immer dabei und tritt nicht in Erscheinung. Du kannst aber für jede Klasse einen eigenen Konstruktor definieren.   
+Auch bei der Instanzierung von Objekten kommt ein Constructor zum Einsatz, den Du im Deutschen wiederum Konstruktor nennen kannst. Er ist eine besondere Methode, die automatisch aufgerufen wird, wenn die Anweisung `new` ausgeführt wird und kümmert sich darum, dass das Objekt ordentlich gebaut wird. Ein Standardkonstruktor ist in JavaScript immer dabei und tritt nicht in Erscheinung. Du kannst aber für jede Klasse einen eigenen Konstruktor definieren.   
 
 Ein Konstruktor ist dann von Bedeutung, wenn weitere Informationen zum Bau des Objektes einfließen sollen oder währenddessen zwingend noch weitere Aktivitäten ausgeführt werden müssen. Bei einem Haus sollte der Constructor vielleicht wissen, welche Ziegel er nun tatsächlich auflegen soll, da diese Eigenschaft des Hauses variabel ist. Wird ein Hund konstruiert, soll vielleicht gleich die Gemeinde informiert werden, damit sie die Hundesteuer eintreiben kann.
 
@@ -172,7 +172,7 @@ Du weißt bereits, dass EventListeners erhalten und aktiv bleiben, auch wenn das
 
 ![](Material/Heartbeat.svg)
 
-In Javascript/TypeScript stehen dir folgende Optionen zur Realisierung solcher Zeitsignale zur Verfügung.  
+In JavaScript/TypeScript stehen dir folgende Optionen zur Realisierung solcher Zeitsignale zur Verfügung.  
 
 ### window.setTimeout (handler, time, args...)
 Die Anweisung bewirkt, dass die `handler`-Funktion nach Ablauf der mit `time` in Millisekunden angegebenen Zeit aufgerufen wird, gemessen ab dem Zeitpunkt des Anweisungsaufruf. Weitere Parameter (`args...`) können der Funktion dabei übergeben werden.

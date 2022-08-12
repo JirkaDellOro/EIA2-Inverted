@@ -56,10 +56,10 @@ Wenn das Programm seinen Dienst quittiert, tut es dies leise. Das Nutzeri hat ke
 Vielleicht ist der Fehler aber gar nicht so gravierend, dass das Programm beendet werden müsste. Oder das Nutzeri sollte darüber informiert werden, dass etwas schiefgelaufen ist, so dass es die Ursache prüfen kann. Im Beispiel könnte man natürlich einfach abfragen, ob die Eingabe gültig ist. Es gibt aber noch einen anderen Mechanismus, der auch mit noch unbekannten Fehlerquellen umgehen kann: **Exception-Handling!**
 
 ### Error-Objekt
-Javascript kann bei einem solchen Ausnahmefehler (Exception), der zum Absturz des Programms führt, automatisch ein Error-Objekt erzeugen. Ähnlich einem Event, das durch das DOM weitergereicht wird, kann dieses Objekt durch das Programm gereicht, eher sogar "geworfen" werden. Dieses Objekt enthält Informationen über das Problem, die ausgewertet werden können. Damit müssen also nicht alle Fehler präventiv vermieden werden, sondern sie können im Nachhinein behandelt werden.  
+JavaScript kann bei einem solchen Ausnahmefehler (Exception), der zum Absturz des Programms führt, automatisch ein Error-Objekt erzeugen. Ähnlich einem Event, das durch das DOM weitergereicht wird, kann dieses Objekt durch das Programm gereicht, eher sogar "geworfen" werden. Dieses Objekt enthält Informationen über das Problem, die ausgewertet werden können. Damit müssen also nicht alle Fehler präventiv vermieden werden, sondern sie können im Nachhinein behandelt werden.  
 
 ### `try`
-Um den Mechanismus zu nutzen wird zunächst der Code-Block eingegrenzt, der den zu behandelnden Fehler provozieren könnte. Dies geschieht, wie üblich, durch Einfassen in geschweifte Klammern, nun aber mit dem reservierten Wort `try` davor. Damit wird Javascript angewiesen, zu versuchen den Code im Block auszuführen und ein Error-Objekt zu werfen, wenn etwas schief geht.
+Um den Mechanismus zu nutzen wird zunächst der Code-Block eingegrenzt, der den zu behandelnden Fehler provozieren könnte. Dies geschieht, wie üblich, durch Einfassen in geschweifte Klammern, nun aber mit dem reservierten Wort `try` davor. Damit wird JavaScript angewiesen, zu versuchen den Code im Block auszuführen und ein Error-Objekt zu werfen, wenn etwas schief geht.
 
 ### `catch`
 An diesen Block muss sich nun direkt ein Block anschließen, der mit dem reservierten Wort `catch` versehen ist. Jetzt wird auch die Wurf-Analogie deutlich, denn hier wird das Error-Objekt aufgefangen und kann innerhalb des Blocks verarbeitet werden. Dazu wird nach der `catch`-Anweisung ein formaler Parameter deklariert, wie es auch bei Funktionen oder Methoden üblich ist. Allerdings kommt eine Eigenheit von TypeScript zum Tragen: wie bei der `for..in`- und der `for..of`-Loop ist keine Typ-Annotation erlaubt.
@@ -104,7 +104,7 @@ Es gibt zwei Perspektiven um die Ausnahmebehandlung im Aktivitätsdiagramm darzu
 Die "Innenansicht" zeigt den inneren Aufbau eines unterbrechbaren Bereiches und die Signale, die eine Ausnahmebehandlung erforderlich machen. Der Rahmen des Bereiches wird gestrichelt dargestellt, der Abfluss vom Signalempfang als gezackte Linie. Neben der gezackten Linie und dem Dreieck an einer Linie gibt es noch die Darstellung mit einem Blitzsymbol an der Linie.
 
 ## Funktions-Objekt
-Funktionen sind in Javascript, wie alles andere, Objekte. Sie können beispielsweise mit Hilfe von Variablen referenziert werden. Folgendes ist also möglich:
+Funktionen sind in JavaScript, wie alles andere, Objekte. Sie können beispielsweise mit Hilfe von Variablen referenziert werden. Folgendes ist also möglich:
 
 ```typescript
 function doSomething(_parameter: number): string {
@@ -141,7 +141,7 @@ Der Timeout-Funktion wird das anonyme Funktionsobjekt sofort übergeben und nach
 Für solche kleinen Funktionen ist diese Anonymität akzeptabel, grundsätzlich vermindern solche Konstrukte aber eher die Lesbarkeit und Wartbarkeit des Programms.
 
 ### Arrow-Functions
-Seit 2015 ist in Javascript eine weitere Schreibweise für Funktionen üblich, die etwas kryptischer aussieht, aber im Wesentlichen gleichbedeutend ist mit der dir bekannten und etwas intuitiveren Schreibweise mit `function`.
+Seit 2015 ist in JavaScript eine weitere Schreibweise für Funktionen üblich, die etwas kryptischer aussieht, aber im Wesentlichen gleichbedeutend ist mit der dir bekannten und etwas intuitiveren Schreibweise mit `function`.
 
 ```typescript
 let doSomething: Function = (_parameter: number): string => {
@@ -174,7 +174,7 @@ Eine wichtige Standardfunktionalität des DOM wurde in diesem Kurs bislang noch 
 ## Garbage Collection
 Wenn eine Variable ihren Gültigkeitsbereich verlässt, wird der von ihr belegte Speicher freigegeben und steht wieder für andere Informationen zur Vefügung. Bei Variablen, die auf Objekte verweisen, wird aber nur der Verweis gelöscht, das referenzierte Objekt dagegen bleibt im Speicher, denn es könnten noch andere Variablen darauf verweisen. Diese würden dann ins Leere deuten und Fehler erzeugen. Werden die Objekte allerdings nie gelöscht, wird der Speicher immer mehr zugemüllt und es kommt irgendwann zu einem Programmversagen.
 
-Bei einem Javascript-Programm wird der Speicher daher von einem Algorithmus, dem sogenannten "Garbage Collector" überwacht. Dieser durchforstet in unregelmäßgen Zeitabständen den Speicher, findet Objekte die nicht mehr gebraucht werden und löscht diese. In den meisten Fällen geschieht das völlig unmerklich, bei Animationen allerdings kann dieser Vorgang zu sichtbaren Störungen führen, wenn ein Bild einmal etwas länger stehen bleibt als andere. Durch Wiederverwendung von Objekten kann der Effekt minimiert werden.
+Bei einem JavaScript-Programm wird der Speicher daher von einem Algorithmus, dem sogenannten "Garbage Collector" überwacht. Dieser durchforstet in unregelmäßgen Zeitabständen den Speicher, findet Objekte die nicht mehr gebraucht werden und löscht diese. In den meisten Fällen geschieht das völlig unmerklich, bei Animationen allerdings kann dieser Vorgang zu sichtbaren Störungen führen, wenn ein Bild einmal etwas länger stehen bleibt als andere. Durch Wiederverwendung von Objekten kann der Effekt minimiert werden.
 
 ## Debugger in VSCode
 ### Node-Programme

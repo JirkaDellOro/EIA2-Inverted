@@ -34,11 +34,11 @@ NoSQL bzw. dokumentenorientierte Datenbanken adressieren dieses Problem. Die zu 
 Das No in NoSQL bedeutet "Not only", es gibt also auch Systeme, die mit SQL arbeiten können. Dokumentenorientierte Datenbanken sind eine Variante der NoSQL-Datenbanken, es gibt noch andere.
 
 ### MongoDB
-2009 wurde mit MongoDB eine NoSQL-Datenbanksoftware veröffentlicht, die Javascript als interne Verkehrssprache nutzt. Die Daten liegen im JSON-Format vor, Abfragen und Aggregationsfunktionen können direkt als Javascript-Anweisungen formuliert werden, außerdem können ganze Anweisungsfolgen zum Datenbanksystem geschickt und dort ausgeführt werden.  
+2009 wurde mit MongoDB eine NoSQL-Datenbanksoftware veröffentlicht, die JavaScript als interne Verkehrssprache nutzt. Die Daten liegen im JSON-Format vor, Abfragen und Aggregationsfunktionen können direkt als JavaScript-Anweisungen formuliert werden, außerdem können ganze Anweisungsfolgen zum Datenbanksystem geschickt und dort ausgeführt werden.  
 
 > **FunFact:** Der Name MongoDB leitet sich von *humongous* ab, womit die groteske Größe der Datenmengen gemeint ist, die mit dieser Software verwaltet werden können.
 
-Zusammen mit node.js, was es ermöglicht, Javascript außerhalb des Browsers zu nutzen, kann also die ganze Serverseite heute mit Javascript/TypeScript umgesetzt werden. Das Nachfolgeprojekt von node.js, deno, verarbeitet direkt TypeScript. Wenn auch die aktuellen Installationen im Internet noch von JavaScript, PHP und MySQL dominiert sind, bist Du mit Node.js, TypeScript und MongoDB sehr zukunftsträchtig aufgestellt.
+Zusammen mit node.js, was es ermöglicht, JavaScript außerhalb des Browsers zu nutzen, kann also die ganze Serverseite heute mit JavaScript/TypeScript umgesetzt werden. Das Nachfolgeprojekt von node.js, deno, verarbeitet direkt TypeScript. Wenn auch die aktuellen Installationen im Internet noch von JavaScript, PHP und MySQL dominiert sind, bist Du mit Node.js, TypeScript und MongoDB sehr zukunftsträchtig aufgestellt.
 
 Für die Konzeption ist es allerdings zunächst unerheblich, welche Systeme letztlich zum Einsatz kommen.
 

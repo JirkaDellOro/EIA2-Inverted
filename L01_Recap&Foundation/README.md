@@ -17,7 +17,7 @@ Aus "Entwicklung interaktiver Anwendungen I" sind dir bekannt:
 - Document Object Modell
   - Klassenhierarchie, welche die Vererbungsbeziehungen beschreibt und wie die Funktionalitäten der Elementtypen erweitert werden.
   - Objekthierarchie der Elemente und wie damit ein Dokument beschrieben und manipuliert werden kann (Parent-Child-Relation).
-- Standard Javascript Objects
+- Standard JavaScript Objects
     - Array
     - Math
     - ggf. weitere
@@ -25,7 +25,7 @@ Aus "Entwicklung interaktiver Anwendungen I" sind dir bekannt:
     - Window
     - Document
     - ggf. weitere
-- Globale Javascript Functions
+- Globale JavaScript Functions
     - parseInt(...)
     - parseFloat(...)
     - ggf. weitere
@@ -91,7 +91,7 @@ Typescript hat erkannt, dass `v` nun eine Zeichenkette darstellen soll, auch wen
 
 - [x] Definiere `v` mit dem Schlüsselwort `true`. Welcher Typ wird nun angezeigt? Was ist nun zusätzlich zu sehen? Und was geschieht, wenn Du das Programm laufen lässt? (sofern es überhaupt kompiliert wurde...prüfe  hierzu das entstandene js-File, es sollte identisch sein)
 
->**Achtung:** Du erkennst, dass Datentypen essentiell wichtig sind und die ganze Logik eines Programms verändern! Javascript geht allerdings sehr lax damit um und ändert, wenn man nicht sehr aufpasst, durchaus auch Datentypen während des Programmlaufs, weshalb hier viele Fehler passieren. TypeScript schafft Abhilfe...
+>**Achtung:** Du erkennst, dass Datentypen essentiell wichtig sind und die ganze Logik eines Programms verändern! JavaScript geht allerdings sehr lax damit um und ändert, wenn man nicht sehr aufpasst, durchaus auch Datentypen während des Programmlaufs, weshalb hier viele Fehler passieren. TypeScript schafft Abhilfe...
 
 So angenehm es auch ist, dass TypeScript die Typen aus dem Kontext inferieren kann und in der Folge auf Typfehler aufmerksam macht: noch besser ist es, sich bereits bei der Konzeption Gedanken um die gewünschten Datentypen zu machen und diese festzulegen!  
 Daher ist in diesem Kurs die **explizite Annotation** der Typen vorgeschrieben. Das bedeutet, dass bei der Deklaration der geforderte Typ durch Doppelpunkt getrennt hinter den Variablenbezeichner geschrieben werden muss. Eine vollständige Deklaration und Definition mit Typannotation folgt also diesem Muster:  
@@ -121,7 +121,7 @@ console.log(v);
 Neben den einfachen Datentypen wie `number`, `boolean` und `string` gibt es noch komplexe Datentypen. Diese kannst Du dir einfach vorstellen als Sammlungen von Informationen. Diese Informationen können von primitiven Typ, aber auch selbst wieder von komplexen Typ sein. Im zweiten Fall hast Du dann eine Sammlung von Sammlungen. Das kannst Du beliebig tief verschachteln.  
 Man kann dabei unterscheiden zwischen homogenen Datenstrukturen, bei denen die darin verwalteten Informationseinheiten alle vom gleichen Typ sind, und heterogenen, bei denen unterschiedliche Datentypen verwaltet werden. Eine weitere Unterscheidung wird getroffen aufgrund unterschiedlicher Art der Adressierung der Informationen. Diese kann über einen Index erfolgen, also eine Zahl, welche die Position der Information in einer Reihe angibt, oder einen Schlüssel, der mit der Information assoziiert ist und den Zugang darstellt. Meist ist dieser Schlüssel vom Typ `string`, es sind aber auch andere Typen möglich. Schließlich ist es noch möglich zwischen vordefinierten Schlüsseln und solchen, die zur Laufzeit des Programms erzeugt werden zu unterscheiden.
 ### Array
-Ein Array ist eine Datenstruktur, in der die enthaltenen Informationen, dann Elemente genannt, mit Indizes adressiert werden. In Javascript sind Arrays grundsätzlich heterogen. Ein Array kann mit den Anweisungen `[ ]` oder `new Array()` erzeugt werden. In die Klammern kann bereits bei der Erzeugung eine Liste von Elementen, durch Komma getrennt, angegeben sein.  
+Ein Array ist eine Datenstruktur, in der die enthaltenen Informationen, dann Elemente genannt, mit Indizes adressiert werden. In JavaScript sind Arrays grundsätzlich heterogen. Ein Array kann mit den Anweisungen `[ ]` oder `new Array()` erzeugt werden. In die Klammern kann bereits bei der Erzeugung eine Liste von Elementen, durch Komma getrennt, angegeben sein.  
 
 - [x] Schreibe in die Konsole `let a = [7, true, "Hallo"]`. Lasse dir `a` ausgeben und versuche mit der Syntax `a[index]` auf einzelne Elemente zuzugreifen, wobei Du `index` mit einer Zahl ersetzt. Was geschieht, wenn Du hier eine Zahl kleiner als 0 oder größer als 2 benutzt?
 - [x] Gib ein `a[4] = [101, 102]`. Was siehst Du nun, wenn Du dir das Array ausgeben lässt, was bei a[3] und a[4]?  
@@ -174,7 +174,7 @@ students.push({name: "Big Brain", matrikel: 123456, grades: {"EIA1": 1.3, "EIA2"
 >**Hinweis:** Mit Hilfe von Interfaces kannst Du also eigene komplexe Datentypen erschaffen. 
 
 - [x] Implementiere die Beispiel und experimentiere damit. 
-- [x] Schau dir den kompilierten Javascript-Code an und was von deinen Interfaces übrig bleibt. Überlege was dies mit dem Unterschied von Javascript und TypeScript zu tun hat.
+- [x] Schau dir den kompilierten JavaScript-Code an und was von deinen Interfaces übrig bleibt. Überlege was dies mit dem Unterschied von JavaScript und TypeScript zu tun hat.
 
 ## Funktion
 Eine Funktion ist ein Stückchen Code innerhalb eines Programms, das ein eigenes kleines Programm darstellt, einen eigenen Namen hat, eingehende Daten verarbeiten und ausgehende Daten erzeugen kann. Eine solche Funktion kann dann von anderen Programmteilen genutzt werden, indem der Name zusammen mit den zu verarbeitenden Daten aufgerufen wird. Liefert die Funktion Daten zurück, können sie zum Beispiel einfach mit Hilfe des Zuweisungsoperators `=` einer Variablen zugewiesen werden und stehen damit zur Weiterverarbeitung zur Verfügung.  
@@ -187,7 +187,7 @@ Eine Funktion definierst Du mit Hilfe des Schlüsselwortes `function` gefolgt vo
 - [x] Experimentiere mit anderen Zahlen
 - [x] Erkläre, wie die Funktion `isDivisible` arbeitet. Nutze hierzu das Kapitel "Operatoren" im [EIA2-Booklet](../X01_Appendix)
 
-Diese Javascript-Funktion ist sehr unsicher, sie liefert zum Beispiel auch ein Ergebnis, wenn Du `isDivisible(false, true)` aufrufst, was aber keinen Sinn ergibt. Ordentlich, nach unseren Stilregeln und etwas ausführlicher in TypeScript geschrieben, sieht die Funktion so aus:  
+Diese JavaScript-Funktion ist sehr unsicher, sie liefert zum Beispiel auch ein Ergebnis, wenn Du `isDivisible(false, true)` aufrufst, was aber keinen Sinn ergibt. Ordentlich, nach unseren Stilregeln und etwas ausführlicher in TypeScript geschrieben, sieht die Funktion so aus:  
 
 ```typescript
   function isDivisible(_dividend: number, _divisor: number): boolean {
@@ -197,7 +197,7 @@ Diese Javascript-Funktion ist sehr unsicher, sie liefert zum Beispiel auch ein E
 ```  
 Hier hat jeder der Parameter eine Typnotation erhalten, TypeScript wird sich also beschweren, wenn die Funktion mit Werten von anderem Typ als `number` aufgerufen werden soll. Außerdem wird auch festgelegt, dass die Funktion einen Wahrheitswert zurück liefern soll, dazu wurde die Signatur um die Annotation `boolean` erweitert.
 
-> **Hinweis:** In anderen Programmiersprachen ist üblich, dass die Signatur als Ganzes eine Funktion identifiziert. Es kann also innerhalb eines Programms zwei Funktionen gleichen Namens geben, die ganz anderen Code beinhalten, solange sie sich durch ihre Parameterlisten unterscheiden. In Javascript/TypeScript ist das nicht so. Hier ist nur der Name entscheidend, er muss also eindeutig sein.
+> **Hinweis:** In anderen Programmiersprachen ist üblich, dass die Signatur als Ganzes eine Funktion identifiziert. Es kann also innerhalb eines Programms zwei Funktionen gleichen Namens geben, die ganz anderen Code beinhalten, solange sie sich durch ihre Parameterlisten unterscheiden. In JavaScript/TypeScript ist das nicht so. Hier ist nur der Name entscheidend, er muss also eindeutig sein.
 
 > **Achtung:** Die Anweisung `return` führt dazu, dass die Funktion an dieser Stelle verlassen wird. Meist steht daher das `return` am Ende einer Funktion. Man kann sich diese Mechanik aber auch zu Nutze machen, um unter bestimmten Bedingungen z.B. mit Hilfe einer if-Anweisung eine Funktion frühzeitig zu verlassen ("early out"). Das kann auch eine Funktion ohne Rückgabewerte sein, dann steht das `return` alleine.
 
@@ -205,7 +205,7 @@ Hier hat jeder der Parameter eine Typnotation erhalten, TypeScript wird sich als
 
 ## Objekt
 Ein Objekt ist ein assoziatives Array, dem Funktionen anhaften. Diese Funktionen können die Elemente des Arrays verändern, ohne dass ihnen Informationen zu dem Objekt mitgegeben werden müssen, denn sie sind ja ein Teil davon und haben Zugriff darauf. Um diese Funktionen von den üblichen zu unterscheiden werden sie Methoden genannt. Ein Objekt verfügt also über Methoden, mit der es sich, oder auch seine Umwelt, verändern kann. In den nächsten Lektionen wirst Du vordefinierte Objekte lediglich nutzen und erzeugen, später wirst Du lernen, wie Du ganz neue Objektstrukturen definieren kannst.  
-> **FunFact:** Tatsächlich ist alles in Javascript im Kern vom Typ Objekt. Selbst die primitiven Datentypen gaukeln nur ihre Primitivität vor, wodurch sie sich einsetzen lassen wie in 'klassischen' Programmiersprachen. 
+> **FunFact:** Tatsächlich ist alles in JavaScript im Kern vom Typ Objekt. Selbst die primitiven Datentypen gaukeln nur ihre Primitivität vor, wodurch sie sich einsetzen lassen wie in 'klassischen' Programmiersprachen. 
 
 ## Werte vs. Referenzen
 Ein wichtiger Unterschied zwischen primitiven und komplexen Datentypen ist die Art und Weise, wie Variablen mit ihren Werten verknüpft sind.  
@@ -231,7 +231,7 @@ Du hast nun schon ganz unterschiedliche Fehler kennen gelernt. Die korrekte Bene
 #### Runtime Error
 Tritt zur Laufzeit auf. Das ist ein hässlicher Fehlertyp, da er unter Umständen lange Zeit unentdeckt bleibt oder nur unter bestimmten Bedingungen reproduzierbar ist. Laufzeitfehler werden in der Browserkonsole angezeigt und müssen unbedingt beachtet werden, auch wenn das Programm weiterlaufen sollte.
 #### Compiletime Error
-Tritt auf, wenn das TypeScript-Programm in ein Javascript-Programm übersetzt wird. Von diesen Fehlern wirst Du zunächst weitestgehend verschont bleiben, sofern Du dein Projekt ordentlich anlegst. Dieser Fehlertyp wird in der Konsole des Compilers, in der Regel also im VSCode-Terminal angezeigt. 
+Tritt auf, wenn das TypeScript-Programm in ein JavaScript-Programm übersetzt wird. Von diesen Fehlern wirst Du zunächst weitestgehend verschont bleiben, sofern Du dein Projekt ordentlich anlegst. Dieser Fehlertyp wird in der Konsole des Compilers, in der Regel also im VSCode-Terminal angezeigt. 
 #### Designtime Error
 Das sind Fehler, die bereits angezeigt werden während Du den Code schreibst und zwar direkt im Code selbst. In VSCode werden hierzu rote Wellenlinien im Text und rote Kästchen am Rand angezeigt. Außerdem wird in der Console der "Problem"-Tab gefüllt. So kannst Du sofort reagieren und schnell experimentieren um den Fehler zu beheben. Außerdem werden beim Zeigen mit der Maus Fehlerbeschreibungen angezeigt und per QuickFix sogar Lösungen vorgeschlagen.
 #### Logical Error
@@ -240,7 +240,7 @@ Logikfehler sind nicht auf eine falsche Programmierung zurückzuführen, sondern
 ### Lösungsstrategien
 1. Schließe die "Klassiker" aus, an denen wir alle hängen bleiben, die da z.B. sind 
    - nicht kompiliert
-   - Script nicht in der HTML-Datei verlinkt oder eine TypeScript- statt einer Javascript-Datei verlinkt
+   - Script nicht in der HTML-Datei verlinkt oder eine TypeScript- statt einer JavaScript-Datei verlinkt
    - Klammern beim Funktionsaufruf vergessen oder bei der Funktionsreferenz geschrieben
    - falsche Datei getestet oder im falschen Ordner oder eine Kopie
 1. Setze einen Breakpoint an die Stelle im Programm an welcher der Fehler auftritt und starte es neu. Schaue dir die Werte der Variablen an, kurz bevor der Fehler auftritt. Hilft vor allem bei Runtime Errors.

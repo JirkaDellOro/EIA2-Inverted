@@ -1,5 +1,5 @@
 # Operatoren
-Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
+Eine Liste der wichtigsten Operatoren in TypeScript / JavaScript
 
 ## Zuweisungsoperator
 

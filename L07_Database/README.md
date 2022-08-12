@@ -19,7 +19,7 @@ NoSQL bzw. dokumentenorientierte Datenbanken adressieren dieses Problem. Die zu 
 Das No in NoSQL bedeutet "Not only", es gibt also auch Systeme, die mit SQL arbeiten können. Dokumentenorientierte Datenbanken sind eine Variante der NoSQL-Datenbanken, es gibt noch andere.
 
 ## MongoDB
-2009 wurde mit MongoDB eine NoSQL-Datenbanksoftware veröffentlicht, die Javascript als interne Verkehrssprache nutzt. Abfragen und Aggregationsfunktionen können direkt als Javascript-Anweisungen formuliert werden, außerdem können ganze Anweisungsfolgen zum Datenbanksystem geschickt und dort ausgeführt werden.  
+2009 wurde mit MongoDB eine NoSQL-Datenbanksoftware veröffentlicht, die JavaScript als interne Verkehrssprache nutzt. Abfragen und Aggregationsfunktionen können direkt als JavaScript-Anweisungen formuliert werden, außerdem können ganze Anweisungsfolgen zum Datenbanksystem geschickt und dort ausgeführt werden.  
 
 > **FunFact:** Der Name MongoDB leitet sich von *humongous* ab, womit die groteske Größe der Datenmengen gemeint ist, die mit dieser Software verwaltet werden können.
 
@@ -123,7 +123,7 @@ Wenn alles funktioniert, gibt MongoDB einige Meldungen im Terminal aus und unter
 - [x] Schaue nun den Inhalt des Datenbankordners an. MongoDB hat hier einige Informationen zur Verwaltung deiner Daten abgelegt.
 
 ## Mongo Shell
-Die eigentlichen Daten kann man so nicht einsehen, sie werden in einem effizienten Format gespeichert, das von Menschen nicht gut interpretiert werden kann. Um schnell und einfach von Hand die Datenbank einzusehen und zu manipulieren, bietet MongoDB einen eigenen Kommandozeileninterpreter an: die MongoShell. Dieser Client kann Javascript interpretieren, sich mit dem laufenden Datenbankserver verbinden, Anweisungen an diesen schicken und dessen Antworten ausgeben.  
+Die eigentlichen Daten kann man so nicht einsehen, sie werden in einem effizienten Format gespeichert, das von Menschen nicht gut interpretiert werden kann. Um schnell und einfach von Hand die Datenbank einzusehen und zu manipulieren, bietet MongoDB einen eigenen Kommandozeileninterpreter an: die MongoShell. Dieser Client kann JavaScript interpretieren, sich mit dem laufenden Datenbankserver verbinden, Anweisungen an diesen schicken und dessen Antworten ausgeben.  
 
 > **Hinweis:** Wenn bei den nächsten Übungen etwas nicht funktionieren sollte, poste sofort einen Issue. Bis eine Antwort kommt, kannst Du mit dem folgenden Video weiter machen...  
 
@@ -131,7 +131,7 @@ Die eigentlichen Daten kann man so nicht einsehen, sie werden in einem effizient
 - [x] Gib `show dbs` in der Shell ein, es sollten dir Infos zu den drei internen Datenbanken angezeigt werden.
 - [x] Lege mit `use Test` eine neue Datenbank mit Namen "Test" an. Die Shell bestätigt "switched to db Test". Test ist nun für die folgenden Befehle die Datenbank, mit der gearbeitet wird.
 - [x] Gib `show collections` ein. Da noch keine Collections in Test angelegt sind, sollte nichts ausgegeben werden. Tatsächlich wird auch `show dbs` noch nicht die Datenbank Test ausgeben, da diese noch leer ist.
-- [x] Gib ein `doc = {name: "...", firstname: "...", registration: "..."}` wobei Du `...` jeweils mit deinem Nachnamen, Vornamen und deiner Matrikelnummer ersetzt. Damit erzeugst Du eine Javascript-Variable namens `doc` und ein Objekt mit Informationen zu dir, auf welches die Variable verweist.
+- [x] Gib ein `doc = {name: "...", firstname: "...", registration: "..."}` wobei Du `...` jeweils mit deinem Nachnamen, Vornamen und deiner Matrikelnummer ersetzt. Damit erzeugst Du eine JavaScript-Variable namens `doc` und ein Objekt mit Informationen zu dir, auf welches die Variable verweist.
 - [x] Mit `db.Students.insert(doc)` fügst Du nun den mit `doc` referenzierten Datensatz in eine Collection namens "Students" in die aktuelle genutzte Datenbank, also in Test, ein.
 - [x] Lasse dir wieder den Überblick über die Datenbanken und über die Collections in der Datenbank Test ausgeben. Test und darin Students sollten nun angezeigt werden. 
 - [x] Den Inhalt der Collection lässt Du dir jetzt mit `db.Students.find()` anzeigen. Dein Datensatz sollte auftauchen, wobei dieser um einen Schlüssel "_id" mit einem zugehörigen Wert erweitert wurde. Jedes Dokument erhält nämlich automatisch eine eindeutige Identifikation. 

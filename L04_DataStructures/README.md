@@ -90,9 +90,9 @@ Betrachtet man nun den Code in der HTML-Datei, dem Skript und der Datendatei fä
 > - [x] Überarbeite die Konzeption der Cocktailbar derart, dass nicht in der HTML-Datei, im Skript und in der Datendatei alle Bezeichnungen für die Angebotskategorien auftauchen. Sie sollten nur in der Datendatei stecken. Hier muss dann auch die Information über die gewünschte Form der Interaktion für die jeweilige Kategorie untergebracht sein. Hierzu wird es sinnvoll sein, eine eigene Datenstruktur für die Kategorien zu erschaffen, in denen mehr Information steckt.  
 
 
-## JSON (Javascript Object Notation)
+## JSON (JavaScript Object Notation)
 Natürlich ist diese Lösung noch nicht unbedingt der Weisheit letzter Schluss um das Angebot für das Barkeeperi wartbar zu machen. Aufgrund der Angabe des `namespace`s und der Deklaration sowie dem Zuweisungsoperator `let data: Data = ` handelt es sich bei der Datei "Data.*" immer noch um eine Skript-Datei und das Barkeeperi kann bei falscher Handhabung leicht das Programm unbrauchbar machen. Ohne diese Angaben würde es sich aber bereits um eine valide JSON-Datei handeln und in den nächsten Lektionen wird erklärt, wie man damit umgeht und wie man reines JSON tatsächlich als Daten- und Datentransferformat nutzt.  
-JSON wird heute interessanterweise auch intensiv außerhalb der Javascript-Welt in gänzlich andersartigen Anwendungen eingesetzt. Es konnte sich mittlerweile als Konkurrent zu **XML (Extensible Markup Language)**, dessen Struktur auch HTML folgt, etablieren und bezüglich des öffentlichen Interesses, sofern man das auf Google Trends ermitteln kann, XML seit dem Frühjahr 2016 hinter sich lassen.  
+JSON wird heute interessanterweise auch intensiv außerhalb der JavaScript-Welt in gänzlich andersartigen Anwendungen eingesetzt. Es konnte sich mittlerweile als Konkurrent zu **XML (Extensible Markup Language)**, dessen Struktur auch HTML folgt, etablieren und bezüglich des öffentlichen Interesses, sofern man das auf Google Trends ermitteln kann, XML seit dem Frühjahr 2016 hinter sich lassen.  
 
 <img src="Material/XMLvsJSON.png">  
 

@@ -81,13 +81,13 @@ Learning how to write isn't just for people who grow up to become writers, math 
 
 ### Rückblick
 Im Modul "Entwicklung interaktiver Anwendungen I" (EIA1) wurdest Du zunächst an HTML und CSS heran geführt, um damit eine Grundlage für die weiteren Schritte zu schaffen. Denn als technische Plattform dienen in dieser Modulreihe Internetbrowser, da sie auf allen gängigen Geräten zur Verfügung stehen. 
-Darüber hinaus hast Du tiefergehende Kenntnisse im Umgang mit einer imperativen Programmiersprache erlangt und Aufgaben mit Hilfe einfacher, prozeduraler Algorithmen gelöst. Es wurde TypeScript verwendet, da - im Vergleich zu Javascript - einerseits die verwendeten Datenstrukturen sichtbar werden und andererseits automatische und umfassende Hilfestellung bei der Implementation gewährleistet wird. Auch erste Interaktionen konntest Du mit Hilfe der Ereignissteuerung umsetzen. Durch die Manipulation des "Document Object Model" (DOM) konntest Du die Reaktionen des Systems für Nutzeris planvoll sichtbar machen. Hierzu hast Du ein gutes Verständnis der DOM-Klassenhierarchie und des Laufzeitverhaltens erlangt.
+Darüber hinaus hast Du tiefergehende Kenntnisse im Umgang mit einer imperativen Programmiersprache erlangt und Aufgaben mit Hilfe einfacher, prozeduraler Algorithmen gelöst. Es wurde TypeScript verwendet, da - im Vergleich zu JavaScript - einerseits die verwendeten Datenstrukturen sichtbar werden und andererseits automatische und umfassende Hilfestellung bei der Implementation gewährleistet wird. Auch erste Interaktionen konntest Du mit Hilfe der Ereignissteuerung umsetzen. Durch die Manipulation des "Document Object Model" (DOM) konntest Du die Reaktionen des Systems für Nutzeris planvoll sichtbar machen. Hierzu hast Du ein gutes Verständnis der DOM-Klassenhierarchie und des Laufzeitverhaltens erlangt.
 
 ### Einblick
 Es ist erforderlich, dass sämtliche Inhalte des Moduls EIA1 verinnerlicht sind und angewendet werden können, insbesondere
 - Die Arbeit mit Github und Visual Studio Code
 - Die Informationsrepräsentation im binären und hexadezimalen System
-- Die grundlegenden in Javascript und TypeScript verwendeten Datentypen
+- Die grundlegenden in JavaScript und TypeScript verwendeten Datentypen
 - Einfache und assoziative Arrays
 - Die Sprachkonstrukte imperativer
 Programmiersprachen: Anweisungen, Operatoren, Kontrollstrukturen, Funktionen

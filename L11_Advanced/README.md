@@ -145,7 +145,7 @@ Nun wird beispielsweise bei der Anweisung `instance.value = 59;` automatisch die
 - [x] Die Vektorklasse verfügt bereits über eine Methode `set(...)`. Ist das ein "Setter"?
 
 ### `get`
-Das Pendant zu `set` ist natürlich `get`. Damit kann beispielsweise eine Eigenschaft gelesen werden, die gar nicht gespeichert ist, sondern erst berechnet wird, wenn jemand danach fragt. Ein Kandidat für einen sogenannten "Getter" könnte ein Attribut `length` der Vektorklasse sein. Die Länge eines Vektors lässt sich leicht mit dem Satz des Pythagoras berechnen, Javascripts `Math`-Objekt hält hierfür die Methode `hypot` bereit. Da die Elemente des Vektors sich ständig ändern, wäre es unnötiger Aufwand, bei jeder Änderung die Länge zu berechnen und zu speichern. Mit 
+Das Pendant zu `set` ist natürlich `get`. Damit kann beispielsweise eine Eigenschaft gelesen werden, die gar nicht gespeichert ist, sondern erst berechnet wird, wenn jemand danach fragt. Ein Kandidat für einen sogenannten "Getter" könnte ein Attribut `length` der Vektorklasse sein. Die Länge eines Vektors lässt sich leicht mit dem Satz des Pythagoras berechnen, JavaScripts `Math`-Objekt hält hierfür die Methode `hypot` bereit. Da die Elemente des Vektors sich ständig ändern, wäre es unnötiger Aufwand, bei jeder Änderung die Länge zu berechnen und zu speichern. Mit 
 
 ```typescript
 get length(): number {

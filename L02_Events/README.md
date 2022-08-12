@@ -12,7 +12,7 @@ Es wird deutlich, dass ein `html`-Element enstanden ist und darin ein `head`-Ele
 
 ### DOM-Manipulation
 Ein Skript kann das DOM manipulieren, darin Elemente verändern, hinzufügen oder löschen, der Browser kümmert sich automatisch um die Darstellung für den User. Das wurde im ersten Modul dieser Reihe bereits umfassend geübt und auch in der vorangegangenen Lektion wiederholt.
->**Achtung:** Die Begriffe Objekt, Element und Knoten können teilweise synonym verwendet werden, es ist aber Vorsicht geboten. 'Alles' in Javascript/TypeScript ist Objekt, auch etwas vom Typ `number` oder `string`, trotz der scheinbaren Primitivität. Ein Knoten (Node) ist ein Objekt mit speziellen Eigenschaften und Fähigkeiten, mit dem sich ein Graph aufbauen lässt. Ein Element wiederum ist ein spezieller Knoten, der Eigenschaften eines HTML-Elementes aufweist. Mit Element werden aber auch allgemein Einträge in Arrays bezeichnet. Der Kontext ist also entscheidend.
+>**Achtung:** Die Begriffe Objekt, Element und Knoten können teilweise synonym verwendet werden, es ist aber Vorsicht geboten. 'Alles' in JavaScript/TypeScript ist Objekt, auch etwas vom Typ `number` oder `string`, trotz der scheinbaren Primitivität. Ein Knoten (Node) ist ein Objekt mit speziellen Eigenschaften und Fähigkeiten, mit dem sich ein Graph aufbauen lässt. Ein Element wiederum ist ein spezieller Knoten, der Eigenschaften eines HTML-Elementes aufweist. Mit Element werden aber auch allgemein Einträge in Arrays bezeichnet. Der Kontext ist also entscheidend.
 - [x] Wiederhole hierzu die Inhalte des Schaubildes zur [DOM-Klassenhierarchie](../X01_Appendix\DO-Hierarchy\DOM-Classhierachy.svg)
 
 ### Baumstruktur
@@ -57,7 +57,7 @@ Damit das System weiß, bei welchem Ereignis welcher Handler aufgerufen werden s
 document.addEventListener("click", handleClick);
 ```
 Der erste Parameter ist lediglich die Zeichenkette, die den Typ des Ereignisses beschreibt, der zweite eine Referenz zum Handler. Erhält das document-Objekt nun ein Event-Objekt vom Typ "click", wird dieses an die Handler-Funktion `handleClick` weitergeschickt. Das `document`-Objekt horcht also jetzt in das System hinein, es wurde ihm hierfür ein "Ohr" installiert, ein sogenannter Listener.
->**Achtung:** Ein häufiger Fehler in Javascript ist, statt der Referenz einen Funktionsaufruf zu implementieren, z.B. mit `addEventListener("click", handleClick())`. Die zusätzliche Klammer bewirkt, dass die Funktion bereits bei der Installation aufgerufen wird und deren zurückgeliefertes Ergebnis als Handler-Referenz installiert wird.
+>**Achtung:** Ein häufiger Fehler in JavaScript ist, statt der Referenz einen Funktionsaufruf zu implementieren, z.B. mit `addEventListener("click", handleClick())`. Die zusätzliche Klammer bewirkt, dass die Funktion bereits bei der Installation aufgerufen wird und deren zurückgeliefertes Ergebnis als Handler-Referenz installiert wird.
 
 ### Beispiel
 Das Folgende dürfte das wohl primitivste Beispiel sein, dass wir mit dem Eventsystem darstellen können.

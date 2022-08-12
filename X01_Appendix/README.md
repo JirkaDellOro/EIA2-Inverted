@@ -529,7 +529,7 @@ https://github.com/excelmicro/typescript
 <p style="page-break-after:always;"></p>
 
 ## 3.2. Operatoren
-Eine Liste der wichtigsten Operatoren in TypeScript / Javascript
+Eine Liste der wichtigsten Operatoren in TypeScript / JavaScript
 
 ### 3.2.1. Zuweisungsoperator
 <table>

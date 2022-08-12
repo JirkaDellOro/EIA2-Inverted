@@ -59,7 +59,7 @@
 - Cocktailbar: Datenstruktur
 - Generierung des Formulars
 - Refactoring
-- JSON (Javascript Object Notation)
+- JSON (JavaScript Object Notation)
 <hr/>
 
 ### [L05_Client](L05_Client)
