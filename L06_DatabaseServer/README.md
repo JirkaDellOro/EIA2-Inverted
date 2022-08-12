@@ -48,7 +48,7 @@ Die Installation und Einrichtung einer Datenbank im Netz und die Entwicklung der
 > **Achtung:** MingiDB wurde ausschließlich zu Lehrzwecken und für Prototypen entwickelt und darf nicht darüber hinaus zum Einsatz kommen.
 
 ### Datenbank
-Eine MingiDB-Datenbank ist lediglich ein Ordner auf einem über das Internet erreichbaren Computer, der PHP verarbeiten kann, in dem die Datei `index.php` von MingiDB abgelegt ist. Das darin enthaltene PHP-Skript legt innerhalb des Ordner selbständig JSON-Dateien an, die als `collection` bezeichnet werden. Die einzelnen Einträge in einer `collection` werden `document` genannt und sind einfach unsere bekannten associativen Arrays im JSON-Format. Jeder Eintrag wird dabei von MingiDB automatisch mit einer eindeutigen Identifikation versehen, auch wenn die Inhalte ansonsten identisch sind.
+Eine MingiDB-Datenbank ist lediglich ein Ordner auf einem über das Internet erreichbaren Computer, der PHP verarbeiten kann, in dem die Datei `index.php` von MingiDB abgelegt ist. Das darin enthaltene PHP-Skript legt innerhalb des Ordner selbständig JSON-Dateien an, die als `collection` bezeichnet werden. Die einzelnen Einträge in einer `collection` werden `document` genannt und sind einfach unsere bekannten assoziativen Arrays im JSON-Format. Jeder Eintrag wird dabei von MingiDB automatisch mit einer eindeutigen Identifikation versehen, auch wenn die Inhalte ansonsten identisch sind.
 
 ```plaintext
 Database
