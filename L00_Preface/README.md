@@ -76,9 +76,6 @@ Learning how to write isn't just for people who grow up to become writers, math 
 <a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L00 Preface: Intro</a>
 </div>
 
-
-> **Hinweis:** die Themen zu verteilten Anwendungen (Client-Server-Datenbank) sind ersetzt durch einen Ausflug in ein Low-Code-Prototyping-Tool und inkludieren die Manipulation im Netz verfügbarer Daten durch die zu erschaffende Applikation.  
-
 ### Rückblick
 Im Modul "Entwicklung interaktiver Anwendungen I" (EIA1) wurdest Du zunächst an HTML und CSS heran geführt, um damit eine Grundlage für die weiteren Schritte zu schaffen. Denn als technische Plattform dienen in dieser Modulreihe Internetbrowser, da sie auf allen gängigen Geräten zur Verfügung stehen. 
 Darüber hinaus hast Du tiefergehende Kenntnisse im Umgang mit einer imperativen Programmiersprache erlangt und Aufgaben mit Hilfe einfacher, prozeduraler Algorithmen gelöst. Es wurde TypeScript verwendet, da - im Vergleich zu JavaScript - einerseits die verwendeten Datenstrukturen sichtbar werden und andererseits automatische und umfassende Hilfestellung bei der Implementation gewährleistet wird. Auch erste Interaktionen konntest Du mit Hilfe der Ereignissteuerung umsetzen. Durch die Manipulation des "Document Object Model" (DOM) konntest Du die Reaktionen des Systems für Nutzeris planvoll sichtbar machen. Hierzu hast Du ein gutes Verständnis der DOM-Klassenhierarchie und des Laufzeitverhaltens erlangt.
