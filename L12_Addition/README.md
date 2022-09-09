@@ -1,5 +1,3 @@
- <img width="700" height="700" src="https://www.oerbw.de/edu-sharing/eduservlet/render?node_id=<id>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></img>
-
 # L12_Addition
 
 <a href="https://www.youtube.com/watch?v=PK_yguLapgA"><img src="Material/Ariane5Failure.jpg"/></a>
