@@ -13,7 +13,7 @@ Es wird deutlich, dass ein `html`-Element enstanden ist und darin ein `head`-Ele
 ### DOM-Manipulation
 Ein Skript kann das DOM manipulieren, darin Elemente verändern, hinzufügen oder löschen, der Browser kümmert sich automatisch um die Darstellung für den User. Das wurde im ersten Modul dieser Reihe bereits umfassend geübt und auch in der vorangegangenen Lektion wiederholt.
 >**Achtung:** Die Begriffe Objekt, Element und Knoten können teilweise synonym verwendet werden, es ist aber Vorsicht geboten. 'Alles' in JavaScript/TypeScript ist Objekt, auch etwas vom Typ `number` oder `string`, trotz der scheinbaren Primitivität. Ein Knoten (Node) ist ein Objekt mit speziellen Eigenschaften und Fähigkeiten, mit dem sich ein Graph aufbauen lässt. Ein Element wiederum ist ein spezieller Knoten, der Eigenschaften eines HTML-Elementes aufweist. Mit Element werden aber auch allgemein Einträge in Arrays bezeichnet. Der Kontext ist also entscheidend.
-- [x] Wiederhole hierzu die Inhalte des Schaubildes zur [DOM-Klassenhierarchie](../X01_Appendix\DO-Hierarchy\DOM-Classhierachy.svg)
+- [x] Wiederhole hierzu die Inhalte des Schaubildes zur [DOM-Klassenhierarchie](https://jirkadelloro.github.io/EIA2-Inverted/X01_Appendix/DO-Hierarchy/DOM-Classhierachy.svg)
 
 ### Baumstruktur
 Das DOM lässt sich, wie auch z.B. die Aktivitätsdiagramme, als Graph mit Knoten, die mit Kanten verbunden sind, darstellen.
