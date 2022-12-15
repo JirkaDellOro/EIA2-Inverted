@@ -288,7 +288,7 @@ Mit dem Debugger kannst Du auf die Jagd nach Fehlern gehen. Da wir das Programm 
 Hier wird nun noch das Cows-Programm in ein Aktivitätsdiagramm überführt und dabei die wichtigsten Knoten und Kanten erklärt.  
 
 <div align="center">
-  <video controls width="30%"><source src="http://hdl.handle.net/10900.3/OER_GWJDCZNL" type="video/mp4"></video>
+  <a href="http://hdl.handle.net/10900.3/OER_GWJDCZNL"><img src="../X01_Appendix/Img/L01_V3_Bild.JPG" width="25%"/></a>
   <a href="Material/Cows_ActivityDiagram.jpg"><img src="Material/Cows_ActivityDiagram.jpg" width="25%"/></a>
   <br/>
   <a href="http://hdl.handle.net/10900.3/OER_GWJDCZNL"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L01 Foundation: Aktivitätsdiagramm</a>
