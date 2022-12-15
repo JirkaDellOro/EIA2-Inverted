@@ -265,7 +265,7 @@ Mit Hilfe einer Verfolgungstabelle kann man den Zustand eines Programms zu jeder
 
 
 <div align="center">
-  <video controls width="30%"><source src="http://hdl.handle.net/10900.3/OER_UXKQDJEI" type="video/mp4"/></video>  
+  <a href="http://hdl.handle.net/10900.3/OER_UXKQDJEI"><img src="../X01_Appendix/Img/L01_V1_Bild.jpg" width="25%"/></a>  
   <a href="Material/Cows_TraceTable.jpg"><img src="Material/Cows_TraceTable.jpg" width="25%"/></a>
   <br/>
   <a href="http://hdl.handle.net/10900.3/OER_UXKQDJEI"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L01 Foundation: Trace Table</a>
