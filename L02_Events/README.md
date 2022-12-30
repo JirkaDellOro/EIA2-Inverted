@@ -123,7 +123,7 @@ Erpresserbriefe zu basteln ist mühsam. So ist es doch eine interessante Geschä
 Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Überblick über die Anforderungen an deine Anwendung. Das geht ganz schnell und hilft ungemein bei der Konzeption.  
 
 <div align="center">
-   <a href="http://hdl.handle.net/10900.3/OER_CXSBWOS"><img src="../X01_Appendix/Img/L02_V1_Bild.JPG" width="25%"/></a>
+   <a href="http://hdl.handle.net/10900.3/OER_CXSBWOSW"><img src="../X01_Appendix/Img/L02_V1_Bild.JPG" width="25%"/></a>
   <a href="Material/BlackmailerCompanion_UseCaseDiagram.jpg"><img src="Material/BlackmailerCompanion_UseCaseDiagram.jpg" width="25%"/></a>
   <br/>
   <a href="http://hdl.handle.net/10900.3/OER_CXSBWOSW"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Anwendungsfalldiagram</a>
@@ -153,7 +153,7 @@ Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm
 Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implementation der Anwendung berücksichtigt zu haben, kannst Du dich daran machen.  
 
 <div align="center">
-  <a href="http://hdl.handle.net/10900.3/OER_UTUDZVWFA"><img src="../X01_Appendix/Img/L02_V4_Bild.JPG" width="25%"/></a>
+  <a href="http://hdl.handle.net/10900.3/OER_UTUDZVWF"><img src="../X01_Appendix/Img/L02_V4_Bild.JPG" width="25%"/></a>
   <a href="Material/BlackmailerCompanion_ActivityDiagram2.jpg"><img src="Material/BlackmailerCompanion_ActivityDiagram2.jpg" width="25%"/></a>
   <br/>
   <a href="http://hdl.handle.net/10900.3/OER_UTUDZVWF"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Aktivitätsdiagramm2</a>
