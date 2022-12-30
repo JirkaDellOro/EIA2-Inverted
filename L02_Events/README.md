@@ -123,49 +123,49 @@ Erpresserbriefe zu basteln ist mühsam. So ist es doch eine interessante Geschä
 Mit Hilfe des Anwendungsfalldiagramms machst Du dir zunächst einen groben Überblick über die Anforderungen an deine Anwendung. Das geht ganz schnell und hilft ungemein bei der Konzeption.  
 
 <div align="center">
-  <video controls width="30%"> <source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V1_UseCase.mp4" type="video/mp4"></video>
+   <a href="http://hdl.handle.net/10900.3/OER_CXSBWOS"><img src="../X01_Appendix/Img/L02_V1_Bild.JPG" width="25%"/></a>
   <a href="Material/BlackmailerCompanion_UseCaseDiagram.jpg"><img src="Material/BlackmailerCompanion_UseCaseDiagram.jpg" width="25%"/></a>
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V1_UseCase.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Anwendungsfalldiagram</a>
+  <a href="http://hdl.handle.net/10900.3/OER_CXSBWOSW"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Anwendungsfalldiagram</a>
 </div>
 
 ## Skizze: User Interface 
 Als Nächstes machst Du dir eine Skizze des Erscheinungsbildes der Anwendung. Das wird schon einiges über die erforderliche darunterliegende Struktur verraten. Die Skizze versiehst Du schon mit den HTML-Auszeichnungen und Eigenschaften, die dir sinnvoll erscheinen. Unterscheide dabei zwischen statischen und dynamischen Elementen und Eigenschaften. Für die Dynamik trägst Du hier schon ein, an welchen Elementen Listener installiert werden soll und welche Ereignisse dabei mit welchen Aktivitäten verknüpft werden. Prüfe, ob alle Interaktionsmöglichkeiten zur Realisierung der Anwendungsfälle gegeben sind.
 
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V2_UserInterface.mp4" type="video/mp4"></video>  
+  <a href="http://hdl.handle.net/10900.3/OER_BOIFLJAE"><img src="../X01_Appendix/Img/L02_V2_Bild.JPG" width="25%"/></a>  
   <a href="Material/BlackmailerCompanion_UI-Scribble.jpg"><img src="Material/BlackmailerCompanion_UI-Scribble.jpg" width="25%"/></a>
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V2_UserInterface.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: UI-Scribble</a>
+  <a href="http://hdl.handle.net/10900.3/OER_BOIFLJAE"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: UI-Scribble</a>
 </div>
 
 ## Aktivitätsdiagramme
 Jetzt hast Du bereits aus der Sicht des Nutzeris die wesentlichen Aktivitäten, die beteiligten Elemente und die auszuwerteten Ereignisse festgehalten. Nun wechselst Du auf die Sicht aus dem System heraus und legst fest, wie es arbeiten soll. Dazu nutzt Du jetzt Aktivitätsdiagramme. Ein Event bildet dabei jeweils als Signalempfang einen Startknoten für eine Aktivität.  
 Beginne dabei zunächst wieder mit einer Übersicht über die Aktivitäten. Nimm dir dann nacheinander die einzelnen Aktivitäten vor und verfeinere sie. Wiederhole diesen Prozess, bis Du zu den atomaren Aktionen gekommen bist die sich in Programmanweisungen umsetzen lassen. Am Anfang musst Du hierzu wahrscheinlich nach diesen Anweisungen noch etwas recherchieren.  
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V3_ActivityDiagram.mp4" type="video/mp4"></video>
+  <a href="http://hdl.handle.net/10900.3/OER_HFILWFPA"><img src="../X01_Appendix/Img/L02_V3_Bild.JPG" width="25%"/></a>
   <a href="Material/BlackmailerCompanion_ActivityDiagram.jpg"><img src="Material/BlackmailerCompanion_ActivityDiagram.jpg" width="25%"/></a>
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V3_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Aktivitätsdiagramm1</a>
+  <a href="http://hdl.handle.net/10900.3/OER_HFILWFPA"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Aktivitätsdiagramm1</a>
 </div>
 
 ## Implementation
 Wenn Du den Eindruck hast, mit deiner Konzeption alles für eine erste Implementation der Anwendung berücksichtigt zu haben, kannst Du dich daran machen.  
 
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V4_Implementierung_071019.mp4" type="video/mp4"></video>
+  <a href="http://hdl.handle.net/10900.3/OER_UTUDZVWFA"><img src="../X01_Appendix/Img/L02_V4_Bild.JPG" width="25%"/></a>
   <a href="Material/BlackmailerCompanion_ActivityDiagram2.jpg"><img src="Material/BlackmailerCompanion_ActivityDiagram2.jpg" width="25%"/></a>
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V4_Implementierung_071019.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Aktivitätsdiagramm2</a>
+  <a href="http://hdl.handle.net/10900.3/OER_UTUDZVWF"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Aktivitätsdiagramm2</a>
 </div>
 
 ## Testing
 Während der Implementation wird das Programm immer wieder getestet. Es ist wichtig möglichst so zu implementieren, dass nicht erst ein abschließender Test Fehler zu Tage fördert, sondern dass immer lauffähige Zwischenstände existieren, die entsprechend in das Code-Repository aufgenommen werden.  
 
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L02_V5_Testing.mp4" type="video/mp4"></video> 
+  <a href="http://hdl.handle.net/10900.3/OER_GUVDTCKB"><img src="../X01_Appendix/Img/L02_V5_Bild.JPG" width="25%"/></a> 
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L02_V5_Testing.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Testing</a>
+  <a href="http://hdl.handle.net/10900.3/OER_GUVDTCKB"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L02 Events: Testing</a>
 </div>
 
 ## Iterative Arbeitsweise
