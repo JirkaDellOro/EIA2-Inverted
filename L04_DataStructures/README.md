@@ -24,9 +24,9 @@ Zwei Dinge sind aus Obigem zu folgern:
 - ihm muss eine Möglichkeit zur Verfügung gestellt werden das Angebot anzupassen ohne in die eigentliche Applikation einzugreifen  
 
 <div align="center"><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V1_UseCase.mp4" type="video/mp4"> </video>
+  <a href="http://hdl.handle.net/10900.3/OER_GFOXPPRS"><img src="../X01_Appendix/Img/L04_V1_Bild.JPG" width="25%"/></a>
 <a href="Material\CocktailBar_UseCaseDiagram.jpg"><img src="Material\CocktailBar_UseCaseDiagram.jpg" width="25%"/></a><br/>
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V1_UseCase.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Use Case Diagram</a><br/>
+<a href="http://hdl.handle.net/10900.3/OER_GFOXPPRS"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Use Case Diagram</a><br/>
 </div>
 
 ## Algorithmen und Datenstrukturen
@@ -44,10 +44,10 @@ Die getrennte Betrachtung führt zu guten Datenstrukturen, die auch von noch nic
 Die Cocktailbar funktioniert ja recht gut, sie ist aber völlig unflexibel und lässt das Barkeeperi außen vor. Es ist also wünschenswert, dass die Seite im Prinzip so bleibt, aber nicht von einer statischen HTML-Datei abgeleitet wird sondern dynamisch auf der Grundlage von Daten erzeugt wird, die das Barkeeperi selbst pflegen kann. Eine einfache Möglichkeit ist, ihm eine spezielle und simpel strukturierte Textdatei an die Hand zu geben, in welche es nach einem übersichtlichen Muster seine Daten eintragen kann. Es soll also nicht mit einem Chaos konfrontiert werden, das Genialität fordert, sondern mit Ordnung.
 
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V2_Datenstruktur.mp4" type="video/mp4"></video>
+  <a href="http://hdl.handle.net/10900.3/OER_MRBDUWIR"><img src="../X01_Appendix/Img/L04_V2_Bild.JPG" width="25%"/></a>
 <a href="Material\CocktailBar_DataStructures.jpg"><img src="Material\CocktailBar_DataStructures.jpg" width="25%"/></a>
   <br/>
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V2_Datenstruktur.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Datenstruktur</a>
+<a href="http://hdl.handle.net/10900.3/OER_MRBDUWIR"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Datenstruktur</a>
 </div>
 
 ## Generierung des Formulars
@@ -55,8 +55,8 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 
 
 <div align="center">
-<video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V3_GenerierungFormular.mp4" type="video/mp4"></video>
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V3_GenerierungFormular.mp4"><br/><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Generierung des Formulars</a> <br/> 
+<a href="http://hdl.handle.net/10900.3/OER_RMJGXPFC"><img src="../X01_Appendix/Img/L04_V3_Bild.JPG" width="25%"/></a>
+<a href="http://hdl.handle.net/10900.3/OER_RMJGXPFC"><br/><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Generierung des Formulars</a> <br/> 
 <a href="Material\CocktailBar_UI-Scribble.jpg"><img src="Material\CocktailBar_UI-Scribble.jpg" width="25%"/></a>
 <a href="Material\CocktailBar_ActivityDiagram.jpg"><img src="Material\CocktailBar_ActivityDiagram.jpg" width="25%"/></a>
 <a href="Material\CocktailBar_ActivityDiagram_generateContent.jpg"><img src="Material\CocktailBar_ActivityDiagram_generateContent.jpg" width="25%"/></a>
@@ -67,14 +67,14 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 ## Implementation I
 
 <div align="center"><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V4_Implementation1.mp4" type="video/mp4"></video> <br/>
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V4_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Implementation 1</a>  
+  <a href="http://hdl.handle.net/10900.3/OER_DOUCTCEZ"><img src="../X01_Appendix/Img/L04_V4_Bild.JPG" width="25%"/></a>
+<a href="http://hdl.handle.net/10900.3/OER_DOUCTCEZ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Implementation 1</a>  
 </div>
 
 ## Implementation II
 <div align="center"><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L04_V5_Implementation2.mp4" type="video/mp4"></video> <br/>
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L04_V5_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L05 Implementation 2</a>  
+  <a href="http://hdl.handle.net/10900.3/OER_TPHTKHOI"><img src="../X01_Appendix/Img/L04_V5_Bild.JPG" width="25%"/></a>
+<a href="http://hdl.handle.net/10900.3/OER_TPHTKHOI"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L05 Implementation 2</a>  
 </div>
 
 ## Refactoring
