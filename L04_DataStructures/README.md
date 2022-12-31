@@ -23,7 +23,7 @@ Zwei Dinge sind aus Obigem zu folgern:
 - es gibt einen weiteren Akteur, das Barkeeperi
 - ihm muss eine Möglichkeit zur Verfügung gestellt werden das Angebot anzupassen ohne in die eigentliche Applikation einzugreifen  
 
-<div align="center"><video controls width="30%"> 
+<div align="center">
   <a href="http://hdl.handle.net/10900.3/OER_GFOXPPRS"><img src="../X01_Appendix/Img/L04_V1_Bild.JPG" width="25%"/></a>
 <a href="Material\CocktailBar_UseCaseDiagram.jpg"><img src="Material\CocktailBar_UseCaseDiagram.jpg" width="25%"/></a><br/>
 <a href="http://hdl.handle.net/10900.3/OER_GFOXPPRS"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Use Case Diagram</a><br/>
