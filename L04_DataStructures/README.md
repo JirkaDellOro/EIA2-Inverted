@@ -66,13 +66,13 @@ Nun ist die Datenstruktur definiert und wie das fertige Formular aussehen und fu
 
 ## Implementation I
 
-<div align="center"><video controls width="30%"> 
+<div align="center"> 
   <a href="http://hdl.handle.net/10900.3/OER_DOUCTCEZ"><img src="../X01_Appendix/Img/L04_V4_Bild.JPG" width="25%"/></a>
 <a href="http://hdl.handle.net/10900.3/OER_DOUCTCEZ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L04 Implementation 1</a>  
 </div>
 
 ## Implementation II
-<div align="center"><video controls width="30%"> 
+<div align="center">
   <a href="http://hdl.handle.net/10900.3/OER_TPHTKHOI"><img src="../X01_Appendix/Img/L04_V5_Bild.JPG" width="25%"/></a>
 <a href="http://hdl.handle.net/10900.3/OER_TPHTKHOI"><img src="../X01_Appendix/Img/video.jpg" width="3%"/>L05 Implementation 2</a>  
 </div>
