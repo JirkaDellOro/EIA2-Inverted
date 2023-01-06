@@ -200,51 +200,57 @@ Die Anweisungen `save()` und `restore()` speichern nicht nur die aktuelle Transf
 
 ## Scribble
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V1_Scribble.mp4" type="video/mp4"></video>  
-  <a href="Material\Alley_Scribble.jpg"><img src="Material\Alley_Scribble.jpg" width="25%"/></a>  
-  <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V1_Scribble.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Scribble</a>
+<a href="http://hdl.handle.net/10900.3/OER_SHBUHNLQ"><img src="../X01_Appendix/Img/L08_V1_Bild.JPG" width="25%"/></a>
+<a href="Material\Alley_Scribble.jpg"><img src="Material\Alley_Scribble.jpg" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_SHBUHNLQ"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L08 Canvas-Scribble</a>
 </div>
+
 
 
 ## Aktivitätsdiagramm
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V2_ActivityDiagram.mp4" type="video/mp4"></video>
-  <a href="Material\Alley_ActivityDiagram.jpg"><img src="Material\Alley_ActivityDiagram.jpg" width="25%"/></a>
-  <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V2_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Aktivitätsdiagramm</a>
+<a href="http://hdl.handle.net/10900.3/OER_BKILGHVL"><img src="../X01_Appendix/Img/L08_V2_Bild.JPG" width="25%"/></a>
+<a href="Material\Alley_ActivityDiagram.jpg"><img src="Material\Alley_ActivityDiagram.jpg" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_BKILGHVL"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L08 Canvas: Aktivitätsdiagramm</a>
 </div>
+
 
 
 ## Implementation des Hintergrund
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V3_Implementation1.mp4" type="video/mp4"></video>
-  <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V3_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Implementation I</a>
+<a href="http://hdl.handle.net/10900.3/OER_XQZRKOBR"><img src="../X01_Appendix/Img/L08_V3_Bild.JPG" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_XQZRKOBR"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L08 Canvas: Implementation I</a>
 </div>
+
 
 ## Implementation der Wolke
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V4_Implementation2.mp4" type="video/mp4"></video>
-  <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V4_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Implementation II</a>
+<a href="http://hdl.handle.net/10900.3/OER_YFYTDWCV"><img src="../X01_Appendix/Img/L08_V4_Bild.JPG" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_YFYTDWCV"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L08 Canvas: Implementation II</a>
 </div>
+
 
 ## Aktivitätsdiagramm zu den Bergen
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V5_ActivitydiagramMountains.mp4" type="video/mp4"></video>
-  <a href="Material\Alley_ActivityDiagram-Mountains.jpg"><img src="Material\Alley_ActivityDiagram-Mountains.jpg" width="25%"/></a>
-  <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V5_ActivitydiagramMountains.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Aktivitätsdiagramm Berge</a>
+<a href="http://hdl.handle.net/10900.3/OER_CMDSHKDM"><img src="../X01_Appendix/Img/L08_V5_Bild.JPG" width="25%"/></a>
+<a href="Material\Alley_ActivityDiagram-Mountains.jpg"><img src="Material\Alley_ActivityDiagram-Mountains.jpg" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_CMDSHKDM"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L08 Canvas: Aktivitätsdiagramm Berge</a>
 </div>
+
 
 
 ## Implementation der Berge
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L08_V6_ImplementationMountains.mp4" type="video/mp4"></video> 
-  <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L08_V6_ImplementationMountains.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L08 Canvas: Implementation Berge</a>
+<a href="http://hdl.handle.net/10900.3/OER_BARAOYLQ"><img src="../X01_Appendix/Img/L08_V6_Bild.JPG" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_BARAOYLQ"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L08 Canvas: Implementation Berge</a>
 </div>
+
 
 ## Übungen
 - [x] Isoliere die Funktionalität eine Zufallszahl zwischen einem minimalen und maximalen Wert zu liefern. Konzipiere sie als Aktivität und implementiere sie als Funktion, welche die beiden Grenzwerte entgegenen nimmt und eine entsprechende Zufallszahl zurück gibt. Ersetze die Stellen im Programm, an denen diese Funktion genutzt werden kann und sollte durch entsprechende Aufrufe derselben.
