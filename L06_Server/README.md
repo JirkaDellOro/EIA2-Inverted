@@ -49,10 +49,10 @@ Mit Tastendruck auf F5 alleine startest Du den Debugger mit der vollen Funktiona
 Node kommt mit einigen neuen Standardobjekten und Modulen, für EIA2 brauchst Du aber nur sehr wenige davon. Die Dokumentation findest Du im Netz auf <https://nodejs.org/de/docs/>.  
 Das Objekt `process` beispielsweise liefert Informationen zur Umgebung, in der ein Node-Programm gerade ausgeführt wird. 
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V1_API.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V1_API.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
+<div align="center">
+<a href="http://hdl.handle.net/10900.3/OER_JQPOXKYM"><img src="../X01_Appendix/Img/L06_V1_Bild.JPG" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_JQPOXKYM"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L06 Server-API</a>
 </div>
 
 - [x] Entwickle eine kleine Node-Anwendung mit Namen "Convert.js", die eine Zahl von einem Zahlensystem in ein anderes konvertiert. Beim Aufruf mit dem Terminal müssen drei Zahlen mit angegeben werden: die zu konvertierende Zahl, das Zahlensystem auf das sie sich bezieht und das Zahlensystem in das sie konvertiert werden soll. Die konvertierte Zahl soll ausgegeben werden. Die ganze Mathematik dahinter nimmt dir JavaScript vollständig ab, mit `parseInt(s, a)` wird eine Zeichenkette `s` als Zahl im Zahlensystem `a` interpretiert und als Dezimalzahl zurückgegeben, `n.toString(b)` liefert umgekehrt eine Zeichenkette, welche die Interpretation der Dezimalzahl im Zahlensystem `b` darstellt.  
@@ -79,12 +79,11 @@ export namespace ... {
 Auch die Standardmodule, die wahlweise importiert werden wie `http` und `url`, sind in der [Node-Dokumentation](https://nodejs.org/de/docs/) beschrieben.
 
 ## Design
-
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V2_Design.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V2_Design.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>  
+<div align="center">
+<a href="http://hdl.handle.net/10900.3/OER_MTHHQRVH"><img src="../X01_Appendix/Img/L06_V2_Bild.JPG" width="25%"/></a>
 <a href="Material/CocktailBar_ActivityDiagram-Server.jpg"><img src="Material/CocktailBar_ActivityDiagram-Server.jpg" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_MTHHQRVH"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L06 Server-Design</a>
 </div>
 
 ## Implementation 1
@@ -117,17 +116,19 @@ function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerRes
 Im Beispiel verschickt der Server lediglich die Antwort mit dem Inhalt "Was geht?". Der Header gibt an, dass die Antwort ein mit utf-8 kodierter Text ist, also z.b. kein Bild, und dass sie von jedem geöffnet werden darf. Auch hier bedeutet der Asterisk wieder "alles".
 
 ## Implementation 2
-
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V4_Implementation_Server2.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V4_Implementation_Server2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  
+<div align="center">
+<a href="http://hdl.handle.net/10900.3/OER_IMFEJXAR"><img src="../X01_Appendix/Img/L06_V4_Bild.JPG" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_IMFEJXAR"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L06 Server-Implementation2</a>
 </div>
+
 
 ### Client
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L06_V5_Implementation_Client.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L06_V5_Implementation_Client.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  
+<div align="center">
+<a href="http://hdl.handle.net/10900.3/OER_SXALZVPA"><img src="../X01_Appendix/Img/L06_V5_Bild.JPG" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_SXALZVPA"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L06 Server-Implementation Client</a>
 </div>
 
 
