@@ -173,18 +173,19 @@ orders.insert({...});
 
 ## Aktivitätsdiagram
 Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server aufgrund der ankommenden Requests und die Formulierung der Antworten konzipiert werden.
-
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L07_V2_ActivityDiagram.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V2_ActivityDiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>  
+<div align="center">
+<a href="http://hdl.handle.net/10900.3/OER_QIDQBGNQ"><img src="../X01_Appendix/Img/L07_V2_Bild.JPG" width="25%"/></a>
 <a href="Material\CocktailBar_ActivityDiagram-Server.jpg"><img src="Material\CocktailBar_ActivityDiagram-Server.jpg" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_QIDQBGNQ"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L07 Database-ActivityDiagram</a>
 </div>
 
-## Implementation
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L07_V3_Implementation.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V3_Implementation.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a></video></a>    
+## Implementation
+<div align="center">
+<a href="http://hdl.handle.net/10900.3/OER_VFBUPWUQ"><img src="../X01_Appendix/Img/L07_V3_Bild.JPG" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_VFBUPWUQ"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L07 Database-Implementation</a>
 </div>
 
 ## Test
@@ -193,11 +194,12 @@ Mit diesen Informationen kann nun die Steuerung der Datenbank durch den Server a
 - [x] Setze mit dem Client mehrere unterschiedliche Bestellungen ab und beobachte die Ausgaben im Serverfenster. 
 - [x] Frage mit der MongoShell die Collection "Orders" der Datenbank "Cocktail" ab um zu schauen, ob die Bestellungen eingetragen wurden.
 
-<div align="center"><a><video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L07_V4_Test.mp4" type="video/mp4"> 
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L07_V4_Test.mp4"><img src="../X01_Appendix/Img/video.jpg" width="25%"/></a>
-</video></a>    
+<div align="center">
+<a href="http://hdl.handle.net/10900.3/OER_IKOUJCMD"><img src="../X01_Appendix/Img/L07_V4_Bild.JPG" width="25%"/></a>
+<br/>
+<a href="http://hdl.handle.net/10900.3/OER_IKOUJCMD"><img src="../X01_Appendix/Img/video.jpg" width="2%"/>L07 Database-Test</a>
 </div>
+
 
 ## Online Service
 Die Datenbank auf dem Entwicklungsrechner ist natürlich nur zum Testen da, von Außen sollte niemand Zugriff darauf haben. Die Bestellungen sollen aber in einer Datenbank gespeichert werden, die ständig erreichbar ist. MongoDB bietet mit Atlas ein eigenes Serviceangebot hierfür.
