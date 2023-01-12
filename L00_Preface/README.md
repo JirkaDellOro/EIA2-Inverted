@@ -70,10 +70,10 @@ Learning how to write isn't just for people who grow up to become writers, math 
 </div>  
 
 ## Überblick 
-<div align="center"><video controls width="100%">
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4" type="video/mp4"/> 
-</video>
-<a href="http://games.hs-furtwangen.de/EIA2_Video/L00_Intro.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L00 Preface: Intro</a>
+<div align="center">
+  <a href="http://hdl.handle.net/10900.3/OER_XDVTECCQ"><img src="../X01_Appendix/Img/L00_Bild.jpg" width="25%"/></a>
+  </br>
+<a href="http://hdl.handle.net/10900.3/OER_XDVTECCQ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L00 Preface: Intro</a>
 </div>
 
 ### Rückblick
