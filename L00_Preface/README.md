@@ -72,7 +72,7 @@ Learning how to write isn't just for people who grow up to become writers, math 
 ## Überblick 
 <div align="center">
   <a href="http://hdl.handle.net/10900.3/OER_XDVTECCQ"><img src="../X01_Appendix/Img/L00_Bild.jpg" width="25%"/></a>
-  </br>
+  <br/>
 <a href="http://hdl.handle.net/10900.3/OER_XDVTECCQ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L00 Preface: Intro</a>
 </div>
 
