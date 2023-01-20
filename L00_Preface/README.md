@@ -29,7 +29,7 @@ Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und
 
 <details>
   <summary>
-    Ziele bezüglich fachlicher Kompetenzen laut Studiengangsbeschreibung MKB
+    Ziele bezüglich fachlicher und berufsfeldorientierter Kompetenzen laut Studiengangsbeschreibung MKB
   </summary>
   <ol>
 <li> Kenntnisse der Kommunikationstheorien, -Prozesse und Mediensysteme</li>
@@ -39,9 +39,11 @@ Die Vermittlung der Inhalte in diesem Modul ist bereits eine Problemstellung und
 <li> Weitreichende Kenntnisse der Technologie von Mediensystemen</li>
 <li> Kenntnisse des Selbstmanagements, Teambuildings und Projektmanagements</li>
 <li> Erwerb erster Praxiserfahrungen im Feld der Medienkonzeption</li>
+<li> Verantwortliche Tätigkeit in der Konzeption von Mediensystemen und medialen Kommunikationsinstrumenten im Umfeld von Agenturen, Unternehmen oder Institutionen</li>
+<li> Mitarbeit in bzw. Leitung von Konzeptionsteams und Schnittstelle zu Marketingstrategen, Entwicklern, Programmierern, Designern und Artworkern</li>
+<li> Schaffung der erforderlichen Grundlagen für eine spätere Existenzgründung in einem der oben beschriebenen Bereiche</li>
   </ol>
-  
-Alle diese Ziele werden in EIA2 adressiert, die Zeile 2 bis 5 und 7 im Besonderen. Um die erforderlichen weitreichenden und tiefergehenden Kenntnisse zu erlangen, ist sehr viel eigenverantwortliches Lernen und Üben über die Präsenzveranstaltungen hinaus nötig. Dabei kann und muss die EIA-Reihe lediglich ein unverzichtbares Verständnis einiger der wichtigsten Grundlagen erwirken, im Hauptstudium werden damit praxisnahe Anwendungen konzipiert und entwickelt und damit die Kompetenz weiter gesteigert.
+Alle diese Ziele werden in EIA2 adressiert. Um die erforderlichen weitreichenden und tiefergehenden Kenntnisse zu erlangen, ist sehr viel eigenverantwortliches Lernen und Üben über die Präsenzveranstaltungen hinaus nötig. Dabei kann und muss die EIA-Reihe lediglich ein unverzichtbares Verständnis einiger der wichtigsten Grundlagen erwirken, im Hauptstudium werden damit praxisnahe Anwendungen konzipiert und entwickelt und damit die Kompetenz weiter gesteigert.
 </details>
 
 <br/>
