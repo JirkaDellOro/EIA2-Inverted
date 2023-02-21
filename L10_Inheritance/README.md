@@ -52,20 +52,19 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
 
 ## Erweiterung des Klassendiagramms
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V1_Classdiagram.mp4" type="video/mp4"></video>
+  <a href="http://hdl.handle.net/10900.3/OER_QHHUCSHA"><img src="../X01_Appendix/Img/L10_V1_Bild.JPG" width="25%"/></a>
   <a href="Material/Asteroids_ClassDiagram.jpg"><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
   <a href="Material/Asteroids_ActivityDiagram-Moveable.jpg"><img src="Material/Asteroids_ActivityDiagram-Moveable.jpg" width="25%"></a>
   <a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V1_Classdiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L10 Inheritance: Klassendiagramm</a>
+  <a href="http://hdl.handle.net/10900.3/OER_QHHUCSHA"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L10 Inheritance: Klassendiagramm</a>
 </div>
 
 ## Implementation Moveable, Refaktorierung Asteroid   
 <div align="center">
-  <video controls width="30%"> 
-  <source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V2_Implementation1.mp4" type="video/mp4"></video>
+  <a href="http://hdl.handle.net/10900.3/OER_PJXZSGZX"><img src="../X01_Appendix/Img/L10_V2_Bild.JPG" width="25%"/></a>
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V2_Implementation1.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L10 Inheritance: Implementation 1</a>
+  <a href="http://hdl.handle.net/10900.3/OER_PJXZSGZX"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L10 Inheritance: Implementation 1</a>
 </div>
 
 > **`extends`** erweitert eine Superklasse um eine Subklasse!  
@@ -112,18 +111,18 @@ moveables.push(new Projectile(new Vector(0, 0), new Vector(0, 0)));
 ## Aktivitätsdiagramm Hauptprogramm  
 
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V3_ActivitydiagramMain.mp4" type="video/mp4"></video>
+  <a href="http://hdl.handle.net/10900.3/OER_TAIUWVMJ"><img src="../X01_Appendix/Img/L10_V3_Bild.JPG" width="25%"/></a>
   <a href="Material/Asteroids_ActivityDiagram-Main.jpg"><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V3_ActivitydiagramMain.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L10 Inheritance: Aktivitätsdiagramm Hauptprogramm</a>
+  <a href="http://hdl.handle.net/10900.3/OER_TAIUWVMJ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L10 Inheritance: Aktivitätsdiagramm Hauptprogramm</a>
 </div>
 
 ## Implementation bei Nutzung der Polymorphie
 
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L10_V4_Implementation2.mp4" type="video/mp4"></video>
+  <a href="http://hdl.handle.net/10900.3/OER_IVAAHJUM"><img src="../X01_Appendix/Img/L10_V4_Bild.JPG" width="25%"/></a>
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L10_V4_Implementation2.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L10 Inheritance: Implementation 2</a>
+  <a href="http://hdl.handle.net/10900.3/OER_IVAAHJUM"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L10 Inheritance: Implementation 2</a>
 </div>
 
 > **`a instanceof B`** prüft, ob das Objekt `a` eine Instanz der Klasse `B` ist.
