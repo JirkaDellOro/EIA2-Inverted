@@ -52,7 +52,7 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
 
 ## Erweiterung des Klassendiagramms
 <div align="center">
-  <a href="http://hdl.handle.net/10900.3/OER_QHHUCSHA"><img src="../X01_Appendix/Img/L10_V1_Bild.JPG" width="25%"/></a>
+  <a href="http://hdl.handle.net/10900.3/OER_QHHUCSHA"><img src="../X01_Appendix/Img/L10_V1_Bild.jpg" width="25%"/></a>
   <a href="Material/Asteroids_ClassDiagram.jpg"><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
   <a href="Material/Asteroids_ActivityDiagram-Moveable.jpg"><img src="Material/Asteroids_ActivityDiagram-Moveable.jpg" width="25%"></a>
   <a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
@@ -62,7 +62,7 @@ Unter Berücksichtigung der oben genannten Prinzipien wird Asteroids weiter entw
 
 ## Implementation Moveable, Refaktorierung Asteroid   
 <div align="center">
-  <a href="http://hdl.handle.net/10900.3/OER_PJXZSGZX"><img src="../X01_Appendix/Img/L10_V2_Bild.JPG" width="25%"/></a>
+  <a href="http://hdl.handle.net/10900.3/OER_PJXZSGZX"><img src="../X01_Appendix/Img/L10_V2_Bild.jpg" width="25%"/></a>
   <br/>
   <a href="http://hdl.handle.net/10900.3/OER_PJXZSGZX"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L10 Inheritance: Implementation 1</a>
 </div>
@@ -111,7 +111,7 @@ moveables.push(new Projectile(new Vector(0, 0), new Vector(0, 0)));
 ## Aktivitätsdiagramm Hauptprogramm  
 
 <div align="center">
-  <a href="http://hdl.handle.net/10900.3/OER_TAIUWVMJ"><img src="../X01_Appendix/Img/L10_V3_Bild.JPG" width="25%"/></a>
+  <a href="http://hdl.handle.net/10900.3/OER_TAIUWVMJ"><img src="../X01_Appendix/Img/L10_V3_Bild.jpg" width="25%"/></a>
   <a href="Material/Asteroids_ActivityDiagram-Main.jpg"><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
   <br/>
   <a href="http://hdl.handle.net/10900.3/OER_TAIUWVMJ"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L10 Inheritance: Aktivitätsdiagramm Hauptprogramm</a>
@@ -120,7 +120,7 @@ moveables.push(new Projectile(new Vector(0, 0), new Vector(0, 0)));
 ## Implementation bei Nutzung der Polymorphie
 
 <div align="center">
-  <a href="http://hdl.handle.net/10900.3/OER_IVAAHJUM"><img src="../X01_Appendix/Img/L10_V4_Bild.JPG" width="25%"/></a>
+  <a href="http://hdl.handle.net/10900.3/OER_IVAAHJUM"><img src="../X01_Appendix/Img/L10_V4_Bild.jpg" width="25%"/></a>
   <br/>
   <a href="http://hdl.handle.net/10900.3/OER_IVAAHJUM"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L10 Inheritance: Implementation 2</a>
 </div>
