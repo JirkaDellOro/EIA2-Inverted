@@ -157,27 +157,27 @@ Für jeden Objekttyp stellst Du dir dann die folgenden Fragen, wobei "es" ein be
 Die ersten beiden Fragen führen dich direkt zur Darstellung der einzelnen Klassen im Diagramm. Kümmern wir uns zunächst um die Asteroiden...
 
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L09_V1_Classdiagram.mp4" type="video/mp4"></video> 
+  <a href="http://hdl.handle.net/10900.3/OER_KBWGATWN"><img src="../X01_Appendix/Img/L09_V1_Bild.JPG" width="25%"/></a> 
   <a href="Material/Asteroids_ClassDiagram.jpg"><img src="Material/Asteroids_ClassDiagram.jpg" width="25%"></a>
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L09_V1_Classdiagram.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L09 Classes: Klassendiagramm</a>
+  <a href="http://hdl.handle.net/10900.3/OER_KBWGATWN"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L09 Classes: Klassendiagramm</a>
 </div>
 
 ## Aktivitätsdiagramm
 Jetzt kannst Du die einzelnen Methoden mit Hilfe von Aktivitätsdiagrammen konzipieren. 
 
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L09_V2_ActivitydiagramAsteroid.mp4" type="video/mp4"></video>
+  <a href="http://hdl.handle.net/10900.3/OER_PNFVRAMC"><img src="../X01_Appendix/Img/L09_V2_Bild.JPG" width="25%"/></a>
   <a href="Material/Asteroids_ActivityDiagram-Asteroid.jpg"><img src="Material/Asteroids_ActivityDiagram-Asteroid.jpg" width="25%"></a>
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L09_V2_ActivitydiagramAsteroid.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L09 Classes: Aktivitätsdiagramm Asteroid</a>
+  <a href="http://hdl.handle.net/10900.3/OER_PNFVRAMC"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L09 Classes: Aktivitätsdiagramm Asteroid</a>
 </div>
 
 ## Implementation
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L09_V3_ImplementationAsteroids.mp4" type="video/mp4"></video>
+  <a href="http://hdl.handle.net/10900.3/OER_XFJJRZUC"><img src="../X01_Appendix/Img/L09_V3_Bild.JPG" width="25%"/></a>
   <br/>   
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L09_V3_ImplementationAsteroids.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L09 Classes: Implementation Asteroid</a>
+  <a href="http://hdl.handle.net/10900.3/OER_XFJJRZUC"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L09 Classes: Implementation Asteroid</a>
 </div>
 
 ## Zeitsignale
@@ -200,18 +200,18 @@ Die Anweisung bewirkt, dass die `handler`-Funktion periodisch in einem für die 
 ## Hauptprogramm  
 
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L09_V4_ActivitydiagramMain.mp4" type="video/mp4"></source></video>
+  <a href="http://hdl.handle.net/10900.3/OER_MWEVCUUT"><img src="../X01_Appendix/Img/L09_V4_Bild.JPG" width="25%"/></a>
   <a href="Material/Asteroids_ActivityDiagram-Main.jpg"><img src="Material/Asteroids_ActivityDiagram-Main.jpg" width="25%"></a>
   <br/>
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L09_V4_ActivitydiagramMain.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L09 Classes: Aktivitätsdiagramm Hauptprogramm</a>
+  <a href="http://hdl.handle.net/10900.3/OER_MWEVCUUT"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L09 Classes: Aktivitätsdiagramm Hauptprogramm</a>
 </div>
 
 > **Hinweis:** Nicht alles lässt sich von vorneherein festlegen, manches musst Du ausprobieren, um ein Gefühl dafür zu bekommen, wie ein gutes Nutzungserlebnis erreicht werden kann. In der Konzeption musst Du abschätzen, welche Tests erforderlich sind und wie Du diese ermöglichst. Du musst zudem selbst Prototypen entwickeln können, um kleinere Sachen alleine zu implementieren und auszuprobieren ohne dafür einen Stab von Leuten zu beschäftigen!
 
 <div align="center">
-  <video controls width="30%"><source src="http://games.hs-furtwangen.de/EIA2_Video/L09_V5_ImplementationMain.mp4" type="video/mp4"></video>
+  <a href="http://hdl.handle.net/10900.3/OER_XHUTJHVV"><img src="../X01_Appendix/Img/L09_V5_Bild.JPG" width="25%"/></a>
   <br/>  
-  <a href="http://games.hs-furtwangen.de/EIA2_Video/L09_V5_ImplementationMain.mp4"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L09 Classes: Implementation Hauptprogramm</a>
+  <a href="http://hdl.handle.net/10900.3/OER_XHUTJHVV"><img src="../X01_Appendix/Img/video.jpg" width="3%"/> L09 Classes: Implementation Hauptprogramm</a>
 </div> 
 
 
