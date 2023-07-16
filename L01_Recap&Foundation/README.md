@@ -159,7 +159,7 @@ interface VectorWithMeaning {
 let vector: VectorWithMeaning = {x: 12.4, y: -7.2, meaning: "Ortsvektor"};
 ```    
 
-Beides lässt sich auch kombinieren. Das folgende Beispiel zeigt einen Aufbau, mit dem man die Notenspiegel vieler Studentis verwalten könnte und eien ersten Datensatz dafür.
+Beides lässt sich auch kombinieren. Das folgende Beispiel zeigt einen Aufbau, mit dem man die Notenspiegel vieler Studentis verwalten könnte und einen ersten Datensatz dafür.
 ```typescript
 interface Student {
     name: string;
