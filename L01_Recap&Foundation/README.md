@@ -164,11 +164,11 @@ Beides lässt sich auch kombinieren. Das folgende Beispiel zeigt einen Aufbau, m
 interface Student {
     name: string;
     matrikel: number;
-    grades: [module: string]: number;
+    grades: {[module: string]: number};
 }
 let students: Student[] = [];
 
-students.push({name: "Big Brain", matrikel: 123456, grades: {"EIA1": 1.3, "EIA2": 1.0}};
+students.push({name: "Big Brain", matrikel: 123456, grades: {"EIA1": 1.3, "EIA2": 1.0}});
 ```    
 
 >**Hinweis:** Mit Hilfe von Interfaces kannst Du also eigene komplexe Datentypen erschaffen. 
