@@ -1,5 +1,5 @@
 # L06_DatabaseServer
-<img src="Material/ServerName.jpg">
+<img src="Material/ServerName.jpg" title="This hostname is going in dozens of remote config files. Changing a kid's name is comparatively easy!">
 <small>Quelle: <a href="https://xkcd.com/910/">https://xkcd.com/910/</a></small>  
 
 Ein reiner Fileserver wird natürlich den Ansprüchen nicht gerecht, welche die Cocktailbar an die Gegenseite der Kommunikation stellt. Die Bestellung kommt zwar an, aber die Serversoftware ist nicht darauf programmiert, damit etwas anzufangen. Der Query-String wird schlicht ignoriert. Was genau damit geschehen soll, wurde allerdings auch noch gar nicht definiert. Im vorangegangenen Kapitel wurde lediglich festgehalten, dass der Server die Bestellung entgegen nehmen soll.  
