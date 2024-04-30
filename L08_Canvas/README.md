@@ -121,12 +121,14 @@ Eine schräge Linie verläuft immer durch viele Zwischenpositionen. Würden nur 
 Sollen ähnliche Bildbestandteile, z.B. Bäume, Häuser, Schneeflocken etc., mehrfach in einem Bild auftauchen, ergibt sich ein Problem. Da die Pfade, mit deren Hilfe diese Bestandteile gezeichnet werden, mit absoluten Koordinaten bezogen auf das Standard-Koordinatensystem konstruiert werden, sind diese Informationen fest im Pfad definiert. Selbst wenn keine literalen Werte als Parameter übergeben sondern Variablen genutzt werden, so dass der Code zur Konstruktion wiederverwendet werden kann, muss der komplette Pfad erneut konstruiert werden, wenn der gleiche Bildbestandteil an einer anderen Stelle auftauchen soll.  
 Hier schaffen Transformationen Abhilfe. Anstatt die Koordinaten und Dimensionen neu anzugeben, kann mit Transformationen das Koordinatensystem verändert werden, auf das sich die Angaben beziehen. 
 
+<!--
 - [x] Lade dir den Standalone [FlashPlayer-Projector von Adobe](https://www.adobe.com/support/flashplayer/debug_downloads.html) herunter. Eine Installation ist nicht erforderlich.
 - [x] Öffne damit diese URL: <https://webuser.hs-furtwangen.de/~del/Apps/Transformation/Transformation.swf>
 - [x] Experimentiere mit der Transformator-App. Erzeuge drei unterschiedliche und aktive Transformationen und beobachte die Auswirkungen.
 - [x] Vertausche sie durch Klick auf das Doppelpfeil-Symbol. Erkläre, warum das Haus des Nikolaus seine Position oder Erscheinung dabei ändert.
+-->
 
-Die Transformationen werden also nacheinander ausgeführt und jede weitere Transformation verändert das Ergebnis der vorangegangenen. Tatsächlich existiert nur eine Transformationsmatrix, welche die komplette Transformationskette darstellt. Jedesmal, wenn `translate(...)`, `rotate()` oder `scale()` aufgerufen wird, wird diese Matrix verändert. Bei der Erstellung oder beim Zeichnen eines Pfades wird die Gesamtmatrix mit einer einfachen Matrixmultiplikation auf die Koordinaten angewendet.  
+Die Transformationen werden nacheinander ausgeführt und jede weitere Transformation verändert das Ergebnis der vorangegangenen. Tatsächlich existiert nur eine Transformationsmatrix, welche die komplette Transformationskette darstellt. Jedesmal, wenn `translate(...)`, `rotate()` oder `scale()` aufgerufen wird, wird diese Matrix verändert. Bei der Erstellung oder beim Zeichnen eines Pfades wird die Gesamtmatrix mit einer einfachen Matrixmultiplikation auf die Koordinaten angewendet.  
 Das bedeutet, dass immer wiederkehrende Transformatsaufrufe in der Matrix kumulieren, was in der Regel nicht gewünscht ist. Für dieses Problem gibt es mehrere Lösungsansätze:
 - mit `resetTransform()` die Gesamtmatrix wieder auf den Urzustand bringen
 - mit `save()` den aktuellen Zustand der Gesamtmatrix speichern, und diesen Zustand später mit `restore()` wieder herstellen. Dabei kann auch mehrfach `save()` aufgerufen werden, die dabei gespeicherten Zustände werden per `restore()` in umgekehrter Reihenfolge wieder restauriert.
