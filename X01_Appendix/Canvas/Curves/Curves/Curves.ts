@@ -11,6 +11,8 @@ module Curves {
 
     var stepper: HTMLElement = <HTMLElement>document.getElementById("stepper");
     stepper.addEventListener("mousedown", Setup.stopPropagation);
+    stepper.addEventListener("mousemove", Setup.stopPropagation);
+    stepper.addEventListener("mouseup", Setup.stopPropagation);
     stepper.addEventListener("keydown", Setup.stopPropagation);
     stepper.addEventListener("change", change);
 

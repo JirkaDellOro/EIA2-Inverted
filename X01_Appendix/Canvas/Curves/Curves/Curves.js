@@ -11,6 +11,8 @@ var Curves;
     Setup.addEventListener(EVENTTYPE.MOUSEMOVE, mousemove);
     var stepper = document.getElementById("stepper");
     stepper.addEventListener("mousedown", Setup.stopPropagation);
+    stepper.addEventListener("mousemove", Setup.stopPropagation);
+    stepper.addEventListener("mouseup", Setup.stopPropagation);
     stepper.addEventListener("keydown", Setup.stopPropagation);
     stepper.addEventListener("change", change);
     setControlPoints(4);
