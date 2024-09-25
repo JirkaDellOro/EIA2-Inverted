@@ -129,7 +129,7 @@ Mit diesen Basisregeln des objekorientierte Entwurfs kann man sich schon daran m
 
 > **FunFact:** Asteroids ist einer der größten Erfolge in der Geschichte der Videogames und Ataris meistverkaufter Münzautomat. Es gab allerdings eine dominante Strategie, die es geübten Spielern erlaubte nach Einwurf nur einer Münze stundenlang zu spielen und dabei so viele Bonus-Schiffe anzuhäufen, dass der Automat, dann vom Spieler allein gelassen, noch lange Zeit brauchte um alle Schiffe zu zerstören...  
 
-- [x] Falls dir Asteroids nicht bekannt ist, schau dir den entsprechenden Wikipedia-Artikel und dieses Youtube-Video an: <https://www.youtube.com/watch?v=82mbTdpPM58>  (ab 0:18)
+- [x] Falls dir Asteroids nicht bekannt ist, schau dir den entsprechenden Wikipedia-Artikel und dieses Youtube-Video an: <https://www.youtube.com/watch?v=WYSupJ5r2zo>
 
 ## Anwendungsfalldiagramm
 ![](Material/draw.io/Asteroids_UseCaseDiagram.svg)
