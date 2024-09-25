@@ -10,6 +10,8 @@ var eiaSteroids;
      * Describes an asteroid with individual size and shape (type)
      */
     class Asteroid extends eiaSteroids.Moveable {
+        size;
+        type;
         constructor(_size, _position) {
             super(_position);
             this.velocity = eiaSteroids.Vector.getRandom(100, 200);

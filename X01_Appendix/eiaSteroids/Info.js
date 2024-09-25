@@ -11,6 +11,9 @@ var eiaSteroids;
      * Also keeps the score.
      */
     class Info {
+        static score = 0;
+        static barEnergy;
+        static barCharge;
         static init(_canvas) {
             Info.barEnergy = new eiaSteroids.Bar(new eiaSteroids.Vector(_canvas.width / 2 - 80, 30), new eiaSteroids.Vector(-300, 30));
             Info.barCharge = new eiaSteroids.Bar(new eiaSteroids.Vector(_canvas.width / 2 + 80, 30), new eiaSteroids.Vector(300, 30));
@@ -66,7 +69,6 @@ var eiaSteroids;
             eiaSteroids.crc2.restore();
         }
     }
-    Info.score = 0;
     eiaSteroids.Info = Info;
 })(eiaSteroids || (eiaSteroids = {}));
 //# sourceMappingURL=Info.js.map

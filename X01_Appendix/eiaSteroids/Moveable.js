@@ -10,9 +10,11 @@ var eiaSteroids;
      * The base class for all moving objects. Implements standard methods for moving and hit detection
      */
     class Moveable {
+        position;
+        velocity;
+        expendable = false;
+        hitRadius = 0;
         constructor(_position) {
-            this.expendable = false;
-            this.hitRadius = 0;
             if (_position)
                 this.position = _position.copy();
             else

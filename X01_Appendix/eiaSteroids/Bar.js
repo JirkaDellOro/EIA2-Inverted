@@ -10,10 +10,12 @@ var eiaSteroids;
      * Decribes a meter bar to display in a user interface. Also used for the laser guns on the spaceship
      */
     class Bar {
+        size = new eiaSteroids.Vector(100, 10);
+        position;
+        strokeStyle = "white";
+        fillStyle = "green";
+        maxValue;
         constructor(_position, _size, _maxValue = 1) {
-            this.size = new eiaSteroids.Vector(100, 10);
-            this.strokeStyle = "white";
-            this.fillStyle = "green";
             this.position = _position.copy();
             this.size = _size.copy();
             this.maxValue = _maxValue;

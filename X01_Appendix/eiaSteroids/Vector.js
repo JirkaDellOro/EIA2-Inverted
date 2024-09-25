@@ -10,6 +10,8 @@ var eiaSteroids;
      * Describes a two-dimensional vector and implements various helpful methods to use it.
      */
     class Vector {
+        x;
+        y;
         constructor(_x = 0, _y = 0) {
             this.set(_x, _y);
         }

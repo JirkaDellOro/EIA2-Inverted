@@ -46,5 +46,5 @@ var L07_CocktailBar;
         // insert is depricated, use insertOne instead (Jirka Dell'Oro-Friedl, 2020)
         orders.insertOne(_order);
     }
-})(L07_CocktailBar = exports.L07_CocktailBar || (exports.L07_CocktailBar = {}));
+})(L07_CocktailBar || (exports.L07_CocktailBar = L07_CocktailBar = {}));
 //# sourceMappingURL=Server.js.map

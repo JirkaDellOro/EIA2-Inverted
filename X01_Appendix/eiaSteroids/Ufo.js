@@ -11,6 +11,7 @@ var eiaSteroids;
      * Ufo changes direction and dispatches events to the main program to create [[Projectile]]s
      */
     class Ufo extends eiaSteroids.Moveable {
+        static speed = 50;
         constructor() {
             super();
             this.position = new eiaSteroids.Vector(0, Math.random() * eiaSteroids.crc2.canvas.height);
@@ -45,7 +46,6 @@ var eiaSteroids;
             eiaSteroids.crc2.canvas.dispatchEvent(event);
         }
     }
-    Ufo.speed = 50;
     eiaSteroids.Ufo = Ufo;
     class UfoSmall extends Ufo {
         playSound() {

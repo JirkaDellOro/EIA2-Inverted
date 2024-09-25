@@ -10,6 +10,9 @@ var eiaSteroids;
      * Handles and plays the sounds
      */
     class Sound {
+        static atmoDelay = 0;
+        static sounds = {};
+        static atmoBeat = 1;
         static init() {
             let audioElements = document.querySelectorAll("audio");
             for (let element of audioElements)
@@ -34,9 +37,6 @@ var eiaSteroids;
             this.play(sound);
         }
     }
-    Sound.atmoDelay = 0;
-    Sound.sounds = {};
-    Sound.atmoBeat = 1;
     eiaSteroids.Sound = Sound;
 })(eiaSteroids || (eiaSteroids = {}));
 //# sourceMappingURL=Sound.js.map

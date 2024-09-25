@@ -2,6 +2,8 @@
 var ClassExample;
 (function (ClassExample) {
     class Person {
+        name;
+        age;
         constructor(_name, _age) {
             this.name = _name;
             this.age = _age;
@@ -11,10 +13,7 @@ var ClassExample;
         }
     }
     class Docent extends Person {
-        constructor() {
-            super(...arguments);
-            this.skills = [];
-        }
+        skills = [];
         getInfo() {
             return "Prof. " + super.getInfo() + ", age: " + this.age;
         }
@@ -23,6 +22,8 @@ var ClassExample;
         }
     }
     class Student extends Person {
+        static nextNumber = 0;
+        matriculation;
         constructor(_name, _age) {
             super(_name, _age);
             this.matriculation = Student.nextNumber;
@@ -32,7 +33,6 @@ var ClassExample;
             return this.matriculation + ": " + super.getInfo();
         }
     }
-    Student.nextNumber = 0;
     let courses = [];
     let course = { name: "Physics", students: [] };
     course.docent = new Docent("Einstein", 71);

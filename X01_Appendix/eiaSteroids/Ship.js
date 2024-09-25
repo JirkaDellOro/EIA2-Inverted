@@ -10,6 +10,7 @@ var eiaSteroids;
      * Describes a laser gun which is just a special [[Bar]]
      */
     class Gun extends eiaSteroids.Bar {
+        static size = new eiaSteroids.Vector(-15, 6);
         constructor(_position) {
             super(_position, Gun.size);
         }
@@ -17,7 +18,6 @@ var eiaSteroids;
             super.draw(_charge, eiaSteroids.getColorCharge(_charge, 1), _strokeStyle);
         }
     }
-    Gun.size = new eiaSteroids.Vector(-15, 6);
     /**
      * Describes the space ship the player controls.
      * Can head towards a given point, thrust in this direction and dispatch an event to the main program in order
@@ -27,17 +27,25 @@ var eiaSteroids;
      * - and laser guns while charging
      */
     class Ship extends eiaSteroids.Moveable {
+        static energyToCharge = 0.002;
+        static energyToThrust = 0.003;
+        static energyToShield = 0.4;
+        static acceleration = 20;
+        static timeEnergyRestore = 20; // energy recovery from 0 in seconds
+        static timeToChargeFully = 1;
+        static timeCooling = 0.5; // time the laser gun cools down before charge starts
+        static timeToShowShield = 2; // time to display shield color when hit
+        gunLeft = new Gun(new eiaSteroids.Vector(10, -12));
+        gunRight = new Gun(new eiaSteroids.Vector(10, 12));
+        charged = 0; // start uncharged
+        energy = 1; // start with full energy
+        coolDown = 0; // start with guns cool
+        rotation = 0;
+        thrusting = false;
+        charging = false;
+        timeShield = 0;
         constructor(_position) {
             super(_position);
-            this.gunLeft = new Gun(new eiaSteroids.Vector(10, -12));
-            this.gunRight = new Gun(new eiaSteroids.Vector(10, 12));
-            this.charged = 0; // start uncharged
-            this.energy = 1; // start with full energy
-            this.coolDown = 0; // start with guns cool
-            this.rotation = 0;
-            this.thrusting = false;
-            this.charging = false;
-            this.timeShield = 0;
             this.velocity = new eiaSteroids.Vector();
             this.hitRadius = 10;
         }
@@ -145,14 +153,6 @@ var eiaSteroids;
             };
         }
     }
-    Ship.energyToCharge = 0.002;
-    Ship.energyToThrust = 0.003;
-    Ship.energyToShield = 0.4;
-    Ship.acceleration = 20;
-    Ship.timeEnergyRestore = 20; // energy recovery from 0 in seconds
-    Ship.timeToChargeFully = 1;
-    Ship.timeCooling = 0.5; // time the laser gun cools down before charge starts
-    Ship.timeToShowShield = 2; // time to display shield color when hit
     eiaSteroids.Ship = Ship;
 })(eiaSteroids || (eiaSteroids = {}));
 //# sourceMappingURL=Ship.js.map

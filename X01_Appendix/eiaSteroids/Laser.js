@@ -10,6 +10,9 @@ var eiaSteroids;
      * The laser beam pointing from the [[Gun]] to the [[Hotspot]]
      */
     class Laser extends eiaSteroids.Projectile {
+        static maxLifetime = 0.1;
+        charge;
+        path;
         constructor(_path, _charge) {
             super(new eiaSteroids.Vector(), new eiaSteroids.Vector());
             this.lifetime = Laser.maxLifetime;
@@ -24,7 +27,6 @@ var eiaSteroids;
             eiaSteroids.crc2.restore();
         }
     }
-    Laser.maxLifetime = 0.1;
     eiaSteroids.Laser = Laser;
 })(eiaSteroids || (eiaSteroids = {}));
 //# sourceMappingURL=Laser.js.map

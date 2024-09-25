@@ -10,9 +10,10 @@ var eiaSteroids;
      * Describes a small projectile as fired by the [[Ufo]]s
      */
     class Projectile extends eiaSteroids.Moveable {
+        static maxLifetime = 2;
+        lifetime = Projectile.maxLifetime;
         constructor(_position, _velocity) {
             super(_position);
-            this.lifetime = Projectile.maxLifetime;
             this.velocity = _velocity.copy();
         }
         draw() {
@@ -28,7 +29,6 @@ var eiaSteroids;
                 this.expendable = true;
         }
     }
-    Projectile.maxLifetime = 2;
     eiaSteroids.Projectile = Projectile;
 })(eiaSteroids || (eiaSteroids = {}));
 //# sourceMappingURL=Projectile.js.map

@@ -10,6 +10,9 @@ var eiaSteroids;
      * The area of destruction the laser gun creates. The higher the charge, the bigger and more robust it is.
      */
     class Hotspot extends eiaSteroids.Projectile {
+        static maxLifetime = 2;
+        maxLifetime;
+        charge;
         constructor(_position, _charge) {
             super(_position, new eiaSteroids.Vector());
             this.charge = Math.max(0, Math.min(1, _charge));
@@ -37,7 +40,6 @@ var eiaSteroids;
             this.expendable = this.lifetime < 0;
         }
     }
-    Hotspot.maxLifetime = 2;
     eiaSteroids.Hotspot = Hotspot;
 })(eiaSteroids || (eiaSteroids = {}));
 //# sourceMappingURL=Hotspot.js.map

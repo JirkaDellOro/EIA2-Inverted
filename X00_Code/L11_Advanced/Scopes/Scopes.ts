@@ -23,7 +23,7 @@ namespace Scope {
                 let x: string = "ScopeSubMethodBlock";     // Scope of block
                 log("ScopeSubMethodBlock", x);
                 log("ScopeSubObject", this.x);
-                log("ScopeSuperObject", super.x);
+                // log("ScopeSuperObject", super.x);
                 super.log();
             }
             log("ScopeSubMethod", x);
