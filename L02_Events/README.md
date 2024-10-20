@@ -113,7 +113,7 @@ someEventTarget.dispatchEvent(event);
 ```
 Alle Bezeichnungen, die im Beispiel mit "some" beginnen, können und sollten natürlich mit sinnvollen Bezeichnungen ersetzt werden.  
 
-# L02.1 Ereignisgesteuerte Anwendung
+# L02.2 Ereignisgesteuerte Anwendung
 <img src="Material/erpresserbrief.jpg" width="50%">
 <figcaption><small>Quelle: https://www.paketda.de/juniorpost/erpresserbrief-basteln.php</small></figcaption>
 
