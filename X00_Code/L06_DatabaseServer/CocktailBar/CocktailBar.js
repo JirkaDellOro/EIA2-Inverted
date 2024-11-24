@@ -3,7 +3,7 @@ var L06_CocktailBarDBS;
 (function (L06_CocktailBarDBS) {
     window.addEventListener("load", handleLoad);
     let form;
-    let url = "https://webuser.hs-furtwangen.de/<username>/<foldername>/";
+    let url = "https://7c8644f9-f81d-49cd-980b-1883574694b6.fr.bw-cloud-instance.org/jde3354/mingidb.php";
     async function handleLoad(_event) {
         console.log("Init");
         let response = await fetch("Data.json");

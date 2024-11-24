@@ -1,7 +1,7 @@
 namespace L06_CocktailBarDBS {
   window.addEventListener("load", handleLoad);
   let form: HTMLFormElement;
-  let url: string = "https://webuser.hs-furtwangen.de/<username>/<foldername>/";
+  let url: string = "https://7c8644f9-f81d-49cd-980b-1883574694b6.fr.bw-cloud-instance.org/jde3354/mingidb.php";
 
   interface FormDataJSON {
     [key: string]: FormDataEntryValue | FormDataEntryValue[];
